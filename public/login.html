@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23c8102e'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='22' font-weight='900' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E"/>
+  <meta name="description" content="Sign in to your BarMatrix account." />
+  <meta property="og:title" content="BarMatrix · Sign In" />
+  <meta property="og:description" content="Sign in to your BarMatrix account." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%230a0a0a'/%3E%3Crect width='1200' height='12' fill='%23c8102e'/%3E%3Ctext x='100' y='280' font-family='Georgia,serif' font-size='90' font-weight='700' fill='white'%3EBarMatrix.%3C/text%3E%3Ctext x='100' y='370' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%23c8102e' font-style='italic'%3EDiagnose. Repair.%3C/text%3E%3Ctext x='100' y='550' font-family='monospace' font-size='22' fill='%23a39e93' letter-spacing='4'%3E%E2%96%8C MBE TRAP DIAGNOSIS %C2%B7 WEB ACCESS LIVE NOW%3C/text%3E%3C/svg%3E" />
+  <meta name="twitter:card" content="summary_large_image" />
+<title>BarMatrix — Sign In</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+body{background:var(--bg);min-height:100vh;display:grid;place-items:center;padding:32px}
+.login-shell{display:grid;grid-template-columns:1fr 1.1fr;max-width:1080px;width:100%;border:1px solid var(--ink);background:var(--paper);box-shadow:12px 12px 0 var(--red)}
+.login-left{padding:48px 44px;background:var(--ink);color:var(--bg);position:relative;overflow:hidden}
+.login-left::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(-45deg,#c8102e 0 14px,#0a0a0a 14px 28px)}
+.login-brand{display:flex;align-items:baseline;gap:8px;font-family:var(--serif);font-weight:800;font-size:24px;color:#fff;margin-bottom:48px;margin-top:24px;letter-spacing:-0.01em}
+.login-brand .mark{width:28px;height:28px;background:var(--red);display:grid;place-items:center;font-family:var(--serif);font-weight:900;font-size:18px;transform:translateY(3px);color:#fff}
+.login-brand .dot{width:5px;height:5px;background:var(--red);display:inline-block;margin-left:2px;transform:translateY(-3px)}
+.login-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--red);text-transform:uppercase;font-weight:600;margin-bottom:18px}
+.login-h1{font-family:var(--serif);font-weight:700;font-size:48px;line-height:1.02;letter-spacing:-0.02em;margin:0 0 24px;color:#fff}
+.login-h1 em{color:var(--red);font-style:italic}
+.login-lede{font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.5;color:#c8c4ba;margin:0 0 32px;max-width:30ch}
+.login-fact{padding:14px 16px;border-left:3px solid var(--red);background:rgba(255,255,255,.05);font-size:13px;color:#c8c4ba;line-height:1.5;margin-bottom:12px}
+.login-fact .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:var(--red);font-weight:700;text-transform:uppercase;margin-bottom:4px}
+.login-right{padding:48px 44px}
+.login-tabs{display:flex;border:1px solid var(--ink);margin-bottom:28px;width:fit-content}
+.login-tab{padding:8px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;cursor:pointer;background:var(--paper);color:var(--ink);border-right:1px solid var(--ink)}
+.login-tab:last-child{border-right:none}
+.login-tab.active{background:var(--ink);color:var(--bg)}
+.login-form h2{font-family:var(--serif);font-weight:700;font-size:32px;letter-spacing:-0.02em;margin:0 0 12px;line-height:1.1}
+.login-form .sub{font-size:14px;color:var(--muted);margin-bottom:28px}
+.field{margin-bottom:16px}
+.field label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-bottom:6px;font-weight:600}
+.field input{width:100%;padding:13px 14px;font-family:var(--sans);font-size:15px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);outline:none;box-sizing:border-box}
+.field input:focus{border-color:var(--ink)}
+.row-between{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.row-between .check{display:flex;gap:8px;align-items:center;color:var(--ink-soft)}
+.row-between .check input{accent-color:var(--red)}
+.row-between a{color:var(--red);text-decoration:underline}
+.login-btn{width:100%;padding:16px;background:var(--ink);color:#fff;font-family:var(--sans);font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--ink);cursor:pointer;transition:background 120ms}
+.login-btn:hover{background:var(--red);border-color:var(--red)}
+.login-btn.red{background:var(--red);border-color:var(--red)}
+.divider{display:flex;align-items:center;gap:12px;margin:24px 0;font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--rule)}
+.sso-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:13px;font-family:var(--mono);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--rule);cursor:pointer;margin-bottom:8px;transition:border-color 120ms}
+.sso-btn:hover{border-color:var(--ink)}
+.foot-link{text-align:center;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.05em;margin-top:24px}
+.foot-link a{color:var(--ink);text-decoration:underline}
+@media (max-width:720px){.login-shell{grid-template-columns:1fr}.login-left{padding:32px 24px}.login-right{padding:32px 24px}}
+</style></head><body data-screen-label="Login">
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel">
+const Login=()=>{
+  const [tab,setTab]=React.useState("signin");
+  const [email,setEmail]=React.useState(""),[pwd,setPwd]=React.useState("");
+  const submit=(e)=>{e.preventDefault();window.location.href="app.html"};
+  return (<div className="login-shell">
+    <div className="login-left">
+      <div className="login-brand"><span className="mark">B</span>BarMatrix<span className="dot"></span></div>
+      <div className="login-eyebrow">▌ MBE TRAP DIAGNOSIS · WEB ACCESS LIVE NOW</div>
+      <h1 className="login-h1">Welcome back, <em>repair.</em></h1>
+      <p className="login-lede">Your dashboard, drill queue, and Red-Zone Map are mirrored across all three platforms. Pick up where you left off.</p>
+      <div className="login-fact"><div className="lbl">▌ TODAY · YOUR QUEUE</div>Drill A1 · Roles of Judge and Jury · 8 questions · ~14 min</div>
+      <div className="login-fact"><div className="lbl">▌ STREAK</div>11 days · don't break it</div>
+      <div className="login-fact"><div className="lbl">▌ DAYS TO MBE</div>67 — every focused minute counts</div>
+    </div>
+    <div className="login-right">
+      <div className="login-tabs">
+        <button className={`login-tab ${tab==="signin"?"active":""}`} onClick={()=>setTab("signin")}>Sign in</button>
+        <button className={`login-tab ${tab==="reset"?"active":""}`} onClick={()=>setTab("reset")}>Reset password</button>
+      </div>
+      {tab==="signin"?(
+      <form className="login-form" onSubmit={submit}>
+        <h2>Sign in to BarMatrix.</h2>
+        <div className="sub">Use the email you enrolled with. Same account on web, iOS, and Android.</div>
+        <div className="field"><label>EMAIL</label><input type="email" required value={email} onChange={e=>setEmail(e.target.value)} placeholder="you@email.com"/></div>
+        <div className="field"><label>PASSWORD</label><input type="password" required value={pwd} onChange={e=>setPwd(e.target.value)} placeholder="••••••••"/></div>
+        <div className="row-between">
+          <label className="check"><input type="checkbox" defaultChecked/>KEEP ME SIGNED IN</label>
+          <a href="#" onClick={(e)=>{e.preventDefault();setTab("reset")}}>Forgot?</a>
+        </div>
+        <button type="submit" className="login-btn red">Open My Dashboard →</button>
+        <div className="divider">OR</div>
+        <button type="button" className="sso-btn" onClick={()=>window.location.href="app.html"}>▸ Continue with Google</button>
+        <button type="button" className="sso-btn" onClick={()=>window.location.href="app.html"}>▸ Continue with Apple</button>
+        <div className="foot-link">Not enrolled yet? <a href="index.html">Take the free diagnostic</a> · or <a href="checkout.html">enroll for $999</a></div>
+      </form>
+      ):(
+      <form className="login-form" onSubmit={(e)=>{e.preventDefault();alert("Reset link sent to "+email)}}>
+        <h2>Reset password.</h2>
+        <div className="sub">Send a reset link to your enrollment email.</div>
+        <div className="field"><label>EMAIL</label><input type="email" required value={email} onChange={e=>setEmail(e.target.value)} placeholder="you@email.com"/></div>
+        <button type="submit" className="login-btn">Send Reset Link →</button>
+        <div className="foot-link"><a href="#" onClick={(e)=>{e.preventDefault();setTab("signin")}}>← Back to sign in</a></div>
+      </form>)}
+    </div>
+  </div>);
+};
+ReactDOM.createRoot(document.getElementById("root")).render(<Login/>);
+</script></body></html>

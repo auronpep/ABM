@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23c8102e'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='22' font-weight='900' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="Enroll in BarMatrix Flagship for the July cycle. $999 flat or $500 today + $499 in 30 days. Limited seats available." />
+  <meta property="og:title" content="BarMatrix · Checkout" />
+  <meta property="og:description" content="Enroll in BarMatrix Flagship for the July cycle. $999 flat or $500 today + $499 in 30 days. Limited seats available." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%230a0a0a'/%3E%3Crect width='1200' height='12' fill='%23c8102e'/%3E%3Ctext x='100' y='280' font-family='Georgia,serif' font-size='90' font-weight='700' fill='white'%3EBarMatrix.%3C/text%3E%3Ctext x='100' y='370' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%23c8102e' font-style='italic'%3EDiagnose. Repair.%3C/text%3E%3Ctext x='100' y='550' font-family='monospace' font-size='22' fill='%23a39e93' letter-spacing='4'%3E%E2%96%8C MBE TRAP DIAGNOSIS %C2%B7 WEB ACCESS LIVE NOW%3C/text%3E%3C/svg%3E" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>BarMatrix — Checkout</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body { background: var(--bg); }
+    .co-shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .co-nav {
+      border-bottom: 1px solid var(--rule);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg);
+    }
+    .co-nav .brand {
+      font-family: var(--serif);
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .co-nav .brand .mark {
+      width: 26px;
+      height: 26px;
+      background: var(--ink);
+      color: var(--bg);
+      display: grid;
+      place-items: center;
+      font-family: var(--serif);
+      font-weight: 900;
+      font-size: 16px;
+      transform: translateY(3px);
+    }
+    .co-nav .brand .dot { width: 5px; height: 5px; background: var(--red); display: inline-block; margin-left: 2px; transform: translateY(-2px); }
+    .co-nav .secure {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .co-nav .secure .lock {
+      width: 16px; height: 16px; border: 1.5px solid var(--muted); border-radius: 2px;
+      position: relative;
+    }
+    .co-nav .secure .lock::before {
+      content: ""; position: absolute; top: -5px; left: 3px; width: 8px; height: 6px;
+      border: 1.5px solid var(--muted); border-bottom: none; border-radius: 4px 4px 0 0;
+    }
+
+    .co-body {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      max-width: 1280px;
+      margin: 0 auto;
+      width: 100%;
+      gap: 0;
+    }
+    .co-left {
+      padding: 56px 56px 56px 32px;
+      border-right: 1px solid var(--rule);
+      background: var(--bg);
+      min-height: calc(100vh - 65px);
+    }
+    .co-right {
+      padding: 56px 32px 56px 56px;
+      background: var(--paper);
+      min-height: calc(100vh - 65px);
+    }
+
+    /* Left column: order summary */
+    .order-summary { max-width: 480px; }
+    .eyebrow-co {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .order-title {
+      font-family: var(--serif);
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      margin: 0 0 16px;
+    }
+    .order-sub {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0 0 36px;
+      max-width: 50ch;
+    }
+
+    .product-card {
+      border: 1px solid var(--ink);
+      padding: 22px 24px;
+      background: var(--paper);
+      margin-bottom: 24px;
+    }
+    .product-card .row1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 14px;
+      gap: 16px;
+    }
+    .product-card .name {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    .product-card .meta {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .product-card .desc {
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Plan toggle */
+    .plan-toggle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--ink);
+      margin-bottom: 24px;
+    }
+    .plan-opt {
+      padding: 16px 18px;
+      cursor: pointer;
+      border-right: 1px solid var(--ink);
+      background: var(--paper);
+      transition: background 120ms;
+      position: relative;
+    }
+    .plan-opt:last-child { border-right: none; }
+    .plan-opt.active {
+      background: var(--ink);
+      color: var(--bg);
+    }
+    .plan-opt .lbl {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .plan-opt.active .lbl { color: var(--red); }
+    .plan-opt .price {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: -0.015em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .plan-opt .sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .plan-opt.active .sub { color: var(--muted-light); }
+
+    /* Discount row */
+    .discount-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      border: 1px solid var(--red);
+      background: rgba(200, 16, 46, 0.04);
+      margin-bottom: 16px;
+      gap: 12px;
+    }
+    .discount-row .lbl {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--red);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .discount-row .desc {
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin-top: 4px;
+    }
+    .discount-row .amount {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--red);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    /* Totals */
+    .totals {
+      border-top: 1px solid var(--rule);
+      padding-top: 20px;
+      margin-bottom: 28px;
+    }
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+    .total-row .k { color: var(--muted); }
+    .total-row .v {
+      font-family: var(--mono);
+      color: var(--ink);
+      font-weight: 500;
+    }
+    .total-row.grand {
+      border-top: 2px solid var(--ink);
+      margin-top: 12px;
+      padding-top: 16px;
+      align-items: baseline;
+    }
+    .total-row.grand .k {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+    .total-row.grand .v {
+      font-family: var(--serif);
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+
+    .what-included {
+      border-top: 1px solid var(--rule-soft);
+      padding-top: 24px;
+    }
+    .what-included .label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .what-included ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .what-included li {
+      padding: 8px 0;
+      font-size: 13px;
+      color: var(--ink-soft);
+      display: grid;
+      grid-template-columns: 16px 1fr;
+      gap: 10px;
+      align-items: baseline;
+    }
+    .what-included li::before {
+      content: "→";
+      font-family: var(--mono);
+      color: var(--red);
+      font-weight: 600;
+    }
+
+    /* Right column: form */
+    .co-form { max-width: 520px; }
+    .form-section {
+      margin-bottom: 32px;
+    }
+    .form-section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .form-section-header .num {
+      width: 24px; height: 24px;
+      background: var(--ink);
+      color: var(--bg);
+      display: grid;
+      place-items: center;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .form-section-header h3 {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      margin: 0;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .form-row.split {
+      grid-template-columns: 2fr 1fr;
+    }
+    .form-row.split-3 {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+    .form-field { position: relative; }
+    .form-field label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .form-field input,
+    .form-field select {
+      width: 100%;
+      padding: 14px 16px;
+      font-family: var(--sans);
+      font-size: 15px;
+      border: 1px solid var(--rule);
+      background: var(--bg);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 120ms;
+      box-sizing: border-box;
+    }
+    .form-field input:focus,
+    .form-field select:focus {
+      border-color: var(--ink);
+      box-shadow: 0 0 0 1px var(--ink);
+    }
+    .form-field input::placeholder { color: var(--muted-light); }
+    .form-field .card-icon {
+      position: absolute;
+      right: 14px;
+      top: 38px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .terms-row {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+      align-items: start;
+      padding: 14px;
+      border: 1px solid var(--rule);
+      background: var(--bg);
+    }
+    .terms-row input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      accent-color: var(--red);
+      cursor: pointer;
+    }
+    .terms-row .text {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.45;
+    }
+    .terms-row .text a { text-decoration: underline; color: var(--ink); }
+    .pay-btn {
+      width: 100%;
+      padding: 20px;
+      background: var(--ink);
+      color: white;
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 140ms;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .pay-btn:hover:not(:disabled) {
+      background: var(--red);
+      border-color: var(--red);
+    }
+    .pay-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .pay-btn .lock-icon {
+      width: 14px; height: 14px; border: 1.5px solid currentColor; border-radius: 1px;
+      position: relative;
+    }
+    .pay-btn .lock-icon::before {
+      content: ""; position: absolute; top: -4px; left: 2.5px; width: 7px; height: 5px;
+      border: 1.5px solid currentColor; border-bottom: none; border-radius: 3px 3px 0 0;
+    }
+    .pay-meta {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 14px;
+      line-height: 1.6;
+    }
+
+    /* Success screen */
+    .success-shell {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      padding: 64px 24px;
+    }
+    .success-card {
+      max-width: 720px;
+      width: 100%;
+      border: 1px solid var(--ink);
+      background: var(--paper);
+      box-shadow: 12px 12px 0 var(--red);
+      padding: 0;
+    }
+    .success-head {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .success-head .verdict {
+      background: var(--correct);
+      color: white;
+      padding: 4px 10px;
+      letter-spacing: 0.15em;
+      font-weight: 600;
+    }
+    .success-body { padding: 48px 48px 40px; }
+    .success-body .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: var(--red);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .success-body h1 {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 56px;
+      letter-spacing: -0.025em;
+      line-height: 1.02;
+      margin: 0 0 20px;
+    }
+    .success-body h1 em {
+      color: var(--red);
+      font-style: italic;
+      font-weight: 700;
+    }
+    .success-body .lede {
+      font-family: var(--serif);
+      font-size: 19px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      margin: 0 0 36px;
+      max-width: 56ch;
+    }
+    .receipt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--rule);
+      margin-bottom: 32px;
+    }
+    .receipt-grid > div {
+      padding: 16px 18px;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .receipt-grid > div:nth-child(2n) { border-right: none; }
+    .receipt-grid > div:nth-last-child(-n+2) { border-bottom: none; }
+    .receipt-grid .k {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .receipt-grid .v {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.005em;
+    }
+    .receipt-grid .v.mono { font-family: var(--mono); font-size: 14px; }
+
+    .next-steps {
+      border-top: 2px solid var(--ink);
+      padding-top: 24px;
+    }
+    .next-steps .label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .next-step {
+      display: grid;
+      grid-template-columns: 36px 1fr auto;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--rule-soft);
+      align-items: center;
+      cursor: pointer;
+      transition: padding 100ms;
+    }
+    .next-step:last-child { border-bottom: none; }
+    .next-step:hover { padding-left: 8px; }
+    .next-step .num {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 28px;
+      color: var(--red);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .next-step .name {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: -0.005em;
+    }
+    .next-step .sub {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .next-step .arrow {
+      font-family: var(--mono);
+      font-size: 18px;
+    }
+
+    /* Loading state */
+    .loading-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 10, 10, 0.92);
+      display: grid;
+      place-items: center;
+      z-index: 200;
+      color: white;
+      font-family: var(--mono);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .loading-overlay .spinner {
+      width: 80px; height: 80px;
+      border: 2px solid rgba(255,255,255,0.15);
+      border-top-color: var(--red);
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+      margin: 0 auto 24px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-overlay .label {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: white;
+      text-align: center;
+    }
+    .loading-overlay .sub {
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 8px;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 900px) {
+      .co-body { grid-template-columns: 1fr; }
+      .co-left, .co-right { padding: 32px 24px; }
+      .co-left { border-right: none; border-bottom: 1px solid var(--rule); }
+    }
+  </style>
+</head>
+<body data-screen-label="Checkout">
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script type="text/babel">
+    const PRICING = {
+      flagshipPrice: 999,
+      planStandard: { d1: 500, d2: 499 },
+    };
+
+    const Checkout = () => {
+      const [plan, setPlan] = React.useState("payInFull"); // payInFull | plan
+      const [email, setEmail] = React.useState("");
+      const [name, setName] = React.useState("");
+      const [card, setCard] = React.useState("");
+      const [exp, setExp] = React.useState("");
+      const [cvc, setCvc] = React.useState("");
+      const [zip, setZip] = React.useState("");
+      const [country, setCountry] = React.useState("US");
+      const [terms, setTerms] = React.useState(false);
+      const [marketing, setMarketing] = React.useState(true);
+      const [state, setState] = React.useState("form"); // form | loading | success
+
+      const due = plan === "payInFull" ? PRICING.flagshipPrice : PRICING.planStandard.d1;
+
+      const total = PRICING.flagshipPrice;
+      const base = PRICING.flagshipPrice;
+
+      const canSubmit = email && name && card.length >= 14 && exp && cvc && terms;
+
+      const submit = (e) => {
+        e?.preventDefault?.();
+        if (!canSubmit) return;
+        setState("loading");
+        setTimeout(() => setState("success"), 2200);
+      };
+
+      // ── Card formatting helpers ──
+      const fmtCard = (v) => v.replace(/\D/g, "").slice(0, 16).replace(/(\d{4})(?=\d)/g, "$1 ");
+      const fmtExp = (v) => {
+        const d = v.replace(/\D/g, "").slice(0, 4);
+        return d.length > 2 ? d.slice(0, 2) + "/" + d.slice(2) : d;
+      };
+
+      if (state === "success") return <SuccessScreen email={email} name={name} due={due} total={total} plan={plan} />;
+
+      return (
+        <React.Fragment>
+          <div className="co-shell">
+            {/* Nav */}
+            <nav className="co-nav">
+              <a href="index.html" style={{ textDecoration: "none", color: "inherit" }}>
+                <div className="brand">
+                  <span className="mark">B</span>
+                  <span>BarMatrix<span className="dot"></span></span>
+                </div>
+              </a>
+              <div className="secure">
+                <div className="lock"></div>
+                <span>SECURE CHECKOUT · STRIPE</span>
+              </div>
+            </nav>
+
+            <div className="co-body">
+              {/* LEFT: order summary */}
+              <div className="co-left">
+                <div className="order-summary">
+                  <div className="eyebrow-co">▌ ENROLLMENT · JULY 2026 CYCLE</div>
+                  <h1 className="order-title">Your <span style={{ fontStyle: "italic", color: "var(--red)" }}>BarMatrix seat.</span></h1>
+                  <p className="order-sub">
+                    You're enrolling in BarMatrix Flagship — the multiple-choice-only MBE repair system. Diagnose. Repair. Stabilize.
+                  </p>
+
+                  {/* Product card */}
+                  <div className="product-card">
+                    <div className="row1">
+                      <span className="name">BarMatrix Flagship</span>
+                      <span className="meta">JUL · 2026 CYCLE</span>
+                    </div>
+                    <p className="desc">
+                      2,400-question tagged MBE bank · Wrong Answer Forensics · Tension Matrix · Red-Zone Drills · web access live now.
+                    </p>
+                  </div>
+
+                  {/* Plan toggle */}
+                  <div className="plan-toggle">
+                    <div className={`plan-opt ${plan === "payInFull" ? "active" : ""}`} onClick={() => setPlan("payInFull")}>
+                      <div className="lbl">PAY IN FULL</div>
+                      <div className="price">${PRICING.flagshipPrice}</div>
+                      <div className="sub">ONE-TIME</div>
+                    </div>
+                    <div className={`plan-opt ${plan === "plan" ? "active" : ""}`} onClick={() => setPlan("plan")}>
+                      <div className="lbl">2-PAY PLAN</div>
+                      <div className="price">
+                        ${PRICING.planStandard.d1}
+                        <span style={{ fontSize: 14, fontWeight: 400, color: "var(--muted)", marginLeft: 4 }}>
+                          + ${PRICING.planStandard.d2}
+                        </span>
+                      </div>
+                      <div className="sub">TODAY + 30 DAYS</div>
+                    </div>
+                  </div>
+
+                  <div className="discount-row">
+                    <div>
+                      <div className="lbl">▌ LIMITED SEATS AVAILABLE</div>
+                      <div className="desc">Enrollment closes when capacity is reached.</div>
+                    </div>
+                    <div className="amount">$999</div>
+                  </div>
+
+                  {/* Totals */}
+                  <div className="totals">
+                    <div className="total-row">
+                      <span className="k">Flagship price</span>
+                      <span className="v">${base}.00</span>
+                    </div>
+                    {plan === "plan" && (
+                      <div className="total-row">
+                        <span className="k">Charged in 30 days</span>
+                        <span className="v">
+                          ${PRICING.planStandard.d2}.00
+                        </span>
+                      </div>
+                    )}
+                    <div className="total-row grand">
+                      <span className="k">Due today</span>
+                      <span className="v">${due}<span style={{ fontSize: 18, color: "var(--muted)" }}>.00</span></span>
+                    </div>
+                  </div>
+
+                  {/* What's included */}
+                  <div className="what-included">
+                    <div className="label">▌ INCLUDED · JULY 2026 CYCLE</div>
+                    <ul>
+                      <li>2,400-question MBE bank, fully tagged · all 8 subjects</li>
+                      <li>Wrong Answer Forensics on every miss · 47 trap tags</li>
+                      <li>Personal Tension Matrix + Red-Zone Map</li>
+                      <li>Pattern Mastery Board + Misconception Profile</li>
+                      <li>Targeted Red-Zone Drills + Boot Camps</li>
+                      <li>Web app access live now · same account</li>
+                      <li>7-day no-questions refund window</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* RIGHT: payment form */}
+              <div className="co-right">
+                <form className="co-form" onSubmit={submit}>
+                  {/* Section 1: account */}
+                  <div className="form-section">
+                    <div className="form-section-header">
+                      <span className="num">1</span>
+                      <h3>Your account</h3>
+                    </div>
+                    <div className="form-row">
+                      <div className="form-field">
+                        <label>EMAIL · ACCOUNT LOGIN</label>
+                        <input
+                          type="email"
+                          placeholder="you@email.com"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          autoComplete="email"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-row">
+                      <div className="form-field">
+                        <label>FULL NAME · ON CARD</label>
+                        <input
+                          type="text"
+                          placeholder="Jordan Reyes"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                          autoComplete="cc-name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Section 2: payment */}
+                  <div className="form-section">
+                    <div className="form-section-header">
+                      <span className="num">2</span>
+                      <h3>Payment</h3>
+                    </div>
+                    <div className="form-row">
+                      <div className="form-field">
+                        <label>CARD NUMBER</label>
+                        <input
+                          type="text"
+                          placeholder="1234 1234 1234 1234"
+                          value={card}
+                          onChange={(e) => setCard(fmtCard(e.target.value))}
+                          inputMode="numeric"
+                          autoComplete="cc-number"
+                        />
+                        <span className="card-icon">VISA · MC · AMEX</span>
+                      </div>
+                    </div>
+                    <div className="form-row split">
+                      <div className="form-field">
+                        <label>EXPIRATION (MM/YY)</label>
+                        <input
+                          type="text"
+                          placeholder="MM / YY"
+                          value={exp}
+                          onChange={(e) => setExp(fmtExp(e.target.value))}
+                          inputMode="numeric"
+                          autoComplete="cc-exp"
+                        />
+                      </div>
+                      <div className="form-field">
+                        <label>CVC</label>
+                        <input
+                          type="text"
+                          placeholder="123"
+                          maxLength="4"
+                          value={cvc}
+                          onChange={(e) => setCvc(e.target.value.replace(/\D/g, ""))}
+                          inputMode="numeric"
+                          autoComplete="cc-csc"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-row split">
+                      <div className="form-field">
+                        <label>ZIP / POSTAL CODE</label>
+                        <input
+                          type="text"
+                          placeholder="94110"
+                          value={zip}
+                          onChange={(e) => setZip(e.target.value)}
+                          autoComplete="postal-code"
+                        />
+                      </div>
+                      <div className="form-field">
+                        <label>COUNTRY</label>
+                        <select value={country} onChange={(e) => setCountry(e.target.value)}>
+                          <option value="US">United States</option>
+                          <option value="CA">Canada</option>
+                          <option value="GB">United Kingdom</option>
+                          <option value="AU">Australia</option>
+                          <option value="OTHER">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Section 3: confirm */}
+                  <div className="form-section">
+                    <div className="form-section-header">
+                      <span className="num">3</span>
+                      <h3>Confirm & enroll</h3>
+                    </div>
+                    <div className="terms-row">
+                      <input type="checkbox" id="terms" checked={terms} onChange={(e) => setTerms(e.target.checked)} />
+                      <label htmlFor="terms" className="text">
+                        I have read and accept the <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and <a href="#">Refund Policy</a> (7-day no-questions refund window). I understand BarMatrix is multiple-choice only and does not guarantee any exam outcome.
+                      </label>
+                    </div>
+                    <div className="terms-row">
+                      <input type="checkbox" id="mkt" checked={marketing} onChange={(e) => setMarketing(e.target.checked)} />
+                      <label htmlFor="mkt" className="text">
+                        Send me launch-cycle office hours invitations, sprint emails, and product updates. Unsubscribe anytime.
+                      </label>
+                    </div>
+
+                    <button type="submit" className="pay-btn" disabled={!canSubmit}>
+                      <span className="lock-icon"></span>
+                      Enroll - ${due} {plan === "plan" ? "today" : ""} · July cycle
+                    </button>
+                    <div className="pay-meta">
+                      <div>SECURED BY STRIPE · 256-BIT TLS</div>
+                      <div>7-DAY MONEY-BACK GUARANTEE · CANCEL ANY TIME IN ACCOUNT</div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          {state === "loading" && (
+            <div className="loading-overlay">
+              <div>
+                <div className="spinner"></div>
+                <div className="label">PROCESSING PAYMENT</div>
+                <div className="sub">Securing your enrollment…</div>
+              </div>
+            </div>
+          )}
+        </React.Fragment>
+      );
+    };
+
+    const SuccessScreen = ({ email, name, due, total, plan }) => {
+      const orderId = "BMX-" + Math.random().toString(36).slice(2, 8).toUpperCase();
+      const today = new Date().toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+      return (
+        <div className="success-shell">
+          <div className="success-card">
+            <div className="success-head">
+              <span>▌ ORDER CONFIRMED · {orderId}</span>
+              <span className="verdict">✓ ENROLLED</span>
+            </div>
+            <div className="success-body">
+              <div className="eyebrow">▌ WELCOME TO BARMATRIX · JULY 2026 CYCLE</div>
+              <h1>You're <em>in.</em></h1>
+              <p className="lede">
+                A receipt is on its way to <strong>{email || "your inbox"}</strong>. Your dashboard is live. Before you do anything else, take the 12-question diagnostic — that's how we calibrate your first Red-Zone Drill assignments.
+              </p>
+
+              <div className="receipt-grid">
+                <div>
+                  <div className="k">Order</div>
+                  <div className="v mono">{orderId}</div>
+                </div>
+                <div>
+                  <div className="k">Date</div>
+                  <div className="v mono">{today}</div>
+                </div>
+                <div>
+                  <div className="k">Product</div>
+                  <div className="v">BarMatrix Flagship</div>
+                </div>
+                <div>
+                  <div className="k">Plan</div>
+                  <div className="v">{plan === "plan" ? "2-pay plan" : "Pay in full"}</div>
+                </div>
+                <div>
+                  <div className="k">Program price</div>
+                  <div className="v">${total}.00</div>
+                </div>
+                <div>
+                  <div className="k">Charged today</div>
+                  <div className="v">${due}.00</div>
+                </div>
+              </div>
+
+              <div className="next-steps">
+                <div className="label">▌ YOUR NEXT 3 STEPS</div>
+                <a href="index.html#diagnostic" className="next-step" style={{ textDecoration: "none", color: "inherit" }} onClick={(e) => { e.preventDefault(); window.location.href = "index.html"; }}>
+                  <span className="num">01</span>
+                  <div>
+                    <div className="name">Take the diagnostic</div>
+                    <div className="sub">~ 10 MIN · CALIBRATES YOUR RED-ZONE MAP · DO THIS FIRST</div>
+                  </div>
+                  <span className="arrow">→</span>
+                </a>
+                <a href="app.html" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
+                  <span className="num">02</span>
+                  <div>
+                    <div className="name">Open your dashboard</div>
+                    <div className="sub">▸ TODAY'S QUEUE · SUBJECT MASTERY · ACTIVE RED ZONES</div>
+                  </div>
+                  <span className="arrow">→</span>
+                </a>
+                <a href="#" className="next-step" style={{ textDecoration: "none", color: "inherit" }} onClick={(e) => e.preventDefault()}>
+                  <span className="num">03</span>
+                  <div>
+                    <div className="name">Open the web app</div>
+                    <div className="sub">▸ TESTFLIGHT · PLAY TESTING · SAME ACCOUNT, SAME DRILLS</div>
+                  </div>
+                  <span className="arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Checkout />);
+  </script>
+</body>
+</html>

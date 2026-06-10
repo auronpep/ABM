@@ -1,0 +1,5 @@
+/* Style entry — harvested base system + rebrand extensions.
+   base.css      = proven editorial/forensic design system from the prior site
+   extensions.css = Christian-discernment rebrand layer (scripture, TEAR, fellowship) */
+@import "./base.css";
+@import "./extensions.css";

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23c8102e'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='22' font-weight='900' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E"/>
+  <meta name="description" content="Most answers live here. Reach a human if not." />
+  <meta property="og:title" content="BarMatrix · Help Center" />
+  <meta property="og:description" content="Most answers live here. Reach a human if not." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%230a0a0a'/%3E%3Crect width='1200' height='12' fill='%23c8102e'/%3E%3Ctext x='100' y='280' font-family='Georgia,serif' font-size='90' font-weight='700' fill='white'%3EBarMatrix.%3C/text%3E%3Ctext x='100' y='370' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%23c8102e' font-style='italic'%3EDiagnose. Repair.%3C/text%3E%3Ctext x='100' y='550' font-family='monospace' font-size='22' fill='%23a39e93' letter-spacing='4'%3E%E2%96%8C MBE TRAP DIAGNOSIS %C2%B7 WEB ACCESS LIVE NOW%3C/text%3E%3C/svg%3E" />
+  <meta name="twitter:card" content="summary_large_image" />
+<title>BarMatrix — Help Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.help-search{display:grid;grid-template-columns:1fr auto;gap:0;border:1px solid var(--ink);background:var(--paper);max-width:680px;margin:0 auto 48px}
+.help-search input{padding:18px 24px;font-family:var(--serif);font-size:18px;border:none;outline:none;background:var(--paper);color:var(--ink)}
+.help-search input::placeholder{color:var(--muted);font-style:italic}
+.help-search button{padding:18px 32px;background:var(--ink);color:var(--bg);font-family:var(--mono);font-size:12px;letter-spacing:.15em;font-weight:700;text-transform:uppercase;border:none;cursor:pointer}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:48px}
+.cat-card{border:1px solid var(--ink);background:var(--paper);padding:28px 24px;cursor:pointer;transition:background 120ms;text-decoration:none;color:inherit;display:block}
+.cat-card:hover{background:var(--ink);color:var(--bg)}
+.cat-card .icon{font-family:var(--mono);font-size:24px;color:var(--red);margin-bottom:18px;font-weight:700}
+.cat-card h3{font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:-0.01em;margin:0 0 8px;line-height:1.2}
+.cat-card p{font-size:13px;color:var(--ink-soft);line-height:1.5;margin:0 0 12px}
+.cat-card:hover p{color:#c8c4ba}
+.cat-card .count{font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;font-weight:600}
+.cat-card:hover .count{color:var(--red)}
+.faq-item{border-bottom:1px solid var(--rule);padding:24px 0;cursor:pointer}
+.faq-item .q{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-item h4{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:-0.005em;margin:0;line-height:1.3}
+.faq-item .toggle{font-family:var(--mono);font-size:20px;font-weight:600;transition:transform 200ms;flex-shrink:0;color:var(--red)}
+.faq-item.open .toggle{transform:rotate(45deg)}
+.faq-item .a{max-height:0;overflow:hidden;transition:max-height 300ms ease,margin 300ms ease;font-size:15px;color:var(--ink-soft);line-height:1.55}
+.faq-item.open .a{max-height:400px;margin-top:14px}
+.faq-cat-h{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--red);text-transform:uppercase;font-weight:700;padding:24px 0 8px;border-top:2px solid var(--ink);margin-top:32px}
+.contact-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.contact-card{border:1px solid var(--ink);background:var(--paper);padding:28px;text-align:center}
+.contact-card .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.15em;color:var(--red);text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.contact-card .v{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-0.01em;margin-bottom:8px}
+.contact-card .sub{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--muted)}
+</style></head><body data-screen-label="Help">
+<div class="tape-strip"></div>
+<nav class="nav"><div class="nav-inner">
+  <a href="index.html" class="brand" style="text-decoration:none;color:inherit"><span class="mark">B</span><span>BarMatrix<span class="dot"></span></span></a>
+  <div class="nav-links">
+    <a href="index.html"><button>Home</button></a>
+    <a href="index.html"><button>Pricing</button></a>
+    <button class="active">Help</button>
+    <a href="about.html"><button>About</button></a>
+  </div>
+  <div class="nav-cta"><a href="app.html" class="btn btn-sm ghost">Open App</a></div>
+</div></nav>
+
+<section class="section" style="padding:64px 0 48px"><div class="container">
+  <div style="text-align:center;margin-bottom:40px">
+    <div class="eyebrow-red" style="margin-bottom:18px;justify-content:center">▌ HELP CENTER</div>
+    <h1 class="display display-xl" style="margin:0 0 16px;max-width:18ch;margin-inline:auto">How can we <span style="color:var(--red);font-style:italic">help?</span></h1>
+    <p class="body-lg" style="margin:0 auto;max-width:50ch">Most answers live below. If you need a human, scroll to the bottom — Vera reads every support email during the launch sprint.</p>
+  </div>
+
+  <div class="help-search">
+    <input type="text" placeholder="Search for a question…"/>
+    <button>SEARCH</button>
+  </div>
+
+  <div class="cat-grid">
+    <a class="cat-card" href="#getting-started"><div class="icon">▸ 01</div><h3>Getting Started</h3><p>Account setup, first drill, what to do tonight.</p><div class="count">8 ARTICLES</div></a>
+    <a class="cat-card" href="#billing"><div class="icon">▸ 02</div><h3>Billing & Refunds</h3><p>Payment plans, refunds, receipts, the 7-day window.</p><div class="count">6 ARTICLES</div></a>
+    <a class="cat-card" href="#apps"><div class="icon">▸ 03</div><h3>Mobile Apps</h3><p>iOS TestFlight, Android Play testing, sync issues.</p><div class="count">7 ARTICLES</div></a>
+    <a class="cat-card" href="#content"><div class="icon">▸ 04</div><h3>Content Questions</h3><p>Wrong-answer disputes, missing explanations, CA distinctions.</p><div class="count">11 ARTICLES</div></a>
+  </div>
+</div></section>
+
+<section class="section alt" id="getting-started"><div class="container" style="max-width:880px">
+  <div class="faq-cat-h">▌ GETTING STARTED</div>
+  <div class="faq-item open"><div class="q"><h4>What do I do tonight, right after enrolling?</h4><span class="toggle">+</span></div><div class="a">Take the diagnostic if you haven't. Then open your dashboard — your Today's Queue is already loaded with Drill A1 (Roles of Judge and Jury) and a Privileges drill behind it. 30 minutes is the right session length. Don't try to do all 32 questions on day one.</div></div>
+  <div class="faq-item"><div class="q"><h4>How do I install the iOS app?</h4><span class="toggle">+</span></div><div class="a">Open your dashboard sidebar → Mobile Apps. The TestFlight install link will be emailed to you. Install TestFlight first if you don't have it. Same account logs in everywhere.</div></div>
+  <div class="faq-item"><div class="q"><h4>What's the difference between a Red-Zone Drill and a Boot Camp?</h4><span class="toggle">+</span></div><div class="a">Red-Zone Drills are 8-12 questions targeting one tension point (e.g. "Decisionmaker Inversion"). Boot Camps are 5-day sequences of drills bundled by subject. Both queue automatically based on your misses.</div></div>
+
+  <div class="faq-cat-h" id="billing">▌ BILLING & REFUNDS</div>
+  <div class="faq-item"><div class="q"><h4>Can I switch from pay-in-full to payment plan?</h4><span class="toggle">+</span></div><div class="a">Yes. Email billing@barmatrix.app within the first 7 days. We'll refund the difference and re-bill at the plan rate ($450 + $449/30d if you're inside founding cohort, otherwise $500 + $499).</div></div>
+  <div class="faq-item"><div class="q"><h4>How do I request a refund?</h4><span class="toggle">+</span></div><div class="a">Within 7 days of purchase: reply to your receipt email, or email billing@barmatrix.app. No questions asked. Funds return to your card in 5-10 business days. After 7 days, refunds are case-by-case.</div></div>
+  <div class="faq-item"><div class="q"><h4>Where's my receipt?</h4><span class="toggle">+</span></div><div class="a">Auto-emailed to the address on file within 60 seconds of purchase. You can also re-download anytime: open the app → Account → Billing → Download PDF Receipt.</div></div>
+
+  <div class="faq-cat-h" id="apps">▌ MOBILE APPS</div>
+  <div class="faq-item"><div class="q"><h4>iOS and Android availability?</h4><span class="toggle">+</span></div><div class="a">Web access is live now. iOS is in TestFlight (private testing) while public App Store review clears. Android is in Play testing track. Same login. Same drills. Public store availability tracking via app status banner.</div></div>
+  <div class="faq-item"><div class="q"><h4>Will my progress sync across web/iOS/Android?</h4><span class="toggle">+</span></div><div class="a">Yes. Start a drill on web at lunch, finish it on iOS on the train, see the mastery update on Android at night. Real-time sync across all three.</div></div>
+
+  <div class="faq-cat-h" id="content">▌ CONTENT QUESTIONS</div>
+  <div class="faq-item"><div class="q"><h4>I think a wrong-answer explanation is incorrect — what do I do?</h4><span class="toggle">+</span></div><div class="a">Report it. Open the question in the dashboard, click the "Flag" icon, and tell us what you think is wrong. Every flag is reviewed by an attorney within 48 hours. If you're right, the question is corrected for everyone and you get credit.</div></div>
+  <div class="faq-item"><div class="q"><h4>Are these official NCBE questions?</h4><span class="toggle">+</span></div><div class="a">No. BarMatrix uses original MBE-style questions written and attorney-reviewed by our team. Not affiliated with or endorsed by NCBE or any bar authority.</div></div>
+  <div class="faq-item"><div class="q"><h4>Where are the California distinctions called out?</h4><span class="toggle">+</span></div><div class="a">Every question with a CA flag carries a separate explanation lane for the California Evidence Code analog. You'll see it in the forensics overlay after answering — look for the "▌ CA DISTINCTION" panel.</div></div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-rule"><span class="label">▌ Still Stuck</span></div>
+  <h2 class="display display-md" style="margin:0 0 32px;text-align:center">Reach a human.</h2>
+  <div class="contact-row">
+    <div class="contact-card"><div class="lbl">▌ EMAIL</div><div class="v">support@<br/>barmatrix.app</div><div class="sub">12 min avg response · launch sprint</div></div>
+    <div class="contact-card"><div class="lbl">▌ FOUNDER DIRECT</div><div class="v">vera@<br/>barmatrix.app</div><div class="sub">Product feedback · same day reply</div></div>
+    <div class="contact-card"><div class="lbl">▌ OFFICE HOURS</div><div class="v">Tuesdays<br/>5–6 PM PT</div><div class="sub">Live Q&A · Zoom link in your inbox</div></div>
+  </div>
+</div></section>
+
+<script>document.querySelectorAll('.faq-item').forEach(el=>{el.addEventListener('click',()=>el.classList.toggle('open'))});</script>
+</body></html>

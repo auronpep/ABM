@@ -1,0 +1,348 @@
+/* ============================================================
+   REBRAND EXTENSIONS — Christian discernment layer
+   Scripture as section architecture · TEAR method · Be Strong Fellowship
+   Builds on base.css; reuses its tokens, containers, and primitives.
+   ============================================================ */
+
+:root {
+  --oxblood: #7a1420; /* sober scripture/legal accent — heavier than --red */
+  --oxblood-soft: rgba(122, 20, 32, 0.12);
+  --parchment-edge: rgba(122, 20, 32, 0.4);
+}
+
+/* ---------- SCRIPTURE: inline (hero) ---------- */
+.scripture-inline {
+  border-left: 3px solid var(--oxblood);
+  padding: 6px 0 6px 18px;
+  margin: 28px 0 0;
+  max-width: 46ch;
+}
+.scripture-inline .ref {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+.scripture-inline .verse {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ---------- SCRIPTURE: full band (section architecture) ---------- */
+.section.scripture {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 64px 0;
+}
+.scripture-band {
+  max-width: 56ch;
+  margin: 0 auto;
+  text-align: center;
+}
+.scripture-band .ref {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.scripture-band .verse {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-style: italic;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.32;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.scripture-band .caption {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 52ch;
+  margin: 0 auto;
+}
+.scripture-band .rule-mark {
+  width: 48px;
+  height: 3px;
+  background: var(--oxblood);
+  margin: 0 auto 24px;
+}
+
+/* ---------- TEAR METHOD ---------- */
+.tear-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.tear-step {
+  border-top: 2px solid var(--ink);
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tear-step .glyph {
+  font-family: var(--serif);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+  color: var(--oxblood);
+}
+.tear-step h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+.tear-step p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.tear-line {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0 0 8px;
+  max-width: 36ch;
+}
+.tear-line b {
+  font-style: normal;
+  font-weight: 700;
+  background: var(--highlighter-soft);
+  padding: 0 3px;
+}
+
+/* ---------- PRODUCT SYSTEM (steps as a sequence) ---------- */
+.system-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 2px solid var(--ink);
+}
+.system-node {
+  padding: 24px 22px 28px;
+  border-right: 1px solid var(--rule-soft);
+  position: relative;
+}
+.system-node:last-child {
+  border-right: none;
+}
+.system-node .step {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.system-node h4 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+}
+.system-node p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ---------- CHRISTIAN WORLD-BUILDING ---------- */
+.worldbuild-card {
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  padding: 26px 28px;
+}
+.worldbuild-card .scene {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.worldbuild-card .scene .name {
+  font-weight: 700;
+}
+.worldbuild-card .ruling {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border-top: 1px solid var(--rule-soft);
+  padding-top: 14px;
+  line-height: 1.5;
+}
+.worldbuild-card .ruling b {
+  color: var(--ink);
+}
+
+/* ---------- WHO IT'S FOR (affirmative) ---------- */
+.for-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 2px solid var(--ink);
+}
+.for-list li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule-soft);
+  font-size: 17px;
+  line-height: 1.45;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.for-list li .check {
+  font-family: var(--mono);
+  color: var(--correct);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* ---------- BE STRONG FELLOWSHIP ---------- */
+.fellowship-tagline {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(26px, 3.4vw, 44px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+  max-width: 22ch;
+}
+.fellowship-scripture {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #d8d3c8;
+  border-left: 3px solid var(--red);
+  padding-left: 20px;
+  margin: 0 0 28px;
+  max-width: 44ch;
+}
+.fellowship-scripture .ref {
+  display: block;
+  font-family: var(--mono);
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-top: 10px;
+}
+
+/* ---------- ENCOURAGEMENT ---------- */
+.encourage {
+  max-width: 40ch;
+  margin: 0 auto;
+  text-align: center;
+}
+.encourage .line {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(26px, 3.4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+.encourage .sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------- PRICING NOTE (diagnostic-first) ---------- */
+.pricing-note {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 56ch;
+}
+.pricing-note b {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* ---------- DEMO: trap-tag + TEAR breakdown (no pick-rate) ---------- */
+.tear-breakdown {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+.tear-breakdown .row {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px;
+  align-items: baseline;
+}
+.tear-breakdown .step {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 700;
+  padding-top: 2px;
+}
+.tear-breakdown .txt {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(246, 243, 236, 0.85);
+}
+.barnabas-demo-wrap .tear-breakdown .txt {
+  color: rgba(246, 243, 236, 0.85);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 960px) {
+  .tear-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .system-flow {
+    grid-template-columns: 1fr 1fr;
+  }
+  .system-node {
+    border-bottom: 1px solid var(--rule-soft);
+  }
+}
+@media (max-width: 640px) {
+  .tear-grid {
+    grid-template-columns: 1fr;
+  }
+  .system-flow {
+    grid-template-columns: 1fr;
+  }
+  .tear-breakdown .row {
+    grid-template-columns: 56px 1fr;
+  }
+}
