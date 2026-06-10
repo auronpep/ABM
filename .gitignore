@@ -1,0 +1,32 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+.next/
+.turbo/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+logs/
