@@ -1,0 +1,95 @@
+{
+ "id": "CQ14667",
+ "title": "Christian Fellowship Spin",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "Question ID: 14667_christian_fellowship_spin\n\nAt a private cabin rented for a Christian law-student fellowship retreat, Daniel and Stephen agreed to play a dangerous dare they called “spin the cylinder.” Stephen took an unloaded revolver, placed one bullet in the cylinder, spun the cylinder, pointed the gun at Daniel’s head, and pulled the trigger once. The gun did not fire.\n\nDaniel then took the gun, pointed it at Stephen, spun the cylinder, and pulled the trigger once. The gun fired, and Stephen died.\n\nA statute in the jurisdiction defines murder in the first degree as an intentional and premeditated killing or one occurring during the commission of a common-law felony, and murder in the second degree as all other murder at common law. Manslaughter is defined as a killing in the heat of passion upon an adequate legal provocation or a killing caused by gross negligence.\n\nThe most serious crime for which Daniel can properly be convicted is",
+ "call": "The most serious crime for which Daniel can properly be convicted is",
+ "choices": {
+  "A": "murder in the first degree, because the killing occurred during the commission of the felony of assault with a deadly weapon.",
+  "B": "murder in the second degree, because Daniel's act posed a great threat of serious bodily harm.",
+  "C": "manslaughter, because Daniel's act was grossly negligent and reckless.",
+  "D": "no crime, because Stephen and Daniel voluntarily agreed to play the game and each assumed the risk of death."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The answer array is a homicide ladder: first-degree murder, second-degree murder, manslaughter, no crime. Silver Key: when the call asks for the most serious proper crime, do not stop at a true lower rung if a higher rung is supported.\n\nDaniel’s conduct is not merely careless. He knowingly aimed a revolver containing one bullet at Stephen, spun the cylinder, and pulled the trigger. Gold Key: loaded-gun “roulette” conduct aimed at another person is the classic depraved-heart / extreme-recklessness pattern. If death results, the conduct supports common-law murder even without a purpose to kill. Because the statute reserves first-degree murder for intentional/premeditated killing or felony murder, and because the facts do not supply those first-degree routes, the proper top rung is second-degree murder.\n\nThe official source row likewise keys B and explains that pointing a loaded weapon at the victim and pulling the trigger created a grave threat and supported malice aforethought through reckless indifference to an unjustifiably high risk to human life.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "“They agreed / assumed the risk” is autonomy language. It does not answer the homicide classification. Cut as autonomy_appeal."
+  },
+  {
+   "label": "CUT A",
+   "text": "A tries to jump to first degree through felony murder. This requires the Gold Key: assaultive predicate merges into the homicide. Cut as half_truth."
+  },
+  {
+   "label": "CLASH B vs. C",
+   "text": "Both engage Daniel’s risk-creating act. B says the risk is grave enough for murder. C says it is only manslaughter-level gross negligence."
+  },
+  {
+   "label": "CALL with Gold Key",
+   "text": "Loaded-gun roulette aimed at another person is the classic depraved-heart / extreme-recklessness trigger. That unlocks B over C."
+  }
+ ],
+ "studentScript": "This is a homicide ladder. Cut no-crime consent. First-degree by assault felony needs an independent felony, so that upgrade fails. Between second-degree and manslaughter, loaded-gun roulette at another person is depraved-heart murder. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A jumps to the top rung by using the same assaultive act as the felony-murder engine. Needs the merger Gold Key.",
+   "lawyer": "Assault with a deadly weapon merges into the homicide when it is integral to the killing; it cannot serve as the independent felony-murder predicate.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "B occupies the supported highest rung once the depraved-heart Gold Key is applied.",
+   "lawyer": "Loaded-gun roulette aimed at another person supports malice through extreme recklessness, making second-degree common-law murder proper where first-degree routes are unavailable.",
+   "mold": null
+  },
+  "C": {
+   "signal": "C may describe a lower homicide rung, but the call asks for the most serious supported rung.",
+   "lawyer": "The facts show more than gross negligence; they support malice aforethought by reckless indifference to human life.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "D uses voluntary agreement and assumed risk instead of the homicide ladder.",
+   "lawyer": "Victim consent to the dangerous game does not eliminate criminal responsibility for homicide.",
+   "mold": "autonomy_appeal"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-DEPRAVED-HEART-01",
+   "statement": "Loaded-gun roulette aimed at another person is the classic extreme-recklessness/depraved-heart fact pattern; if death results, it supports common-law murder, not merely manslaughter.",
+   "trigger": "One bullet, spun cylinder, gun aimed at another person, trigger pulled, death.",
+   "unlocks": "B over C",
+   "authority": "Commonwealth v. Malone; official Q14667 explanation."
+  },
+  {
+   "id": "GK-CRIMINAL-FELONY-MURDER-MERGER-01",
+   "statement": "An assaultive felony that is integral to the killing merges into the homicide and cannot be used as the independent felony-murder predicate.",
+   "trigger": "Felony-murder answer uses assault with a deadly weapon as the only predicate for the killing.",
+   "unlocks": "A",
+   "authority": "People v. Ireland line as explained in People v. Hansen; People v. Wilson."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-HOMICIDE-LADDER-01",
+   "statement": "When the choices are a homicide ladder and the call asks for the most serious crime, compare adjacent rungs; do not stop at a true lower offense.",
+   "trigger": "Choices descend from first-degree murder to no crime.",
+   "unlocks": "B vs C",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Homicide ladder: extreme recklessness vs gross negligence",
+  "signal": "The answer choices list first-degree, second-degree, manslaughter, and no crime.",
+  "studentMove": "Cut no-crime autonomy. Check first-degree upgrade. Then compare murder-level risk against manslaughter-level negligence.",
+  "tinyRule": "Loaded-gun roulette at another person is murder-level extreme recklessness.",
+  "trap": "Stopping at manslaughter because gross negligence is mentioned in the statute."
+ }
+}

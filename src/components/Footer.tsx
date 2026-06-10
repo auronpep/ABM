@@ -26,6 +26,7 @@ export function Footer({ navigate }: PageProps) {
             <h5>The Work</h5>
             <ul>
               <li><button onClick={() => navigate("how-it-works")}>The TEAR Method</button></li>
+              <li><button onClick={() => navigate("drills")}>Repair Drills</button></li>
               <li><button onClick={() => navigate("diagnostic")}>The Diagnostic</button></li>
               <li><button onClick={() => navigate("pricing")}>Pricing</button></li>
               <li><a href="/help.html">Help</a></li>

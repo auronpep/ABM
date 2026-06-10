@@ -1,0 +1,98 @@
+{
+ "id": "CQ14676",
+ "title": "Christian Academy False Accusation",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Question ID: 14676_christian_academy_false_accusation\nTransformed from: 14676\n\nAt a private Christian academy, Esther’s Bible-history teacher, Barnabas, told her that she was going to receive a failing grade in his class, which would prevent her from graduating. Furious, Esther reported to the headmaster that Barnabas had touched her inappropriately, and Barnabas was fired. A year later, still unable to get work because of the scandal, Barnabas died by suicide. Remorseful, Esther confessed that her accusation had been false.\n\nIf Esther is charged with manslaughter, her best defense would be that she",
+ "call": "If Esther is charged with manslaughter, her best defense would be that she",
+ "choices": {
+  "A": "committed no act that proximately caused Barnabas's death.",
+  "B": "did not intend to cause Barnabas's death.",
+  "C": "did not act with malice.",
+  "D": "acted under extreme emotional distress."
+ },
+ "key": "A",
+ "dominantTrap": "B",
+ "rightExplanation": "A is correct.\n\nSilver Key: When one answer attacks the death chain and the other three attack Esther’s mindset, go to the cause-chain fact first. A homicide charge is about a death. The first gate is whether Esther legally caused that death.\n\nGold Key: Manslaughter still requires that the defendant caused the death. A later independent suicide generally breaks the homicide causation chain unless the defendant’s act made that death a foreseeable result or directly produced it. Here, Barnabas died by suicide a year later after the scandal. Esther’s false report was wrongful, but her best manslaughter defense is that her act was not the proximate cause of Barnabas’s death.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A survives. It is the only answer that attacks the legal chain between Esther’s act and Barnabas’s death.\n\nB is cut with a Gold Key. It talks about intent to kill. Manslaughter does not require intent to kill.\n\nC is cut with a Gold Key. It talks about malice. Lack of malice is consistent with manslaughter.\n\nD is cut with a Gold Key. It imports mitigation / emotional-distress thinking, but the charge is already manslaughter and the better defense is causation."
+  },
+  {
+   "label": "CLASH",
+   "text": "No true two-answer clash remains after the anchor-assisted cut. The visible array is one causation answer versus three mindset answers."
+  },
+  {
+   "label": "CALL",
+   "text": "Call the causation gate first. A is the residual."
+  }
+ ],
+ "studentScript": "Manslaughter means a death charge. One answer attacks causation; three attack mindset. The death happened a year later by suicide. Use the causation Gold Key. A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Only answer that attacks whether Esther legally caused the death.",
+   "lawyer": "Correct because manslaughter requires causation and the later suicide was not a foreseeable consequence on the supplied facts.",
+   "mold": null
+  },
+  "B": {
+   "signal": "Talks about intent to kill, while the survivor attacks causation.",
+   "lawyer": "Incorrect because manslaughter does not require intent to kill.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "Lack of malice answers murder-versus-manslaughter, not whether manslaughter fails.",
+   "lawyer": "Incorrect because manslaughter is an unlawful killing without malice; lack of malice is not a defense to manslaughter.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "Imports emotional-distress mitigation into a best-defense-to-manslaughter call.",
+   "lawyer": "Incorrect because emotional distress may mitigate murder to manslaughter in some frameworks, but it is not the best defense to a manslaughter charge here.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-HOMICIDE-CAUSATION-01",
+   "statement": "For homicide, the defendant must legally cause the death. A later independent suicide generally breaks the chain unless the defendant's act made that death foreseeable or directly produced it.",
+   "trigger": "Death occurs later by the decedent's own act",
+   "unlocks": "Choice A and the causation gate",
+   "authority": "Lawyer confirmation: proximate cause / intervening cause doctrine; supplied official explanation."
+  },
+  {
+   "id": "GK-CRIM-MANSLAUGHTER-MENSREA-02",
+   "statement": "Manslaughter does not require intent to kill or malice. Lack of intent or lack of malice is not the best defense when causation is missing.",
+   "trigger": "Manslaughter charge with intent/malice answer choices",
+   "unlocks": "Choices B and C",
+   "authority": "Lawyer confirmation: manslaughter definition as killing without malice."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-CAUSE-BEATS-MINDSET-01",
+   "statement": "When one answer attacks the death chain and the other three attack mindset, start with the death chain.",
+   "trigger": "Best-defense homicide call with one proximate-cause choice",
+   "unlocks": "Causation answer versus mental-state trio",
+   "authority": null
+  },
+  {
+   "id": "SK-CRIM-INDEPENDENT-ACT-TIMING-01",
+   "statement": "A delayed death by the decedent's own act is not scenery; it flags a possible break in the chain.",
+   "trigger": "A year later + died by suicide",
+   "unlocks": "Suicide/timing causation cue",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Cause chain before mindset",
+  "signal": "Homicide best-defense call; one answer says no proximate cause; other answers discuss intent, malice, or emotion.",
+  "studentMove": "Check whether the defendant legally caused the death before choosing a mental-state answer.",
+  "tinyRule": "No legal cause, no homicide.",
+  "trap": "Choosing lack of intent because it feels like the cleanest defense."
+ }
+}

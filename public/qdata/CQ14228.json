@@ -1,0 +1,96 @@
+{
+ "id": "CQ14228",
+ "title": "Road To Emmaus Shuttle",
+ "subject": "Constitutional Law",
+ "topic": "Constitutional Law",
+ "subtopic": "Individual Rights",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "A city ordinance in the City of Bethany requires a Road-to-Emmaus shuttle operator’s license to drive a paid shuttle van in the city. The ordinance states that the sole criteria for issuing such a license are driving ability and knowledge of the city’s streets. An applicant is tested for these qualifications with a detailed questionnaire, written and oral examinations, and a practical behind-the-wheel demonstration.\n\nThe ordinance does not limit the number of licenses that may be issued. It does, however, allow any citizen to file an objection to issuing a particular license, but only on the ground that an applicant does not possess the required qualifications. City licensing officials are also authorized by the ordinance to determine, in their discretion, whether to hold an evidentiary hearing on an objection before issuing a license.\n\nMary applies for a shuttle operator’s license and is found to be fully qualified after completing the usual licensing process. Her name is then posted as a prospective licensee, subject only to the objection process. Peter, who already has a shuttle operator’s license, files an objection to issuing the license to Mary solely on the ground that granting Mary a license would impair the value of Peter’s existing license. Peter demands a hearing before the license is issued so that he may prove his claim.\n\nCity licensing officials refuse to hold a hearing and issue the license to Mary. Peter petitions for review in an appropriate court, alleging that the Constitution requires city licensing officials to grant his request for a hearing before issuing Mary’s license.\n\nIn this case, the court should rule for",
+ "call": "In this case, the court should rule for",
+ "choices": {
+  "A": "Peter, because the Due Process Clause of the Fourteenth Amendment requires all persons whose property may be adversely affected by governmental action to be given an opportunity for a hearing before such action occurs.",
+  "B": "Peter, because the determination of whether to hold a hearing may not constitutionally be left to the discretion of the same officials whose action is being challenged.",
+  "C": "City officials, because Peter had the benefit of the licensing ordinance and therefore may not now question actions taken under it.",
+  "D": "City officials, because the licensing ordinance does not give Peter any property interest in being free of competition from additional licensees."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Peter is asking for a hearing, but the threshold question is whether the city action threatens a protected property interest of his. The ordinance gives a person a licensing path based on driving ability and city-street knowledge. It does not cap licenses. It permits objections only to an applicant’s qualifications. Peter’s objection is not about Mary’s qualifications; it is about competition.\n\nGold Key: Procedural due process begins only if the claimant has a protected liberty or property interest in the specific thing being threatened. A license does not automatically include a protected right to be free from new competitors unless the governing law gives that protection.\n\nSilver Key: Do not start with “Was the hearing fair?” Start with “Was there a protected interest that required a hearing at all?”",
+ "wrongExplanations": {
+  "A": "It overclaims. “All persons whose property may be adversely affected” is too broad. Economic disappointment is not enough. The question is narrower: did this ordinance give Peter a protected no-competition interest?.",
+  "B": "It answers the wrong layer. It talks about who may decide whether to hold a hearing. That matters only after Peter shows that he is constitutionally entitled to a hearing.",
+  "C": "It invents a waiver/estoppel rule. Peter’s prior use of the licensing system does not, by itself, mean he can never challenge government action under that system."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“all persons whose property may be adversely affected” is an overbroad due-process claim. Cut as tiered_absolute."
+  },
+  {
+   "label": "CUT C",
+   "text": "“benefited from the ordinance, therefore cannot challenge it” invents a waiver rule. Cut as fabricated_rule."
+  },
+  {
+   "label": "CLASH B vs. D",
+   "text": "B asks about hearing mechanics. D asks whether Peter has the threshold property interest. The axis is hearing procedure vs. protected-interest threshold."
+  },
+  {
+   "label": "CALL D",
+   "text": "Threshold beats hearing mechanics. If there is no protected property interest in freedom from competition, no hearing is constitutionally required."
+  }
+ ],
+ "studentScript": "Hearing request means due process. Due process starts with a protected interest. The ordinance gives no right to be free from competition and objections are only for qualifications. Peter objected to competition, not qualifications. A is too broad, B is too late, C invents waiver. D wins.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The phrase 'all persons whose property may be adversely affected' reaches far beyond the actual threshold.",
+   "lawyer": "Procedural due process requires a protected liberty or property interest first; adverse economic effect alone is not enough.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "B talks about who decides the hearing; the threshold issue is whether Peter gets a hearing at all.",
+   "lawyer": "If no protected property interest is threatened, procedural safeguards for a hearing are not triggered.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "Nothing in the call or stem says that using a license ordinance waives all constitutional objections.",
+   "lawyer": "A person who has a protected entitlement may still challenge its deprivation; the problem here is not waiver but lack of the claimed no-competition entitlement.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "D matches the exact missing threshold: no protected interest in being free from additional licensees.",
+   "lawyer": "The ordinance creates no entitlement to freedom from competition; no due process hearing is required for Peter’s competition objection.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-PROPERTY-INTEREST-SCOPE-01",
+   "statement": "Procedural due process starts only if government action threatens a protected liberty or property interest. A license protects only the entitlement the licensing law actually gives, not collateral market value or freedom from new competition unless the law grants that protection.",
+   "trigger": "Existing licensee demands a hearing before a new qualified competitor receives a license.",
+   "unlocks": "The trap that treats reduced license value as a protected property deprivation.",
+   "authority": [
+    "Board of Regents v. Roth",
+    "Cleveland Board of Education v. Loudermill",
+    "Checker Cab Operators v. Miami-Dade County"
+   ]
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-THRESHOLD-BEFORE-HEARING-01",
+   "statement": "When a due process answer set fights over hearing procedure, stop and ask the threshold question first: what protected interest is being taken?",
+   "trigger": "One answer says the hearing decisionmaker is improper; another says no protected property interest exists.",
+   "unlocks": "B/D clash between hearing mechanics and protected-interest threshold",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Due Process: Interest Before Process",
+  "signal": "A claimant demands a hearing, but the stem limits the claimant’s entitlement.",
+  "studentMove": "Name the interest first; if the interest is not protected, do not analyze hearing fairness.",
+  "tinyRule": "No protected interest, no due process hearing.",
+  "trap": "Jumping to hearing fairness before checking the property-interest threshold."
+ }
+}

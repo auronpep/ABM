@@ -1,0 +1,92 @@
+{
+ "id": "CQ14227",
+ "title": "Lydia New Hope Petition",
+ "subject": "Constitutional Law",
+ "topic": "Constitutional Law",
+ "subtopic": "Individual Rights",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "A state has a statute providing that an unsuccessful candidate in a primary election for a party’s nomination for elected public office may not become a candidate for the same office at the following general election by nominating petition or by write-in votes.\n\nLydia sought the New Hope Party’s nomination for governor in the May primary election. After losing in the primary, Lydia filed nominating petitions containing the required number of signatures to become a candidate for governor in the following general election. Ruth, the chief elections officer of the state, refused to certify Lydia’s petitions solely because of the statute.\n\nLydia then filed suit in federal district court challenging the constitutionality of the statute.\n\nAs a matter of constitutional law, which of the following is the proper burden of persuasion in this suit?",
+ "call": "As a matter of constitutional law, which of the following is the proper burden of persuasion in this suit?",
+ "choices": {
+  "A": "Lydia must demonstrate that the statute is not necessary to achieve a compelling state interest.",
+  "B": "Lydia must demonstrate that the statute is not rationally related to a legitimate state interest.",
+  "C": "The state must demonstrate that the statute is the least restrictive means of achieving a compelling state interest.",
+  "D": "The state must demonstrate that the statute is rationally related to a legitimate state interest."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct.\n\nSilver Key: In a scrutiny burden/tier matrix, match the burden to the tier before debating the merits. Heightened scrutiny places the burden on the government; rational basis places the burden on the challenger.\n\nGold Key: A severe ballot-access restriction that burdens political candidacy and political association is treated as a strict-scrutiny problem for this item. That means the state must carry the burden and show a compelling interest served by the least restrictive means.\n\nChoice C is the only answer that pairs the correct burden holder with the correct scrutiny tier.",
+ "wrongExplanations": {
+  "A": "This answer uses strict-scrutiny language, but puts the burden on Lydia. Silver Key: heightened scrutiny does not make the challenger prove the law is not necessary; the government must justify the restriction. Gold Key: once the ballot-access/political-association trigger moves the item to strict scrutiny, the state carries the burden.",
+  "B": "This answer uses a coherent rational-basis burden structure: the challenger normally attacks rationality. The problem is the tier. The statute burdens political candidacy and association, so rational basis is not the tested frame. Gold Key: the exam trigger is ballot access/political association, not ordinary economic regulation.",
+  "D": "This answer is structurally mismatched and substantively off. Rational basis does not place the burden on the state; if rational basis applied, Lydia would have to attack the law’s rationality. It also selects the wrong tier for the ballot-access trigger."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "challenger + heightened scrutiny is a burden-tier mismatch. Cut as backwards."
+  },
+  {
+   "label": "CUT D",
+   "text": "government + rational basis is a burden-tier mismatch. Cut as backwards."
+  },
+  {
+   "label": "CLASH B vs C",
+   "text": "both are internally coherent burden/tier pairings. B is challenger+rational. C is state+strict. The axis is scrutiny tier."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "ballot access + political association moves this item to strict scrutiny. Pick C."
+  }
+ ],
+ "studentScript": "Grid the answers. Cut impossible burden/tier cells. Use the ballot-access Gold Key. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Challenger + strict/compelling language violates the taught burden-tier matrix.",
+   "lawyer": "Under strict scrutiny, the government bears the burden; the challenger does not have to prove the negative.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "This row is internally coherent, so it survives the hard cuts; the ballot-access Gold Key selects strict scrutiny instead.",
+   "lawyer": "Rational basis is not the tested level of review where the item treats the statute as burdening political association.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "Only C survives the matrix after the ballot-access Gold Key resolves B vs C.",
+   "lawyer": "The official explanation applies strict scrutiny and puts the burden on the state.",
+   "mold": null
+  },
+  "D": {
+   "signal": "Government + rational basis violates the taught burden-tier matrix.",
+   "lawyer": "If rational basis applied, the challenger would bear the burden; in this item rational basis also is the wrong tier.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-BALLOT-ACCESS-01",
+   "statement": "A severe ballot-access restriction that burdens political candidacy or political association moves the item to strict scrutiny; the state carries the compelling-interest / least-restrictive burden.",
+   "trigger": "A state blocks a losing primary candidate from appearing in the general election by petition or write-in.",
+   "unlocks": "B vs C strict-scrutiny tier clash",
+   "authority": "Williams v. Rhodes; Norman v. Reed; Burdick v. Takushi; Storer v. Brown."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-TIER-BURDEN-MATRIX-01",
+   "statement": "In a scrutiny 2×2 matrix, first match burden to tier: heightened scrutiny = government burden; rational basis = challenger burden. Cut burden mismatches before choosing the tier.",
+   "trigger": "Four choices vary only by burden holder and scrutiny language.",
+   "unlocks": "A/D hard cuts and B/C final clash",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Tier × Burden Matrix",
+  "signal": "Choices split between challenger/state and rational/compelling language.",
+  "studentMove": "Make the 2×2 grid before reading the merits.",
+  "tinyRule": "Heightened scrutiny burdens the state; rational basis burdens the challenger.",
+  "trap": "Choosing the strongest-sounding test without checking who bears the burden."
+ }
+}

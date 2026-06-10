@@ -1,0 +1,99 @@
+{
+ "id": "CQ15260",
+ "title": "Creation Chemistry Kit",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Strict Liability and Products Liability",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "Sixteen-year-old Daniel purchased a Creation Chemistry Discovery Kit manufactured by BrightLamp Science Co. Daniel invited his classmate Timothy to help with a science-fair project for their Christian school. Referring to a public-library book on explosives and finding that the chemistry kit contained all of the necessary chemicals, Daniel and Timothy agreed to make a small bomb. During the project, Daniel carelessly knocked a lit alcohol burner into a bowl of chemicals from the kit. The chemicals burst into flames, injuring Timothy.\n\nAlthough the chemistry kit was as safe as possible, and its educational benefits exceeded its risks, the kit did not contain a warning that its contents could be combined to make dangerous explosives.\n\nIn Timothy’s suit against BrightLamp Science Co., based on strict products liability, Timothy will:",
+ "call": "In Timothy’s suit against BrightLamp Science Co., based on strict products liability, Timothy will",
+ "choices": {
+  "A": "Prevail, because the chemistry kit did not contain a warning that its contents could be combined to form dangerous explosives.",
+  "B": "Prevail, because manufacturers of chemistry kits are engaged in an abnormally dangerous activity.",
+  "C": "Not prevail, because Daniel’s negligence was the cause in fact of Timothy’s injury.",
+  "D": "Not prevail, because the chemistry kit was as safe as possible, consistent with its educational purposes, and its benefits exceeded its risks."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct.\n\nGold Key: In a strict products-liability item, first identify the defect lane. A design-defect answer turns on product safety/risk-utility facts; a warning-defect answer turns on whether a warning was required for the product’s intended or reasonably foreseeable use.\n\nSilver Key: This answer array is a lane sorter. A goes to warning defect. B goes to abnormally dangerous activity. C goes to someone else’s negligence. D is the only answer that uses the stem’s built-in design/risk-utility facts: “as safe as possible” and “benefits exceeded risks.”\n\nThe facts say the kit was as safe as possible and that its educational benefits exceeded its risks. Those facts point away from a design defect. Timothy’s injury resulted from using the kit with an outside explosives book to make a bomb, not from using the product as an educational chemistry kit.",
+ "wrongExplanations": {
+  "A": "A is the dominant warning-defect trap. It seizes on the true fact that there was no warning, but it answers the neighboring warning-defect lane instead of the design/risk-utility lane built by the stem. Gold Key: a missing warning does not automatically create strict products liability; the warning must be legally required for the product’s intended or reasonably foreseeable use. Silver Key: do not let the one missing-warning fact outrank the two design facts the stem made ultimate.",
+  "B": "B shifts the case out of product-defect strict liability and into activity-based strict liability. The call is against the manufacturer for a product. It is not a claim that BrightLamp carried on an abnormally dangerous activity that directly harmed Timothy.",
+  "C": "C uses a true fact about Daniel’s carelessness, but the call asks whether the manufacturer is strictly liable for the product. Daniel’s negligence may matter to defenses or damages in some settings, but it is not the case-in-chief answer to whether the product was defectively designed."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not a pure structural cut. A uses a true no-warning fact. It becomes wrong only after the product-defect lane Gold Key. Label: anchor_assisted, NOT_RESPONSIVE, bait_doctrine."
+  },
+  {
+   "label": "CUT B",
+   "text": "B moves from product defect to activity strict liability. With the strict-liability lane anchor, it is a wrong-frame answer. Label: anchor_assisted, NOT_RESPONSIVE, misfit."
+  },
+  {
+   "label": "CUT C",
+   "text": "C answers with someone else’s negligence. It does not answer whether the product was defective. Label: anchor_assisted, NOT_RESPONSIVE, wrong_element."
+  },
+  {
+   "label": "CALL D",
+   "text": "After the lane sort, D is the residual. It uses the facts the stem made decisive: safe design and benefits greater than risks."
+  }
+ ],
+ "studentScript": "This is a products case against the manufacturer. A is warning lane. B is activity lane. C is Daniel’s negligence. D is the product design/risk-utility lane and uses the decisive safety/benefit facts. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It uses the true no-warning fact, but it does not use the safety/benefit facts that the stem made decisive.",
+   "lawyer": "A warning-defect theory is separate from a design-defect/risk-utility theory. The missing warning does not automatically defeat the manufacturer where the product was safe as designed and the injury followed misuse through an outside explosives source.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "It changes the target from a product-defect case against a manufacturer to an abnormally-dangerous-activity case.",
+   "lawyer": "Abnormally dangerous activity is a distinct strict-liability doctrine. This call is about a product manufactured and sold by BrightLamp, not an activity carried on by BrightLamp that directly harmed Timothy.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "It proves Daniel was careless, but the call asks whether BrightLamp’s product was defective.",
+   "lawyer": "Daniel’s negligence is not the case-in-chief reason the strict products claim fails. The manufacturer wins because the design/risk-utility defect theory fails on these facts.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "It uses the exact safety and utility facts the stem highlighted.",
+   "lawyer": "Under the design-defect/risk-utility frame supplied by the original explanation, the product was not defective because it was as safe as possible and its educational benefits outweighed its risks.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-PRODUCT-LANE-01",
+   "statement": "In a strict products-liability case, identify the product-defect lane first: design defect, warning defect, or manufacturing defect. A warning fact does not automatically beat a design/risk-utility fact.",
+   "trigger": "The stem gives both a no-warning fact and facts that the product was as safe as possible with benefits exceeding risks.",
+   "unlocks": "The warning-defect trap in choice A and the design/risk-utility residual in D.",
+   "authority": "Restatement (Third) of Torts: Products Liability § 2(b)-(c); official row explanation."
+  },
+  {
+   "id": "GK-TORTS-ACTIVITY-VS-PRODUCT-01",
+   "statement": "Abnormally dangerous activity strict liability is not the same lane as strict products liability. A product seller is analyzed through product defect, not through the activity label unless the defendant’s activity is the tort claim.",
+   "trigger": "An answer says a manufacturer is liable because manufacturing or selling the product is an abnormally dangerous activity.",
+   "unlocks": "The abnormally-dangerous-activity trap in choice B.",
+   "authority": "Restatement (Second) of Torts §§ 519-520; Cornell Wex abnormally dangerous activity."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-PRODUCT-LANE-SORT-01",
+   "statement": "When a products-liability array gives warning, activity-liability, third-party-negligence, and safety/utility answers, treat it as a lane sorter before choosing.",
+   "trigger": "Four answers each use a different strict-liability path.",
+   "unlocks": "Keeps the student from picking the first true fact rather than the responsive lane.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Product-defect lane before product-defect result",
+  "signal": "The stem gives no-warning facts plus design/risk-utility facts.",
+  "studentMove": "Name the lane: warning defect, design defect, activity liability, or third-party negligence.",
+  "tinyRule": "The answer must match the product-defect lane the stem makes decisive.",
+  "trap": "Picking the true no-warning fact without asking whether warning is the governing defect lane."
+ }
+}

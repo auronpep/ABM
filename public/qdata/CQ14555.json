@@ -1,0 +1,95 @@
+{
+ "id": "CQ14555",
+ "title": "Private Bookstore Plea",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Constitutional Protection of Accused Persons",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX Q# 14555 — Christian variation: 14555_private_bookstore_plea\n\nDaniel was indicted in state court in January 2025 for the robbery and murder of Stephen, which occurred in December 2022 during the closing shift at Lydia’s private Christian bookstore. Daniel retained Mary as counsel. Mary filed a motion to dismiss on the ground that Daniel had been prejudiced by the 25-month delay in obtaining the indictment.\n\nThereafter, Daniel, with Mary present, appeared in court for arraignment and stated that he wished to plead guilty. The presiding judge, Esther, asked Daniel whether he understood the nature of the charges, possible defenses, and maximum allowable sentences. Daniel replied that he did, and Judge Esther reviewed all of those matters with him. Judge Esther then asked Daniel whether he understood that he did not have to plead guilty. Daniel responded that he knew that. The judge accepted the plea and sentenced Daniel to 25 years.\n\nSix months later, Daniel filed a motion to set aside his guilty plea on each of the following grounds.\n\nWhich ground provides a constitutional basis for relief?",
+ "call": "Which ground provides a constitutional basis for relief from the guilty plea?",
+ "choices": {
+  "A": "The judge did not rule on Daniel’s motion to dismiss before accepting the guilty plea.",
+  "B": "The judge did not determine that Daniel had robbed and killed Stephen.",
+  "C": "The judge did not determine whether Daniel understood that he had a right to a jury trial.",
+  "D": "The judge did not determine whether the prosecutor’s file contained any undisclosed exculpatory material."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: A guilty plea is constitutionally valid only if the record shows the defendant knowingly and voluntarily waived core trial rights, including the right to a jury trial. Here, the judge reviewed the charges, possible defenses, and maximum sentences, and asked whether Daniel knew he did not have to plead guilty. But the judge did not determine whether Daniel understood that he had a right to a jury trial.\n\nSilver Key: When the call asks which ground sets aside a guilty plea, lock onto the plea colloquy. The answer must attack the knowing-and-voluntary waiver itself, not an earlier motion, factual guilt, or the prosecutor’s file.",
+ "wrongExplanations": {
+  "A": "The pending motion to dismiss is the dominant trap. It sounds procedural and important, especially because the delay is stated in the facts. But the call asks for a constitutional basis to set aside the guilty plea. A prior unresolved motion does not by itself show that Daniel’s plea was not knowing and voluntary. Silver Key: stay inside the plea colloquy.",
+  "B": "The judge was not constitutionally required to make an independent finding that Daniel committed the robbery and murder before accepting an ordinary guilty plea. This answer points to factual guilt, not to whether Daniel understood the trial right he was giving up. Gold Key: the constitutional plea defect is missing waiver understanding, not a separate judicial fact-finding of guilt.",
+  "D": "The prosecutor-file answer points to discovery and trial fairness. That is the wrong door for this call. The question is not asking whether there was an actual Brady violation or whether a later suppression claim could ever matter. It asks whether the judge’s acceptance of the plea was constitutionally defective. Silver Key: cut file/discovery answers unless they connect to the plea’s knowing-and-voluntary character."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A is not cut as false. It is a plausible procedural trap. It survives until call-focus is applied.\nB is not cut as visibly false without the Gold Key. It is factual-guilt bait.\nD is not cut as visibly false without the Gold Key. It is discovery-file bait.\nC is the only answer aimed directly at the plea waiver."
+  },
+  {
+   "label": "CLASH",
+   "text": "The array is a four-door plea-defect array:\n\n* A = pre-plea motion door.\n* B = guilt/factual-basis door.\n* C = waiver-right door.\n* D = discovery-file door.\n\nThe axis is: Does the ground attack the knowing-and-voluntary waiver in the plea colloquy?"
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Key. A guilty plea constitutionally turns on knowing and voluntary waiver of core trial rights. The omitted jury-trial understanding is the plea-colloquy defect. Residual answer: C."
+  }
+ ],
+ "studentScript": "This is a guilty-plea set-aside question. I need the answer that attacks the plea waiver. A is pretrial motion. B is factual guilt. D is prosecutor file. C is the missing jury-trial waiver. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answer points backward to the unresolved motion, not to the plea colloquy.",
+   "lawyer": "A voluntary and intelligent guilty plea generally breaks the chain of earlier proceedings; the failure to rule first on a pre-plea motion is not itself the Boykin defect.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This answer asks whether the judge determined what happened, not whether Daniel understood the rights he waived.",
+   "lawyer": "The ordinary constitutional plea inquiry is knowing and voluntary waiver; a separate judicial determination of factual guilt is not the same constitutional requirement in this state-court guilty-plea item.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This is the only answer that attacks the plea waiver itself.",
+   "lawyer": "Boykin identifies jury trial as a constitutional right waived by a guilty plea and requires the record to show a voluntary, understanding waiver.",
+   "mold": null
+  },
+  "D": {
+   "signal": "This answer points to prosecutor-file discovery, not to the judge’s plea-waiver colloquy.",
+   "lawyer": "The judge need not inspect the prosecutor’s file for undisclosed exculpatory material as part of accepting the plea; a separate proven suppression claim would be a different question.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-GUILTY-PLEA-WAIVER-01",
+   "statement": "A guilty plea must be knowing and voluntary; the record must show the defendant understood the core trial rights waived, including jury trial.",
+   "trigger": "plea colloquy covers charges/defenses/sentences but omits jury-trial understanding",
+   "unlocks": "The jury-trial choice is the constitutional plea defect.",
+   "authority": "Boykin v. Alabama, 395 U.S. 238 (1969)"
+  },
+  {
+   "id": "GK-CRIMINAL-GUILTY-PLEA-WAIVER-02",
+   "statement": "In a plea-withdrawal call, do not treat every unresolved pretrial, factual-basis, or discovery issue as a constitutional defect unless it makes the plea itself unknowing or involuntary.",
+   "trigger": "post-plea motion lists several grounds for relief",
+   "unlocks": "A, B, and D traps",
+   "authority": "Tollett v. Henderson, 411 U.S. 258 (1973); North Carolina v. Alford, 400 U.S. 25 (1970); United States v. Ruiz, 536 U.S. 622 (2002)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-PLEA-CALL-FOCUS-01",
+   "statement": "For a motion to set aside a guilty plea, sort each answer by whether it attacks the plea waiver itself or a neighboring issue.",
+   "trigger": "post-plea challenge to guilty plea",
+   "unlocks": "A/B/D neighboring-issue traps",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Plea relief: waiver door first",
+  "signal": "The stem gives a guilty plea and a later motion to set it aside.",
+  "studentMove": "Ask which answer attacks the knowing and voluntary waiver.",
+  "tinyRule": "Missing jury-trial understanding attacks the plea; earlier motions, factual guilt, and prosecutor files are neighboring doors.",
+  "trap": "Choosing the unresolved pretrial motion because it appears first and has a concrete delay fact."
+ }
+}

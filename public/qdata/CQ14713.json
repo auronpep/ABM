@@ -1,0 +1,95 @@
+{
+ "id": "CQ14713",
+ "title": "Mission Key Party",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Question ID: 14713_mission_key_party\nTransformed from: 14713\n\nDaniel owned a small house. Before leaving for a two-week mission trip, Daniel told his neighbor Barnabas that he would be away and asked Barnabas to keep an eye on the house. Barnabas agreed, and Daniel gave Barnabas a key to use to enter the house. Barnabas decided to host a fellowship party in Daniel’s house. He invited several friends. One friend, Timothy, a pickpocket, went into Daniel’s bedroom, took several of Daniel’s rings, and put them in his pocket.\n\nWhich of the following is true?",
+ "call": "Which of the following is true?",
+ "choices": {
+  "A": "Barnabas and Timothy are guilty of burglary.",
+  "B": "Barnabas is guilty of burglary, and Timothy is guilty of larceny.",
+  "C": "Barnabas is guilty of trespass, and Timothy is guilty of larceny.",
+  "D": "Timothy is guilty of larceny, and Barnabas is not guilty of any crime."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Timothy took Daniel’s rings and put them in his pocket. That is the theft-side answer: Timothy is guilty of larceny.\n\nBarnabas is not guilty of burglary because the question does not give the burglary trigger for him: entry with theft-or-felony intent. Barnabas also is not guilty of trespass on this item because Daniel gave him a key and permission to enter the house.\n\nGold Key: Burglary needs the theft-or-felony intent at entry. A theft that happens after entry does not automatically make the entry burglary.\n\nGold Key: When the owner gives a person a key and permission to enter, do not turn the person’s poor use of that permission into criminal trespass unless the facts show unauthorized entry or an express limit that was crossed.\n\nSilver Key: Read the answer set as a two-actor crime ladder. Timothy’s larceny does not automatically climb Barnabas into burglary or trespass.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Too much crime. Both burglary claims require entry-intent facts the stem does not provide."
+  },
+  {
+   "label": "CUT B",
+   "text": "Half-right. Timothy larceny is right; Barnabas burglary is an unsupported upgrade."
+  },
+  {
+   "label": "CLASH C/D",
+   "text": "Both agree Timothy committed larceny. The only fight is Barnabas: trespass or no crime."
+  },
+  {
+   "label": "CALL",
+   "text": "Use the permission/key anchor. Daniel gave Barnabas a key and permission to enter. D survives."
+  }
+ ],
+ "studentScript": "Timothy took rings, so larceny. Burglary needs entry intent, not just later theft. Barnabas had key permission, so do not call him trespasser. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer assigns the highest crime label to both actors even though the stem gives no entry-intent fact for either.",
+   "lawyer": "Burglary requires the required intent at entry. Barnabas had permission to enter and no theft/felony intent stated. Timothy committed a taking, but the facts do not establish entry with theft intent.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "One actor is correctly labeled; the other is upgraded without the needed trigger fact.",
+   "lawyer": "Timothy’s taking supports larceny. Barnabas’s permitted entry and lack of theft/felony intent defeat burglary.",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "C and D agree on Timothy. The only remaining fight is Barnabas: trespass or no crime.",
+   "lawyer": "The official explanation treats Barnabas’s permission/key as defeating trespass on these facts.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "This is the only choice that keeps the theft on Timothy and does not over-extend Barnabas’s liability.",
+   "lawyer": "Timothy unlawfully took Daniel’s rings with intent to deprive. Barnabas had permission to enter and is not criminally responsible for Timothy’s theft.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-ENTRY-INTENT-01",
+   "statement": "Burglary needs the theft-or-felony intent at entry. A theft after entry does not automatically make the entry burglary.",
+   "trigger": "Someone enters a place, and a theft happens later inside.",
+   "unlocks": "A and B burglary over-upgrades.",
+   "authority": "Common-law burglary authority; lawyer-confirmation only."
+  },
+  {
+   "id": "GK-CRIM-CONSENT-TRESPASS-01",
+   "statement": "When the owner gives a person a key and permission to enter, do not call that person a trespasser unless the facts show unauthorized entry or an express limit crossed.",
+   "trigger": "Owner gives key/permission, then the person uses the house badly.",
+   "unlocks": "C dominant trespass trap.",
+   "authority": "Original BarMatrix official explanation; lawyer-confirmation only."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-ACTOR-LADDER-01",
+   "statement": "Separate the actors before choosing the crime label. Timothy’s theft does not automatically climb Barnabas into burglary or trespass.",
+   "trigger": "Choices assign different crime labels to two different people.",
+   "unlocks": "Two-actor over-criminalization ladder.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not let one actor’s theft infect the other actor.",
+  "signal": "Answer choices pair two actors with escalating crime labels.",
+  "studentMove": "Fix one actor at a time. Then ask what fact proves each crime label.",
+  "tinyRule": "Burglary is entry-intent; larceny is taking; trespass is unauthorized entry.",
+  "trap": "Assuming a bad house-sitter is automatically a trespasser."
+ }
+}

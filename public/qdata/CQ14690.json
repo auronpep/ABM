@@ -1,0 +1,88 @@
+{
+ "id": "CQ14690",
+ "title": "Bible Study Protected Victim",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Inchoate Crimes",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "BARMATRIX QID: 14690_bible_study_protected_victim\nTransformed from: 14690\n\nPeter, an 18-year-old, and his 14-year-old girlfriend Ruth met through a neighborhood Bible-study group. They made plans to meet in Peter’s apartment to have sexual intercourse, and they did so. Ruth later told her mother about the incident. Peter was charged with statutory rape and conspiracy to commit statutory rape. In the jurisdiction, the age of consent is 15, and the law of conspiracy is the same as at common law. Peter was convicted of both charges and given consecutive sentences. On appeal, Peter contends that his conspiracy conviction should be reversed. That conviction should be",
+ "call": "That conviction should be",
+ "choices": {
+  "A": "affirmed, because Peter agreed with Ruth to commit the crime.",
+  "B": "reversed, because Ruth could not be a conspirator to this crime.",
+  "C": "reversed, because the crime is one that can only be committed by agreement and thus Wharton’s Rule bars conspiracy liability.",
+  "D": "reversed, because one cannot conspire with a person too young to consent."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct.\n\nGold Key: Common-law conspiracy needs a real guilty agreement, and a protected victim is not that guilty partner. In statutory rape, the underage participant is treated as the protected person, not as a coconspirator.\n\nSilver Key: The appeal attacks only the conspiracy conviction. Sort the three reversal answers by the reason they give: protected victim, Wharton’s Rule, or generic minor incapacity. Only the protected-victim route answers this item.\n\nPeter can be guilty of statutory rape, but the conspiracy conviction depends on whether Ruth can be the other conspirator. Because Ruth is the protected person in the statutory rape offense, she cannot be treated as the guilty conspiracy partner for that offense. With Ruth as the only alleged coconspirator, Peter’s conspiracy conviction should be reversed.",
+ "wrongExplanations": {
+  "A": "A proves only the easy part: Peter and Ruth agreed to meet. The call is not “was there an agreement in ordinary language?” It is whether the conspiracy conviction can stand. Gold Key: a protected victim is not the guilty partner needed for common-law conspiracy.",
+  "C": "C chooses the most lawyerly wrong route. Wharton’s Rule is about crimes that necessarily require voluntary concerted criminal participation by two guilty participants. This item is not using that route. Silver Key: do not let three reversal choices collapse together. C reverses for the wrong reason.",
+  "D": "D overclaims. It says one cannot conspire with a person too young to consent. That is too broad. The issue is not that minors can never conspire. The issue is that Ruth is the protected victim of this crime."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "D is an overclaim. “One cannot conspire with a person too young to consent” says too much."
+  },
+  {
+   "label": "CLASH",
+   "text": "A, B, and C all appear to speak to conspiracy. They fight over the reason the conspiracy conviction stands or falls:\n\n* A: agreement alone is enough.\n* B: Ruth cannot be a conspirator to this offense.\n* C: Wharton’s Rule bars the conspiracy."
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Key. The deciding route is protected-victim conspiracy, not generic agreement, Wharton’s Rule, or minor incapacity. Residual: B."
+  }
+ ],
+ "studentScript": "Only the conspiracy count is on appeal. A gives agreement only. C is Wharton’s Rule, the wrong route. D overclaims about minors. Gold Key: protected victim is not the guilty conspiracy partner. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A proves an agreement fact, but the call turns on whether Ruth can be the guilty conspiracy partner.",
+   "lawyer": "Agreement alone does not sustain common-law conspiracy when the only alleged partner is the protected victim of the target offense.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "B answers the exact appeal: Ruth’s status prevents her from being the coconspirator for this offense.",
+   "lawyer": "Under the Gebardi protected-victim principle, the statutory rape victim is not punished as a coconspirator; with no other conspirator, the conspiracy conviction falls.",
+   "mold": null
+  },
+  "C": {
+   "signal": "C is a real conspiracy doctrine route, but the item is not decided by Wharton’s Rule.",
+   "lawyer": "Wharton’s Rule is a narrow merger-like doctrine for offenses requiring concerted criminal participation; statutory rape does not require the minor victim’s voluntary guilty participation.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "D says too much: it turns Ruth’s protected-victim status into a broad rule that no one can conspire with a minor.",
+   "lawyer": "A minor can be a conspirator in some crimes; the defect here is protected-victim status for statutory rape, not generic age-based incapacity.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-PROTECTED-VICTIM-CONSPIRACY-01",
+   "statement": "Common-law conspiracy needs a real guilty agreement, and a protected victim is not that guilty partner. In statutory rape, the underage participant is treated as the protected person, not as a coconspirator; do not route the issue through Wharton’s Rule or generic minor incapacity.",
+   "trigger": "Only alleged conspiracy partner is the person the target offense is designed to protect.",
+   "unlocks": "The protected-victim reason for reversing the conspiracy conviction and the Wharton/minor-capacity traps.",
+   "authority": "Gebardi v. United States, 287 U.S. 112 (1932); Iannelli v. United States, 420 U.S. 770 (1975)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-REASON-SORT-CONSPIRACY-01",
+   "statement": "When the appeal attacks only the conspiracy count, sort the answer choices by the reason they give for affirming or reversing. Do not let three reversal choices blur together: protected victim, Wharton’s Rule, and minor incapacity are different routes.",
+   "trigger": "One affirmance answer and three reversal answers with different legal reasons.",
+   "unlocks": "Three reversal reasons that look similar on first read.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Protected victim is not the conspiracy partner",
+  "signal": "The only alleged coconspirator is the person the target offense protects.",
+  "studentMove": "Do not stop at agreement. Ask whether that person can be the guilty partner for this offense.",
+  "tinyRule": "Protected victim defeats conspiracy with that victim as the only partner.",
+  "trap": "Wharton’s Rule and generic minor incapacity feel more familiar but answer the wrong route."
+ }
+}

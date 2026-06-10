@@ -1,0 +1,95 @@
+{
+ "id": "CQ14664",
+ "title": "Bible Study Gas Station",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX Q# 14664 — Christian/law-school variation\n\nStephen owned a small corner market and gas station near a law school and lived in the apartment above the store. One night after a Bible study, Barnabas demanded that Stephen sell him a six-pack of beer after the legal sales hour. Stephen refused, saying that he could not violate state law. Barnabas became enraged and deliberately drove his car into one of the gasoline pumps, snapping it off its base. The crash caused an explosion, and fire shot from the underground gasoline tank into the building. The building burned to the ground, and Stephen was killed.\n\nIn a common-law jurisdiction, if Barnabas is charged with murder and arson, he should be",
+ "call": "In a common-law jurisdiction, if Barnabas is charged with murder and arson, he should be",
+ "choices": {
+  "A": "convicted of both offenses.",
+  "B": "convicted of involuntary manslaughter and acquitted of arson.",
+  "C": "convicted of arson and involuntary manslaughter.",
+  "D": "convicted of murder and acquitted of arson."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Barnabas deliberately rammed a gasoline pump, causing an explosion and fire that burned the building where Stephen lived and killed him.\n\nGold Key: A common-law arson + death fact pattern can support both arson and murder: arson is the malicious burning of a dwelling, and a death caused during that felony can supply felony murder; independently, an intentional act showing extreme reckless disregard for human life can supply murder malice.\n\nSilver Key: Read the answer array as a two-charge bundle. Do not pick a “half-right” answer that solves only the homicide column or only the arson column.\n\nThe original row states the same result: the official answer is A, and the official explanation says the defendant may be convicted of murder with malice aforethought or felony murder with arson as the underlying felony, and also of arson because the act foreseeably ignited gasoline and burned the building.",
+ "wrongExplanations": {
+  "B": "It is the dominant trap from the original item: it treats the killing as only involuntary manslaughter and also acquits arson. That undercalls the violent-fire fact pattern twice. Gold Key: reckless conduct that creates an obvious extreme risk to human life can be murder-level malice, and maliciously causing a fire that burns a dwelling is arson. Silver Key: this is a two-charge bundle; an answer that downgrades both columns is not the survivor.",
+  "C": "It gets the arson column right but downgrades the homicide column to involuntary manslaughter. That is the half-right trap. The fire was not a mere accident after ordinary negligence; Barnabas deliberately crashed into a gasoline pump, causing a deadly fire.",
+  "D": "It gets the murder column right but acquits arson. That is the replacement half-right trap. The building burned because Barnabas deliberately caused the gasoline-pump explosion. The answer fails the arson column."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "B and C are half-right undercharge answers. B misses both the arson and murder level. C gets arson but misses murder. D gets murder but misses arson. None is a clean student-accessible “false on grammar” cut; all require the Gold Key."
+  },
+  {
+   "label": "CLASH",
+   "text": "The array fights on two columns: homicide level and arson/no arson. The charged-offense bundle matters. A is the only answer that satisfies both columns."
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Key. A deliberate gasoline-pump fire that burns a dwelling and kills someone is a both-offenses fact pattern."
+  }
+ ],
+ "studentScript": "Two charges. A is the only answer clearing both. Gold Key: fire-dwelling-death means arson plus murder.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call asks for the result on two charges. A is the only answer that gives both murder and arson. The Gold Keys make both columns fit the facts.\n",
+   "lawyer": "Correct under official explanation and external authority: common-law arson covers malicious burning of a dwelling; murder is supported by extreme reckless malice and/or felony murder with arson as the predicate.\n",
+   "mold": null
+  },
+  "B": {
+   "signal": "B sees a death but calls it only involuntary manslaughter and also drops arson. It fails the offense-bundle read once the Gold Keys are applied.\n",
+   "lawyer": "Incorrect. The conduct was not merely negligent, and the fire burned a dwelling. The official explanation rejects B for both reasons.\n",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "C clears the fire column but downgrades the killing to involuntary manslaughter. The Gold Key pushes the homicide column to murder.\n",
+   "lawyer": "Incorrect. The official explanation says the defendant committed murder, not involuntary manslaughter.\n",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "D clears the homicide column but drops arson. The fire facts and Gold Key make that column fail.\n",
+   "lawyer": "Incorrect. The malicious fire burned Stephen's dwelling, so the arson acquittal is wrong.\n",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-FIRE-DEATH-01",
+   "statement": "Common-law arson is the malicious burning of a dwelling; if that arson causes death, the same fact pattern can also supply felony murder.\n",
+   "trigger": "Deliberate fire or explosion burns a dwelling and a person dies.",
+   "unlocks": "The arson/no-arson and felony-murder trap.",
+   "authority": "Cornell Wex arson; Cornell Wex felony murder rule; official BARMATRIX explanation."
+  },
+  {
+   "id": "GK-CRIM-MALIGNANT-RISK-01",
+   "statement": "Murder malice is not limited to an intent to kill; extreme reckless disregard for human life can make an unintended killing murder rather than involuntary manslaughter.\n",
+   "trigger": "Defendant deliberately creates an obvious deadly risk, such as crashing into a gas pump attached to an occupied building.",
+   "unlocks": "The murder vs involuntary manslaughter trap.",
+   "authority": "Cornell Wex murder entry; official BARMATRIX explanation."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-OFFENSE-BUNDLE-01",
+   "statement": "When the call charges two offenses, read the choices as a two-column bundle. A half-right answer that solves only one column is still wrong.\n",
+   "trigger": "Choices combine two charges in every option.",
+   "unlocks": "Homicide level x arson status matrix.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Fire-death offense bundle",
+  "signal": "A deliberate gasoline-fire fact pattern plus two charged offenses.",
+  "studentMove": "Check arson column and homicide column separately.",
+  "tinyRule": "Dwelling fire + death can be both arson and murder.",
+  "trap": "Picking manslaughter because there was no stated intent to kill."
+ }
+}

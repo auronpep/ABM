@@ -1,0 +1,99 @@
+{
+ "id": "CQ14687",
+ "title": "Bethany Books Van",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "Peter worked for Bethany Books, a private Christian publishing company. His manager, Mary, told him on Friday that he would be fired if his editing work did not improve. Peter decided to kill Mary.\n\nPeter knew Mary was scheduled to take a company van to a Monday morning book fair. On Sunday morning, Peter entered the company’s parking garage and put a bomb in the van Mary usually drove. The bomb was wired to explode when the engine started. Peter then drove out of town.\n\nAt 5 a.m. Monday, after driving all night, Peter was overcome with remorse. He called Barnabas, the security guard on duty, and told him about the bomb. Barnabas said he would handle it. An hour later, Barnabas put a note on Mary’s desk about the call. He looked at the van but could not see any bomb. He printed a sign saying, “DO NOT USE THIS VAN,” put it on the windshield, and went to call the police.\n\nBefore the police arrived, Lydia, a company vice president, got into the van and started the engine. The bomb exploded, killing Lydia.\n\nThe jurisdiction defines first-degree murder as any homicide committed with premeditation and deliberation or any murder committed in the commission of a common-law felony. Second-degree murder is all other murder at common law. Manslaughter is defined by the common law.\n\nPeter is guilty of",
+ "call": "Peter is guilty of",
+ "choices": {
+  "A": "first-degree murder, because, with premeditation and deliberation, he killed whoever started the van.",
+  "B": "second-degree murder, because he had no intention of killing Lydia.",
+  "C": "manslaughter, because Peter had abandoned his plan before Lydia started the van.",
+  "D": "only attempted murder of Mary, because Barnabas's failure to keep anyone from using the van was a superseding cause."
+ },
+ "key": "A",
+ "dominantTrap": "B",
+ "rightExplanation": "A is correct. Peter acted with premeditation and deliberation when he planted the engine-triggered bomb. The fact that Lydia, not Mary, started the van does not reduce the homicide.\n\nGold Key: When a defendant intends to kill one person and the lethal act kills a different person, the intent follows the completed killing. The wrong victim does not reduce murder to second-degree murder or manslaughter.\n\nSilver Key: Lock the earlier lethal setup before reading the later cleanup facts. Remorse, warning, and a guard’s partial effort are the bait facts. The core act is still: planned killing device → unintended victim dies.",
+ "wrongExplanations": {
+  "B": "It is the dominant trap. It focuses on the fact that Peter did not intend to kill Lydia. Gold Key: Transferred intent makes that fact non-dispositive in a completed killing. If Mary had died from the same bomb, the answer would be first-degree murder; Lydia’s identity does not lower the degree.",
+  "C": "It points to Peter’s later remorse. That is emotionally attractive, but it does not answer the homicide call once the bomb he planted actually kills someone. The answer uses the wrong timing point: it looks at Peter’s mind at the explosion, not his mind when he set the lethal mechanism in motion.",
+  "D": "It tries to make Barnabas the legal cutoff. Barnabas’s imperfect warning effort does not become the whole cause of death. The danger Peter created is still operating when Lydia starts the van."
+ },
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "B answers the wrong fact. “No intent to kill Lydia” sounds decisive, but the call is homicide level after a completed killing. With the Gold Key, B breaks NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT C",
+   "text": "C answers the later-remorse fact. The question turns on the lethal act Peter set in motion, not only his state of mind at the explosion. C breaks NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT D",
+   "text": "D turns a contributing guard failure into a complete superseding cause. The facts do not show an extraordinary cutoff. D breaks NOT_TRUE."
+  },
+  {
+   "label": "CALL A",
+   "text": "The anchor resolves the residue. Planned killing device + unintended actual victim = transferred-intent first-degree murder."
+  }
+ ],
+ "studentScript": "Planned bomb first. Wrong victim does not downgrade. Later remorse does not downgrade. Guard failure does not supersede. Pick first-degree murder.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Only A accounts for the planned lethal setup and the completed death.",
+   "lawyer": "Transferred intent supplies the victim-identity link; the stem supplies premeditation and deliberation.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It proves Peter did not target Lydia, but the call asks the homicide level after Lydia died.",
+   "lawyer": "Transferred intent makes lack of intent toward Lydia non-dispositive for completed murder.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "It focuses on Peter's later repentance, not the earlier lethal act that caused death.",
+   "lawyer": "Later remorse after setting the lethal mechanism in motion does not reduce the completed homicide to manslaughter.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "It treats Barnabas's failure as a complete cutoff.",
+   "lawyer": "Ordinary failed intervention does not supersede Peter's causal responsibility for the bombing death.",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-TRANSFERRED-INTENT-01",
+   "statement": "For a completed homicide, if the defendant acts with intent to kill one person and the act kills a different person, the intent follows the actual killing.",
+   "trigger": "intended victim differs from actual victim",
+   "unlocks": "wrong-victim second-degree trap",
+   "authority": "People v. Bland; CALCRIM No. 562"
+  },
+  {
+   "id": "GK-CRIMINAL-INTERVENING-CAUSE-01",
+   "statement": "A later actor's ordinary failure to prevent the danger usually does not cut off causation; a cutoff needs an extraordinary or unforeseeable break.",
+   "trigger": "security guard, rescuer, or third party fails to stop the danger",
+   "unlocks": "superseding-cause attempt-only trap",
+   "authority": "NY Criminal Jury Instructions causation principle"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-VAN-BOMB-ARRAY-01",
+   "statement": "In a homicide ladder with wrong-victim, later-remorse, and intervening-actor downgrades, lock the original lethal setup first.",
+   "trigger": "planned lethal device, later warning, unintended victim dies",
+   "unlocks": "the three downgrade-route distractors",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not let cleanup facts downgrade the lethal setup",
+  "signal": "A planned killing device is set; later facts invite second-degree, manslaughter, or attempt-only.",
+  "studentMove": "Name the original lethal act, then test whether the later fact actually cuts liability.",
+  "tinyRule": "Wrong victim, later remorse, and ordinary failed intervention are downgrade traps unless a real cutoff is supplied.",
+  "trap": "Choosing B because the actual victim was not the intended victim."
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "id": "CQ14586",
+ "title": "Pastor Journal",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Fifth Amendment Privilege Against Self-Incrimination",
+ "difficulty": 4,
+ "tension": null,
+ "stem": "Barnabas, an associate pastor at a large community church, is suspected by a federal grand jury of conspiring with an outside contractor to misappropriate international mission funds. During its investigation, the grand jury discovers that Barnabas personally maintains a private, handwritten prayer journal in which he allegedly detailed the dates and allocations of the disputed offshore wire transfers.\n\nThe grand jury issues a valid subpoena duces tecum ordering Barnabas to turn over the physical journal. The subpoena explicitly states that the grand jury requires only the physical production of the journal itself and does not require Barnabas to provide oral testimony, sign any affidavits, or speak a single word. Barnabas refuses to surrender the journal, formally asserting his Fifth Amendment privilege against self-incrimination.\n\nUnder what circumstances, if any, may the grand jury compel production of the private journal over Barnabas’s assertion of his Fifth Amendment privilege?",
+ "call": "Under what circumstances, if any, may the grand jury compel production of the private journal over Barnabas’s assertion of his Fifth Amendment privilege?",
+ "choices": {
+  "A": "It may compel production without granting immunity, because Barnabas was not compelled by the government to write the entries in the journal.",
+  "B": "It may compel production only if Barnabas is granted use and derivative-use immunity regarding the act of production.",
+  "C": "It may compel production only if Barnabas is granted transactional immunity regarding the underlying conspiracy.",
+  "D": "It may not compel production of an intimate, private religious journal under any circumstances."
+ },
+ "key": "B",
+ "dominantTrap": "A",
+ "rightExplanation": "B is correct. The Fifth Amendment protects individuals from being compelled by the state to provide testimonial communications that are self-incriminating. Because Barnabas voluntarily wrote his prayer journal without state coercion, the contents of the journal are not protected by the Fifth Amendment.\n\nHowever, Gold Key: GK-CRIMINAL-ACTOFPROD-01 dictates that the physical act of handing over the item under a subpoena (the act of production) has independent testimonial value. By turning over the journal, Barnabas is implicitly testifying that the journal exists, is in his possession, and is the authentic document described in the subpoena. Because this act of production is compelled and incriminating, the government must neutralize the privilege. Granting use and derivative-use immunity for the act of production fulfills the constitutional requirement, allowing the state to compel the physical transfer.",
+ "wrongExplanations": {
+  "A": "This choice represents the dominant trap (37%). While it is legally true that the government did not compel Barnabas to create the journal, this option fails to address the independent testimonial value of the physical delivery. Under Gold Key: GK-CRIMINAL-ACTOFPROD-01, the act of production itself acknowledges custody and authenticity. The state cannot compel this action without providing immunity.\n*.",
+  "C": "Transactional immunity (complete immunity from prosecution for the underlying conspiracy) offers broader protection than the Constitution demands. Use and derivative-use immunity is fully sufficient to override the privilege and compel production.\n*.",
+  "D": "Despite the intimate or religious nature of a personal diary, there is no absolute zone of substantive privacy under the Fifth Amendment that shields personal papers from a grand jury subpoena when self-incrimination concerns are completely cured via immunity."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "Choice D is a structural failure because of its absolute overclaim (under any circumstances). Choice C is an overclaim regarding scope, demanding an excessive remedy (transactional immunity) when a narrower constitutional alternative exists."
+  },
+  {
+   "label": "CLASH",
+   "text": "Choices A and B survive the initial cut. They clash on a single doctrinal axis: Does the voluntary creation of a text eliminate the need for immunity when forcing its physical delivery?"
+  },
+  {
+   "label": "CALL",
+   "text": "Apply Gold Key: GK-CRIMINAL-ACTOFPROD-01. The act of delivery is an independent testimonial communication. Because the act itself provides authentication, the state must offer immunity before compelling it. This eliminates A and leaves B as the true and responsive residual.\n\n---"
+  }
+ ],
+ "studentScript": "\"Isolate the call: 'Under what circumstances can the grand jury compel production?' Look at the choices. Choice D says 'not under any circumstances.' That's an immediate structural red flag—absolute sweeps rarely survive constitutional balancing, especially when wrapped in emotional narrative terms like 'intimate, private religious journal.' Cut D. Choice C says 'only if granted transactional immunity.' That's an extreme overclaim of range; the government doesn't have to throw away an entire criminal case just to look at a book. Cut C. Now look at the clash between A and B. A says no immunity is needed because he wrote it voluntarily. B says use immunity is needed for the act of production. Drop the anchor: physical delivery is a separate act that authenticates the item. That's testimonial. You can't force someone to do that without a constitutional trade-off. Choice A ignores this entirely; Choice B hits it perfectly. Select B.\"",
+ "recoveryPaths": [
+  {
+   "choice": "A",
+   "text": "You fell for the classic \"creation vs. production\" split. To recover, remember that the Fifth Amendment protects two separate things: your thoughts (words) and your physical actions (turning things over). If the state forces your hands to move to deliver evidence that authenticates itself, they are forcing a testimonial act."
+  },
+  {
+   "choice": "D",
+   "text": "You bought into a fundamental privacy myth. The U.S. Constitution provides excellent procedural protections, but it does not create an absolute protective shield over personal journals if the state is willing to pay the constitutional price of admission via immunity."
+  }
+ ],
+ "choiceSignals": {
+  "A": {
+   "signal": "Correct premise regarding the creation of the text, but fails to realize that physical delivery is an independent testimonial act.",
+   "lawyer": "The contents of voluntarily prepared records are not protected by the Fifth Amendment, but the act of producing them is a separate compelled testimonial communication that requires immunity.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "Flawlessly matches the narrow boundary rule requiring use/derivative-use immunity targeted strictly at the act of physical production.",
+   "lawyer": "Use and derivative-use immunity matches the constitutional scope of the privilege and is completely sufficient to compel production over an assertion of the Fifth Amendment.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Demands total transactional absolution for the whole conspiracy, which is a remedy far wider than what the Constitution actually requires.",
+   "lawyer": "Transactional immunity completely bars prosecution for the offense, but the government can satisfy the Fifth Amendment using only use and derivative-use immunity.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "Uses an absolute overclaim ('under any circumstances') based on narrative emotional flavor ('intimate, private religious journal').",
+   "lawyer": "There is no special personal or religious privacy privilege inherent in the Fifth Amendment; it protects strictly against self-incrimination, which can be entirely cured by immunity.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-ACTOFPROD-01",
+   "statement": "The Fifth Amendment does not shield the contents of voluntarily prepared pre-existing documents, but it does protect the physical 'act of production' if that act implicitly admits the documents' existence, possession, or authenticity.",
+   "trigger": "Subpoena duces tecum for personal diaries, logs, or private records where the suspect asserts the privilege.",
+   "unlocks": "The illusion that voluntary document creation eliminates all Fifth Amendment privilege assertions.",
+   "authority": "Fisher v. United States, 425 U.S. 391 (1976); United States v. Hubbell, 530 U.S. 27 (2000)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-ARRAYGEOM-01",
+   "statement": "When an answer array splits between an outright ban ('not under any circumstances') and multiple entries outlining conditional methods to compel, eliminate the absolute choice first and look for the precise constitutional boundary condition.",
+   "trigger": "A 3-vs-1 distribution where one answer completely shuts down a government power and three regulate it.",
+   "unlocks": "The trap of choosing a sweeping privacy right over a mechanical procedural mechanism.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Subpoenas vs. Act of Production Immunity",
+  "signal": "A subpoena duces tecum targets a document the suspect wrote voluntarily, and the suspect claims the 5th.",
+  "studentMove": "Cut choices saying the content is protected. Cut choices saying no immunity is needed. Select the choice that requires use/derivative-use immunity for the act of production itself.",
+  "tinyRule": "Contents of voluntary writings are not compelled; the act of turning them over is compelled and testimonial.",
+  "trap": "Believing that because the writing wasn't forced, the state can force the suspect to hand it over without immunity."
+ }
+}

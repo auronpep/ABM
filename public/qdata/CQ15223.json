@@ -1,0 +1,92 @@
+{
+ "id": "CQ15223",
+ "title": "Lydias Loaves",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Other Torts",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX QID: 15223_lydias_loaves\n\nLydia’s Loaves, a for-profit food company, contracted with Barnabas Couriers to deliver boxed meals to remote retreat centers around the world. The contract between Lydia’s Loaves and Barnabas Couriers was terminable at will.\n\nBarnabas Couriers then entered into a contract with Peter’s Pilots to provide an airplane to deliver the meals. The contract between Barnabas Couriers and Peter’s Pilots was also terminable at will.\n\nLydia’s Loaves was displeased with Peter’s Pilots because of a previous business dispute between them. Upon learning of Barnabas Couriers’ contract with Peter’s Pilots, Lydia’s Loaves terminated its contract with Barnabas Couriers in order to cause Peter’s Pilots to lose the business. After Lydia’s Loaves terminated Barnabas Couriers’ contract, Barnabas Couriers had no choice but to terminate the Peter’s Pilots contract.\n\nIf Peter’s Pilots sues Barnabas Couriers for tortious interference with contract, will Peter’s Pilots prevail?",
+ "call": "If Peter’s Pilots sues Barnabas Couriers for tortious interference with contract, will Peter’s Pilots prevail?",
+ "choices": {
+  "A": "No, because Peter’s Pilots and Barnabas Couriers were the parties to the contract.",
+  "B": "No, because Peter’s Pilots was not in privity with Lydia’s Loaves.",
+  "C": "Yes, because Barnabas Couriers did not terminate the contract because of poor performance.",
+  "D": "Yes, because Barnabas Couriers’ termination of the contract made it a party to Lydia’s Loaves’ acts."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct.\n\nGold Key: Tortious interference with contract is an outsider tort. The defendant must interfere with a contract between the plaintiff and a third person. Here, Peter’s Pilots sued Barnabas Couriers, but Peter’s Pilots and Barnabas Couriers were the two parties to the very contract at issue. A claim against Barnabas would sound in contract, not tortious interference.\n\nSilver Key: Circle the defendant named in the call. The call asks whether Peter’s Pilots can sue Barnabas Couriers for tortious interference. Do not drift to Lydia’s Loaves, even though Lydia’s Loaves caused the business loss.\n\nThe transformed result matches the supplied source row: the original item also keyed A because the plaintiff sued its own contracting party rather than the outside interferer.",
+ "wrongExplanations": {
+  "B": "This reaches the correct outcome but gives the wrong reason. Peter’s Pilots did not sue Lydia’s Loaves. It sued Barnabas Couriers. Whether Peter’s Pilots was in privity with Lydia’s Loaves does not answer the call.\n\nSilver Key: The trap is wrong-defendant drift. The answer talks about the Peter–Lydia relationship, but the lawsuit is Peter v. Barnabas.",
+  "C": "This answer focuses on whether Peter’s Pilots performed poorly. That is not the decisive frame. Peter’s Pilots is suing its own contracting party for tortious interference with that same contract.\n\nGold Key: The plaintiff’s counterparty is not the outside interferer for that contract. A poor-performance reason might matter in a contract dispute, but it does not make the counterparty a tortious-interference defendant.",
+  "D": "This invents a participation rule. Barnabas Couriers did not become part of Lydia’s Loaves’ acts merely because Barnabas terminated the downstream contract after Lydia terminated the upstream contract. The stem says Barnabas had no choice after Lydia pulled the job."
+ },
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "Talks about Peter’s Pilots and Lydia’s Loaves. The call asks about Peter’s Pilots suing Barnabas Couriers. Cut as wrong_element / NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT C",
+   "text": "Talks about poor performance. The call asks whether Barnabas Couriers can be liable for tortious interference with its own contract. Cut as wrong_element / NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT D",
+   "text": "Invents a rule that Barnabas became party to Lydia’s acts by terminating the downstream contract. The stem says Barnabas had no choice. Cut as fabricated_rule / NOT_TRUE."
+  },
+  {
+   "label": "Residual A",
+   "text": "Needs the Gold Key. Tortious interference is an outsider tort. Barnabas was inside the contract. A survives and matches the official key."
+  }
+ ],
+ "studentScript": "Peter sued Barnabas. Peter and Barnabas are parties to the same contract. Interference needs an outsider. B talks about Lydia; C talks performance; D invents participation. A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answer talks about the exact contract named in the lawsuit and the exact defendant named in the call.",
+   "lawyer": "Under Restatement (Second) of Torts § 766, tortious interference concerns interference with a contract between the plaintiff and a third person. Barnabas is Peter’s counterparty, not the outside interferer.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The call is Peter v. Barnabas. This answer explains Peter’s relationship with Lydia.",
+   "lawyer": "Lack of privity with the outside actor would not bar a tortious-interference suit against that outside actor. The issue here is that Peter sued Barnabas.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "Poor performance is not the call’s party-status issue.",
+   "lawyer": "A counterparty’s reason for terminating an at-will contract does not convert it into a tortious-interference defendant for its own contract.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The answer says Barnabas became part of Lydia’s acts, but the stem says Barnabas had no choice after Lydia pulled the job.",
+   "lawyer": "No supplied fact shows Barnabas induced or abetted Lydia’s termination. Mere downstream termination does not make Barnabas the outside interferer.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-TI-OUTSIDER-01",
+   "statement": "Tortious interference with contract is an outsider tort: the defendant interferes with a contract between the plaintiff and a third person. The plaintiff’s own counterparty is not the tortious-interference defendant for that contract.",
+   "trigger": "Plaintiff sues the party it contracted with for tortious interference with that same contract.",
+   "unlocks": "A over B/C/D; blocks the trap that any bad termination by the counterparty is tortious interference.",
+   "authority": "Restatement (Second) of Torts § 766; lawyer-confirmation only."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-TI-DEFENDANT-LINE-01",
+   "statement": "Circle the defendant named in the call. In a three-party interference chain, answers about the wrong relationship are traps.",
+   "trigger": "The story has three parties, but the call names only one defendant.",
+   "unlocks": "wrong-defendant drift and privity bait",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Outsider Tort: Do Not Sue Your Own Counterparty for Interference",
+  "signal": "Plaintiff sues its own contract partner for tortious interference with that contract.",
+  "studentMove": "Name the contract pair, name the sued defendant, then ask whether the defendant is inside or outside that contract.",
+  "tinyRule": "Inside party = contract lane; outside actor = possible tortious-interference lane.",
+  "trap": "Same bad business event, wrong defendant."
+ }
+}

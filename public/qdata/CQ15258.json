@@ -1,0 +1,111 @@
+{
+ "id": "CQ15258",
+ "title": "Good Shepherd Dental",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Strict Liability and Products Liability",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX Q# 15258_good_shepherd_dental\n\nAt Lydia’s private dental office, which she named Good Shepherd Dental Studio, Paul came in for an ordinary paid appointment before a church choir retreat. Lydia, a licensed dentist, was anesthetizing Paul’s jaw before extracting a tooth. Although Lydia used due care, the hypodermic needle broke off in Paul’s gum tissue, causing injury. The needle broke because of a manufacturing defect that Lydia could not have detected.\n\nIs Paul likely to recover damages from Lydia in an action based on strict products liability and malpractice?",
+ "call": "Is Paul likely to recover damages from Lydia in an action based on strict products liability and malpractice?",
+ "choices": {
+  "A": "No, on neither basis.",
+  "B": "Yes, based on malpractice, but not on strict products liability.",
+  "C": "Yes, based on strict products liability, but not on malpractice.",
+  "D": "Yes, on both bases."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Paul cannot recover from Lydia on either theory.\n\nSilver Key: When the answers are “neither / malpractice only / products only / both,” treat the choices as a two-switch grid. Test each theory separately, then choose the cell.\n\nGold Key: Strict products liability targets commercial sellers and distributors, not a professional service provider merely using an instrument during treatment. Lydia used the needle as part of a dental service; she was not selling needles as a product.\n\nGold Key: Malpractice requires a departure from the professional standard of care. The stem says Lydia used due care and could not detect the defect, so the malpractice switch is also off.",
+ "wrongExplanations": {
+  "B": "It gets the products-liability switch right but turns the malpractice switch on. The stem says Lydia used due care. A true version would need facts showing that she departed from the professional standard of care.",
+  "C": "It gets the malpractice switch right but turns the strict-products switch on. Gold Key: a professional who uses a defective instrument while rendering services is not treated as the commercial seller of that instrument.",
+  "D": "It turns both switches on. Silver Key: in a two-theory answer grid, do not answer from injury alone. Test each theory separately. Here both switches are off."
+ },
+ "c3": [
+  {
+   "label": "Answer array",
+   "text": "2×2 theory grid.\n\n* A = no strict products liability / no malpractice.\n* B = no strict products liability / yes malpractice.\n* C = yes strict products liability / no malpractice.\n* D = yes strict products liability / yes malpractice."
+  },
+  {
+   "label": "CUT B",
+   "text": "malpractice switch is on even though the stem gives due care."
+  },
+  {
+   "label": "CUT C",
+   "text": "strict-products switch is on even though Lydia is a dentist rendering a service, not a needle seller."
+  },
+  {
+   "label": "CUT D",
+   "text": "both switches are on; it overextends injury + defect into both theories."
+  },
+  {
+   "label": "Residual",
+   "text": "A."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two-answer clash remains after the two theory switches are tested."
+  },
+  {
+   "label": "CALL",
+   "text": "Apply the Gold Keys to both switches; choose the “neither” cell."
+  }
+ ],
+ "studentScript": "This is a two-switch grid. Product switch: off, because Lydia is a service provider using the needle. Malpractice switch: off, because the stem says due care. Both off means A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer is the no/no cell after the two switches are tested.",
+   "lawyer": "Correct. Lydia is not a commercial seller/distributor of needles, and the malpractice theory fails because due care means no departure from the professional standard of care.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The answer turns malpractice on despite the due-care fact.",
+   "lawyer": "Incorrect. The products-liability denial is right, but malpractice requires breach of the professional standard of care; the stem supplies due care.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "The answer uses the manufacturing-defect lure but points strict products liability at a service provider.",
+   "lawyer": "Incorrect. Strict products liability targets commercial sellers/distributors; Lydia used the needle in treatment.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The answer converts one injury into recovery on both theories.",
+   "lawyer": "Incorrect. Both theories fail against Lydia: no commercial seller status and no professional-standard breach.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-SERVICE-PROVIDER-01",
+   "statement": "Strict products liability targets commercial sellers and distributors. A professional who merely uses a defective instrument while providing a service is not strictly liable as the product seller.",
+   "trigger": "Professional treatment + defective instrument + defendant is the treating professional, not the product seller.",
+   "unlocks": "The manufacturing-defect trap in choices C and D.",
+   "authority": "Restatement (Second) of Torts § 402A; Restatement (Third) of Torts: Products Liability; Magrine v. Spector."
+  },
+  {
+   "id": "GK-TORTS-MALPRACTICE-DUE-CARE-01",
+   "statement": "Malpractice requires a departure from the professional standard of care. Injury during treatment is not enough when the professional used due care.",
+   "trigger": "The stem says the professional used due care or could not detect the defect.",
+   "unlocks": "The injury-equals-malpractice trap in choices B and D.",
+   "authority": "General medical-malpractice standard-of-care rule."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-DUAL-THEORY-MATRIX-01",
+   "statement": "When the choices are neither / theory one only / theory two only / both, do not pick by feel. Test each theory as a separate switch, then choose the matching cell.",
+   "trigger": "Answer choices split recovery into neither, one theory only, the other theory only, and both.",
+   "unlocks": "The 2x2 liability grid.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Two-switch liability grid",
+  "signal": "Choices offer neither / one theory / the other theory / both.",
+  "studentMove": "Turn each theory on or off independently.",
+  "tinyRule": "Do not let one injury automatically satisfy every theory.",
+  "trap": "Manufacturing defect plus injury feels like automatic recovery."
+ }
+}

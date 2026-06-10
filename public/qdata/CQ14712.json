@@ -1,0 +1,88 @@
+{
+ "id": "CQ14712",
+ "title": "Cls Bake Sale",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "At a Christian Legal Society bake sale in the law school atrium, Daniel and Lydia, acting independently, each planned to steal purses from distracted shoppers.\n\nDaniel approached Mary, grabbed the strap of the purse hanging from her shoulder, and pulled. Mary screamed and tried to hold on, but Daniel shoved her to the floor, causing her to lose her grip. Daniel ran away with the purse.\n\nDuring the commotion from Mary’s scream, Ruth turned toward the noise and stepped away from her rolling book cart. Lydia reached into the now-unattended cart, took Ruth’s purse, and quickly walked away. Daniel and Lydia were both apprehended shortly afterward.\n\nWhich of the two could properly be convicted of robbery?",
+ "call": "Which of the two could properly be convicted of robbery?",
+ "choices": {
+  "A": "Both Daniel and Lydia.",
+  "B": "Only Daniel.",
+  "C": "Only Lydia.",
+  "D": "Neither Daniel nor Lydia."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Daniel used force to take Mary’s purse: he pulled the strap while it was on Mary’s shoulder, Mary resisted, and Daniel shoved her down so she lost her grip. Lydia committed a stealth taking from Ruth’s unattended cart during the distraction.\n\nGold Key: Robbery is theft plus force or fear. A stealth taking, even from nearby property, is not robbery unless force or intimidation is used.\n\nSilver Key: In a both / only X / only Y / neither array, do not answer by vibe. Make a two-row checklist: Daniel — force? yes. Lydia — force? no. Then pick the matching choice.",
+ "wrongExplanations": {
+  "A": "Daniel can be convicted of robbery, but Lydia cannot. The trap is “both stole purses, so both robbed.” Gold Key: theft alone is not robbery; force or fear is the upgrade. Silver Key: the actor matrix gives Daniel = yes, Lydia = no.",
+  "C": "Lydia is the no-force actor. She took Ruth’s purse from an unattended cart. That is the wrong actor for robbery.",
+  "D": "Lydia cannot be convicted of robbery, but Daniel can. The answer correctly excludes Lydia but wrongly excludes Daniel, whose force caused Mary to lose her grip."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A over-includes Lydia. C assigns robbery to the no-force actor. D over-excludes Daniel. None survives the force checklist except B."
+  },
+  {
+   "label": "CLASH",
+   "text": "The axis is force used to take the purse vs. stealth taking from an unattended cart. Daniel is on the force side. Lydia is on the stealth side."
+  },
+  {
+   "label": "CALL",
+   "text": "No residue. The actor matrix resolves: Daniel yes, Lydia no → B."
+  }
+ ],
+ "studentScript": "Robbery needs force or fear. Daniel: force, yes. Lydia: unattended cart, no force. Both/only/neither grid gives B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer says both, but the actor checklist gives Daniel yes and Lydia no.",
+   "lawyer": "Daniel used force; Lydia did not. Robbery requires force or threat, so A over-includes Lydia.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "The answer matches the actor checklist: Daniel yes, Lydia no.",
+   "lawyer": "Daniel’s shove overcame Mary’s resistance; Lydia’s unattended-cart taking lacks force or fear.",
+   "mold": null
+  },
+  "C": {
+   "signal": "It gives robbery to the no-force actor and denies it to the force actor.",
+   "lawyer": "Lydia did not use force or fear; Daniel did.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "It correctly excludes Lydia but wrongly excludes Daniel.",
+   "lawyer": "Daniel can be convicted of robbery because he used force to make Mary lose her grip.",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-ROBBERY-FORCE-01",
+   "statement": "Robbery is theft plus force or fear. A quiet taking from an unattended cart may be theft, but it is not robbery unless force or intimidation is used.",
+   "trigger": "One taker struggles with the owner; another takes from an unattended container.",
+   "unlocks": "Robbery vs. non-force theft in a two-actor purse-snatching array.",
+   "authority": "Common-law robbery definition; Stokeling v. United States force-over-resistance line."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-ACTOR-MATRIX-01",
+   "statement": "For a both/only/neither array, make a yes/no row for each actor using the same required fact, then choose the matching answer.",
+   "trigger": "Answer choices are Both / Only first actor / Only second actor / Neither.",
+   "unlocks": "Two-actor robbery matrix.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Robbery actor matrix: force facts decide.",
+  "signal": "Two independent takers; one struggle, one stealth taking.",
+  "studentMove": "Run the same force/fear check on each actor.",
+  "tinyRule": "Force or fear upgrades theft to robbery.",
+  "trap": "Both stole, so both robbed."
+ }
+}

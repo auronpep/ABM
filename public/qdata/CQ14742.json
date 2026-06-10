@@ -1,0 +1,100 @@
+{
+ "id": "CQ14742",
+ "title": "Backyard Hymn Keyboard",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Peter asked Mary to lend him something he could use to break into Daniel’s padlocked storage shed in order to steal Daniel’s portable keyboard for a backyard hymn night. Mary handed him a crowbar. Peter took the crowbar but then found bolt cutters that Daniel had left outside the shed. Using the bolt cutters, Peter cut the padlock on the shed and took the keyboard, which he then used to lead hymns at Mary’s backyard Bible-study cookout. Mary was surprised and pleased by this gesture.\n\nBurglary in the jurisdiction applies to any structure or building, and there is no nighttime element. Mary has been charged as an accomplice to burglary and larceny.\n\nOf which crimes, if any, is Mary guilty?",
+ "call": "Of which crimes, if any, is Mary guilty?",
+ "choices": {
+  "A": "Burglary and larceny.",
+  "B": "Burglary, but not larceny, because she intended to assist only in entering the shed.",
+  "C": "Larceny, but not burglary, because Peter cut the padlock with bolt cutters rather than the crowbar Mary provided.",
+  "D": "Neither burglary nor larceny, because Peter did not use the crowbar Mary provided."
+ },
+ "key": "A",
+ "dominantTrap": "B",
+ "rightExplanation": "A is correct. Mary knew Peter’s target plan: break into Daniel’s shed and steal the keyboard. She gave him a crowbar to help that plan. Gold Key: actual use of the provided tool is not required; purposeful aid, agreement to aid, or attempted aid before or during the offense can support accomplice liability even if the principal later uses a different tool. Silver Key: the answer array is a crime-combo matrix. Do not start with the tool. Start with the stated plan: “break in to steal.” That plan covers both burglary and larceny.",
+ "wrongExplanations": {
+  "B": "It slices the plan too narrowly. Mary did not just hear “help me enter.” She heard “break into the shed in order to steal the keyboard.” Silver Key: in a {both / burglary-only / larceny-only / neither} matrix, map the helper’s intended target plan first. “Break in to steal” points to both crimes.",
+  "C": "It invents an actual-use requirement for burglary. Gold Key: if Mary purposely supplied aid for the planned break-in, Peter’s later use of bolt cutters instead of the crowbar does not erase her accomplice liability for the burglary.",
+  "D": "It repeats the same actual-use trap but applies it to both crimes. Gold Key: the accomplice question is not “Was Mary’s crowbar the tool actually used?” The question is whether she purposely helped the planned burglary-and-larceny before or during the crime."
+ },
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "“only entering” fails against the stem’s stated plan: break in in order to steal."
+  },
+  {
+   "label": "CUT C",
+   "text": "actual-use requirement is fabricated; the crowbar need not be the tool used."
+  },
+  {
+   "label": "CUT D",
+   "text": "same fabricated actual-use rule, overextended to both crimes."
+  },
+  {
+   "label": "Residual",
+   "text": "A."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the anchor-assisted cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Gold Key used to cut the actual-use trap."
+  }
+ ],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A is the only answer that keeps both crimes in the stated plan: break in to steal.",
+   "lawyer": "Accomplice liability attaches when a person purposely promotes/facilitates the offense by aiding, agreeing to aid, or attempting to aid; alternative instrumentality does not defeat liability.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The answer says 'only entering,' but the stem says Peter asked for the tool to break in in order to steal.",
+   "lawyer": "Mary’s mental state covered both burglary and the object theft.",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "This choice treats the unused crowbar as defeating burglary liability. That requires the Gold Key.",
+   "lawyer": "Providing or attempting to provide an instrumentality for the planned burglary is sufficient; Peter’s later use of bolt cutters does not erase complicity.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "This choice says no tool-use means no accomplice liability at all. That is the actual-use trap.",
+   "lawyer": "Accomplice liability does not require Mary’s aid to be the but-for or actually used instrumentality.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-ACCOMPLICE-ALT-TOOL-01",
+   "statement": "Actual use of the helper’s tool is not required. A person who purposely aids, agrees to aid, or attempts to aid the planned offense before or during the crime remains liable even if the principal uses a different tool.",
+   "trigger": "helper supplies a tool for a planned crime, but principal completes the crime with a different tool",
+   "unlocks": "actual-use trap in C and D",
+   "authority": "Model Penal Code § 2.06(3)(a)(ii); Substantive Criminal Law § 13.2"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-CRIME-COMBO-MATRIX-01",
+   "statement": "When the choices are both / burglary-only / larceny-only / neither, map the helper’s target plan first. If the plan is 'break in to steal,' do not split the crimes unless a fact splits the helper’s intent.",
+   "trigger": "answer choices allocate liability across two crimes",
+   "unlocks": "crime-combo answer matrix",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Actual tool used is not the accomplice pivot",
+  "signal": "Helper gives tool for planned crime; principal uses different tool.",
+  "studentMove": "Ask what crime plan the helper intentionally aided, then ignore the tool swap unless it changes intent.",
+  "tinyRule": "Target-plan aid beats actual-tool use.",
+  "trap": "Cutting liability because the exact crowbar was not used."
+ }
+}

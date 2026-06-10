@@ -1,0 +1,83 @@
+{
+ "id": "CQ14709",
+ "title": "Question 14709",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Question ID: 14709_paul_pen_picnic\nTransformed from: 14709\n\nAt a Christian law-school picnic, Timothy, a student assistant, often admired Professor Paul’s engraved fountain pen and frequently said that he wished he had one like it. Paul decided to give Timothy the pen for Timothy’s birthday the following week.\n\nDuring the picnic, Paul took the pen out of his shirt pocket and left it on a blanket when he went to join a volleyball game. Timothy walked by, saw the pen on the blanket, and decided to steal it. He bent over and picked up the pen. Before he could put it into his backpack, Paul returned. Seeing Timothy holding the pen, Paul said, “I know how much you like that pen. I was planning to give it to you for your birthday. Go ahead and take it now.” Timothy kept the pen.\n\nTimothy has committed",
+ "call": "Timothy has committed",
+ "choices": {
+  "A": "larceny.",
+  "B": "attempted larceny.",
+  "C": "embezzlement.",
+  "D": "no crime."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct.\n\nGold Key: Larceny completes when the actor takes possession without consent, intends to steal, and moves the property even slightly. Later permission does not erase the completed taking.\n\nSilver Key: In a larceny-versus-attempt pair, stop grading the labels and find the movement fact. Here, Timothy picked up the pen before Paul gave permission.\n\nTimothy decided to steal the pen before Paul spoke. He picked it up from Paul’s blanket. That is the taking and slight movement. Paul’s later birthday-gift permission came after the crime had already completed.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "* C is cut as the wrong theft frame. The stem never gives Timothy lawful possession before conversion.\n* D is cut after the theft-clock anchor: later permission does not erase the earlier unauthorized taking."
+  },
+  {
+   "label": "CLASH",
+   "text": "* A and B clash on one axis: completed taking versus mere attempt.\n* Splitting fact: Timothy picked up the pen before permission."
+  },
+  {
+   "label": "CALL",
+   "text": "* Gold Key resolves the axis: slight movement completes larceny.\n* Residual answer: A."
+  }
+ ],
+ "studentScript": "A/B is the fight. Did the object move before permission? Yes: Timothy picked it up. Gold Key says slight movement completes larceny. C needs prior lawful possession. D loses because later permission came too late. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Matches the A/B movement axis after applying the slight-movement Gold Key.",
+   "lawyer": "Common-law larceny is a trespassory taking and carrying away of another's personal property with intent to permanently deprive; slight movement is enough.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It answers an incomplete-taking case. The stem gives a completed pickup before permission.",
+   "lawyer": "Attempt is displaced by the completed larceny once taking and slight asportation occur.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "It would fit a later conversion after lawful possession. The stem gives no prior entrustment.",
+   "lawyer": "Embezzlement requires lawful possession or entrustment before wrongful conversion.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "It treats the later gift as if it erased the earlier unauthorized pickup.",
+   "lawyer": "Later consent does not undo the completed trespassory taking with intent to steal.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-LARCENY-ASPORTATION-01",
+   "statement": "Larceny completes when the defendant takes possession without consent, intends to steal, and moves the property even slightly; later permission does not undo it.",
+   "trigger": "The actor picks up the item before the owner gives permission.",
+   "unlocks": "attempted-larceny and later-consent traps",
+   "authority": "Common-law larceny; People v. Davis; Robinson v. United States"
+  },
+  {
+   "id": "GK-CRIMINAL-EMBEZZLEMENT-POSSESSION-01",
+   "statement": "Embezzlement requires prior lawful possession or entrustment; a first unauthorized taking from the owner’s possession is the larceny frame.",
+   "trigger": "The answer choice says embezzlement but the stem never entrusts the item to the actor before the taking.",
+   "unlocks": "embezzlement theft-variant trap",
+   "authority": "Common-law theft distinction; Georgia theft annotations on embezzlement/lawful possession"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Theft Clock: Unauthorized Pickup Locks the Crime",
+  "signal": "Later permission appears after an unauthorized pickup.",
+  "studentMove": "Put a line between the pickup and the later permission. Decide the crime at the pickup.",
+  "tinyRule": "If intent to steal exists before the unauthorized pickup, slight movement completes larceny.",
+  "trap": "Choosing attempted larceny or no crime because the owner later consented."
+ }
+}

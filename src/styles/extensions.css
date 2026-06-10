@@ -5,6 +5,8 @@
    ============================================================ */
 
 :root {
+  --bg: #F9F6F0; /* clean warm parchment override */
+  --paper: #FFFDF9; /* softer paper override */
   --oxblood: #7a1420; /* sober scripture/legal accent — heavier than --red */
   --oxblood-soft: rgba(122, 20, 32, 0.12);
   --parchment-edge: rgba(122, 20, 32, 0.4);
@@ -13,7 +15,7 @@
 /* ---------- SCRIPTURE: inline (hero) ---------- */
 .scripture-inline {
   border-left: 3px solid var(--oxblood);
-  padding: 6px 0 6px 18px;
+  padding: 6px 0 8px 18px; /* increased bottom padding for descender clearance */
   margin: 28px 0 0;
   max-width: 46ch;
 }
@@ -31,9 +33,15 @@
   font-family: var(--serif);
   font-style: italic;
   font-size: 17px;
-  line-height: 1.45;
+  line-height: 1.55; /* increased line-height for descender clearance */
   color: var(--ink-soft);
   margin: 0;
+  padding-bottom: 2px; /* descender clearance */
+}
+
+/* ---------- BUTTON TACTILE FEEDBACK ---------- */
+.btn:active {
+  transform: scale(0.98) translateY(1px) !important;
 }
 
 /* ---------- SCRIPTURE: full band (section architecture) ---------- */
@@ -62,10 +70,11 @@
   font-weight: 500;
   font-style: italic;
   font-size: clamp(24px, 3vw, 34px);
-  line-height: 1.32;
+  line-height: 1.45; /* increased line-height for descender clearance */
   letter-spacing: -0.015em;
   color: var(--ink);
   margin: 0 0 18px;
+  padding-bottom: 4px; /* descender clearance */
 }
 .scripture-band .caption {
   font-family: var(--sans);
@@ -345,4 +354,47 @@
   .tear-breakdown .row {
     grid-template-columns: 56px 1fr;
   }
+}
+
+/* ---------- NAV MOBILE COLLAPSE ---------- */
+@media (max-width: 768px) {
+  .nav-inner {
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    padding: 0 16px;
+  }
+  .nav-links {
+    display: none !important;
+  }
+  .nav-cta a.btn.ghost {
+    display: none !important;
+  }
+  .nav-cta button.btn.red {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+/* ---------- HERO VIEWPORT STABILITY ---------- */
+.hero {
+  min-height: calc(100dvh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 0;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 32px 0;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* ---------- CTA BUTTON WRAP BAN ---------- */
+.btn {
+  white-space: nowrap;
 }

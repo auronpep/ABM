@@ -87,6 +87,11 @@ export function Home({ navigate }: PageProps) {
               </div>
             ))}
           </div>
+          <div style={{ marginTop: 44 }}>
+            <button className="btn btn-lg ghost" onClick={() => navigate("drills")}>
+              Run a live Repair Drill <span className="arrow">→</span>
+            </button>
+          </div>
         </div>
       </section>
 

@@ -1,0 +1,99 @@
+{
+ "id": "CQ14141",
+ "title": "Dovesound Review",
+ "subject": "Civil Procedure",
+ "topic": "Civil Procedure",
+ "subtopic": "Motions",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX Q#14141_dovesound_review\n\nLydia Sound Systems, a company that sells portable speakers for Christian conferences and Bible-study events, filed suit in federal district court against Mary, a reporter for The Berean Review, a consumer-product testing website. The suit arose after Mary published a review of Lydia Sound Systems’ “DoveSound” speakers.\n\nThe court ruled that Lydia Sound Systems was a “public figure” and thus had to prove by clear and convincing evidence that Mary made a false and disparaging statement about the speakers with “actual malice.” “Actual malice” requires knowledge that one is making a false statement or reckless disregard of the truthfulness of one’s statement.\n\nMary moved for summary judgment. In support of her motion, Mary submitted her own affidavit. In the affidavit, Mary explained that she had tried her best to put into words her experience with the speakers, that she was unaware that her statements were “false,” and that she was not indifferent to whether her review was “true” or not. Lydia Sound Systems did not respond to Mary’s motion by providing any evidence to contradict Mary’s statements.\n\nIs the court likely to grant Mary’s motion for summary judgment?",
+ "call": "Is the court likely to grant Mary’s motion for summary judgment?",
+ "choices": {
+  "A": "Yes, because Lydia Sound Systems did not meet its burden to defeat Mary’s motion for summary judgment on the issue of actual malice.",
+  "B": "Yes, because Lydia Sound Systems acted in bad faith by not providing evidence to contradict Mary’s affidavit regarding the issue of actual malice.",
+  "C": "No, because a party to a suit may not submit a personal affidavit as evidence in support of her own motion for summary judgment.",
+  "D": "No, because the court should first order Lydia Sound Systems to respond to Mary’s motion for summary judgment before it may properly rule on Mary’s motion."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. This is a summary-judgment burden question. Mary supported her motion with her own affidavit denying the state of mind required for actual malice. Lydia Sound Systems had the trial burden on actual malice and offered no contrary evidence. On this record, Lydia Sound Systems has not created a genuine dispute on the element the court identified as necessary.\n\nGold Key: On summary judgment, when the nonmovant bears the trial burden on an essential element, the nonmovant must point to record evidence creating a genuine dispute; silence or unsupported allegations do not defeat a properly supported motion.\n\nSilver Key: Do not convert “no response” into “bad faith.” On a summary-judgment call, the clean issue is record evidence, not blame.",
+ "wrongExplanations": {
+  "B": "The stem says Lydia Sound Systems provided no contrary evidence. It does not say Lydia acted in bad faith. The answer reaches the same “Yes” result but gives a fact-not-in-evidence reason. Silver Key: when the call is summary judgment, track the evidentiary burden; do not add blame words the stem did not give.",
+  "C": "It invents a categorical affidavit ban. A party’s own affidavit may be used at summary judgment if it satisfies the affidavit/declaration requirements. Gold Key: Rule 56 permits affidavits or declarations made on personal knowledge, setting out admissible facts, and showing competence.",
+  "D": "It invents a mandatory first-step rule. A court is not required to order a nonmovant to respond before ruling on a properly supported motion. Current Rule 56 allows several responses to a failure to address facts, including considering facts undisputed or granting summary judgment if the materials show entitlement."
+ },
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "“Bad faith” is not in the facts and does not answer the summary-judgment burden call. Cut as misfit / NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT C",
+   "text": "“May not submit a personal affidavit” invents a categorical procedural restriction. Cut as fabricated_rule / NOT_TRUE, anchor-assisted by Rule 56."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Should first order the nonmovant to respond” invents a mandatory procedural detour. Cut as fabricated_rule / NOT_TRUE, anchor-assisted by Rule 56(e)."
+  },
+  {
+   "label": "Residual",
+   "text": "A. No CLASH remains. Deciding phase: CUT."
+  }
+ ],
+ "studentScript": "This is a summary-judgment burden call. Mary supported the motion. Lydia gave no contrary evidence. B adds bad faith. C and D invent procedural bars. A survives.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Matches the call, the posture, and the no-contrary-evidence fact.",
+   "lawyer": "Correct under Rule 56 and public-figure actual-malice summary-judgment doctrine.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The stem gives no bad-faith fact. The call asks whether the record defeats summary judgment, not whether Lydia behaved badly.",
+   "lawyer": "Bad faith is not the basis for granting summary judgment here.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The answer creates a categorical procedural ban. Student should not call it false without the Rule 56 affidavit Gold Key.",
+   "lawyer": "Rule 56 permits affidavits/declarations if personal knowledge, admissible facts, and competence are shown.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The answer invents a required extra procedural step before ruling.",
+   "lawyer": "Rule 56(e) gives the court options after failure to address facts; it does not require a forced response before a proper ruling.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-SUMMARY-JUDGMENT-BURDEN-01",
+   "statement": "At summary judgment, the nonmovant who bears the trial burden must point to record evidence creating a genuine dispute; silence or pleadings alone do not defeat a properly supported motion.",
+   "trigger": "Movant supports the motion; nonmovant produces no contrary evidence.",
+   "unlocks": "A over B; summary-judgment burden over blame.",
+   "authority": "Fed. R. Civ. P. 56(a), 56(c), 56(e); Celotex Corp. v. Catrett; Anderson v. Liberty Lobby."
+  },
+  {
+   "id": "GK-CIVIL_PROCEDURE-RULE56-AFFIDAVIT-01",
+   "statement": "A party’s own affidavit or declaration can support summary judgment if it is based on personal knowledge, gives admissible facts, and shows competence.",
+   "trigger": "Answer says a party may not use a personal affidavit.",
+   "unlocks": "C",
+   "authority": "Fed. R. Civ. P. 56(c)(4)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-SUMMARY-JUDGMENT-BURDEN-01",
+   "statement": "On a summary-judgment call, separate record burden from blame. No contrary evidence points to burden failure, not bad faith.",
+   "trigger": "One answer says burden; the other says bad faith.",
+   "unlocks": "A versus B",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Summary judgment: burden, not blame",
+  "signal": "Movant supports the motion; nonmovant produces no contrary evidence.",
+  "studentMove": "Ask what evidence creates a dispute. Do not ask whether silence was rude or bad faith.",
+  "tinyRule": "Rule 56 turns on record evidence and genuine dispute.",
+  "trap": "Choosing a punishment/blame answer instead of the burden answer."
+ }
+}

@@ -14,6 +14,7 @@ export function ForensicsDemo({ autoplay = true }: Props) {
   const q = barnabasDemo;
   const [phase, setPhase] = useState<Phase>("stem");
   const [picked, setPicked] = useState<string | null>(null);
+  const [visibleTearCount, setVisibleTearCount] = useState(0);
 
   useEffect(() => {
     if (!autoplay) return;
@@ -28,6 +29,21 @@ export function ForensicsDemo({ autoplay = true }: Props) {
     return () => timers.forEach(clearTimeout);
   }, [autoplay, q.autoPick]);
 
+  // Sequential reveal animation for the TEAR steps
+  useEffect(() => {
+    if (phase === "forensics") {
+      let count = 0;
+      const interval = setInterval(() => {
+        count += 1;
+        setVisibleTearCount(count);
+        if (count >= 4) clearInterval(interval);
+      }, 800);
+      return () => clearInterval(interval);
+    } else {
+      setVisibleTearCount(0);
+    }
+  }, [phase]);
+
   const handlePick = (letter: string) => {
     if (phase !== "stem" && phase !== "picking") return;
     setPicked(letter);
@@ -38,6 +54,7 @@ export function ForensicsDemo({ autoplay = true }: Props) {
   const replay = () => {
     setPhase("stem");
     setPicked(null);
+    setVisibleTearCount(0);
     if (autoplay) {
       setTimeout(() => {
         setPhase("picking");
@@ -162,12 +179,23 @@ export function ForensicsDemo({ autoplay = true }: Props) {
             </p>
 
             <div className="tear-breakdown">
-              {q.tear.map((row) => (
-                <div className="row" key={row.step}>
-                  <div className="step">{row.step}</div>
-                  <div className="txt">{row.text}</div>
-                </div>
-              ))}
+              {q.tear.map((row, i) => {
+                const isVisible = i < visibleTearCount;
+                return (
+                  <div
+                    className="row"
+                    key={row.step}
+                    style={{
+                      opacity: isVisible ? 1 : 0.05,
+                      transform: isVisible ? "translateY(0)" : "translateY(8px)",
+                      transition: "opacity 500ms ease, transform 500ms ease",
+                    }}
+                  >
+                    <div className="step">{row.step}</div>
+                    <div className="txt">{row.text}</div>
+                  </div>
+                );
+              })}
             </div>
 
             <p

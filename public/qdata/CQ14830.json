@@ -1,0 +1,95 @@
+{
+ "id": "CQ14830",
+ "title": "Question 14830",
+ "subject": "Evidence",
+ "topic": "Evidence",
+ "subtopic": "Presentation of Evidence",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX Q# 14830 — Christian variation\n\nMary sued Lydia, alleging that she was seriously injured when Lydia ran a red light and struck her while Mary was walking in a crosswalk after a Bible-study brunch. During Lydia’s case, Stephen testified that Mary had told him that she was “barely tapped” by Lydia’s car. On cross-examination, should the court allow Mary to elicit from Stephen that he is an adjuster for Lydia’s automobile insurance company?\n\nThe source row for Q14830 gives the original Evidence question, the 68% correct rate, the answer distribution, and D as the official key.  The project prompt also requires a Christian-first transform, QID provenance, honest pick-rate handling, Gold/Silver Keys where appropriate, and the full C3 pipeline.",
+ "call": "On cross-examination, should the court allow Mary to elicit from Stephen that he is an adjuster for Lydia’s automobile insurance company?",
+ "choices": {
+  "A": "No, because liability insurance may not be used to prove that Lydia acted negligently.",
+  "B": "No, because the reference to insurance raises a collateral issue.",
+  "C": "Yes, for both substantive and impeachment purposes.",
+  "D": "Yes, for impeachment purposes only."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The evidence that Stephen is an adjuster for Lydia’s automobile insurance company is admissible to show Stephen’s possible bias or motive to shade testimony in Lydia’s favor. It is not admissible as substantive proof that Lydia was negligent or that Mary was seriously injured.\n\nGold Key: Liability insurance is barred when used to prove fault, but it may be admitted for another purpose, including witness bias. Bias attacks credibility; it is not substantive proof of negligence.\n\nSilver Key: On Evidence questions, lock the offered purpose before you judge admissibility. The same insurance fact is out for proving negligence but in for showing bias.",
+ "wrongExplanations": {
+  "A": "It states the forbidden purpose: using insurance to prove Lydia acted negligently. But Mary is asking this on cross-examination of Stephen after he gave defense-favorable testimony. The live purpose is bias. Silver Key: Do not let the forbidden purpose in one answer replace the offered purpose in the stem.",
+  "B": "Bias is not treated as a mere collateral issue here. Stephen’s employment by Lydia’s insurer gives the jury a reason to assess whether his testimony may favor Lydia. Gold Key: Bias is a legitimate impeachment purpose.",
+  "C": "This is the dominant trap. It gets the “yes” part right but overclaims the purpose. The evidence comes in to impeach Stephen for bias, not as substantive proof about the accident."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A answers the wrong purpose. The call asks about cross-examining a witness for possible bias. A talks about proving negligence."
+  },
+  {
+   "label": "CUT B",
+   "text": "B uses the collateral-issue frame. That frame fails under the bias Gold Key."
+  },
+  {
+   "label": "CLASH C vs. D",
+   "text": "Both say “Yes.” They fight on one axis: purpose scope."
+  },
+  {
+   "label": "CALL",
+   "text": "Apply the Gold Key. Insurance-adjuster status can be used to impeach for bias, not as substantive proof. D wins."
+  }
+ ],
+ "studentScript": "Cross-exam plus insurer employee means bias. Cut negligence-purpose answer. Cut collateral answer by Gold Key. Between both-purpose and impeachment-only, pick impeachment-only.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A gives the forbidden negligence purpose, but the call is cross-examining a witness.",
+   "lawyer": "Rule 411 bars liability-insurance evidence for proving negligence or wrongful conduct, but not for bias.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "B tries to make bias look collateral; the Gold Key says bias is a proper impeachment purpose.",
+   "lawyer": "Bias impeachment is generally permitted; Stephen’s insurer relationship is probative of possible bias.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "C keeps the correct yes but adds a substantive use the Gold Key does not allow.",
+   "lawyer": "The evidence may be used for bias impeachment, not as substantive proof of fault.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "D says yes and keeps the purpose narrow: impeachment only.",
+   "lawyer": "This tracks Rule 411’s permitted-purpose carveout and the bias-impeachment rule.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-INSURANCE-BIAS-01",
+   "statement": "Liability insurance is barred to prove fault, but may be admitted for another purpose, including witness bias. Bias use attacks credibility; it is not substantive proof.",
+   "trigger": "A witness tied to a party’s insurer testifies in a way favorable to that party.",
+   "unlocks": "The C/D trap: both-purpose admissibility versus impeachment-only admissibility.",
+   "authority": [
+    "Fed. R. Evid. 411",
+    "United States v. Abel, 469 U.S. 45 (1984)"
+   ]
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-PURPOSE-SPLIT-01",
+   "statement": "When Evidence answers split by purpose, do not decide whether the item is globally admissible. First name the offered purpose.",
+   "trigger": "Answer choices say substantive, impeachment, or both.",
+   "unlocks": "Insurance fact offered for bias versus for negligence.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Insurance fact: fault use out, bias use in",
+  "signal": "Witness tied to party’s insurer.",
+  "studentMove": "Ask whether the insurance fact is being offered to prove fault or to show witness bias.",
+  "tinyRule": "Fault purpose loses; bias purpose can come in, limited to impeachment.",
+  "trap": "Choosing the answer that admits the fact for both substantive and impeachment purposes."
+ }
+}

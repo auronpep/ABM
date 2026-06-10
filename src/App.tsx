@@ -5,6 +5,7 @@ import { Home } from "./pages/Home.tsx";
 import { HowItWorks } from "./pages/HowItWorks.tsx";
 import { Pricing } from "./pages/Pricing.tsx";
 import { Diagnostic } from "./pages/Diagnostic.tsx";
+import { Drill } from "./pages/Drill.tsx";
 import type { Route } from "./types.ts";
 
 export function App() {
@@ -25,6 +26,7 @@ export function App() {
       {route === "how-it-works" && <HowItWorks navigate={navigate} />}
       {route === "pricing" && <Pricing navigate={navigate} />}
       {route === "diagnostic" && <Diagnostic navigate={navigate} />}
+      {route === "drills" && <Drill navigate={navigate} />}
       {!chromeless && <Footer navigate={navigate} />}
     </>
   );

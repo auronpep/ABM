@@ -1,0 +1,91 @@
+{
+ "id": "CQ14671",
+ "title": "Bible Study Safe",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "Question ID: 14671_bible_study_safe\n\nAt 11:00 p.m., after a small Bible-study dinner, Daniel and Ruth were stopped in the entrance to their apartment building by Peter, who was masked and armed. Peter ordered them to take him into their apartment. After they entered the apartment, Peter forced Ruth to bind and gag Daniel and then to open a safe that contained Ruth’s pearl cross necklace. Peter then tied Ruth up and fled with the necklace. He was apprehended by apartment-building security guards. Before the guards could return to the apartment, but after Peter was arrested, Daniel, straining to free himself, suffered a massive heart attack and died.\n\nPeter is guilty of",
+ "call": "Peter is guilty of",
+ "choices": {
+  "A": "burglary, robbery, and murder.",
+  "B": "robbery and murder only.",
+  "C": "burglary and robbery only.",
+  "D": "robbery only."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The answer array is a charge-list matrix. All four choices keep robbery. The fight is whether to add burglary, murder, or both.\n\nSilver Key: The array is {burglary yes/no} × {murder yes/no}, with robbery constant. Do not re-litigate robbery first. Fill the two missing boxes: forced apartment entry with theft purpose, and death caused by the violent felony sequence.\n\nGold Key: A forced entry by threat can count as the burglary entry, and felony murder can attach when the victim dies from the dangerous felony sequence, including a heart attack, if the felony conduct is causally connected to the death. Burglary, robbery, and murder all attach.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "No answer is eliminated by pure grammar alone. All four include robbery. The array tells the student the real work: choose whether burglary and murder attach."
+  },
+  {
+   "label": "CLASH",
+   "text": "The answer array is a 2×2 matrix.\n\n| Choice | Burglary | Murder | Robbery |\n| ------ | -------- | ------ | ------- |\n| A      | yes      | yes    | yes     |\n| B      | no       | yes    | yes     |\n| C      | yes      | no     | yes     |\n| D      | no       | no     | yes     |"
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Keys. Forced entry with theft intent fills the burglary box. Death from the restraint/escape sequence fills the felony-murder box. A is the residual."
+  }
+ ],
+ "studentScript": "All choices have robbery. The matrix is burglary yes/no and murder yes/no. Forced apartment entry fills burglary. Bound victim's heart-attack death fills felony murder. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Only answer that includes robbery plus both add-on trigger crimes.",
+   "lawyer": "Forced entry with theft intent supports burglary; force/threat taking supports robbery; causally connected heart-attack death during the felony sequence supports felony murder.",
+   "mold": null
+  },
+  "B": {
+   "signal": "Same as A except it leaves the burglary box empty.",
+   "lawyer": "The forced nighttime apartment entry with theft intent supplies the omitted burglary.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "Same as A except it leaves the murder box empty.",
+   "lawyer": "The death from the restraint/escape sequence is causally tied to the violent felony sequence, supporting felony murder.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "It processes the taking but ignores both extra trigger facts: forced apartment entry and death.",
+   "lawyer": "Robbery is present, but the answer is incomplete because burglary and felony murder also attach.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-BURGLARY-FORCED-ENTRY-01",
+   "statement": "For MBE burglary, a forced or threat-induced entry into a dwelling with intent to steal keeps burglary in the case; do not treat the victim's compelled opening of the door as consent.",
+   "trigger": "armed defendant orders victims to take him into their apartment",
+   "unlocks": "dominant trap B, which keeps murder and robbery but omits burglary",
+   "authority": "Common-law burglary and forced/threat entry principles; lawyer-confirmation layer only."
+  },
+  {
+   "id": "GK-CRIM-FELONY-MURDER-HEART-ATTACK-01",
+   "statement": "Felony murder can attach when a victim dies from the violent felony sequence, including a heart attack, if the felony conduct is causally connected to the death.",
+   "trigger": "bound victim dies while straining to escape before help returns",
+   "unlocks": "trap C, which keeps burglary and robbery but omits murder",
+   "authority": "Felony-murder causation / heart-attack cases; lawyer-confirmation layer only."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-CHARGE-MATRIX-01",
+   "statement": "When every answer includes the same base crime, do not spend time proving that base crime. Read the array as a matrix of the missing add-on crimes.",
+   "trigger": "all four choices contain robbery",
+   "unlocks": "robbery constant; burglary yes/no x murder yes/no",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Charge-list matrix: do not stop at the base crime",
+  "signal": "All answers include one crime; the rest of the array toggles two extra crimes.",
+  "studentMove": "Circle the constant crime, then fill each add-on box from the trigger facts.",
+  "tinyRule": "Constant crime is not the fight. The omitted add-on crime is the trap.",
+  "trap": "Choosing B because robbery and death feel complete, while forced entry is left unprocessed."
+ }
+}

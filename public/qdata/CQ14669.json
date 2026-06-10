@@ -1,0 +1,107 @@
+{
+ "id": "CQ14669",
+ "title": "Question 14669",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Christian variation — “Sunday-School Playground Backstop”\n\nDaniel, an experienced marksman, bought a new rifle and wanted to try it out by doing some target shooting. He drove into the country to a clearing where he had previously hunted. To his surprise, beyond the clearing he saw several newly built houses. Between the houses was a small neighborhood playground where children from a Sunday-school picnic were playing. Nevertheless, Daniel nailed a paper target to a tree and walked to a point where the tree was directly between him and the playground. He then fired several shots at the target. One shot missed both the target and the tree and hit and killed one of the children. Daniel was convicted of murder. He appealed, arguing that the evidence was insufficient to support a murder conviction.\n\nThe appellate court should",
+ "call": "The appellate court should",
+ "choices": {
+  "A": "affirm the conviction, because the evidence is sufficient to support a conviction of murder.",
+  "B": "reverse the conviction and remand for a new trial, because the evidence is not sufficient for murder but will support a conviction of voluntary manslaughter.",
+  "C": "reverse the conviction and remand for a new trial, because the evidence is not sufficient for murder but will support a conviction of involuntary manslaughter.",
+  "D": "reverse the conviction and order the case dismissed, because the evidence is sufficient only for a finding of ordinary civil negligence."
+ },
+ "key": "A",
+ "dominantTrap": "C",
+ "rightExplanation": "A is correct. The appellate court should affirm because this is a sufficiency-of-the-evidence question, not a fresh sentencing or degree-selection question.\n\nGold Key: Sufficiency review. On appeal, the question is whether a rational jury could find the required elements on the evidence, viewed favorably to the prosecution.\n\nGold Key: Extreme-recklessness murder. A killing without an intent to kill can still be murder when the defendant consciously creates an extreme risk to human life. Firing several rifle shots toward a target with a playground of children behind it gives the jury enough to find that mental state.\n\nSilver Key: Degree-ladder array. The four answers form a homicide ladder: murder, voluntary manslaughter, involuntary manslaughter, ordinary negligence. Do not pick the lower rung just because the shot was accidental; first ask whether the facts support the highest rung.",
+ "wrongExplanations": {
+  "B": "Voluntary manslaughter is the wrong lane. The stem gives no heat-of-passion or provocation signal. Gold Key: no intent to kill does not automatically move the case to voluntary manslaughter; extreme recklessness can still support murder. B is attractive because it sounds like a compromise between murder and accident, but it answers the wrong homicide frame.",
+  "C": "This is the dominant trap. C notices that Daniel did not aim at a child and that the shot missed the target, but it stops too low on the ladder. Gold Key: extreme recklessness toward human life can supply malice for murder. Silver Key: once the answer array shows murder vs. lesser homicide, match the risk facts before choosing the “accident” answer.",
+  "D": "D undercalls the facts. This was not ordinary civil negligence in the answer-array structure. Daniel saw houses and a playground, placed the tree between himself and the playground, and then fired several shots anyway. D is attractive only if the student treats “missed target” as the whole story."
+ },
+ "c3": [
+  {
+   "label": "B:",
+   "text": "Cut as wrong-frame / bait-doctrine. It imports voluntary manslaughter without any provocation signal."
+  },
+  {
+   "label": "D:",
+   "text": "Cut as undercalling the facts. It treats an extreme-risk shooting path as only ordinary civil negligence."
+  },
+  {
+   "label": "A vs. C",
+   "text": "The real fight is murder vs. involuntary manslaughter."
+  },
+  {
+   "label": "Axis",
+   "text": "how far up the homicide mental-state ladder the known-risk facts go."
+  },
+  {
+   "label": "Splitting fact",
+   "text": "Daniel saw the playground and fired several rifle shots anyway."
+  },
+  {
+   "label": "CALL",
+   "text": "* Apply the Gold Keys: sufficiency review favors the verdict if a rational jury could find murder; extreme recklessness can be malice. A survives."
+  }
+ ],
+ "studentScript": "Call: sufficiency of murder. Array: homicide ladder. Facts: he saw children behind the target and fired several shots anyway. Gold Key: extreme recklessness can be murder, and sufficiency review favors the verdict. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Only answer that matches the appellate sufficiency posture and the highest supported homicide rung after the Gold Keys.",
+   "lawyer": "A rational jury could find extreme recklessness toward human life; sufficiency review views evidence favorably to the prosecution.",
+   "mold": null
+  },
+  "B": {
+   "signal": "Voluntary manslaughter needs a provocation/heat signal; the stem gives target-shooting risk facts, not provocation facts.",
+   "lawyer": "The evidence does not reduce the offense to voluntary manslaughter; the official explanation says no heat-of-passion defense was presented.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "It focuses on no intent/accidental miss but skips the known playground risk and repeated shots.",
+   "lawyer": "Extreme recklessness can support murder, so the evidence was not limited to involuntary manslaughter.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The answer treats the case as only carelessness and does not account for Daniel seeing children in the line of fire.",
+   "lawyer": "The evidence supports more than ordinary negligence; it can support malice through extreme recklessness.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-SUFFICIENCY-MOST-FAVORABLE-01",
+   "statement": "On a sufficiency appeal, the reviewing court asks whether a rational jury could find the elements, viewing the evidence favorably to the prosecution. If yes, affirm.",
+   "trigger": "Convicted defendant appeals, arguing evidence was insufficient.",
+   "unlocks": "The appeal posture; prevents treating the appellate court as choosing the fairest lesser offense.",
+   "authority": "Jackson v. Virginia, 443 U.S. 307 (1979)"
+  },
+  {
+   "id": "GK-CRIM-EXTREME-RECKLESSNESS-MURDER-01",
+   "statement": "An unintentional killing can be murder when the defendant consciously creates an extreme risk to human life. No intent to kill is required.",
+   "trigger": "Deadly force aimed near known people, especially repeated shots or obvious human danger.",
+   "unlocks": "The murder vs. involuntary-manslaughter trap.",
+   "authority": "Common-law implied malice / depraved-heart murder; Model Penal Code-style extreme-indifference formulation"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-DEGREE-LADDER-01",
+   "statement": "When the choices form a homicide degree ladder, do not pick the lower rung because it sounds safer. Match the danger facts to the highest supported rung first.",
+   "trigger": "Four choices differ mainly by homicide degree/remedy.",
+   "unlocks": "Murder vs. voluntary vs. involuntary vs. negligence-only answer array.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "No intent does not end murder",
+  "signal": "A killing is accidental in aim, but the defendant knowingly creates a lethal risk to people.",
+  "studentMove": "Do not drop automatically to manslaughter. Ask whether the facts show extreme disregard for human life.",
+  "tinyRule": "Known extreme risk can supply murder-level malice.",
+  "trap": "Accident equals involuntary manslaughter."
+ }
+}

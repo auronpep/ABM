@@ -1,0 +1,92 @@
+{
+ "id": "CQ14727",
+ "title": "Good Shepherd Preschool",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "BARMATRIX QID: 14727_good_shepherd_preschool\nTransformed from: 14727\n\nLydia worked at a preschool run by Good Shepherd Early Learning Corporation, a private Christian-themed day-care center. At the center, a young child named Timothy often arrived with bruises and welts on his back and legs. A statute in the jurisdiction requires all day-care workers to report to the police cases where there is probable cause to suspect child abuse and provides for immediate removal from the home of any suspected child abuse victims. Lydia was not aware of this statute. Nevertheless, she did report Timothy’s condition to her supervisor, Barnabas, who advised her to keep quiet about it so the preschool would not get into trouble for defaming Timothy’s father, Peter.\n\nAbout two weeks after Lydia first noticed Timothy’s condition, Timothy was beaten to death by Peter. Lydia has been charged with murder in Timothy’s death. The evidence at trial disclosed, in addition to the above, that Timothy had been the victim of beatings by Peter for some time, and that these earlier beatings had been responsible for the marks that Lydia had seen. Timothy’s mother, Mary, had been aware of the beatings but had not stopped them because she was herself afraid of Peter.\n\nLydia’s best argument that she is NOT guilty of murder is that:",
+ "call": "Lydia's best argument that she is NOT guilty of murder is that:",
+ "choices": {
+  "A": "she was not aware of the duty-to-report statute.",
+  "B": "she lacked the mental state necessary to the commission of the crime.",
+  "C": "her omission was not the proximate cause of Timothy's death.",
+  "D": "Good Shepherd Early Learning Corporation, rather than Lydia, was guilty of the omission, which was sanctioned by Barnabas, its supervisory-level agent."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The call asks for Lydia’s best argument that she is not guilty of murder, not her best argument that she did not violate a reporting statute. The strongest argument is aimed at the crime-level requirement: she did not have the mental state necessary to be guilty of murder for Peter’s killing.\n\nGold Key: A legal duty to report can make an omission legally relevant, but it does not by itself supply the mental state needed for murder or for criminal responsibility for another person’s killing.\n\nSilver Key: When the call says “best argument not guilty of murder,” rank the answer that attacks murder itself above answers about the reporting-duty mechanics.",
+ "wrongExplanations": {
+  "A": "Lydia’s lack of awareness of the reporting statute speaks to the reporting-duty side issue. It does not answer the murder charge as cleanly as B. The call is murder; A is reporting-statute awareness.",
+  "C": "This is the dominant trap. The stem gives a causal pathway: suspected abuse, a statute that would trigger immediate removal, continuing abuse by the same father, and death two weeks later. So “not proximate cause” is too categorical and less reliable than the mental-state answer. Gold Key: do not let the causation fight replace the missing murder mental state.",
+  "D": "The statute imposes the reporting duty on day-care workers. The answer shifts the omission to the corporation and supervisor instead of answering Lydia’s own murder charge. Silver Key: the wrong party is a trap when the call asks for the named defendant’s best argument."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. A answers awareness of the reporting statute. The call asks murder."
+  },
+  {
+   "label": "CUT D",
+   "text": "Wrong party / wrong frame. D shifts the omission to the corporation even though the statute names day-care workers and the call asks Lydia’s guilt."
+  },
+  {
+   "label": "CLASH B vs. C",
+   "text": "B attacks murder’s mental state. C attacks causation. Both sound like possible not-guilty routes."
+  },
+  {
+   "label": "CALL",
+   "text": "Murder-level mental state is the stronger, higher-layer argument. C is weaker because the stem deliberately supplies facts that keep causation alive. Residual answer: B."
+  }
+ ],
+ "studentScript": "Call is murder. A is reporting-statute awareness. D shifts the duty to the corporation. C attacks causation, but the stem gives a causal path. B attacks the charged crime's mental state. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call says murder. This answer stays on the reporting statute.",
+   "lawyer": "Ignorance of the reporting statute is not the best murder defense because the murder charge turns on Lydia's criminal responsibility for Peter's killing.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Only B aims directly at the charged crime rather than at reporting mechanics.",
+   "lawyer": "Correct. A legal reporting duty does not alone make Lydia guilty of murder for Peter's killing; the prosecution must prove the required culpability for murder or complicity.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The stem gives a report -> immediate removal -> same abuser -> later death chain. C says that chain is categorically absent.",
+   "lawyer": "Not the best argument. The facts could support foreseeability and causation; the cleaner murder defense is missing culpability.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "The statute says all day-care workers. The answer says corporation rather than Lydia.",
+   "lawyer": "The supervisor's instruction does not transfer Lydia's own statutory duty or determine her murder liability.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-OMISSION-MURDER-MENS-REA-01",
+   "statement": "A reporting duty can make a failure to act legally relevant, but murder liability for another person's killing still requires the defendant's required murder/accomplice mental state.",
+   "trigger": "A failure to report is followed by a homicide committed by another person.",
+   "unlocks": "Prevents the reporting-duty and causation traps from replacing the murder mens rea requirement.",
+   "authority": "Lawyer-confirmation only: MPC §2.01(3), MPC §2.06, Jones v. United States."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-MURDER-CALL-FOCUS-01",
+   "statement": "When the call asks for the best argument not guilty of murder, rank the answer that attacks murder itself above answers about reporting-duty mechanics.",
+   "trigger": "Best argument NOT guilty of murder after a duty-to-report statute.",
+   "unlocks": "B vs A/C/D",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not let the omission fact become the murder answer.",
+  "signal": "Failure to report + later killing by another.",
+  "studentMove": "Separate duty/causation from crime-level mental state.",
+  "tinyRule": "Omission duty is not the same thing as murder mens rea.",
+  "trap": "Picking proximate cause because it sounds like the most factual defense."
+ }
+}

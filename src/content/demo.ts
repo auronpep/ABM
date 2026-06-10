@@ -40,7 +40,7 @@ export const barnabasDemo: ForensicsQuestion = {
   tension: "Voluntary creation × compelled authentication",
   difficulty: "Hard",
   stem:
-    "Barnabas, an associate pastor, keeps a private handwritten prayer journal in which he allegedly recorded disputed financial dates. A federal grand jury issues a subpoena ordering him to hand over the physical journal — it requires no testimony, only the journal itself. Barnabas refuses and asserts his Fifth Amendment privilege.\n\nUnder what circumstances, if any, may the grand jury compel production of the journal?",
+    "Barnabas, an associate pastor, keeps a private handwritten prayer journal in which he allegedly recorded disputed financial dates. A federal grand jury issues a subpoena ordering him to hand over the physical journal; the subpoena requires no testimony, only the journal itself. Barnabas refuses and asserts his Fifth Amendment privilege.\n\nUnder what circumstances, if any, may the grand jury compel production of the journal?",
   choices: [
     {
       letter: "A",
@@ -73,14 +73,14 @@ export const barnabasDemo: ForensicsQuestion = {
   autoPick: "A",
   trapNames: ["Creation / Production Collapse", "Half-Truth Override"],
   whyAlmost:
-    "Choice A tells part of the truth — Barnabas was not forced to write the journal, so its contents are not protected. But it quietly skips the second issue: handing the journal over under subpoena is itself testimony that the journal exists, is in his possession, and is authentic.",
+    "Choice A tells part of the truth: Barnabas was not forced to write the journal, so its contents are not protected. But it quietly skips the second issue: handing the journal over under subpoena is itself testimony that the journal exists, is in his possession, and is authentic.",
   correctSummary:
     "B is correct. The act of production is compelled and testimonial, so it may be compelled only with use and derivative-use immunity for that act.",
   tear: [
     { step: "Test", text: "Is A answering the whole call, or only the part about who wrote the journal?" },
     { step: "Expose", text: "A fixes on voluntary creation and ignores the compelled act of producing the document." },
-    { step: "Apply", text: "Producing the journal authenticates it — a testimonial act requiring use/derivative-use immunity." },
+    { step: "Apply", text: "Producing the journal authenticates it, which is a testimonial act requiring use/derivative-use immunity." },
     { step: "Repair", text: "Drill the pattern: half-true answers that skip the decisive legal condition." },
   ],
-  repairBrief: "Repair Brief — Subpoenas vs. Act-of-Production Immunity",
+  repairBrief: "Repair Brief: Subpoenas vs. Act-of-Production Immunity",
 };

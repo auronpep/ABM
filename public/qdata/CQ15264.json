@@ -1,0 +1,106 @@
+{
+ "id": "CQ15264",
+ "title": "Emmaus Roadster",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Strict Liability and Products Liability",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "Question ID: 15264_emmaus_roadster\nTransformed from: 15264\n\nLydia bought an Emmaus Roadster, a sports car manufactured by Emmaus Motor Co. The Roadster has an excellent reputation for mechanical reliability with one exception: the engine may stall if it has not had an extended warm-up.\n\nAfter a Christian law-student study group at a coffee shop, Lydia had just begun to drive her Roadster in city traffic without a warm-up when the engine suddenly stalled. A car driven by Timothy rear-ended Lydia’s car. Lydia suffered no external physical injuries as a result of the collision. However, the shock of the crash caused her to suffer a severe heart attack.\n\nLydia brought an action against Emmaus Motor Co. based on strict liability in tort. During the trial, Lydia presented evidence of an alternative engine design of equal cost that would eliminate the stalling problem without impairing the functions of the engine in any way. Emmaus Motor Co. moves for a directed verdict at the close of the evidence.\n\nThis motion should be:",
+ "call": "Emmaus Motor Co. moves for a directed verdict at the close of the evidence. This motion should be",
+ "choices": {
+  "A": "denied, because the jury could find that an unreasonably dangerous defect in the engine was a proximate cause of the collision.",
+  "B": "denied, because the jury could find that the Emmaus Roadster was not crashworthy.",
+  "C": "granted, because Timothy's failure to stop within an assured clear distance was a superseding cause of the collision.",
+  "D": "granted, because a person of normal sensitivity would not have suffered a heart attack under these circumstances."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The motion should be denied because Lydia has evidence from which a jury could find a design defect and causation. The Roadster performed as designed, so the defect theory is design defect, not manufacturing defect. Lydia offered a specific alternative engine design of equal cost that would eliminate the stalling problem without impairing engine function.\n\nGold Key: In a design-defect products case, alternative-design evidence that removes the dangerous feature at no added functional or cost burden is the kind of fact that gets the plaintiff past a directed verdict.\n\nSilver Key: Track the defect chain: engine stalls → traffic collision → heart attack. The responsive answer must stay on that chain.",
+ "wrongExplanations": {
+  "B": "It answers a neighboring products-liability question. Crashworthiness asks whether a product failed to protect the user during a crash or enhanced the injury after impact. Lydia’s claim is not that the Roadster performed poorly in the crash. Her claim is that the engine defect subjected her to an unnecessary crash.\n\nSilver Key: When the stem gives a defect chain, do not switch defect theories. “Crashworthy” points to a different product-defect story.",
+  "C": "A rear-end collision after a car unexpectedly stalls in city traffic is a foreseeable intervening event, not a superseding cause as a matter that would justify taking the case away from the jury.\n\nGold Key: Foreseeable intervening negligence does not cut off the defendant’s liability.",
+  "D": "The motion should not be granted merely because a person of normal sensitivity might not have suffered a heart attack. Once the jury could find that the defect caused the crash and resulting physical harm, unusual severity does not defeat the claim.\n\nGold Key: A tort defendant generally takes the plaintiff as found; the “normal sensitivity” shortcut is not the products-liability causation answer here."
+ },
+ "c3": [
+  {
+   "label": "CUT B — NOT_RESPONSIVE / bait_doctrine",
+   "text": "“Crashworthy” is a neighboring products-liability frame. The stem’s chain is engine defect causing a crash, not crashworthiness during the crash."
+  },
+  {
+   "label": "CUT C — NOT_TRUE / backwards",
+   "text": "C reverses the superseding-cause direction. A foreseeable rear-end collision after a traffic stall does not cut off the defect chain."
+  },
+  {
+   "label": "CUT D — NOT_TRUE / fabricated_rule",
+   "text": "D invents a normal-sensitivity requirement. The stem does not ask whether an average person would suffer the same harm."
+  },
+  {
+   "label": "Residual: A",
+   "text": "A is the only answer that follows the engine-defect chain and uses the directed-verdict posture: jury could find defect and proximate cause."
+  }
+ ],
+ "studentScript": "Engine stalls. Alternative design fixes it. Rear-end is foreseeable. Heart attack does not disappear because normal person might not have it. Deny directed verdict: A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Tracks the stem's chain: engine defect -> collision -> jury could find proximate cause.",
+   "lawyer": "Design-defect evidence plus causation is enough to deny directed verdict.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The stem is about a stall causing a crash, not a car failing to protect in the crash.",
+   "lawyer": "Crashworthiness is an enhanced-injury theory; it does not answer this engine-defect causation claim.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "A rear-end collision is the kind of event an unexpected traffic stall points toward.",
+   "lawyer": "Foreseeable intervening negligence is not a superseding cause.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "The answer asks what happens to a normal person instead of tracking this plaintiff's injury chain.",
+   "lawyer": "Unusual severity of physical harm does not defeat liability once causation is jury-findable.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-DESIGN-DEFECT-01",
+   "statement": "Design defect gets to the jury when the plaintiff shows a feasible equal-cost design that removes the dangerous feature without harming product function.",
+   "trigger": "Alternative engine design of equal cost and equal function.",
+   "unlocks": "Why A survives the directed-verdict motion.",
+   "authority": "Restatement (Third) of Torts: Products Liability § 2(b)."
+  },
+  {
+   "id": "GK-TORTS-FORESEEABLE-INTERVENING-01",
+   "statement": "A foreseeable intervening act does not become a superseding cause just because another person was negligent.",
+   "trigger": "Unexpected stall in city traffic followed by rear-end collision.",
+   "unlocks": "Why C is wrong.",
+   "authority": "General proximate-cause/superseding-cause doctrine."
+  },
+  {
+   "id": "GK-TORTS-NORMAL-SENSITIVITY-01",
+   "statement": "A defendant does not escape liability merely because this plaintiff suffered worse physical harm than a normal person would have.",
+   "trigger": "No external injury but severe heart attack.",
+   "unlocks": "Why D is wrong.",
+   "authority": "Restatement (Second) of Torts § 461 / eggshell-plaintiff principle."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-DEFECT-CHAIN-01",
+   "statement": "In products cases, lock the defect chain before reading the choices: here it is engine stalls -> collision -> heart attack. Cut any answer that switches to a different defect story.",
+   "trigger": "A products-liability answer names a different defect than the one causing the accident.",
+   "unlocks": "Crashworthiness bait.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not switch product-defect stories.",
+  "signal": "Stem says one defect caused the injury chain; a choice names a neighboring product theory.",
+  "studentMove": "Write the chain in three arrows before cutting.",
+  "tinyRule": "Same product area is not enough; same defect chain is required.",
+  "trap": "Crashworthiness when the issue is defect-caused collision."
+ }
+}

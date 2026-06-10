@@ -1,0 +1,100 @@
+{
+ "id": "CQ14694",
+ "title": "Tabor Trail",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Inchoate Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "At a Christian law-school retreat, Paul became enraged at Barnabas after Barnabas exposed Paul’s cheating in a moot-court competition. Paul decided to kill Barnabas. Early one morning, armed with a pistol, Paul crouched behind some shrubs on a hillside overlooking a trail on which Barnabas often jogged. That morning, however, Paul saw Barnabas jogging on another trail about a half mile away. Unaware of the limited range of his pistol, Paul fired five shots at Barnabas. None of the shots came anywhere close to Barnabas because Barnabas was well out of range.\n\nPaul is",
+ "call": "Paul is",
+ "choices": {
+  "A": "guilty of attempted murder, because he was not aware of the limited range of his pistol.",
+  "B": "guilty of attempted murder, because a reasonable person would not have been aware of the limited range of his pistol.",
+  "C": "not guilty of attempted murder, or any lesser included offense, because, under the circumstances, it was impossible for him to have killed Barnabas.",
+  "D": "not guilty of attempted murder, but guilty of assault."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Paul intended to kill Barnabas. He then fired five shots at Barnabas. The fact that the shots could not reach Barnabas is factual impossibility, not a defense to attempt, because Paul did not know the facts that made completion impossible.\n\nGold Key: Attempt follows the actor’s own purpose and believed circumstances, not what was actually possible.\n\nSilver Key: Read the result line first. Two choices say “guilty of attempted murder”; two say “not guilty of attempted murder.” Once the factual-impossibility trap falls, stay in the “guilty of attempted murder” lane and choose the actual-belief reason, not the reasonable-person reason.",
+ "wrongExplanations": {
+  "B": "It reaches the right result but gives the wrong reason. Attempt does not ask whether a reasonable person would know the pistol’s range. It asks what Paul actually intended and what Paul actually believed when he fired. Gold Key: the actor’s own purpose and believed circumstances control.",
+  "C": "It treats factual impossibility as a complete defense. That is the main trap. If the crime would have occurred as Paul believed the facts to be, factual impossibility does not defeat attempt liability. Gold Key: factual impossibility is not the same as legal impossibility.",
+  "D": "It tries to downgrade the result to assault. Even if assault is also available, the answer’s “not guilty of attempted murder” line is wrong. Silver Key: do not let a lesser-offense answer crowd out the greater offense when the greater offense survives the attempt/impossibility check."
+ },
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "wrong standard. “Reasonable person” is not the attempt standard. Anchor-assisted cut."
+  },
+  {
+   "label": "CUT C",
+   "text": "wrong impossibility frame. It says impossibility defeats attempt. Gold Key cuts it."
+  },
+  {
+   "label": "CUT D",
+   "text": "lesser-offense crowd-out. It denies attempted murder even though attempt survives. Anchor-assisted cut."
+  },
+  {
+   "label": "Residual",
+   "text": "A."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B both say guilty of attempted murder. They fight on actual-belief vs reasonable-person awareness. The stem’s fact says Paul was actually unaware of the range limit. A wins."
+  },
+  {
+   "label": "CALL",
+   "text": "Gold Key confirms factual impossibility is not a defense. Silver Key confirms result-line sorting."
+  }
+ ],
+ "studentScript": "Paul meant to kill. Paul fired. The range problem was unknown to Paul. Factual impossibility does not erase attempt. Cut reasonable-person, cut impossibility, cut assault-only. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Matches the stem fact that Paul was unaware of the range limit and fired anyway.",
+   "lawyer": "Correct. Intent to kill plus firing at Barnabas is a substantial step; factual impossibility does not defeat attempt when Paul was unaware of the range problem.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The answer swaps Paul’s actual awareness for a reasonable-person awareness test.",
+   "lawyer": "Incorrect. Attempt turns on actual intent and actual believed circumstances, not a negligence-style reasonable-person range inquiry.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "The answer treats impossibility as ending attempt even though the stem shows actual intent plus firing.",
+   "lawyer": "Incorrect. Factual impossibility is not a defense to attempt when the crime would have been possible as the actor believed.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "The assault label does not answer away attempted murder.",
+   "lawyer": "Incorrect. Even if assault is also available, Paul is not thereby not guilty of attempted murder.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-ATTEMPT-IMPOSSIBILITY-01",
+   "statement": "Attempt follows the actor’s own purpose and believed circumstances; factual impossibility is no defense when the completed crime would have occurred as the actor believed.",
+   "trigger": "The defendant fires or acts, but an unknown fact makes completion impossible.",
+   "unlocks": "C’s impossibility defense and B’s reasonable-person standard.",
+   "authority": "Model Penal Code § 5.01; People v. Dlugash; federal attempt pattern instruction."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-ATTEMPT-ARRAY-01",
+   "statement": "Read the result line first: two answers keep attempted murder, two deny it. If the Gold Key keeps attempt alive, stay in the guilty-attempt lane and choose actual belief over reasonable-person awareness.",
+   "trigger": "Answer set splits between guilty of attempt and not guilty of attempt.",
+   "unlocks": "A/B vs C/D result-line split and A/B actual-vs-objective standard clash.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Attempt: actual belief beats factual impossibility",
+  "signal": "Unknown fact makes the intended crime impossible.",
+  "studentMove": "Ask what the defendant believed when he acted.",
+  "tinyRule": "Factual impossibility does not defeat attempt; actual belief controls.",
+  "trap": "Reasonable-person standard or no-attempt-because-impossible answer."
+ }
+}

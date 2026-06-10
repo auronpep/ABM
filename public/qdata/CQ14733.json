@@ -1,0 +1,88 @@
+{
+ "id": "CQ14733",
+ "title": "Verse Watch",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX QID: 14733_verse_watch\n\nDaniel visited a privately owned Christian bookstore that also sold engraved watches. He asked Lydia, the clerk, to see an expensive watch engraved with a Scripture verse. In conversation, Daniel falsely claimed to be Pastor Paul’s son. When Lydia handed him the watch, Daniel asked whether he could put it on, walk around the store to see how it felt, and then briefly step outside to view it in natural light. Lydia agreed, saying, “I know I can trust someone like you with the merchandise.”\n\nDaniel walked out of the store wearing the watch and did not return. A week later, Lydia saw Daniel wearing the watch at a campus fellowship dinner. She told him that he must either pay for the watch or give it back. Daniel hissed, “You’ll be sorry if you mess with me.” Intimidated, Lydia backed off.\n\nThe following list of crimes is in descending order of seriousness. What is the most serious crime Daniel committed?\n\nThe source row is BARMATRIX Q# 14733, Criminal Law / Other Crimes, with answer B as the official key and C as the dominant wrong answer at 22%.  The transform follows the prompt’s requirement to preserve the rule, answer trap, popularity provenance, Christian naming guardrail, and full transform/report pipeline.  It also follows the Reasoning Creed posture: preserve the ambitious goal, name the pivot, and keep candor around what is structural versus anchor-dependent.",
+ "call": "The following list of crimes is in descending order of seriousness. What is the most serious crime Daniel committed?",
+ "choices": {
+  "A": "Robbery.",
+  "B": "Larceny.",
+  "C": "False pretenses.",
+  "D": "Embezzlement."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Daniel committed larceny. He used a false present fact to get Lydia to hand him the watch for a limited try-on purpose. Lydia did not sell it to him, transfer ownership, or entrust it to him for an independent lawful purpose. Daniel then walked away with the watch.\n\nGold Key: In common-law theft labels, deception that gets possession only is larceny by trick; deception that gets title/ownership is false pretenses; lawful entrusted possession later converted is embezzlement; force or threat used in the taking is robbery.\n\nSilver Key: Because the call says the crimes are listed in descending seriousness, test the top crime first. If robbery fails, move down the ladder and pick the most serious label that actually fits the taking.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — Robbery",
+   "text": "Later threat is not the taking mechanism. This is anchor-assisted, not hard structural."
+  },
+  {
+   "label": "CLASH B vs. C — Larceny vs. False pretenses",
+   "text": "Axis: possession only versus title. Splitting fact: Lydia allowed only try-on/display control. No ownership transfer. B beats C."
+  },
+  {
+   "label": "CLASH B vs. D — Larceny vs. Embezzlement",
+   "text": "Axis: possession obtained by trick versus lawful entrusted possession later converted. Splitting fact: Daniel’s control came from the lie and the limited try-on request. B beats D."
+  },
+  {
+   "label": "CALL",
+   "text": "The theft-label Gold Key resolves the residue. B is the residual."
+  }
+ ],
+ "studentScript": "Robbery? No—the threat came later. False pretenses? No title. Embezzlement? No lawful entrustment. Possession-only trick plus walk-away: larceny.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Threat fact exists, but it arrives after Daniel already walked away with the watch.",
+   "lawyer": "Robbery would require force or threat as part of the taking; the later intimidation does not upgrade the earlier trick-taking.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Daniel got limited possession by deception, walked away, and never received title.",
+   "lawyer": "This is larceny by trick: possession obtained by deception without transfer of ownership.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The lie matters, but the clerk did not sell or transfer ownership.",
+   "lawyer": "False pretenses requires title/ownership obtained by misrepresentation; Daniel obtained only possession.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "Daniel was not an entrusted lawful possessor; he got the watch through a limited try-on deception.",
+   "lawyer": "Embezzlement fits lawful possession followed by conversion, not possession obtained by trick.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-THEFT-LABELS-01",
+   "statement": "For common-law theft labels, ask what the wrongdoer got: possession only, title, or entrusted lawful possession. Possession-only deception is larceny by trick; title-by-fraud is false pretenses; lawful-possession conversion is embezzlement; force/threat in the taking is robbery.",
+   "trigger": "A suspect lies to get property temporarily, walks away, and the answer choices are theft labels.",
+   "unlocks": "larceny vs false pretenses vs embezzlement vs robbery",
+   "authority": "lawyer_confirmation only"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-DESCENDING-CRIME-LADDER-01",
+   "statement": "When the call says the crimes are listed in descending seriousness, test the highest crime first, then move down to the first crime that actually fits the taking.",
+   "trigger": "The call expressly says the list is in descending order of seriousness.",
+   "unlocks": "most-serious-crime call",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Theft Labels: What Control Did He Get?",
+  "signal": "The wrongdoer lied and walked away with property.",
+  "studentMove": "Ask: possession only, title, entrusted possession, or force in the taking?",
+  "tinyRule": "Possession only = larceny by trick; title = false pretenses; entrusted possession = embezzlement; force/threat in taking = robbery.",
+  "trap": "Choosing the most familiar theft word instead of the control-transfer label."
+ }
+}

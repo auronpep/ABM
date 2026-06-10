@@ -1,0 +1,650 @@
+[
+ {
+  "id": "CQ14141",
+  "title": "Dovesound Review",
+  "subject": "Civil Procedure",
+  "topic": "Civil Procedure",
+  "subtopic": "Motions",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14215",
+  "title": "Daniel Cedar Bookcases",
+  "subject": "Civil Procedure",
+  "topic": "Civil Procedure",
+  "subtopic": "Verdicts and Judgments",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14227",
+  "title": "Lydia New Hope Petition",
+  "subject": "Constitutional Law",
+  "topic": "Constitutional Law",
+  "subtopic": "Individual Rights",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14228",
+  "title": "Road To Emmaus Shuttle",
+  "subject": "Constitutional Law",
+  "topic": "Constitutional Law",
+  "subtopic": "Individual Rights",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14238",
+  "title": "Lydias Barnabas Brief",
+  "subject": "Constitutional Law",
+  "topic": "Constitutional Law",
+  "subtopic": "Individual Rights",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14555",
+  "title": "Private Bookstore Plea",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Constitutional Protection of Accused Persons",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14586",
+  "title": "Pastor Journal",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Fifth Amendment Privilege Against Self-Incrimination",
+  "difficulty": 4
+ },
+ {
+  "id": "CQ14659",
+  "title": "Bible Study Ambush",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14660",
+  "title": "Christian Fellowship Spin",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14664",
+  "title": "Bible Study Gas Station",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14665",
+  "title": "Bible Study Stop Sign",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14667",
+  "title": "Christian Fellowship Spin",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14668",
+  "title": "Bible Study Coffee",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14669",
+  "title": "Question 14669",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14671",
+  "title": "Bible Study Safe",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14675",
+  "title": "Question 14675",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14676",
+  "title": "Christian Academy False Accusation",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14677",
+  "title": "Passion Play Prop Gun",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14678",
+  "title": "Galilee Grill",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14679",
+  "title": "Fellowship Cup",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14680",
+  "title": "Manna Bookshop",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14681",
+  "title": "Question 14681",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14684",
+  "title": "Peters Third Shot",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14685",
+  "title": "Bible Bowl Hammer",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14687",
+  "title": "Bethany Books Van",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Homicide",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14690",
+  "title": "Bible Study Protected Victim",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14691",
+  "title": "Question 14691",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14692",
+  "title": "Chapel Corner",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14693",
+  "title": "Fellowship Steps",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14694",
+  "title": "Tabor Trail",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14695",
+  "title": "Question 14695",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 1
+ },
+ {
+  "id": "CQ14696",
+  "title": "Daily Bread",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14697",
+  "title": "Question 14697",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14698",
+  "title": "Bible Bookshop Cash Drawer",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14700",
+  "title": "Solicitation Bible Picnic",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14701",
+  "title": "Christian Bookstore Agent",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14707",
+  "title": "Christian Bible Retreat Conspiracy",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14709",
+  "title": "Question 14709",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14710",
+  "title": "Question 14710",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14711",
+  "title": "Question 14711",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14712",
+  "title": "Cls Bake Sale",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14713",
+  "title": "Mission Key Party",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14714",
+  "title": "Backyard Bible Study",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14715",
+  "title": "Question 14715",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14716",
+  "title": "Lydia Bookstore Bible",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14718",
+  "title": "Barnabas Bookshop Fire",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14719",
+  "title": "Manna Drive Thru",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14720",
+  "title": "Barnabas Camel Races",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14721",
+  "title": "Good Shepherd Gallery",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14723",
+  "title": "Sons Of Thunder",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14724",
+  "title": "Cls Wallet",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14725",
+  "title": "Lost Devotional Letter",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14727",
+  "title": "Good Shepherd Preschool",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14728",
+  "title": "Question 14728",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14730",
+  "title": "Potluck Flight",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14731",
+  "title": "Bible Study Ring",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14733",
+  "title": "Verse Watch",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14735",
+  "title": "Question 14735",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14736",
+  "title": "Chapel Ride",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14740",
+  "title": "Silver Cross Window",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14742",
+  "title": "Backyard Hymn Keyboard",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14743",
+  "title": "Advent Wallet",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14744",
+  "title": "Question 14744",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14745",
+  "title": "Cana Credit Union",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14748",
+  "title": "Question 14748",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Criminal Law",
+  "subtopic": "Other Crimes",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ14766",
+  "title": "Potluck Collision Tape",
+  "subject": "Evidence",
+  "topic": "Evidence",
+  "subtopic": "Hearsay and Circumstances of Its Admissibility",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ14830",
+  "title": "Question 14830",
+  "subject": "Evidence",
+  "topic": "Evidence",
+  "subtopic": "Presentation of Evidence",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15222",
+  "title": "Mannafuel Lydia Racecar",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Other Torts",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15223",
+  "title": "Lydias Loaves",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Other Torts",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15224",
+  "title": "Bible Workbook Press",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Other Torts",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15253",
+  "title": "Barnabas Quarry Safety Audit",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15254",
+  "title": "Lydia Selah Blue Dye",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15255",
+  "title": "Question 15255",
+  "subject": "Torts",
+  "topic": "Strict Liability and Products Liability",
+  "subtopic": "Federal Tort Claims Act negligence gate / strict-liability bait",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15256",
+  "title": "Biblestudy Furnace",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15257",
+  "title": "Peter On The Ledge",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15258",
+  "title": "Good Shepherd Dental",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15259",
+  "title": "Question 15259",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ15260",
+  "title": "Creation Chemistry Kit",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 3
+ },
+ {
+  "id": "CQ15262",
+  "title": "Fiery Furnace Panels",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15263",
+  "title": "Galilee Gt",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 2
+ },
+ {
+  "id": "CQ15264",
+  "title": "Emmaus Roadster",
+  "subject": "Torts",
+  "topic": "Torts",
+  "subtopic": "Strict Liability and Products Liability",
+  "difficulty": 3
+ }
+]

@@ -1,0 +1,80 @@
+{
+ "id": "CQ14720",
+ "title": "Barnabas Camel Races",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "After a Bible-study dinner at a private law-school apartment, Peter asked Barnabas to loan him $500, promising to repay the amount within two weeks. Barnabas loaned Peter the $500. The next day Peter took the money to a legal county-fair camel-race betting booth and lost all of it. Peter then left town for six months. He has not repaid Barnabas.\n\nPeter has committed",
+ "call": "Peter has committed",
+ "choices": {
+  "A": "both larceny by trick and obtaining money by false pretenses, although he can only be convicted of one offense.",
+  "B": "larceny by trick only.",
+  "C": "obtaining money by false pretenses only.",
+  "D": "neither larceny by trick nor obtaining money by false pretenses."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct.\n\nSilver Key: In a “both / X only / Y only / neither” answer array, first ask whether the stem gives the shared trigger that both named offenses require. Here, both larceny by trick and false pretenses need deception at the time Peter got the money.\n\nGold Key: A broken promise to repay a loan, plus later failure to repay, does not by itself prove that the borrower lied or intended not to repay when the money was obtained.\n\nThe stem gives a loan, a promise to repay, later gambling loss, leaving town, and nonpayment. It does not give a false statement that induced Barnabas to lend the money, and it does not give facts showing that Peter already intended not to repay when he received the money. So the shared theft trigger is missing. The residual answer is neither.",
+ "wrongExplanations": {
+  "A": "A picks both crimes. That is the maximum-crime answer in the 2×2 matrix. Silver Key: In this array, do not start by choosing between the two crimes. First ask whether the common theft trigger is present. It is not. Gold Key: later nonpayment is not enough by itself to turn a loan promise into fraud or theft.",
+  "B": "B picks larceny by trick only. The trap is treating later bad behavior as if it proves the earlier trick. Gold Key: larceny by trick requires deception at the time possession is obtained. The stem gives only a promise to repay and later nonpayment.",
+  "C": "C picks false pretenses only. The trap is treating the loan promise as a false pretense just because Peter later failed to pay. Gold Key: a future promise becomes a theft-type falsehood only if the prosecution can prove that, when the promise was made, the promisor did not intend to perform. Nonperformance alone is not enough."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "No hard structural cut exists without the Gold Key. All three wrong answers are plausible if a student treats later nonpayment as proof of earlier fraud."
+  },
+  {
+   "label": "CLASH",
+   "text": "The answer array is a 2×2 matrix:\n\n|                      | False pretenses yes | False pretenses no |\n| -------------------- | ------------------- | ------------------ |\n| Larceny by trick yes | A                   | B                  |\n| Larceny by trick no  | C                   | D                  |"
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Key. Both charged offenses require deception/false statement plus fraudulent intent at acquisition. The stem gives neither. Select the “neither” cell: D."
+  }
+ ],
+ "studentScript": "This is a both/only/only/neither matrix. Both crimes need the same theft trigger: deception at the time Peter got the money. The facts only show a loan, a promise, later loss, leaving town, and nonpayment. I cannot backfill earlier fraud from later nonpayment. Cut A, B, and C. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A chooses the maximum-crime cell in the 2x2 matrix even though the shared trigger for both crimes is not supplied.",
+   "lawyer": "No evidence of fraud, misrepresentation, or intent not to repay when Peter obtained the money.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "B picks one crime but still relies on the same missing shared trigger: deception at acquisition.",
+   "lawyer": "Larceny by trick requires deception or false statement producing possession, plus intent to permanently deprive at acquisition.",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "C treats later nonpayment as if it proves the original promise was fraudulent.",
+   "lawyer": "False pretenses requires obtaining title through misrepresentation or false pretense with intent to defraud; nonperformance alone is insufficient.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "D is the neither cell after the shared theft trigger is missing.",
+   "lawyer": "The supplied facts support a debt and suspicious later conduct, but not either named theft offense.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-LOAN-PROMISE-01",
+   "statement": "A broken promise to repay a loan, standing alone, does not prove theft by trick or false pretenses. The prosecution needs deception or fraudulent intent when the money was obtained.",
+   "trigger": "Borrower receives money after promising repayment, later loses it or disappears.",
+   "unlocks": "The trap that later nonpayment retroactively proves original theft.",
+   "authority": "Cornell Wex definitions of larceny by trick and false pretenses; CALCRIM No. 1804 / People v. Ashley principle that nonperformance alone is not enough to prove no intent to perform."
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Broken promise is not automatically theft",
+  "signal": "Loan + promise + later nonpayment",
+  "studentMove": "Freeze the timing. Ask what was false when the money changed hands.",
+  "tinyRule": "Bad later conduct does not by itself prove fraud at acquisition.",
+  "trap": "Backfilling intent from disappearance or nonpayment."
+ }
+}

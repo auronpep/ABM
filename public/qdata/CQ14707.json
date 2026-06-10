@@ -1,0 +1,101 @@
+{
+ "id": "CQ14707",
+ "title": "Christian Bible Retreat Conspiracy",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Inchoate Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX QID: 14707_christian_bible_retreat_conspiracy\nTransformed from: 14707\nSubject: CRIMINAL\nTopic: Criminal Law\nSubtopic: Inchoate Crimes\n\nMary and Martha, sisters, took a private Bible-study trip to the Bahamas. When they passed through U.S. Customs inspection upon their return, customs officials found packages of cocaine stitched inside separate carry-on tote bags belonging to each of them. They were arrested. During separate questioning by customs officers, Mary broke down and cried, “I told Martha there would be too many officers at this airport.” Martha did not give a statement.\n\nMary and Martha were indicted for conspiracy to import cocaine. They were tried separately. At Mary’s trial, after the government introduced the above evidence and rested its case, Mary’s lawyer moved for a judgment of acquittal on the ground of insufficient evidence.\n\nShould the court grant the motion?",
+ "call": "Should the court grant the motion for judgment of acquittal?",
+ "choices": {
+  "A": "No, because the evidence shows that Mary and Martha agreed to import cocaine.",
+  "B": "No, because the evidence shows that Mary and Martha possessed cocaine.",
+  "C": "Yes, because the evidence shows only that Mary and Martha committed separate crimes of cocaine possession.",
+  "D": "Yes, because Martha did not give a statement admitting that she and Mary agreed to import cocaine."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The court should not grant the motion. The government does not need a direct confession from both sisters at this stage. The call is not “was possession proven?” or “did Martha confess?” The call is whether the evidence is sufficient for a rational jury to find an agreement.\n\nGold Key: On a criminal judgment-of-acquittal motion, the judge asks whether a rational jury could find the essential elements beyond a reasonable doubt from the evidence. In a conspiracy case, the key element is agreement, and agreement may be inferred from circumstances.\n\nSilver Key: In a conspiracy answer array, mark the answer that speaks to agreement before you grade answers about possession, silence, or separate crimes.\n\nHere, two hidden packages plus Mary’s statement that she had warned Martha about “too many officers” gives the jury enough to infer a shared plan. The issue goes to the jury.",
+ "wrongExplanations": {
+  "B": "Possession is not the same as conspiracy. The answer gives a reason to deny the motion, but the reason addresses the wrong element. Silver Key: When the charge is conspiracy, the answer must speak to agreement, not just possession.",
+  "C": "“Only” is doing too much work. The facts include Mary’s statement about a prior discussion with Martha. That statement gives the jury an agreement signal, so the evidence is not limited to two isolated possession crimes.",
+  "D": "Martha’s silence does not answer the sufficiency question. The government may rely on Mary’s statement and the surrounding circumstances. Gold Key: A conspiracy agreement does not have to be proved by a direct admission from every conspirator."
+ },
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "possession is a non-dispositive element. It does not answer the conspiracy call."
+  },
+  {
+   "label": "CUT C",
+   "text": "“only” overclaims. The stem gives a discussion fact between Mary and Martha."
+  },
+  {
+   "label": "CUT D",
+   "text": "Martha’s silence is a non-dispositive fact. It ignores the statement by Mary and the circumstantial evidence."
+  },
+  {
+   "label": "Residual",
+   "text": "A."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "If the student hesitates, apply the sufficiency anchor: rational jury can infer agreement from circumstances."
+  }
+ ],
+ "studentScript": "Do not grant. The call is conspiracy, so I need agreement. The statement \"I told Martha\" plus both hidden bags gives enough agreement evidence for a jury. Possession-only and no-confession answers are traps.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This is the only choice that answers the conspiracy call with agreement.",
+   "lawyer": "Under Rule 29 and Jackson/Coleman, the court denies acquittal if a rational jury could find the agreement element beyond a reasonable doubt from the circumstances.\n",
+   "mold": null
+  },
+  "B": {
+   "signal": "The call is conspiracy; this answer proves possession instead.",
+   "lawyer": "Possession may be evidence, but the conspiracy element is agreement. This answer gives a non-dispositive reason.\n",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The stem gives more than separate possession: Mary says she told Martha about officers.",
+   "lawyer": "A rational jury could infer agreement from the circumstances, so the evidence is not limited to separate possession.\n",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "This answer focuses on Martha's silence and ignores Mary's statement plus the surrounding facts.",
+   "lawyer": "The government need not obtain a direct admission from every conspirator. Circumstantial proof may support the agreement element under the sufficiency standard.\n",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-CONSPIRACY-SUFFICIENCY-01",
+   "statement": "On a judgment-of-acquittal motion, the judge denies acquittal if a rational jury could find the conspiracy agreement from all the circumstances. The agreement need not be proved by a direct confession from each conspirator.\n",
+   "trigger": "Conspiracy charge plus Rule 29 / insufficient-evidence motion.",
+   "unlocks": "The possession-only and no-direct-admission traps.",
+   "authority": [
+    "Fed. R. Crim. P. 29(a)",
+    "Jackson v. Virginia / Coleman v. Johnson sufficiency standard",
+    "Iannelli / Braverman / Shabani agreement principle",
+    "21 U.S.C. 963"
+   ]
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-CONSPIRACY-ANSWER-ARRAY-01",
+   "statement": "In a conspiracy array, find the answer that talks about agreement before grading answers about possession, silence, or separate crimes.\n",
+   "trigger": "Choices split between agreed, possessed, separate possession, and no admission.",
+   "unlocks": "Agreement lane vs possession/silence traps.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Agreement is the conspiracy lane",
+  "signal": "The answer set includes both 'agreed' and 'possessed.'",
+  "studentMove": "Circle 'conspiracy' in the charge, then choose the answer lane that speaks to agreement.",
+  "tinyRule": "Possession may support the story, but agreement is the conspiracy target.",
+  "trap": "Picking possession because it is easier to see than agreement."
+ }
+}

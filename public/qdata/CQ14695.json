@@ -1,0 +1,96 @@
+{
+ "id": "CQ14695",
+ "title": "Question 14695",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Inchoate Crimes",
+ "difficulty": 1,
+ "tension": null,
+ "stem": "BARMATRIX Q# 14695_manna_scroll\n\nPeter, Paul, John, and Barnabas are being tried for conspiracy to rob a series of privately owned Christian bookstores called Manna & Scroll. Nine successful robberies took place during the period of the charged conspiracy. Because the robbers wore masks and gloves and removed the stores’ security drives, no witness has been able to directly identify the robbers. Some circumstantial evidence ties each defendant to the overall conspiracy.\n\nDuring cross-examination, a prosecution witness testified that Barnabas was in jail on unrelated charges during the last six robberies. Barnabas’s lawyer has moved for a judgment of acquittal at the close of the government’s case.\n\nShould the motion be granted?",
+ "call": "Should the motion for judgment of acquittal be granted?",
+ "choices": {
+  "A": "No, because a conspirator need not know the identity of every other participant in the conspiracy.",
+  "B": "No, because a conspirator need not be present at the commission of each crime conspired upon.",
+  "C": "Yes, provided that Barnabas complied with the rule requiring pretrial notice of alibi.",
+  "D": "Yes, regardless of compliance with the alibi rule, because the government is bound by any exculpatory testimony elicited during its case-in-chief."
+ },
+ "key": "B",
+ "dominantTrap": "D",
+ "rightExplanation": "B is correct.\n\nSilver Key: When the stem’s problem fact is “the defendant was in jail during later crimes,” look for the answer that directly addresses presence at each crime. B is the only answer that speaks to that fact.\n\nGold Key: Conspiracy is agreement-based. A conspirator need not personally attend or commit every substantive crime that occurs during the conspiracy. Jail during later robberies does not by itself defeat the conspiracy charge if evidence still ties the defendant to the overall agreement.",
+ "wrongExplanations": {
+  "A": "It gives a neighboring conspiracy idea: not knowing every other participant. That does not answer the fact the motion is built on. The problem is not “Barnabas did not know everyone.” The problem is “Barnabas was not present for the last six robberies.”\nSilver Key: Cut answers that talk about a different conspiracy detail when the stem points at presence.",
+  "C": "It shifts to alibi procedure. The call asks whether the evidence requires acquittal on a conspiracy charge. Alibi notice does not answer whether absence from later robberies defeats conspiracy liability.\nGold Key: The jail fact does not automatically acquit a conspiracy defendant because conspiracy turns on agreement, not presence at every later crime.",
+  "D": "It overclaims. “The government is bound by any exculpatory testimony” is too absolute. Evidence elicited during the government’s case can help the defense, but that does not mean the prosecution is automatically bound to an acquittal whenever one witness gives a helpful fact."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Wrong axis. It talks about not knowing other participants. The call turns on presence during later robberies. NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT C",
+   "text": "Procedural-frame bait. It talks about alibi notice. The call asks whether jail during later robberies defeats conspiracy liability. NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT D",
+   "text": "Overclaim. “Bound by any exculpatory testimony” is too absolute. NOT_TRUE."
+  },
+  {
+   "label": "Residual",
+   "text": "B. It directly answers the jail/presence fact."
+  },
+  {
+   "label": "CALL/anchor check",
+   "text": "Gold Key confirms B is legally true."
+  }
+ ],
+ "studentScript": "The call is acquittal on conspiracy. The jail fact points to presence. A talks about identities, C talks about alibi notice, and D overclaims automatic government binding. B answers the presence fact, and the Gold Key confirms it.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The stem never makes participant identity the disputed fact.",
+   "lawyer": "A conspirator need not know every participant, but that rule does not decide whether incarceration during later robberies requires acquittal.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "It names the exact problem fact: presence at each crime.",
+   "lawyer": "Correct under the conspiracy-presence rule and Rule 29 sufficiency frame.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The call is not whether a notice rule was satisfied.",
+   "lawyer": "Alibi notice does not entitle the defendant to acquittal on a conspiracy charge where absence from later substantive acts is not dispositive.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The word 'any' turns a helpful-defense fact into an automatic acquittal.",
+   "lawyer": "The government is not automatically bound to acquittal by every exculpatory point elicited during its case-in-chief.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-CONSPIRACY-PRESENCE-01",
+   "statement": "A conspiracy charge turns on the agreement; a conspirator need not be physically present for every crime committed under the conspiracy.",
+   "trigger": "The defendant was absent or jailed for later crimes, but evidence ties him to the overall conspiracy.",
+   "unlocks": "The jail-time/alibi trap.",
+   "authority": "Fed. R. Crim. P. 29; Pinkerton v. United States; Blumenthal v. United States."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-CONSPIRACY-PRESENCE-01",
+   "statement": "When the stem points to absence from later crimes, prefer the answer that speaks to presence at each crime over answers about details, notice, or automatic evidentiary consequences.",
+   "trigger": "In jail during later robberies + motion for acquittal.",
+   "unlocks": "Presence-fact answer array.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Conspiracy Presence Trap",
+  "signal": "Defendant was absent, jailed, or not identified at later crimes.",
+  "studentMove": "Ask whether the charge is conspiracy or the later substantive crime.",
+  "tinyRule": "Conspiracy can survive absence from later acts if agreement evidence remains.",
+  "trap": "Treating alibi for some acts as automatic acquittal on conspiracy."
+ }
+}

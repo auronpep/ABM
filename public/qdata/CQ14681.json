@@ -1,0 +1,95 @@
+{
+ "id": "CQ14681",
+ "title": "Question 14681",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "BARMATRIX QID: 14681_christian_bookstore_robbery\nTransformed from: 14681\n\nLuke was short on money and decided to rob a privately owned Christian bookstore. Wanting to avoid hurting anyone, he carried a toy pistol that looked like a real pistol. Inside the store, Luke pointed the toy pistol at Lydia, the cashier, and demanded cash from the register.\n\nBarnabas, a customer who entered the store and saw the robbery in progress, drew his own handgun and fired at Luke. The bullet missed Luke but struck and killed Lydia.\n\nLuke was charged with felony murder. His best argument for being found NOT guilty is that he",
+ "call": "Luke was charged with felony murder. His best argument for being found NOT guilty is that he",
+ "choices": {
+  "A": "did not intend to kill Lydia.",
+  "B": "did not commit the robbery because he never acquired any cash from Lydia.",
+  "C": "did not intend to create any risk of harm.",
+  "D": "is not responsible for the acts of Barnabas."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The fatal act was Barnabas’s shot, and Barnabas was a customer resisting the robbery, not Luke’s accomplice.\n\nGold Key: Under the MBE/default agency-theory lane, felony murder liability for the killing itself is limited to killings committed by the defendant or someone acting with him. A resisting customer’s shot is not attributed to the robber.\n\nSilver Key: Once the stem says “someone else fired the fatal shot,” stop chasing intent-to-kill, intent-to-risk, and completed-loot answers. Sort by who fired and whether that person was on the defendant’s side.",
+ "wrongExplanations": {
+  "A": "Felony murder does not require intent to kill. This answer attacks the wrong mental state.",
+  "B": "This is the dominant trap. The question is not whether Luke walked out with money. The felony-murder predicate can be the attempted robbery lane; completion of the theft is not the best defense.",
+  "C": "This answer attacks risk intent. The stronger defense is not Luke’s private hope that no one would be hurt. The best defense is that the fatal shot came from a non-accomplice."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A, B, and C do not answer the best defense once the Gold Key is available. They attack intent to kill, completion of taking, and intent to risk harm. Those are not the shooter-attribution axis."
+  },
+  {
+   "label": "CLASH",
+   "text": "The real clash is: defendant/accomplice caused the death vs. non-accomplice customer caused the death."
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Key. Agency theory points to D."
+  }
+ ],
+ "studentScript": "Felony murder. Someone else fired. Was that person on Luke's team? No: Barnabas was a customer. Ignore no-intent and no-cash traps. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about intent to kill, but the felony-murder call turns on the predicate felony and shooter attribution.",
+   "lawyer": "Felony murder does not require intent to kill when the defendant intended the predicate felony.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The answer focuses on whether cash was acquired; the call asks felony murder during the attempted robbery sequence.",
+   "lawyer": "The predicate felony lane can include attempted robbery; completion of the taking is not the best defense.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The answer talks about Luke's hoped-for risk level; the decisive fact is that Barnabas fired the fatal shot.",
+   "lawyer": "Felony murder does not require a subjective intent to create harm; the stronger defense is agency attribution.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "This answer directly names the actor relation: Barnabas, not Luke or an accomplice, fired the fatal shot.",
+   "lawyer": "Under the MBE/default agency theory, the fatal act of a non-accomplice customer is not imputed to Luke for felony murder.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-FELONY-MURDER-AGENCY-01",
+   "statement": "For the MBE/default agency rule, felony murder liability for the killing is limited to lethal acts by the defendant or an accomplice. A resisting customer, victim, or police officer is not the felon’s agent.",
+   "trigger": "Fatal shot fired by a non-accomplice customer during the felony.",
+   "unlocks": "Defeats the third-party-shooter trap and selects D.",
+   "authority": "State v. Canola; State v. Branson; People v. Washington line."
+  },
+  {
+   "id": "GK-CRIM-FELONY-MURDER-PREDICATE-02",
+   "statement": "Felony murder does not require intent to kill or completed loot; the operative mental state is intent to commit or attempt the predicate felony.",
+   "trigger": "Answers focus on no intent to kill, no completed taking, or no intent to risk harm.",
+   "unlocks": "Cuts A, B, and C.",
+   "authority": "General felony-murder rule; official explanation for Q14681."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-FELONY-MURDER-SHOOTER-01",
+   "statement": "When a felony-murder stem says someone else fired the fatal shot, sort the answers by what they attack: intent, completion, risk, or shooter relationship. The shooter relationship is the high-value axis.",
+   "trigger": "A non-accomplice customer fires and kills the clerk.",
+   "unlocks": "Prevents drift into the dominant completed-robbery trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Felony Murder: Who Fired?",
+  "signal": "The fatal shot came from a customer, victim, police officer, or other non-accomplice.",
+  "studentMove": "Lock shooter relationship before evaluating intent or completed taking.",
+  "tinyRule": "MBE agency theory: defendant/accomplice shot = possible felony murder; resisting non-felon shot = best defense.",
+  "trap": "Students chase no intent to kill or no completed robbery."
+ }
+}

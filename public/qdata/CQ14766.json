@@ -1,0 +1,84 @@
+{
+ "id": "CQ14766",
+ "title": "Potluck Collision Tape",
+ "subject": "Evidence",
+ "topic": "Evidence",
+ "subtopic": "Hearsay and Circumstances of Its Admissibility",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "After a church picnic, John died in a traffic collision between his car and a van driven by Barnabas. Mary, John’s widow, sued Barnabas for wrongful death. At trial, Officer Lydia, who investigated the collision, authenticated an audio recording of her end-of-shift dictation of comments she used in preparing her written collision report. Lydia testified that the recording was accurate when made and that she now has no clear memory of the details of the investigation.\n\nIs the audio recording admissible as evidence?",
+ "call": "Is the audio recording admissible as evidence?",
+ "choices": {
+  "A": "Yes, under the recorded recollection exception to the hearsay rule.",
+  "B": "Yes, under the public records exception to the hearsay rule.",
+  "C": "No, because it is hearsay and is a police report being offered against Barnabas in a wrongful death case.",
+  "D": "No, because the written collision report itself is the best evidence."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Gold Key: A record fits recorded recollection when the witness once knew the matter, cannot now recall it well enough to testify fully and accurately, made or adopted the record when the matter was fresh, and confirms it accurately reflected her knowledge.\n\nHere, Officer Lydia authenticated the audio recording, testified it was accurate when made, and testified she now lacks a clear memory of the investigation. That matches the recorded-recollection path. The later written report is not the offered item; the offered item is the earlier audio dictation.\n\nSilver Key: In Evidence, lock the offered item before naming the exception. The offered item is the audio recording, not the later written report.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "C is cut after the student sees it stops at “hearsay” and switches to “police report” instead of answering the offered-recording question.\nD is cut as a wrong layer: it talks about the later written report as “best evidence,” while the call asks whether the audio recording is admissible."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive. Both are real hearsay-exception labels. The clash is recorded recollection vs public record."
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Key. The fact pattern gives “accurate when made,” “fresh enough to prepare report,” and “no clear memory now.” That is recorded recollection. Residual answer: A."
+  }
+ ],
+ "studentScript": "Lock the item: audio. No memory now + accurate when made. Cut report/best-evidence decoys. A vs B needs anchor. Recorded recollection wins.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The offered item is the witness’s own accurate audio record plus current memory failure.",
+   "lawyer": "FRE 803(5) recorded recollection.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It talks public records while the stem gives a witness-memory record.",
+   "lawyer": "Public records doctrine is not the best fit for the offered audio dictation; FRE 803(5) controls.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The answer says 'hearsay' and then shifts to police-report framing.",
+   "lawyer": "Hearsay does not end the inquiry because FRE 803(5) applies; civil-case public-record limits do not bar the item.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "It changes the offered item from audio recording to written report.",
+   "lawyer": "FRE 1002 is not a reason to prefer the later written report over the offered audio recording on this admissibility call.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-RECORDED-RECOLLECTION-01",
+   "statement": "Recorded recollection applies when the witness once knew the matter, cannot now recall it well enough, made or adopted the record when fresh, and the record accurately reflected the witness’s knowledge.",
+   "trigger": "Witness authenticates an accurate record made when fresh and now lacks memory.",
+   "unlocks": "Recorded recollection vs public records trap",
+   "authority": "FRE 803(5)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-OFFERED-ITEM-01",
+   "statement": "Before naming an Evidence exception, lock the offered item. Here it is the audio dictation, not the later written collision report.",
+   "trigger": "Stem mentions both an earlier recording and a later written report.",
+   "unlocks": "Report-frame and best-evidence decoys",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Recorded recollection vs public records",
+  "signal": "Witness’s own accurate fresh record + current memory failure.",
+  "studentMove": "Escalate A/B to Gold Key; do not force structure.",
+  "tinyRule": "Own fresh accurate record plus no present recall = recorded recollection.",
+  "trap": "Public-record label feels official because the witness is an officer."
+ }
+}

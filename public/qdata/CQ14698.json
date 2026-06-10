@@ -1,0 +1,105 @@
+{
+ "id": "CQ14698",
+ "title": "Bible Bookshop Cash Drawer",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Inchoate Crimes",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "After the evening Bible-study crowd had left, Daniel entered Lydia’s small Bible bookshop just before closing time. He walked up to Lydia, the lone clerk, and said, “Give me all the money in the cash register or you will get hurt.” Lydia fainted and struck her head on the edge of the counter. As Daniel stepped behind the counter and tried to open the cash-register drawer, Ruth and Martha entered the shop. Daniel ran out before he was able to open the drawer.\n\nOn this evidence, Daniel could be convicted of",
+ "call": "On this evidence, Daniel could be convicted of",
+ "choices": {
+  "A": "robbery.",
+  "B": "assault and robbery.",
+  "C": "attempted robbery.",
+  "D": "assault and attempted robbery."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Daniel did not complete the taking. He threatened Lydia and moved into the place where the cash would be taken, but Ruth and Martha entered before he opened the drawer or obtained money. That puts him in the attempted-robbery cell, not the completed-robbery cell.\n\nGold Key: Robbery needs a taking; attempt needs intent plus a substantial step. The stem gives intent from the demand for register money and a substantial step from going behind the counter and trying to open the drawer. It withholds the completed taking.\n\nSilver Key: Read the array as a 2×2 crime-label matrix. First axis: robbery or attempted robbery. Second axis: assault or no assault. The credited cell is attempted robbery with no separate assault.",
+ "wrongExplanations": {
+  "A": "It chooses completed robbery, but the stem stops before Daniel gets possession of any money. The true version would require Daniel to get the money, even briefly.",
+  "B": "It sits in the wrong completed-robbery column. It also adds assault, but the first clean cut is robbery: no taking occurred. The true version would require a completed taking and a separate assault trigger.\n\nD is the dominant trap. It gets the attempted robbery half right, which is why it is attractive. But it adds assault. Gold Key: Mere words alone do not create criminal assault on this MBE pattern. The answer array is trying to make Lydia’s fainting feel like assault, but the charged label must match the legal trigger, not the emotional force of the fact."
+ },
+ "c3": [
+  {
+   "label": "CUT 1: completed robbery column",
+   "text": "A and B both require a completed robbery. The stem says Daniel ran out before opening the drawer. No cash. No completed taking. Cut A and B."
+  },
+  {
+   "label": "CLASH: C vs. D",
+   "text": "Both finalists contain attempted robbery. They fight on one axis: assault add-on or no assault."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "The only assault signal is the spoken threat. On this MBE pattern, mere words are insufficient for the extra assault conviction. Cut D."
+  },
+  {
+   "label": "Residual",
+   "text": "C."
+  }
+ ],
+ "studentScript": "Matrix first. Robbery column dies: no drawer, no money. C and D remain. D adds assault. Mere words do not add assault. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice is in the completed-robbery column; the stem says no drawer opened and no money taken.",
+   "lawyer": "Robbery requires a taking; the facts support only attempt.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "This choice sits in the completed-robbery column. That column loses before the assault add-on needs work.",
+   "lawyer": "No taking occurred; the assault label also fails under the mere-words anchor.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "This is the only cell that matches both axes: attempt, not completed robbery; no assault add-on.",
+   "lawyer": "Intent plus substantial step supports attempt; no completed taking; no separate assault.",
+   "mold": null
+  },
+  "D": {
+   "signal": "It matches the attempt axis but loses the assault axis.",
+   "lawyer": "Attempted robbery is correct; the additional assault conviction is not supported by mere words alone.",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-ROBBERY-TAKING-01",
+   "statement": "Robbery needs a completed taking from the person or presence by force or fear. If the defendant is stopped before getting the property, move to attempted robbery.",
+   "trigger": "cash register or property target, but defendant leaves before getting property",
+   "unlocks": "completed robbery vs attempted robbery",
+   "authority": "People v. Williams; common-law robbery authorities"
+  },
+  {
+   "id": "GK-CRIM-MERE-WORDS-ASSAULT-01",
+   "statement": "For this MBE assault pattern, threatening words alone do not add criminal assault; look for an act, gesture, weapon, or apparent present ability tied to imminent harm.",
+   "trigger": "assault answer added to a verbal-threat fact pattern",
+   "unlocks": "dominant trap D",
+   "authority": "People v. Taylor"
+  },
+  {
+   "id": "GK-CRIM-ATTEMPT-SUBSTANTIAL-STEP-01",
+   "statement": "Attempt requires intent plus conduct that strongly moves toward the crime. Going behind the counter and trying to open the register is enough.",
+   "trigger": "interrupted before completion after conduct directed at the target property",
+   "unlocks": "why C is affirmatively correct",
+   "authority": "Model Penal Code § 5.01"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-CRIME-COMBO-MATRIX-01",
+   "statement": "When the answers are crime-label combinations, split the array into axes before judging labels. Here: robbery vs attempted robbery, and assault vs no assault.",
+   "trigger": "A-D are short labels made from repeated crime words",
+   "unlocks": "2x2 crime-label matrix",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not add a crime because the facts feel scary.",
+  "signal": "Answer choices repeat the same two crime labels in combinations.",
+  "studentMove": "Split the labels into axes; resolve each axis with one fact.",
+  "tinyRule": "No taking = attempt; mere words = no assault add-on.",
+  "trap": "D feels right because the clerk fainted, but the added assault label still needs its own trigger."
+ }
+}

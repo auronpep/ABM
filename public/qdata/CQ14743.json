@@ -1,0 +1,91 @@
+{
+ "id": "CQ14743",
+ "title": "Advent Wallet",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Source row: BarMatrix Q14743 is a Criminal Law / Other Crimes item. The original row reports 83% correct, with answer B as the official key, and tests the robbery–larceny–attempt ladder after the defendant takes and slightly carries away a passed-out victim’s wallet.  I also reviewed the requested reasoning-creed file, including its “never whether, only how” and “proof before proxy” posture for hard work.\n\nQuestion ID: 14743_advent_wallet\nQuestion:\n\nAfter a Christian law students’ Advent dinner at a restaurant, John became very drunk and started to walk home. Peter, who had observed John’s condition, followed him. Peter saw John stumble and fall to the ground near an alley. Peter then began to pull out a gun, but saw that John had passed out in the gutter. Peter reached into John’s coat pocket, grabbed John’s wallet, and started to walk away. When Peter heard police officers approaching, he dropped the wallet and ran off.\n\nThe crimes below are listed in descending order of seriousness. What is the most serious crime of which Peter properly could be convicted?",
+ "call": "The crimes below are listed in descending order of seriousness. What is the most serious crime of which Peter properly could be convicted?",
+ "choices": {
+  "A": "Robbery.",
+  "B": "Larceny.",
+  "C": "Attempted robbery.",
+  "D": "Attempted larceny."
+ },
+ "key": "B",
+ "dominantTrap": "A",
+ "rightExplanation": "B is correct. Peter completed larceny when he wrongfully took John’s wallet from John’s pocket and started walking away with it. The later decision to drop the wallet does not unwind the completed taking.\n\nGold Key: Larceny is complete on slight movement. Once the thief takes another’s personal property with intent to steal and moves it even slightly, the carrying-away element is satisfied.\n\nSilver Key: On a “most serious crime” ladder, find the highest completed crime first. Once completed larceny is available, lower attempt choices are not responsive to the call.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — Robbery",
+   "text": "Anchor-assisted cut. The facts show no force or fear against an aware victim. The robbery label overclaims the completed offense."
+  },
+  {
+   "label": "CUT D — Attempted larceny",
+   "text": "Anchor-assisted cut. The wallet was grabbed and moved. That is completed larceny, not only an attempt.\n\nCLASH B vs. C — completed larceny vs. lower attempted robbery.\nAxis: Which listed crime is the most serious properly convictable offense once the completed wallet-taking is recognized?\nResolver: The question says the crimes are listed in descending seriousness; completed larceny appears above attempted robbery."
+  },
+  {
+   "label": "CALL B",
+   "text": "Use the crime-ladder Silver Key: once the higher completed crime is available, do not choose a lower attempt."
+  }
+ ],
+ "studentScript": "Passed out means no robbery fear. Wallet moved means larceny complete. The ladder puts larceny above attempts. B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer names the higher crime, but the stem gives an unaware victim and no force/fear used to obtain the wallet.",
+   "lawyer": "Robbery requires larceny from the person or presence by violence, force, or putting in fear; those plus-elements are absent.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "The facts show taking, wallet, pocket, started away; the slight-movement Gold Key completes the offense.",
+   "lawyer": "Larceny requires trespassory taking and carrying away of another’s personal property with intent to steal; slight movement satisfies asportation.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The call asks for the most serious listed crime; larceny is completed and appears above attempted robbery.",
+   "lawyer": "Even if attempt theory is arguable, the completed larceny conviction is the more serious listed option and is properly supported.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The wallet was grabbed and Peter started away; dropping it later does not make the taking only attempted.",
+   "lawyer": "Asportation requires only slight movement, so larceny was completed before Peter dropped the wallet.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-LARCENY-ASPORTATION-01",
+   "statement": "For larceny, carrying away is satisfied by the slightest movement of the property; dropping it later does not undo the completed taking.",
+   "trigger": "the thief grabs property and starts to move away but abandons it quickly",
+   "unlocks": "attempted-larceny trap",
+   "authority": "Common-law larceny / asportation; Carter v. United States; CALI Property Crimes text"
+  },
+  {
+   "id": "GK-CRIM-ROBBERY-FORCE-FEAR-01",
+   "statement": "Robbery is larceny plus force, violence, or putting the victim in fear; taking from an unaware, passed-out victim without force used to obtain the property is not robbery.",
+   "trigger": "taking from the person while the victim is asleep, passed out, or unaware",
+   "unlocks": "robbery trap",
+   "authority": "Common-law robbery; Carter v. United States; common-law robbery instruction"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-CRIME-LADDER-01",
+   "statement": "When the answer choices are listed in descending seriousness, do not stop at a lower attempt once a higher completed offense is supported.",
+   "trigger": "call says crimes are listed in descending order of seriousness",
+   "unlocks": "completed offense vs attempt ladder",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Crime ladder: completed larceny beats attempts below it",
+  "signal": "The call lists crimes in descending seriousness.",
+  "studentMove": "First establish whether the completed theft happened. Then cut lower attempts.",
+  "tinyRule": "Slight movement completes larceny; robbery needs force/fear.",
+  "trap": "Choosing attempted robbery because the gun fact feels more serious."
+ }
+}

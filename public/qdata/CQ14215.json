@@ -1,0 +1,99 @@
+{
+ "id": "CQ14215",
+ "title": "Daniel Cedar Bookcases",
+ "subject": "Civil Procedure",
+ "topic": "Civil Procedure",
+ "subtopic": "Verdicts and Judgments",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Daniel hosts a neighborhood Bible-study and contracted with Lydia, a seller of hand-carved cedar bookcases, to furnish his home study room. Daniel filed a breach of contract suit against Lydia in federal court in State A, seeking $80,000 in damages. Lydia answered Daniel’s complaint denying any liability. Lydia also raised claim preclusion as an affirmative defense in her answer because Daniel had filed a previous complaint against Lydia arising out of the same occurrence, which was dismissed, without prejudice, by the local state court. Each party conducted discovery and the case proceeded to trial. Neither Lydia nor Lydia’s attorney appeared at trial. Daniel introduced evidence that supported his claim that Lydia breached their contract and also submitted evidence supporting consequential damages in the amount of $200,000.\n\nFor which party is the court likely to enter judgment?",
+ "call": "For which party is the court likely to enter judgment?",
+ "choices": {
+  "A": "Daniel, for $80,000, because this is the amount Lydia assumed was at stake when she defaulted.",
+  "B": "Daniel, for $200,000, because Daniel produced evidence supporting this damages amount.",
+  "C": "Lydia, because Daniel failed to properly prosecute his case.",
+  "D": "Lydia, because Daniel admitted that the federal suit was precluded by failing to reply to Lydia’s claim preclusion argument."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct.\n\nSilver Key: Pick the judgment lane first. This is not a default-judgment lane. Lydia answered, discovery happened, the case went to trial, and Daniel introduced proof. The proof lane controls.\n\nGold Key: Default cap ≠ trial judgment. A default judgment may not exceed the amount demanded in the pleadings, but a non-default final judgment should grant the relief proved and legally owed, even if the pleading demanded less. Daniel proved $200,000. Lydia did not appear to rebut it. The court is likely to enter judgment for Daniel for $200,000.",
+ "wrongExplanations": {
+  "A": "Gold Key: The default-demand cap applies to default judgments. Lydia answered. The case proceeded through discovery to trial. The answer choice calls Lydia’s absence a “default,” but the stem is in the trial-proof lane, not the default lane.",
+  "C": "The stem says Daniel introduced evidence supporting breach and $200,000 in damages. That is prosecution, not failure to prosecute. This answer points at the wrong party and the wrong procedural failure.",
+  "D": "Gold Key: A reply to an answer is required only if the court orders one. Without a required reply, Daniel did not admit Lydia’s affirmative defense merely by silence. The preclusion language is bait; the tested trap is the false admission-by-no-reply move."
+ },
+ "c3": [
+  {
+   "label": "CUT C first",
+   "text": "Daniel introduced evidence. C says Daniel failed to prosecute. The fact and the answer do not match."
+  },
+  {
+   "label": "CLASH A vs B",
+   "text": "These fight on the judgment lane: default cap or trial proof."
+  },
+  {
+   "label": "CALL with Gold Key",
+   "text": "Lydia answered and the case went to trial. Use the trial-proof lane. B beats A."
+  },
+  {
+   "label": "CUT D with Gold Key",
+   "text": "No required reply to an answer means no admission by silence."
+  }
+ ],
+ "studentScript": "Answered, discovery, trial. Not default. Daniel proved $200,000. C is wrong party. D needs a required reply, and none appears. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer says 'defaulted,' but the stem gives answer + discovery + trial.",
+   "lawyer": "Rule 54(c)'s demand cap applies to default judgments; this is not the default-judgment lane after an answer and trial.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This answer tracks the plaintiff’s proof at trial and the exact judgment call.",
+   "lawyer": "For non-default final judgments, Rule 54(c) directs relief to which a party is entitled, even if not demanded.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The stem says Daniel introduced evidence. C says Daniel failed to prosecute.",
+   "lawyer": "No facts support involuntary dismissal for plaintiff failure to prosecute.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The answer assumes silence after an answer equals admission; the stem does not show a required reply.",
+   "lawyer": "Rules 7(a)(7) and 8(b)(6) prevent treating an unrequired reply to an answer as an admission.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIV-JUDGMENT-LANE-01",
+   "statement": "Default cap applies only in the default-judgment lane. If the defendant answered and the case is tried, the court may award the relief proved, even if the complaint demanded less.",
+   "trigger": "Defendant answered, discovery occurred, case went to trial, defendant no-showed trial.",
+   "unlocks": "A’s $80,000 default-cap trap and B’s $200,000 trial-proof result.",
+   "authority": "Fed. R. Civ. P. 54(c), 55(a)"
+  },
+  {
+   "id": "GK-CIV-REPLY-ANSWER-01",
+   "statement": "A party replies to an answer only if the court orders one. If no responsive pleading is required, silence does not admit the answer’s allegations.",
+   "trigger": "Affirmative defense appears in an answer; no court-ordered reply appears.",
+   "unlocks": "D’s failure-to-reply admission trap.",
+   "authority": "Fed. R. Civ. P. 7(a)(7), 8(b)(6)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIV-JUDGMENT-LANE-01",
+   "statement": "Before choosing an amount, choose the procedural lane: default, trial proof, failure to prosecute, or pleading admission.",
+   "trigger": "Answer set offers different judgment reasons after a party misses trial.",
+   "unlocks": "A/B/D procedural-lane trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Judgment lane before damages number",
+  "signal": "Complaint demands one amount; trial proof supports a larger amount; defendant answered but skips trial.",
+  "studentMove": "Do not cap damages until you know whether the judgment is default or non-default.",
+  "tinyRule": "Answered + trial = proof lane, not default cap.",
+  "trap": "Treating any no-show as default."
+ }
+}

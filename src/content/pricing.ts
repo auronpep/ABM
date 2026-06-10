@@ -21,7 +21,7 @@ export const pricing = {
     "Wrong-answer Forensics with the TEAR breakdown",
     "Repair Briefs and targeted Repair Drills",
     "Timed retests on the patterns that keep costing points",
-    "Be Strong Fellowship — prayer, study, and accountability",
+    "Be Strong Fellowship: prayer, study, and accountability",
   ],
 
   planLine: "Or pay in two: $500 today, $499 in 30 days.",

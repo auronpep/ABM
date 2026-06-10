@@ -1,0 +1,80 @@
+{
+ "id": "CQ15222",
+ "title": "Mannafuel Lydia Racecar",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Other Torts",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "A maker of an energy drink called MannaFuel created and published a magazine advertisement that showed a person dressed as a race-car driver, wearing a helmet, standing in front of a distinctive blue-and-gold race car with a fish-shaped hood decal. In fact, the car looked almost exactly like the unusually marked car driven by Lydia, a famous and popular Christian race-car driver. The driver in the ad was not identified, and her face was not shown. The energy-drink maker published the advertisement without Lydia’s permission.\n\nLydia sued the energy-drink maker for economic loss only, based on common law misappropriation of the right of publicity. The energy-drink maker moved to dismiss the complaint.\n\nWill the energy-drink maker’s motion to dismiss the complaint be granted?",
+ "call": "Will the energy-drink maker’s motion to dismiss the complaint be granted?",
+ "choices": {
+  "A": "No, because there are sufficient indicia of Lydia’s identity to support a verdict of liability.",
+  "B": "Yes, because Lydia is a public figure.",
+  "C": "Yes, because Lydia’s name was not mentioned in the ad.",
+  "D": "Yes, because Lydia did not claim any emotional or dignitary loss."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The motion to dismiss should be denied because the ad, taken as a whole, gives a factfinder enough to infer that the commercial image was meant to evoke Lydia. Her name and face are missing, but the ad uses a distinctive race-car identity cluster: helmeted driver, race-car setting, and a car almost exactly like Lydia’s unusually marked car.\n\nGold Key: Right of publicity protects commercial exploitation of identity, not just use of a person’s literal name or face. Distinctive indicia of identity can be enough.\n\nSilver Key: When the stem gives a cluster of identity facts, do not let the “no name / no face” answer become the whole question. Match the answer to the identity cluster.",
+ "wrongExplanations": {
+  "B": "Lydia’s celebrity status does not defeat the claim. In this item, “public figure” is a wrong-frame decoy. It sounds like a defamation/public-speech concept, but the call is about commercial appropriation of identity.",
+  "C": "Gold Key: the right of publicity does not require use of the plaintiff’s name. The name-only answer invents a requirement and ignores the stem’s distinctive identity facts.",
+  "D": "Gold Key: this is an economic-right claim. Lydia sued for commercial exploitation of her identity, not for hurt feelings. Emotional or dignitary harm is the wrong injury frame."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "B cuts as NOT_RESPONSIVE / misfit once the call is locked: “public figure” answers the wrong tort neighborhood.\n\nC cuts as NOT_TRUE / fabricated_rule after the Gold Key: it invents a name-use requirement.\n\nD cuts as NOT_RESPONSIVE / bait_doctrine after the Gold Key: it imports dignitary/privacy-harm thinking into an economic publicity claim."
+  },
+  {
+   "label": "CLASH",
+   "text": "The array is a 3-vs-1 dismissal array: B, C, and D all say “dismiss,” each offering a different escape hatch. A alone says “deny dismissal” and points to the stem’s identity cluster."
+  },
+  {
+   "label": "CALL",
+   "text": "Gold Key resolves the array: identity can be shown by distinctive indicia, and the injury is commercial exploitation. A survives."
+  }
+ ],
+ "studentScript": "This is a product ad, no consent, and the stem loads identity facts. Public figure, no name, and no emotional loss are off-frames. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This is the only answer that uses the stem’s loaded identity facts: distinctive car, commercial ad, no consent.",
+   "lawyer": "Right of publicity can reach commercial appropriation of identity through distinctive indicia; name or face is not required.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The call is commercial identity use, not whether public figures can sue for defamation-type injury.",
+   "lawyer": "Public-figure status does not defeat a right-of-publicity claim and may increase the identity’s commercial value.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The answer treats the missing name as dispositive while the stem spends space on other identity indicators.",
+   "lawyer": "Right of publicity can be violated without use of the plaintiff’s name if the identity is otherwise appropriated.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The stem says economic loss and right of publicity; this answer tries to move the claim into emotional or dignity harm.",
+   "lawyer": "Right of publicity protects commercial value of identity; emotional or dignitary loss is not required for this claim.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-PUBLICITY-IDENTITY-01",
+   "statement": "Right of publicity is about commercial exploitation of identity. A name or face is not required if distinctive indicia identify the person.",
+   "trigger": "Commercial ad + no consent + distinctive object or signature look associated with a celebrity.",
+   "unlocks": "No-name/no-face trap; emotional-injury trap.",
+   "authority": "Restatement (Third) of Unfair Competition § 46; Motschenbacher; Carson"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Right of publicity identity cluster",
+  "signal": "Stem gives no name or face but gives unusually specific identity markers.",
+  "studentMove": "Ask whether the ad points to the person’s commercial identity, not whether it says the person’s name.",
+  "tinyRule": "Identity can be shown by distinctive indicia.",
+  "trap": "No name, no face, no feelings."
+ }
+}

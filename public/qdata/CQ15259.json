@@ -1,0 +1,88 @@
+{
+ "id": "CQ15259",
+ "title": "Question 15259",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Strict Liability and Products Liability",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "BARMATRIX Q#: 15259_peter_sparkling_cider_stopper\n\nAt a Christian law school’s spring banquet, Peter, a caterer, was removing the restraining wire from a bottle of sparkling grape juice produced and bottled by Lydia Cellars, Inc. The plastic stopper suddenly shot out of the bottle and struck Peter in the eye.\n\nPeter had opened other bottles of sparkling grape juice before, and occasionally stoppers had shot out with great force, but Peter had not previously been injured. Peter brought an action against Lydia Cellars, Inc., alleging that the bottle that caused his injury was defective and unreasonably dangerous because its label did not warn that the stopper might suddenly shoot out during opening.\n\nThe state has merged contributory negligence and unreasonable assumption of risk into a pure comparative fault system that is applied in strict products liability actions. A jury made the following findings of fact: that the bottle was defective and unreasonably dangerous because it lacked a warning, that a legally sufficient warning would not have prevented Peter’s injury, and that a reasonable caterer would have realized that a stopper could eject from the bottle and hit his eye.\n\nWill Peter recover a judgment in his favor?",
+ "call": "Will Peter recover a judgment in his favor?",
+ "choices": {
+  "A": "No, because a legally sufficient warning would not have prevented Peter’s injury.",
+  "B": "No, because a reasonable caterer would have realized that a stopper could eject from the bottle and hit his eye.",
+  "C": "Yes, with damages reduced by the percentage of any contributory fault on Peter’s part.",
+  "D": "Yes, with no reduction in damages, because foreseeable lack of caution is the reason for requiring a warning."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. This is a warning-defect products-liability question. The jury already found a defect: the bottle lacked a legally sufficient warning. But defect alone is not enough. The injury still must be caused by the missing warning.\n\nGold Key: In a warning-defect products case, no warning-causation means no recovery. If the factfinder says an adequate warning would not have prevented the injury, the plaintiff loses before comparative fault matters.\n\nSilver Key: Read the answer array as threshold first, damages second. A uses the threshold fact: “warning would not have prevented injury.” C and D jump to damage reduction or no reduction. Those are late unless liability is first established.\n\nThe same causation requirement appears in modern warning-defect formulations: a plaintiff must prove that the lack of sufficient warning was a substantial factor in causing harm, and California’s CACI warning instruction lists causation as an essential element. ([Justia][1]) A California products-liability practice source states the same point more directly: strict-liability failure-to-warn requires both inadequate warnings and that an adequate warning would have prevented the injury.",
+ "wrongExplanations": {
+  "B": "B uses the risk-awareness fact. That fact is tempting because Peter had opened similar bottles and a reasonable caterer would know a stopper might eject. But this answer makes risk awareness the total reason for no recovery. The better first-pass move is to ask: “What fact decides a warning-defect claim?” The decisive fact is not merely that Peter knew the risk. It is that a warning would not have prevented the injury. Gold Key: no warning-causation means no recovery; risk awareness is not the controlling answer here.",
+  "C": "C jumps to comparative fault and damage reduction. That is the classic late-layer trap. Comparative fault matters only after the plaintiff has a recoverable claim. Here the causation finding stops the claim first. Silver Key: threshold before damages. Do not reduce a recovery that never gets past warning causation.",
+  "D": "D sounds policy-aware: warnings exist because people may be careless. But the answer ignores the jury’s specific causation finding. It also says “with no reduction” even though the jurisdiction uses comparative fault. The immediate defect is that D answers warning policy and damages, not the threshold causation problem. Gold Key: a warning-defect claim fails when the warning would not have changed the outcome."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "D is vulnerable because it says “with no reduction” while the stem says the jurisdiction uses pure comparative fault. But the deeper problem is still causation, so do not overclaim a pure structural cut."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B are both “No” answers. C and D are “Yes” answers. The real axis is not “known risk vs unknown risk.” The real axis is threshold causation vs comparative fault/damages."
+  },
+  {
+   "label": "CALL",
+   "text": "Apply the Gold Key: warning causation comes first. A is the only answer that uses the dispositive finding that a warning would not have prevented the injury. A survives."
+  }
+ ],
+ "studentScript": "The bottle lacked a warning, but the jury says a warning would not have prevented the injury. That kills warning causation. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A is the only answer using the fact that a warning would not have prevented the injury.",
+   "lawyer": "Correct. A warning-defect claim requires causation; no causation means no recovery.",
+   "mold": null
+  },
+  "B": {
+   "signal": "B uses a real jury finding, but not the finding that decides a warning-defect recovery.",
+   "lawyer": "Known risk may bear on comparative fault or warning adequacy in some cases, but here the no-causation finding is dispositive.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "C answers what happens if there is a recovery; the call asks whether Peter recovers at all.",
+   "lawyer": "Comparative fault may reduce strict-products damages, but only if the warning defect caused the harm.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "D talks about why warnings exist and damages with no reduction; it does not answer the no-causation finding.",
+   "lawyer": "Foreseeable lack of caution does not eliminate the plaintiff’s burden to prove that a warning would have prevented the injury.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-WARNING-CAUSATION-01",
+   "statement": "In a warning-defect products case, the missing warning must cause the injury. If an adequate warning would not have prevented the harm, the plaintiff gets no recovery.",
+   "trigger": "Jury finding that a legally sufficient warning would not have prevented the injury.",
+   "unlocks": "The comparative-fault trap in C and the risk-awareness trap in B.",
+   "authority": "CACI No. 1205; Huitt v. Southern California Gas Co.; Chavez v. Glock; Daly for comparative-fault background."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-WARNING-THRESHOLD-01",
+   "statement": "When the answers split between no recovery and reduced recovery, check whether a threshold element failed before calculating fault or damages.",
+   "trigger": "One answer says the warning would not have prevented injury; other answers talk reduction or no reduction.",
+   "unlocks": "Threshold causation vs comparative-fault damages split.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Warning causation before comparative fault",
+  "signal": "Stem says the product lacked a warning but also says a proper warning would not have changed the outcome.",
+  "studentMove": "Stop at causation. Do not move to damages reduction until recovery exists.",
+  "tinyRule": "No warning causation, no recovery.",
+  "trap": "Comparative-fault language pulls students into C."
+ }
+}

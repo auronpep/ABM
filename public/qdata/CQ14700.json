@@ -1,0 +1,76 @@
+{
+ "id": "CQ14700",
+ "title": "Solicitation Bible Picnic",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Inchoate Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Peter, angry at his girlfriend Lydia’s parents, approached Stephen after a Bible-study picnic and asked whether Stephen would kill Lydia’s parents for money. Peter did not know that Stephen was an undercover detective. Stephen, following undercover protocol, said that he would do it and secretly recorded later calls with Peter about the plan and payment. A few days before payment was due, Peter changed his mind and called off the plan. Under the common-law rule for solicitation, Peter was charged with solicitation to commit murder. Peter should be",
+ "call": "Under the common-law rule for solicitation, Peter should be",
+ "choices": {
+  "A": "acquitted, because he withdrew before payment and commission of the murders.",
+  "B": "acquitted, because no substantial acts were performed.",
+  "C": "convicted, because the offense was completed before his attempt to withdraw.",
+  "D": "convicted, because Stephen said he would commit the murders."
+ },
+ "key": "C",
+ "dominantTrap": "D",
+ "rightExplanation": "C is correct. Gold Key: Solicitation is a request crime. At common law, the solicitation is complete when the defendant intentionally asks, hires, commands, or encourages another person to commit the target offense. Peter completed the solicitation when he asked Stephen to kill Lydia’s parents. Later calling off the plan did not erase the already-completed solicitation. Silver Key: In a solicitation array, treat later-event words—payment, substantial acts, completed target crime, agreement—as trap words unless the call asks about attempt or conspiracy.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Walkthrough",
+   "text": "CUT with the Gold Key.\nA dies because it points to later withdrawal/payment/completion instead of the request.\nB dies because it imports attempt’s substantial-step frame into a solicitation call.\nD dies because it points to agreement, which is not the completion hook for solicitation.\nC survives: completed before attempted withdrawal.\n\nNo CLASH needed after the anchor-assisted CUT. No CALL needed."
+  }
+ ],
+ "studentScript": "Solicitation call. Find the request. Peter asked Stephen to kill Lydia’s parents. That completed solicitation. Cut withdrawal, substantial-step, and agreement hooks. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It makes later withdrawal/payment/target-crime completion control a request crime.",
+   "lawyer": "At common law, solicitation is complete when the criminal request is made with intent. Later withdrawal does not undo the completed solicitation.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "Substantial acts belong to attempt, not to the solicitation call.",
+   "lawyer": "Solicitation does not require a substantial step toward the target crime.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This answer uses the front-end request trigger and explains why later withdrawal is too late.",
+   "lawyer": "Peter intentionally asked Stephen to commit murder; common-law solicitation was complete at that request.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The conclusion matches the result, but the because-clause points to agreement instead of request.",
+   "lawyer": "Agreement by the solicited person is not required for solicitation. Agreement is the conspiracy hook.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-SOLICITATION-COMPLETE-01",
+   "statement": "Solicitation is a request crime: at common law, it is complete when the defendant intentionally asks, hires, commands, or encourages another to commit the target offense.",
+   "trigger": "A defendant asks or hires another person to commit a crime, then later backs out or no further act occurs.",
+   "unlocks": "withdrawal, payment, substantial-step, target-crime-completion, and agreement traps",
+   "authority": "Common-law bar rule; compare Model Penal Code § 5.02(1), (3) and 18 U.S.C. § 373(b) renunciation framework."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-SOLICITATION-ARRAY-01",
+   "statement": "In a solicitation array, sort the answers by event timing: request comes first; payment, substantial steps, completed crime, and agreement are later or neighboring hooks.",
+   "trigger": "Answer choices fight over withdrawal, payment, substantial acts, completed crime, or agreement.",
+   "unlocks": "3-vs-1 later-event trap array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Request First, Everything Else Later",
+  "signal": "Solicitation charged; choices mention payment, substantial step, completed target crime, or agreement.",
+  "studentMove": "Ask which answer uses the request as the completion event.",
+  "tinyRule": "Solicitation completes at the criminal request.",
+  "trap": "Students import attempt/conspiracy/withdrawal concepts."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "CQ14238",
+ "title": "Lydias Barnabas Brief",
+ "subject": "Constitutional Law",
+ "topic": "Constitutional Law",
+ "subtopic": "Individual Rights",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "A state imposed a generally applicable sales tax payable by vendors. For several years, the tax law exempted from sales tax the sale of all magazines, periodicals, newspapers, and books.\n\nTo raise additional revenue, the state legislature repealed that broad exemption and substituted a narrower exemption. The new exemption excluded from the sales tax only the sale of magazines, periodicals, newspapers, and books that are published or distributed by a recognized religious faith and that consist wholly of writings sacred to such a religious faith.\n\nLydia edits The Barnabas Brief, a monthly publication sold at law-school bookstores and devoted to legal history and public affairs. The Barnabas Brief paid under protest the sales tax due on its sales under the amended law. It then brought an action in federal district court challenging the constitutionality of the amended tax law and requesting damages for the sales taxes paid. It contended that the new exemption restricted to sacred writings of recognized religious faiths violates the First and Fourteenth Amendments.\n\nAssume that The Barnabas Brief has proper standing. In this case, the court will probably rule that",
+ "call": "In this case, the court will probably rule that",
+ "choices": {
+  "A": "the new, narrower exemption from the state sales tax law violates substantive due process because it is a deprivation of property and thus amounts to a taking from The Barnabas Brief.",
+  "B": "the new, narrower exemption from the state sales tax law violates the Privileges or Immunities Clause of the Fourteenth Amendment because it denies The Barnabas Brief the same rights granted to publications of recognized religious faiths.",
+  "C": "the new, narrower exemption from the state sales tax law violates the Establishment Clause of the First and Fourteenth Amendments by granting preferential state support to recognized religious faiths for the communication of their sacred writings.",
+  "D": "the new, narrower exemption from the state sales tax law violates the freedom of the press guaranteed by the First and Fourteenth Amendments because it imposes a prior restraint on publications such as The Barnabas Brief that are required to pay the tax."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The tax exemption is not merely a broad accommodation that incidentally benefits religious publications. It is restricted to publications by recognized religious faiths and wholly sacred writings. That creates a religion-specific state benefit.\n\nGold Key: A state tax exemption confined to sacred writings of recognized religious faiths is an Establishment Clause problem because it gives preferential state support to religious communication.\n\nSilver Key: In a Con Law doctrine-home array, name the object of the state preference first. Here the repeated object is “recognized religious faith” and “sacred writings,” so the Establishment Clause answer owns the claim.",
+ "wrongExplanations": {
+  "A": "It turns the case into a property/taking problem. The stem is not built around government occupation, condemnation, or deprivation of a vested property entitlement. It is built around a religion-specific tax exemption. This is a doctrine-home misfit.",
+  "B": "It uses a broad constitutional-sounding clause, but the stem is not about interstate citizenship rights or travel-type privileges. It is about a state preference for recognized religious faiths. This is a doctrine-home misfit.",
+  "D": "It uses a real First Amendment neighborhood, but the chosen theory is the wrong one. Paying a sales tax is not, by itself, a prior restraint. Silver Key: “Press” is close enough to tempt you, but the stem’s repeated trigger is religious preference, not pre-publication censorship."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A is not a clean hard cut for a beginner. It needs the doctrine-home map: property/taking language does not answer the religion-preference claim.\n\nB is also doctrine-home filler. Privileges or Immunities sounds constitutional but does not own this claim.\n\nD is the attractive wrong-frame answer. It sees “publication” and jumps to press/prior restraint. The phrase “prior restraint” does not match a tax paid after sales."
+  },
+  {
+   "label": "CLASH",
+   "text": "The array is not a two-answer clash. It is a four-doctrine-home array:\n\n* A = property/taking home;\n* B = Privileges or Immunities home;\n* C = religion/Establishment home;\n* D = press/prior-restraint home."
+  },
+  {
+   "label": "CALL",
+   "text": "Use topic-naming alignment. The stem repeatedly says recognized religious faith and sacred writings. That points to Establishment Clause. C is the residual answer."
+  }
+ ],
+ "studentScript": "This is a doctrine-home array. The facts keep saying recognized religious faith and sacred writings. Property, Privileges or Immunities, and prior restraint are neighboring homes. C names the religion-preference home. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The stem repeats religious faith and sacred writings; A shifts to property deprivation.",
+   "lawyer": "This is not a takings/substantive due process item. The tax does not take a vested property entitlement from the magazine.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "B uses broad constitutional equality language but does not name the religion-preference problem.",
+   "lawyer": "Privileges or Immunities is not the operative doctrine for this publication-tax religious preference.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "C is the only answer whose doctrine name directly matches the repeated religious-faith/sacred-writings trigger.",
+   "lawyer": "Texas Monthly confirms that a sales-tax exemption confined to religious publications or sacred writings violates the Establishment Clause.",
+   "mold": null
+  },
+  "D": {
+   "signal": "D sees publication but chooses prior restraint; the stem asks about religious preference in a tax exemption.",
+   "lawyer": "A sales tax burden is not a prior restraint merely because it applies to nonexempt publications.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-RELIGIOUS-PUBLICATION-TAX-01",
+   "statement": "A tax exemption confined to publications of recognized religious faiths that consist wholly of sacred writings is a religion-specific state benefit; the bar answer treats it as an Establishment Clause violation.",
+   "trigger": "Tax exemption limited to recognized religious faiths and sacred writings.",
+   "unlocks": "Defeats the press/prior-restraint and generic constitutional-clause traps.",
+   "authority": "Texas Monthly, Inc. v. Bullock, 489 U.S. 1 (1989)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-DOCTRINE-HOME-01",
+   "statement": "In a Con Law doctrine-home array, first name the subject the facts keep repeating; then prefer the answer whose doctrine home names that subject.",
+   "trigger": "Four answers each name a different constitutional clause or doctrine.",
+   "unlocks": "property/P&I/religion/press answer-array split",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Religion-favoring tax benefit: do not drift to press or property",
+  "signal": "State tax exemption turns on recognized religious faith and sacred writings.",
+  "studentMove": "Pick the doctrine home that names the repeated subject: Establishment.",
+  "tinyRule": "Religion-specific subsidy → Establishment Clause.",
+  "trap": "Publication facts lure students into Press Clause/prior restraint."
+ }
+}

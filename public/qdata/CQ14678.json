@@ -1,0 +1,91 @@
+{
+ "id": "CQ14678",
+ "title": "Galilee Grill",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Question ID: 14678_galilee_grill\n\nPaul, a Christian law student, had just lost his job at a private bar-prep tutoring company and was despondent. He was contemplating suicide. With his revolver in his jacket pocket, Paul went to a private restaurant near campus where a Bible-study group often met after class and drank until he was very intoxicated.\n\nHe overheard Timothy, seated at the next table, telling Lydia, the server, that small tutoring companies sometimes had to downsize to stay open. Paul turned to Timothy and said, “Be quiet.” Timothy responded, “I can say what I want,” while shaking his finger at Paul. Paul became enraged, snatched the revolver from his pocket, and shot Timothy, killing him.\n\nA state statute defines first-degree murder as “knowingly causing the death of another person after deliberation upon the matter.” Deliberation is defined as “cool reflection for any length of time, no matter how brief.” Second-degree murder is defined as “knowingly causing the death of another person.” Manslaughter is defined as at common law.\n\nWhat crime did Paul commit?",
+ "call": "What crime did Paul commit?",
+ "choices": {
+  "A": "Manslaughter, because there was a reasonable explanation for Paul’s becoming enraged.",
+  "B": "First-degree murder, because deliberation can take place in an instant.",
+  "C": "First-degree murder, because Paul contemplated taking a human life before becoming intoxicated.",
+  "D": "Second-degree murder, because Paul knowingly caused Timothy’s death without deliberation."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Paul knowingly caused Timothy’s death by shooting him. The statute makes that second-degree murder unless the extra first-degree element is present: deliberation, defined as cool reflection. Paul was very intoxicated and acted in sudden rage. That blocks the cool-reflection upgrade, but not the knowing-killing base offense.\n\nGold Key: Voluntary intoxication is not a general excuse, but it can defeat the extra first-degree mental state of deliberation/cool reflection while leaving a knowing killing as second-degree murder.\n\nSilver Key: Do not let “any length of time” swallow “cool reflection.” Instant time is still not cool reflection.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“reasonable explanation” is moral-language bait. It does not supply common-law adequate provocation. Anchor-assisted cut."
+  },
+  {
+   "label": "CUT C",
+   "text": "The statute says “another person.” C points to Paul’s earlier suicide thoughts. Wrong object. Hard structural cut."
+  },
+  {
+   "label": "CLASH B vs D",
+   "text": "Both fight over deliberation. B says brief deliberation is possible. D says no deliberation occurred. Splitting fact: Paul was very intoxicated, enraged, and acted suddenly. Gold Key decides: intoxication can defeat cool reflection but not knowing killing. D remains."
+  }
+ ],
+ "studentScript": "Cut C: suicide is not another person. Cut A with the provocation Gold Key. Clash B vs D: instant is not cool. Very intoxicated rage means no cool reflection, but Paul knowingly shot Timothy. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer uses ordinary 'reasonable explanation' language, not the statutory ladder plus common-law provocation gate.",
+   "lawyer": "Words/finger-shaking are not adequate provocation for common-law manslaughter.",
+   "mold": "colloquialism"
+  },
+  "B": {
+   "signal": "It answers only duration. The statute also requires cool reflection.",
+   "lawyer": "Voluntary intoxication can prevent the deliberation/cool reflection needed for first degree while leaving second-degree knowledge intact.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The stem gives suicide thoughts. The statute asks about causing the death of another person.",
+   "lawyer": "Pre-intoxication suicidal ideation does not satisfy deliberation about killing Timothy.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "Matches both facts: knowing shooting yes; cool reflection no.",
+   "lawyer": "This tracks the statutory distinction and the official explanation.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-INTOX-COOL-REFLECTION-01",
+   "statement": "Voluntary intoxication is not a general excuse, but it can defeat the extra first-degree mental state of deliberation/cool reflection; a knowing killing can still be second-degree murder.",
+   "trigger": "Very intoxicated defendant + statute requiring deliberation/cool reflection.",
+   "unlocks": "B vs D: first-degree instant-deliberation trap.",
+   "authority": "Commonwealth v. Henson; N.C.P.I.-Crim. 305.11."
+  },
+  {
+   "id": "GK-CRIM-WORDS-NO-MANSLAUGHTER-01",
+   "statement": "Common-law manslaughter requires legally adequate provocation; ordinary words, insults, and finger-shaking do not supply it.",
+   "trigger": "Killing after insult, finger-shaking, or verbal dispute.",
+   "unlocks": "A: rage-to-manslaughter downgrade trap.",
+   "authority": "Girouard v. State."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-INSTANT-VS-COOL-01",
+   "statement": "When the statute says cool reflection for any length of time, split the words: 'instant' answers time; 'cool' answers mental state.",
+   "trigger": "First-degree answer says deliberation can be instant while stem says intoxicated and enraged.",
+   "unlocks": "Dominant B trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not let instant erase cool.",
+  "signal": "First-degree answer quotes 'any length of time' but skips 'cool reflection.'",
+  "studentMove": "Circle the mental-state adjective, not just the timing phrase.",
+  "tinyRule": "Brief deliberation still must be cool deliberation.",
+  "trap": "B"
+ }
+}

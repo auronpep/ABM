@@ -1,0 +1,97 @@
+{
+ "id": "CQ14716",
+ "title": "Lydia Bookstore Bible",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX Q#: 14716_lydia_bookstore_bible\n\nWhile browsing in a private Christian bookstore, Lydia decided to take a leather-bound study Bible without paying for it. She slid the Bible into her tote bag and took a couple of steps toward the exit. She then noticed that a security tag on the Bible would set off an alarm. She placed the Bible near the display from which she had removed it. Lydia has committed",
+ "call": "Lydia has committed",
+ "choices": {
+  "A": "no crime, because the Bible was never removed from the bookstore.",
+  "B": "no crime, because Lydia withdrew from her criminal enterprise.",
+  "C": "only attempted larceny, because Lydia intended to take the Bible out of the bookstore.",
+  "D": "larceny, because Lydia took the Bible from its original display and concealed it with the intent to steal."
+ },
+ "key": "D",
+ "dominantTrap": "C",
+ "rightExplanation": "D is correct. Lydia committed larceny when she exercised control over the Bible by concealing it in her tote bag and moving it with the intent to steal. She did not need to leave the bookstore.\n\nGold Key: For larceny, slight movement plus intent to steal can complete the offense. Leaving the store is not required.\n\nSilver Key: Do not let the exit door decide the question. Find the earliest point where the item was moved and concealed with steal-intent.",
+ "wrongExplanations": {
+  "A": "It invents an exit/removal requirement. The item does not need to leave the store. The trap is treating “not out the door” as “not yet larceny.”.",
+  "B": "Withdrawal is aimed at the wrong frame. The relevant question is whether the larceny was already complete. Once the taking/asportation/intent threshold is crossed, later change of mind does not erase the completed offense.",
+  "C": "This is the dominant trap. It notices Lydia’s intent to take the Bible out of the store, but it stops at “attempt” and misses the completion facts already in the stem. Gold Key: slight movement plus concealment with intent to steal can complete larceny before exit."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Never removed from the bookstore” adds a requirement the answer text cannot justify once the Gold Key is known."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Withdrew” answers the wrong frame. It treats the problem like an inchoate/renunciation problem after the completed-offense threshold has already been crossed."
+  },
+  {
+   "label": "CLASH C vs. D",
+   "text": "C says “only attempt”; D says “completed larceny.” Axis: completion threshold. Splitting facts: concealed + moved + intent to steal."
+  },
+  {
+   "label": "CALL",
+   "text": "Apply Gold Key. Slight movement with intent to steal is enough. Residual = D."
+  }
+ ],
+ "studentScript": "Call = what crime. Find completion facts. Moved + concealed + intent. Apply Gold Key. Cut no-exit, withdrawal, and attempt-only. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer makes leaving the bookstore the legal threshold.",
+   "lawyer": "Leaving the store is not required once taking/asportation/intent are met.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The answer talks about later withdrawal, but the call asks what crime was already committed.",
+   "lawyer": "Withdrawal does not erase completed larceny after the elements are satisfied.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The answer sees intent to leave but misses the earlier completion facts.",
+   "lawyer": "Concealment plus slight movement with steal-intent supports completed larceny.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "Matches the completion facts: took from display, concealed, intent to steal.",
+   "lawyer": "Correct under larceny elements and shoplifting-completion authority.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-LARCENY-ASPORTATION-01",
+   "statement": "Larceny can be complete before the thief leaves the store. Slight movement plus concealment/control with intent to steal satisfies the completion threshold.",
+   "trigger": "Store item hidden in clothing/bag, moved a few steps, then returned after detection risk.",
+   "unlocks": "Defeats the no-exit and only-attempt traps.",
+   "authority": [
+    "Cornell Wex: larceny as common-law illegal taking with intent to deprive.",
+    "DOJ Criminal Resource Manual 1006: wrongful taking/carrying away, absence of consent, intent to deprive; specific intent.",
+    "People v. Olivo: store-exit not required when control is inconsistent with store rights.",
+    "CALI text: asportation satisfied by slight movement."
+   ]
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-LARCENY-EXIT-TRAP-01",
+   "statement": "In shoplifting arrays, do not let the exit door control. First mark the earliest moved-and-concealed fact, then compare attempt vs completed-crime choices.",
+   "trigger": "Answer choices say no crime or only attempt because the item stayed in the store.",
+   "unlocks": "Exit-door trap and attempt-only trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Store exit is not the larceny line",
+  "signal": "Item hidden in bag/clothing + slight movement + intent to steal.",
+  "studentMove": "Call the completion threshold before reading return/withdrawal facts.",
+  "tinyRule": "Moved + concealed + steal-intent beats no-exit/attempt-only.",
+  "trap": "Thinking the item must leave the store."
+ }
+}

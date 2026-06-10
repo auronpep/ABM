@@ -1,0 +1,92 @@
+{
+ "id": "CQ14675",
+ "title": "Question 14675",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Homicide",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Question ID: 14675_psalms_room\n\nStem + call:\n\nLydia was suffering from painful and terminal cancer. One evening at home, after reading Psalms with her husband Timothy, Lydia begged Timothy to kill her to end her suffering. As they remembered their life together and reaffirmed their love for each other, Timothy tried to persuade Lydia not to give up. Lydia insisted, however, and finally Timothy held a gun to her head and killed her.\n\nThe most serious degree of criminal homicide of which Timothy can legally be convicted is",
+ "call": "The most serious degree of criminal homicide of which Timothy can legally be convicted is",
+ "choices": {
+  "A": "no degree of criminal homicide.",
+  "B": "involuntary manslaughter.",
+  "C": "voluntary manslaughter.",
+  "D": "murder."
+ },
+ "key": "D",
+ "dominantTrap": "C",
+ "rightExplanation": "D is correct. Timothy intentionally killed Lydia by holding a gun to her head and shooting her after time to reflect and after trying to talk her out of the request.\n\nGold Key: A victim’s request, consent, or the actor’s merciful motive does not erase an intentional killing and does not reduce a deliberate killing to manslaughter.\n\nSilver Key: The call asks for the most serious degree. Once murder is available, lower homicide labels do not answer the call.",
+ "wrongExplanations": {
+  "A": "“No degree of criminal homicide” is the moral-mercy trap. The stem gives an actual killing by Timothy. Gold Key: Lydia’s request and Timothy’s motive do not make the killing legally disappear.",
+  "B": "Involuntary manslaughter fits an unintentional or negligence-style killing lane. This stem gives a direct intentional shooting. Silver Key: do not drop to a lower homicide label when the facts unlock murder.",
+  "C": "Voluntary manslaughter is the closer trap because it is at least a homicide label. But it is the wrong neighboring lane. The stem gives mercy, love, and consent; it does not give a legally recognized mitigation that removes murder. Gold Key: mercy motive and victim request do not convert a deliberate killing into voluntary manslaughter."
+ },
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“No degree of criminal homicide” conflicts with the stem’s visible killing and fails under the mercy-killing Gold Key."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Involuntary manslaughter” answers an unintentional/negligent-killing lane. The stem gives an intentional gun-to-head killing."
+  },
+  {
+   "label": "CLASH C vs. D",
+   "text": "The real fight is voluntary manslaughter vs. murder."
+  },
+  {
+   "label": "CALL with Gold Key",
+   "text": "Mercy motive and victim request are not the legal trigger that reduces murder. Murder remains the most serious degree. D survives."
+  }
+ ],
+ "studentScript": "Most serious degree. He intentionally shot her after time to think. Mercy is motive, not a defense. Lower degrees fall. Murder.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The stem says Timothy killed Lydia. A says legally no homicide at all. That only works if mercy/consent is a defense; the Gold Key says it is not.",
+   "lawyer": "Victim request and compassionate motive do not negate murder when the defendant actively performs the killing.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "Involuntary manslaughter answers an unintentional/negligent killing lane. The stem gives a direct gun-to-head killing.",
+   "lawyer": "The facts support intentional killing with malice, not involuntary manslaughter.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "Voluntary manslaughter is the right neighborhood but wrong variant. The stem gives mercy and request, not a legally recognized mitigation trigger.",
+   "lawyer": "Mercy, consent, and love do not convert a deliberate killing into voluntary manslaughter.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The call asks most serious degree. The facts show intentional killing, and the Gold Key blocks the mercy/consent downgrade.",
+   "lawyer": "Intentional, deliberate killing with malice is murder; motive does not negate intent or malice.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-MERCY-KILLING-01",
+   "statement": "A victim's request, consent, or the killer's merciful motive does not erase an intentional killing and does not reduce a deliberate killing to manslaughter.",
+   "trigger": "terminal illness + victim begs defendant to kill + defendant personally performs the killing",
+   "unlocks": "mercy/consent trap in homicide-degree questions",
+   "authority": "Common-law murder/malice authorities and euthanasia/mercy-killing cases; lawyer_confirmation only."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-MOST-SERIOUS-DEGREE-01",
+   "statement": "When the call asks for the most serious degree, read the answers as a ladder. If the top rung is legally open, lower rungs do not answer the call.",
+   "trigger": "answer choices list no homicide, involuntary manslaughter, voluntary manslaughter, murder",
+   "unlocks": "murder vs manslaughter ladder",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Mercy motive is not a homicide downgrade",
+  "signal": "Victim requests death; defendant personally kills.",
+  "studentMove": "Separate motive from intent. Then answer the most-serious-degree call.",
+  "tinyRule": "Good motive does not erase intentional killing.",
+  "trap": "Choosing voluntary manslaughter because the facts feel merciful."
+ }
+}

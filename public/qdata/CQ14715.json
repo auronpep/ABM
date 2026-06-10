@@ -1,0 +1,88 @@
+{
+ "id": "CQ14715",
+ "title": "Question 14715",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Criminal Law",
+ "subtopic": "Other Crimes",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "BARMATRIX Q#14715 — Christian variation: “The Missing Lyre After Bible Study”\n\nLydia told Barnabas to accompany her into Mary’s unlocked storage shed and retrieve an expensive hand-carved lyre that Lydia said she had loaned to Mary for a Bible-study music rehearsal. Barnabas accompanied Lydia into Mary’s shed, opened the door, saw a hand-carved lyre hanging high on the wall, climbed a ladder, and handed it down to Lydia. Lydia and Barnabas left with the lyre together.\n\nIn fact, the lyre belonged to Mary. When Mary discovered the lyre missing, she suspected that Lydia had taken it. Mary used a screwdriver to break into Lydia’s apartment to find the lyre. Upon discovering the lyre on Lydia’s kitchen table, Mary took it back and called the police.\n\nThe jurisdiction follows the common law, except that burglary covers structures in addition to dwellings and the nighttime element has been eliminated.\n\nWhich, if any, of these individuals is guilty of burglary?",
+ "call": "Which, if any, of these individuals is guilty of burglary?",
+ "choices": {
+  "A": "All of them.",
+  "B": "Only Mary.",
+  "C": "Barnabas and Lydia.",
+  "D": "Only Lydia."
+ },
+ "key": "D",
+ "dominantTrap": "C",
+ "rightExplanation": "D is correct. Lydia is the only person whose role matches the required burglary-intent pattern.\n\nGold Key: Burglary with intended larceny turns on the intent at entry. A person who enters intending to steal another’s property can satisfy the burglary intent; a person who honestly thinks he is helping retrieve authorized property, or who is taking back her own property, lacks the larceny intent needed for that burglary theory.\n\nSilver Key: When the answer choices are person sets, do not grade the group as a whole. Make a three-row table: Lydia, Barnabas, Mary. Then ask: who had stealing intent when entering?\n\nLydia knowingly used Barnabas to get Mary’s lyre from Mary’s shed. Barnabas acted on Lydia’s claim that the lyre had been loaned to her. Mary later broke into Lydia’s apartment to recover Mary’s own lyre. The only person with the required intent-to-steal fact is Lydia.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — “All of them.”",
+   "text": "Cut as overinclusive after the intent anchor. “All” includes Barnabas and Mary, and their stem roles negate the needed stealing intent."
+  },
+  {
+   "label": "CUT B — “Only Mary.”",
+   "text": "Cut as wrong-element / not responsive. It answers with the person who clearly broke in, but the call turns on burglary intent, not just physical entry."
+  },
+  {
+   "label": "CUT C — “Barnabas and Lydia.”",
+   "text": "Cut as half-truth. Lydia fits. Barnabas does not. A group answer that includes one extra non-guilty person fails."
+  },
+  {
+   "label": "Residual D — “Only Lydia.”",
+   "text": "D is the true-and-responsive residual."
+  }
+ ],
+ "studentScript": "Call asks which people are guilty. Make the table. Lydia: entered to get Mary’s lyre, yes. Barnabas: helped under Lydia’s ownership story, no stealing intent. Mary: broke in to recover her own lyre, no stealing intent. Cut all group answers with Barnabas or Mary. D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'all' sweeps in Barnabas and Mary, whose stem roles differ from Lydia’s.",
+   "lawyer": "Barnabas and Mary lack larceny intent; Lydia alone fits burglary with intended larceny.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "Mary has the dramatic screwdriver-entry fact, but the call turns on burglary intent.",
+   "lawyer": "Mary took her own property back and therefore lacked intent to steal.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "Lydia fits, but Barnabas’s role is different; the answer adds one person too many.",
+   "lawyer": "Barnabas’s apparent authorization belief defeats larceny intent.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "Only Lydia has the stem role that matches stealing intent at entry.",
+   "lawyer": "Lydia entered Mary’s shed intending to take Mary’s lyre.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-BURGLARY-LARCENY-INTENT-01",
+   "statement": "For burglary based on intended larceny, sort intent at entry: intending to steal another’s property counts; honestly retrieving authorized or own property does not.",
+   "trigger": "Burglary call plus facts showing mistaken permission or recovery of own property.",
+   "unlocks": "Barnabas and Mary are not burglars even though they physically entered and helped or recovered the lyre.",
+   "authority": "Taylor v. United States; People v. Navarro; common-law larceny intent authorities"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-PERSON-SET-INTENT-01",
+   "statement": "When choices are person sets, make a one-line table for each actor and cut any group that includes one actor who fails the decisive row.",
+   "trigger": "A criminal-law call asking which individuals are guilty.",
+   "unlocks": "The all / only / pair answer-array trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Person-set burglary intent table",
+  "signal": "Choices name combinations of people.",
+  "studentMove": "List each person; mark entry, property belief, stealing intent.",
+  "tinyRule": "A person-set answer dies if it includes one person without the required intent.",
+  "trap": "Treating physical help or physical break-in as enough."
+ }
+}
