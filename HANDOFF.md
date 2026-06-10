@@ -16,9 +16,11 @@ Do not assume the four 2026-05-15 governance files are them (they're pre-pivot �
 ---
 
 ## Where everything lives
-- **Repo:** `auronpep/ABM` (private). **Worktree:** `C:\ABM\.claude\worktrees\upbeat-saha-cffab0`,
-  **branch** `claude/upbeat-saha-cffab0`. Main branch `main` has only the initial setup commit.
-- **Build commit:** `b8a592c` — "feat: rebrand BarMatrix marketing site to Christian-discernment direction" (60 files). **Not pushed.**
+- **Repo:** `auronpep/ABM` (private). The rebrand is on **`main`**, **pushed** — `origin/main` = `83fa9a9`.
+  **Work in `C:\ABM` on `main` directly.** The worktree
+  `C:\ABM\.claude\worktrees\upbeat-saha-cffab0` (branch `claude/upbeat-saha-cffab0`, same commit) is a
+  leftover — from `C:\ABM` run `git worktree remove .claude/worktrees/upbeat-saha-cffab0` to prune it.
+- **Tip commit:** `83fa9a9` (rebrand `b8a592c` + this handoff), on `main`, pushed.
 - **Plan:** `C:\Users\JesusLovesMe\.claude\plans\this-is-a-new-velvety-sun.md`
 - **Memory:** `C:\Users\JesusLovesMe\.claude\projects\C--ABM\memory\` → `barmatrix-pivot.md`,
   `barmatrix-skills-stale.md`, `barmatrix-session-status.md`
@@ -82,8 +84,8 @@ Rebrand ~28 legacy `public/lp-*.html` + `campaign.html` + `emails.html` to the n
 
 ## Resume commands
 ```
-cd "C:/ABM/.claude/worktrees/upbeat-saha-cffab0"
-npm install            # if node_modules absent
+cd "C:/ABM"            # work on main directly
+npm install            # node_modules is gitignored — install first
 npm run dev            # or: npm run preview  (port 4173)
 npm run build          # tsc --noEmit && vite build
 ```
