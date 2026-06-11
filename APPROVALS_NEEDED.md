@@ -90,7 +90,15 @@ Nothing below has been executed.
   emails into a void (honesty > checkbox). Approve an email provider plan and
   these become small follow-on builds.
 
-## 8. Deploy the first repair loop (built + verified 2026-06-11)
+## 8. Deploy the first repair loop — ✅ RESOLVED 2026-06-11 (founder approved)
+
+- Deployed to production via `vercel deploy --prod --archive=tgz`
+  (deployment `barmatrix-1as2qwdbu-sunnylee.vercel.app`). Verified live:
+  barmatrix.app serves the matching bundle (`index-BQksTwnA.js`, repair-loop
+  copy present), `qdata/trap-index.json` 200 (11.4 KB), 81 questions intact,
+  checkout.html 200. Rollback: `vercel rollback`.
+
+### Original entry (for reference)
 
 - **What:** `#/repair` (drills → timed retest → repair stamp → 4-day spaced
   retest), state-aware /welcome CTA, DrillPlayer extraction, trap index,
