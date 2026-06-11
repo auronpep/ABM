@@ -366,6 +366,19 @@
 
 .rz-nameplate.survived { border-color: var(--bm-brass); color: var(--bm-brass); }
 
+/* Timed-retest countdown (first repair loop). Vermilion only under a minute —
+   urgency stays informational, never punitive. */
+.retest-clock {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--bm-ink);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.retest-clock.low { color: var(--bm-trap); }
+
 .rz-verdict {
   font-family: var(--serif);
   font-size: 17px;

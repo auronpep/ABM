@@ -7,6 +7,7 @@ import { Pricing } from "./pages/Pricing.tsx";
 import { Diagnostic } from "./pages/Diagnostic.tsx";
 import { Drill } from "./pages/Drill.tsx";
 import { Welcome } from "./pages/Welcome.tsx";
+import { Repair } from "./pages/Repair.tsx";
 import { PrayerChain } from "./pages/PrayerChain.tsx";
 import { captureUtm } from "./lib/events.ts";
 import type { Route } from "./types.ts";
@@ -18,6 +19,7 @@ const ROUTES: Route[] = [
   "diagnostic",
   "drills",
   "welcome",
+  "repair",
   "prayer-chain",
 ];
 
@@ -45,7 +47,7 @@ export function App() {
     window.scrollTo(0, 0);
   }, [route]);
 
-  const chromeless = route === "diagnostic" || route === "welcome";
+  const chromeless = route === "diagnostic" || route === "welcome" || route === "repair";
 
   return (
     <>
@@ -56,6 +58,7 @@ export function App() {
       {route === "diagnostic" && <Diagnostic navigate={navigate} />}
       {route === "drills" && <Drill navigate={navigate} />}
       {route === "welcome" && <Welcome navigate={navigate} />}
+      {route === "repair" && <Repair navigate={navigate} />}
       {route === "prayer-chain" && <PrayerChain navigate={navigate} />}
       {!chromeless && <Footer navigate={navigate} />}
     </>

@@ -4,26 +4,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { brand } from "../content/brand.ts";
 import { track } from "../lib/events.ts";
+import { readMap, readProgram, spacedRetestDue } from "../program/repair.ts";
 import type { PageProps } from "../types.ts";
-
-const REDZONE_MAP_KEY = "bm_redzone_map";
-
-interface StoredMap {
-  ts: number;
-  total: number;
-  score: number;
-  misses: Array<{ qid: string; title: string; subject: string; trapName: string }>;
-  zones: Array<{ name: string; members: string[] }>;
-}
-
-function readMap(): StoredMap | null {
-  try {
-    const raw = localStorage.getItem(REDZONE_MAP_KEY);
-    return raw ? (JSON.parse(raw) as StoredMap) : null;
-  } catch {
-    return null;
-  }
-}
 
 export function Welcome({ navigate }: PageProps) {
   const reduced = useMemo(
@@ -31,6 +13,7 @@ export function Welcome({ navigate }: PageProps) {
     [],
   );
   const map = useMemo(readMap, []);
+  const program = useMemo(readProgram, []);
   const [stage, setStage] = useState(0);
 
   useEffect(() => {
@@ -47,8 +30,29 @@ export function Welcome({ navigate }: PageProps) {
     return () => timers.forEach(clearTimeout);
   }, [map, reduced]);
 
-  const topZone = map?.zones[0]?.name ?? map?.misses[0]?.trapName ?? null;
+  const topZone = program?.zone.name ?? map?.zones[0]?.name ?? map?.misses[0]?.trapName ?? null;
   const drillCount = map ? Math.max(4, Math.min(6, (map.zones[0]?.members.length ?? 1) * 2)) : 0;
+
+  // Exactly one primary action (P1 §1, §5): the loop in progress wins, then
+  // an overdue spaced retest, then the first repair, then the mixed set.
+  const repaired = program?.phase === "repaired";
+  const retestDue = program ? spacedRetestDue(program) : false;
+  const statusLine = program
+    ? retestDue
+      ? `${program.zone.name} was repaired — the 4-day retest is ready. Three questions, timed, to prove it held.`
+      : repaired
+        ? `${program.zone.name} — repaired, holding. The spaced retest unlocks soon; until then, the drill bank is open.`
+        : `${program.zone.name} — repair in progress. Pick up where you left off.`
+    : null;
+  const cta: { label: string; to: "repair" | "drills" } = program
+    ? repaired && !retestDue
+      ? { label: "Keep going — open the drill bank", to: "drills" }
+      : retestDue
+        ? { label: "Run the 4-day retest", to: "repair" }
+        : { label: "Continue the first repair", to: "repair" }
+    : topZone
+      ? { label: "Start the first repair", to: "repair" }
+      : { label: "Start your first timed set", to: "drills" };
 
   return (
     <div className="welcome-wrap">
@@ -63,7 +67,7 @@ export function Welcome({ navigate }: PageProps) {
       <h1 className={`welcome-in${reduced ? "" : " bm-rise"}`}>You&rsquo;re in.</h1>
       <div className="welcome-cohort">July 2026 cohort</div>
 
-      {map === null ? (
+      {map === null && program === null ? (
         stage >= 1 && (
           <div className={reduced ? "" : "bm-rise"}>
             <p className="body-lg" style={{ maxWidth: "44ch", marginBottom: 28 }}>
@@ -82,15 +86,16 @@ export function Welcome({ navigate }: PageProps) {
           )}
           {stage >= 2 && (
             <p className={`body-lg${reduced ? "" : " bm-rise"}`} style={{ maxWidth: "44ch", margin: "10px 0 28px" }}>
-              {topZone
-                ? `Your first repair starts with ${topZone}. ${drillCount} drills, then a timed retest. About 20 minutes.`
-                : `Your map came back clean on the sampled questions. Your first session is a timed mixed set — the bank keeps watching for the pattern.`}
+              {statusLine ??
+                (topZone
+                  ? `Your first repair starts with ${topZone}. ${drillCount} drills, then a timed retest. About 20 minutes.`
+                  : `Your map came back clean on the sampled questions. Your first session is a timed mixed set — the bank keeps watching for the pattern.`)}
             </p>
           )}
           {stage >= 3 && (
             <div className={reduced ? "" : "bm-rise"}>
-              <button className="btn btn-lg red" onClick={() => navigate("drills")}>
-                Start the first repair <span className="arrow">→</span>
+              <button className="btn btn-lg red" onClick={() => navigate(cta.to)}>
+                {cta.label} <span className="arrow">→</span>
               </button>
             </div>
           )}

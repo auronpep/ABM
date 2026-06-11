@@ -7,7 +7,8 @@
     "dev": "vite",
     "drift": "node scripts/drift_scan.mjs",
     "contract": "node scripts/contract_check.mjs",
-    "build": "node scripts/contract_check.mjs && tsc --noEmit && vite build",
+    "trap-index": "node scripts/build_trap_index.mjs",
+    "build": "node scripts/build_trap_index.mjs && node scripts/contract_check.mjs && tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -5,6 +5,7 @@ export type Route =
   | "diagnostic"
   | "drills"
   | "welcome"
+  | "repair"
   | "prayer-chain";
 
 export interface PageProps {

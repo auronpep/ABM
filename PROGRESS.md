@@ -1,5 +1,85 @@
 # PROGRESS — sale-one funnel build (2026-06-10, night session)
 
+## 2026-06-11 — Program session: architecture decision (handoff §5.2)
+
+**Question:** client-local program v1 vs API-connected program v1.
+**Evidence gathered this session:**
+- `public/login.html` is a static MOCK — the form redirects to `app.html`
+  with no credential check; there is no auth on this site at all.
+- `api.barmatrix.app` is Clerk-authed end to end:
+  `/api/me/day-plan` mounts `clerkMiddleware()` (`C:\barmatrix-api\src\routes\me-day-plan.ts`),
+  entitlement checks run through `clerk-entitlement.ts` (`[clerkMiddleware(), enrollmentCheck]`),
+  and the Stripe-ownership path 401s unauthenticated callers (`src/index.ts:628–665`).
+- Therefore API-connected program v1 requires introducing Clerk into the
+  Vite shell + founder-coordinated entitlement linkage — and `C:\barmatrix-api`
+  is founder-owned (read-only; changes surface as diffs, never commits).
+
+**Decision: client-local program v1.** The first repair loop (P1 §2) is
+buildable entirely from the qdata bank + `bm_redzone_map` in localStorage —
+the handoff itself calls this "pure win either way" (§5.3). Spaced-retest
+scheduling is a localStorage date. Diagnostic→account linkage and the
+server-side day-plan reconnect are deferred to an explicitly scoped
+auth/Clerk session with founder involvement (queued in APPROVALS_NEEDED.md).
+Retest pass bar: 2 of 3 within the timer (repair is claimed "for now" and
+re-verified at day 4 — honest framing makes the softer bar safe).
+
+## 2026-06-11 — Built + verified: the first repair loop (P1 §2)
+
+### What was built
+- **Trap index** (`scripts/build_trap_index.mjs` → `public/qdata/trap-index.json`,
+  wired first into `npm run build`): per-question wrong-choice molds, so the
+  loop can scope the bank by (filter_broken, mold) without fetching 81 files.
+- **Engine** (`src/program/repair.ts`): derives the #1 zone from
+  `bm_redzone_map` (largest zone, else most-recurrent (filter, mold) family
+  among singletons), selects 4–6 drills (2 per zone member, clamped — same
+  formula as /welcome's promise) + a 3-question timed retest, excluding the 18
+  diagnostic questions and everything previously assigned (a `usedIds` ledger
+  added after browser testing caught the day-4 retest re-serving the original
+  retest trio; pre-ledger localStorage payloads are backfilled on read).
+  Thin mold families fall back to same-filter, then any-unseen. State in
+  `localStorage.bm_program_v1`. Pass = 2/3 in 6:00; pass schedules the
+  4-day spaced retest (`retestAt`); miss appends 2 drills + a fresh retest.
+- **DrillPlayer extraction** (`src/components/DrillPlayer.tsx`): the full
+  TEAR forensics player pulled out of `pages/Drill.tsx` (which now wraps it)
+  so the library and the program render the identical experience.
+- **`#/repair`** (`src/pages/Repair.tsx`, chromeless route): sequenced drills
+  ("DRILL n OF N" + zone chip) → timed retest (countdown, no forensics
+  between questions, auto-grades at 0:00) → pass: vermilion→brass stamp,
+  "Repaired — for now. We retest it again in 4 days to make sure it holds."
+  → miss: "Still live. Here's the move again: {silver_key_move}" + 2 drills,
+  no shame copy (Sanctuary: no streaks/guilt anywhere). No-diagnostic
+  fallback: "First, we map you." → diagnostic.
+- **/welcome** now routes its single CTA by state: overdue day-4 retest →
+  continue-repair → start-first-repair → timed mixed set (clean map). The
+  no-map fallback is unchanged.
+- **Events**: `first_drill_complete`, `first_retest_complete` (zone, passed),
+  `zone_repaired` (zone, attempt_n) added to the typed union and fired from
+  the loop.
+
+### Verified in browser (dev server, desktop + 375px)
+Simulated purchase return (`/?purchase=success#/welcome`) with a seeded
+wrong_element map → welcome nameplate + "6 drills" promise → drill 1 played
+with a wrong pick (forensics + sequenced footer) → fast-forward → drill 6
+played correct → timed retest run question-by-question at 2/3 → phase
+`repaired`, `retestAt` exactly +4 days, `zone_repaired {attempt_n: 1}` fired
+→ brass stamp confirmed by computed style (`rgb(143,116,47)` = --bm-brass).
+Miss path run at 0/3 → "Still live" + silver-key move + drills 7–8.
+Overdue-retest welcome CTA, day-4 fresh-question selection (post-fix),
+no-diagnostic fallback, and mobile no-overflow all verified. Build + drift
+scan green. Caveats: the preview screenshot tool timed out intermittently —
+one mobile drill-view screenshot captured; the repair moment is evidenced by
+DOM/style assertions instead. `first_login` double-fires on /welcome in dev
+(pre-existing, dev-only React double-effect).
+
+### Not done / next
+- NOT deployed — founder review queued (APPROVALS_NEEDED.md §8).
+- Diagnostic→account linkage (`diagnostic_id` into checkout metadata) and
+  the API-connected day-plan need the Clerk/auth session (decision above).
+- Welcome email (P1 §4) still gated on Resend (APPROVALS §7).
+- Day 2–7 next-action engine beyond the welcome CTA priority: server-side
+  `/api/me/day-plan` already exists — reconnect, don't rebuild.
+
+
 Handoff packets: Z2 (docs 00–06) + Z3 (P1–P4), reviewed in full.
 **2026-06-10 late night: founder approved commit + production deploy, and
 explicitly discarded the blocked/forbidden-string build gate** — legal +

@@ -8,7 +8,10 @@ export type FunnelEvent =
   | "diag_complete"
   | "checkout_start"
   | "prayer_chain_signup"
-  | "first_login";
+  | "first_login"
+  | "first_drill_complete"
+  | "first_retest_complete"
+  | "zone_repaired";
 
 type Props = Record<string, string | number | boolean | null | string[]>;
 
