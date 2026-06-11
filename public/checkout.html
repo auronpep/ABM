@@ -664,39 +664,49 @@
     const Checkout = () => {
       const initialPlan = new URLSearchParams(window.location.search).get("plan") === "split" ? "plan" : "payInFull";
       const [plan, setPlan] = React.useState(initialPlan); // payInFull | plan
-      const [email, setEmail] = React.useState("");
-      const [name, setName] = React.useState("");
-      const [card, setCard] = React.useState("");
-      const [exp, setExp] = React.useState("");
-      const [cvc, setCvc] = React.useState("");
-      const [zip, setZip] = React.useState("");
-      const [country, setCountry] = React.useState("US");
       const [terms, setTerms] = React.useState(false);
-      const [marketing, setMarketing] = React.useState(true);
-      const [state, setState] = React.useState("form"); // form | loading | success
+      const [state, setState] = React.useState("form"); // form | loading
+      const [error, setError] = React.useState(null);
+      const cancelled = new URLSearchParams(window.location.search).get("cancelled") === "1";
 
       const due = plan === "payInFull" ? PRICING.flagshipPrice : PRICING.planStandard.d1;
-
-      const total = PRICING.flagshipPrice;
       const base = PRICING.flagshipPrice;
 
-      const canSubmit = email && name && card.length >= 14 && exp && cvc && terms;
+      const canSubmit = terms && state !== "loading";
 
-      const submit = (e) => {
+      // Live payment plumbing: the existing barmatrix-api Stripe Checkout
+      // endpoint. Card details are collected on Stripe's hosted page only.
+      const API_URL = "https://api.barmatrix.app";
+
+      const submit = async (e) => {
         e?.preventDefault?.();
         if (!canSubmit) return;
+        setError(null);
         setState("loading");
-        setTimeout(() => setState("success"), 2200);
+        try {
+          const res = await fetch(API_URL + "/api/checkout/create-session", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              payment_plan: plan === "plan" ? "two_pay_500_499" : "pay_in_full",
+              success_url: window.location.origin + "/?purchase=success#/welcome",
+              cancel_url: window.location.origin + "/checkout.html?cancelled=1&plan=" + (plan === "plan" ? "split" : "full"),
+            }),
+          });
+          if (res.status === 409) {
+            const body = await res.json().catch(() => ({}));
+            setError(body.public_copy || "Cohort capacity reached. Join the waitlist.");
+            setState("form");
+            return;
+          }
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const session = await res.json();
+          window.location.assign(session.checkout_url);
+        } catch (err) {
+          setError("Could not open secure checkout. Please try again, or refresh the page.");
+          setState("form");
+        }
       };
-
-      // ── Card formatting helpers ──
-      const fmtCard = (v) => v.replace(/\D/g, "").slice(0, 16).replace(/(\d{4})(?=\d)/g, "$1 ");
-      const fmtExp = (v) => {
-        const d = v.replace(/\D/g, "").slice(0, 4);
-        return d.length > 2 ? d.slice(0, 2) + "/" + d.slice(2) : d;
-      };
-
-      if (state === "success") return <SuccessScreen email={email} name={name} due={due} total={total} plan={plan} />;
 
       return (
         <React.Fragment>
@@ -802,129 +812,37 @@
               {/* RIGHT: payment form */}
               <div className="co-right">
                 <form className="co-form" onSubmit={submit}>
-                  {/* Section 1: account */}
                   <div className="form-section">
                     <div className="form-section-header">
                       <span className="num">1</span>
-                      <h3>Your account</h3>
-                    </div>
-                    <div className="form-row">
-                      <div className="form-field">
-                        <label>EMAIL · ACCOUNT LOGIN</label>
-                        <input
-                          type="email"
-                          placeholder="you@email.com"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          autoComplete="email"
-                        />
-                      </div>
-                    </div>
-                    <div className="form-row">
-                      <div className="form-field">
-                        <label>FULL NAME · ON CARD</label>
-                        <input
-                          type="text"
-                          placeholder="Jordan Reyes"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
-                          autoComplete="cc-name"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Section 2: payment */}
-                  <div className="form-section">
-                    <div className="form-section-header">
-                      <span className="num">2</span>
-                      <h3>Payment</h3>
-                    </div>
-                    <div className="form-row">
-                      <div className="form-field">
-                        <label>CARD NUMBER</label>
-                        <input
-                          type="text"
-                          placeholder="1234 1234 1234 1234"
-                          value={card}
-                          onChange={(e) => setCard(fmtCard(e.target.value))}
-                          inputMode="numeric"
-                          autoComplete="cc-number"
-                        />
-                        <span className="card-icon">VISA · MC · AMEX</span>
-                      </div>
-                    </div>
-                    <div className="form-row split">
-                      <div className="form-field">
-                        <label>EXPIRATION (MM/YY)</label>
-                        <input
-                          type="text"
-                          placeholder="MM / YY"
-                          value={exp}
-                          onChange={(e) => setExp(fmtExp(e.target.value))}
-                          inputMode="numeric"
-                          autoComplete="cc-exp"
-                        />
-                      </div>
-                      <div className="form-field">
-                        <label>CVC</label>
-                        <input
-                          type="text"
-                          placeholder="123"
-                          maxLength="4"
-                          value={cvc}
-                          onChange={(e) => setCvc(e.target.value.replace(/\D/g, ""))}
-                          inputMode="numeric"
-                          autoComplete="cc-csc"
-                        />
-                      </div>
-                    </div>
-                    <div className="form-row split">
-                      <div className="form-field">
-                        <label>ZIP / POSTAL CODE</label>
-                        <input
-                          type="text"
-                          placeholder="94110"
-                          value={zip}
-                          onChange={(e) => setZip(e.target.value)}
-                          autoComplete="postal-code"
-                        />
-                      </div>
-                      <div className="form-field">
-                        <label>COUNTRY</label>
-                        <select value={country} onChange={(e) => setCountry(e.target.value)}>
-                          <option value="US">United States</option>
-                          <option value="CA">Canada</option>
-                          <option value="GB">United Kingdom</option>
-                          <option value="AU">Australia</option>
-                          <option value="OTHER">Other</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Section 3: confirm */}
-                  <div className="form-section">
-                    <div className="form-section-header">
-                      <span className="num">3</span>
                       <h3>Confirm & enroll</h3>
                     </div>
+                    {cancelled && (
+                      <p style={{ fontFamily: "var(--mono)", fontSize: 12, letterSpacing: "0.06em", color: "var(--muted)", marginBottom: 16 }}>
+                        Checkout was cancelled — no charge was made. Your plan selection is saved below.
+                      </p>
+                    )}
+                    <p style={{ fontSize: 14, lineHeight: 1.6, color: "var(--ink-soft)", marginBottom: 18 }}>
+                      Payment is handled on Stripe's secure checkout page — card details are
+                      entered there, never on this site. You'll be brought back here the
+                      moment you're enrolled.
+                    </p>
                     <div className="terms-row">
                       <input type="checkbox" id="terms" checked={terms} onChange={(e) => setTerms(e.target.checked)} />
                       <label htmlFor="terms" className="text">
-                        I have read and accept the <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and <a href="#">Refund Policy</a> (7-day no-questions refund window). I understand BarMatrix is multiple-choice only and does not guarantee any exam outcome.
-                      </label>
-                    </div>
-                    <div className="terms-row">
-                      <input type="checkbox" id="mkt" checked={marketing} onChange={(e) => setMarketing(e.target.checked)} />
-                      <label htmlFor="mkt" className="text">
-                        Send me launch-cycle office hours invitations, sprint emails, and product updates. Unsubscribe anytime.
+                        I have read and accept the <a href="/help.html">Terms of Service</a>, <a href="/help.html">Privacy Policy</a>, and <a href="/help.html">Refund Policy</a> (7-day no-questions refund window). I understand BarMatrix is multiple-choice only and does not guarantee any exam outcome.
                       </label>
                     </div>
 
+                    {error && (
+                      <p style={{ fontFamily: "var(--mono)", fontSize: 12, letterSpacing: "0.04em", color: "var(--red)", margin: "14px 0 0" }}>
+                        {error}
+                      </p>
+                    )}
+
                     <button type="submit" className="pay-btn" disabled={!canSubmit}>
                       <span className="lock-icon"></span>
-                      Enroll - ${due} {plan === "plan" ? "today" : ""} · July cycle
+                      {state === "loading" ? "Opening secure checkout…" : `Enroll — $${due}${plan === "plan" ? " today" : ""} · Stripe secure checkout`}
                     </button>
                     <div className="pay-meta">
                       <div>SECURED BY STRIPE · 256-BIT TLS</div>
@@ -940,8 +858,8 @@
             <div className="loading-overlay">
               <div>
                 <div className="spinner"></div>
-                <div className="label">PROCESSING PAYMENT</div>
-                <div className="sub">Securing your enrollment…</div>
+                <div className="label">OPENING SECURE CHECKOUT</div>
+                <div className="sub">Redirecting to Stripe…</div>
               </div>
             </div>
           )}
