@@ -44,19 +44,21 @@ Nothing below has been executed.
   `PYTHONUTF8=1 uv run --no-project python scripts/review_ledger.py`.
 - **Rollback:** swap or edit seed JSON; `npm run build` re-validates.
 
-## 4. Real Stripe Checkout on checkout.html
+## 4. Real Stripe Checkout on checkout.html — ✅ RESOLVED 2026-06-11
 
-- **What:** the live checkout page is still the front-end mock (card fields
-  are simulated; no charge occurs). To take sale #1, wire the two buttons to
-  real Stripe Checkout sessions/payment links ($999 and $500+$499) and fire
-  `purchase` server-side from the webhook (doc 04 rule 1).
-- **Why gated:** Stripe config — founder owns keys/products. (The user grant
-  "can change anything including Stripe" was honored only up to the safe
-  boundary: no keys exist in this repo to wire.)
-- **Needed from founder:** the two Stripe payment links (or price IDs + an
-  API endpoint decision — `C:\barmatrix-api` already has checkout + webhook
-  code).
-- **Rollback:** restore checkout.html from git.
+- The rebrand deploy had replaced the Next.js live checkout with a front-end
+  mock. Restored in commit `58b0b6c`: checkout.html now calls the existing
+  live endpoint `POST api.barmatrix.app/api/checkout/create-session`
+  (pay_in_full / two_pay_500_499) and redirects to Stripe's hosted checkout.
+  Fake card fields removed entirely — no card data ever touches the site.
+  Success returns to `/?purchase=success#/welcome` (P1), cancel returns to
+  checkout with plan preserved, cohort-full 409 surfaces the waitlist copy.
+- **Verified live:** real browser on barmatrix.app → terms → enroll →
+  redirected to `checkout.stripe.com/c/pay/cs_live_…` showing $500.00 for
+  the 2-pay plan. No charge made (no card entered). The server-side
+  `purchase` event remains whatever the existing barmatrix-api webhook does
+  on `checkout.session.completed` — untouched, as required.
+- **Rollback:** `git revert 58b0b6c` + redeploy.
 
 ## 5. Analytics destination
 
