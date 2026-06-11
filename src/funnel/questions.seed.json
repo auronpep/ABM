@@ -1,0 +1,112 @@
+[
+  {
+    "qid": "Q-14621",
+    "title": "The Manna Café Bookmaker",
+    "subject": "CRIM PRO",
+    "stem": [
+      "Federal agents had a hunch that Thomas, who ran the Manna Café near the courthouse, was taking illegal bets out of the back room. One agent entered Thomas's house while he was away to see what he could find. He discovered an envelope holding $5,000 in cash and the business card of Philip, a local businessman. Returning the envelope to its place, the agent located Philip, who admitted he had paid Thomas $5,000 to settle a gambling debt — and that Thomas regularly took illegal bets from him and several of his friends. The friends confirmed it.",
+      "The agent then arranged an introduction to Thomas at the café. Over coffee, Thomas — unaware of who he was talking to — boasted that he was one of the biggest bookmakers in the state. The agent testified to everything before a grand jury, which indicted Thomas for illegal gambling based solely on that testimony. Thomas's attorney moved to dismiss the indictment, claiming it rested on violations of Thomas's constitutional rights."
+    ],
+    "call": "Should the court grant the motion?",
+    "choices": [
+      { "id": "A", "text": "No, because dismissal of the indictment is not the appropriate remedy.", "pct": 66, "provenance": "inherited_original" },
+      { "id": "B", "text": "Yes, because much of the agent's testimony before the grand jury was inadmissible hearsay.", "pct": 2, "provenance": "inherited_original" },
+      { "id": "C", "text": "Yes, because of the agent's unlawful search of Thomas's home.", "pct": 31, "provenance": "inherited_original" },
+      { "id": "D", "text": "Yes, because of the agent's violation of Thomas's right to counsel.", "pct": 1, "provenance": "inherited_original" }
+    ],
+    "key": "A",
+    "trap": {
+      "choice": "C",
+      "pct": 31,
+      "name": "VIOLATION ≠ REMEDY",
+      "instinct": "JUSTICE",
+      "filter_broken": "NOT_RESPONSIVE",
+      "mold": "wrong_element"
+    },
+    "forensics": {
+      "A": "You held the line where most people break. The search of Thomas's home was unconstitutional — and you refused to let that fact answer a question it doesn't answer. A grand jury may consider hearsay and unlawfully obtained evidence; the exclusionary rule guards the trial, not the indictment. You separated the violation from the remedy. That is the discipline this exam pays for.",
+      "B": "You reached for the rules of evidence because secondhand testimony feels inadmissible. But a grand jury is not a trial — it is not bound by the rules of evidence, and hearsay is fair game there. This choice states real law from the wrong room. Before you cite a rule, ask where you are standing.",
+      "C": "The agent broke into a man's home. Your sense of justice says that has to cost the government something — so you bought the answer that punishes it. But the exclusionary rule protects the trial, not the grand jury; an indictment does not get dismissed because the investigation was dirty. The violation is real. The remedy is wrong. Ask the question that breaks this trap: this proves a violation — does it prove dismissal?",
+      "D": "Counsel never entered the picture. The right to counsel attaches at formal charging, and a voluntary conversation with an undercover agent before indictment is neither custodial interrogation nor a charged proceeding. This choice deploys a protection at a stage where it does not exist yet. Match the right to its moment."
+    },
+    "silver_key_move": "This proves a violation. Does it prove dismissal?",
+    "review_truth": "A grand jury may indict on hearsay and unlawfully obtained evidence — the exclusionary rule guards the trial, not the indictment.",
+    "drill_seeds": [
+      { "type": "CALL FOCUS", "prompt": "When the call asks for a remedy, name the remedy the violated rule actually grants before reading another word." }
+    ],
+    "crossovers": ["EVIDENCE", "CONSTITUTIONAL_LAW"]
+  },
+  {
+    "qid": "Q-14734",
+    "title": "The Upper Room Lease",
+    "subject": "CRIM LAW",
+    "stem": [
+      "A state statute provides: \"The maintenance of any ongoing enterprise in the nature of a betting parlor or bookmaking organization is a felony.\" A prosecutor has evidence that Martha has been renting the upper room of her building to Stephen, that Stephen has been running a betting parlor there within the meaning of the statute, and that Martha knows it."
+    ],
+    "call": "Which additional piece of evidence would be most useful to convict Martha as an accomplice to Stephen's violation?",
+    "choices": [
+      { "id": "A", "text": "Martha was previously convicted of running a betting parlor herself on the same premises.", "pct": 3, "provenance": "inherited_original" },
+      { "id": "B", "text": "Martha charges Stephen considerably more in rent than she charged the preceding tenant, who used the room for legitimate business.", "pct": 64, "provenance": "inherited_original" },
+      { "id": "C", "text": "Martha has personally placed bets with Stephen in the upper room.", "pct": 26, "provenance": "inherited_original" },
+      { "id": "D", "text": "Stephen pays Martha the rent in bills traceable as proceeds of his gambling operation.", "pct": 7, "provenance": "inherited_original" }
+    ],
+    "key": "B",
+    "trap": {
+      "choice": "C",
+      "pct": 26,
+      "name": "KNOWLEDGE ≠ STAKE",
+      "instinct": "SUSPICION",
+      "filter_broken": "NOT_RESPONSIVE",
+      "mold": "wrong_element"
+    },
+    "forensics": {
+      "A": "A prior conviction smells like guilt, and you followed the smell. But propensity is not aid: what Martha did years ago proves nothing about whether she intends this venture to succeed. The stem already gave you knowledge. The missing element is stake — find the fact that pays her when the betting parlor wins.",
+      "B": "You ignored the loudest facts and followed the element. Accomplice liability needs intent to aid — a stake in the venture's success — and above-market rent is the one fact that gives Martha a profit share in the gambling itself. Everything else merely proves she knew, and knowledge was already given. You went hunting for the element still missing. That is exactly how this question is built to be beaten.",
+      "C": "She placed bets in the room — your nose for the incriminating lit up, and you bought the dirtiest-sounding fact on the page. But betting with Stephen only proves Martha knew, and knowledge was already conceded in the stem. It adds nothing to the element that is missing: her intent to aid, her stake. A bettor can lose money; a landlord charging double profits when the operation thrives. Suspicion points at people. Elements convict them.",
+      "D": "Tainted bills feel like the smoking gun — money straight from the crime. But where the rent comes from says nothing about whether Martha aided the venture; market-rate rent paid in dirty money is still just rent. The element in play is her stake in the gambling's success, not the serial numbers on the cash. Prove the element, not the atmosphere."
+    },
+    "silver_key_move": "The stem already gave me knowledge. Which fact proves she profits when the crime succeeds?",
+    "review_truth": "Accomplice liability requires intent to aid — a stake in the venture's success — not mere knowledge of it; above-market rent is the fact that buys her in.",
+    "drill_seeds": [
+      { "type": "CALL FOCUS", "prompt": "Before picking the most incriminating fact, list the elements and circle the one the stem has not yet proved." }
+    ],
+    "crossovers": ["EVIDENCE"]
+  },
+  {
+    "qid": "Q-14609",
+    "title": "The Damascus Road Stop",
+    "subject": "CRIM PRO",
+    "stem": [
+      "Officer Deborah had a hunch — short of probable cause or reasonable suspicion — that Peter was dealing drugs. On highway patrol one afternoon, her radar clocked Peter's car at 68 mph on a stretch of the Old Damascus Road posted at 65. Her usual practice was to let anything under 5 mph over ride, but this time, hoping to find evidence of dealing, she stopped the car. After announcing she would write a speeding ticket, she ordered Peter and his brother Andrew, riding along, to step out. When Andrew stepped out, Deborah saw he had been sitting on a clear bag of what she immediately recognized as marijuana. She arrested them both.",
+      "At their joint trial, Peter and Andrew claim their Fourth Amendment rights were violated because Deborah (1) stopped the car as a pretext to chase a hunch rather than to enforce the speed limit, and (2) ordered Andrew out of the car with no reason to believe he was dangerous or involved."
+    ],
+    "call": "Are they correct?",
+    "choices": [
+      { "id": "A", "text": "No, as to both the stop of the car and the order that Andrew step out.", "pct": 50, "provenance": "inherited_original" },
+      { "id": "B", "text": "No as to the stop of the car, but yes as to the order that Andrew step out.", "pct": 35, "provenance": "inherited_original" },
+      { "id": "C", "text": "Yes as to the stop of the car, but no as to the order that Andrew step out.", "pct": 6, "provenance": "inherited_original" },
+      { "id": "D", "text": "Yes, as to both the stop of the car and the order that Andrew step out.", "pct": 9, "provenance": "inherited_original" }
+    ],
+    "key": "A",
+    "trap": {
+      "choice": "B",
+      "pct": 35,
+      "name": "THE INNOCENT-PASSENGER PULL",
+      "instinct": "FAIRNESS",
+      "filter_broken": "NOT_TRUE",
+      "mold": "colloquialism"
+    },
+    "forensics": {
+      "A": "You refused both invitations to be fair instead of right. A stop is judged objectively — 68 in a 65 is a violation, and the officer's hidden motive does not undo it. And during any lawful stop, the officer may order driver and passengers alike out of the car; no individualized suspicion required. Twice this question offered you sympathy as a substitute for law. Twice you declined.",
+      "B": "Andrew did nothing. Your instinct for fairness says an innocent passenger cannot be ordered around — so you split the difference and bought it. But the rule is colder than your instinct: during a lawful traffic stop, an officer may order both driver and passengers out, no suspicion about the passenger required. The law balanced officer safety against a minor intrusion, and the passenger lost. When an answer feels fair, check whether it is law.",
+      "C": "You let the pretext bother you. It bothers everyone — that is why this distractor exists. But the stop is measured objectively: a real traffic violation justifies it regardless of what the officer hoped to find. 68 in a 65 is a violation. Motive does not subtract probable cause. Judge the stop by what happened, not why.",
+      "D": "You doubled down on the feeling that the whole stop was unfair — pretext plus an innocent passenger. Both halves fail the same way: the stop is judged objectively, and passengers may lawfully be ordered out of a stopped car. Fairness wrote this answer. The Fourth Amendment did not."
+    },
+    "silver_key_move": "Is this answer the legal test — or just what feels fair?",
+    "review_truth": "A traffic stop is judged objectively — real violation, valid stop — and during a lawful stop the officer may order driver and passengers out without individualized suspicion.",
+    "drill_seeds": [
+      { "type": "TRAP SPOTTING", "prompt": "When a choice splits the difference to spare the sympathetic party, demand the rule that does the sparing." }
+    ],
+    "crossovers": ["CONSTITUTIONAL_LAW"]
+  }
+]

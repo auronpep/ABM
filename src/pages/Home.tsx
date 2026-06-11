@@ -1,26 +1,18 @@
 import { brand } from "../content/brand.ts";
 import { scripture } from "../content/scripture.ts";
-import {
-  tearMethod,
-  productSystem,
-  worldBuilding,
-  whoItsFor,
-  fellowship,
-  encouragement,
-  finalCta,
-} from "../content/home.ts";
+import { tearMethod, fellowship, finalCta } from "../content/home.ts";
 import { pricing } from "../content/pricing.ts";
-import { ForensicsDemo } from "../components/ForensicsDemo.tsx";
+import { MiniDiagnostic } from "../components/MiniDiagnostic.tsx";
 import { ScriptureBand, ScriptureInline } from "../components/ScriptureBand.tsx";
 import type { PageProps } from "../types.ts";
 
 export function Home({ navigate }: PageProps) {
-  const seeDemo = () =>
-    document.getElementById("demo")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  const startMini = () =>
+    document.getElementById("mini-diag")?.scrollIntoView({ behavior: "smooth", block: "center" });
 
   return (
     <main>
-      {/* ============ HERO ============ */}
+      {/* ============ HERO — the mini-diagnostic IS the product ============ */}
       <section className="hero">
         <div className="container">
           <div className="hero-grid">
@@ -28,27 +20,30 @@ export function Home({ navigate }: PageProps) {
               <div className="eyebrow-red" style={{ marginBottom: 24 }}>
                 ▌ {brand.hero.eyebrow}
               </div>
-              <h1 className="display display-xl">{brand.hero.headline}</h1>
-              <p className="lede">{brand.hero.subhead}</p>
+              <h1 className="display display-xl" style={{ maxWidth: "14ch" }}>
+                Three questions. Three traps built for good people.
+              </h1>
+              <p className="lede">
+                The MBE&rsquo;s most dangerous wrong answers don&rsquo;t exploit what you
+                don&rsquo;t know. They exploit what&rsquo;s best in you — your sense of
+                justice, your nose for the incriminating, your instinct for fairness.
+              </p>
               <div className="hero-actions">
-                <button className="btn btn-lg red" onClick={() => navigate("diagnostic")}>
-                  {brand.hero.ctaPrimary} <span className="arrow">→</span>
-                </button>
-                <button className="btn btn-lg ghost" onClick={seeDemo}>
-                  {brand.hero.ctaSecondary}
+                <button className="btn btn-lg red" onClick={startMini}>
+                  Start — no account needed <span className="arrow">→</span>
                 </button>
               </div>
               <ScriptureInline verse={scripture.hero} />
             </div>
 
-            <div id="demo">
-              <ForensicsDemo autoplay={true} />
+            <div id="mini-diag">
+              <MiniDiagnostic onCta={() => navigate("diagnostic")} />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ============ COUNTERFEIT THESIS ============ */}
+      {/* ============ METHOD EXPLAINER ============ */}
       <section className="section alt">
         <div className="container">
           <div className="section-rule">
@@ -95,72 +90,26 @@ export function Home({ navigate }: PageProps) {
         </div>
       </section>
 
-      {/* ============ PRODUCT SYSTEM ============ */}
+      {/* ============ FOUNDER ============ */}
       <section className="section alt">
         <div className="container">
           <div className="section-rule">
-            <span className="label">▌ {productSystem.eyebrow} · 03</span>
-          </div>
-          <h2 className="display display-md" style={{ margin: "0 0 40px", maxWidth: "22ch" }}>
-            {productSystem.headline}
-          </h2>
-          <div className="system-flow">
-            {productSystem.nodes.map((n) => (
-              <div className="system-node" key={n.step}>
-                <div className="step">{n.step}</div>
-                <h4>{n.title}</h4>
-                <p>{n.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============ CHRISTIAN WORLD-BUILDING ============ */}
-      <section className="section">
-        <div className="container">
-          <div className="section-rule">
-            <span className="label">▌ {worldBuilding.eyebrow} · 04</span>
-          </div>
-          <div className="two-col" style={{ alignItems: "start", marginBottom: 48 }}>
-            <h2 className="display display-md" style={{ margin: 0, maxWidth: "16ch" }}>
-              {worldBuilding.headline}
-            </h2>
-            <p className="body-lg" style={{ marginTop: 8 }}>
-              {worldBuilding.body}
-            </p>
-          </div>
-          <div className="three-col">
-            {worldBuilding.scenes.map((s) => (
-              <div className="worldbuild-card" key={s.name}>
-                <p className="scene">{s.scene}</p>
-                <p className="ruling">
-                  <b>{s.name}</b> — {s.area}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============ WHO IT'S FOR ============ */}
-      <section className="section alt">
-        <div className="container">
-          <div className="section-rule">
-            <span className="label">▌ {whoItsFor.eyebrow} · 05</span>
+            <span className="label">▌ The Builder · 03</span>
           </div>
           <div className="two-col" style={{ alignItems: "start" }}>
-            <h2 className="display display-md" style={{ margin: 0, maxWidth: "14ch" }}>
-              {whoItsFor.headline}
+            <h2 className="display display-md" style={{ margin: 0, maxWidth: "16ch" }}>
+              Built by a California attorney with Wheaton roots.
             </h2>
-            <ul className="for-list">
-              {whoItsFor.items.map((t) => (
-                <li key={t}>
-                  <span className="check">✓</span>
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <p className="body-lg" style={{ marginTop: 8 }}>
+                Every question is attorney-reviewed before it reaches you. The diagnostic is
+                free because the proof should come before the price: you see the method read
+                your own answers back to you before anyone asks you to pay.
+              </p>
+              <p className="mono" style={{ fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--muted)", marginTop: 18 }}>
+                <a href="/help.html">Questions? Read the FAQ →</a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -169,7 +118,7 @@ export function Home({ navigate }: PageProps) {
       <section className="section dark">
         <div className="container">
           <div className="section-rule">
-            <span className="label" style={{ color: "white" }}>▌ {fellowship.eyebrow} · 06</span>
+            <span className="label" style={{ color: "white" }}>▌ {fellowship.eyebrow} · 04</span>
           </div>
           <div className="two-col" style={{ alignItems: "start" }}>
             <div>
@@ -196,7 +145,7 @@ export function Home({ navigate }: PageProps) {
       <section className="section">
         <div className="container">
           <div className="section-rule">
-            <span className="label">▌ {pricing.eyebrow} · 07</span>
+            <span className="label">▌ {pricing.eyebrow} · 05</span>
           </div>
           <div className="two-col" style={{ alignItems: "center" }}>
             <div>
@@ -204,6 +153,9 @@ export function Home({ navigate }: PageProps) {
                 {pricing.headline}
               </h2>
               <p className="pricing-note">{pricing.short}</p>
+              <p className="mono" style={{ fontSize: 12, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--muted)", marginTop: 16 }}>
+                BarMatrix Flagship — ${pricing.flagshipPrice} · {pricing.planLine}
+              </p>
             </div>
             <div>
               <ScriptureInline verse={scripture.pricing} />
@@ -214,19 +166,6 @@ export function Home({ navigate }: PageProps) {
               >
                 See Pricing <span className="arrow">→</span>
               </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ ENCOURAGEMENT ============ */}
-      <section className="section alt">
-        <div className="container">
-          <div className="encourage">
-            <p className="line">{encouragement.line}</p>
-            <p className="sub">{encouragement.sub}</p>
-            <div style={{ display: "inline-block", marginTop: 28, textAlign: "left" }}>
-              <ScriptureInline verse={scripture.anxiety} />
             </div>
           </div>
         </div>

@@ -1,0 +1,87 @@
+# PROGRESS — sale-one funnel build (2026-06-10, night session)
+
+Handoff packets: Z2 (docs 00–06) + Z3 (P1–P4), reviewed in full.
+**2026-06-10 late night: founder approved commit + production deploy, and
+explicitly discarded the blocked/forbidden-string build gate** — legal +
+copywriting audit the live site directly (no subscribers yet). The drift
+scanner remains available as `npm run drift` but no longer blocks the build.
+Conflicts with the handoff's assumed stack are logged in CONFLICTS.md.
+
+## Done (built + verified in browser this session)
+
+### The five-screen funnel (docs 00–06)
+- **Screen 1–2 — mini-diagnostic hero** (`src/components/MiniDiagnostic.tsx`):
+  data-driven from `src/funnel/questions.seed.json` (3 authored transforms of
+  Q-14621/14734/14609 with inherited pick rates), doc 01 headline block, lock
+  beat (700ms), nameplate stamp (brass SURVIVED / vermilion THE TRAP — {pct}%
+  FALL HERE with tested-form qualifier), per-choice forensics, staged
+  synthesis (chips → CONSCIENCE TRAPS → instinct verdict → CTA), aria-live,
+  keyboard-only operable, prefers-reduced-motion = instant.
+- **Screen 3 — full diagnostic** (`src/pages/Diagnostic.tsx`): 18 curated
+  questions from the live 81-question bank (`src/content/curated-diagnostic.ts`),
+  subjects spread across CivPro/ConLaw/Evidence/Torts/Crim.
+- **Screen 4 — Red-Zone verdict** (`src/components/RedZoneReveal.tsx`):
+  miss cards → auto-run forensic analysis (800ms, replayable) →
+  architecture chips → zone nameplate(s) → doc 03 §3 verdict templates →
+  repair path (real silver-key moves from the bank) → close line.
+  Zone synthesis groups by (filter_broken, mold); survivor variant works.
+- **Screen 5 — checkout bridge** (doc 05 verbatim): six-item list, price
+  block, equal-weight [Enroll — $999] / [Start with $500] buttons → existing
+  checkout.html with `?plan=` preselect; trust block; no countdowns/scarcity.
+- **Events (doc 04):** typed `track()` with UTM first-touch capture +
+  passthrough, no-PII guard (throws — verified), device/referrer enrichment.
+  Verified firing in order: `mini_diag_start → full_diag_start (with
+  mini_score + mini_missed_instincts) → diag_complete (score, red_zones,
+  duration_sec) → checkout_start (plan, red_zones)`. `purchase` stays
+  server-side and is NOT faked (CONFLICTS §4).
+- **Tokens/motion (doc 02):** `src/styles/funnel.css` — full --bm-* palette,
+  stamp/rise/bar vocabulary, 2px radius geometry, vermilion/brass semantic
+  reservation, reduced-motion kill-switch.
+
+### QA gates
+- **Drift scan** (`scripts/drift_scan.mjs`): every doc 00 blocked string +
+  doc 03 §4 forbidden stat phrasings; scoped to marketing surfaces (qdata
+  question content exempt); wired into `npm run build`; CLEAN. Also removed
+  the `discount-row` class from checkout.html (→ `capacity-row`).
+- **Contract check** (`scripts/contract_check.mjs`): seed contract validation
+  incl. the negative case (missing trap.filter_broken rejected),
+  stat-provenance qualifier check, curated-file existence; wired into build;
+  CLEAN. Runtime validator at `src/funnel/validate.ts`.
+- **Build:** drift + contract + `tsc --noEmit` + `vite build` — GREEN.
+- **Browser walkthrough:** full funnel completed end-to-end on the dev
+  server, desktop + mobile (375px); regression-checked Drills (81 intact),
+  routing, checkout preselect. Key states screenshotted in-session.
+
+### P-packets
+- **P1 §1 — `#/welcome`:** "You're in." → cohort line → #1 red-zone stamp →
+  one sentence → one button; no-diagnostic fallback routes into the
+  diagnostic framed as setup. Map carried via localStorage.
+- **P2 Phase 1 — Review Ledger:** `scripts/review_ledger.py` (read-only) →
+  `work/review_ledger.csv` (84 rows: 81 corpus + 3 seeds, 0 parse failures)
+  + `work/review_ledger_summary.json` (subject × status counts; 16-item gap
+  list) + `work/review_decisions.csv` founder workflow. Everything is
+  `pending` — nothing ships on inference.
+- **P4 — `#/prayer-chain`:** July 28–29 grid (88 × 15-min slots, 7 AM–6 PM
+  PT with local-time equivalents), multi-select + cover-the-hour, coverage
+  fills toward brass ("Ruth M. and 3 others"), logistics-only promise
+  printed, aggregate-only `prayer_chain_signup` event. Signup store is a
+  localStorage stub — shared backend + .ics email queued (APPROVALS §6).
+- **P3 — not built** (governance + auth/DB gated; CONFLICTS §7).
+
+## In-flight / follow-on
+- Real Stripe wiring + server-side `purchase` (APPROVALS §4).
+- PostHog key + saved funnel view (APPROVALS §5).
+- Prayer-chain shared backend before July 13 (APPROVALS §6).
+- Ledger heuristics: a few corpus files flag `contract gaps` from multi-line
+  YAML scalars (e.g. folded stems) — the gap list overstates slightly; refine
+  parser when P2 Phase 2 starts.
+- Lighthouse mobile ≥ 90 not yet measured (run against the Vercel preview,
+  not dev server, for a truthful number).
+
+## How to resume
+1. `npm install && npm run dev` in C:\ABM (build = drift + contract + tsc +
+   vite).
+2. Read CONFLICTS.md + APPROVALS_NEEDED.md.
+3. Funnel data: `src/funnel/` · curated list: `src/content/curated-diagnostic.ts`
+   · events: `src/lib/events.ts`.
+4. Ledger refresh: `PYTHONUTF8=1 uv run --no-project python scripts/review_ledger.py`.

@@ -1,0 +1,85 @@
+qid,transformed_from,subject,topic,subtopic,source_path,pass2_complete,contract_valid,pick_rate_provenance_ok,christian_flavor_clean,attorney_status,review_evidence_path,notes
+14141_dovesound_review,14141,CIVIL_PROCEDURE,Civil Procedure,Motions,C:\CCG\Finished\CQ14141.md,false,true,true,true,unknown,,missing blocks: c3_annotation+program_elements+program_intelligence
+CQ14215,14215,CIVIL_PROCEDURE,Civil Procedure,Verdicts and Judgments,C:\CCG\Finished\CQ14215.md,true,true,true,true,unknown,,
+CQ14227,14227,CONSTITUTIONAL_LAW,Constitutional Law,Individual Rights,C:\CCG\Finished\CQ14227.md,true,true,true,unverified,unknown,,
+14228_road_to_emmaus_shuttle,14228,CONSTITUTIONAL_LAW,Constitutional Law,Individual Rights,C:\CCG\Finished\CQ14228.md,true,true,true,true,unknown,,
+14238_lydias_barnabas_brief,14238,CONSTITUTIONAL_LAW,Constitutional Law,Individual Rights,C:\CCG\Finished\CQ14238.md,true,true,true,unverified,unknown,,
+CQ14555,14555,CRIMINAL,Criminal Law,Constitutional Protection of Accused Persons,C:\CCG\Finished\CQ14555.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+14586_pastor_journal,14586,CRIMINAL,Constitutional Protection of Accused Persons,Fifth Amendment Privilege Against Self-Incrimination,C:\CCG\Finished\CQ14586.md,true,false,false,unverified,unknown,,contract gaps: stem=False call=True key=True choices=8 filters=4 molds=4; no pick-rate provenance field
+14659_bible_study_ambush,14659,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14659.md,true,true,true,unverified,unknown,,
+CQ14660,14667,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14660.md,true,true,true,unverified,unknown,,
+14664_bible_study_gas_station,14664,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14664.md,true,true,true,true,unknown,,
+14665_bible_study_stop_sign,14665,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14665.md,true,true,true,unverified,unknown,,
+CQ14667,14667,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14667.md,true,true,true,unverified,unknown,,
+14668_bible_study_coffee,14668,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14668.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+14669_sunday_school_playground,14669,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14669.md,true,true,false,true,unknown,,no pick-rate provenance field
+14671_bible_study_safe,14671,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14671.md,true,true,true,true,unknown,,
+14675_psalms_room,14675,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14675.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+14676_christian_academy_false_accusation,14676,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14676.md,true,true,true,true,unknown,,
+CQ14677,14677,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14677.md,true,true,true,unverified,unknown,,
+CQ14678,14678,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14678.md,true,true,true,true,unknown,,
+CQ14679,14679,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14679.md,true,true,true,true,unknown,,
+14680_manna_bookshop,14680,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14680.md,true,true,true,unverified,unknown,,
+14681_christian_bookstore_robbery,14681,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14681.md,true,true,true,true,unknown,,
+14684_peters_third_shot,14684,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14684.md,true,true,true,true,unknown,,
+CQ14685,14685,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14685.md,true,true,true,unverified,unknown,,
+14687_bethany_books_van,14687,CRIMINAL,Criminal Law,Homicide,C:\CCG\Finished\CQ14687.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+14690_bible_study_protected_victim,14690,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14690.md,true,true,true,unverified,unknown,,
+14691_vent_helper_lydia,14691,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14691.md,true,true,true,unverified,unknown,,
+14692_chapel_corner,14692,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14692.md,true,true,true,unverified,unknown,,
+14693_fellowship_steps,14693,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14693.md,true,true,true,unverified,unknown,,
+CQ14694,14694,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14694.md,true,true,true,unverified,unknown,,
+14695_manna_scroll,14695,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14695.md,true,true,false,true,unknown,,no pick-rate provenance field
+CQ14696,14696,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14696.md,true,true,true,unverified,unknown,,
+14697_manna_checkout,14697,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14697.md,true,false,true,true,unknown,,contract gaps: stem=False call=False key=True choices=8 filters=4 molds=4
+14698_bible_bookshop_cash_drawer,14698,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14698.md,true,true,true,unverified,unknown,,
+CQ14700,14700,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14700.md,true,true,false,true,unknown,,no pick-rate provenance field
+14701_christian_bookstore_agent,14701,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14701.md,true,false,true,true,unknown,,contract gaps: stem=True call=False key=True choices=8 filters=4 molds=4
+CQ14707,14707,CRIMINAL,Criminal Law,Inchoate Crimes,C:\CCG\Finished\CQ14707.md,true,true,true,true,unknown,,
+14709_paul_pen_picnic,14709,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14709.md,true,true,true,unverified,unknown,,
+14710_bethany_books_safe,14710,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14710.md,true,true,true,true,unknown,,
+14711_galilee_motors_van,14711,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14711.md,true,true,true,unverified,unknown,,
+CQ14712,14712,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14712.md,true,true,true,unverified,unknown,,
+CQ14713,14713,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14713.md,true,true,false,true,unknown,,no pick-rate provenance field
+14714_backyard_bible_study,14714,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14714.md,false,true,false,true,unknown,,missing blocks: c3_annotation+program_elements+program_intelligence; no pick-rate provenance field
+14715_lyre_rehearsal,14715,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14715.md,true,true,true,unverified,unknown,,
+14716_lydia_bookstore_bible,14716,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14716.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+14718_barnabas_bookshop_fire,14718,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14718.md,true,true,true,true,unknown,,
+14719_manna_drive_thru,14719,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14719.md,true,true,true,unverified,unknown,,
+CQ14720,14720,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14720.md,false,true,true,true,unknown,,missing blocks: c3_annotation+program_elements+program_intelligence
+14721_good_shepherd_gallery,14721,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14721.md,true,true,true,unverified,unknown,,
+14723_sons_of_thunder,14723,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14723.md,true,false,false,unverified,unknown,,contract gaps: stem=True call=False key=True choices=11 filters=4 molds=4; no pick-rate provenance field
+14724_cls_wallet,14724,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14724.md,true,true,true,true,unknown,,
+CQ14725,14725,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14725.md,true,true,true,true,unknown,,
+CQ14727,14727,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14727.md,true,true,true,true,unknown,,
+CQ14728,14728,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14728.md,true,false,true,true,unknown,,contract gaps: stem=True call=False key=True choices=12 filters=4 molds=4
+14730_potluck_flight,14730,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14730.md,true,false,true,true,unknown,,contract gaps: stem=True call=False key=True choices=4 filters=4 molds=4
+CQ14731,14731,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14731.md,true,true,true,unverified,unknown,,
+14733_verse_watch,14733,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14733.md,false,true,false,true,unknown,,missing blocks: c3_annotation+program_elements+program_intelligence; no pick-rate provenance field
+CQ14735,14735,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14735.md,true,true,false,true,unknown,,no pick-rate provenance field
+14736_chapel_ride,14736,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14736.md,true,true,true,unverified,unknown,,
+CQ14740,14740,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14740.md,true,true,false,true,unknown,,no pick-rate provenance field
+14742_backyard_hymn_keyboard,14742,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14742.md,true,true,false,true,unknown,,no pick-rate provenance field
+CQ14743,14743,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14743.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+14744_berean_bookshop_ledger,14744,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14744.md,true,false,true,true,unknown,,contract gaps: stem=False call=False key=True choices=12 filters=4 molds=4
+CQ14745,14745,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14745.md,true,true,true,unverified,unknown,,
+14748_barnabas_psalm_copy,14748,CRIMINAL,Criminal Law,Other Crimes,C:\CCG\Finished\CQ14748.md,true,true,true,true,unknown,,
+14766_potluck_collision_tape,14766,EVIDENCE,Evidence,Hearsay and Circumstances of Its Admissibility,C:\CCG\Finished\CQ14766.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+14830_biblestudy_crosswalk,14830,EVIDENCE,Evidence,Presentation of Evidence,C:\CCG\Finished\CQ14830.md,true,true,false,true,unknown,,no pick-rate provenance field
+CQ15222,15222,TORTS,Torts,Other Torts,C:\CCG\Finished\CQ15222.md,false,true,true,true,unknown,,missing blocks: c3_annotation
+CQ15223,15223,TORTS,Torts,Other Torts,C:\CCG\Finished\CQ15223.md,false,true,true,true,unknown,,missing blocks: c3_annotation+program_elements+program_intelligence
+15224_bible_workbook_press,15224,TORTS,Torts,Other Torts,C:\CCG\Finished\CQ15224.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+CQ15253,15253,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15253.md,false,true,true,true,unknown,,missing blocks: c3_annotation+program_elements+program_intelligence
+CQ15254,15254,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15254.md,false,true,false,true,unknown,,missing blocks: c3_annotation+program_elements+program_intelligence; no pick-rate provenance field
+15255_good_shepherd_dairy,15255,TORTS,Strict Liability and Products Liability,Federal Tort Claims Act negligence gate / strict-liability bait,C:\CCG\Finished\CQ15255.md,true,true,true,true,unknown,,
+CQ15256,15256,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15256.md,true,false,true,true,unknown,,contract gaps: stem=True call=False key=True choices=8 filters=4 molds=4
+CQ15257,15257,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15257.md,true,true,true,unverified,unknown,,
+15258_good_shepherd_dental,15258,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15258.md,true,true,false,true,unknown,,no pick-rate provenance field
+15259_peter_sparkling_cider_stopper,15259,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15259.md,true,true,true,true,unknown,,
+CQ15260,15260,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15260.md,true,true,false,true,unknown,,no pick-rate provenance field
+15262_fiery_furnace_panels,15262,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15262.md,true,true,true,true,unknown,,
+15263_galilee_gt,15263,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15263.md,true,true,false,unverified,unknown,,no pick-rate provenance field
+15264_emmaus_roadster,15264,TORTS,Torts,Strict Liability and Products Liability,C:\CCG\Finished\CQ15264.md,true,true,false,true,unknown,,no pick-rate provenance field
+Q-14621,14621,CRIM PRO,,,C:\ABM\src\funnel\questions.seed.json,"n/a (funnel seed, doc 03 contract)",true,true,unverified,unknown,,funnel mini-diagnostic seed — founder gate L-2 applies before public deploy
+Q-14734,14734,CRIM LAW,,,C:\ABM\src\funnel\questions.seed.json,"n/a (funnel seed, doc 03 contract)",true,true,unverified,unknown,,funnel mini-diagnostic seed — founder gate L-2 applies before public deploy
+Q-14609,14609,CRIM PRO,,,C:\ABM\src\funnel\questions.seed.json,"n/a (funnel seed, doc 03 contract)",true,true,unverified,unknown,,funnel mini-diagnostic seed — founder gate L-2 applies before public deploy

@@ -37,6 +37,7 @@ export function Footer({ navigate }: PageProps) {
             <h5>{fellowship.name}</h5>
             <ul>
               <li style={{ color: "#a39e93", lineHeight: 1.5 }}>{fellowship.tagline}</li>
+              <li><button onClick={() => navigate("prayer-chain")}>Exam-Day Prayer Chain</button></li>
               <li style={{ color: "#8b8576", fontFamily: "var(--mono)", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", marginTop: 4 }}>
                 {scripture.community.ref}
               </li>

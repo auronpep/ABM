@@ -1,0 +1,47 @@
+{
+  "total_questions": 84,
+  "shippable_now (approved AND contract_valid)": 0,
+  "by_subject_x_status (unknown counted as pending)": {
+    "CIVIL_PROCEDURE": {
+      "pending": 2
+    },
+    "CONSTITUTIONAL_LAW": {
+      "pending": 3
+    },
+    "CRIMINAL": {
+      "pending": 60
+    },
+    "EVIDENCE": {
+      "pending": 2
+    },
+    "TORTS": {
+      "pending": 14
+    },
+    "CRIM PRO": {
+      "pending": 2
+    },
+    "CRIM LAW": {
+      "pending": 1
+    }
+  },
+  "gap_list": [
+    "14141_dovesound_review: missing blocks: c3_annotation+program_elements+program_intelligence",
+    "14586_pastor_journal: contract gaps: stem=False call=True key=True choices=8 filters=4 molds=4; no pick-rate provenance field",
+    "14697_manna_checkout: contract gaps: stem=False call=False key=True choices=8 filters=4 molds=4",
+    "14701_christian_bookstore_agent: contract gaps: stem=True call=False key=True choices=8 filters=4 molds=4",
+    "14714_backyard_bible_study: missing blocks: c3_annotation+program_elements+program_intelligence; no pick-rate provenance field",
+    "CQ14720: missing blocks: c3_annotation+program_elements+program_intelligence",
+    "14723_sons_of_thunder: contract gaps: stem=True call=False key=True choices=11 filters=4 molds=4; no pick-rate provenance field",
+    "CQ14728: contract gaps: stem=True call=False key=True choices=12 filters=4 molds=4",
+    "14730_potluck_flight: contract gaps: stem=True call=False key=True choices=4 filters=4 molds=4",
+    "14733_verse_watch: missing blocks: c3_annotation+program_elements+program_intelligence; no pick-rate provenance field",
+    "14744_berean_bookshop_ledger: contract gaps: stem=False call=False key=True choices=12 filters=4 molds=4",
+    "CQ15222: missing blocks: c3_annotation",
+    "CQ15223: missing blocks: c3_annotation+program_elements+program_intelligence",
+    "CQ15253: missing blocks: c3_annotation+program_elements+program_intelligence",
+    "CQ15254: missing blocks: c3_annotation+program_elements+program_intelligence; no pick-rate provenance field",
+    "CQ15256: contract gaps: stem=True call=False key=True choices=8 filters=4 molds=4"
+  ],
+  "parse_failures": [],
+  "note": "Nothing ships on inference. Attorney sign-off is the founder's act; this ledger only records and routes it."
+}

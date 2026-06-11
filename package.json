@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "drift": "node scripts/drift_scan.mjs",
+    "contract": "node scripts/contract_check.mjs",
+    "build": "node scripts/contract_check.mjs && tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

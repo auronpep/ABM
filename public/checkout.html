@@ -202,8 +202,8 @@
     }
     .plan-opt.active .sub { color: var(--muted-light); }
 
-    /* Discount row */
-    .discount-row {
+    /* Capacity row */
+    .capacity-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -213,7 +213,7 @@
       margin-bottom: 16px;
       gap: 12px;
     }
-    .discount-row .lbl {
+    .capacity-row .lbl {
       font-family: var(--mono);
       font-size: 11px;
       letter-spacing: 0.12em;
@@ -221,12 +221,12 @@
       font-weight: 600;
       text-transform: uppercase;
     }
-    .discount-row .desc {
+    .capacity-row .desc {
       font-size: 13px;
       color: var(--ink-soft);
       margin-top: 4px;
     }
-    .discount-row .amount {
+    .capacity-row .amount {
       font-family: var(--serif);
       font-weight: 700;
       font-size: 22px;
@@ -662,7 +662,8 @@
     };
 
     const Checkout = () => {
-      const [plan, setPlan] = React.useState("payInFull"); // payInFull | plan
+      const initialPlan = new URLSearchParams(window.location.search).get("plan") === "split" ? "plan" : "payInFull";
+      const [plan, setPlan] = React.useState(initialPlan); // payInFull | plan
       const [email, setEmail] = React.useState("");
       const [name, setName] = React.useState("");
       const [card, setCard] = React.useState("");
@@ -754,7 +755,7 @@
                     </div>
                   </div>
 
-                  <div className="discount-row">
+                  <div className="capacity-row">
                     <div>
                       <div className="lbl">▌ LIMITED SEATS AVAILABLE</div>
                       <div className="desc">Enrollment closes when capacity is reached.</div>
