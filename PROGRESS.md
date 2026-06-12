@@ -227,3 +227,37 @@ Conflicts with the handoff's assumed stack are logged in CONFLICTS.md.
 - Still founder-side: Stripe merchant name ("JWM Services"), Resend
   activation, `vercel env add VITE_POSTHOG_KEY` + redeploy, 3-day refund
   ops alignment (API queue was built around 7-day).
+
+---
+
+## 2026-06-11 late night — styles.css un-broken, real accounts shipped, PostHog live
+
+- **All 35 static pages were unstyled in prod** (login/help/checkout-shell/
+  lp-*/policy pages link `/styles.css`, which never existed — 404; only
+  literal-color inline rules rendered). Fix: `scripts/build_styles.mjs`
+  generates public/styles.css from src/styles/* in global.css import order,
+  wired into dev + build. Verified live: login.html and refund.html render
+  on the full shell.
+- **Real sign-up/sign-in shipped** (founder directive: accounts without the
+  diagnostic, not tied to one device). Clerk production instance
+  clerk.barmatrix.app (already trusted by the API's requireEnrollment) is
+  live in the SPA: #/sign-in + #/sign-up open Clerk modal flows (mounted
+  components with virtual routing render empty — modals are router-
+  agnostic); router now strips query params inside the hash (Clerk appends
+  ?redirect_url=…). After auth → /#/welcome; fresh account with no map is
+  routed into the diagnostic as setup.
+- **Cross-device progress**: src/lib/sync.ts snapshots map + program set +
+  mixed history into user.unsafeMetadata; SyncRoot pulls on load (re-keys
+  the app), debounce-pushes on every state change + tab hide; dirty flag
+  protects unsynced local work. login.html now offers Sign In / Create
+  Account; /welcome shows account state + sign out.
+- **PostHog ACTIVE**: the project env already carried the key as
+  NEXT_PUBLIC_POSTHOG_KEY — vite envPrefix exposes it (VITE_ overrides
+  win). Verified live: POST us.i.posthog.com/capture/ → 200 on first_login.
+- **Verified live**: sign-up modal renders + validates on barmatrix.app;
+  automated submit correctly blocked by Clerk's Turnstile bot check
+  (sign_ups → 400, no account created); signed-out funnel unchanged.
+- **Human step remaining (2 min, any team member tonight)**: complete one
+  real signup (email code), run a drill, sign in on a second
+  browser/device, confirm the map follows. Machine verification stops at
+  the bot wall by design.
