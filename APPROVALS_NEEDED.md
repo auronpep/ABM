@@ -89,6 +89,10 @@ Nothing below has been executed.
   results-page email capture was deliberately omitted rather than collect
   emails into a void (honesty > checkbox). Approve an email provider plan and
   these become small follow-on builds.
+- **Daily devotional email (added 2026-06-12):** the Forty Days countdown
+  devotional (`src/content/devotional.ts`) now renders on /welcome. Once the
+  email provider is approved, the same content becomes a dated daily email —
+  bounded (40 sends + 2 exam days, ends July 29), content already written.
 
 ## 8. Deploy the first repair loop — ✅ RESOLVED 2026-06-11 (founder approved)
 
@@ -117,3 +121,17 @@ Nothing below has been executed.
 - Governance owners (Moderation Owner, Crisis Contact, Chaplain, counselor
   list) + privacy-policy community section are founder acts. The build half
   requires auth + DB that the static site does not have — see CONFLICTS.md §7.
+
+## 10. Prayer-requests backend + shared-wall moderation (added 2026-06-12)
+
+- **What:** `#/prayer` (prayer requests + the Ebenezer answered wall) ships
+  client-local, same stub precedent as the Prayer Chain (§6): requests persist
+  per-browser, "shared with the cohort" is recorded but only visible in that
+  browser. Making sharing real needs (a) two endpoints + a `prayer_requests`
+  table on `api.barmatrix.app`, (b) founder/team delivery of the private
+  prayer list, and (c) a **moderation pass before any shared request is
+  cross-user visible** — the page already promises this in its copy, and the
+  Moderation Owner role from P3 (§9) is the natural owner.
+- **Why gated:** live-DB migration + cross-user UGC visibility + the
+  founder-owned api repo.
+- **Rollback:** page works (stub) without backend; revert endpoints if added.

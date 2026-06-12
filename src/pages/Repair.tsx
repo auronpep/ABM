@@ -6,6 +6,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { brand } from "../content/brand.ts";
 import { DrillPlayer, LETTERS, type DrillQuestion } from "../components/DrillPlayer.tsx";
+import { VerseLine } from "../components/VerseLine.tsx";
 import {
   RETEST_PASS_BAR,
   RETEST_SECONDS,
@@ -357,6 +358,14 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
           <p className="mono" style={{ fontSize: 12, color: "var(--muted)", marginBottom: 28 }}>
             {RETEST_PASS_BAR} of {program.retestIds.length} keeps the point.
           </p>
+          {/* ——— Offer it first: a breath of prayer before the clock ——— */}
+          <div className="mono" style={{ fontSize: 11, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--muted)", marginBottom: 10 }}>
+            ▌ Offer it first
+          </div>
+          <VerseLine theme="courage" style={{ margin: "0 0 14px" }} />
+          <p className="serif" style={{ fontSize: 14, color: "var(--muted)", maxWidth: "48ch", margin: "0 0 24px" }}>
+            Fifteen seconds before the clock: offer the work to the Lord, then run it heartily.
+          </p>
           <button
             className="btn btn-lg red"
             disabled={!retestQs}
@@ -476,6 +485,9 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
               </p>
             )}
             <div className={reduced ? "" : "bm-rise"}>
+              <VerseLine theme="victory" style={{ margin: "0 0 28px" }} />
+            </div>
+            <div className={reduced ? "" : "bm-rise"}>
               {due ? (
                 <button
                   className="btn btn-lg red"
@@ -508,10 +520,11 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
           “{zone.silverKeyMove}”
         </p>
       )}
-      <p className="body-lg" style={{ maxWidth: "46ch", marginBottom: 28 }}>
+      <p className="body-lg" style={{ maxWidth: "46ch", marginBottom: 16 }}>
         Two more drills, then the retest is waiting whenever you&rsquo;re ready. The trap
         doesn&rsquo;t get a vote on how many tries this takes.
       </p>
+      <VerseLine theme="perseverance" style={{ margin: "0 0 28px" }} />
       <button
         className="btn btn-lg red"
         onClick={() => {
@@ -598,6 +611,14 @@ function MixedSetRunner({ navigate, trapIndex }: PageProps & { trapIndex: TrapIn
           {ids.length} questions drawn across your trap families, in no particular order —
           the way the exam serves them. {fmtClock(MIXED_SET_SECONDS)} on the clock, no
           forensics between questions. The verdict names any family that wobbles.
+        </p>
+        {/* ——— Offer it first: a breath of prayer before the clock ——— */}
+        <div className="mono" style={{ fontSize: 11, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--muted)", margin: "8px 0 10px" }}>
+          ▌ Offer it first
+        </div>
+        <VerseLine theme="courage" style={{ margin: "0 0 14px" }} />
+        <p className="serif" style={{ fontSize: 14, color: "var(--muted)", maxWidth: "48ch", margin: "0 0 24px" }}>
+          Fifteen seconds before the clock: offer the work to the Lord, then run it heartily.
         </p>
         <button
           className="btn btn-lg red"

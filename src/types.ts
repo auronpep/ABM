@@ -7,6 +7,7 @@ export type Route =
   | "welcome"
   | "repair"
   | "prayer-chain"
+  | "prayer"
   | "sign-in"
   | "sign-up";
 

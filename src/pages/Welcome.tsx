@@ -5,6 +5,7 @@
 // record is routed into the diagnostic framed as setup.
 import { useEffect, useMemo, useState } from "react";
 import { SignedIn, SignedOut, useClerk, useUser } from "@clerk/clerk-react";
+import { DevotionalCard } from "../components/Devotional.tsx";
 import { brand } from "../content/brand.ts";
 import { track } from "../lib/events.ts";
 import {
@@ -221,6 +222,29 @@ export function Welcome({ navigate }: PageProps) {
             </div>
           )}
         </>
+      )}
+
+      {/* ——— Daily bread + the prayer surfaces ——— */}
+      {stage >= 3 && (
+        <div className={reduced ? "" : "bm-rise"}>
+          <DevotionalCard />
+          <div style={{ marginTop: 28, maxWidth: 560, display: "flex", gap: 22, flexWrap: "wrap" }}>
+            <button
+              className="mono"
+              style={{ fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "underline", color: "var(--ink)" }}
+              onClick={() => navigate("prayer")}
+            >
+              Bring a prayer request →
+            </button>
+            <button
+              className="mono"
+              style={{ fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "underline", color: "var(--ink)" }}
+              onClick={() => navigate("prayer-chain")}
+            >
+              The exam-day prayer chain →
+            </button>
+          </div>
+        </div>
       )}
 
       {stage >= 3 && <AccountRow navigate={navigate} />}

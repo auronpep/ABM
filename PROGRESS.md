@@ -1,5 +1,35 @@
 # PROGRESS — sale-one funnel build (2026-06-10, night session)
 
+## 2026-06-12 — Built: spiritual surfaces (verse rotation wired + prayer requests + Forty Days)
+
+- **Verse rotation wired** per `docs/superpowers/specs/2026-06-12-verse-rotation-design.md`:
+  `src/lib/verses.ts` (persisted shuffled cycle, no repeat until the bank is
+  seen, date-seeded `dailyVerse`) + `src/components/VerseLine.tsx` (renders
+  with the existing `.pc-quote`; the spec's `.fellowship-scripture` is
+  dark-background copy, used as written only in the Footer). Wire-ins: Repair
+  retest/mixed-set intros (courage, as the "Offer it first" prayer moment),
+  repaired verdict (victory), miss path (perseverance), drill library
+  (diligence), diagnostic verdict (rest), Prayer Chain (fellowship), Footer
+  (daily). Ecclesiastes 4:9–10 removed from the bank — it is fixed copy on
+  the Prayer Chain page.
+- **The Forty Days** (`src/content/devotional.ts`): dated devotional countdown
+  to July 28–29 — 40 daily entries + 2 exam-day entries, each a KJV verse,
+  short devotion tied to the day's study posture, and a one-line charge.
+  Renders on /welcome via `components/Devotional.tsx`; outside the window the
+  card falls back to the daily verse. Becomes the daily email when the
+  provider is approved (APPROVALS_NEEDED §7).
+- **/prayer — prayer requests + the Ebenezer** (`src/pages/Prayer.tsx`):
+  private-by-default requests, optional share-with-cohort, "I prayed"
+  intercession count, mark-answered with optional testimony building the
+  answered wall (1 Sam 7:12). Client-local stub, same precedent as the Prayer
+  Chain; backend + moderation gate queued as APPROVALS_NEEDED §10. New
+  aggregate-only events: `prayer_request_submitted`, `prayer_request_answered`,
+  `prayer_interceded` (no request text or PII, doc 04 rule 3).
+- Links: /welcome now carries the devotional card + prayer links; Footer
+  fellowship column links Prayer Requests; Prayer Chain cross-links /prayer.
+- Verified: `npm run build` green end to end (trap index, styles, contract
+  check, tsc, vite).
+
 ## 2026-06-11 — Program session: architecture decision (handoff §5.2)
 
 **Question:** client-local program v1 vs API-connected program v1.

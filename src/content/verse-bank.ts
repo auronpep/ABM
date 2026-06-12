@@ -359,12 +359,8 @@ export const VERSE_BANK: readonly BankVerse[] = [
   },
 
   // ---------- FELLOWSHIP ----------
-  {
-    ref: "Ecclesiastes 4:9-10",
-    text:
-      "Two are better than one; because they have a good reward for their labour. For if they fall, the one will lift up his fellow.",
-    themes: ["fellowship"],
-  },
+  // (Ecclesiastes 4:9-10 is fixed copy on the Prayer Chain page — excluded
+  // here so that page never shows the same verse twice.)
   {
     ref: "Proverbs 27:17",
     text: "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.",

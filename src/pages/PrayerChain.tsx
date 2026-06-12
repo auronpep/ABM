@@ -2,6 +2,7 @@
 // Public page; ministry first. Signups persist locally in this build — the
 // shared backend + confirmation email are founder-gated (see APPROVALS_NEEDED).
 import { useMemo, useState } from "react";
+import { VerseLine } from "../components/VerseLine.tsx";
 import { track } from "../lib/events.ts";
 import type { PageProps } from "../types.ts";
 
@@ -64,7 +65,7 @@ function coverageLabel(list: Commitment[] | undefined): string {
 const SLOT_MINUTES: number[] = [];
 for (let m = START_MIN; m < END_MIN; m += STEP) SLOT_MINUTES.push(m);
 
-export function PrayerChain(_props: PageProps) {
+export function PrayerChain({ navigate }: PageProps) {
   const [signups, setSignups] = useState<Signups>(readSignups);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [first, setFirst] = useState("");
@@ -239,6 +240,16 @@ export function PrayerChain(_props: PageProps) {
               optional day-before reminder, and one thank-you after results day. Nothing
               else, ever. We pray for peace, clarity, and faithfulness for every examinee.
             </p>
+          </div>
+
+          <div style={{ marginTop: 48, maxWidth: 560 }}>
+            <div className="section-rule">
+              <span className="label">▌ Carrying something yourself?</span>
+            </div>
+            <VerseLine theme="fellowship" style={{ marginTop: 18 }} />
+            <button className="btn red" onClick={() => navigate("prayer")}>
+              Bring a prayer request <span className="arrow">→</span>
+            </button>
           </div>
         </div>
       </section>

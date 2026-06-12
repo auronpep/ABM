@@ -9,6 +9,7 @@ import { Drill } from "./pages/Drill.tsx";
 import { Welcome } from "./pages/Welcome.tsx";
 import { Repair } from "./pages/Repair.tsx";
 import { PrayerChain } from "./pages/PrayerChain.tsx";
+import { Prayer } from "./pages/Prayer.tsx";
 import { SignInPage, SignUpPage } from "./pages/Auth.tsx";
 import { captureUtm } from "./lib/events.ts";
 import type { Route } from "./types.ts";
@@ -22,6 +23,7 @@ const ROUTES: Route[] = [
   "welcome",
   "repair",
   "prayer-chain",
+  "prayer",
   "sign-in",
   "sign-up",
 ];
@@ -69,6 +71,7 @@ export function App() {
       {route === "welcome" && <Welcome navigate={navigate} />}
       {route === "repair" && <Repair navigate={navigate} />}
       {route === "prayer-chain" && <PrayerChain navigate={navigate} />}
+      {route === "prayer" && <Prayer navigate={navigate} />}
       {route === "sign-in" && <SignInPage navigate={navigate} />}
       {route === "sign-up" && <SignUpPage navigate={navigate} />}
       {!chromeless && <Footer navigate={navigate} />}

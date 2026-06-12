@@ -10,6 +10,7 @@ import {
 } from "../content/curated-diagnostic.ts";
 import { MINI_RESULT_KEY } from "../components/MiniDiagnostic.tsx";
 import { RedZoneReveal } from "../components/RedZoneReveal.tsx";
+import { VerseLine } from "../components/VerseLine.tsx";
 import { synthesizeZones } from "../funnel/zones.ts";
 import { track } from "../lib/events.ts";
 import { markStateChanged } from "../lib/sync.ts";
@@ -242,7 +243,10 @@ export function Diagnostic({ navigate }: PageProps) {
           )}
 
           {phase === "result" && (
-            <RedZoneReveal misses={misses} totalQuestions={total} />
+            <>
+              <RedZoneReveal misses={misses} totalQuestions={total} />
+              <VerseLine theme="rest" style={{ marginTop: 32 }} />
+            </>
           )}
         </div>
       </div>

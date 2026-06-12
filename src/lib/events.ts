@@ -14,7 +14,10 @@ export type FunnelEvent =
   | "zone_repaired"
   | "zone_n_started"
   | "retest_overdue_shown"
-  | "mixed_set_complete";
+  | "mixed_set_complete"
+  | "prayer_request_submitted"
+  | "prayer_request_answered"
+  | "prayer_interceded";
 
 type Props = Record<string, string | number | boolean | null | string[]>;
 
