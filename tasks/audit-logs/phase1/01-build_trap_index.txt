@@ -1,0 +1,1 @@
+build_trap_index: wrote trap-index.json (135 questions)
