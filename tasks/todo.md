@@ -40,8 +40,8 @@ Deploy checklist:
 - [x] Verify linked Vercel project and production target.
 - [x] Rerun checkout/auth regression script.
 - [x] Rerun production build.
-- [ ] Deploy to Vercel production.
-- [ ] Inspect the deployment and verify live routes.
+- [x] Deploy to Vercel production.
+- [x] Inspect the deployment and verify live routes.
 
 Deploy log:
 - [x] GitHub remote verified private: `auronpep/ABM`, `visibility=PRIVATE`.
@@ -49,6 +49,10 @@ Deploy log:
 - [x] `node scripts/auth_checkout_flow_test.mjs` passed.
 - [x] `node scripts/dashboard_enhancement_check.mjs` passed.
 - [x] `npm run build` passed.
+- [x] Production deployment ready: `dpl_GwCor2A1sju4XAS33op9BMBpfSS8`, deployment URL `https://barmatrix-d51crkesx-sunnylee.vercel.app`, aliased to `https://barmatrix.app` and `https://www.barmatrix.app`.
+- [x] `vercel inspect barmatrix-d51crkesx-sunnylee.vercel.app` reports target `production`, status `Ready`.
+- [x] Live HTTP checks returned 200 for `/`, `checkout.html`, `lp-tear-method.html`, legacy `lp-c3-cut-clash-call.html`, and `404.html`.
+- [x] Live browser smoke verified `#/welcome`, `#/dashboard`, `#/practice`, checkout success, and 390px `#/welcome` without console errors, raw fetch errors, or horizontal overflow.
 
 ## 2026-06-12 Dashboard Enhancement Implementation
 
