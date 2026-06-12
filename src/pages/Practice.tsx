@@ -521,6 +521,9 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
     if (!attemptResult || dwellSent.current || forensicsShownAt.current === null) return;
     dwellSent.current = true;
     const dwellMs = Math.max(0, Date.now() - forensicsShownAt.current);
+    if (!attemptResult.correct && dwellMs < 3000) {
+      track("forensics_skipped", { subject: question?.subject ?? "unknown" });
+    }
     void (async () => {
       try {
         const token = await getToken();
@@ -585,6 +588,11 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
           className="mono drill-back"
           onClick={() => {
             sendDwell(attempt);
+            track("set_abandoned", {
+              set_type: run.mode,
+              position: run.index + 1,
+              total,
+            });
             onExit();
           }}
         >

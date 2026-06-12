@@ -16,7 +16,9 @@ export type FunnelEvent =
   | "retest_overdue_shown"
   | "mixed_set_complete"
   | "practice_set_start"
-  | "practice_set_complete";
+  | "practice_set_complete"
+  | "set_abandoned"
+  | "forensics_skipped";
 
 type Props = Record<string, string | number | boolean | null | string[]>;
 
