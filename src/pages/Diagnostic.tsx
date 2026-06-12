@@ -12,6 +12,7 @@ import { MINI_RESULT_KEY } from "../components/MiniDiagnostic.tsx";
 import { RedZoneReveal } from "../components/RedZoneReveal.tsx";
 import { synthesizeZones } from "../funnel/zones.ts";
 import { track } from "../lib/events.ts";
+import { markStateChanged } from "../lib/sync.ts";
 import type { MiniResult, MissRecord } from "../funnel/types.ts";
 import type { PageProps } from "../types.ts";
 
@@ -136,6 +137,7 @@ export function Diagnostic({ navigate }: PageProps) {
     } catch {
       // storage unavailable — /welcome falls back to the take-your-diagnostic path
     }
+    markStateChanged();
 
     setMisses(missRecords);
     setPhase("result");

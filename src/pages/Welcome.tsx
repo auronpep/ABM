@@ -4,6 +4,7 @@
 // visit, plus the Red-Zone map's live state. A buyer with no diagnostic on
 // record is routed into the diagnostic framed as setup.
 import { useEffect, useMemo, useState } from "react";
+import { SignedIn, SignedOut, useClerk, useUser } from "@clerk/clerk-react";
 import { brand } from "../content/brand.ts";
 import { track } from "../lib/events.ts";
 import {
@@ -37,6 +38,36 @@ const STATUS_COLOR: Record<ZoneStatus["kind"], string> = {
   "in-repair": "var(--red)",
   queued: "var(--muted)",
 };
+
+function AccountRow({ navigate }: PageProps) {
+  const { user } = useUser();
+  const { signOut } = useClerk();
+  const mono: React.CSSProperties = {
+    fontFamily: "var(--mono)",
+    fontSize: 11,
+    letterSpacing: "0.08em",
+    color: "var(--muted)",
+  };
+  return (
+    <div style={{ ...mono, marginTop: 56, paddingTop: 14, borderTop: "1px solid var(--rule)", display: "flex", gap: 18, flexWrap: "wrap" }}>
+      <SignedIn>
+        <span>{user?.primaryEmailAddress?.emailAddress ?? "Signed in"} — progress follows your account</span>
+        <button style={{ ...mono, textDecoration: "underline", color: "var(--ink)" }} onClick={() => void signOut()}>
+          Sign out
+        </button>
+      </SignedIn>
+      <SignedOut>
+        <span>Progress is saved in this browser.</span>
+        <button style={{ ...mono, textDecoration: "underline", color: "var(--ink)" }} onClick={() => navigate("sign-in")}>
+          Sign in
+        </button>
+        <button style={{ ...mono, textDecoration: "underline", color: "var(--ink)" }} onClick={() => navigate("sign-up")}>
+          Create an account — take it to any device
+        </button>
+      </SignedOut>
+    </div>
+  );
+}
 
 export function Welcome({ navigate }: PageProps) {
   const reduced = useMemo(
@@ -191,6 +222,8 @@ export function Welcome({ navigate }: PageProps) {
           )}
         </>
       )}
+
+      {stage >= 3 && <AccountRow navigate={navigate} />}
     </div>
   );
 }

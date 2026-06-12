@@ -80,8 +80,13 @@ export function track(event: FunnelEvent, props: Props = {}): void {
   window.__bmEvents.push({ event, props: payload, ts: Date.now() });
   window.dataLayer?.push({ event, ...payload });
 
-  const posthogKey = import.meta.env.VITE_POSTHOG_KEY as string | undefined;
-  const posthogHost = (import.meta.env.VITE_POSTHOG_HOST as string | undefined) ?? "https://us.i.posthog.com";
+  const posthogKey =
+    (import.meta.env.VITE_POSTHOG_KEY as string | undefined) ||
+    (import.meta.env.NEXT_PUBLIC_POSTHOG_KEY as string | undefined);
+  const posthogHost =
+    (import.meta.env.VITE_POSTHOG_HOST as string | undefined) ||
+    (import.meta.env.NEXT_PUBLIC_POSTHOG_HOST as string | undefined) ||
+    "https://us.i.posthog.com";
   if (posthogKey) {
     void fetch(`${posthogHost}/capture/`, {
       method: "POST",

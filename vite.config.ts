@@ -7,6 +7,10 @@ import react from "@vitejs/plugin-react";
 // are copied verbatim into the build output.
 export default defineConfig({
   plugins: [react()],
+  // The Vercel project still carries env vars under the old app's
+  // NEXT_PUBLIC_ prefix (PostHog key/host, Clerk publishable key). All
+  // NEXT_PUBLIC_ values are public-by-design, so exposing the prefix is safe.
+  envPrefix: ["VITE_", "NEXT_PUBLIC_"],
   build: {
     outDir: "dist",
     sourcemap: false,

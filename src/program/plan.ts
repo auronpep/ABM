@@ -7,6 +7,7 @@
 
 import { CURATED_DIAGNOSTIC_IDS } from "../content/curated-diagnostic.ts";
 import type { MissRecord } from "../funnel/types.ts";
+import { markStateChanged } from "../lib/sync.ts";
 import {
   spacedRetestDue,
   zoneFamilyId,
@@ -154,6 +155,7 @@ export function recordMixedResult(correct: number, total: number): void {
   } catch {
     // ignore
   }
+  markStateChanged();
 }
 
 /**

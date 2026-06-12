@@ -6,7 +6,9 @@ export type Route =
   | "drills"
   | "welcome"
   | "repair"
-  | "prayer-chain";
+  | "prayer-chain"
+  | "sign-in"
+  | "sign-up";
 
 export interface PageProps {
   navigate: (route: Route) => void;

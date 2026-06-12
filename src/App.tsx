@@ -9,6 +9,7 @@ import { Drill } from "./pages/Drill.tsx";
 import { Welcome } from "./pages/Welcome.tsx";
 import { Repair } from "./pages/Repair.tsx";
 import { PrayerChain } from "./pages/PrayerChain.tsx";
+import { SignInPage, SignUpPage } from "./pages/Auth.tsx";
 import { captureUtm } from "./lib/events.ts";
 import type { Route } from "./types.ts";
 
@@ -21,6 +22,8 @@ const ROUTES: Route[] = [
   "welcome",
   "repair",
   "prayer-chain",
+  "sign-in",
+  "sign-up",
 ];
 
 function routeFromHash(): Route {
@@ -47,7 +50,12 @@ export function App() {
     window.scrollTo(0, 0);
   }, [route]);
 
-  const chromeless = route === "diagnostic" || route === "welcome" || route === "repair";
+  const chromeless =
+    route === "diagnostic" ||
+    route === "welcome" ||
+    route === "repair" ||
+    route === "sign-in" ||
+    route === "sign-up";
 
   return (
     <>
@@ -60,6 +68,8 @@ export function App() {
       {route === "welcome" && <Welcome navigate={navigate} />}
       {route === "repair" && <Repair navigate={navigate} />}
       {route === "prayer-chain" && <PrayerChain navigate={navigate} />}
+      {route === "sign-in" && <SignInPage navigate={navigate} />}
+      {route === "sign-up" && <SignUpPage navigate={navigate} />}
       {!chromeless && <Footer navigate={navigate} />}
     </>
   );

@@ -6,6 +6,7 @@
 
 import { CURATED_DIAGNOSTIC_IDS, filterForMold } from "../content/curated-diagnostic.ts";
 import type { FilterBroken, MissRecord } from "../funnel/types.ts";
+import { markStateChanged } from "../lib/sync.ts";
 
 export interface TrapIndexEntry {
   id: string;
@@ -146,6 +147,7 @@ export function writeProgram(state: ProgramState): void {
   } catch {
     // ignore
   }
+  markStateChanged();
 }
 
 export function clearProgram(): void {
