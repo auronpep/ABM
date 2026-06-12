@@ -11,7 +11,10 @@ export type FunnelEvent =
   | "first_login"
   | "first_drill_complete"
   | "first_retest_complete"
-  | "zone_repaired";
+  | "zone_repaired"
+  | "zone_n_started"
+  | "retest_overdue_shown"
+  | "mixed_set_complete";
 
 type Props = Record<string, string | number | boolean | null | string[]>;
 

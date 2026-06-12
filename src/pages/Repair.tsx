@@ -13,15 +13,22 @@ import {
   completeDrill,
   loadTrapIndex,
   readMap,
-  readProgram,
+  readProgramSet,
   recordRetest,
   resumeDrills,
   spacedRetestDue,
-  startProgram,
+  startProgramForZone,
   startSpacedRetest,
   type ProgramState,
   type TrapIndexEntry,
 } from "../program/repair.ts";
+import {
+  MIXED_SET_SECONDS,
+  allUsedIds,
+  nextAction,
+  recordMixedResult,
+  selectMixedSet,
+} from "../program/plan.ts";
 import { track } from "../lib/events.ts";
 import type { PageProps } from "../types.ts";
 
@@ -67,7 +74,14 @@ export function Repair({ navigate }: PageProps) {
   );
   const map = useMemo(readMap, []);
   const [trapIndex, setTrapIndex] = useState<TrapIndexEntry[] | null>(null);
-  const [program, setProgram] = useState<ProgramState | null>(readProgram);
+  // The ladder decides what this visit runs: an overdue spaced retest, the
+  // repair in progress, the next zone on the map, or a timed mixed set.
+  const action = useMemo(() => nextAction(readProgramSet(), map), [map]);
+  const [program, setProgram] = useState<ProgramState | null>(
+    action.kind === "spaced_retest" || action.kind === "continue_repair"
+      ? action.program
+      : null,
+  );
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -76,12 +90,35 @@ export function Repair({ navigate }: PageProps) {
       .catch((e: unknown) => setLoadError(e instanceof Error ? e.message : "Failed to load"));
   }, []);
 
-  // First visit with a map but no program → assemble the loop.
+  // Next zone on the map and no loop yet → assemble one for it.
   useEffect(() => {
-    if (!program && map && trapIndex) {
-      setProgram(startProgram(map, trapIndex));
+    if (!program && action.kind === "start_zone" && map && trapIndex) {
+      const state = startProgramForZone(action.zone, map, trapIndex, allUsedIds(readProgramSet()));
+      if (action.ordinal > 1) {
+        track("zone_n_started", { zone: action.zone.name, n: action.ordinal });
+      }
+      setProgram(state);
     }
-  }, [program, map, trapIndex]);
+  }, [program, action, map, trapIndex]);
+
+  // ——— Every mapped zone is holding → the timed mixed set (P1 §5) ———
+  if (action.kind === "mixed_set") {
+    if (loadError) {
+      return (
+        <RepairShell navigate={navigate}>
+          <p className="body-lg">The mixed set could not load ({loadError}). Refresh to try again.</p>
+        </RepairShell>
+      );
+    }
+    if (!trapIndex) {
+      return (
+        <RepairShell navigate={navigate}>
+          <p className="mono" style={{ color: "var(--muted)" }}>Preparing your mixed set…</p>
+        </RepairShell>
+      );
+    }
+    return <MixedSetRunner navigate={navigate} trapIndex={trapIndex} />;
+  }
 
   // ——— No diagnostic on record: route into it, framed as setup (P1 §3) ———
   if (!map && !program) {
@@ -447,8 +484,8 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
                   Run the {SPACED_RETEST_DAYS}-day retest <span className="arrow">→</span>
                 </button>
               ) : (
-                <button className="btn btn-lg red" onClick={() => navigate("drills")}>
-                  Keep going — open the drill bank <span className="arrow">→</span>
+                <button className="btn btn-lg red" onClick={() => navigate("welcome")}>
+                  See what&rsquo;s next on your map <span className="arrow">→</span>
                 </button>
               )}
             </div>
@@ -485,6 +522,207 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
         Run the next two drills <span className="arrow">→</span>
       </button>
     </RepairShell>
+  );
+}
+
+// ============ THE TIMED MIXED SET (P1 §5, ladder step 4) ============
+// Every mapped zone repaired and holding → questions drawn across the
+// buyer's trap families, on the clock, graded at the end. No forensics
+// between questions; the verdict names which families wobbled.
+
+type MixedStage = "intro" | "running" | "done";
+
+function MixedSetRunner({ navigate, trapIndex }: PageProps & { trapIndex: TrapIndexEntry[] }) {
+  const [ids] = useState<string[]>(() =>
+    selectMixedSet(readProgramSet(), readMap(), trapIndex),
+  );
+  const [stage, setStage] = useState<MixedStage>("intro");
+  const [questions, setQuestions] = useState<DrillQuestion[] | null>(null);
+  const [idx, setIdx] = useState(0);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [picked, setPicked] = useState<string | null>(null);
+  const [secondsLeft, setSecondsLeft] = useState(MIXED_SET_SECONDS);
+  const deadlineRef = useRef<number | null>(null);
+  const gradedRef = useRef(false);
+  const [finalAnswers, setFinalAnswers] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    Promise.all(
+      ids.map((id) =>
+        fetch(`/qdata/${id}.json`).then((r) => {
+          if (!r.ok) throw new Error(`HTTP ${r.status} loading ${id}`);
+          return r.json() as Promise<DrillQuestion>;
+        }),
+      ),
+    )
+      .then(setQuestions)
+      .catch(() => setQuestions(null));
+  }, [ids]);
+
+  const grade = (final: Record<string, string>) => {
+    if (gradedRef.current || !questions) return;
+    gradedRef.current = true;
+    const correct = questions.filter((q) => final[q.id] === q.key).length;
+    recordMixedResult(correct, questions.length);
+    track("mixed_set_complete", { total: questions.length, correct });
+    setFinalAnswers(final);
+    setStage("done");
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    if (stage !== "running") return;
+    const tick = window.setInterval(() => {
+      const left = Math.max(0, Math.ceil(((deadlineRef.current ?? 0) - Date.now()) / 1000));
+      setSecondsLeft(left);
+      if (left <= 0) {
+        window.clearInterval(tick);
+        setAnswers((a) => {
+          grade(a);
+          return a;
+        });
+      }
+    }, 250);
+    return () => window.clearInterval(tick);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [stage, questions]);
+
+  if (stage === "intro") {
+    return (
+      <RepairShell navigate={navigate}>
+        <div className="eyebrow-red" style={{ marginBottom: 20 }}>▌ The Timed Mixed Set</div>
+        <h1 className="display display-lg" style={{ margin: "0 0 18px", maxWidth: "20ch" }}>
+          Every zone holding. Now mix them.
+        </h1>
+        <p className="body-lg" style={{ maxWidth: "48ch", marginBottom: 12 }}>
+          {ids.length} questions drawn across your trap families, in no particular order —
+          the way the exam serves them. {fmtClock(MIXED_SET_SECONDS)} on the clock, no
+          forensics between questions. The verdict names any family that wobbles.
+        </p>
+        <button
+          className="btn btn-lg red"
+          disabled={!questions}
+          style={{ opacity: questions ? 1 : 0.5 }}
+          onClick={() => {
+            deadlineRef.current = Date.now() + MIXED_SET_SECONDS * 1000;
+            setSecondsLeft(MIXED_SET_SECONDS);
+            setStage("running");
+          }}
+        >
+          {questions ? "Start the mixed set" : "Preparing your questions…"} <span className="arrow">→</span>
+        </button>
+      </RepairShell>
+    );
+  }
+
+  if (stage === "done" && questions) {
+    const correct = questions.filter((q) => finalAnswers[q.id] === q.key).length;
+    const missed = questions.filter((q) => finalAnswers[q.id] !== q.key);
+    return (
+      <RepairShell navigate={navigate}>
+        <div className="eyebrow-red" style={{ marginBottom: 20 }}>▌ The Verdict</div>
+        <h1 className="display display-lg" style={{ margin: "0 0 18px" }}>
+          {correct} of {questions.length}.
+        </h1>
+        <p className="body-lg" style={{ maxWidth: "46ch", marginBottom: 20 }}>
+          {missed.length === 0
+            ? "Every family held under mixed pressure. That is what repaired looks like on the clock."
+            : "The repairs held where they held. The misses below are the next places the map points."}
+        </p>
+        {missed.length > 0 && (
+          <div style={{ marginBottom: 28, maxWidth: 560 }}>
+            {missed.map((q) => (
+              <div
+                key={q.id}
+                style={{ display: "flex", justifyContent: "space-between", gap: 16, padding: "8px 0", borderTop: "1px solid var(--rule)" }}
+              >
+                <span className="serif" style={{ fontWeight: 600, fontSize: 15 }}>{q.title}</span>
+                <span className="mono" style={{ fontSize: 11, color: "var(--muted)", whiteSpace: "nowrap" }}>{q.subject}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        <button className="btn btn-lg red" onClick={() => navigate("welcome")}>
+          Back to your map <span className="arrow">→</span>
+        </button>
+      </RepairShell>
+    );
+  }
+
+  const q = questions?.[idx];
+  if (!q) {
+    return (
+      <RepairShell navigate={navigate}>
+        <p className="mono" style={{ color: "var(--muted)" }}>Loading…</p>
+      </RepairShell>
+    );
+  }
+  return (
+    <div className="diag-wrap">
+      <div className="diag-header">
+        <div className="diag-header-inner">
+          <span className="rz-trap-chip">MIXED SET</span>
+          <div className="diag-progress">
+            <div className="fill" style={{ width: `${((idx + 1) / questions.length) * 100}%` }} />
+          </div>
+          <span className={`mono retest-clock${secondsLeft <= 60 ? " low" : ""}`}>
+            {fmtClock(secondsLeft)}
+          </span>
+        </div>
+      </div>
+      <div className="diag-main">
+        <div className="diag-card">
+          <div className="diag-q-num">
+            <span className="pill">
+              {idx + 1} / {questions.length}
+            </span>
+            <span>{q.subject} · {q.title}</span>
+          </div>
+          <div className="diag-stem">
+            {q.stem.split(/\n\n+/).map((p, i) => (
+              <p key={i} style={{ margin: i === 0 ? 0 : "12px 0 0" }}>{p}</p>
+            ))}
+          </div>
+          <div className="diag-choices">
+            {LETTERS.filter((l) => q.choices[l]).map((l) => (
+              <button
+                key={l}
+                className={`diag-choice${picked === l ? " selected" : ""}`}
+                onClick={() => setPicked(l)}
+              >
+                <div className="letter">{l}</div>
+                <div>{q.choices[l]}</div>
+              </button>
+            ))}
+          </div>
+          <div className="diag-footer">
+            <span className="mono" style={{ fontSize: 11, letterSpacing: "0.12em", color: "var(--muted)", textTransform: "uppercase" }}>
+              No forensics until the clock stops
+            </span>
+            <button
+              className="btn btn-lg red"
+              disabled={!picked}
+              style={{ opacity: picked ? 1 : 0.4 }}
+              onClick={() => {
+                if (!picked) return;
+                const next = { ...answers, [q.id]: picked };
+                setAnswers(next);
+                setPicked(null);
+                if (idx + 1 < questions.length) {
+                  setIdx(idx + 1);
+                  window.scrollTo(0, 0);
+                } else {
+                  grade(next);
+                }
+              }}
+            >
+              {idx + 1 < questions.length ? "Lock it — next" : "Lock it — verdict"}{" "}
+              <span className="arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

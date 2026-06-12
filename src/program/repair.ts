@@ -51,6 +51,17 @@ export interface StoredMap {
 
 export const REDZONE_MAP_KEY = "bm_redzone_map";
 export const PROGRAM_KEY = "bm_program_v1";
+export const PROGRAM_SET_KEY = "bm_program_set_v1";
+
+/** One program per trap family; the family key is the zone's identity. */
+export interface ProgramSet {
+  v: 1;
+  programs: ProgramState[];
+}
+
+export function zoneFamilyId(zone: ProgramZone): string {
+  return `${zone.filter_broken}|${zone.mold}`;
+}
 
 export const RETEST_SIZE = 3;
 export const RETEST_PASS_BAR = 2; // of 3 — "repaired for now", re-verified at day 4
@@ -83,11 +94,57 @@ export function readProgram(): ProgramState | null {
   }
 }
 
+/**
+ * The multi-zone program set. Migrates a legacy single-program payload
+ * (bm_program_v1) into the set on first read.
+ */
+export function readProgramSet(): ProgramSet {
+  try {
+    const raw = localStorage.getItem(PROGRAM_SET_KEY);
+    if (raw) {
+      const set = JSON.parse(raw) as ProgramSet;
+      if (set.v === 1 && Array.isArray(set.programs)) {
+        for (const p of set.programs) {
+          if (!Array.isArray(p.usedIds)) p.usedIds = [...p.drillIds, ...p.retestIds];
+        }
+        return set;
+      }
+    }
+  } catch {
+    // fall through to migration
+  }
+  const legacy = readProgram();
+  const set: ProgramSet = { v: 1, programs: legacy ? [legacy] : [] };
+  if (legacy) writeProgramSet(set);
+  return set;
+}
+
+export function writeProgramSet(set: ProgramSet): void {
+  try {
+    localStorage.setItem(PROGRAM_SET_KEY, JSON.stringify(set));
+  } catch {
+    // storage unavailable — the loop still runs in memory for this visit
+  }
+}
+
 export function writeProgram(state: ProgramState): void {
   try {
     localStorage.setItem(PROGRAM_KEY, JSON.stringify(state));
   } catch {
     // storage unavailable — the loop still runs in memory for this visit
+  }
+  // Keep the set in sync: every mutator persists through here.
+  try {
+    const raw = localStorage.getItem(PROGRAM_SET_KEY);
+    const set: ProgramSet =
+      raw !== null ? (JSON.parse(raw) as ProgramSet) : { v: 1, programs: [] };
+    const id = zoneFamilyId(state.zone);
+    const i = set.programs.findIndex((p) => zoneFamilyId(p.zone) === id);
+    const programs =
+      i >= 0 ? set.programs.map((p, j) => (j === i ? state : p)) : [...set.programs, state];
+    localStorage.setItem(PROGRAM_SET_KEY, JSON.stringify({ v: 1, programs }));
+  } catch {
+    // ignore
   }
 }
 
@@ -167,12 +224,35 @@ export function drillCountForMap(map: StoredMap): number {
   return Math.max(4, Math.min(6, members * 2));
 }
 
-export function startProgram(map: StoredMap, index: TrapIndexEntry[]): ProgramState | null {
-  const zone = deriveTargetZone(map);
-  if (!zone) return null;
+/** How many of the map's misses belong to this zone's trap family. */
+export function zoneMemberCount(map: StoredMap, zone: ProgramZone): number {
+  const named = map.zones.find((z) => z.name === zone.name);
+  if (named) return named.members.length;
+  const familyMisses = map.misses.filter(
+    (m) => m.filter_broken === zone.filter_broken && m.mold === zone.mold,
+  );
+  return Math.max(1, familyMisses.length);
+}
 
-  const exclude = new Set<string>(CURATED_DIAGNOSTIC_IDS);
-  const drillIds = selectFromBank(index, zone, exclude, drillCountForMap(map));
+/**
+ * Assemble and persist a repair loop for any zone. `alreadyUsed` carries
+ * question ids consumed by other zones' programs so families share the bank
+ * without re-serving questions.
+ */
+export function startProgramForZone(
+  zone: ProgramZone,
+  map: StoredMap,
+  index: TrapIndexEntry[],
+  alreadyUsed: string[] = [],
+): ProgramState {
+  const exclude = new Set<string>([...CURATED_DIAGNOSTIC_IDS, ...alreadyUsed]);
+  const memberCount = zoneMemberCount(map, zone);
+  const drillIds = selectFromBank(
+    index,
+    zone,
+    exclude,
+    Math.max(4, Math.min(6, memberCount * 2)),
+  );
   drillIds.forEach((id) => exclude.add(id));
   const retestIds = selectFromBank(index, zone, exclude, RETEST_SIZE);
 
@@ -191,6 +271,12 @@ export function startProgram(map: StoredMap, index: TrapIndexEntry[]): ProgramSt
   };
   writeProgram(state);
   return state;
+}
+
+export function startProgram(map: StoredMap, index: TrapIndexEntry[]): ProgramState | null {
+  const zone = deriveTargetZone(map);
+  if (!zone) return null;
+  return startProgramForZone(zone, map, index);
 }
 
 export function completeDrill(state: ProgramState, qid: string): ProgramState {
