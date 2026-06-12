@@ -45,7 +45,7 @@ function fmtCount(n: number): string {
 }
 
 export function Practice({ navigate }: PageProps) {
-  const { isSignedIn, getToken } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
 
   const [outline, setOutline] = useState<OutlinePayload | null>(null);
   const [outlineError, setOutlineError] = useState<string | null>(null);
@@ -56,12 +56,13 @@ export function Practice({ navigate }: PageProps) {
   const [run, setRun] = useState<RunState | null>(null);
 
   useEffect(() => {
+    if (!isLoaded || !isSignedIn) return;
     apiFetch<OutlinePayload>("/api/outline")
       .then(setOutline)
       .catch((e: unknown) =>
         setOutlineError(e instanceof Error ? e.message : "Failed to load the outline"),
       );
-  }, []);
+  }, [isLoaded, isSignedIn]);
 
   const subtopicsBySubject = useMemo(() => {
     const groups = new Map<string, OutlinePayload["subtopics"]>();
@@ -188,12 +189,25 @@ export function Practice({ navigate }: PageProps) {
       <div className="section-rule">
         <span className="label">Practice one subject</span>
       </div>
-      {outlineError && (
-        <p className="mono" style={{ color: "var(--muted)" }}>
-          The library index could not load ({outlineError}). Refresh to try again.
-        </p>
+      {isLoaded && !isSignedIn && (
+        <PracticeUnavailable
+          title="Sign in to open the full bank."
+          body="The dashboard still leads with one assigned task. The Practice Library is optional paid-program work after that spine is clear."
+          primaryLabel="Sign in"
+          onPrimary={() => navigate("sign-in")}
+          onDashboard={() => navigate("dashboard")}
+        />
       )}
-      {!outline && !outlineError && (
+      {outlineError && isSignedIn && (
+        <PracticeUnavailable
+          title="The full-bank index is not available here."
+          body="Use today's dashboard assignment for now. The library will reopen when the enrolled index responds."
+          primaryLabel="Open dashboard"
+          onPrimary={() => navigate("dashboard")}
+          onDashboard={() => navigate("dashboard")}
+        />
+      )}
+      {!outline && !outlineError && isSignedIn && (
         <p className="mono" style={{ color: "var(--muted)" }}>
           Loading the bank…
         </p>
@@ -336,6 +350,39 @@ export function Practice({ navigate }: PageProps) {
             })}
           </div>
         ))}
+    </div>
+  );
+}
+
+function PracticeUnavailable({
+  body,
+  onDashboard,
+  onPrimary,
+  primaryLabel,
+  title,
+}: {
+  body: string;
+  onDashboard: () => void;
+  onPrimary: () => void;
+  primaryLabel: string;
+  title: string;
+}) {
+  return (
+    <div style={{ borderTop: "1px solid var(--rule)", paddingTop: 18, maxWidth: 620 }}>
+      <p className="body-lg" style={{ margin: "0 0 8px", fontWeight: 600 }}>
+        {title}
+      </p>
+      <p className="mono" style={{ color: "var(--muted)", maxWidth: "58ch", lineHeight: 1.6 }}>
+        {body}
+      </p>
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+        <button className="btn red btn-sm" onClick={onPrimary}>
+          {primaryLabel}
+        </button>
+        <button className="btn ghost btn-sm" onClick={onDashboard}>
+          Back to dashboard
+        </button>
+      </div>
     </div>
   );
 }

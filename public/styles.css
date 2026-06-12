@@ -3022,6 +3022,163 @@ button {
   margin-bottom: 28px;
 }
 
+.dashboard-today,
+.dashboard-panel {
+  max-width: 560px;
+  margin-top: 34px;
+  border-top: 1px solid var(--bm-bone-line);
+  padding-top: 18px;
+}
+
+.dashboard-today {
+  border: 1px solid var(--bm-bone-line);
+  background: var(--bm-paper);
+  box-shadow: var(--bm-card-shadow);
+  padding: 20px;
+}
+
+.dashboard-panel-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--bm-faded);
+  margin-bottom: 12px;
+}
+
+.dashboard-today h2 {
+  font-family: var(--serif);
+  font-size: 26px;
+  line-height: 1.15;
+  margin: 0 0 10px;
+  color: var(--bm-ink);
+}
+
+.dashboard-today p,
+.dashboard-insight p {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--bm-soft);
+  margin: 0;
+}
+
+.dashboard-today-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin: 16px 0 18px;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.55;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bm-faded);
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dashboard-note {
+  margin: 12px 0 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--bm-faded);
+}
+
+.dashboard-map-group {
+  margin-top: 16px;
+}
+
+.dashboard-map-group-head {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.6fr) 1fr;
+  gap: 16px;
+  align-items: baseline;
+  border-top: 1px solid var(--bm-bone-line);
+  padding-top: 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bm-faded);
+}
+
+.dashboard-map-group-head span:first-child {
+  color: var(--bm-ink);
+  font-weight: 700;
+}
+
+.dashboard-map-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px solid var(--bm-bone-line);
+}
+
+.dashboard-map-row .serif {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.dashboard-map-row .mono {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.dashboard-mirror-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.dashboard-mirror-grid div {
+  border-top: 1px solid var(--bm-bone-line);
+  padding-top: 10px;
+}
+
+.dashboard-mirror-grid span {
+  display: block;
+  font-family: var(--serif);
+  font-size: 28px;
+  line-height: 1;
+  color: var(--bm-ink);
+}
+
+.dashboard-mirror-grid p {
+  margin: 6px 0 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.45;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bm-faded);
+}
+
+.dashboard-insight {
+  margin-top: 18px;
+  border-top: 1px solid var(--bm-bone-line);
+  padding-top: 14px;
+}
+
+.dashboard-account-row {
+  margin-top: 56px;
+  padding-top: 14px;
+  border-top: 1px solid var(--bm-bone-line);
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
 /* ——— Prayer Chain (P4) ——— */
 
 .pc-grid {
@@ -3155,4 +3312,21 @@ button.diag-choice:focus-visible {
 @media (max-width: 720px) {
   .mini-diag { padding: 20px 16px; }
   .welcome-in { font-size: 34px; }
+  .dashboard-today { padding: 18px; }
+  .dashboard-actions .btn { width: 100%; justify-content: center; }
+  .dashboard-map-group-head {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .dashboard-map-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .dashboard-map-row .mono {
+    white-space: normal;
+  }
+  .dashboard-mirror-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
