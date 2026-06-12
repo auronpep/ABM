@@ -10,14 +10,17 @@ export type FilterBroken = "NOT_TRUE" | "NOT_RESPONSIVE";
 export interface FunnelChoice {
   id: ChoiceId;
   text: string;
-  /** Pick rate on the question's tested form. Null when the source row had no data. */
+  /** INTERNAL ONLY — focus-group pick rate. Never displayed; used for ranking/calibration. */
   pct: number | null;
   provenance: "inherited_original" | "predicted";
 }
 
 export interface FunnelTrap {
   choice: ChoiceId;
-  pct: number;
+  /** INTERNAL ONLY — focus-group pick rate. Null in the shipped seed; canonical values live in internal-pickrates.json (not bundled). */
+  pct: number | null;
+  /** Cohort placeholder — % of past cohorts who fell here. Null until real cohort data exists; the UI slot renders only when non-null. */
+  cohortPct?: number | null;
   name: string;
   instinct: Instinct;
   filter_broken: FilterBroken;

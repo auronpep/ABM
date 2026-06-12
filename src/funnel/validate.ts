@@ -62,7 +62,16 @@ export function validateQuestion(input: unknown): ValidationResult {
   } else {
     if (!CHOICE_IDS.includes(trap.choice as ChoiceId)) fail(`${label}: trap.choice must be A-D`);
     if (trap.choice === q.key) fail(`${label}: trap.choice cannot equal key`);
-    if (typeof trap.pct !== "number") fail(`${label}: trap.pct must be a number`);
+    if (trap.pct !== null && (typeof trap.pct !== "number" || trap.pct < 0 || trap.pct > 100)) {
+      fail(`${label}: trap.pct must be null or 0-100`);
+    }
+    if (
+      trap.cohortPct !== undefined &&
+      trap.cohortPct !== null &&
+      (typeof trap.cohortPct !== "number" || trap.cohortPct < 0 || trap.cohortPct > 100)
+    ) {
+      fail(`${label}: trap.cohortPct must be null or 0-100 when present`);
+    }
     if (!isNonEmptyString(trap.name)) fail(`${label}: trap.name missing`);
     if (!INSTINCTS.includes(trap.instinct as string)) fail(`${label}: trap.instinct must be one of ${INSTINCTS.join("/")}`);
     if (!FILTERS.includes(trap.filter_broken as string)) fail(`${label}: trap.filter_broken must be one of ${FILTERS.join("/")}`);

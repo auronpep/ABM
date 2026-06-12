@@ -4,7 +4,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import seedData from "../funnel/questions.seed.json";
 import { assertValidQuestions } from "../funnel/validate.ts";
-import { conscienceVerdict, pickRatePhrase } from "../funnel/zones.ts";
+import { conscienceVerdict, cohortPhrase } from "../funnel/zones.ts";
 import { track } from "../lib/events.ts";
 import type { ChoiceId, FunnelQuestion, Instinct, MiniResult } from "../funnel/types.ts";
 
@@ -195,15 +195,11 @@ export function MiniDiagnostic({ onCta }: MiniDiagnosticProps) {
         {revealed && (
           <>
             <div className={`nameplate${correct ? " survived" : ""}${reduced ? "" : " bm-stamp"}`}>
-              {correct
-                ? "SURVIVED"
-                : pickedDominantTrap
-                  ? `THE TRAP — ${q.trap.pct}% FALL HERE`
-                  : "COUNTERFEIT"}
+              {correct ? "SURVIVED" : pickedDominantTrap ? "THE TRAP" : "COUNTERFEIT"}
             </div>
-            {!correct && pickedDominantTrap && (
+            {!correct && pickedDominantTrap && cohortPhrase(q.trap.cohortPct) && (
               <div className="mini-subject" style={{ marginBottom: 0 }}>
-                {pickRatePhrase(q.trap.pct)}
+                {cohortPhrase(q.trap.cohortPct)}
               </div>
             )}
             <p className={`mini-forensic${reduced ? "" : " bm-rise"}`}>

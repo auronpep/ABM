@@ -9,19 +9,40 @@
     ],
     "call": "Should the court grant the motion?",
     "choices": [
-      { "id": "A", "text": "No, because dismissal of the indictment is not the appropriate remedy.", "pct": 66, "provenance": "inherited_original" },
-      { "id": "B", "text": "Yes, because much of the agent's testimony before the grand jury was inadmissible hearsay.", "pct": 2, "provenance": "inherited_original" },
-      { "id": "C", "text": "Yes, because of the agent's unlawful search of Thomas's home.", "pct": 31, "provenance": "inherited_original" },
-      { "id": "D", "text": "Yes, because of the agent's violation of Thomas's right to counsel.", "pct": 1, "provenance": "inherited_original" }
+      {
+        "id": "A",
+        "text": "No, because dismissal of the indictment is not the appropriate remedy.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "B",
+        "text": "Yes, because much of the agent's testimony before the grand jury was inadmissible hearsay.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "C",
+        "text": "Yes, because of the agent's unlawful search of Thomas's home.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "D",
+        "text": "Yes, because of the agent's violation of Thomas's right to counsel.",
+        "pct": null,
+        "provenance": "inherited_original"
+      }
     ],
     "key": "A",
     "trap": {
       "choice": "C",
-      "pct": 31,
+      "pct": null,
       "name": "VIOLATION ≠ REMEDY",
       "instinct": "JUSTICE",
       "filter_broken": "NOT_RESPONSIVE",
-      "mold": "wrong_element"
+      "mold": "wrong_element",
+      "cohortPct": null
     },
     "forensics": {
       "A": "You held the line where most people break. The search of Thomas's home was unconstitutional — and you refused to let that fact answer a question it doesn't answer. A grand jury may consider hearsay and unlawfully obtained evidence; the exclusionary rule guards the trial, not the indictment. You separated the violation from the remedy. That is the discipline this exam pays for.",
@@ -32,9 +53,15 @@
     "silver_key_move": "This proves a violation. Does it prove dismissal?",
     "review_truth": "A grand jury may indict on hearsay and unlawfully obtained evidence — the exclusionary rule guards the trial, not the indictment.",
     "drill_seeds": [
-      { "type": "CALL FOCUS", "prompt": "When the call asks for a remedy, name the remedy the violated rule actually grants before reading another word." }
+      {
+        "type": "CALL FOCUS",
+        "prompt": "When the call asks for a remedy, name the remedy the violated rule actually grants before reading another word."
+      }
     ],
-    "crossovers": ["EVIDENCE", "CONSTITUTIONAL_LAW"]
+    "crossovers": [
+      "EVIDENCE",
+      "CONSTITUTIONAL_LAW"
+    ]
   },
   {
     "qid": "Q-14734",
@@ -45,19 +72,40 @@
     ],
     "call": "Which additional piece of evidence would be most useful to convict Martha as an accomplice to Stephen's violation?",
     "choices": [
-      { "id": "A", "text": "Martha was previously convicted of running a betting parlor herself on the same premises.", "pct": 3, "provenance": "inherited_original" },
-      { "id": "B", "text": "Martha charges Stephen considerably more in rent than she charged the preceding tenant, who used the room for legitimate business.", "pct": 64, "provenance": "inherited_original" },
-      { "id": "C", "text": "Martha has personally placed bets with Stephen in the upper room.", "pct": 26, "provenance": "inherited_original" },
-      { "id": "D", "text": "Stephen pays Martha the rent in bills traceable as proceeds of his gambling operation.", "pct": 7, "provenance": "inherited_original" }
+      {
+        "id": "A",
+        "text": "Martha was previously convicted of running a betting parlor herself on the same premises.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "B",
+        "text": "Martha charges Stephen considerably more in rent than she charged the preceding tenant, who used the room for legitimate business.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "C",
+        "text": "Martha has personally placed bets with Stephen in the upper room.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "D",
+        "text": "Stephen pays Martha the rent in bills traceable as proceeds of his gambling operation.",
+        "pct": null,
+        "provenance": "inherited_original"
+      }
     ],
     "key": "B",
     "trap": {
       "choice": "C",
-      "pct": 26,
+      "pct": null,
       "name": "KNOWLEDGE ≠ STAKE",
       "instinct": "SUSPICION",
       "filter_broken": "NOT_RESPONSIVE",
-      "mold": "wrong_element"
+      "mold": "wrong_element",
+      "cohortPct": null
     },
     "forensics": {
       "A": "A prior conviction smells like guilt, and you followed the smell. But propensity is not aid: what Martha did years ago proves nothing about whether she intends this venture to succeed. The stem already gave you knowledge. The missing element is stake — find the fact that pays her when the betting parlor wins.",
@@ -68,9 +116,14 @@
     "silver_key_move": "The stem already gave me knowledge. Which fact proves she profits when the crime succeeds?",
     "review_truth": "Accomplice liability requires intent to aid — a stake in the venture's success — not mere knowledge of it; above-market rent is the fact that buys her in.",
     "drill_seeds": [
-      { "type": "CALL FOCUS", "prompt": "Before picking the most incriminating fact, list the elements and circle the one the stem has not yet proved." }
+      {
+        "type": "CALL FOCUS",
+        "prompt": "Before picking the most incriminating fact, list the elements and circle the one the stem has not yet proved."
+      }
     ],
-    "crossovers": ["EVIDENCE"]
+    "crossovers": [
+      "EVIDENCE"
+    ]
   },
   {
     "qid": "Q-14609",
@@ -82,19 +135,40 @@
     ],
     "call": "Are they correct?",
     "choices": [
-      { "id": "A", "text": "No, as to both the stop of the car and the order that Andrew step out.", "pct": 50, "provenance": "inherited_original" },
-      { "id": "B", "text": "No as to the stop of the car, but yes as to the order that Andrew step out.", "pct": 35, "provenance": "inherited_original" },
-      { "id": "C", "text": "Yes as to the stop of the car, but no as to the order that Andrew step out.", "pct": 6, "provenance": "inherited_original" },
-      { "id": "D", "text": "Yes, as to both the stop of the car and the order that Andrew step out.", "pct": 9, "provenance": "inherited_original" }
+      {
+        "id": "A",
+        "text": "No, as to both the stop of the car and the order that Andrew step out.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "B",
+        "text": "No as to the stop of the car, but yes as to the order that Andrew step out.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "C",
+        "text": "Yes as to the stop of the car, but no as to the order that Andrew step out.",
+        "pct": null,
+        "provenance": "inherited_original"
+      },
+      {
+        "id": "D",
+        "text": "Yes, as to both the stop of the car and the order that Andrew step out.",
+        "pct": null,
+        "provenance": "inherited_original"
+      }
     ],
     "key": "A",
     "trap": {
       "choice": "B",
-      "pct": 35,
+      "pct": null,
       "name": "THE INNOCENT-PASSENGER PULL",
       "instinct": "FAIRNESS",
       "filter_broken": "NOT_TRUE",
-      "mold": "colloquialism"
+      "mold": "colloquialism",
+      "cohortPct": null
     },
     "forensics": {
       "A": "You refused both invitations to be fair instead of right. A stop is judged objectively — 68 in a 65 is a violation, and the officer's hidden motive does not undo it. And during any lawful stop, the officer may order driver and passengers alike out of the car; no individualized suspicion required. Twice this question offered you sympathy as a substitute for law. Twice you declined.",
@@ -105,8 +179,13 @@
     "silver_key_move": "Is this answer the legal test — or just what feels fair?",
     "review_truth": "A traffic stop is judged objectively — real violation, valid stop — and during a lawful stop the officer may order driver and passengers out without individualized suspicion.",
     "drill_seeds": [
-      { "type": "TRAP SPOTTING", "prompt": "When a choice splits the difference to spare the sympathetic party, demand the rule that does the sparing." }
+      {
+        "type": "TRAP SPOTTING",
+        "prompt": "When a choice splits the difference to spare the sympathetic party, demand the rule that does the sparing."
+      }
     ],
-    "crossovers": ["CONSTITUTIONAL_LAW"]
+    "crossovers": [
+      "CONSTITUTIONAL_LAW"
+    ]
   }
 ]

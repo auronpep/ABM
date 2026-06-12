@@ -100,7 +100,12 @@ export function conscienceVerdict(missedInstincts: Instinct[]): string {
   return `The exam aimed at ${joined} — and converted ${converted} into a wrong answer. These were not knowledge failures. They were conscience traps: the wrong answer recruited what is best in you and walked it past the rule. That is a pattern, and patterns are repairable.`;
 }
 
-/** Provenance-honest pick-rate phrase — doc 03 §4. The "tested form" qualifier is mandatory. */
-export function pickRatePhrase(pct: number): string {
-  return `${pct}% fall here on this question's tested form`;
+/**
+ * Cohort pick-rate phrase — renders only when real cohort data exists.
+ * Focus-group pct is internal-only and must never feed this line; pass trap.cohortPct.
+ * The "tested form" qualifier is mandatory when a phrase is shown.
+ */
+export function cohortPhrase(cohortPct: number | null | undefined): string | null {
+  if (cohortPct === null || cohortPct === undefined) return null;
+  return `${cohortPct}% of past cohorts fell here on this question's tested form`;
 }

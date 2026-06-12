@@ -1,8 +1,11 @@
 // Contract + stat-provenance checks — funnel tasks A-1 and QA-4.
 // 1. Every seed question passes the doc 03 renderer contract; a question
 //    missing trap.filter_broken is rejected (negative case asserted).
-// 2. Any rendered pick-rate stat carries the "tested form" qualifier
-//    (doc 03 §4 — provenance-honest wording).
+// 2. Stat provenance (founder decision 2026-06-11): focus-group pick rates are
+//    INTERNAL ONLY — the shipped seed must carry pct: null everywhere (canonical
+//    values live in src/funnel/internal-pickrates.json, which is never imported).
+//    The only displayable pick rate is cohortPct via cohortPhrase, which must
+//    carry the "tested form" qualifier (doc 03 §4 — provenance-honest wording).
 // 3. Every curated diagnostic qid has a question file in public/qdata.
 import { readFileSync, existsSync } from "node:fs";
 import process from "node:process";
@@ -33,7 +36,7 @@ function validate(q) {
   for (const c of q.choices ?? []) {
     need(CHOICES.includes(c.id), `bad choice id ${c.id}`);
     need(typeof c.text === "string" && c.text, `choice ${c.id} missing text`);
-    need(c.pct === null || (typeof c.pct === "number" && c.pct >= 0 && c.pct <= 100), `choice ${c.id} bad pct`);
+    need(c.pct === null, `choice ${c.id} ships a focus-group pct — internal only, must be null in seed`);
     need(["inherited_original", "predicted"].includes(c.provenance), `choice ${c.id} bad provenance`);
   }
   need(CHOICES.includes(q.key), "bad key");
@@ -41,7 +44,13 @@ function validate(q) {
   if (q.trap) {
     need(CHOICES.includes(q.trap.choice), "trap.choice bad");
     need(q.trap.choice !== q.key, "trap.choice equals key");
-    need(typeof q.trap.pct === "number", "trap.pct missing");
+    need(q.trap.pct === null, "trap.pct ships a focus-group value — internal only, must be null in seed");
+    need(
+      q.trap.cohortPct === null ||
+        q.trap.cohortPct === undefined ||
+        (typeof q.trap.cohortPct === "number" && q.trap.cohortPct >= 0 && q.trap.cohortPct <= 100),
+      "trap.cohortPct must be null or 0-100",
+    );
     need(typeof q.trap.name === "string" && q.trap.name, "trap.name missing");
     need(INSTINCTS.includes(q.trap.instinct), "trap.instinct bad");
     need(FILTERS.includes(q.trap.filter_broken), "trap.filter_broken bad");
@@ -65,14 +74,17 @@ const broken = JSON.parse(JSON.stringify(seeds[0]));
 delete broken.trap.filter_broken;
 if (validate(broken).length === 0) fail("validator accepted a question missing trap.filter_broken");
 
-// — 2. stat-provenance: rendered pick rates must carry the tested-form qualifier
+// — 2. stat-provenance: cohort is the only displayable pick rate, with the tested-form qualifier
 const zones = readFileSync("src/funnel/zones.ts", "utf-8");
-if (!/pickRatePhrase[\s\S]{0,200}tested form/.test(zones)) {
-  fail("pickRatePhrase in zones.ts lost the \"tested form\" qualifier");
+if (!/cohortPhrase[\s\S]{0,300}tested form/.test(zones)) {
+  fail("cohortPhrase in zones.ts lost the \"tested form\" qualifier");
 }
 const mini = readFileSync("src/components/MiniDiagnostic.tsx", "utf-8");
-if (mini.includes("FALL HERE") && !mini.includes("pickRatePhrase")) {
-  fail("MiniDiagnostic renders a pick-rate stat without the pickRatePhrase qualifier");
+if (/trap\.pct/.test(mini)) {
+  fail("MiniDiagnostic references trap.pct — focus-group data is internal only; use trap.cohortPct via cohortPhrase");
+}
+if (/FALL HERE/.test(mini)) {
+  fail("MiniDiagnostic renders a hardcoded pick-rate stat — pick rates must flow through cohortPhrase");
 }
 
 // — 3. curated diagnostic files exist

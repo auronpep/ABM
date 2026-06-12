@@ -47,9 +47,12 @@ An item is ingest-ready when it has all of:
       columns, personal trap profile)
 - [ ] **Gold Key** (rule ref) + **Silver Key** (mechanic) — powers `KeyCard` in forensics
 - [ ] **Difficulty band** — Core Diagnostic / Trap / Elite Discriminator
-- [ ] **Focus-group data** (`pct` per choice + `sampleSize`) — *if available.* Items
-      without it can ship; the ForensicsPanel focus-group line renders only when present.
-      Track which batches have it so we know coverage.
+- [ ] **Focus-group data** (`pct` per choice + `sampleSize`) — *if available, INTERNAL
+      ONLY.* Founder decision 2026-06-11: focus-group pick rates are never displayed
+      publicly. They feed ranking/calibration (zone severity, trap attractiveness) on the
+      API side. The public UI has a **cohort placeholder slot** instead (`cohortPct`,
+      null for now) that will display real cohort / historical-cohort pick rates once
+      enough student attempts accumulate.
 
 Items missing only focus-group data → ingest now. Items missing per-choice whys, tension
 slug, or trap tags → hold; they degrade the core loop.
@@ -67,7 +70,8 @@ not code-starved. Volume converts them from stubs to real pages.
 | Volume per subject (≈30+ each) | Diagnostic upgrade beyond the curated 18; better zone detection | Phase 2–3 |
 | Tension-linked items at volume | Prescribed drills + red-zone ranking become meaningful (ranking needs enough misses per zone) | Phase 3 |
 | Trap-dimension tags populated | `PersonalMatrix` heat grid has real columns/heat | Phase 4 |
-| Focus-group pct + sampleSize | ForensicsPanel "N% chose this" line — the core differentiator | Phase 2+ |
+| Focus-group pct + sampleSize (internal) | Zone ranking + trap-attractiveness weighting; NOT displayed | Phase 2+ |
+| Real student attempts at volume | Cohort pick rates fill the ForensicsPanel cohort slot ("N% of past cohorts chose this") | Post-launch |
 | Per-lesson drill items | `#/program` TEAR lessons with embedded graded drills | Phase 3 |
 
 **Recommended ingestion order:** Evidence first (taxonomy is deepest there — 44 tensions
@@ -83,7 +87,7 @@ After each batch loads:
 2. `GET /api/tensions/{slug}/questions` — spot-check 2–3 items end-to-end (stem, choices,
    correct letter)
 3. `GET /api/attempts/{id}/forensics` on a test attempt — per-choice whys + keys render;
-   focus-group line present/absent as expected
+   no focus-group numbers anywhere in the public payload; cohort slot empty (null) as expected
 4. `GET /api/traps` — trap pull-counts move
 5. Run the full diagnostic once on staging — no item renders with a missing field
 

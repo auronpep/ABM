@@ -133,9 +133,10 @@ Extract to a single shared component.
 // Full TEAR forensics reveal after an attempt.
 // Maps to the 4 TEAR stages:
 //   1. Test — already happened (shows the question result)
-//   2. Expose — names the counterfeit and why it pulled, INCLUDING the focus-group
-//      comparison: "N% chose this answer" per choice (from the forensics payload).
-//      This was the old site's core differentiator — do not omit it.
+//   2. Expose — names the counterfeit and why it pulled. Reserve a cohort-stats slot
+//      here ("N% of past cohorts chose this answer"): renders ONLY when cohortPct is
+//      non-null. Focus-group pick rates are INTERNAL ONLY (ranking/calibration) and
+//      must never be displayed; the slot waits for real cohort / historical-cohort data.
 //   3. Apply — shows the relevant Gold or Silver Key
 //   4. Repair — confirms the pattern is logged; shows next action
 //
