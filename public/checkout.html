@@ -672,7 +672,7 @@
       const due = plan === "payInFull" ? PRICING.flagshipPrice : PRICING.planStandard.d1;
       const base = PRICING.flagshipPrice;
 
-      const canSubmit = terms && state !== "loading";
+      const canSubmit = state !== "loading";
 
       // Live payment plumbing: the existing barmatrix-api Stripe Checkout
       // endpoint. Card details are collected on Stripe's hosted page only.
@@ -680,7 +680,12 @@
 
       const submit = async (e) => {
         e?.preventDefault?.();
-        if (!canSubmit) return;
+        if (state === "loading") return;
+        if (!terms) {
+          setError("One step first — check the box above to accept the terms, then Stripe's secure payment page opens.");
+          document.getElementById("terms")?.focus();
+          return;
+        }
         setError(null);
         setState("loading");
         try {
@@ -828,7 +833,7 @@
                       moment you're enrolled.
                     </p>
                     <div className="terms-row">
-                      <input type="checkbox" id="terms" checked={terms} onChange={(e) => setTerms(e.target.checked)} />
+                      <input type="checkbox" id="terms" checked={terms} onChange={(e) => { setTerms(e.target.checked); if (e.target.checked) setError(null); }} />
                       <label htmlFor="terms" className="text">
                         I have read and accept the <a href="/help.html">Terms of Service</a>, <a href="/help.html">Privacy Policy</a>, and <a href="/help.html">Refund Policy</a> (7-day no-questions refund window). I understand BarMatrix is multiple-choice only and does not guarantee any exam outcome.
                       </label>
