@@ -1,11 +1,11 @@
 // #/sign-in and #/sign-up — Clerk's modal flows over the chromeless shell.
 // Modals are router-agnostic (no path/hash routing to fight our hash router).
-// After auth, both land on /#/welcome: the next-action ladder takes over —
-// a fresh account with no map is routed into the diagnostic as setup, so
-// signing up never requires having taken it.
+// After auth, return to the route that asked for auth. Checkout and login set
+// this explicitly; otherwise the welcome next-action ladder takes over.
 import { useEffect } from "react";
 import { useClerk, useUser } from "@clerk/clerk-react";
 import { brand } from "../content/brand.ts";
+import { authRedirectUrl, rememberAuthIntent, resolveAuthReturnRoute } from "../lib/authFlow.ts";
 import type { PageProps } from "../types.ts";
 
 const clerkAppearance = {
@@ -16,8 +16,6 @@ const clerkAppearance = {
   },
 };
 
-const AFTER_AUTH = "/#/welcome";
-
 function AuthShell({
   navigate,
   mode,
@@ -26,11 +24,13 @@ function AuthShell({
   const { isLoaded, isSignedIn } = useUser();
 
   const open = () => {
+    const intent = rememberAuthIntent(mode);
+    const afterAuth = authRedirectUrl(intent);
     const options = {
       appearance: clerkAppearance,
-      forceRedirectUrl: AFTER_AUTH,
-      signInForceRedirectUrl: AFTER_AUTH,
-      signUpForceRedirectUrl: AFTER_AUTH,
+      forceRedirectUrl: afterAuth,
+      signInForceRedirectUrl: afterAuth,
+      signUpForceRedirectUrl: afterAuth,
     };
     if (mode === "sign-in") clerk.openSignIn(options);
     else clerk.openSignUp(options);
@@ -39,7 +39,7 @@ function AuthShell({
   useEffect(() => {
     if (!isLoaded) return;
     if (isSignedIn) {
-      navigate("welcome");
+      navigate(resolveAuthReturnRoute());
       return;
     }
     open();
@@ -71,14 +71,14 @@ function AuthShell({
       <p className="mono" style={{ fontSize: 11, letterSpacing: "0.08em", color: "var(--muted)", marginBottom: 28 }}>
         {mode === "sign-in"
           ? "Use the same email you enrolled with — that is how your seat is recognized."
-          : "Enrolled already? Sign up with your checkout email and your seat follows you."}
+          : "Use the exact email from checkout. That is how your seat and dashboard are recognized."}
       </p>
       <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
         <button className="btn btn-lg red" onClick={open}>
           {mode === "sign-in" ? "Sign in" : "Create your account"} <span className="arrow">→</span>
         </button>
-        <button className="btn btn-lg ghost" onClick={() => navigate("welcome")}>
-          Continue without an account
+        <button className="btn btn-lg ghost" onClick={() => navigate(resolveAuthReturnRoute())}>
+          Continue without switching account
         </button>
       </div>
     </div>

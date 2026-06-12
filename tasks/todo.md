@@ -4,6 +4,35 @@ Branch: `codex/site-audit-fixes`
 Baseline tag: `baseline-pre-codex-audit-2026-06-12`
 Target repo: `C:\ABM`
 
+## 2026-06-12 Login / Checkout Debug
+
+Root-cause hypothesis:
+- Auth currently forces every sign-in/sign-up result to `/#/welcome`, so a tester bouncing from checkout, pricing, practice, or login loses intent.
+- Checkout currently returns Stripe success to `/?purchase=success#/welcome`, but `public/checkout.html` defines a success screen without rendering it and the SPA does not surface purchase-success context.
+- Static checkout/login links do not consistently preserve plan, source, or next step, making "I signed up and can't find it" plausible when a buyer uses a different email or returns to a form.
+
+Enhancement checklist:
+- [x] Add a focused regression script for auth/checkout flow markers.
+- [x] Preserve auth return intent from query/hash/local storage.
+- [x] Use the preserved auth intent after Clerk sign-in/sign-up instead of hard-coding welcome.
+- [x] Make checkout URLs carry selected plan, source, and after-checkout route.
+- [x] Route Pricing enrollment through the same checkout URL builder.
+- [x] Route diagnostic checkout bridge through the same checkout URL builder.
+- [x] Render the checkout success screen on purchase-success returns.
+- [x] Change Stripe `success_url` to return to `checkout.html` first so success feedback is visible.
+- [x] Preserve cancel return plan/source on checkout cancellation.
+- [x] Add a post-purchase sign-up CTA that clearly says to use the checkout email.
+- [x] Add purchase-aware guidance to Welcome for signed-out users.
+- [x] Fix Nav/Footer account links to use the SPA auth routes consistently.
+- [x] Update login page copy/links to preserve dashboard intent.
+- [x] Build and smoke-test login, signup, checkout success, cancelled checkout, pricing, diagnostic bridge, and welcome.
+
+Verification log:
+- [x] Red regression observed: `node scripts/auth_checkout_flow_test.mjs` fails on missing `src/lib/authFlow.ts`.
+- [x] Regression script passes: `auth_checkout_flow_test: 24 checks passed`.
+- [x] `npm run build` passes.
+- [x] Local browser smoke passes on `http://127.0.0.1:4173`: home, pricing, checkout success, cancelled checkout, login, sign-in, legacy `?purchase=success#/welcome`, pricing -> checkout -> browser back, and checkout-success -> sign-up. Expected local Clerk production-domain console errors still appear on localhost.
+
 ## Phase Checklist
 
 - [x] Phase 1: Run build pipeline steps individually and capture output.

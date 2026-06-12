@@ -1,4 +1,4 @@
-import { SignedIn } from "@clerk/clerk-react";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
 import { brand, nav } from "../content/brand.ts";
 import type { PageProps, Route } from "../types.ts";
 
@@ -26,20 +26,19 @@ export function Nav({ navigate, route }: PageProps & { route: Route }) {
                 {l.label}
               </button>
             ))}
-            <SignedIn>
-              <button
-                className={route === "practice" ? "active" : ""}
-                onClick={() => navigate("practice")}
-              >
-                Practice
-              </button>
-            </SignedIn>
           </div>
 
           <div className="nav-cta">
-            <a className="btn ghost btn-sm" href="/login.html">
-              Sign in
-            </a>
+            <SignedOut>
+              <a className="btn ghost btn-sm" href="/#/sign-in?after=welcome&source=nav">
+                Sign in
+              </a>
+            </SignedOut>
+            <SignedIn>
+              <button className="btn ghost btn-sm" onClick={() => navigate("dashboard")}>
+                Dashboard
+              </button>
+            </SignedIn>
             <button className="btn red btn-sm" onClick={() => navigate("diagnostic")}>
               {nav.ctaPrimary}
             </button>

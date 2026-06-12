@@ -1,6 +1,7 @@
 import { pricing } from "../content/pricing.ts";
 import { scripture } from "../content/scripture.ts";
 import { ScriptureInline } from "../components/ScriptureBand.tsx";
+import { checkoutUrl } from "../lib/checkoutFlow.ts";
 import type { PageProps } from "../types.ts";
 
 export function Pricing({ navigate }: PageProps) {
@@ -50,7 +51,7 @@ export function Pricing({ navigate }: PageProps) {
               </button>
               <a
                 className="mono"
-                href="/checkout.html"
+                href={checkoutUrl({ plan: "full", source: "pricing", after: "sign-up" })}
                 style={{ display: "block", textAlign: "center", marginTop: 16, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--muted-light)" }}
               >
                 Ready to enroll? →

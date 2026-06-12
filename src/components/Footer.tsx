@@ -49,8 +49,8 @@ export function Footer({ navigate }: PageProps) {
           <div>
             <h5>Account</h5>
             <ul>
-              <li><a href="/login.html">Sign in</a></li>
-              <li><a href="/checkout.html">Enroll</a></li>
+              <li><a href="/#/sign-in?after=welcome&source=footer">Sign in</a></li>
+              <li><a href="/checkout.html?plan=full&source=footer&after=sign-up">Enroll</a></li>
             </ul>
           </div>
         </div>

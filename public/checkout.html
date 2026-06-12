@@ -662,12 +662,17 @@
     };
 
     const Checkout = () => {
-      const initialPlan = new URLSearchParams(window.location.search).get("plan") === "split" ? "plan" : "payInFull";
+      const search = new URLSearchParams(window.location.search);
+      const initialPlan = search.get("plan") === "split" ? "plan" : "payInFull";
+      const source = search.get("source") || "checkout";
+      const after = search.get("after") || "sign-up";
+      const purchaseSuccess = search.get("purchase") === "success";
+      const previewOrigin = !/^https:\/\/(www\.)?barmatrix\.app$/i.test(window.location.origin);
       const [plan, setPlan] = React.useState(initialPlan); // payInFull | plan
       const [terms, setTerms] = React.useState(false);
       const [state, setState] = React.useState("form"); // form | loading
       const [error, setError] = React.useState(null);
-      const cancelled = new URLSearchParams(window.location.search).get("cancelled") === "1";
+      const cancelled = search.get("cancelled") === "1";
 
       const due = plan === "payInFull" ? PRICING.flagshipPrice : PRICING.planStandard.d1;
       const base = PRICING.flagshipPrice;
@@ -677,6 +682,26 @@
       // Live payment plumbing: the existing barmatrix-api Stripe Checkout
       // endpoint. Card details are collected on Stripe's hosted page only.
       const API_URL = "https://api.barmatrix.app";
+
+      const diagnosticId = (() => {
+        try {
+          return search.get("diagnostic_id") || localStorage.getItem("bm_diagnostic_id") || "";
+        } catch {
+          return search.get("diagnostic_id") || "";
+        }
+      })();
+
+      React.useEffect(() => {
+        if (!purchaseSuccess) return;
+        try {
+          localStorage.setItem("bm_checkout_intent_v1", JSON.stringify({
+            plan: plan === "plan" ? "split" : "full",
+            source: source || "checkout_success",
+            after: "sign-up",
+            ts: Date.now(),
+          }));
+        } catch {}
+      }, []);
 
       const submit = async (e) => {
         e?.preventDefault?.();
@@ -694,8 +719,9 @@
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               payment_plan: plan === "plan" ? "two_pay_500_499" : "pay_in_full",
-              success_url: window.location.origin + "/?purchase=success#/welcome",
-              cancel_url: window.location.origin + "/checkout.html?cancelled=1&plan=" + (plan === "plan" ? "split" : "full"),
+              success_url: window.location.origin + "/checkout.html?purchase=success&plan=" + (plan === "plan" ? "split" : "full") + "&source=" + encodeURIComponent(source || "checkout") + "&after=sign-up",
+              cancel_url: window.location.origin + "/checkout.html?cancelled=1&plan=" + (plan === "plan" ? "split" : "full") + "&source=" + encodeURIComponent(source || "checkout") + "&after=" + encodeURIComponent(after || "sign-up"),
+              ...(diagnosticId ? { diagnostic_id: diagnosticId } : {}),
             }),
           });
           if (res.status === 409) {
@@ -712,6 +738,17 @@
           setState("form");
         }
       };
+
+      if (purchaseSuccess) {
+        return (
+          <SuccessScreen
+            email={search.get("email") || ""}
+            due={due}
+            total={base}
+            plan={plan}
+          />
+        );
+      }
 
       return (
         <React.Fragment>
@@ -832,6 +869,11 @@
                       entered there, never on this site. You'll be brought back here the
                       moment you're enrolled.
                     </p>
+                    {previewOrigin && (
+                      <p style={{ fontFamily: "var(--mono)", fontSize: 11, letterSpacing: "0.05em", color: "var(--muted)", lineHeight: 1.6, marginBottom: 18 }}>
+                        Live payment sessions can only be opened from barmatrix.app. Local and preview testers can review this form, cancellation, and success-return UX here.
+                      </p>
+                    )}
                     <div className="terms-row">
                       <input type="checkbox" id="terms" checked={terms} onChange={(e) => { setTerms(e.target.checked); if (e.target.checked) setError(null); }} />
                       <label htmlFor="terms" className="text">
@@ -872,7 +914,7 @@
       );
     };
 
-    const SuccessScreen = ({ email, name, due, total, plan }) => {
+    const SuccessScreen = ({ email, due, total, plan }) => {
       const orderId = "BMX-" + Math.random().toString(36).slice(2, 8).toUpperCase();
       const today = new Date().toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
       return (
@@ -886,7 +928,7 @@
               <div className="eyebrow">▌ WELCOME TO BARMATRIX · JULY 2026 CYCLE</div>
               <h1>You're <em>in.</em></h1>
               <p className="lede">
-                A receipt is on its way to <strong>{email || "your inbox"}</strong>. Your dashboard is live. Before you do anything else, take the 12-question diagnostic — that's how we calibrate your first Red-Zone Drill assignments.
+                A receipt is on its way to <strong>{email || "your inbox"}</strong>. Your seat is active. Create or sign into your BarMatrix account with the same email you used at checkout so your dashboard can find the purchase.
               </p>
 
               <div className="receipt-grid">
@@ -917,20 +959,28 @@
               </div>
 
               <div className="next-steps">
-                <div className="label">▌ YOUR NEXT 2 STEPS</div>
-                <a href="/#/diagnostic" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
+                <div className="label">▌ YOUR NEXT STEPS</div>
+                <a href="/#/sign-up?after=welcome&source=checkout_success" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
                   <span className="num">01</span>
                   <div>
+                    <div className="name">Create your account with the checkout email</div>
+                    <div className="sub">THIS IS HOW YOUR SEAT IS RECOGNIZED</div>
+                  </div>
+                  <span className="arrow">→</span>
+                </a>
+                <a href="/#/diagnostic" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
+                  <span className="num">02</span>
+                  <div>
                     <div className="name">Take the diagnostic</div>
-                    <div className="sub">~ 12 MIN · BUILDS YOUR RED-ZONE MAP · DO THIS FIRST</div>
+                    <div className="sub">~ 12 MIN · BUILDS YOUR RED-ZONE MAP</div>
                   </div>
                   <span className="arrow">→</span>
                 </a>
                 <a href="/#/welcome" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
-                  <span className="num">02</span>
+                  <span className="num">03</span>
                   <div>
-                    <div className="name">Start the first repair</div>
-                    <div className="sub">▸ YOUR #1 RED ZONE · DRILLS → TIMED RETEST → REPAIR</div>
+                    <div className="name">Open your dashboard</div>
+                    <div className="sub">YOUR NEXT ACTION LIVES HERE</div>
                   </div>
                   <span className="arrow">→</span>
                 </a>

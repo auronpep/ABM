@@ -2,6 +2,7 @@
 // Auto-runs the forensic analysis 800ms after load; user can replay.
 import { useEffect, useMemo, useRef, useState } from "react";
 import { synthesizeZones } from "../funnel/zones.ts";
+import { checkoutUrl, rememberCheckoutIntent } from "../lib/checkoutFlow.ts";
 import { track } from "../lib/events.ts";
 import type { MissRecord } from "../funnel/types.ts";
 
@@ -11,10 +12,6 @@ interface RedZoneRevealProps {
 }
 
 const STAGE_MS = [800, 1500, 2200, 2900, 3600];
-
-function checkoutUrl(plan: "full" | "split"): string {
-  return `/checkout.html?plan=${plan}`;
-}
 
 export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
   const reduced = useMemo(
@@ -48,7 +45,8 @@ export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
 
   const startCheckout = (plan: "full" | "split") => {
     track("checkout_start", { plan, red_zones: zones.map((z) => z.name) });
-    window.location.href = checkoutUrl(plan);
+    rememberCheckoutIntent({ plan, source: "diagnostic", after: "sign-up" });
+    window.location.href = checkoutUrl({ plan, source: "diagnostic", after: "sign-up" });
   };
 
   return (

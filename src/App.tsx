@@ -21,6 +21,7 @@ const ROUTES: Route[] = [
   "diagnostic",
   "drills",
   "practice",
+  "dashboard",
   "welcome",
   "repair",
   "prayer-chain",
@@ -55,6 +56,7 @@ export function App() {
 
   const chromeless =
     route === "diagnostic" ||
+    route === "dashboard" ||
     route === "welcome" ||
     route === "repair" ||
     route === "sign-in" ||
@@ -69,6 +71,7 @@ export function App() {
       {route === "diagnostic" && <Diagnostic navigate={navigate} />}
       {route === "drills" && <Drill navigate={navigate} />}
       {route === "practice" && <Practice navigate={navigate} />}
+      {route === "dashboard" && <Welcome navigate={navigate} mode="dashboard" />}
       {route === "welcome" && <Welcome navigate={navigate} />}
       {route === "repair" && <Repair navigate={navigate} />}
       {route === "prayer-chain" && <PrayerChain navigate={navigate} />}

@@ -5,6 +5,7 @@ export type Route =
   | "diagnostic"
   | "drills"
   | "practice"
+  | "dashboard"
   | "welcome"
   | "repair"
   | "prayer-chain"

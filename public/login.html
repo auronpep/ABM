@@ -47,10 +47,10 @@ body{background:var(--bg);min-height:100vh;display:grid;place-items:center;paddi
   <div class="login-right">
     <h2>Open your dashboard.</h2>
     <p class="sub">Sign in and your Red-Zone map and repair progress follow you — any device, any browser.</p>
-    <a class="login-btn" href="/#/sign-in">Sign In →</a>
-    <a class="login-btn" style="background:var(--paper);color:var(--ink);border-color:var(--ink);margin-top:12px" href="/#/sign-up">Create Your Account</a>
-    <div class="login-note"><div class="lbl">▌ ALREADY ENROLLED?</div>Create your account with the same email you used at checkout — that is how your seat is recognized. Working in this browser without an account also works: <a href="/#/welcome">open your dashboard directly</a>.</div>
-    <div class="foot-link">Not enrolled yet? <a href="/#/diagnostic">Take the free diagnostic</a> · or <a href="checkout.html">enroll</a></div>
+    <a class="login-btn" href="/#/sign-in?after=welcome&source=login">Sign In →</a>
+    <a class="login-btn" style="background:var(--paper);color:var(--ink);border-color:var(--ink);margin-top:12px" href="/#/sign-up?after=welcome&source=login">Create Your Account</a>
+    <div class="login-note"><div class="lbl">▌ ALREADY ENROLLED?</div>Create your account with the same email you used at checkout — that is how your seat is recognized. If the dashboard looks empty, check that the account email matches your Stripe receipt.</div>
+    <div class="foot-link">Not enrolled yet? <a href="/#/diagnostic">Take the free diagnostic</a> · or <a href="checkout.html?plan=full&source=login&after=sign-up">enroll</a></div>
   </div>
 </div>
 </body></html>
