@@ -148,3 +148,23 @@ Verification log:
 ## PR
 
 - Draft PR: https://github.com/auronpep/ABM/pull/1
+
+## 2026-06-12 Core Component Spec Implementation
+
+Source spec: `COMPONENTS.md` / attached `pasted-text.txt`
+Plan: `docs/superpowers/plans/2026-06-12-core-components.md`
+
+Checklist:
+- [x] Phase 0: Add failing regression harness for the component spec.
+- [ ] Phase 1: Structural scaffolding components and `src/lib/subjects.ts`.
+- [ ] Phase 2: Shared question/drill components.
+- [ ] Phase 3: Tensions and traps components/routes.
+- [ ] Phase 4: Dashboard/enrolled components/routes.
+- [ ] Phase 5: Account components and API/helper libs.
+- [ ] Final verification: regression script, TypeScript/build, and route smoke.
+
+Verification log:
+- [x] Red regression observed before implementation: `node scripts/core_components_check.mjs` fails with 72 missing file/route checks.
+
+Review:
+- Pending implementation.

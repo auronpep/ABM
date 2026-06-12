@@ -64,6 +64,8 @@ before rendering content.
 | `#/repair` | `Repair.tsx` | Built. Repair loop + retest. Chromeless. |
 | `#/prayer-chain` | `PrayerChain.tsx` | Built. |
 | `#/sign-in` / `#/sign-up` | `Auth.tsx` | Built. Clerk components. |
+| `#/practice` | `Practice.tsx` | Built (2026-06-12). Practice runner with per-question interaction recorder + forensics dwell telemetry. |
+| `#/dashboard` | `Welcome.tsx` (`mode="dashboard"`) | Built (2026-06-12) as an interim shell. The full §3B dashboard (DayPlanCard, RepairTarget, SubjectMasteryPanel, RecentAttempts) replaces this. |
 
 ### 3B. Required — not yet built
 
@@ -98,7 +100,7 @@ throughout — maps and mirrors, not scoreboards.
 
 | Route | Purpose | Maps from old site |
 |---|---|---|
-| `#/dashboard` | Student home — day plan, progress, assigned drills | `/dashboard` |
+| `#/dashboard` | Student home — day plan, progress, assigned drills. (Interim shell live since 2026-06-12 — Welcome in dashboard mode; this row is the full build.) | `/dashboard` |
 | `#/program` | TEAR program hub — current lesson + next repair target | `/foundations` → re-framed as TEAR |
 | `#/program/:slug` | TEAR lesson content + embedded drills | `/foundations/[slug]` |
 | `#/red-zones` | Weak-zone library — the student's repair map | `/red-zones` |

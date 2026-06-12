@@ -1,8 +1,10 @@
 # INGESTION — Question Bank Scale-Up Notes
 
-*Written 2026-06-11. Companion to REQUIREMENTS.md / COMPONENTS.md. Covers how the
-hundreds of near-ready questions and items get into the database, and which redesign
-components a larger bank unlocks.*
+*Written 2026-06-11, updated 2026-06-12. Companion to REQUIREMENTS.md / COMPONENTS.md.
+Covers how the near-ready questions and items get into the database, and which redesign
+components a larger bank unlocks. Status 2026-06-12: bank at 3,792 questions after CQ
+batch 1 (106 questions) landed in prod; generator + packs live in `barmatrix-api`;
+transform pipeline + QA in `C:\CCG` (spec v2, `Validate-CQ.ps1`, cq-transform-qa skill).*
 
 ---
 
@@ -71,7 +73,7 @@ not code-starved. Volume converts them from stubs to real pages.
 | Tension-linked items at volume | Prescribed drills + red-zone ranking become meaningful (ranking needs enough misses per zone) | Phase 3 |
 | Trap-dimension tags populated | `PersonalMatrix` heat grid has real columns/heat | Phase 4 |
 | Focus-group pct + sampleSize (internal) | Zone ranking + trap-attractiveness weighting; NOT displayed | Phase 2+ |
-| Real student attempts at volume | Cohort pick rates fill the ForensicsPanel cohort slot ("N% of past cohorts chose this") | Post-launch |
+| Real student attempts at volume | Cohort pick rates fill the ForensicsPanel cohort slot ("N% of past cohorts chose this"). The collection side shipped 2026-06-12: per-question interaction recorder + forensics dwell telemetry on the practice runner. Aggregation into `cohortPct` is the remaining step. | Post-launch |
 | Per-lesson drill items | `#/program` TEAR lessons with embedded graded drills | Phase 3 |
 
 **Recommended ingestion order:** Evidence first (taxonomy is deepest there — 44 tensions
