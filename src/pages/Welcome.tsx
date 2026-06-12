@@ -144,6 +144,7 @@ function AccountRow({ navigate }: PageProps) {
 }
 
 export function Welcome({ navigate, mode = "welcome" }: PageProps & { mode?: WelcomeMode }) {
+  const { isLoaded, isSignedIn } = useAuth();
   const reduced = useMemo(
     () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     [],
@@ -277,21 +278,14 @@ export function Welcome({ navigate, mode = "welcome" }: PageProps & { mode?: Wel
     </div>
   );
 
-  if (mode === "dashboard") {
-    return (
-      <>
-        <SignedIn>{shell}</SignedIn>
-        <SignedOut>
-          <DashboardAuthGate navigate={navigate} />
-        </SignedOut>
-      </>
-    );
+  if (mode === "dashboard" && !isSignedIn) {
+    return <DashboardAuthGate checking={!isLoaded} navigate={navigate} />;
   }
 
   return shell;
 }
 
-function DashboardAuthGate({ navigate }: PageProps) {
+function DashboardAuthGate({ checking, navigate }: PageProps & { checking: boolean }) {
   return (
     <div className="welcome-wrap">
       <div className="brand" style={{ marginBottom: 40, cursor: "pointer" }} onClick={() => navigate("home")}>
@@ -303,7 +297,7 @@ function DashboardAuthGate({ navigate }: PageProps) {
       </div>
       <h1 className="welcome-in">{DASHBOARD_COPY.authTitle}</h1>
       <p className="body-lg" style={{ maxWidth: "44ch", marginBottom: 24 }}>
-        {DASHBOARD_COPY.authBody}
+        {checking ? "Checking dashboard access…" : DASHBOARD_COPY.authBody}
       </p>
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
         <button className="btn red btn-lg" onClick={() => navigate("sign-in")}>
