@@ -202,13 +202,13 @@ export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
               </button>
             </div>
             <div className="trust-block">
-              <p>Built by a California attorney. Every question attorney-reviewed before it reaches you.</p>
               <p>You&rsquo;ve already seen the method work — it just read your answers back to you.</p>
+              <p>The verdict above isn&rsquo;t a guess. It was built from your own answers, trap by trap.</p>
               <p>The diagnostic was free because the proof should come before the price.</p>
               <p>
-                <a href="/help.html" style={{ textDecoration: "underline" }}>Refund &amp; dispute policy</a> ·{" "}
-                <a href="/help.html" style={{ textDecoration: "underline" }}>Privacy</a> ·{" "}
-                <a href="/help.html" style={{ textDecoration: "underline" }}>Terms</a>
+                <a href="/refund.html" style={{ textDecoration: "underline" }}>Refund &amp; dispute policy</a> ·{" "}
+                <a href="/privacy.html" style={{ textDecoration: "underline" }}>Privacy</a> ·{" "}
+                <a href="/terms.html" style={{ textDecoration: "underline" }}>Terms</a>
               </p>
             </div>
           </div>

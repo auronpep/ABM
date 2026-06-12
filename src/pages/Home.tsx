@@ -90,21 +90,21 @@ export function Home({ navigate }: PageProps) {
         </div>
       </section>
 
-      {/* ============ FOUNDER ============ */}
+      {/* ============ PROOF BEFORE PRICE ============ */}
       <section className="section alt">
         <div className="container">
           <div className="section-rule">
-            <span className="label">▌ The Builder · 03</span>
+            <span className="label">▌ Proof Before Price · 03</span>
           </div>
           <div className="two-col" style={{ alignItems: "start" }}>
             <h2 className="display display-md" style={{ margin: 0, maxWidth: "16ch" }}>
-              Built by a California attorney with Wheaton roots.
+              The proof comes before the price.
             </h2>
             <div>
               <p className="body-lg" style={{ marginTop: 8 }}>
-                Every question is attorney-reviewed before it reaches you. The diagnostic is
-                free because the proof should come before the price: you see the method read
-                your own answers back to you before anyone asks you to pay.
+                The diagnostic is free because the method should prove itself first: you see
+                it read your own answers back to you — naming the exact traps you fell for —
+                before anyone asks you to pay.
               </p>
               <p className="mono" style={{ fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--muted)", marginTop: 18 }}>
                 <a href="/help.html">Questions? Read the FAQ →</a>

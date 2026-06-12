@@ -22,6 +22,19 @@ Operating rules derived from it (also saved to memory `founder-voice-no-crutches
 
 ---
 
+## ⚖️ ATTORNEY DIRECTIVE (counsel, 2026-06-11 — added launch night, overrides §A1's "defensible to keep" note)
+
+> Counsel instructed us to limit unnecessary legal liability. This is an **educational study site**. We are **strictly prohibited from mentioning anything about attorney review of questions, drills, or any content** on the live site.
+
+Operating rules:
+- **Zero attorney-review claims anywhere on the live site** — no "attorney-reviewed," no "reviewed by an attorney within 48 hours," no "written and attorney-reviewed by our team." This includes FAQ/help answers, emails, checkout, funnel trust blocks, and program copy.
+- **"Attorney-grade" product-standard phrases are also out.** The A1 note above said they were "defensible to keep" — counsel's directive supersedes that. Recast toward results ("the legal mechanics are exactly what the bar tests").
+- The voice-law distinction stands: "attorney" inside question *fact patterns* (qdata JSON, seed questions) is substantive educational content — KEEP.
+- Sweep: `grep -rniE "attorney" index.html src public --include="*.html" --include="*.ts*" | grep -vi qdata` must return only fact-pattern/content uses (or nothing user-facing).
+- This conveniently merges with the voice law: removing attorney-review copy was already required as credibility-crutch removal; counsel's directive makes it a hard legal prohibition, not a style choice.
+
+---
+
 ## WORKSTREAM A — exact change list (do these, then deploy)
 
 ### A1. Remove the Builder/founder section

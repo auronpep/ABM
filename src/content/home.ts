@@ -17,7 +17,7 @@ export const tearMethod = {
     {
       glyph: "A",
       title: "Apply the rule",
-      body: "Return to the actual governing rule, before emotion, familiarity, or moral weight takes over. This is the attorney-grade step.",
+      body: "Return to the actual governing rule, before emotion, familiarity, or moral weight takes over. This is the step that wins the point.",
     },
     {
       glyph: "R",
@@ -40,7 +40,7 @@ export const productSystem = {
 
 export const worldBuilding = {
   eyebrow: "Built into the question world",
-  headline: "Familiar Christian life. Attorney-grade law.",
+  headline: "Familiar Christian life. The law the bar actually tests.",
   body: "We set the fact patterns in the world you actually live in, featuring pastors, bookstores, Bible studies, and congregations. The names are always protagonists or neutral. The legal mechanics are exactly what the bar tests. The faith is substantive, not a verse pasted in the corner.",
   scenes: [
     {
@@ -67,7 +67,7 @@ export const whoItsFor = {
   items: [
     "You are tired of narrowing it to two answers and trusting the wrong one.",
     "You want to know why the tempting answer worked, not just that it was wrong.",
-    "You want attorney-grade MBE preparation that takes your faith seriously.",
+    "You want MBE preparation that finds your red zones and takes your faith seriously.",
     "You believe diligence, wisdom, prayer, and disciplined study belong together.",
     "You need courage for the exam and a focused path for the work.",
     "You are preparing for a profession where truth, judgment, justice, and courage matter.",
