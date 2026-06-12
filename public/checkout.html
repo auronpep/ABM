@@ -665,7 +665,7 @@
       const search = new URLSearchParams(window.location.search);
       const initialPlan = search.get("plan") === "split" ? "plan" : "payInFull";
       const source = search.get("source") || "checkout";
-      const after = search.get("after") || "sign-up";
+      const after = search.get("after") || "dashboard";
       const purchaseSuccess = search.get("purchase") === "success";
       const previewOrigin = !/^https:\/\/(www\.)?barmatrix\.app$/i.test(window.location.origin);
       const [plan, setPlan] = React.useState(initialPlan); // payInFull | plan
@@ -697,7 +697,7 @@
           localStorage.setItem("bm_checkout_intent_v1", JSON.stringify({
             plan: plan === "plan" ? "split" : "full",
             source: source || "checkout_success",
-            after: "sign-up",
+            after: "dashboard",
             ts: Date.now(),
           }));
         } catch {}
@@ -719,8 +719,8 @@
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               payment_plan: plan === "plan" ? "two_pay_500_499" : "pay_in_full",
-              success_url: window.location.origin + "/checkout.html?purchase=success&plan=" + (plan === "plan" ? "split" : "full") + "&source=" + encodeURIComponent(source || "checkout") + "&after=sign-up",
-              cancel_url: window.location.origin + "/checkout.html?cancelled=1&plan=" + (plan === "plan" ? "split" : "full") + "&source=" + encodeURIComponent(source || "checkout") + "&after=" + encodeURIComponent(after || "sign-up"),
+              success_url: window.location.origin + "/checkout/success?plan=" + (plan === "plan" ? "split" : "full") + "&source=" + encodeURIComponent(source || "checkout") + "&after=dashboard",
+              cancel_url: window.location.origin + "/checkout?cancelled=1&plan=" + (plan === "plan" ? "split" : "full") + "&source=" + encodeURIComponent(source || "checkout") + "&after=" + encodeURIComponent(after || "dashboard"),
               ...(diagnosticId ? { diagnostic_id: diagnosticId } : {}),
             }),
           });
@@ -755,7 +755,7 @@
           <div className="co-shell">
             {/* Nav */}
             <nav className="co-nav">
-              <a href="index.html" style={{ textDecoration: "none", color: "inherit" }}>
+              <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
                 <div className="brand">
                   <span className="mark">B</span>
                   <span>BarMatrix<span className="dot"></span></span>
@@ -960,7 +960,7 @@
 
               <div className="next-steps">
                 <div className="label">▌ YOUR NEXT STEPS</div>
-                <a href="/#/sign-up?after=welcome&source=checkout_success" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
+                <a href="/sign-up?after=dashboard&source=checkout_success" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
                   <span className="num">01</span>
                   <div>
                     <div className="name">Create your account with the checkout email</div>
@@ -968,7 +968,7 @@
                   </div>
                   <span className="arrow">→</span>
                 </a>
-                <a href="/#/diagnostic" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
+                <a href="/diagnostic" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
                   <span className="num">02</span>
                   <div>
                     <div className="name">Take the diagnostic</div>
@@ -976,7 +976,7 @@
                   </div>
                   <span className="arrow">→</span>
                 </a>
-                <a href="/#/welcome" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
+                <a href="/dashboard" className="next-step" style={{ textDecoration: "none", color: "inherit" }}>
                   <span className="num">03</span>
                   <div>
                     <div className="name">Open your dashboard</div>

@@ -321,3 +321,19 @@ Metrics:
 Review:
 - The site is not blocked by basic availability or build failure right now. It is blocked by traffic-readiness proof: attribution must survive the LP/static checkout path before broader social or influencer traffic starts.
 - The marketing plan should start narrow and proof-driven. The first social content should sell the diagnostic/repair result, not product size, founder authority, or a generalized bar-prep course.
+
+## 2026-06-12 Launch Checkout Restore
+
+Scope: Preserve the new marketing/sales path while restoring launch-critical old slash URLs for enrollment and post-payment account access.
+
+Checklist:
+- [x] Create rollback checkpoint branch and tag from the exact starting tree.
+- [x] Add production rewrites for `/checkout`, `/checkout/success`, `/diagnostic`, `/pricing`, `/sign-in`, `/sign-up`, `/account`, and `/dashboard`.
+- [x] Teach the app router to render launch-critical slash URLs while preserving hash-route fallbacks.
+- [x] Update checkout success/cancel URLs and success next-step links to slash URLs.
+- [x] Update auth return handling so `/sign-in?after=dashboard` and `/sign-up?after=dashboard` return to the dashboard shell.
+- [x] Run focused checks: contract, drift, TypeScript, build, and route smoke.
+
+Review:
+- Rollback checkpoint branch `codex/launch-checkout-restore` and tag `pre-launch-checkout-restore-2026-06-12` were created before route changes. Because the starting tree was dirty, the tag points to local checkpoint commit `365614e`.
+- Verification passed: `node scripts\contract_check.mjs`, `node scripts\drift_scan.mjs`, `.\node_modules\.bin\tsc.cmd --noEmit`, `npm run build`, and Playwright smoke for `/`, `/diagnostic`, `/pricing`, `/checkout`, `/checkout/success`, `/sign-in`, `/sign-up`, `/account`, `/dashboard`, plus hash fallbacks.

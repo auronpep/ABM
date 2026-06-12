@@ -60,10 +60,30 @@ const ROUTES: Route[] = [
   "account",
 ];
 
-function parseHashRoute(): RouteState {
+const SLASH_ROUTE_MAP: Record<string, Route> = {
+  "": "home",
+  "diagnostic": "diagnostic",
+  "pricing": "pricing",
+  "sign-in": "sign-in",
+  "sign-up": "sign-up",
+  "account": "account",
+  "dashboard": "dashboard",
+};
+
+const SLASH_ROUTES = new Set<Route>(Object.values(SLASH_ROUTE_MAP));
+
+function routeFromPathname(): RouteState | null {
+  const path = window.location.pathname.replace(/^\/+|\/+$/g, "");
+  if (!path && window.location.hash) return null;
+  if (path === "checkout" || path === "checkout/success" || path.endsWith(".html")) return null;
+  const route = SLASH_ROUTE_MAP[path];
+  return route ? { route } : null;
+}
+
+function parseHashRoute(): RouteState | null {
   // Strip query params inside the hash (Clerk appends ?redirect_url=… on auth routes).
   const hash = window.location.hash.replace(/^#\/?/, "").split("?")[0].replace(/^\/+|\/+$/g, "");
-  if (!hash) return { route: "home" };
+  if (!hash) return null;
   const [head, slug] = hash.split("/");
   if (head === "tensions" && slug) return { route: "tensions-detail", slug };
   if (head === "traps" && slug) return { route: "traps-detail", slug };
@@ -73,7 +93,11 @@ function parseHashRoute(): RouteState {
   return (ROUTES as string[]).includes(head) ? { route: head as Route } : { route: "home" };
 }
 
-function hashForRoute(route: Route, slug?: string): string {
+function parseLocationRoute(): RouteState {
+  return routeFromPathname() ?? parseHashRoute() ?? { route: "home" };
+}
+
+function routePath(route: Route, slug?: string): string {
   if (route === "home") return "/";
   if (route === "tensions-detail") return `/tensions/${slug ?? ""}`;
   if (route === "traps-detail") return `/traps/${slug ?? ""}`;
@@ -83,20 +107,50 @@ function hashForRoute(route: Route, slug?: string): string {
   return `/${route}`;
 }
 
+function hrefForRoute(route: Route, slug?: string): string {
+  const path = routePath(route, slug);
+  return SLASH_ROUTES.has(route) ? path : `/#${path}`;
+}
+
+function checkoutRedirectTarget(): string | null {
+  const path = window.location.pathname.replace(/\/+$/g, "") || "/";
+  if (path !== "/checkout" && path !== "/checkout/success") return null;
+  const params = new URLSearchParams(window.location.search);
+  if (path === "/checkout/success") params.set("purchase", "success");
+  const query = params.toString();
+  return `/checkout.html${query ? `?${query}` : ""}`;
+}
+
 export function App() {
-  const [state, setState] = useState<RouteState>(parseHashRoute);
+  const redirect = checkoutRedirectTarget();
+  const [state, setState] = useState<RouteState>(parseLocationRoute);
   const route = state.route;
 
+  useEffect(() => {
+    if (redirect) window.location.replace(redirect);
+  }, [redirect]);
+
+  if (redirect) return null;
+
   const navigate: PageProps["navigate"] = (next, slug) => {
-    window.location.hash = hashForRoute(next, slug);
+    const href = hrefForRoute(next, slug);
+    if (href.startsWith("/#")) {
+      window.location.hash = href.slice(1);
+    } else {
+      window.history.pushState(null, "", href);
+    }
     setState({ route: next, slug });
   };
 
   useEffect(() => {
     captureUtm();
-    const onHashChange = () => setState(parseHashRoute());
-    window.addEventListener("hashchange", onHashChange);
-    return () => window.removeEventListener("hashchange", onHashChange);
+    const onRouteChange = () => setState(parseLocationRoute());
+    window.addEventListener("popstate", onRouteChange);
+    window.addEventListener("hashchange", onRouteChange);
+    return () => {
+      window.removeEventListener("popstate", onRouteChange);
+      window.removeEventListener("hashchange", onRouteChange);
+    };
   }, []);
 
   useEffect(() => {

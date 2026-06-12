@@ -8,7 +8,7 @@ import "./styles/global.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ClerkProvider publishableKey={CLERK_PUBLISHABLE_KEY} signInUrl="/#/sign-in" signUpUrl="/#/sign-up">
+    <ClerkProvider publishableKey={CLERK_PUBLISHABLE_KEY} signInUrl="/sign-in" signUpUrl="/sign-up">
       <SyncRoot>
         <App />
       </SyncRoot>

@@ -30,7 +30,7 @@ export function Nav({ navigate, route }: PageProps & { route: Route }) {
 
           <div className="nav-cta">
             <SignedOut>
-              <a className="btn ghost btn-sm" href="/#/sign-in?after=welcome&source=nav">
+              <a className="btn ghost btn-sm" href="/sign-in?after=dashboard&source=nav">
                 Sign in
               </a>
             </SignedOut>

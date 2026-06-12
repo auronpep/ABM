@@ -16,7 +16,7 @@ function SignInPrompt() {
       <div className="eyebrow-red">▌ Account Required</div>
       <h1 className="display display-md">Sign in to continue.</h1>
       <p className="body-lg">This page follows your enrolled work and needs your account session.</p>
-      <a className="btn red btn-lg" href="/#/sign-in">
+      <a className="btn red btn-lg" href="/sign-in?after=dashboard&source=guard">
         Sign in <span className="arrow">→</span>
       </a>
     </div>
@@ -29,7 +29,7 @@ function EnrollPrompt() {
       <div className="eyebrow-red">▌ Enrollment Required</div>
       <h1 className="display display-md">This is for enrolled students.</h1>
       <p className="body-lg">Use the program checkout email, or enroll before opening this surface.</p>
-      <a className="btn red btn-lg" href="/#/pricing">
+      <a className="btn red btn-lg" href="/pricing">
         See pricing <span className="arrow">→</span>
       </a>
     </div>

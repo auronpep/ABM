@@ -3,6 +3,8 @@ import type { Route } from "../types.ts";
 export const AUTH_INTENT_KEY = "bm_auth_intent_v1";
 
 const AUTH_RETURN_ROUTES: Route[] = [
+  "dashboard",
+  "account",
   "welcome",
   "practice",
   "repair",
@@ -21,8 +23,12 @@ interface AuthIntent {
 }
 
 function hashParams(): URLSearchParams {
-  const query = window.location.hash.split("?")[1] ?? "";
-  return new URLSearchParams(query);
+  const params = new URLSearchParams(window.location.search);
+  const hashQuery = window.location.hash.split("?")[1] ?? "";
+  for (const [key, value] of new URLSearchParams(hashQuery)) {
+    if (!params.has(key)) params.set(key, value);
+  }
+  return params;
 }
 
 function routeFromMaybe(value: string | null | undefined): Route {
@@ -47,7 +53,7 @@ function readAuthIntent(): AuthIntent | null {
 }
 
 function routeHref(route: Route): string {
-  return route === "home" ? "/#/" : `/#/${route}`;
+  return route === "home" ? "/" : `/${route}`;
 }
 
 export function rememberAuthIntent(mode: AuthMode): AuthIntent {
