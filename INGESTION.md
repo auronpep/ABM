@@ -93,6 +93,12 @@ After each batch loads:
 
 ## 6. Open inputs (founder)
 
+> **Batch 1 status (2026-06-12):** the first 106-question batch from `C:\CCG\Finished` is
+> parsed, QA-gated, and converted — see [BATCH1_CQ_INGESTION.md](BATCH1_CQ_INGESTION.md)
+> for artifacts, the drill/component design, and the load runbook. The "where do batches
+> live" question below is answered for this source; the tension-minimum question is
+> sharpened there (§3).
+
 - **Where the near-ready batches live** (xlsx? JSON? which drive/folder) — needed to wire
   the tagging pass
 - **Focus-group data coverage** — which batches carry real pct/sampleSize vs none
