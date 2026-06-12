@@ -360,10 +360,9 @@ export const VERSE_BANK: readonly BankVerse[] = [
 
   // ---------- FELLOWSHIP ----------
   {
-    ref: "Ecclesiastes 4:9-10",
-    text:
-      "Two are better than one; because they have a good reward for their labour. For if they fall, the one will lift up his fellow.",
-    themes: ["fellowship"],
+    ref: "Romans 12:12",
+    text: "Rejoicing in hope; patient in tribulation; continuing instant in prayer.",
+    themes: ["fellowship", "hope", "perseverance"],
   },
   {
     ref: "Proverbs 27:17",

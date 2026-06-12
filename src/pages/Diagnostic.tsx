@@ -13,6 +13,7 @@ import { RedZoneReveal } from "../components/RedZoneReveal.tsx";
 import { synthesizeZones } from "../funnel/zones.ts";
 import { track } from "../lib/events.ts";
 import { markStateChanged } from "../lib/sync.ts";
+import { VerseLine } from "../components/VerseLine.tsx";
 import type { MiniResult, MissRecord } from "../funnel/types.ts";
 import type { PageProps } from "../types.ts";
 
@@ -242,7 +243,10 @@ export function Diagnostic({ navigate }: PageProps) {
           )}
 
           {phase === "result" && (
-            <RedZoneReveal misses={misses} totalQuestions={total} />
+            <>
+              <RedZoneReveal misses={misses} totalQuestions={total} />
+              <VerseLine theme="rest" style={{ maxWidth: "48ch", marginTop: 32 }} />
+            </>
           )}
         </div>
       </div>

@@ -2,9 +2,11 @@ import { brand } from "../content/brand.ts";
 import { fellowship } from "../content/home.ts";
 import { scripture } from "../content/scripture.ts";
 import { pricing } from "../content/pricing.ts";
+import { dailyVerse } from "../lib/verses.ts";
 import type { PageProps } from "../types.ts";
 
 export function Footer({ navigate }: PageProps) {
+  const daily = dailyVerse();
   return (
     <footer className="footer">
       <div className="container">
@@ -52,6 +54,16 @@ export function Footer({ navigate }: PageProps) {
             </ul>
           </div>
         </div>
+
+        <p
+          className="serif"
+          style={{ fontStyle: "italic", fontSize: 14, lineHeight: 1.6, color: "#a39e93", maxWidth: "64ch", margin: "28px 0 0" }}
+        >
+          “{daily.text}”{" "}
+          <span style={{ fontFamily: "var(--mono)", fontStyle: "normal", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#8b8576", whiteSpace: "nowrap" }}>
+            {daily.ref} · KJV · today&rsquo;s verse
+          </span>
+        </p>
 
         <p className="disclaimer">{pricing.honesty} {brand.closingLine}</p>
 

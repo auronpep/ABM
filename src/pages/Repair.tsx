@@ -30,6 +30,7 @@ import {
   selectMixedSet,
 } from "../program/plan.ts";
 import { track } from "../lib/events.ts";
+import { VerseLine } from "../components/VerseLine.tsx";
 import type { PageProps } from "../types.ts";
 
 type RetestStage = "intro" | "running" | "grading";
@@ -354,9 +355,10 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
             ones you haven&rsquo;t seen. {fmtClock(RETEST_SECONDS)} on the clock, no forensics
             between questions. This is how we know the repair took.
           </p>
-          <p className="mono" style={{ fontSize: 12, color: "var(--muted)", marginBottom: 28 }}>
+          <p className="mono" style={{ fontSize: 12, color: "var(--muted)", marginBottom: 16 }}>
             {RETEST_PASS_BAR} of {program.retestIds.length} keeps the point.
           </p>
+          <VerseLine theme="courage" style={{ maxWidth: "48ch", marginBottom: 28 }} />
           <button
             className="btn btn-lg red"
             disabled={!retestQs}
@@ -475,6 +477,10 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
                 doesn&rsquo;t expire.
               </p>
             )}
+            <VerseLine
+              theme="victory"
+              style={{ maxWidth: "48ch", marginBottom: 28, borderLeftColor: "#8a6d1f" }}
+            />
             <div className={reduced ? "" : "bm-rise"}>
               {due ? (
                 <button
@@ -508,10 +514,11 @@ function RepairLoop({ navigate, program, setProgram, trapIndex, reduced }: LoopP
           “{zone.silverKeyMove}”
         </p>
       )}
-      <p className="body-lg" style={{ maxWidth: "46ch", marginBottom: 28 }}>
+      <p className="body-lg" style={{ maxWidth: "46ch", marginBottom: 16 }}>
         Two more drills, then the retest is waiting whenever you&rsquo;re ready. The trap
         doesn&rsquo;t get a vote on how many tries this takes.
       </p>
+      <VerseLine theme="perseverance" style={{ maxWidth: "48ch", marginBottom: 28 }} />
       <button
         className="btn btn-lg red"
         onClick={() => {
@@ -642,6 +649,10 @@ function MixedSetRunner({ navigate, trapIndex }: PageProps & { trapIndex: TrapIn
             ))}
           </div>
         )}
+        <VerseLine
+          theme={missed.length === 0 ? "victory" : "perseverance"}
+          style={{ maxWidth: "48ch", marginBottom: 28 }}
+        />
         <button className="btn btn-lg red" onClick={() => navigate("welcome")}>
           Back to your map <span className="arrow">→</span>
         </button>

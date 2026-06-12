@@ -9,6 +9,7 @@ import {
   type DrillIndexEntry,
   type DrillQuestion,
 } from "../components/DrillPlayer.tsx";
+import { VerseLine } from "../components/VerseLine.tsx";
 import type { PageProps } from "../types.ts";
 
 export function Drill({ navigate }: PageProps) {
@@ -83,6 +84,7 @@ export function Drill({ navigate }: PageProps) {
           run the TEAR forensics: see exactly which counterfeit almost persuaded you, the keys
           that break it, and the repair that keeps the point next time.
         </p>
+        <VerseLine theme="diligence" style={{ maxWidth: "56ch", marginBottom: 18 }} />
         {index === null ? (
           <p className="mono" style={{ color: "var(--muted)" }}>
             Loading the drill bank…
