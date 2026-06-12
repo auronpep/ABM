@@ -4,11 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/build_styles.mjs && vite",
+    "styles": "node scripts/build_styles.mjs",
     "drift": "node scripts/drift_scan.mjs",
     "contract": "node scripts/contract_check.mjs",
     "trap-index": "node scripts/build_trap_index.mjs",
-    "build": "node scripts/build_trap_index.mjs && node scripts/contract_check.mjs && tsc --noEmit && vite build",
+    "build": "node scripts/build_trap_index.mjs && node scripts/build_styles.mjs && node scripts/contract_check.mjs && tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
