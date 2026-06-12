@@ -6,6 +6,7 @@ import { HowItWorks } from "./pages/HowItWorks.tsx";
 import { Pricing } from "./pages/Pricing.tsx";
 import { Diagnostic } from "./pages/Diagnostic.tsx";
 import { Drill } from "./pages/Drill.tsx";
+import { Practice } from "./pages/Practice.tsx";
 import { Welcome } from "./pages/Welcome.tsx";
 import { Repair } from "./pages/Repair.tsx";
 import { PrayerChain } from "./pages/PrayerChain.tsx";
@@ -19,6 +20,7 @@ const ROUTES: Route[] = [
   "pricing",
   "diagnostic",
   "drills",
+  "practice",
   "welcome",
   "repair",
   "prayer-chain",
@@ -66,6 +68,7 @@ export function App() {
       {route === "pricing" && <Pricing navigate={navigate} />}
       {route === "diagnostic" && <Diagnostic navigate={navigate} />}
       {route === "drills" && <Drill navigate={navigate} />}
+      {route === "practice" && <Practice navigate={navigate} />}
       {route === "welcome" && <Welcome navigate={navigate} />}
       {route === "repair" && <Repair navigate={navigate} />}
       {route === "prayer-chain" && <PrayerChain navigate={navigate} />}

@@ -4,6 +4,7 @@ export type Route =
   | "pricing"
   | "diagnostic"
   | "drills"
+  | "practice"
   | "welcome"
   | "repair"
   | "prayer-chain"

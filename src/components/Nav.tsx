@@ -1,3 +1,4 @@
+import { SignedIn } from "@clerk/clerk-react";
 import { brand, nav } from "../content/brand.ts";
 import type { PageProps, Route } from "../types.ts";
 
@@ -25,6 +26,14 @@ export function Nav({ navigate, route }: PageProps & { route: Route }) {
                 {l.label}
               </button>
             ))}
+            <SignedIn>
+              <button
+                className={route === "practice" ? "active" : ""}
+                onClick={() => navigate("practice")}
+              >
+                Practice
+              </button>
+            </SignedIn>
           </div>
 
           <div className="nav-cta">

@@ -4,7 +4,8 @@
 // visit, plus the Red-Zone map's live state. A buyer with no diagnostic on
 // record is routed into the diagnostic framed as setup.
 import { useEffect, useMemo, useState } from "react";
-import { SignedIn, SignedOut, useClerk, useUser } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, useAuth, useClerk, useUser } from "@clerk/clerk-react";
+import { apiFetch, type UsagePayload } from "../lib/api.ts";
 import { brand } from "../content/brand.ts";
 import { track } from "../lib/events.ts";
 import {
@@ -19,6 +20,7 @@ import {
   readProgramSet,
   zoneMemberCount,
 } from "../program/repair.ts";
+import { VerseLine } from "../components/VerseLine.tsx";
 import type { PageProps, Route } from "../types.ts";
 
 function fmtDay(ts: number): string {
@@ -223,7 +225,81 @@ export function Welcome({ navigate }: PageProps) {
         </>
       )}
 
+      {stage >= 3 && <UsageMirror />}
+      {stage >= 3 && (
+        <div className={reduced ? "" : "bm-rise"} style={{ marginTop: 48, maxWidth: 560 }}>
+          <VerseLine theme="hope" />
+        </div>
+      )}
       {stage >= 3 && <AccountRow navigate={navigate} />}
+    </div>
+  );
+}
+
+// ——— Usage mirror: a quiet glass panel, not a task. Renders only when the
+// signed-in student is enrolled AND has server-recorded practice. Counts,
+// accuracy, and time only — no streaks, no percentiles (maps and mirrors).
+function UsageMirror() {
+  const { user } = useUser();
+  const { getToken } = useAuth();
+  const [usage, setUsage] = useState<UsagePayload | null>(null);
+
+  useEffect(() => {
+    if (!user) return;
+    let cancelled = false;
+    void (async () => {
+      try {
+        const token = await getToken();
+        if (!token) return;
+        const payload = await apiFetch<UsagePayload>("/api/me/usage", { token });
+        if (!cancelled && payload.totals.attempts > 0) setUsage(payload);
+      } catch {
+        // not enrolled / network — the mirror simply stays dark
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [user, getToken]);
+
+  if (!usage) return null;
+
+  return (
+    <div style={{ marginTop: 48, maxWidth: 560 }}>
+      <div
+        className="mono"
+        style={{ fontSize: 11, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--muted)", marginBottom: 14 }}
+      >
+        ▌ Your work, mirrored
+      </div>
+      <p className="mono" style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 10px" }}>
+        {usage.totals.questions_seen} questions faced ·{" "}
+        {usage.totals.accuracy !== null ? `${Math.round(usage.totals.accuracy * 100)}% held` : ""} ·{" "}
+        {Math.round(usage.totals.time_seconds / 60)} min under pressure
+      </p>
+      {usage.by_subject.map((s) => (
+        <div
+          key={s.subject}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "baseline",
+            gap: 16,
+            padding: "8px 0",
+            borderTop: "1px solid var(--rule)",
+          }}
+        >
+          <span className="serif" style={{ fontWeight: 600, fontSize: 14 }}>
+            {s.subject_code
+              ? s.subject_code.toLowerCase().replace(/_/g, " ").replace(/\b\w/g, (ch) => ch.toUpperCase())
+              : s.subject}
+          </span>
+          <span className="mono" style={{ fontSize: 10, letterSpacing: "0.12em", whiteSpace: "nowrap", color: "var(--muted)" }}>
+            {s.questions_seen} SEEN
+            {s.accuracy !== null ? ` · ${Math.round(s.accuracy * 100)}% HELD` : ""}
+          </span>
+        </div>
+      ))}
     </div>
   );
 }
