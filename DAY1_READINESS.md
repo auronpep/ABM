@@ -69,7 +69,10 @@ walkthrough + feedback). Status legend: ✅ done · 🟡 founder action ·
 - [ ] 🔴 **No accounts / cross-device access** — Clerk auth into the shell
   + diagnostic_id→entitlement linkage (API already supports it; needs a
   founder-coordinated session; barmatrix-api changes ship as diffs to
-  founder).
+  founder). The exact seam is now documented in
+  `docs/LIVE_INFRASTRUCTURE.md` §2 — key fact: **buying does NOT create a
+  Clerk account; the buyer's checkout email is the join key**, so the
+  future sign-up step must use the same email.
 - [ ] 🔴 **Day 2–7 engine** — after zone #1 is repaired, the CTA degrades
   to the generic drill bank. Next-zone repair loop, timed mixed sets,
   one-primary-action priority. Server `/api/me/day-plan` (J7) already

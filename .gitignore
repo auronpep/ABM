@@ -35,4 +35,10 @@ logs/
 .tmp/
 .codegraph/
 
+# legacy capture: raw confidential source trove (PRDs, marketing data, question
+# batches) — mirrors how the old repo kept uploads/ out of git. The synthesized
+# .md docs in docs/legacy-barmatrix-site/ ARE tracked; only the raw copies are not.
+# Remove this line if the founder wants the raw source committed.
+docs/legacy-barmatrix-site/source/
+
 .vercel

@@ -37,7 +37,7 @@ They are aligned and internally consistent (VISION + PRODUCT were aligned to LEX
 
 - **NO CONTENT GUARDRAILS.** Never add legal/claim-safety/caution/hedge/"pending review" language to the docs or the site. The founder is a lawyer with a legal + copyright team that owns that. Guardrail creep (added incrementally by AIs) killed a prior launch. → memory `no-guardrails-in-content`.
 - **Don't bikeshed names.** Locked. The distilled product is the moat; titles are a swappable surface. → memory `naming-is-swappable`.
-- **No deploy / push / email / Stripe changes without explicit human approval.**
+- **Commit/push/deploy gate LIFTED by founder 2026-06-11 ("behind schedule — commit everything right away; launch tonight").** Commit and push work immediately as it lands; deploy site fixes to prod without waiting. Still founder-gated: email sending (Resend activation), Stripe product/price/key/webhook config changes, live-DB migrations/writes.
 
 ## Locked vocabulary (see LEXICON for full)
 

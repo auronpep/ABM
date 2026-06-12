@@ -170,5 +170,10 @@ The buyer's first hour, in order of build priority:
   (Stripe item RESOLVED; PostHog key, prayer-chain backend by Jul 13, Resend
   activation still open).
 - `handoffs/` — all 11 original packets (00–06, P1–P4).
+- `docs/` — reference docs: `LIVE_INFRASTRUCTURE.md` (the site↔API↔Stripe↔
+  Clerk seam, code-verified readiness facts, full ops runbook),
+  `CANON_REFERENCE.md` (authoritative product numbers/taxonomy from
+  barmatrix-canon — use these in copy, not old-site figures), and
+  `legacy-barmatrix-site/` (everything captured from the old site).
 - `HANDOFF.md` — the older content/keys-consolidation handoff (separate
   workstream; don't confuse the two).
