@@ -70,7 +70,11 @@ ssh -i ~/.ssh/barmatrix_hostinger_20260527_ed25519 -p 65002 u211961595@191.96.56
 
 ## 6. Unverifiable-from-code (watch during the first real run)
 
-- Whether prod secrets actually include the Resend trio (enrollment email may be silently skipping).
+> ⚠️ Partially superseded by the verified audit in [SERVER_INVENTORY_2026-06-12.md](SERVER_INVENTORY_2026-06-12.md):
+> the Resend trio IS set (key + access@barmatrix.app sender), `cohort_config` IS seeded
+> (`JULY_MBE_REPAIR` open), `/api/me/day-plan` IS deployed, and the DB holds 51 tables /
+> 3,686 questions / 44 students / 10 purchases. Read that doc before assuming anything is missing.
+
 - Whether the live Stripe account's price/product IDs match the env names (2-pay anchor especially).
-- Whether `cohort_config` is seeded for `JULY_MBE_REPAIR` (endpoint falls back to `public_status: "open"` if absent).
-- The $0 promo-code webhook path (DAY1_READINESS §B — the friend's purchase is the test).
+- The $0 promo-code webhook path (DAY1_READINESS §B — the friend's purchase is the test). Note: live
+  promotion codes were created 2026-06-09 (untracked scripts in the founder's barmatrix-api tree).
