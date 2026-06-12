@@ -666,7 +666,9 @@
       const initialPlan = search.get("plan") === "split" ? "plan" : "payInFull";
       const source = search.get("source") || "checkout";
       const after = search.get("after") || "dashboard";
-      const purchaseSuccess = search.get("purchase") === "success";
+      const purchaseSuccess =
+        search.get("purchase") === "success" ||
+        window.location.pathname.replace(/\/+$/, "") === "/checkout/success";
       const previewOrigin = !/^https:\/\/(www\.)?barmatrix\.app$/i.test(window.location.origin);
       const [plan, setPlan] = React.useState(initialPlan); // payInFull | plan
       const [terms, setTerms] = React.useState(false);
