@@ -46,7 +46,7 @@ Target repo: `C:\ABM`
   - [x] Remove stale pre-rebrand product names where user-facing.
   - [x] Ensure refund window is consistently 3-day.
 - [x] Final verification: rerun full `npm run build` and re-walk changed pages.
-- [ ] Push branch and open PR to `main`.
+- [x] Push branch and open PR to `main`.
 
 ## Findings Log
 
@@ -78,3 +78,7 @@ Target repo: `C:\ABM`
 - Bare `tsc` is not on the host PATH. No repo code fix made because npm scripts and project-local `.\node_modules\.bin\tsc.cmd` work correctly.
 - Full Clerk sign-in/sign-up cannot be exercised locally because the production publishable key is domain-locked to `barmatrix.app`; local verification is limited to mount, route, trigger, and signed-out fallback behavior.
 - No live Stripe checkout session was created during audit; checkout was verified through render, pricing/policy links, and pre-submit validation only.
+
+## PR
+
+- Draft PR: https://github.com/auronpep/ABM/pull/1
