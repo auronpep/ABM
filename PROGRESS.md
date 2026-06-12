@@ -165,3 +165,25 @@ Conflicts with the handoff's assumed stack are logged in CONFLICTS.md.
 3. Funnel data: `src/funnel/` · curated list: `src/content/curated-diagnostic.ts`
    · events: `src/lib/events.ts`.
 4. Ledger refresh: `PYTHONUTF8=1 uv run --no-project python scripts/review_ledger.py`.
+
+---
+
+## 2026-06-11 evening — gate lifted, checkout dead-button fixed, launch-night verification
+
+- **Founder lifted the commit/push/deploy gate** ("behind schedule — commit
+  everything right away; launch tonight"). HANDOFF.md hard rule updated.
+  Still gated: email sending, Stripe config changes, live-DB writes.
+- **Founder-reported bug investigated**: "#/diagnostic enroll →
+  checkout.html?plan=full looks like a fake status preview." Verified in a
+  real browser: the page IS the real checkout (POSTs to
+  api.barmatrix.app/api/checkout/create-session → live Stripe `cs_live_…`).
+  Root cause of the fake feel: the Enroll button was **disabled until the
+  terms checkbox was ticked, with zero feedback on click**.
+- **Fix shipped + deployed + verified live** (36a8f57, dpl_DgcY443…):
+  button always clickable; without terms it shows "One step first — check
+  the box…" and focuses the checkbox; error clears on check. Re-verified
+  both paths on prod: no-terms → prompt; terms → checkout.stripe.com.
+- Console sweep: `/`, `#/diagnostic`, `#/welcome`, checkout — zero errors.
+- Observations for founder (not changed): Stripe page shows merchant
+  "JWM Services"; checkout copy cites "47 trap tags" (stale vs canon — see
+  docs/CANON_REFERENCE.md); terms links point at help.html.
