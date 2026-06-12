@@ -1,0 +1,1386 @@
+[
+  {
+    "route": {
+      "name": "Home",
+      "hash": "#/"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Home The Method Drills Pricing SIGN IN START THE FREE DIAGNOSTIC ▌ MBE WRONG-ANSWER INTELLIGENCE Three questions. Three traps built for good people. The MBE’s most dangerous wrong answers don’t exploit what you don’t know. They exploit what’s best in you — your sense of justice, your nos",
+      "buttonCount": 18,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Home"
+        },
+        {
+          "disabled": false,
+          "text": "The Method"
+        },
+        {
+          "disabled": false,
+          "text": "Drills"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Start — no account needed →"
+        },
+        {
+          "disabled": false,
+          "text": "ANo, because dismissal of the indictment is not the appropriate remedy."
+        },
+        {
+          "disabled": false,
+          "text": "BYes, because much of the agent's testimony before the grand jury was inadmissib"
+        },
+        {
+          "disabled": false,
+          "text": "CYes, because of the agent's unlawful search of Thomas's home."
+        },
+        {
+          "disabled": false,
+          "text": "DYes, because of the agent's violation of Thomas's right to counsel."
+        },
+        {
+          "disabled": false,
+          "text": "Run a live Repair Drill →"
+        },
+        {
+          "disabled": false,
+          "text": "See Pricing →"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic →"
+        },
+        {
+          "disabled": false,
+          "text": "The TEAR Method"
+        },
+        {
+          "disabled": false,
+          "text": "Repair Drills"
+        },
+        {
+          "disabled": false,
+          "text": "The Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Exam-Day Prayer Chain"
+        }
+      ],
+      "clientWidth": 1265,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "Three questions. Three traps built for good people.",
+        "More questions never repaired a single judgment pattern.",
+        "The proof comes before the price.",
+        "Diagnose first. Pay for repair only if the pattern is real.",
+        "Start with the diagnostic."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 5,
+      "links": [
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/help.html",
+          "text": "Questions? Read the FAQ →"
+        },
+        {
+          "href": "/help.html",
+          "text": "Help"
+        },
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/checkout.html",
+          "text": "Enroll"
+        }
+      ],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1265,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/"
+    },
+    "logs": []
+  },
+  {
+    "route": {
+      "name": "HowItWorks",
+      "hash": "#/how-it-works"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Home The Method Drills Pricing SIGN IN START THE FREE DIAGNOSTIC ▌ THE TEAR METHOD Test. Expose. Apply. Repair. The wrong answer usually carries just enough truth to survive a quick glance. The TEAR Method teaches you to tear it apart before it takes another point. T Test the answer Do n",
+      "buttonCount": 12,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Home"
+        },
+        {
+          "disabled": false,
+          "text": "The Method"
+        },
+        {
+          "disabled": false,
+          "text": "Drills"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic →"
+        },
+        {
+          "disabled": false,
+          "text": "↻ Replay"
+        },
+        {
+          "disabled": false,
+          "text": "The TEAR Method"
+        },
+        {
+          "disabled": false,
+          "text": "Repair Drills"
+        },
+        {
+          "disabled": false,
+          "text": "The Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Exam-Day Prayer Chain"
+        }
+      ],
+      "clientWidth": 1265,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "Test. Expose. Apply. Repair.",
+        "Diagnose once. Repair the pattern, not the symptom.",
+        "Try it. Pick the answer that almost tells the truth."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 4,
+      "links": [
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/help.html",
+          "text": "Help"
+        },
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/checkout.html",
+          "text": "Enroll"
+        }
+      ],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1265,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/how-it-works"
+    },
+    "logs": []
+  },
+  {
+    "route": {
+      "name": "Pricing",
+      "hash": "#/pricing"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Home The Method Drills Pricing SIGN IN START THE FREE DIAGNOSTIC ▌ INVESTMENT Diagnose first. Pay for repair only if the pattern is real. Fear is a poor reason to buy bar prep. Wisdom is a better one. Start with the diagnostic. If all you need is more questions, buy the cheaper book. If ",
+      "buttonCount": 11,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Home"
+        },
+        {
+          "disabled": false,
+          "text": "The Method"
+        },
+        {
+          "disabled": false,
+          "text": "Drills"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic →"
+        },
+        {
+          "disabled": false,
+          "text": "The TEAR Method"
+        },
+        {
+          "disabled": false,
+          "text": "Repair Drills"
+        },
+        {
+          "disabled": false,
+          "text": "The Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Exam-Day Prayer Chain"
+        }
+      ],
+      "clientWidth": 1265,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "Diagnose first. Pay for repair only if the pattern is real."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 5,
+      "links": [
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/checkout.html",
+          "text": "Ready to enroll? →"
+        },
+        {
+          "href": "/help.html",
+          "text": "Help"
+        },
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/checkout.html",
+          "text": "Enroll"
+        }
+      ],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1265,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/pricing"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "Diagnostic",
+      "hash": "#/diagnostic"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix EXIT ✕ ▌ THE DIAGNOSTIC · FREE Find the pattern behind your misses. 18 questions, about 12 minutes. We are not counting how many you get right — we are watching which kind of wrong answer keeps pulling you in. At the end you get your Red-Zone verdict: the recurring trap architecture to r",
+      "buttonCount": 2,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Exit ✕"
+        },
+        {
+          "disabled": false,
+          "text": "Begin the Diagnostic →"
+        }
+      ],
+      "clientWidth": 1280,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "Find the pattern behind your misses."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 0,
+      "links": [],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1280,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/diagnostic"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "Drill",
+      "hash": "#/drills"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Home The Method Drills Pricing SIGN IN START THE FREE DIAGNOSTIC ▌ REPAIR DRILLS · THE LIVE BANK Every drill ends in a verdict: true and responsive, or counterfeit. Real MBE mechanics, set in the world you actually live in. Answer under pressure, then run the TEAR forensics: see exactly ",
+      "buttonCount": 145,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Home"
+        },
+        {
+          "disabled": false,
+          "text": "The Method"
+        },
+        {
+          "disabled": false,
+          "text": "Drills"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14141▮▮▮▮▮Dovesound ReviewCivil Procedure · MotionsRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14215▮▮▮▮▮Daniel Cedar BookcasesCivil Procedure · Verdicts and JudgmentsRun th"
+        },
+        {
+          "disabled": false,
+          "text": "CQ17006Pj Waiver Generic ReservationPersonal Jurisdiction — Waiver by Conduct / "
+        },
+        {
+          "disabled": false,
+          "text": "CQ17912Smj Nonwaivability On AppealSMJ is nonwaivable and may be raised for the "
+        },
+        {
+          "disabled": false,
+          "text": "CQ21851Work Product Insurer Photos MemoPretrial discovery - work productRun the "
+        },
+        {
+          "disabled": false,
+          "text": "CQ21864Supplemental Pleading Later Permit PenaltyRule 15(d) Supplemental Pleadin"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21877Rule20 Permissive JoinderJoinder - Rule 20 permissive party joinderRun th"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21878Specific Jurisdiction ReasonablenessSpecific jurisdiction - reasonablenes"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21883Recording License AdmissionRequests for admission - conclusive effectRun "
+        },
+        {
+          "disabled": false,
+          "text": "CQ14227▮▮▮▮▮Lydia New Hope PetitionConstitutional Law · Individual RightsRun the"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14228▮▮▮▮▮Road To Emmaus ShuttleConstitutional Law · Individual RightsRun the "
+        },
+        {
+          "disabled": false,
+          "text": "CQ14238▮▮▮▮▮Lydias Barnabas BriefConstitutional Law · Individual RightsRun the d"
+        },
+        {
+          "disabled": false,
+          "text": "CQ17011Article Iv Nonresident Commercial PropertyArticle IV Privileges and Immun"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21848Family Zoning Aunt HouseholdDue Process - Family LibertyRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21860Article Iii Contract JurisdictionArticle III - federal judicial powerRun "
+        },
+        {
+          "disabled": false,
+          "text": "CQ21872Title Subscription Price AffirmationDormant Commerce Clause - extraterrit"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21873Public Employee Official DutiesFirst Amendment - public employee speechRu"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21881Private Caregiver MarchFirst Amendment - Freedom of SpeechRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21882Federal Records OfficersAppointments ClauseRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14378▮▮▮▮▮Ruth Boaz Grain AccountContracts · Contract Content and MeaningRun t"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14391▮▮▮▮▮Peter Scroll FragmentsContracts · Defenses to EnforceabilityRun the "
+        },
+        {
+          "disabled": false,
+          "text": "CQ14394▮▮▮▮▮Peter Barnabas Car LoanContracts · Defenses to EnforceabilityRun the"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14397▮▮▮▮▮Lydia Gold OrderContracts · Defenses to EnforceabilityRun the drill "
+        },
+        {
+          "disabled": false,
+          "text": "CQ14400▮▮▮▮▮Timothy Jericho ColtContracts · Defenses to EnforceabilityRun the dr"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14406▮▮▮▮▮Joseph Nativity OrderContracts · Formation of ContractsRun the drill"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14460▮▮▮▮▮Prayer Garden WaiverContracts · Performance, Breach, and DischargeRu"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14499▮▮▮▮▮Lydia Shop FireContracts · RemediesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ17007Assignment Payment Before NoticeAssignment of RightsRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ17013Reliance Damages Retained Asset OffsetReliance damages reduced by fair va"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21850Reliance Damages Retained Value OffsetReliance damages - retained value o"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21853Concurrent Closing ConditionsConditions - concurrent conditionsRun the dr"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21855Mistaken Liftgate RestitutionQuasi-contract restitution - measure of reco"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21856Fraudulent Concealment Parol EvidenceParol evidence rule - fraud exceptio"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21865Concurrent Closing ConditionsConditions - concurrent conditionsRun the dr"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21866Baking Spice Partial AcceptanceUCC Article 2 - perfect tender buyer remed"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21868Ucc Accommodation ShipmentUCC Article 2 - accommodation shipmentRun the d"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21874Expectation Damages Lost Profits CertaintyExpectation damages - lost prof"
+        },
+        {
+          "disabled": false,
+          "text": "CQ21879Freight Scales OfferContract formation - offer and acceptanceRun the dril"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14555▮▮▮▮▮Private Bookstore PleaCriminal Law · Constitutional Protection of Ac"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14586▮▮▮▮▮Pastor JournalConstitutional Protection of Accused Persons · Fifth A"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14659▮▮▮▮▮Bible Study AmbushCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14660▮▮▮▮▮Christian Fellowship SpinCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14664▮▮▮▮▮Bible Study Gas StationCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14665▮▮▮▮▮Bible Study Stop SignCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14667▮▮▮▮▮Christian Fellowship SpinCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14668▮▮▮▮▮Bible Study CoffeeCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14669▮▮▮▮▮Question 14669Criminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14671▮▮▮▮▮Bible Study SafeCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14675▮▮▮▮▮Question 14675Criminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14676▮▮▮▮▮Christian Academy False AccusationCriminal Law · HomicideRun the dri"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14677▮▮▮▮▮Passion Play Prop GunCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14678▮▮▮▮▮Galilee GrillCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14679▮▮▮▮▮Fellowship CupCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14680▮▮▮▮▮Manna BookshopCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14681▮▮▮▮▮Question 14681Criminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14684▮▮▮▮▮Peters Third ShotCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14685▮▮▮▮▮Bible Bowl HammerCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14687▮▮▮▮▮Bethany Books VanCriminal Law · HomicideRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14690▮▮▮▮▮Bible Study Protected VictimCriminal Law · Inchoate CrimesRun the dr"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14691▮▮▮▮▮Question 14691Criminal Law · Inchoate CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14692▮▮▮▮▮Chapel CornerCriminal Law · Inchoate CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14693▮▮▮▮▮Fellowship StepsCriminal Law · Inchoate CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14694▮▮▮▮▮Tabor TrailCriminal Law · Inchoate CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14695▮▮▮▮▮Question 14695Criminal Law · Inchoate CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14696▮▮▮▮▮Daily BreadCriminal Law · Inchoate CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14697▮▮▮▮▮Question 14697Criminal Law · Inchoate CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14698▮▮▮▮▮Bible Bookshop Cash DrawerCriminal Law · Inchoate CrimesRun the dril"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14700▮▮▮▮▮Solicitation Bible PicnicCriminal Law · Inchoate CrimesRun the drill"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14701▮▮▮▮▮Christian Bookstore AgentCriminal Law · Inchoate CrimesRun the drill"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14707▮▮▮▮▮Christian Bible Retreat ConspiracyCriminal Law · Inchoate CrimesRun "
+        },
+        {
+          "disabled": false,
+          "text": "CQ14709▮▮▮▮▮Question 14709Criminal Law · Other CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14710▮▮▮▮▮Question 14710Criminal Law · Other CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14711▮▮▮▮▮Question 14711Criminal Law · Other CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14712▮▮▮▮▮Cls Bake SaleCriminal Law · Other CrimesRun the drill →"
+        },
+        {
+          "disabled": false,
+          "text": "CQ14713▮▮▮▮▮Mission Key PartyCriminal Law · Other CrimesRun the drill →"
+        }
+      ],
+      "clientWidth": 1265,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "Every drill ends in a verdict: true and responsive, or counterfeit."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 4,
+      "links": [
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/help.html",
+          "text": "Help"
+        },
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/checkout.html",
+          "text": "Enroll"
+        }
+      ],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1265,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/drills"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "Practice",
+      "hash": "#/practice"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Home The Method Drills Pricing SIGN IN START THE FREE DIAGNOSTIC ▌ PRACTICE LIBRARY The full bank, on your terms. Pick a subject for a fresh set, walk the official outline, or jump straight to an outline code. Every question you answer is recorded once — you will never be served a repeat",
+      "buttonCount": 11,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Home"
+        },
+        {
+          "disabled": false,
+          "text": "The Method"
+        },
+        {
+          "disabled": false,
+          "text": "Drills"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Drill this code"
+        },
+        {
+          "disabled": false,
+          "text": "The TEAR Method"
+        },
+        {
+          "disabled": false,
+          "text": "Repair Drills"
+        },
+        {
+          "disabled": false,
+          "text": "The Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Exam-Day Prayer Chain"
+        }
+      ],
+      "clientWidth": 1265,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "The full bank, on your terms."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 4,
+      "links": [
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/help.html",
+          "text": "Help"
+        },
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/checkout.html",
+          "text": "Enroll"
+        }
+      ],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1265,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/practice"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "Repair",
+      "hash": "#/repair"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix EXIT ✕ ▌ THE FIRST REPAIR First, we map you. 18 questions, about 12 minutes — your wrong answers build the Red-Zone map your first repair is assigned from. TAKE YOUR DIAGNOSTIC →",
+      "buttonCount": 2,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Exit ✕"
+        },
+        {
+          "disabled": false,
+          "text": "Take your diagnostic →"
+        }
+      ],
+      "clientWidth": 1280,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "First, we map you."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 0,
+      "links": [],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1280,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/repair"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "Welcome",
+      "hash": "#/welcome"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix You’re in. JULY 2026 COHORT",
+      "buttonCount": 0,
+      "buttons": [],
+      "clientWidth": 1280,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "You’re in."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 0,
+      "links": [],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1280,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/welcome"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "SignIn",
+      "hash": "#/sign-in"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Sign in and your Red-Zone map and repair work follow you — any device, any browser. Use the same email you enrolled with — that is how your seat is recognized. SIGN IN → CONTINUE WITHOUT AN ACCOUNT",
+      "buttonCount": 2,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Sign in →"
+        },
+        {
+          "disabled": false,
+          "text": "Continue without an account"
+        }
+      ],
+      "clientWidth": 1280,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [],
+      "horizontalOverflow": false,
+      "linkCount": 0,
+      "links": [],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1280,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/sign-in"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "SignUp",
+      "hash": "#/sign-up"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Create your account and your Red-Zone map and repair work follow you — any device, any browser. Enrolled already? Sign up with your checkout email and your seat follows you. CREATE YOUR ACCOUNT → CONTINUE WITHOUT AN ACCOUNT",
+      "buttonCount": 2,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Create your account →"
+        },
+        {
+          "disabled": false,
+          "text": "Continue without an account"
+        }
+      ],
+      "clientWidth": 1280,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [],
+      "horizontalOverflow": false,
+      "linkCount": 0,
+      "links": [],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1280,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/sign-up"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  },
+  {
+    "route": {
+      "name": "PrayerChain",
+      "hash": "#/prayer-chain"
+    },
+    "state": {
+      "bodyTextSample": "B BarMatrix Home The Method Drills Pricing SIGN IN START THE FREE DIAGNOSTIC ▌ REAL MINISTRY · FREE TO JOIN The Exam-Day Prayer Chain — July 28–29. Two days. Every fifteen minutes covered. Students prayed for by name, by the clock. Two are better than one; because they have a good reward for their l",
+      "buttonCount": 99,
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "Home"
+        },
+        {
+          "disabled": false,
+          "text": "The Method"
+        },
+        {
+          "disabled": false,
+          "text": "Drills"
+        },
+        {
+          "disabled": false,
+          "text": "Pricing"
+        },
+        {
+          "disabled": false,
+          "text": "Start the Free Diagnostic"
+        },
+        {
+          "disabled": false,
+          "text": "7:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "7:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "7:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "7:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "2:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "2:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "2:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "2:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "3:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "3:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "3:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "3:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "4:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "4:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "4:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "4:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "5:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "5:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "5:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "5:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "7:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "7:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "7:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "7:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "8:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "9:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "10:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:00 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:15 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:30 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "11:45 AM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "12:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:30 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "1:45 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "2:00 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "2:15 PM PTOpen"
+        },
+        {
+          "disabled": false,
+          "text": "2:30 PM PTOpen"
+        }
+      ],
+      "clientWidth": 1265,
+      "computedBodyFont": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "headings": [
+        "The Exam-Day Prayer Chain — July 28–29."
+      ],
+      "horizontalOverflow": false,
+      "linkCount": 4,
+      "links": [
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/help.html",
+          "text": "Help"
+        },
+        {
+          "href": "/login.html",
+          "text": "Sign in"
+        },
+        {
+          "href": "/checkout.html",
+          "text": "Enroll"
+        }
+      ],
+      "resources": [],
+      "rootChildren": 1,
+      "scrollWidth": 1265,
+      "styles": [
+        "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+        "http://127.0.0.1:4173/assets/index-DKkpFlTu.css"
+      ],
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/prayer-chain"
+    },
+    "logs": [
+      {
+        "level": "error",
+        "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+        "timestamp": "2026-06-12T11:39:43.990Z",
+        "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+      }
+    ]
+  }
+]

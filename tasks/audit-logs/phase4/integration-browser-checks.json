@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-06-12T11:59:19.620Z",
+  "signIn": {
+    "route": "/#/sign-in",
+    "before": {
+      "bodyHasAuthShell": true,
+      "continueButtonCount": 1,
+      "signInButtonCount": 1,
+      "signUpButtonCount": 0,
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/sign-in"
+    },
+    "continueButtonCount": 1,
+    "after": {
+      "url": "http://127.0.0.1:4173/#/welcome",
+      "welcomeText": true
+    },
+    "clerkDomainErrors": 1,
+    "otherErrors": []
+  },
+  "signUp": {
+    "route": "/#/sign-up",
+    "before": {
+      "bodyHasAuthShell": true,
+      "continueButtonCount": 1,
+      "signInButtonCount": 0,
+      "signUpButtonCount": 1,
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "url": "http://127.0.0.1:4173/#/sign-up"
+    },
+    "continueButtonCount": 1,
+    "after": {
+      "url": "http://127.0.0.1:4173/#/welcome",
+      "welcomeText": true
+    },
+    "clerkDomainErrors": 1,
+    "otherErrors": []
+  },
+  "checkout": {
+    "before": {
+      "buttons": [
+        "Enroll — $999 · Stripe secure checkout"
+      ],
+      "h1": "Your BarMatrix seat.",
+      "stalePriceHits": false,
+      "termsLinks": [
+        "/terms.html",
+        "/privacy.html",
+        "/refund.html"
+      ],
+      "textHasFullPrice": true,
+      "textHasPlanPrice": true,
+      "textHasRefundWindow": true,
+      "title": "BarMatrix — Checkout",
+      "url": "http://127.0.0.1:4173/checkout.html?lp=tear-method"
+    },
+    "submitButtonCount": 0,
+    "after": {
+      "stillOnCheckout": true,
+      "url": "http://127.0.0.1:4173/checkout.html?lp=tear-method",
+      "validationShown": false
+    },
+    "consoleErrors": []
+  }
+}

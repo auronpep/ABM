@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-06-12T11:55:35.261Z",
+  "htmlCount": 38,
+  "htmlWithIssues": 2,
+  "totalHtmlIssues": 2,
+  "issues": [
+    {
+      "file": "lp-c3-cut-clash-call.html",
+      "type": "missing-stylesheet"
+    },
+    {
+      "file": "lp-foundations-course.html",
+      "type": "missing-stylesheet"
+    }
+  ],
+  "qdataCount": 137,
+  "qdataIssues": []
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "label": "before-loop",
+    "body": "B BarMatrix EXIT ✕ 1 / 18 CIVIL PROCEDURE · DOVESOUND REVIEW BARMATRIX Q#14141_dovesound_review Lydia Sound Systems, a company that sells portable speakers for Christian conferences and Bible-study events, filed suit in federal district court against Mary, a reporter for The Berean Review, a consumer-product testing website. The suit arose after Mary published a review of Lydia Sound Systems’ “Dov",
+    "buttonTexts": [
+      "Exit ✕",
+      "AYes, because Lydia Sound Systems did not meet its burden to defeat Mary’s motion for summary judgment on the issue of actual malice.",
+      "BYes, because Lydia Sound Systems acted in bad faith by not providing evidence to contradict Mary’s affidavit regarding the issue of actual malice.",
+      "CNo, because a party to a suit may not submit a personal affidavit as evidence in support of her own motion for summary judgment.",
+      "DNo, because the court should first order Lydia Sound Systems to respond to Mary’s motion for summary judgment before it may properly rule on Mary’s motion.",
+      "Next →"
+    ],
+    "heading": [],
+    "progress": "1 / 18",
+    "url": "http://127.0.0.1:4173/#/diagnostic"
+  },
+  {
+    "label": "after-click-1",
+    "body": "B BarMatrix EXIT ✕ 2 / 18 CONSTITUTIONAL LAW · LYDIA NEW HOPE PETITION A state has a statute providing that an unsuccessful candidate in a primary election for a party’s nomination for elected public office may not become a candidate for the same office at the following general election by nominating petition or by write-in votes. Lydia sought the New Hope Party’s nomination for governor in the Ma",
+    "buttonTexts": [
+      "Exit ✕",
+      "ALydia must demonstrate that the statute is not necessary to achieve a compelling state interest.",
+      "BLydia must demonstrate that the statute is not rationally related to a legitimate state interest.",
+      "CThe state must demonstrate that the statute is the least restrictive means of achieving a compelling state interest.",
+      "DThe state must demonstrate that the statute is rationally related to a legitimate state interest.",
+      "Next →"
+    ],
+    "heading": [],
+    "progress": "2 / 18",
+    "url": "http://127.0.0.1:4173/#/diagnostic"
+  },
+  {
+    "label": "after-click-9",
+    "body": "B BarMatrix EXIT ✕ 10 / 18 CRIMINAL LAW & PROCEDURE · BIBLE STUDY SAFE Question ID: 14671_bible_study_safe At 11:00 p.m., after a small Bible-study dinner, Daniel and Ruth were stopped in the entrance to their apartment building by Peter, who was masked and armed. Peter ordered them to take him into their apartment. After they entered the apartment, Peter forced Ruth to bind and gag Daniel and the",
+    "buttonTexts": [
+      "Exit ✕",
+      "Aburglary, robbery, and murder.",
+      "Brobbery and murder only.",
+      "Cburglary and robbery only.",
+      "Drobbery only.",
+      "Next →"
+    ],
+    "heading": [],
+    "progress": "10 / 18",
+    "url": "http://127.0.0.1:4173/#/diagnostic"
+  },
+  {
+    "label": "missing-next-17",
+    "snapshot": "- generic: B\n- generic: BarMatrix\n- button \"Exit ✕\"\n- generic: 18 / 18\n- generic: Criminal Law & Procedure · Bible Study Gas Station\n- paragraph: BARMATRIX Q# 14664 — Christian/law-school variation\n- paragraph: Stephen owned a small corner market and gas station near a law school and lived in the apartment above the store. One night after a Bible study, Barnabas demanded that Stephen sell him a six-pack of beer after the legal sales hour. Stephen refused, saying that he could not violate state law. Barnabas became enraged and deliberately drove his car into one of the gasoline pumps, snapping it off its base. The crash caused an explosion, and fire shot from the underground gasoline tank into the building. The building burned to the ground, and Stephen was killed.\n- paragraph: In a common-law jurisdiction, if Barnabas is charged with murder and arson, he should be\n- button \"A convicted of both offenses.\":\n  - generic: A\n  - generic: convicted of both offenses.\n- button \"B convicted of involuntary manslaughter and acquitted of arson.\" [active]:\n  - generic: B\n  - generic: convicted of involuntary manslaughter and acquitted of arson.\n- button \"C convicted of arson and involuntary manslaughter.\":\n  - generic: C\n  - generic: convicted of arson and involuntary manslaughter.\n- button \"D convicted of murder and acquitted of arson.\":\n  - generic: D\n  - generic: convicted of murder and acquitted of arson.\n- generic: Pick the answer you would choose under pressure\n- button \"See My Verdict →\":\n  - text: See My Verdict\n  - generic: →"
+  },
+  {
+    "label": "after-diagnostic",
+    "body": "B BarMatrix EXIT ✕ 18 / 18 CRIMINAL LAW & PROCEDURE · BIBLE STUDY GAS STATION BARMATRIX Q# 14664 — Christian/law-school variation Stephen owned a small corner market and gas station near a law school and lived in the apartment above the store. One night after a Bible study, Barnabas demanded that Stephen sell him a six-pack of beer after the legal sales hour. Stephen refused, saying that he could ",
+    "buttonTexts": [
+      "Exit ✕",
+      "Aconvicted of both offenses.",
+      "Bconvicted of involuntary manslaughter and acquitted of arson.",
+      "Cconvicted of arson and involuntary manslaughter.",
+      "Dconvicted of murder and acquitted of arson.",
+      "See My Verdict →"
+    ],
+    "heading": [],
+    "progress": "18 / 18",
+    "url": "http://127.0.0.1:4173/#/diagnostic"
+  }
+]

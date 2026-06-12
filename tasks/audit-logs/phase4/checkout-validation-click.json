@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-06-12T11:59:49.440Z",
+  "buttonCount": 1,
+  "after": {
+    "stillOnCheckout": true,
+    "url": "http://127.0.0.1:4173/checkout.html?lp=tear-method",
+    "validationShown": true,
+    "visibleErrorText": "BBarMatrixSECURE CHECKOUT · STRIPE▌ ENROLLMENT · JULY 2026 CYCLEYour BarMatrix seat.You're enrolling in BarMatrix Flagship — the multiple-choice-only MBE repair system. Diagnose. Repair. Stabilize.BarMatrix FlagshipJUL · 2026 CYCLEFinds your red zones · Wrong Answer Forensics on every miss · Tension Matrix · targeted repair drills · web access live now.PAY IN FULL$999ONE-TIME2-PAY PLAN$500+ $499TODAY + 30 DAYS▌ LIMITED SEATS AVAILABLEEnrollment closes when capacity is reached.$999Flagship price$999.00Due today$999.00▌ INCLUDED · JULY 2026 CYCLERed-Zone Map across all 8 MBE subjectsWrong Answer Forensics on every missPersonal Tension Matrix + Red-Zone MapPattern Mastery Board + Misconception ProfileTargeted Red-Zone Drills + Boot CampsWeb app access live now · same account3-day no-questions refund window1Confirm & enrollPayment is handled on Stripe's secure checkout page — card details are entered there, never on this site. You'll be brought back here the moment you're enrolled.I have read and accept the Terms of Service, Privacy Policy, and Refund Policy (3-day no-questions refund window). I understand BarMatrix is multiple-choice only and does not guarantee any exam outcome.One step first — check the box above to accept the terms, then Stripe's secure payment page opens.Enroll — $999 · Stripe secure checkoutSECURED BY STRIPE · 256-BIT TLS3-DAY MONEY-BACK GUARANTEE · CANCEL ANY TIME IN ACCOUNT"
+  },
+  "consoleErrors": []
+}

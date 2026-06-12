@@ -1,0 +1,5 @@
+- generic: B
+- generic: BarMatrix
+- heading "You’re in." [level=1]
+- generic: July 2026 cohort
+- generic: THE TRUE-BUT-WRONG PICK

@@ -1,0 +1,612 @@
+{
+  "checkedAt": "2026-06-12T11:58:02.619Z",
+  "checks": [
+    {
+      "path": "/campaign.html",
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=campaign-index",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=campaign-index",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "Twenty-six ways to sell the same sharp promise.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 1265,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - Same-Day Campaign",
+        "url": "http://127.0.0.1:4173/campaign.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/lp-tear-method.html",
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=tear-method",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=tear-method",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "Cut the obvious wrong answers. Clash the final two. Call the controlling distinction.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 1265,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - The MBE is won in the last two answers.",
+        "url": "http://127.0.0.1:4173/lp-tear-method.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/lp-flagship-repair-course.html",
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=flagship-repair-course",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=flagship-repair-course",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "The flagship product is not just a map. It teaches the operating system for using the map.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 1265,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - If the diagnostic shows the pattern, Flagship repair trains the reflex.",
+        "url": "http://127.0.0.1:4173/lp-flagship-repair-course.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/lp-c3-cut-clash-call.html",
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=tear-method",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=tear-method",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "Cut the obvious wrong answers. Clash the final two. Call the controlling distinction.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 1265,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - The MBE is won in the last two answers.",
+        "url": "http://127.0.0.1:4173/lp-tear-method.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/lp-foundations-course.html",
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=flagship-repair-course",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=flagship-repair-course",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "The flagship product is not just a map. It teaches the operating system for using the map.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 1265,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - If the diagnostic shows the pattern, Flagship repair trains the reflex.",
+        "url": "http://127.0.0.1:4173/lp-flagship-repair-course.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/help.html",
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "ctas": [
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Open App"
+          }
+        ],
+        "h1": "How can we help?",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": true,
+        "horizontalOverflow": false,
+        "scrollWidth": 1265,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css"
+        ],
+        "title": "BarMatrix — Help Center",
+        "url": "http://127.0.0.1:4173/help.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/checkout.html?lp=tear-method",
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "ctas": [],
+        "h1": "Your BarMatrix seat.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 1265,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css"
+        ],
+        "title": "BarMatrix — Checkout",
+        "url": "http://127.0.0.1:4173/checkout.html?lp=tear-method"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/campaign.html",
+      "viewport": "mobile-390",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 375,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=campaign-index",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=campaign-index",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "Twenty-six ways to sell the same sharp promise.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 375,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - Same-Day Campaign",
+        "url": "http://127.0.0.1:4173/campaign.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/lp-tear-method.html",
+      "viewport": "mobile-390",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 375,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=tear-method",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=tear-method",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "Cut the obvious wrong answers. Clash the final two. Call the controlling distinction.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 375,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - The MBE is won in the last two answers.",
+        "url": "http://127.0.0.1:4173/lp-tear-method.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/lp-flagship-repair-course.html",
+      "viewport": "mobile-390",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 375,
+        "ctas": [
+          {
+            "href": "/#/welcome",
+            "text": "App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=flagship-repair-course",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/diagnostic",
+            "text": "Start the Free Diagnostic / Get My Red-Zone Map →"
+          },
+          {
+            "href": "checkout.html?lp=flagship-repair-course",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "checkout.html?lp=footer",
+            "text": "See Flagship Details"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Student App"
+          },
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          }
+        ],
+        "h1": "The flagship product is not just a map. It teaches the operating system for using the map.",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": false,
+        "horizontalOverflow": false,
+        "scrollWidth": 375,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css",
+          "campaign.css"
+        ],
+        "title": "BarMatrix - If the diagnostic shows the pattern, Flagship repair trains the reflex.",
+        "url": "http://127.0.0.1:4173/lp-flagship-repair-course.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "path": "/help.html",
+      "viewport": "mobile-390",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 375,
+        "ctas": [
+          {
+            "href": "/#/how-it-works",
+            "text": "About"
+          },
+          {
+            "href": "/#/welcome",
+            "text": "Open App"
+          }
+        ],
+        "h1": "How can we help?",
+        "hasComputedBodyFont": true,
+        "helpNewPlanCopy": true,
+        "horizontalOverflow": false,
+        "scrollWidth": 375,
+        "staleNameHits": false,
+        "stalePriceHits": false,
+        "styleLinks": [
+          "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+          "styles.css"
+        ],
+        "title": "BarMatrix — Help Center",
+        "url": "http://127.0.0.1:4173/help.html"
+      },
+      "consoleErrors": []
+    }
+  ]
+}

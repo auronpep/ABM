@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-06-12T12:02:18.830Z",
+  "checks": [
+    {
+      "viewport": "desktop",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 1265,
+        "emailCtaHrefs": [
+          "/#/welcome",
+          "/#/welcome",
+          "checkout.html?source=email-capacity",
+          "/#/drills",
+          "/#/diagnostic",
+          "mailto:billing@barmatrix.app?subject=Receipt%20BMX-K4M2P",
+          "mailto:partners@barmatrix.app?subject=Partner%20link%20application",
+          "mailto:partners@barmatrix.app?subject=Partner%20dashboard%20access"
+        ],
+        "h1": "Lifecycle & ops emails.",
+        "horizontalOverflow": false,
+        "placeholderHrefCount": 0,
+        "scrollWidth": 1265,
+        "title": "BarMatrix — Email Template Gallery",
+        "url": "http://127.0.0.1:4173/emails.html"
+      },
+      "consoleErrors": []
+    },
+    {
+      "viewport": "mobile-390",
+      "details": {
+        "brokenImages": 0,
+        "clientWidth": 375,
+        "emailCtaHrefs": [
+          "/#/welcome",
+          "/#/welcome",
+          "checkout.html?source=email-capacity",
+          "/#/drills",
+          "/#/diagnostic",
+          "mailto:billing@barmatrix.app?subject=Receipt%20BMX-K4M2P",
+          "mailto:partners@barmatrix.app?subject=Partner%20link%20application",
+          "mailto:partners@barmatrix.app?subject=Partner%20dashboard%20access"
+        ],
+        "h1": "Lifecycle & ops emails.",
+        "horizontalOverflow": false,
+        "placeholderHrefCount": 0,
+        "scrollWidth": 375,
+        "title": "BarMatrix — Email Template Gallery",
+        "url": "http://127.0.0.1:4173/emails.html"
+      },
+      "consoleErrors": []
+    }
+  ]
+}

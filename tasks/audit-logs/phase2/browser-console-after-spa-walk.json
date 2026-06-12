@@ -1,0 +1,14 @@
+[
+  {
+    "level": "error",
+    "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+    "timestamp": "2026-06-12T11:39:43.990Z",
+    "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+  },
+  {
+    "level": "error",
+    "message": "e: Clerk: Production Keys are only allowed for domain \"barmatrix.app\". \nAPI Error: The Request HTTP Origin header must be equal to or a subdomain of the requesting URL.\n    at https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:7306\n    at u._baseFetch (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:38)\n    at async d.execute (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:2:5350)\n    at async s._baseGet (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:3:567)\n    at async Promise.all (index 1)\n    at async #U (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:73602)\n    at async e5.load (https://clerk.barmatrix.app/npm/@clerk/clerk-js@5/dist/clerk.browser.js:5:34383)\n    at async mf.loadClerkJS (http://127.0.0.1:4173/assets/index-CsI5Nlnl.js:62:55485)",
+    "timestamp": "2026-06-12T11:44:46.661Z",
+    "url": "http://127.0.0.1:4173/assets/index-CsI5Nlnl.js"
+  }
+]

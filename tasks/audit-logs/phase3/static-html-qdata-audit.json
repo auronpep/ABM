@@ -1,0 +1,300 @@
+{
+  "summary": {
+    "htmlCount": 36,
+    "htmlWithIssues": 0,
+    "totalHtmlIssues": 0,
+    "qdataCount": 137,
+    "qdataIssues": 0
+  },
+  "results": [
+    {
+      "file": "404.html",
+      "bytes": 5121,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Page Not Found",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "campaign.html",
+      "bytes": 19559,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Same-Day Campaign",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "checkout.html",
+      "bytes": 32284,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Checkout",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "emails.html",
+      "bytes": 37238,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Email Template Gallery",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "help.html",
+      "bytes": 12033,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Help Center",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "bytes": 1947,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Stop trusting the answer that almost tells the truth.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "login.html",
+      "bytes": 5720,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Open Your Dashboard",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-boot-camp.html",
+      "bytes": 14967,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Do not sprint through a subject. Sprint through its traps.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-c3-cut-clash-call.html",
+      "bytes": 15136,
+      "hasStylesheet": true,
+      "title": "BarMatrix - The MBE is won in the last two answers.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-civpro-summary-judgment.html",
+      "bytes": 15024,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Civil Procedure traps hide in the procedural posture.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-confidence-calibration.html",
+      "bytes": 15108,
+      "hasStylesheet": true,
+      "title": "BarMatrix - The most expensive miss is the one you felt sure about.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-conlaw-standing.html",
+      "bytes": 14987,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Standing is not vibes. It is injury, causation, and redressability.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-contracts-battle-forms.html",
+      "bytes": 14999,
+      "hasStylesheet": true,
+      "title": "BarMatrix - The trap is the rule you learned first.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-crimpro-vehicle-search.html",
+      "bytes": 15075,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Vehicle searches punish stale rules.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-diagnostic-map.html",
+      "bytes": 15282,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Your first job is not more questions. It is finding the pattern.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-evidence-hearsay-purpose.html",
+      "bytes": 15023,
+      "hasStylesheet": true,
+      "title": "BarMatrix - The hearsay trap starts before the exception list.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-failed-by-6.html",
+      "bytes": 14983,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Do not rebuild the same plan. Diagnose the leak.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-final-sprint.html",
+      "bytes": 14931,
+      "hasStylesheet": true,
+      "title": "BarMatrix - The final weeks are for closing leaks, not collecting resources.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-foundations-course.html",
+      "bytes": 15056,
+      "hasStylesheet": true,
+      "title": "BarMatrix - If the diagnostic shows the pattern, Foundations trains the reflex.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-four-traps.html",
+      "bytes": 14993,
+      "hasStylesheet": true,
+      "title": "BarMatrix - The traps are finite. Your next task should be finite too.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-pattern-mastery-board.html",
+      "bytes": 15060,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Percent correct is too blunt for the problem you have.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-priced-right.html",
+      "bytes": 14997,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Start free. Pay only if the map gives you direction.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-property-recording.html",
+      "bytes": 14960,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Notice is not one thing.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-red-zone-drills.html",
+      "bytes": 15171,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Practice does not repair unless it repeats the exact failure mode.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-red-zone.html",
+      "bytes": 14775,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Find your Red-Zone Map before you buy more direction.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-reddit-barprep.html",
+      "bytes": 15066,
+      "hasStylesheet": true,
+      "title": "BarMatrix - You do not need another motivational bar prep ad.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-repair-under-pressure.html",
+      "bytes": 15037,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Pressure reveals your recurring traps before you buy more direction.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-repeat-taker-rebuild.html",
+      "bytes": 15109,
+      "hasStylesheet": true,
+      "title": "BarMatrix - If you failed by a few points, do not restart the same way.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-timed-mixed-sets.html",
+      "bytes": 15021,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Timed practice should not become blind practice.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-torts-foreseeability.html",
+      "bytes": 15028,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Foreseeable does not mean every plaintiff, every harm, every time.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-working-student.html",
+      "bytes": 15097,
+      "hasStylesheet": true,
+      "title": "BarMatrix - When you only have 45 minutes, random review is too expensive.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-wrong-answer-forensics.html",
+      "bytes": 15105,
+      "hasStylesheet": true,
+      "title": "BarMatrix - Wrong-answer forensics for the moment you say: I knew that.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "lp-wrong-answers.html",
+      "bytes": 15081,
+      "hasStylesheet": true,
+      "title": "BarMatrix - You are not out of time. You are picking the same traps.",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "privacy.html",
+      "bytes": 7328,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Privacy Policy",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "refund.html",
+      "bytes": 7103,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Refund Policy",
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "terms.html",
+      "bytes": 7305,
+      "hasStylesheet": true,
+      "title": "BarMatrix — Terms of Service",
+      "issueCount": 0,
+      "issues": []
+    }
+  ],
+  "qIssues": []
+}
