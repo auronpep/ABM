@@ -187,3 +187,43 @@ Conflicts with the handoff's assumed stack are logged in CONFLICTS.md.
 - Observations for founder (not changed): Stripe page shows merchant
   "JWM Services"; checkout copy cites "47 trap tags" (stale vs canon — see
   docs/CANON_REFERENCE.md); terms links point at help.html.
+
+---
+
+## 2026-06-11 launch night — attorney directive, copy surgery shipped, Day 2–7 engine live
+
+- **Attorney directive (counsel, added to HANDOFF_LAUNCH_NIGHT.md)**:
+  educational study site — zero mentions of attorney review of questions/
+  drills/content anywhere on the live site; "attorney-grade" product
+  phrases also out. Fact-pattern uses of "attorney" (qdata) stay.
+- **Workstream A shipped + deployed (9dd8c9d)**: founder/Builder section →
+  "Proof Before Price · 03"; RedZoneReveal trust block recast to results;
+  help.html FAQ answers de-attorneyed; attorney-grade phrases in home.ts
+  recast; checkout 2,400/47-trap claims → red-zone capability copy; 7-day →
+  3-day refund across checkout/emails/help; **real policy pages built**
+  (terms.html, privacy.html, refund.html, site shell, 3-day window, facts
+  from docs/LIVE_INFRASTRUCTURE.md) and all checkout + funnel policy links
+  repointed.
+- **Workstream B shipped (df5c9f7) — Day 2–7 engine, client-local (P1 §5)**:
+  `src/program/plan.ts` next-action ladder (overdue spaced retest → repair
+  in progress → next zone → timed mixed set); `bm_program_set_v1` multi-zone
+  store (one loop per trap family, legacy bm_program_v1 migrates with
+  usedIds backfill); /welcome renders ONE primary action + live zone map
+  (REPAIRED·HOLDING / RETEST READY / IN REPAIR / QUEUED with retest dates);
+  zone 2..N loops exclude questions used by earlier zones; repaired screen
+  routes to the map, not the generic drill library; timed mixed set runner
+  (6 Qs, 12:00, cross-family, verdict names wobbling families). New events:
+  zone_n_started, retest_overdue_shown, mixed_set_complete.
+- **Verified in browser (local preview, all five states)**: no-map →
+  diagnostic; zone-1 start; zone-2 handoff (zero question overlap);
+  overdue-retest priority beats in-progress repair; legacy migration; full
+  mixed set run with event + stored result. Zero console errors.
+- **Deployed + verified live** (dpl_J4mrkXAAcSbAErZ1GBwhj3VRyPqt, bundle
+  index-DeIPopFd.js): greps clean (attorney/wheaton/2,400/7-day = 0 in
+  copy; 3-day present; policy pages 200); browser walk home → checkout
+  (terms links → new pages, 3-DAY guarantee) → Enroll → live
+  checkout.stripe.com `cs_live_…` loads; /#/welcome + UTM capture verified
+  on the influencer link.
+- Still founder-side: Stripe merchant name ("JWM Services"), Resend
+  activation, `vercel env add VITE_POSTHOG_KEY` + redeploy, 3-day refund
+  ops alignment (API queue was built around 7-day).
