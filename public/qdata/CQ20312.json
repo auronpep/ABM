@@ -1,0 +1,100 @@
+{
+ "id": "CQ20312",
+ "title": "Loaves Fishes Retreat",
+ "subject": "Real Property",
+ "topic": "Ownership",
+ "subtopic": "Life estates; remainders; encumbrance payment allocation",
+ "difficulty": "medium_high",
+ "tension": null,
+ "stem": "BARMATRIX Q#: 20312_loaves_fishes_retreat\nSubject: Real Property\nTransformed from: 20312\n\nMartha holds a life estate in a private lakeside parcel called the Loaves-and-Fishes Retreat, where families rent small cabins during nearby Bible-study weekends. Stephen holds the remainder. Before the life estate was created, the parcel was already subject to a recorded mortgage securing a loan on the parcel. The parcel’s reasonable rental value is greater than the total currently needed to cover both principal and interest on that secured obligation.\n\nWhich statement correctly allocates the payment obligation, as between Martha and Stephen, for the obligation secured by the mortgage?",
+ "call": "Which statement correctly allocates the payment obligation, as between Martha and Stephen, for the obligation secured by the mortgage?",
+ "choices": {
+  "A": "Martha must pay the principal, and Stephen must pay the interest.",
+  "B": "Stephen must pay both principal and interest.",
+  "C": "Martha must pay the interest, and Stephen must pay the principal.",
+  "D": "Martha must pay both principal and interest."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The answer array is a two-by-two allocation grid: two people, two payment components. Silver Key: do not pick the answer that feels fairest; first read the array as “who gets interest?” and “who gets principal?” Gold Key: for a mortgage or other encumbrance on land held in life estate, the life tenant pays the current-use cost — interest, up to the reasonable rental value — and the remainderman pays the long-term equity cost — principal.\n\nHere, Martha is the life tenant in possession, and the reasonable rental value is high enough to cover the relevant payment burden. Stephen holds the remainder. So Martha pays interest, and Stephen pays principal.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "Real Property. Rule-driven. The answer array is an allocation grid."
+  },
+  {
+   "label": "Initial CUT",
+   "text": "No clean structural cut. All four choices are grammatically plausible. A student cannot derive the principal/interest allocation from universal C3 alone."
+  },
+  {
+   "label": "CALL / Anchor",
+   "text": "Apply the Gold Key: life tenant = interest; remainderman = principal."
+  },
+  {
+   "label": "A.",
+   "text": "Cut after anchor. It reverses the allocation."
+  },
+  {
+   "label": "B.",
+   "text": "Cut after anchor. It over-assigns both burdens to the remainderman."
+  },
+  {
+   "label": "D.",
+   "text": "Cut after anchor. It over-assigns both burdens to the life tenant."
+  },
+  {
+   "label": "C.",
+   "text": "Residual answer. It matches the anchor exactly."
+  }
+ ],
+ "studentScript": "Grid first: interest or principal. Gold Key: life tenant pays interest; remainderman pays principal. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the Gold Key, the principal/interest allocation points the wrong way.",
+   "lawyer": "The correct allocation is life tenant interest and remainderman principal.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "After the Gold Key, this over-extends the remainderman’s principal burden to interest.",
+   "lawyer": "The remainderman bears principal as the future-equity burden, not interest.",
+   "mold": "extreme_of_range"
+  },
+  "C": {
+   "signal": "This matches the Gold Key allocation.",
+   "lawyer": "Life tenant pays interest to the extent of rental value; remainderman pays principal.",
+   "mold": null
+  },
+  "D": {
+   "signal": "After the Gold Key, this over-extends the life tenant’s interest burden to principal.",
+   "lawyer": "The life tenant bears interest, not principal, unless a creating instrument changes the allocation.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-LIFE-ENCUMBRANCE-01",
+   "statement": "For an existing mortgage or encumbrance on land held in life estate, the life tenant pays interest up to the reasonable rental value; the remainderman pays principal.",
+   "trigger": "life tenant + remainderman + mortgage/encumbrance + principal and interest",
+   "unlocks": "principal-vs-interest allocation traps",
+   "authority": "Thompson v. Watkins, 285 N.C. 616 (1974); N.Y. Real Property Law § 269."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-LIFE-ENCUMBRANCE-01",
+   "statement": "When every choice assigns principal and interest between two estate holders, read the answers as a 2x2 allocation grid before using the anchor.",
+   "trigger": "choices distribute principal and interest between life tenant and remainderman",
+   "unlocks": "allocation-grid trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Life tenant pays interest; remainderman pays principal",
+  "signal": "life tenant + remainderman + mortgage/encumbrance",
+  "studentMove": "Name the two payment components before choosing.",
+  "tinyRule": "Interest is current-use cost; principal is future-equity cost.",
+  "trap": "Choosing whoever seems more morally responsible for the whole mortgage."
+ }
+}

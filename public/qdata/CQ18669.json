@@ -1,0 +1,72 @@
+{
+ "id": "CQ18669",
+ "title": "Mary Negligence Survival",
+ "subject": "Civil Procedure",
+ "topic": "Erie Doctrine and Choice of Law",
+ "subtopic": "Survival of State Claims",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a Christian school teacher, was severely injured in a collision with a delivery truck driven by Paul in County X. Mary filed a negligence suit in federal court (diversity) against Paul's company. Mary died while the suit was pending. The forum state has a statute that says personal-injury negligence claims do not survive the plaintiff's death. Mary's estate asks the federal court to continue the claim under general federal procedure.\n\nWhat should the federal court do?",
+ "call": "What should the federal court do?",
+ "choices": {
+  "A": "Always continue the claim because federal courts prefer merits decisions.",
+  "B": "Use the defendant's home-state survival rule automatically.",
+  "C": "Apply state survival law because it determines whether the state-created claim continues to exist.",
+  "D": "Dismiss only if diversity is destroyed by the death."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The federal court should C — apply state survival law because the state-created claim's existence, scope, and survival are governed by state substantive law. Under Erie R.R. Co. v. Tompkins, 304 U.S. 64 (1938), a federal diversity court must apply state substantive law and federal procedural law. Whether a state-law personal-injury claim survives the plaintiff's death is part of the substance of the right — it determines whether the claim continues to exist at all. Gold Key: the survival of a state-created claim is a substantive question for Erie purposes; the forum state's survival statute therefore governs. Silver Key: the call is \"what should the federal court do?\" — the answer is the Erie command, not a merits-preference or diversity-impact analysis.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- A (\"always continue because federal courts prefer merits\") is cut by the Gold Key (Erie): the merits-preference intuition does not override the Erie command. The forum state's no-survival rule means the claim does not exist to be decided on the merits.\n- D (\"dismiss only if diversity is destroyed by the death\") is cut on the issue mismatch: the Erie analysis turns on the substantive survival of the claim, not on whether diversity is preserved.\n- B (\"use the defendant's home-state survival rule automatically\") is cut on Klaxon: a federal court sitting in diversity applies the forum state's choice-of-law rules, not the defendant's home-state rule automatically."
+  },
+  {
+   "label": "CLASH / CALL",
+   "text": "A, D, and B are all eliminated. There is no surviving CLASH. The Gold Key resolves the residue: the forum state's no-survival rule governs under Erie, and the federal court must apply it. Residual answer: C."
+  }
+ ],
+ "studentScript": "Step 1 — call focus. The call asks what the federal court should do in a diversity case involving a state-law claim. Step 2 — Erie. Under Erie, federal diversity courts apply state substantive law. Step 3 — survival. The survival of a state-created claim is a substantive question for Erie purposes; the forum state's no-survival rule governs. Step 4 — distractors. A is the merits-preference overclaim (rejected by the Gold Key). B is the defendant-home-state misfit (rejected by Klaxon). D is the citizenship-mismatch misfit (rejected by the issue mismatch). Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student reaches for the merits-preference intuition: federal courts like to decide cases on the merits. The Gold Key rejects the intuition: Erie requires application of state substantive law, and the forum state's no-survival rule means the claim does not exist to be decided on the merits.",
+   "lawyer": "Erie requires application of state substantive law; the merits-preference intuition does not override the Erie command. The forum state's no-survival rule controls.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The student imports a defendant-residence rule. The breaker: Klaxon requires the federal court to apply the forum state's choice-of-law rules, not the defendant's home-state rule automatically.",
+   "lawyer": "Klaxon Co. v. Stentor Electric Manufacturing Co., 313 U.S. 487 (1941), held that a federal court sitting in diversity applies the choice-of-law rules of the forum state, not the defendant's home-state rule automatically.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "This choice answers the Erie analysis: the forum state's no-survival rule governs because the survival of a state-created claim is a substantive question for Erie purposes.",
+   "lawyer": "Erie R.R. Co. v. Tompkins, 304 U.S. 64 (1938); Wheeling Steel Corp. v. Fox, 298 U.S. 193 (1936) (survival of a state-created claim is a substantive question for Erie purposes; the forum state's survival statute governs).",
+   "mold": null
+  },
+  "D": {
+   "signal": "The student confuses the survival question with a diversity-jurisdiction question. The breaker: the Erie analysis turns on the substantive survival of the claim, not on whether diversity is preserved.",
+   "lawyer": "The death of the plaintiff does not necessarily destroy diversity (the executor or administrator takes the plaintiff's place for citizenship purposes); the Erie analysis turns on the substantive survival of the claim, not on whether diversity is preserved.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-MARY-NEGLIGENCE-SURVIVAL-01",
+   "statement": "Under Erie, a federal diversity court applies state substantive law. The survival of a state-created claim is a substantive question for Erie purposes, so the forum state's survival statute — including a no-survival rule — governs.",
+   "trigger": "state-law plaintiff dies during federal diversity litigation; forum-state survival statute says the claim does not survive",
+   "unlocks": "merits-preference overclaim trap (A)",
+   "authority": "Erie R.R. Co. v. Tompkins, 304 U.S. 64 (1938); Klaxon Co. v. Stentor Electric Manufacturing Co., 313 U.S. 487 (1941); Wheeling Steel Corp. v. Fox, 298 U.S. 193 (1936)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Erie and survival of state claims",
+  "signal": "A state-law plaintiff dies during a federal diversity suit; the forum state's survival statute says the claim does not survive.",
+  "studentMove": "Apply Erie. The survival of a state-created claim is a substantive question; the forum state's no-survival rule governs. The merits-preference intuition does not override the Erie command.",
+  "tinyRule": "Under Erie, the survival of a state-created claim is substantive; the forum state's survival statute governs.",
+  "trap": "The merits-preference intuition pulls toward 'always continue.' The citizenship-mismatch intuition pulls toward 'dismiss if diversity destroyed.' Both miss the Erie analysis."
+ }
+}

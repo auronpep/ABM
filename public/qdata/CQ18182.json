@@ -1,0 +1,80 @@
+{
+ "id": "CQ18182",
+ "title": "Bookstore Mandamus",
+ "subject": "Civil Procedure",
+ "topic": "Appeals and Finality",
+ "subtopic": "Mandamus",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary and Daniel co-owned a small private bookstore in Tennessee. After they dissolved the partnership, Mary sued Daniel in federal district court for breach of fiduciary duty, alleging that Daniel had diverted partnership opportunities to a side business while still a co-owner. The district court denied Daniel's ordinary Rule 12(b)(6) motion to dismiss for failure to state a claim. Daniel then seeks a writ of mandamus from the court of appeals, arguing that trial will be expensive and that the judge probably made a legal mistake in denying the motion. Is mandamus likely available on those facts?",
+ "call": "Is mandamus likely available on those facts?",
+ "choices": {
+  "A": "Yes, because litigation expense alone creates mandamus jurisdiction.",
+  "B": "No, because federal courts abolished mandamus in civil cases.",
+  "C": "Yes, because mandamus is available whenever a party thinks an interlocutory ruling is wrong.",
+  "D": "No, because mandamus requires a clear and indisputable right and no adequate alternative remedy."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "Mandamus is not available on these facts. The choice is D. A Rule 12(b)(6) denial is an ordinary interlocutory ruling that the defendant can challenge on appeal after final judgment under 28 U.S.C. § 1291. The fact that trial will be expensive and that the district judge \"probably\" made a legal mistake does not satisfy the demanding mandamus standard. Gold Key: mandamus requires a clear and indisputable right to the relief sought AND the absence of any adequate alternative means of relief. The collateral-order doctrine and the eventual final-judgment appeal are both adequate alternative means, so mandamus is unavailable. Silver Key: when the call asks whether mandamus is available for an ordinary interlocutory ruling, run the \"clear and indisputable right\" check first; ordinary legal error in denying a routine motion does not clear the bar.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (litigation expense alone)",
+   "text": "is cut on misframed-element. The choice supplies the consequence (litigation expense) but skips the antecedent clear-and-indisputable-right question. Visible from the stem: \"arguing that trial will be expensive and that the judge probably made a legal mistake\" is the only stated basis for the writ, and neither element clears the standard. The choice is NOT_RESPONSIVE for asserting a sufficient basis where the stem shows only expense and a likely error."
+  },
+  {
+   "label": "B (federal courts abolished mandamus)",
+   "text": "is cut on misstated-rule. The All Writs Act, 28 U.S.C. § 1651(a), still authorizes the writ in civil cases. Visible from the stem: \"Daniel then seeks a writ of mandamus from the court of appeals\" is the procedural posture. The choice is NOT_TRUE for inventing a categorical abolition that the doctrine does not contain."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and D survive to the final axis: does the \"always when wrong\" intuition defeat the demanding clear-and-indisputable-right standard, or does the standard survive? The single axis they fight on is whether the mandamus writ lies for ordinary interlocutory legal error."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: mandamus requires a clear and indisputable right AND the absence of any adequate alternative means of relief. A party who merely thinks an interlocutory ruling is wrong does not satisfy the standard; the eventual final-judgment appeal is an adequate alternative means. Residual answer: D. A student without the Gold Key is in anchor_gap territory on the C/D axis; the trap is the dominant-trap attractiveness of C, not a structural cut on C."
+  }
+ ],
+ "studentScript": "Step 1: Is mandamus abolished in civil cases? No — 28 U.S.C. § 1651(a) (All Writs Act) still authorizes the writ in civil cases, but only in extraordinary circumstances. Cut B. Step 2: Does litigation expense alone create mandamus jurisdiction? No — ordinary litigation expense is part of the cost of having a federal case; the clear-and-indisputable-right prong is not satisfied. Cut A. Step 3: Does the 'mandamus is available whenever a party thinks an interlocutory ruling is wrong' intuition survive the demanding standard? Gold Key: mandamus = clear-and-indisputable-right AND no-adequate-alternative-means. A party who merely thinks an interlocutory ruling is wrong does not satisfy the standard; the eventual final-judgment appeal is an adequate alternative means. Silver Key: when the call asks whether mandamus is available for an ordinary interlocutory ruling, run the 'clear and indisputable right' check first. Choose D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice supplies the consequence (litigation expense) but skips the antecedent clear-and-indisputable-right question. The mandamus standard is two-prong; expense alone does not clear either prong.",
+   "lawyer": "Ordinary litigation expense does not, on its own, supply the clear-and-indisputable-right element. The writ is reserved for extraordinary causes; expense is part of the cost of having a federal case.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Mandamus is codified at 28 U.S.C. § 1651(a) (All Writs Act) and remains available in civil cases, but only in extraordinary circumstances.",
+   "lawyer": "The All Writs Act, 28 U.S.C. § 1651(a), still authorizes the writ in civil cases. The 'abolished' claim is a categorical exclusion the doctrine does not contain.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "The 'mandamus is available whenever' claim is a tiered absolute: it asserts an always/only rule that has a doctrinal exception. The Gold Key handles the clear-and-indisputable-right carve-out.",
+   "lawyer": "The writ is reserved for extraordinary causes. A party who merely thinks an interlocutory ruling is wrong does not satisfy the clear-and-indisputable-right element; the eventual final-judgment appeal is an adequate alternative means. Roche v. Evaporated Milk Ass'n, 319 U.S. 21, 26 (1943); Bankers Life & Casualty Co. v. Holland, 346 U.S. 379 (1953).",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "After the expense-alone misframing and the misstated no-writ claims are cut, and the tiered-absolute trap is killed by the Gold Key, the residual is the two-prong mandamus standard.",
+   "lawyer": "Mandamus requires a clear and indisputable right AND no adequate alternative means of relief. A denial of a Rule 12(b)(6) motion is an ordinary interlocutory ruling; the defendant can challenge the legal error in an appeal after final judgment under 28 U.S.C. § 1291, so the no-adequate-alternative prong is not satisfied.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-BOOKSTORE-MANDAMUS-01",
+   "statement": "Mandamus is an extraordinary writ. It requires the petitioner to show a clear and indisputable right to the relief sought AND the absence of any adequate alternative means of relief. The writ is not a substitute for an appeal; ordinary legal error in denying a routine motion does not clear the standard.",
+   "trigger": "ordinary interlocutory ruling; defendant seeks mandamus on weak grounds (expense, likely error)",
+   "unlocks": "tiered-absolute dominant trap (C)",
+   "authority": "All Writs Act, 28 U.S.C. § 1651(a); Roche v. Evaporated Milk Ass'n, 319 U.S. 21, 26 (1943); Bankers Life & Casualty Co. v. Holland, 346 U.S. 379 (1953)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Mandamus — clear and indisputable right + no adequate alternative means",
+  "signal": "A defendant seeks a writ of mandamus to challenge an ordinary interlocutory ruling on weak grounds (litigation expense, likely legal error).",
+  "studentMove": "Cut the consequence-instead-of-cause and the categorical-abolition distractors first. Then apply the Gold Key: the writ is reserved for extraordinary causes; the eventual final-judgment appeal is an adequate alternative means.",
+  "tinyRule": "Mandamus = clear-and-indisputable-right AND no-adequate-alternative-means. Ordinary legal error does not clear the bar.",
+  "trap": "The dominant trap is the 'mandamus is available whenever a party thinks an interlocutory ruling is wrong' claim (tiered absolute). It is engineered to look like the safe default; the doctrine narrows the writ to extraordinary circumstances."
+ }
+}

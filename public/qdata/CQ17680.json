@@ -1,0 +1,80 @@
+{
+ "id": "CQ17680",
+ "title": "Ministry Housing Permit",
+ "subject": "Constitutional Law",
+ "topic": "Equal Protection",
+ "subtopic": "Rational basis with bite (animus toward a group)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a Christian minister, applied to the town of Cedar Bend for a routine zoning permit to open a small transitional housing ministry for women recovering from addiction. The town planning board held a public hearing, voted, and denied the permit. In the hearing record, board members stated that they wanted to keep \"that kind of Christian group\" out of the neighborhood and identified no safety, zoning, fiscal, or land-use reason for the denial. Mary has sued in federal court, alleging that the denial violates the Equal Protection Clause.\n\nWhich of the following is the strongest Equal Protection argument on Mary's behalf?",
+ "call": "Which of the following is the strongest Equal Protection argument on Mary's behalf?",
+ "choices": {
+  "A": "The denial can fail rational basis review because it rests only on bare animus toward the group.",
+  "B": "Strict scrutiny applies automatically because the group is unpopular.",
+  "C": "The denial is valid because rational basis review means no review at all.",
+  "D": "The denial is valid if any resident dislikes the group."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Mary's strongest Equal Protection argument is that the denial can fail rational basis review because it rests only on bare animus toward the group. The Supreme Court has long recognized that even under deferential rational basis review, a government action must rest on some legitimate government interest. Cleburne v. Cleburne Living Center, Inc., 473 U.S. 432 (1985); U.S. Department of Agriculture v. Moreno, 413 U.S. 528 (1973). A bare desire to harm or exclude an unpopular group — animus — is not a legitimate government interest. Romer v. Evans, 517 U.S. 620 (1996) (striking down a state constitutional amendment that \"impos[ed] a broad and undifferentiated disability on a single named group\" under rational basis review). Here, the board's stated reason — keeping \"that kind of Christian group\" out — is bare animus, and the board gave no safety, zoning, fiscal, or land-use reason for the denial. That is the classic \"rational basis with bite\" pattern. Gold Key: animus toward a group is not a legitimate government interest, even under rational basis review; the discriminator can lose at rational basis without the court elevating the level of scrutiny. Silver Key: when the call asks for the strongest argument, look for the doctrinal move that wins on the actual record (here, animus on the face of the hearing record) rather than the move that escalates the level of scrutiny (strict scrutiny does not apply because the group is not a suspect or quasi-suspect class).",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (rational basis means no review)",
+   "text": "is cut on the tiered-absolute mold. The student treats rational basis as rubber-stamp. Rational basis review is deferential, but it still requires a legitimate interest. The choice is NOT_TRUE for misstating the rule (it presents rational basis as requiring no review at all, which is not the law)."
+  },
+  {
+   "label": "D (valid if any resident dislikes)",
+   "text": "is cut on the colloquialism mold. The student treats majority disfavor as the test. The choice is NOT_TRUE for misstating the rule (it presents bare resident dislike as a legitimate interest, which is not the law)."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: does animus require a tier escalation (strict scrutiny) or a finding that animus is not a legitimate interest at rational basis (rational basis with bite)? The single axis they fight on is the animus-to-tier-escalation move versus the rational-basis-with-bite move."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: animus toward a group is not a legitimate government interest, even under rational basis review; the discriminator can lose at rational basis without the court elevating the level of scrutiny. Apply the Gold Key → A. A student without the Gold Key is in anchor_gap territory on the animus-to-tier-escalation move; the answer is settled by Moreno, Cleburne, and Romer."
+  }
+ ],
+ "studentScript": "The call asks for the strongest Equal Protection argument on Mary's behalf. C is the tiered-absolute wrong answer (rational basis still requires a legitimate interest). D is the colloquialism wrong answer (majority dislike is not a legitimate interest). B is the animus-to-tier-escalation dominant trap (strict scrutiny does not apply because the group is not a suspect class). A matches the rational-basis-with-bite rule. Gold Key: animus is not a legitimate interest; the discriminator can lose at rational basis without strict scrutiny being triggered. Silver Key: when the call asks for the strongest argument, look for the doctrinal move that wins on the actual record. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the tiered-absolute and colloquialism traps are cut, the residual answer matches the rational-basis-with-bite rule: animus is not a legitimate interest, and the denial can fail rational basis without converting the group to a suspect class.",
+   "lawyer": "Cleburne v. Cleburne Living Center, 473 U.S. 432 (1985); U.S. Department of Agriculture v. Moreno, 413 U.S. 528 (1973); Romer v. Evans, 517 U.S. 620 (1996).",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student reaches for a stronger argument that does not exist. The Gold Key handles the axis: rational-basis-with-bite cases do not convert the group to a suspect class.",
+   "lawyer": "Strict scrutiny does not apply because the group is not a suspect or quasi-suspect class. The rational-basis-with-bite cases apply rational basis review but conclude that animus is not a legitimate interest.",
+   "mold": "backwards"
+  },
+  "C": {
+   "signal": "The student treats rational basis as rubber-stamp. The Silver Key handles the axis: rational basis still requires a legitimate interest.",
+   "lawyer": "Rational basis review is deferential, but it still requires a legitimate government interest. Animus is not a legitimate interest.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The student treats majority disfavor as the test. The choice is not a legal test; bare dislike is not a legitimate interest.",
+   "lawyer": "Equal Protection does not ask whether any resident dislikes the group; it asks whether the government action rests on a legitimate interest. Bare dislike is not a legitimate interest.",
+   "mold": "colloquialism"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONLAW-MINISTRY-HOUSING-PERMIT-01",
+   "statement": "Even under rational basis review, a government action based only on bare animus toward an unpopular group lacks a legitimate government interest; the discriminator can lose at rational basis without the court elevating the level of scrutiny.",
+   "trigger": "government actor denies a routine permit; animus on the face of the hearing record; no legitimate interest articulated; group is not a suspect or quasi-suspect class",
+   "unlocks": "animus-to-tier-escalation trap; strict-scrutiny-automatic wrong answer",
+   "authority": "Cleburne v. Cleburne Living Center, 473 U.S. 432 (1985); U.S. Department of Agriculture v. Moreno, 413 U.S. 528 (1973); Romer v. Evans, 517 U.S. 620 (1996)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Rational basis with bite — animus toward a group",
+  "signal": "Government actor denies a routine permit; animus on the face of the hearing record; no legitimate interest articulated.",
+  "studentMove": "Cut tiered-absolute and colloquialism answers. Apply the Gold Key: animus is not a legitimate interest; the discriminator can lose at rational basis without strict scrutiny being triggered.",
+  "tinyRule": "Animus toward a group is not a legitimate government interest, even under rational basis review.",
+  "trap": "Reaching for a tier-escalation argument (strict scrutiny) that does not exist."
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "CQ20439",
+ "title": "Floating Star Driveway",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Standard of Due Care / Best Argument",
+ "difficulty": "moderate-hard",
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q# 20439 is a Torts item with official key B. The supplied original answer set tests the walker’s best tort argument against a professional dog trainer: strict product liability for use of a defective product, unreasonable front-yard activity, concurring cause, and professional status. The official explanation identifies unreasonable conduct as the only listed argument that could support liability.\n\nChristian variation — QID 20439_floating_star_driveway\n\nTimothy was walking on the public sidewalk past Lydia’s house on Saturday morning. Lydia, a professional director of children’s Christmas pageants, was rehearsing a “floating star” scene for a neighborhood Advent program. She tested a rented battery-powered cable rig in her open driveway beside the sidewalk. A defect in the rig caused a plywood star to swing outside the driveway and strike Timothy.\n\nIf Timothy asserts a claim against Lydia, Timothy’s most effective argument in support of his claim would be that",
+ "call": "If Timothy asserts a claim against Lydia, Timothy’s most effective argument in support of his claim would be that",
+ "choices": {
+  "A": "Lydia was a professional Christmas-pageant director.",
+  "B": "Lydia’s conduct was a concurring cause of Timothy’s harm.",
+  "C": "It was unreasonable for Lydia to test the cable rig in her open driveway beside a public sidewalk.",
+  "D": "Lydia is strictly liable for harm resulting from her use of a defective product."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Timothy’s strongest listed argument is that Lydia acted unreasonably by testing the cable rig in an open driveway beside a public sidewalk. Gold Key: negligence needs an unreasonable-risk theory; here, the argument supplies a fault basis instead of merely pointing to a product, a cause, or Lydia’s professional title. Silver Key: on a “most effective argument” call, do not demand a guaranteed win. Choose the only answer that gives the plaintiff a legally operative route to liability.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — professional status",
+   "text": "Status alone does not answer the call. It says what Lydia is, not what she did wrong. Cut as NOT_RESPONSIVE, wrong_element."
+  },
+  {
+   "label": "CUT B — concurring cause",
+   "text": "Cause alone is incomplete. The claim needs an operative liability basis. Cut as NOT_RESPONSIVE, wrong_element."
+  },
+  {
+   "label": "CUT D — defective product strict liability",
+   "text": "This uses a real neighboring doctrine but points it at the wrong role. Lydia is the user in the stem, not the commercial supplier. Cut as NOT_RESPONSIVE, bait_doctrine, anchor-assisted."
+  },
+  {
+   "label": "Residual C",
+   "text": "C gives the only argument that supplies unreasonable conduct. No CLASH remains. CALL not needed beyond the best-argument navigation check."
+  }
+ ],
+ "studentScript": "Best argument for Timothy. Product defect is tempting, but Lydia is a user. Cause is only cause. Professional title is only status. Unreasonable testing beside the sidewalk gives negligence. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer gives who Lydia is, not what she did wrong.",
+   "lawyer": "Professional status may inform the standard of care, but status alone does not establish breach.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The answer supplies causal connection, but not a liability basis.",
+   "lawyer": "Causation is necessary but not sufficient; liability requires negligence, intent, or strict-liability category.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The answer gives a blame/fault theory that responds to the claim-support call.",
+   "lawyer": "Unreasonable conduct is the breach/fault route for negligence.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The product-defect words are real, but the stem casts Lydia as a user.",
+   "lawyer": "Strict products liability runs against commercial sellers/distributors, not a mere user of the product.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-USER-SUPPLIER-01",
+   "statement": "Strict products liability for a defective product is aimed at commercial sellers or distributors, not a person who merely uses the product.",
+   "trigger": "The defendant is using, testing, or operating a product rather than selling or distributing it.",
+   "unlocks": "Defeats the defective-product trap.",
+   "authority": "Restatement (Third) of Torts: Products Liability § 1."
+  },
+  {
+   "id": "GK-TORTS-FAULT-BASIS-01",
+   "statement": "Cause and status are not enough; the plaintiff’s argument must supply negligence, intent, or a strict-liability category. Unreasonable conduct supplies the negligence route.",
+   "trigger": "A best-argument call with choices that name cause, status, or product defect.",
+   "unlocks": "Separates the fault-basis answer from cause-only and status-only distractors.",
+   "authority": "Restatement (Third) of Torts: Liability for Physical and Emotional Harm § 3."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-BEST-ARGUMENT-01",
+   "statement": "On a best-argument call, pick the answer that gives the plaintiff a legal route to liability; do not require the answer to prove the whole case.",
+   "trigger": "The call asks for the claimant’s most effective argument.",
+   "unlocks": "The gap between possible liability and guaranteed liability.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Cause/status/product are not the claim",
+  "signal": "A Torts answer names only cause, status, or product defect.",
+  "studentMove": "Ask whether the answer supplies a liability basis.",
+  "tinyRule": "For negligence, look for unreasonable conduct.",
+  "trap": "Choosing a legally flavored fragment instead of the operative ground."
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": "CQ18890",
+ "title": "Hanna Erie Threshold",
+ "subject": "Civil Procedure",
+ "topic": "Erie Doctrine and Choice of Law",
+ "subtopic": "Erie Sequence (Hanna two-track analysis)",
+ "difficulty": "Core (carried from source row; not separately scored)",
+ "tension": null,
+ "stem": "In a federal diversity action, Hannah, a second-year law clerk, writes a memo to the supervising partner arguing that the Erie answer is always simple: if applying the state rule would change the outcome, the state rule applies; if it would not, federal practice applies. The case is a personal-injury claim governed by state negligence law, and the central dispute is whether an out-of-court statement is admissible against the defendant. Federal Rule of Evidence 801 directly addresses whether that statement is hearsay and excluded from evidence.\n\nWhat is wrong with Hannah's statement?",
+ "call": "What is wrong with Hannah's statement?",
+ "choices": {
+  "A": "It ignores the threshold question whether a valid federal directive directly controls the issue.",
+  "B": "Nothing; outcome effect is the complete Erie test in every case.",
+  "C": "It is wrong because state law always applies in diversity.",
+  "D": "It is wrong because federal law always applies in diversity."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Hannah's statement is wrong because it ignores the threshold question of whether a valid federal directive directly controls the issue. Under Hanna v. Plumer, 380 U.S. 460 (1965), Erie analysis runs on a two-track: the first question is whether a valid Federal Rule of Civil Procedure or valid federal statute directly controls the issue. If a valid federal directive is on point, the federal directive applies, and the outcome-determinative test does not come into play. Only when no valid federal directive directly controls does the analysis proceed to the second track: the Erie \"substance vs. procedure\" inquiry (outcome-determinative test under Guaranty Trust and federal-interest balancing under Byrd).\n\nHere, the dispute is over the admissibility of an out-of-court statement, and Federal Rule of Evidence 801 directly addresses whether that statement is hearsay and excluded from evidence. FRE 801 is a valid federal directive (it is a Federal Rule of Evidence promulgated under the Rules Enabling Act, 28 U.S.C. § 2072, and pursuant to the Supreme Court's rulemaking authority). It directly controls the hearsay inquiry. The federal directive applies; the state rule of evidence does not control. The outcome-determinative test is not the deciding framework. Hannah skipped the first step of the two-track analysis. Gold Key: under Hanna v. Plumer, the Erie sequence begins with the federal-directive threshold; the outcome test runs only if no valid federal directive directly controls. Silver Key: when the stem names a specific Federal Rule directly on point, lock the federal-directive threshold first; do not reach for the outcome test.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- B (\"Nothing; outcome effect is the complete Erie test in every case\") is cut on NOT_TRUE. The word \"every\" is the visible overclaim marker. Under Hanna v. Plumer, the Erie sequence begins with the federal-directive threshold; the outcome-determinative test runs only if no valid federal directive directly controls. The \"Erie is the outcome test in every case\" framing loses to the Hanna counterexample. Cut on filter broken: NOT_TRUE. Mold: tiered_absolute. Dominant trap, but cut on the overclaim structure.\n- C (\"It is wrong because state law always applies in diversity\") is cut on NOT_TRUE. Erie and Hanna together hold that state substantive law applies in diversity, but federal procedural law — including valid Federal Rules — also applies when directly on point. A state-only rule cannot displace a valid federal directive. The \"always applies\" framing is a tiered_absolute overclaim that loses to the Hanna counterexample. Cut on filter broken: NOT_TRUE. Mold: tiered_absolute.\n- D (\"It is wrong because federal law always applies in diversity\") is cut on NOT_TRUE. Erie holds that state substantive law applies in diversity; federal law applies only to the extent a valid federal directive directly controls the issue, or to the extent a federal procedural rule is valid under the Rules Enabling Act. The \"always applies\" framing is a tiered_absolute overclaim that loses to the Erie counterexample. Cut on filter broken: NOT_TRUE. Mold: tiered_absolute."
+  },
+  {
+   "label": "CLASH",
+   "text": "A, the correct answer, breaks neither filter on the visible stem facts (FRE 801 is a Federal Rule of Evidence directly on point; Hanna requires the federal-directive threshold first). After B, C, and D are cut, A is the residual: it is true (the Hanna two-track analysis requires the federal-directive threshold first) and it is responsive (it directly answers what is wrong with the law clerk's over-simplified Erie statement)."
+  },
+  {
+   "label": "CALL",
+   "text": "A is the residual. Pick A."
+  }
+ ],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Breaks neither filter. The choice is true (under Hanna, the Erie sequence begins with the federal-directive threshold; the outcome test runs only if no valid federal directive directly controls) and it is responsive (it directly answers what is wrong with the law clerk's over-simplified Erie statement). Visible from the stem: FRE 801 is a valid federal directive directly on point.",
+   "lawyer": "Under Hanna v. Plumer, 380 U.S. 460 (1965), the first step in any Erie analysis is to ask whether a valid Federal Rule of Civil Procedure or valid federal statute directly controls the issue. If yes, the federal directive applies, and the outcome-determinative test does not come into play. FRE 801 is a valid federal directive directly on point; the federal directive applies; the law clerk's over-simplification is wrong on the first step.",
+   "mold": "correct_answer"
+  },
+  "B": {
+   "signal": "The word 'every' is the visible overclaim marker. Under Hanna, the outcome-determinative test runs only if no valid federal directive directly controls. The 'Erie is the outcome test in every case' framing loses to the Hanna counterexample. Dominant trap.",
+   "lawyer": "Erie and Hanna together hold that the outcome-determinative test runs only when no valid federal directive directly controls the issue. The 'Nothing; outcome effect is the complete Erie test in every case' framing is a `tiered_absolute` overclaim that loses to the Hanna counterexample. **Gold Key** (GK-CIVPRO-ERIE-HANNA-01): under Hanna v. Plumer, the Erie sequence begins with the federal-directive threshold; the outcome test runs only if no valid federal directive directly controls.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The word 'always' is the visible overclaim marker. Erie holds that federal courts in diversity apply state substantive law, but federal procedural law — including valid Federal Rules — also applies when directly on point. The state-only cliche cannot displace a valid federal directive directly on point.",
+   "lawyer": "Erie and Hanna together hold that state substantive law applies in diversity, but federal procedural law (including valid Federal Rules of Civil Procedure and Federal Rules of Evidence) also applies when directly on point. The 'state law always applies' framing is a `tiered_absolute` overclaim that loses to the Hanna counterexample.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The word 'always' is the visible overclaim marker. Erie holds that state substantive law applies in diversity; federal law applies only to the extent a valid federal directive directly controls the issue, or to the extent a federal procedural rule is valid under the Rules Enabling Act. The 'federal law always applies' framing cannot replace the Erie substantive-law rule.",
+   "lawyer": "Erie holds that state substantive law applies in diversity; federal law applies only to the extent a valid federal directive directly controls the issue, or to the extent a federal procedural rule is valid under the Rules Enabling Act. The 'federal law always applies' framing is a `tiered_absolute` overclaim that loses to the Erie counterexample.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-ERIE-HANNA-01",
+   "statement": "Under Hanna v. Plumer, the first step in any Erie analysis is to ask whether a valid Federal Rule of Civil Procedure or valid federal statute directly controls the issue; if it does, the federal directive applies, and the outcome-determinative test does not come into play.",
+   "trigger": "When the stem names a specific Federal Rule directly on point (e.g., FRE 801 hearsay), lock the federal-directive threshold first; do not reach for the outcome test.",
+   "unlocks": "The outcome-test-only dominant trap (choice B) by naming the Hanna first-step move; the state-only and federal-only cliches (choices C and D) by anchoring on the federal-directive threshold.",
+   "authority": "Hanna v. Plumer, 380 U.S. 460 (1965); Erie Railroad Co. v. Tompkins, 304 U.S. 64 (1938); cf. Guaranty Trust Co. v. York, 326 U.S. 99 (1945); Byrd v. Blue Ridge Rural Electric Cooperative, 356 U.S. 525 (1958); Rules Enabling Act, 28 U.S.C. § 2072."
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Erie sequence — Hanna first-step (federal-directive threshold)",
+  "signal": "Diversity action; a Federal Rule directly on point; an over-simplified Erie framing",
+  "studentMove": "Lock the federal-directive threshold on the visible stem fact (a Federal Rule directly on point). Cut B (outcome-test-only) on the universal-quantifier marker 'every.' Cut C (state-only) on the overclaim marker 'always.' Cut D (federal-only) on the overclaim marker 'always.'",
+  "tinyRule": "Under Hanna, the Erie sequence begins with the federal-directive threshold; the outcome test runs only if no valid federal directive directly controls.",
+  "trap": "The 'Erie is the outcome test' shortcut and the state-only / federal-only cliches."
+ }
+}

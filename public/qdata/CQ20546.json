@@ -1,0 +1,103 @@
+{
+ "id": "CQ20546",
+ "title": "Jericho Wall Studio",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Premises liability / invitee dangerous condition",
+ "difficulty": "medium_high",
+ "tension": null,
+ "stem": "Lydia owned Selah Studio, a private Bible-verse calligraphy studio open to the public for paid lettering workshops and sales of framed Scripture cards. After closing, Lydia hired Barnabas to install a motorized “Jericho Wall” display in the front room. When a participant stepped on a pressure mat, wooden panels were supposed to slide apart to reveal the day’s featured verse.\n\nBarnabas read the manufacturer’s instructions but disregarded the warnings. When he finished, he did not test the display by stepping on the pressure mat, but told Ruth, Lydia’s night manager, that the installation was complete. The next morning, when Selah Studio opened, Mary entered and was struck by one of the moving panels. Mary asserted a claim for her injuries against Lydia.\n\nWhich one of the following additional facts or inferences, if it was the only one true, would be most likely to result in a judgment for Mary?",
+ "call": "Which one of the following additional facts or inferences, if it was the only one true, would be most likely to result in a judgment for Mary?",
+ "choices": {
+  "A": "Mary had paid the workshop fee before the panel struck her.",
+  "B": "A reasonable inspection by Lydia would have disclosed that the panel swung into the aisle improperly.",
+  "C": "Mary’s injury resulted from a defect in the pressure mat.",
+  "D": "Barnabas was not negligent in installing the Jericho Wall display."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the best answer. It connects the injury to Lydia’s own premises duty. The claim is against Lydia, not Barnabas and not the manufacturer. The added fact says a reasonable inspection by Lydia would have revealed the improper swing before Mary was injured. That supplies the owner-side breach path the call is asking for.\n\nGold Key: For a business invitee, the owner’s live duty is reasonable inspection and protection against dangerous conditions the owner knows about or would discover by reasonable care. Silver Key: Lock the named defendant first. The answer must create liability for Lydia, not merely explain how the device failed, whether Barnabas was careful, or whether Mary paid.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. Payment status does not answer the breach question."
+  },
+  {
+   "label": "CUT C",
+   "text": "Not responsive. Product defect answers a different frame unless tied to Lydia’s inspection duty."
+  },
+  {
+   "label": "CUT D",
+   "text": "Not responsive. Contractor non-negligence does not prove owner negligence."
+  },
+  {
+   "label": "Residual",
+   "text": "B. It answers the named-defendant negligence path."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "Claim against Lydia. CUT anything that does not show Lydia’s inspection breach. A is payment only. C is product frame. D is Barnabas only. B gives reasonable inspection by Lydia. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice talks about Mary paying, not about what Lydia should have discovered or fixed.",
+   "lawyer": "Payment is not needed to make a public business visitor an invitee; the duty analysis still needs owner breach.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This choice connects the named defendant to a dangerous condition discoverable by reasonable inspection.",
+   "lawyer": "This tracks the invitee-premises rule: reasonable care includes discovering and protecting against dangerous conditions that reasonable care would reveal.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice explains the device, not Lydia’s inspection or repair conduct.",
+   "lawyer": "A product defect alone supports a product-liability frame against a product seller; Lydia is sued as premises owner.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The claim is against Lydia; the choice only says Barnabas was not negligent.",
+   "lawyer": "A contractor’s non-negligence does not supply the owner’s negligence.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-JERICHO-WALL-01",
+   "statement": "For a business invitee, owner liability turns on dangerous conditions the owner knew about or would discover by reasonable care, plus failure to protect.",
+   "trigger": "public-facing business premises plus customer injury from a condition on the premises",
+   "unlocks": "why reasonable inspection is the winning fact",
+   "authority": "Restatement (Second) of Torts §§ 332, 343"
+  },
+  {
+   "id": "GK-TORTS-PRODUCT-SELLER-01",
+   "statement": "A product defect alone points to strict products liability only when the defendant is in the business of selling that type of product.",
+   "trigger": "injury from a defective component but defendant is sued as premises owner",
+   "unlocks": "the pressure-mat product-defect trap",
+   "authority": "Restatement (Second) of Torts § 402A"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-JERICHO-WALL-01",
+   "statement": "Lock the named defendant before reading the added facts: the winning fact must create liability for Lydia, not for Barnabas or the product chain.",
+   "trigger": "one defendant named in the call, but choices mention product defect, contractor conduct, and customer payment",
+   "unlocks": "3-vs-1 wrong-defendant answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Owner-inspection fact beats product/contractor/status bait",
+  "signal": "Premises owner is sued after a third party installed a dangerous device.",
+  "studentMove": "Ask which choice supplies breach by the named owner.",
+  "tinyRule": "For invitees, reasonable inspection can be the breach path.",
+  "trap": "Product defect and contractor conduct feel causal but do not answer owner breach."
+ }
+}

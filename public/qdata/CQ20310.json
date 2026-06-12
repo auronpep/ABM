@@ -1,0 +1,92 @@
+{
+ "id": "CQ20310",
+ "title": "Psalms Wax Lamp",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Breach",
+ "difficulty": "medium-high",
+ "tension": null,
+ "stem": "Lydia runs a paid private Psalms calligraphy workshop in her garage studio. During the class, Ruth reached across the worktable for a sheet of parchment and brushed her forearm against an exposed brass warming lamp used to soften sealing wax. Ruth was burned. The next morning, Lydia installed a small wire guard around the lamp. Lydia admits that the guard could have been installed before Ruth was burned, but she denies that reasonable care required a guard under the conditions that existed during the class.\n\nFor breach, what is the best use of the later installation?",
+ "call": "For breach, what is the best use of the later installation?",
+ "choices": {
+  "A": "It may matter only to feasibility if feasibility is genuinely disputed, but it does not replace the breach analysis.",
+  "B": "It proves Ruth was contributorily negligent because Lydia added the guard after the burn.",
+  "C": "It conclusively proves Lydia breached her duty before Ruth was burned.",
+  "D": "It is always irrelevant to every issue because it happened after the injury."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The later wire guard does not answer the breach question by itself. The breach question still asks whether reasonable care required the guard before Ruth was burned. Gold Key: a later safety change is not proof that the earlier condition was negligent; its limited use is a non-breach purpose such as feasibility, and only if that purpose is genuinely disputed. Silver Key: lock the call to “best use for breach.” Do not let the later fix become a shortcut for deciding whether the earlier setup was unreasonable.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "“Conclusive proof” is an overclaim. A later guard may feel like an admission, but conclusive skips the breach analysis."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Always irrelevant to every issue” is an overclaim. The answer denies all limited uses."
+  },
+  {
+   "label": "CUT B",
+   "text": "Ruth’s contributory negligence is the wrong target. The call asks breach by Lydia."
+  },
+  {
+   "label": "RESIDUAL A",
+   "text": "The only answer that keeps the use narrow and keeps breach analysis separate."
+  },
+  {
+   "label": "CALL / anchor check",
+   "text": "Gold Key confirms the residual: later safety changes are not breach proof; feasibility is a limited use only if genuinely disputed."
+  }
+ ],
+ "studentScript": "The later guard cannot replace breach. If feasibility were disputed, it might matter there. Here feasibility is admitted. A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Narrow conditional answer; it refuses to treat the later guard as breach proof.",
+   "lawyer": "Fed. R. Evid. 407 permits later remedial-measure evidence for feasibility if disputed and bars it to prove negligence; breach remains reasonable care under prior circumstances.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The call asks whether Lydia breached; this answer talks about Ruth's contributory negligence.",
+   "lawyer": "A defendant's later installation does not establish the plaintiff's lack of care.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The word conclusively skips the breach analysis.",
+   "lawyer": "Later remedial measures are not admissible to prove negligence or culpable conduct and are not an admission of prior breach.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "Always irrelevant to every issue says too much.",
+   "lawyer": "Later remedial measures can be admitted for a limited non-prohibited purpose, including feasibility if disputed.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-LATER-REPAIR-01",
+   "statement": "A later safety fix is not proof that the earlier condition was negligent. Its limited use is a non-breach purpose such as feasibility, and only if that purpose is genuinely disputed.",
+   "trigger": "Defendant changes the condition after the injury.",
+   "unlocks": "later-fix-as-admission trap",
+   "authority": "Fed. R. Evid. 407; Restatement (Third) of Torts: Liability for Physical and Emotional Harm §3."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-LATER-REPAIR-01",
+   "statement": "Lock the call to use, not hindsight. First cut the two extremes: later fix proves everything, later fix proves nothing.",
+   "trigger": "A post-injury safety change appears in a breach question.",
+   "unlocks": "later-installation answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Later Fix Is Not Hindsight Liability",
+  "signal": "Post-injury repair, added guard, new warning, new traction, or changed procedure.",
+  "studentMove": "Separate prior breach from later feasibility.",
+  "tinyRule": "Later fix is not breach proof; feasibility only if genuinely disputed.",
+  "trap": "They fixed it later, so they must have breached earlier."
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "id": "CQ18586",
+ "title": "Hymnsong Records",
+ "subject": "Constitutional Law",
+ "topic": "Privileges And Immunities",
+ "subtopic": "Article IV plaintiff threshold",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Hymnsong Records Inc. is a Tennessee corporation that produces Christian-music albums. It wants to distribute its catalog in California. California requires out-of-state recording companies to pay an annual distribution license fee of $3,200, while California-incorporated recording companies pay $1,400. Hymnsong sues California in federal court, asserting only an Article IV Privileges and Immunities claim against the higher fee.\n\nWhat is California's strongest response to that claim?",
+ "call": "What is California's strongest response to that claim?",
+ "choices": {
+  "A": "Hymnsong is not a citizen for Article IV Privileges and Immunities purposes.",
+  "B": "Article IV Privileges and Immunities protects corporations whenever they distribute across state lines.",
+  "C": "Hymnsong wins automatically because the higher fee is a fundamental burden on out-of-state commerce.",
+  "D": "Article IV Privileges and Immunities applies only to criminal defendants."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "California's strongest response is A. Article IV, Section 2, of the Constitution (the \"Comity Clause\") protects only the \"Citizens of the several States\" — that is, natural persons who are citizens of a state other than the forum state. A corporation, even one incorporated in another state, is not a \"citizen\" for Article IV P&I purposes; corporations must look to other doctrines (e.g., the dormant Commerce Clause, the Privileges or Immunities Clause of the Fourteenth Amendment, or Equal Protection) to challenge discriminatory state regulation. Gold Key: the Article IV P&I plaintiff threshold is a person-class threshold, not a burdens-on-commerce threshold — and a corporation is not in the protected class at all.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- B (\"Article IV P&I protects corporations whenever they distribute across state lines\") is cut by the Gold Key (person-class threshold): the clause's text and case law require a natural-person citizen of another state; a corporation is not in the protected class. The \"whenever\" overclaim is the mold's signature.\n- C (\"Hymnsong wins automatically because the higher fee is a fundamental burden on out-of-state commerce\") is cut by the same Gold Key: the person-class objection resolves the case before any merits-level \"fundamental burden\" theory is reached. The \"automatically\" is a tiered-absolute overclaim.\n- D (\"Article IV P&I applies only to criminal defendants\") is cut by a Call to black-letter law: Article IV P&I protects civil economic rights of natural citizen-plaintiffs (e.g., United Building & Construction Trades Council v. Mayor of Camden, 465 U.S. 208 (1984)) and is not limited to criminal matters. The \"criminal-only\" frame is a flat misstatement."
+  },
+  {
+   "label": "CLASH / CALL",
+   "text": "B, C, and D are all eliminated at the person-class threshold (A) — the person-class objection is dispositive. There is no surviving CLASH. The Gold Key resolves the residue: Hymnsong loses because it is not a citizen for Article IV P&I. Residual answer: A."
+  }
+ ],
+ "studentScript": "Step 1 — person-class. Article IV P&I protects only natural-person citizens of other states. Hymnsong is a corporation. Gold Key: the case is resolved at the threshold; the merits are never reached. Step 2 — distractors. B bridges from 'interstate burden' to 'Article IV applies' — the bridge is wrong. C asserts an automatic merits win — the merits never get reached. D limits Article IV to criminal defendants — wrong; Article IV P&I protects civil economic rights of natural citizens. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This is the only answer that engages the Article IV P&I person-class threshold; it disposes of the case before the merits.",
+   "lawyer": "Article IV P&I protects only the 'Citizens of each State,' i.e., natural persons; a corporation is not a citizen and cannot invoke the clause. Paul v. Virginia, 75 U.S. (8 Wall.) 168 (1869).",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student bridges from 'interstate burden' to 'Article IV must apply.' The Gold Key rejects the bridge: a corporation is outside the protected class.",
+   "lawyer": "Article IV P&I does not protect corporations; the dormant Commerce Clause addresses the interstate-burden argument, but Hymnsong did not plead that doctrine.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "The student skips the person-class threshold and asserts automatic victory on a 'fundamental burden' theory. The Gold Key blocks the merits entirely.",
+   "lawyer": "Even if a higher fee burdened out-of-state commerce, Article IV P&I does not reach a corporate plaintiff; the case is dismissed at the threshold, not on the merits.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The student conflates Article IV P&I with the Sixth Amendment's criminal-procedure rights. Article IV P&I protects civil economic rights of natural citizen-plaintiffs.",
+   "lawyer": "Article IV P&I is a clause about civil economic and fundamental rights of natural citizens (e.g., right to practice a livelihood, right to own property), not a criminal-procedure clause. See United Building & Construction Trades Council v. Mayor of Camden, 465 U.S. 208 (1984).",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-HYMNSONG-RECORDS-01",
+   "statement": "Article IV Privileges and Immunities protects only the natural-person citizens of other states. A corporation is not a citizen for that clause, so a corporate plaintiff cannot use Article IV P&I to challenge a state's higher regulatory fee.",
+   "trigger": "out-of-state non-natural-person entity challenges a higher state fee under Article IV P&I",
+   "unlocks": "interstate-burden bridge trap (B) and tiered-absolute automatic-win trap (C)",
+   "authority": "Article IV, Section 2, U.S. Constitution; Paul v. Virginia, 75 U.S. (8 Wall.) 168 (1869); United Building & Construction Trades Council v. Mayor of Camden, 465 U.S. 208 (1984)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Article IV P&I person-class threshold",
+  "signal": "A non-natural-person entity (corporation, LLC, partnership) sues under only Article IV Privileges and Immunities.",
+  "studentMove": "Cut the merits. The clause's text and case law require a natural-person citizen of another state; a corporation is not a citizen. The case is resolved at the threshold.",
+  "tinyRule": "Article IV P&I protects only natural-person citizens of other states.",
+  "trap": "The student bridges from 'interstate burden' to 'Article IV applies' or jumps to a 'fundamental burden' merits theory. Both miss the person-class threshold."
+ }
+}

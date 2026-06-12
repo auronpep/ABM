@@ -1,0 +1,96 @@
+{
+ "id": "CQ21711",
+ "title": "Foam Whale Nativity Attachment",
+ "subject": "Civil Procedure",
+ "topic": "Personal Jurisdiction",
+ "subtopic": "Quasi-in-rem limits and relatedness",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "At a privately rented Bible-story obstacle-course party in State A, Lydia and Daniel, both State A citizens, are helping set up a giant foam whale prop. Daniel negligently bumps the prop, which falls and injures Lydia. Daniel owns a hand-carved olive-wood Nativity set stored in a private storage locker in State B, but Daniel has no other contacts with State B. Lydia sues Daniel in a State B court for the prop injury and attaches the Nativity set, arguing that the property gives State B power to decide the whole injury claim.\n\nWhat is the best analysis?",
+ "call": "What is the best analysis?",
+ "choices": {
+  "A": "State B may decide the claim because Lydia was injured, and plaintiffs choose the forum.",
+  "B": "State B likely lacks personal jurisdiction over the unrelated prop-injury claim despite the attached Nativity set.",
+  "C": "State B has jurisdiction only if the Nativity set is valuable enough to satisfy the whole judgment.",
+  "D": "State B may decide the entire injury claim because any property in the forum creates personal jurisdiction."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the best analysis. Gold Key: Attaching a defendant’s forum property does not itself let the forum decide an unrelated personal claim; after Shaffer, the property must supply a jurisdictional connection among the defendant, the forum, and the litigation, or other minimum contacts must exist. Silver Key: Lock the call as court power, not collection. The attached asset is only a lure unless it connects to the claim.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. Plaintiff injury and forum choice do not answer the court-power question."
+  },
+  {
+   "label": "CUT C",
+   "text": "Not responsive. Asset value answers judgment satisfaction, not jurisdiction."
+  },
+  {
+   "label": "CUT D",
+   "text": "Not true by Gold Key. “Any property” is an overclaim; unrelated property alone is not enough."
+  },
+  {
+   "label": "Residual",
+   "text": "B."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed beyond the Gold Key anchor."
+  }
+ ],
+ "studentScript": "Call is State B power over Daniel. A is plaintiff choice, not defendant contact. C is collection value, not court power. D says any property, but Gold Key says unrelated property is not enough. B remains.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about Lydia's injury and forum choice, but the call asks whether State B has power over Daniel.",
+   "lawyer": "A plaintiff's choice of forum does not create personal jurisdiction over a defendant.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "It answers the exact court-power question and uses the property/claim mismatch.",
+   "lawyer": "Under Shaffer, unrelated forum property alone does not support jurisdiction absent other ties among defendant, forum, and litigation.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Value of the attached item answers collection, not court power.",
+   "lawyer": "The due-process problem is lack of jurisdictional connection, not the amount of attached property.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The word any turns property presence into an unlimited court-power rule.",
+   "lawyer": "Shaffer rejects jurisdiction based solely on unrelated forum property.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-QIR-01",
+   "statement": "Forum property is not a magic key. If the claim is unrelated to the attached property, the forum still needs a defendant-forum-litigation connection.",
+   "trigger": "A plaintiff attaches a defendant's forum property to sue on an unrelated personal claim.",
+   "unlocks": "The any-property quasi-in-rem trap.",
+   "authority": "Shaffer v. Heitner, 433 U.S. 186; International Shoe Co. v. Washington, 326 U.S. 310."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-JURISDICTION-ASSET-VALUE-01",
+   "statement": "Separate court power from collection. An asset's value may matter after a valid judgment, but it does not answer whether this court can decide the claim.",
+   "trigger": "An answer asks whether the attached property can satisfy the whole judgment.",
+   "unlocks": "Asset-value answer C.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Unrelated property is not forum power.",
+  "signal": "Plaintiff attaches defendant's forum property for a claim arising elsewhere.",
+  "studentMove": "Ask whether the property connects the defendant, forum, and litigation.",
+  "tinyRule": "Unrelated property alone does not create jurisdiction over the personal claim.",
+  "trap": "Any-property / asset-value shortcut."
+ }
+}

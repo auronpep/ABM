@@ -1,0 +1,96 @@
+{
+ "id": "CQ14457",
+ "title": "Advent Kits Requirements",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Requirements contracts",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Bethany Craft Kits, a private company owned by Lydia, assembles Scripture-memory Advent craft kits. In a signed writing, Bethany agreed to buy from Martha’s Paper House all of the cardstock, ribbon, and sticker sheets that Bethany would require for the next twelve months. Martha’s Paper House agreed to fill those requirements and to sell the items at 12% off the prices posted in its online catalog, but it reserved the right to change the catalog prices during the year.\n\nAfter the parties had ordered and delivered under the agreement for four months, Martha’s Paper House notified Bethany that future orders would be charged at full catalog prices with no 12% discount.\n\nDoes Bethany have a viable claim against Martha’s Paper House for breach of contract?",
+ "call": "Does Bethany have a viable claim against Martha’s Paper House for breach of contract?",
+ "choices": {
+  "A": "No, because Martha’s Paper House could, and did, revoke its offer as to later deliveries.",
+  "B": "No, because no stated minimum quantity made Bethany’s promise illusory.",
+  "C": "Yes, because Bethany’s agreement to buy all of its kit-supply requirements from Martha’s Paper House made the agreement enforceable.",
+  "D": "Yes, because four months of performance by both sides made the agreement enforceable for the entire year."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Bethany gave a real promise: it agreed to buy all of its kit-supply requirements from Martha’s Paper House for the stated period. That makes the agreement enforceable as a requirements contract. Martha’s Paper House reserved the right to change its online catalog prices, but it did not reserve the right to erase the promised 12% discount from those prices.\n\nGold Key: An agreement to buy all of the buyer’s requirements for goods is a valid quantity term. Good faith supplies the quantity guardrail, so a separate minimum quantity is not required.\n\nSilver Key: Read the array by time slice. Once the stem gives a signed agreement and months of performance, offer-revocation answers are aimed at the wrong stage; the live question is breach of a formed requirements contract.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "The choice answers the wrong time slice. Revocation is a formation-stage move; the stem says signed writing plus four months of performance. NOT_RESPONSIVE / bait_doctrine."
+  },
+  {
+   "label": "CUT B",
+   "text": "The choice invents a minimum-quantity requirement. The Gold Key supplies the rule: requirements language is enough. NOT_TRUE / fabricated_rule."
+  },
+  {
+   "label": "KEEP C",
+   "text": "It uses the load-bearing fact: Bethany committed to buy all requirements from Martha’s Paper House. That answers enforceability and breach."
+  },
+  {
+   "label": "CUT D",
+   "text": "The result points yes, but the reason is the wrong enforceability path. Part performance is unnecessary because the agreement is enforceable as a requirements contract. NOT_RESPONSIVE / bait_doctrine."
+  },
+  {
+   "label": "CLASH",
+   "text": "No live two-choice clash remains after the cuts."
+  },
+  {
+   "label": "CALL",
+   "text": "No call tiebreaker needed. The residual is C."
+  }
+ ],
+ "studentScript": "The stem already formed a signed requirements contract. Cut revocation as the wrong time slice, cut minimum quantity with the Gold Key, cut part performance as the wrong reason, and keep C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer says revoke offer, but the stem says signed writing and four months of performance.",
+   "lawyer": "After a requirements contract is formed, the seller cannot avoid a fixed discount term by calling future performance revocation.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The Gold Key says all-requirements language is enough.",
+   "lawyer": "UCC § 2-306 validates requirements quantity terms subject to good faith.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "It uses the all-requirements fact and answers breach.",
+   "lawyer": "The requirements promise makes the contract enforceable, and withdrawal of the promised discount is breach.",
+   "mold": null
+  },
+  "D": {
+   "signal": "Part performance is a rescue path; the stem already gives an enforceable requirements agreement.",
+   "lawyer": "Part performance is unnecessary because consideration and quantity are supplied by the requirements commitment.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-ADVENT-KITS-01",
+   "statement": "An agreement to buy all of the buyer's requirements for goods is a valid quantity term. Good faith supplies the quantity guardrail, so a separate minimum quantity is not required.",
+   "trigger": "a signed goods contract using 'all requirements' or 'all needs' language",
+   "unlocks": "minimum-quantity / illusory-promise trap in requirements contracts",
+   "authority": "UCC § 2-306(1)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-ADVENT-KITS-01",
+   "statement": "Read the array by time slice: once the stem gives a signed agreement and months of performance, offer-revocation answers are aimed at the wrong stage. The live question is breach of a formed requirements contract.",
+   "trigger": "answers talk about revocation or part-performance after the stem says the parties had already agreed and performed",
+   "unlocks": "yes/no array split between formed-contract breach and formation-stage avoidance",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Requirements contracts are not blanks",
+  "signal": "all needs, all requirements, all output, exclusive supply",
+  "studentMove": "Treat all-requirements language as the quantity term, then ask whether the disputed act breaks an actual contract term.",
+  "tinyRule": "All requirements is enough; good faith polices quantity.",
+  "trap": "minimum-quantity myth and offer-revocation wrong frame"
+ }
+}

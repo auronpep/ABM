@@ -1,0 +1,80 @@
+{
+ "id": "CQ16127",
+ "title": "Stewardship Bomb",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Inchoate Crimes",
+ "subtopic": "Conspiracy and merger with the substantive offense (arson)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Two men were members of a Christian creation-care direct-action network. As a protest against the use of harmful agricultural chemicals in the local watershed, they planned to burn down an industrial chemical-processing plant that produced such chemicals. A few days later, they set off a bomb that burned the plant to the ground. The jurisdiction has a statute that extends the common law definition of arson to buildings other than dwellings. Of which of the following crimes may the men be properly convicted?",
+ "call": "Of which of the following crimes may the men be properly convicted?",
+ "choices": {
+  "A": "Arson or conspiracy, but not both.",
+  "B": "Arson only.",
+  "C": "Both arson and conspiracy.",
+  "D": "Conspiracy only."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The men can be convicted of both arson and conspiracy. The statute expressly extends the common-law definition of arson (intentional burning of a dwelling) to other buildings, and an industrial chemical-processing plant is a non-dwelling building. Because the men wanted to burn it down and succeeded, the arson elements are met. Conspiracy requires an agreement between two or more persons to commit a crime, with intent to achieve the criminal objective; the men agreed to commit arson and carried out the plan, so the conspiracy elements are met. Gold Key: conspiracy and the substantive offense are separate crimes; a defendant can be convicted of both for the same conduct. The only narrowing exception is Wharton's Rule, which applies only to crimes that by definition require two persons (dueling, adultery, bigamy, incest, the like). Arson is not a Wharton's Rule crime, so both charges stack.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (arson only)",
+   "text": "is cut on missing-element. The agreement between two persons to commit arson is exactly what conspiracy requires. Visible from the stem: the men were members of a group and \"planned to burn down\" the plant. The choice is NOT_RESPONSIVE for asserting a single-crime outcome when the stem supplies a clear agreement and a completed substantive offense."
+  },
+  {
+   "label": "D (conspiracy only)",
+   "text": "is cut on the same missing-element. The plant was burned, the statute covers the building, and the men wanted it burned. Visible from the stem: \"set off a bomb that burned the plant to the ground.\" The choice is NOT_RESPONSIVE for asserting a single-crime outcome when the stem supplies a completed substantive offense."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: does the conspiracy merge into the arson, or do they stack? The single axis they fight on is the no-merger rule and the Wharton's Rule scope."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Conspiracy does not merge with the substantive offense; Wharton's Rule does not apply to arson. Both charges stack → C. A student without the Gold Key is in anchor_gap territory on the merger question, but the answer is settled by the doctrine of separate crimes."
+  }
+ ],
+ "studentScript": "Step 1: Did the arson elements hit? The jurisdiction's statute extends arson to non-dwellings; the chemical-processing plant is a non-dwelling; the men wanted it burned and succeeded. Arson is satisfied. Step 2: Did the conspiracy elements hit? Two men agreed to burn the plant; the bombing is the overt act. Conspiracy is satisfied. Step 3: Do the two stack or merge? Gold Key: conspiracy does not merge with the substantive offense; Wharton's Rule does not apply to arson. Both stack. Silver Key: when the call asks 'of which crimes may the defendant be convicted,' check whether both inchoate and substantive elements are present. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student half-remembers 'conspiracy merges' and picks the but-not-both answer. The Gold Key tells them Wharton's Rule does not apply to arson.",
+   "lawyer": "Conspiracy does not merge with the substantive offense. Wharton's Rule (the only true no-stack exception) applies only to crimes that by definition require two persons (bigamy, adultery, incest, dueling). Arson is not a Wharton's Rule crime.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The student registers the completed burning and never registers the group agreement that triggers conspiracy.",
+   "lawyer": "Conspiracy requires an agreement between two or more persons to commit a crime, with intent to achieve the criminal objective. The men agreed to commit arson and carried out the plan; conspiracy exists in addition to arson.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "After the single-crime distractors are cut and the merger question is named, the Gold Key resolves to both-stack.",
+   "lawyer": "The statute extends arson to non-dwellings, the men wanted the plant burned and succeeded (arson), and they had an agreement to commit arson (conspiracy). The two stack under the general non-merger rule; Wharton's Rule does not apply.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The student registers the agreement but treats the substantive offense as if absorbed by the agreement. The completed burning is a separate crime.",
+   "lawyer": "Arson under the extended statute is satisfied: the men wanted the plant burned and succeeded. Conspiracy is not a substitute for the substantive offense; the two stack.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-STEWARDSHIP-BOMB-01",
+   "statement": "Conspiracy does not merge with the substantive offense. Wharton's Rule (the only true no-stack exception) applies only to crimes that by definition require two persons (bigamy, adultery, incest, dueling). Arson is not a Wharton's Rule crime, so both conspiracy and arson stand.",
+   "trigger": "two-person group agrees to commit arson and succeeds; jurisdiction's arson statute covers non-dwellings; call is concurrent conviction",
+   "unlocks": "merger-myth dominant trap (A)",
+   "authority": "Model Penal Code §§ 5.03, 221.1, 1.07(4); Iannelli v. United States, 420 U.S. 770 (1975)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Conspiracy and the substantive offense — no merger; Wharton's Rule scope",
+  "signal": "Two or more persons agree to commit a substantive crime and succeed; the call is whether they can be convicted of both.",
+  "studentMove": "Check Wharton's Rule first. If the substantive crime is one that by definition requires two persons (bigamy, adultery, incest, dueling), conspiracy merges and only the substantive stands. Otherwise, both stack.",
+  "tinyRule": "Conspiracy and the substantive offense are separate crimes; arson is not a Wharton's Rule crime.",
+  "trap": "The merger myth is the dominant trap. Many students half-remember that 'conspiracy merges' and walk into the but-not-both answer."
+ }
+}

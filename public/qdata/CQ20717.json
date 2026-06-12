@@ -1,0 +1,95 @@
+{
+ "id": "CQ20717",
+ "title": "Ruths Hymn Recording Procedure",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Negligence",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q# 20717, Torts / Negligence, official key C, with the supplied explanation focusing on missing causation evidence.\n\nFinal Christian variation — 20717_ruths_hymn_recording_procedure\n\nRuth, an adult soprano preparing a private Christmas hymns recording, had been treated by an allergist for severe medication sensitivities for four years before undergoing an elective outpatient vocal-cord procedure performed by Dr. Peter, a throat surgeon. Three days after the procedure, Ruth suffered respiratory collapse from a delayed drug reaction that developed after the procedure. The collapse put her in a coma. When doctors concluded that she was in a permanent vegetative state with no hope of recovery, the ventilator and feeding support were withdrawn at her family’s request after court approval, and Ruth died later that evening. Dr. Peter was not involved in that decision or its execution.\n\nRuth’s estate filed a wrongful death action against Dr. Peter, alleging that he was negligent in failing to consult an allergist before the procedure. At trial, the estate offered evidence that accepted medical practice required an allergist to examine a patient before this type of procedure.\n\nIn this action, the estate should",
+ "call": "In this action, the estate should",
+ "choices": {
+  "A": "not prevail, because there is no evidence that an allergist would have provided advice that would have changed the outcome if one had examined Ruth before the procedure.",
+  "B": "prevail, because the respiratory collapse that caused Ruth's death was caused by the procedure that Dr. Peter performed.",
+  "C": "not prevail, because Dr. Peter had nothing to do with the withdrawal of life support, which was the cause of Ruth's death.",
+  "D": "prevail, because Dr. Peter was negligent in failing to have Ruth examined by an allergist before the procedure."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The estate has evidence on the breach side: accepted medical practice required an allergist examination before this type of procedure. But the estate still needs evidence connecting that missed consult to Ruth’s respiratory collapse and death. Nothing in the facts shows that an allergist would have recommended different medication, different precautions, postponement, or cancellation.\n\nGold Key: In malpractice, breach evidence is not enough; the plaintiff must connect the specific breach to the injury.\n\nSilver Key: Do not ask whether the procedure led to death. Ask whether the missed consult led to death.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "B answers the wrong causal link. It proves the procedure was in the chain, not that the missed allergist consult caused the collapse."
+  },
+  {
+   "label": "CUT C",
+   "text": "C needs the life-support superseding-cause Gold Key. The later withdrawal is not the reason the estate loses; the estate loses because the consult-to-injury link is missing."
+  },
+  {
+   "label": "CLASH A vs D",
+   "text": "D says breach is enough. A says no: the missing fact is proof that the specialist would have changed the outcome. The splitting fact is the absence of evidence about what the allergist would have advised."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tie remains. A is the only true and responsive answer."
+  }
+ ],
+ "studentScript": "The estate proved the consult was required. That is breach. The missing link is whether the consult would have changed the collapse. No link, no win. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answer tracks the exact alleged breach and asks whether that breach changed the outcome.",
+   "lawyer": "Correct under negligence causation principles: breach evidence alone does not prove factual cause.",
+   "mold": null
+  },
+  "B": {
+   "signal": "This answers whether the procedure was in the causal chain, not whether the missed allergist consult caused the collapse.",
+   "lawyer": "The relevant causation inquiry is whether the alleged breach caused the injury, not merely whether the procedure preceded the injury.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This choice tries to move the cause of death away from the medical collapse.",
+   "lawyer": "If the breach caused the collapse requiring life support, withdrawal of life support would not ordinarily supersede causation.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "This proves the standard-of-care problem but stops before the causation problem.",
+   "lawyer": "A malpractice plaintiff must prove breach and causation; accepted practice evidence alone is insufficient.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-MEDMAL-CAUSATION-01",
+   "statement": "In malpractice, proof that the doctor broke a professional rule is not enough; the plaintiff must prove that the broken rule caused the injury.",
+   "trigger": "Stem gives standard-of-care evidence but no evidence the missed consult would change the outcome.",
+   "unlocks": "breach-only and procedure-caused-harm traps",
+   "authority": "Restatement (Third) of Torts §§ 26, 29; medical-malpractice causation doctrine."
+  },
+  {
+   "id": "GK-TORTS-LIFE-SUPPORT-01",
+   "statement": "When the alleged tort creates the condition requiring life support, later withdrawal of support normally does not cut off causation.",
+   "trigger": "Family/court withdraws support after the medical injury creates a permanent vegetative state.",
+   "unlocks": "life-support superseding-cause trap",
+   "authority": "State v. Pelham; State v. Patterson."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-CAUSATION-LINK-01",
+   "statement": "Track the alleged breach, not the whole medical timeline. The question is not procedure-to-death; it is missed-consult-to-injury.",
+   "trigger": "One answer proves breach while another says no evidence the omitted consult would change the outcome.",
+   "unlocks": "A vs D and B's broad causal-chain trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Breach is not causation",
+  "signal": "The stem proves what the doctor should have done but not what would have happened if the doctor had done it.",
+  "studentMove": "Ask: what evidence links this specific missed step to this specific injury?",
+  "tinyRule": "No link, no negligence win.",
+  "trap": "Choosing the answer that proves breach or the answer that proves the procedure caused harm."
+ }
+}

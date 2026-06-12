@@ -1,0 +1,76 @@
+{
+ "id": "CQ17018",
+ "title": "Youth Dodgeball Consent",
+ "subject": "Torts",
+ "topic": "Privileges and defenses",
+ "subtopic": "Consent to contact-sport participation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "During a youth-group dodgeball game at church, a player threw a ball that struck another player in the shoulder while both were moving toward the center line to retrieve balls. The throw violated no safety rule and was a customary part of play. The struck player fell and sued the throwing player for battery.\n\nCan the throwing player rely on consent?",
+ "call": "Can the throwing player rely on consent?",
+ "choices": {
+  "A": "No, because the plaintiff was injured.",
+  "B": "Yes, but only because the player did not intend any contact.",
+  "C": "Yes, because the contact was within the ordinary scope of the sport as played.",
+  "D": "No, because consent to a sport never covers intentional contact."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. By stepping into a contact sport like dodgeball, a participant impliedly consents to bodily contacts that are customary and within the ordinary rules and scope of the game. Here, the throw was customary, violated no safety rule, and occurred during ordinary play. The fact that the plaintiff fell does not defeat the consent defense.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A is cut on call/fact relation. The stem frames the contact as customary and within the rules, so \"injury\" cannot be the reason consent fails.\n\nD is cut as an absolute overclaim. The sport itself involves intentional contact; \"never covers intentional contact\" cannot be true for a contact sport."
+  },
+  {
+   "label": "CLASH",
+   "text": "B and C both say \"yes,\" but they fight on the reason. B says \"yes, but only because there was no intent.\" C says \"yes, because the contact was within the ordinary scope of the sport.\""
+  },
+  {
+   "label": "CALL",
+   "text": "The better reason is C. The privilege comes from consent to the sport's customary contacts, not from a lack of intent. Residual answer: C."
+  }
+ ],
+ "studentScript": "The contact was customary, in-bounds, and part of a contact sport. A is wrong because injury doesn't defeat consent. D is wrong because 'never' overclaims — contact sports involve intentional contacts covered by consent. B says yes for the wrong reason; the defense is consent, not lack of intent. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The stem says the contact was customary and within the rules; injury does not change that.",
+   "lawyer": "Injury alone does not defeat consent to a contact sport when the contact was within the ordinary scope of play.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "This choice says 'yes,' which is the right result, but it relies on lack of intent rather than consent.",
+   "lawyer": "The defense is consent, not absence of intent. In a contact sport, the defendant's contact may be intentional and still privileged.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The contact was customary, within the rules, and part of ordinary play — exactly the scope of implied consent.",
+   "lawyer": "A participant in a contact sport impliedly consents to bodily contacts customary and within the ordinary scope of the game.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The word 'never' is the tell; contact sports regularly involve intentional contacts that are within the scope of implied consent.",
+   "lawyer": "Consent to a contact sport covers intentional contacts that are customary and within the ordinary rules of the game.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-DODGEBALL-CONSENT-01",
+   "statement": "When two 'yes' choices remain in a consent-to-sport question, pick the one that names the actual defense — consent to contacts within the ordinary scope of the sport — rather than a missing-intent theory.",
+   "trigger": "one yes choice cites scope of play; the other yes choice cites lack of intent",
+   "unlocks": "two 'yes' choices fighting on the reason",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Consent to contact-sport contacts",
+  "signal": "Player is injured during a contact sport by a customary, in-bounds contact.",
+  "studentMove": "Cut the injury-defeats-consent myth and the absolute 'never' overclaim; in a CLASH of two 'yes' answers, pick the one that names consent to scope-of-play contacts.",
+  "tinyRule": "A participant in a contact sport impliedly consents to bodily contacts that are customary and within the ordinary rules of the game.",
+  "trap": "The absolute 'never covers intentional contact' sounds like a clean rule."
+ }
+}

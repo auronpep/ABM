@@ -1,0 +1,88 @@
+{
+ "id": "CQ14412",
+ "title": "Gospel Puzzle Invoice",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Preexisting duty",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Stephen, who designs Bible-themed puzzle nights, completed a private Road to Emmaus escape-room script for Lydia. Lydia owed Stephen a fixed and undisputed $1,840 fee that was due on May 10. Lydia did not pay by that date. On May 25, Stephen told Lydia that, if Lydia promised to pay the $1,840 on or before November 15, Stephen would not sue to collect the fee. Lydia orally agreed. On June 10, Stephen sued Lydia to collect the fee that had become due on May 10. Lydia moved to dismiss Stephen’s complaint.\n\nShould the court grant Lydia’s motion?",
+ "call": "Should the court grant Lydia’s motion?",
+ "choices": {
+  "A": "Yes, because a promise allowing Lydia to postpone payment of a past-due fee is enforceable without consideration.",
+  "B": "No, because there was no consideration to support Stephen’s promise not to sue.",
+  "C": "Yes, because Lydia bargained for Stephen’s forbearance.",
+  "D": "No, because there was no consideration to support Lydia’s promise to pay $1,840 on November 15."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Lydia is trying to enforce Stephen’s promise not to sue. The only thing Lydia gave for that promise was a promise to pay the same fixed, undisputed fee she already owed after the due date had passed. That is not new consideration for Stephen’s no-suit promise.\n\nGold Key: Same fixed debt later is not new consideration.\n\nSilver Key: Track which promise needs support. Here, Lydia needs Stephen’s no-suit promise to be enforceable. Her old duty to pay the fee does not support it.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_TRUE / flat_misstatement",
+   "text": "A says delay of a past-due fee is enforceable without consideration. The Gold Key kills it: same fixed debt later is not new consideration."
+  },
+  {
+   "label": "CUT C — NOT_RESPONSIVE / wrong_element",
+   "text": "C proves that Lydia wanted Stephen’s forbearance. It does not answer whether Lydia gave new consideration for Stephen’s no-suit promise."
+  },
+  {
+   "label": "CUT D — NOT_TRUE / backwards",
+   "text": "D reverses the consideration-support direction. Stephen’s forbearance supports Lydia’s promise; Lydia’s old duty does not support Stephen’s promise."
+  },
+  {
+   "label": "Residual",
+   "text": "B.\nNo CLASH remains. CALL is not needed."
+  }
+ ],
+ "studentScript": "Find the promise Lydia needs to enforce: Stephen’s promise not to sue. She promised only the same fee already due. Same debt later is not new consideration. The motion is denied. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice says the delay promise works without consideration; the Gold Key says same debt later is not new consideration.",
+   "lawyer": "Restatement (Second) of Contracts § 73; Foakes v. Beer.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "This choice identifies the promise Lydia must enforce and the missing support for that promise.",
+   "lawyer": "The debtor’s promise to pay the same fixed, past-due debt later does not support the creditor’s no-suit promise.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice proves Lydia wanted forbearance, but the call needs new consideration from Lydia.",
+   "lawyer": "Bargain language does not overcome the pre-existing duty rule when the debtor gives no new consideration.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The choice points the missing-consideration problem at Lydia’s promise instead of Stephen’s promise.",
+   "lawyer": "Forbearance can be consideration for Lydia’s promise; Lydia’s old debt is not consideration for Stephen’s promise.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-GOSPEL-PUZZLE-INVOICE-01",
+   "statement": "A promise to pay a fixed, undisputed, already-due debt later is not new consideration for a creditor’s promise not to sue; the debtor must give something new.",
+   "trigger": "fixed and undisputed debt already due, followed by a promise to pay the same amount later for no-suit forbearance",
+   "unlocks": "the past-due-debt delay trap",
+   "authority": "Restatement (Second) of Contracts § 73; Foakes v. Beer, (1884) 9 App Cas 605"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-GOSPEL-PUZZLE-INVOICE-01",
+   "statement": "When the choices split over consideration for opposite promises, identify the promise the motion must enforce and ask what new thing supports that promise.",
+   "trigger": "two answers say no while pointing to different promises, and two answers say yes by treating delay or bargain language as enough",
+   "unlocks": "support-direction confusion between the debtor’s promise and the creditor’s no-suit promise",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Same debt later is not new consideration",
+  "signal": "fixed and undisputed debt already due",
+  "studentMove": "Ask what new thing the debtor gave for the creditor’s no-suit promise.",
+  "tinyRule": null,
+  "trap": "bargain language hides the missing new exchange"
+ }
+}

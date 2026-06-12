@@ -1,101 +1,96 @@
 {
  "id": "CQ14400",
- "title": "Timothy Jericho Colt",
+ "title": "Mechanical Camel",
  "subject": "Contracts",
- "topic": "Contracts",
- "subtopic": "Defenses to Enforceability",
- "difficulty": 3,
+ "topic": "Defenses to Enforceability",
+ "subtopic": "Mistake / Lack of Mutual Assent",
+ "difficulty": null,
  "tension": null,
- "stem": "BARMATRIX Q# 14400 — Christian variation: 14400_timothy_jericho_colt\n\nTimothy, who knew nothing about horses, inherited from his grandmother Lois a thoroughbred colt named Jericho, whose disagreeable behavior made him a pest around the family barn. Timothy sold the colt for $1,500 to Barnabas, an experienced racehorse trainer who knew of Timothy's ignorance about horses. At the time of the sale, Timothy said to Barnabas, \"I hate to say it, but this horse is bad-tempered and nothing special.\"\n\nWhich one of the following scenarios would best support an action by Barnabas, rather than Timothy, to rescind the sale?",
- "call": "Which one of the following scenarios would best support an action by Barnabas, rather than Timothy, to rescind the sale?",
+ "stem": "Pass-1 Step 1 — black-letter rule being tested.\nA contract may be rescinded for mistake when the mistaken fact existed at contracting, went to a basic assumption of the bargain, materially harmed the party seeking rescission, and was not a risk that party bore.\n\nPass-1 Step 2 — invariant layer preserved.\nThe issue remains buyer-side rescission for mistake. The credited outcome remains the hidden, undiscoverable, main-use defect. The dominant trap remains the pedigree/authenticity paperwork mistake. The call remains a “which scenario best supports buyer rather than seller rescission” call. The answer-array geometry remains a 3-vs-1 scenario set: three post-sale surprises fail because they do not support buyer-side mistake rescission; one hidden main-use defect survives.\n\nPass-1 Step 5 — locked final Christian variation.\n\nMary, who knew nothing about stage machinery, inherited a motorized camel prop from her late uncle’s attic. The camel had an annoying habit of jerking and startling children during rehearsals. Mary sold the camel for $2,400 to Daniel, an experienced designer of touring Christmas pageants, who knew that Mary was ignorant about stage machinery. Before the sale, Mary told Daniel, “I hate to say it, but this camel jerks around and is nothing special.”\n\nWhich one of the following scenarios would best support an action by Daniel, rather than Mary, to rescind the sale?",
+ "call": "Which one of the following scenarios would best support an action by Daniel, rather than Mary, to rescind the sale?",
  "choices": {
-  "A": "In his first race after the sale, Jericho galloped to a huge lead but dropped dead 100 yards from the finish line because of a rare congenital heart defect that was undiscoverable except by autopsy.",
-  "B": "Jericho won $5 million for Barnabas over a three-year racing career but upon being retired was found to be incurably sterile and useless as a breeder.",
-  "C": "After Jericho had won three races for Barnabas, it was discovered that by clerical error, unknown to either party, Jericho's official birth registration listed an undistinguished racehorse as the sire rather than the famous racehorse that in fact was the sire.",
-  "D": "A week after the sale, Jericho went berserk and inflicted serious injuries upon Barnabas that required his hospitalization for six months and a full year for his recovery."
+  "A": "After the camel had completed four Advent tours for Daniel, it was discovered that, because of a clerical error unknown to both parties, the maker’s certificate listed an obscure prop shop as the builder rather than the famous Jerusalem Stageworks workshop that had actually built it.",
+  "B": "A week after the sale, while Daniel was testing the camel, it suddenly jerked, threw him from its platform, and injured him so severely that he was hospitalized for seven months and needed eighteen months for full recovery.",
+  "C": "In its debut pageant after the sale, the camel rolled smoothly to the center mark but shut down permanently during the final scene because of a rare internal crack in the main drive shaft that was undiscoverable except by complete disassembly.",
+  "D": "The camel earned Daniel $4.8 million over a four-year touring career, but when retired it was found to have nonstandard internal electronics and to be useless as a template for manufacturing replica camels."
  },
- "key": "A",
+ "key": "C",
  "dominantTrap": null,
- "rightExplanation": "A is correct. Gold Key: Rescission for mutual mistake requires a fact already in existence at the moment of contracting that contradicts a basic assumption of the bargain and materially upsets the exchange — and the rescinding party must not bear the risk of that mistake. A latent defect no inspection could discover qualifies; a disclosed flaw or a post-sale development never does. The congenital heart defect existed at the sale, was undiscoverable except by autopsy, and destroyed the one thing both parties assumed they were trading: a living horse physically capable of racing. Timothy's disclaimer — \"bad-tempered and nothing special\" — disclaimed temperament and talent, not viability, so it never allocated this risk to Barnabas; and Barnabas's expertise was useless against a defect only an autopsy could find. Silver Key: the call names the moving party — \"by Barnabas, rather than Timothy\" — so before weighing any doctrine, ask whom each discovered fact hurts; only the party the surprise disadvantages would ever sue to undo the sale. A is the only scenario where an existing, undiscoverable, deal-destroying fact lands on Barnabas.",
- "wrongExplanations": {
-  "B": "Sterility was an existing fact, but it never touched a basic assumption of this bargain. Silver Key: match the defect to the bargained-for use visible in the stem — the buyer is a racehorse trainer, so only a defect that defeats RACING attacks the deal's core; breeding value was never the deal. The stem confirms it: Jericho delivered exactly what was purchased — a three-year career and $5 million in winnings. A buyer who received the full benefit of the bargain has nothing to rescind.",
-  "C": "This is the dominant trap: \"clerical error, unknown to either party\" sounds like the textbook mutual mistake. But run the Silver Key: whom does the discovered fact hurt? The registry error concealed a FAMOUS sire — the truth makes Barnabas's $1,500 horse more valuable, not less. Rescission undoes the sale; no buyer sues to give back a windfall. If anyone has a mistake claim on these facts, it is Timothy, the seller who parted with a well-bred horse cheap — and the call expressly asks for the scenario supporting Barnabas \"rather than Timothy.\" C answers the opposite question. (Lawyer confirmation adds a second, independent ground: nothing suggests the colt was purchased for his bloodline, so pedigree was not a basic assumption of a $1,500 \"nothing special\" sale.)\n\nD is incorrect. Gold Key: a party bears the risk of a mistake when he proceeds with known or disclosed limits on his knowledge — a disclosed vice is an assumed risk, not a mistake. Timothy said the words out loud at the sale: \"this horse is bad-tempered.\" When the disclosed bad temper later produced injuries, the only thing that happened is that a known risk materialized — severely, but severity is not mistake. There was no erroneous belief about any fact; there was a warned-of fact that came true."
- },
+ "rightExplanation": "C is correct. Daniel’s best rescission scenario is the hidden internal crack. The defect existed at the time of sale, could not be found without complete disassembly, and destroyed the camel’s core expected use in its debut pageant.\n\nGold Key: A mistake supports rescission only when the mistaken fact existed at contracting, went to a basic assumption with material adverse effect, and the party seeking rescission did not bear that risk. The hidden drive-shaft crack fits that pattern. Silver Key: On a buyer-rather-than-seller rescission call, sort each scenario by direction and purpose. C is the only scenario where the buyer is harmed by a hidden defect that defeats the main bargain.",
+ "wrongExplanations": {},
  "c3": [
   {
-   "label": "CUT",
-   "text": "- C is cut on a call/fact relation visible in the stem. The call asks what supports rescission \"by Barnabas, rather than Timothy\" — it openly warns that some scenario belongs to the other side. C's discovered truth (famous sire) makes Barnabas's horse MORE valuable. Rescission undoes the sale; nobody sues to hand back a windfall. C is the seller's case wearing the buyer's call. Not responsive.\n- D is cut on a stem fact. Timothy said \"this horse is bad-tempered\" at the sale. D's scenario is that disclosed fact coming true. A warned-of risk materializing — however severely — shows harm, not a mistaken belief. Not responsive to a mistake-rescission call.\n- B is cut on a purpose mismatch readable off the stem. The buyer is a racehorse trainer; B concedes the horse won $5 million racing and fails only \"as a breeder.\" The defect misses the deal's visible core, and the buyer already received the full bargained-for value. Not responsive."
+   "label": "CUT A",
+   "text": "Signal: the certificate fact points away from Daniel’s rescission claim. Famous actual maker means hidden upside, not buyer harm.\nLabel: NOT_RESPONSIVE / wrong_element.\nResult: cut after the Silver Key direction check."
+  },
+  {
+   "label": "CUT B",
+   "text": "Signal: the later injury matches the disclosed jerking trait.\nLabel: NOT_RESPONSIVE / wrong_element.\nResult: cut after the Gold Key known-risk check."
+  },
+  {
+   "label": "CUT D",
+   "text": "Signal: the camel earned value for four years before the side-use defect appeared.\nLabel: NOT_RESPONSIVE / wrong_element.\nResult: cut after the Gold Key main-use versus side-use check."
+  },
+  {
+   "label": "Residual",
+   "text": "C remains. It is buyer-harming, hidden, existing, main-use destroying, and not the disclosed jerking risk."
   },
   {
    "label": "CLASH",
-   "text": "No clash phase is needed: the three cuts run on visible relations (call/party, stem disclosure, stem purpose), leaving A alone."
+   "text": "No unresolved two-answer clash remains."
   },
   {
    "label": "CALL",
-   "text": "A is the residual. Affirmatively validating A — existing-at-sale + basic assumption + undiscoverable means the buyer never bore the risk — leans on the taught mistake anchor (Gold Key GK-CONTRACTS-MISTAKE-EXISTING-FACT-01), so A's own basis is anchor-assisted; but the item is decided at CUT, and the dominant trap falls to a pure call-focus move. Residual answer: A."
+   "text": "No structural tiebreaker is needed after the Gold Key-assisted cut."
   }
  ],
- "studentScript": "The call says 'by Barnabas, rather than Timothy' — so each scenario must HURT Barnabas. C's registry error reveals a famous sire: that's a windfall for Barnabas and a loss for Timothy — the seller's case, cut it. D is the stem's own warning ('bad-tempered') coming true — a disclosed risk, not a mistake, cut it. B's horse won $5 million racing and only fails as a breeder — the trainer bought racing and got it, cut it. A is left: a defect that existed at the sale, that no one could have found, that killed the racehorse he was buying. Pick A.",
+ "studentScript": "The call asks for Daniel's rescission case. A helps Daniel or Mary, B is the warned-about jerking risk, and D is a side-use problem after the camel already earned money. C is the hidden defect that kills the main use, so C.",
  "recoveryPaths": [],
  "choiceSignals": {
   "A": {
-   "signal": "The survivor of three visible cuts: the only scenario where a fact that was already true at the sale, that nobody could have found, destroys the very thing the trainer was buying — and the loss lands on Barnabas.",
-   "lawyer": "Rest. § 152: the congenital defect existed at formation, contradicted the shared basic assumption of a horse capable of racing, and had a total material effect. § 154 allocates no risk to the buyer: 'undiscoverable except by autopsy' defeats inspection-based allocation, and the seller's temperament disclaimer never reached viability. Sherwood v. Walker supports rescission for mutual mistake about a basic quality of an animal.",
-   "mold": null
+   "signal": "The actual maker is better than the listed maker; that does not hurt Daniel.",
+   "lawyer": "This does not supply an adverse buyer-side basic-assumption mistake.",
+   "mold": "wrong_element"
   },
   "B": {
-   "signal": "The stem makes the deal's core visible: a racehorse trainer buying a thoroughbred. B's defect fails only 'as a breeder' — and B itself concedes the horse delivered $5 million of racing. The defect misses the bargain the stem shows.",
-   "lawyer": "Sterility, though an existing fact, did not contradict a basic assumption of a racing purchase (Rest. § 152), and the buyer received the full agreed exchange, so there is no material effect on the exchange to undo. The official explanation agrees: the horse was purchased for racing, not breeding.",
-   "mold": "misfit"
+   "signal": "The later harm matches the warning that the camel jerks.",
+   "lawyer": "Known or assumed risks do not support mistake rescission.",
+   "mold": "wrong_element"
   },
   "C": {
-   "signal": "'Clerical error, unknown to either party' is real mutual-mistake language — but the discovered truth (famous sire) makes Barnabas's horse MORE valuable. Rescission undoes the sale, and the call says 'by Barnabas, rather than Timothy.' This is the seller's case dressed in the buyer's call.",
-   "lawyer": "Under Rest. § 152 only the adversely affected party may avoid the contract; the buyer is enriched, not harmed, by the truth. Independently, nothing suggests the colt was purchased for his bloodline — at $1,500 with a 'nothing special' disclaimer, pedigree was not a basic assumption (the official ground).",
-   "mold": "bait_doctrine"
+   "signal": "The defect is hidden, severe, and destroys the buyer's main use.",
+   "lawyer": "This is the best mistake-rescission scenario under Restatement §§ 152 and 154.",
+   "mold": null
   },
   "D": {
-   "signal": "The stem hands you the kill: Timothy said 'this horse is bad-tempered' AT the sale. D is that disclosed fact coming true. Six months in the hospital proves the harm was severe — it proves nothing was mistaken. Severity is not the dispositive element; an unknown fact is.",
-   "lawyer": "A party bears the risk of facts disclosed or known to him at formation (Rest. § 154; Wood v. Boynton's conscious-ignorance principle a fortiori); there was no erroneous belief, only a warned-of vice that materialized. The official explanation agrees: the trainer had notice and bears the risk.",
+   "signal": "The camel already delivered four years of the bought-for use.",
+   "lawyer": "A collateral replica-template defect does not defeat the basic assumption of the sale.",
    "mold": "wrong_element"
   }
  },
  "goldKeys": [
   {
-   "id": "GK-CONTRACTS-MISTAKE-EXISTING-FACT-01",
-   "statement": "Rescission for mutual mistake requires a fact already in existence at contracting that contradicts a basic assumption of the bargain and materially upsets the exchange, where the rescinding party did not bear the risk; a latent defect undiscoverable by any inspection qualifies — a disclosed flaw or a post-sale development never does.",
-   "trigger": "a buyer discovers a defect after a completed sale and the answers split on when the fact existed, what it touches, and who bore its risk",
-   "unlocks": "the affirmative case for A — congenital + undiscoverable + destroys the racing bargain = every element met.",
-   "authority": "Restatement (Second) of Contracts §§ 152, 154; Sherwood v. Walker, 33 N.W. 919 (Mich. 1887)"
-  },
-  {
-   "id": "GK-CONTRACTS-MISTAKE-RISK-01",
-   "statement": "A party bears the risk of a mistake when the agreement allocates it to him or when he proceeds on known, disclosed, or consciously limited knowledge — a disclosed vice is an assumed risk, not a mistake, no matter how badly it later plays out.",
-   "trigger": "an answer leans on the severity of harm from a flaw the stem shows was disclosed or known at formation",
-   "unlocks": "the D trap — severe injuries from the disclosed bad temper.",
-   "authority": "Restatement (Second) of Contracts § 154; Wood v. Boynton, 25 N.W. 42 (Wis. 1885)"
+   "id": "GK-CONTRACTS-MECHANICAL-CAMEL-01",
+   "statement": "A mistake supports rescission only when the mistaken fact existed at contracting, went to a basic assumption with material adverse effect, and the party seeking rescission did not bear that risk. A known defect, a collateral side-use problem, or a hidden upside does not unlock buyer rescission.",
+   "trigger": "A buyer seeks to rescind after discovering a post-sale fact about the thing sold.",
+   "unlocks": "Distinguishes a hidden main-use defect from collateral or assumed-risk facts.",
+   "authority": "Restatement (Second) of Contracts §§ 152, 154."
   }
  ],
  "silverKeys": [
   {
-   "id": "SK-CONTRACTS-COLT-WHO-HURTS-01",
-   "statement": "The call names the moving party — 'by Barnabas, rather than Timothy.' Before weighing any doctrine, ask whom each discovered fact HURTS: only the party the surprise disadvantages would ever sue to undo the sale. A mistake that makes the buyer's horse MORE valuable is the seller's case, not the buyer's.",
-   "trigger": "a rescission call that contrasts the moving party against the other side ('by X, rather than Y')",
-   "unlocks": "the dominant C trap — textbook-sounding mutual mistake pointed at the wrong party",
-   "authority": null
-  },
-  {
-   "id": "SK-CONTRACTS-COLT-CORE-USE-01",
-   "statement": "Match the defect to the bargained-for use the stem shows: the buyer is a racehorse trainer, so only a defect that defeats RACING attacks the deal's core. A flaw in a use never bargained for — breeding — cannot unwind the sale, especially after the racing value was fully delivered.",
-   "trigger": "a distractor's defect concerns a capability different from the purchase purpose visible in the stem",
-   "unlocks": "the B bait — a real existing defect aimed at the wrong use",
+   "id": "SK-CONTRACTS-MECHANICAL-CAMEL-01",
+   "statement": "On a buyer-rather-than-seller rescission call, sort each scenario by direction and purpose: buyer harmed or buyer helped, main use or side use, hidden risk or known risk. Keep the fact that damages the buyer's main expected use without repeating the warning already in the stem.",
+   "trigger": "The call asks which later scenario best supports one named party's rescission action.",
+   "unlocks": "The four-scenario answer array where every choice sounds like a post-sale surprise.",
    "authority": null
   }
  ],
  "remediation": {
-  "title": "Rescission: hurt, hidden, and at-the-sale",
-  "signal": "A completed sale plus four 'later discovery' scenarios and a call naming which party wants out.",
-  "studentMove": "For each scenario ask three visible questions in order: Whom does the discovered fact hurt? Was the flaw disclosed in the stem? Does the defect hit the use the stem shows being bought?",
-  "tinyRule": "Mistake rescission needs a fact true at the sale, basic to the bargain, hidden from everyone, and harmful to the party suing — disclosed vices and benefits-in-disguise never count.",
-  "trap": "Grabbing 'unknown to either party' language as automatic mutual mistake without asking whom the truth helps, or rewarding the most sympathetic injury."
+  "title": "Mistake rescission: hidden main-use fact, no assumed risk",
+  "signal": "A buyer wants rescission after a new fact appears.",
+  "studentMove": "Check direction, purpose, and risk.",
+  "tinyRule": "Hidden main-use defect can support rescission; known risks, side uses, and hidden upside do not.",
+  "trap": "Treating any surprising post-sale fact as enough."
  }
 }

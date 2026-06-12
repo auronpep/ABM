@@ -1,0 +1,88 @@
+{
+ "id": "CQ19379",
+ "title": "Hymn Candle Invoice Van",
+ "subject": "Evidence",
+ "topic": "III.B.2 — Marital Communications Privilege",
+ "subtopic": "Marital Communications Privilege",
+ "difficulty": "Discriminator",
+ "tension": null,
+ "stem": "In a federal wire-fraud prosecution against Timothy over online sales from his small Christian-craft booth, the prosecutor plans to call Lydia. Timothy and Lydia finalized their divorce eighteen months ago. Years earlier, while they were married, the two were sitting alone in Timothy’s parked delivery van after a city winter fair when Timothy quietly told Lydia, “I forged the online invoices for those hymn-themed candle orders.” Timothy objects to Lydia’s testimony about that private statement on spousal-privilege grounds.\n\nHow should the court rule?\n\nSource row: BARMATRIX Q# 19379, Evidence, Marital Communications Privilege.\n\n---",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Overrule the objection because incriminating statements between spouses are never privileged in a criminal case.",
+  "B": "Sustain the objection if Timothy’s statement was a confidential marital communication made during the marriage; divorce ends the adverse spousal testimonial privilege, but it does not by itself eliminate the marital communications privilege for prior confidential communications.",
+  "C": "Overrule the objection because divorce ends every spousal privilege for statements made during the marriage.",
+  "D": "Sustain the objection under the adverse spousal testimonial privilege because Lydia is being asked to testify adversely against Timothy."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Gold Key: spousal testimonial privilege and confidential marital communications privilege are separate routes. The testimonial privilege depends on a current marriage; the communications privilege can protect confidential private communications made during the marriage even after divorce.\n\nSilver Key: when the array splits “sustain/overrule” and “testimonial/communications,” match the privilege route to the timing facts. Timothy and Lydia are divorced now, but the statement was private and made while they were married. The communications route, not the testimonial route, is the responsive route.\n\n---",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Never privileged” is an overclaim. It fails the Ear after the Gold Key supplies the privilege distinction."
+  },
+  {
+   "label": "CUT C",
+   "text": "“Every spousal privilege” is the dominant overclaim. It flattens two different privilege routes into one."
+  },
+  {
+   "label": "CLASH D vs B",
+   "text": "Both say sustain. The axis is which spousal privilege route controls. The splitting facts are: divorced now; private statement during marriage. Those facts select B."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tie remains.\n\n---"
+  }
+ ],
+ "studentScript": "Divorced now kills testimonial. Private statement during marriage points communications. Cut the never/every overclaims, reject the wrong sustain route, pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'never' tries to erase all privilege protection because the statement is incriminating.",
+   "lawyer": "Incriminating content does not itself defeat confidential marital communications privilege.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "It matches both timing facts: divorced now, private statement during marriage.",
+   "lawyer": "Confidential marital communications privilege can survive divorce for private communications made during marriage.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word 'every' collapses two different spousal privilege routes into one divorce rule.",
+   "lawyer": "Divorce ends the adverse testimonial route but not necessarily the confidential communications route.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "It says sustain, but it uses the testimonial route, and the divorce fact points away from that route.",
+   "lawyer": "Adverse spousal testimonial privilege generally depends on a current marriage and is not Timothy’s route.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-SPOUSAL-01",
+   "statement": "Spousal testimonial privilege and confidential marital communications privilege are separate. Testimonial privilege requires a current marriage; communications privilege can protect confidential private communications made during the marriage even after divorce.",
+   "trigger": "Divorced former spouse + private statement made during marriage.",
+   "unlocks": "The divorce-current-marriage trap.",
+   "authority": "FRE 501; Trammel v. United States; Pereira v. United States."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-SPOUSAL-01",
+   "statement": "When the answer set splits sustain/overrule and testimonial/communications, pick the route that matches the timing facts: divorced now, private communication then.",
+   "trigger": "Two sustain answers with different privilege labels.",
+   "unlocks": "Sustain answer using the wrong spousal privilege.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not collapse the two spousal privileges",
+  "signal": "Divorced spouse asked about a private statement from the marriage.",
+  "studentMove": "Separate testimonial privilege from communications privilege before choosing sustain or overrule.",
+  "tinyRule": "Current marriage matters for testimonial privilege; private communication during marriage matters for communications privilege.",
+  "trap": "Divorce ends everything."
+ }
+}

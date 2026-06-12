@@ -1,0 +1,80 @@
+{
+ "id": "CQ18457",
+ "title": "Lydia Book Club",
+ "subject": "Constitutional Law",
+ "topic": "Equal Protection",
+ "subtopic": "State action requirement",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A private Christian book club — a monthly reading-and-discussion group that meets in members' homes, is not a church or religious institution, and receives no government funding and performs no public function — admits only members of one racial or ethnic group. A rejected applicant, who is of a different racial or ethnic background, sues the book club directly under the Equal Protection Clause of the Fourteenth Amendment. What is the book club's strongest constitutional defense?",
+ "call": "A rejected applicant, who is of a different racial or ethnic background, sues the book club directly under the Equal Protection Clause of the Fourteenth Amendment. What is the book club's strongest constitutional defense?",
+ "choices": {
+  "A": "Strict scrutiny applies because the book club uses race or ethnicity in its membership criteria.",
+  "B": "The book club loses because the Constitution bans all private discrimination.",
+  "C": "The Equal Protection Clause does not reach purely private discrimination without state action.",
+  "D": "Rational basis applies because private clubs receive deference in membership decisions."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The book club's strongest constitutional defense is that the Equal Protection Clause does not reach purely private discrimination without state action. The Fourteenth Amendment's Equal Protection Clause is, by its terms, a constraint on government action — it prohibits any State from denying to any person the equal protection of the laws. The doctrine of state action requires that the discriminatory conduct be attributable to the State, either because the State itself engaged in the discrimination (e.g., a state-run club) or because a recognized state-action theory applies (e.g., a private actor performing a traditional public function, acting jointly with the State, or operating under a statutory or contractual right granted by the State that makes the discrimination state action). The Civil Rights Cases, 109 U.S. 3 (1883), establish that the Equal Protection Clause does not reach purely private discrimination; other constitutional provisions (e.g., Thirteenth Amendment for racial discrimination) and federal civil-rights statutes (e.g., 42 U.S.C. § 1981 for racial discrimination in contractual relations) may reach some private conduct, but the Equal Protection claim itself fails at the state-action threshold. On the facts given, the book club is a private social group with no government funding and no public-function role; the rejected applicant's Equal Protection claim fails at the state-action threshold before any scrutiny tier is reached. Gold Key: the Equal Protection Clause is, by its terms, a constraint on government action — the threshold problem is state action, and the scrutiny tier is reached only after state action is established.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (rational-basis deference)",
+   "text": "is cut on the threshold problem. The constitutional claim fails at state action, not at the scrutiny tier. Visible from the stem: the book club has no government funding and no public-function role — the state-action threshold is not met. The choice is NOT_RESPONSIVE for answering at the scrutiny tier rather than the threshold question."
+  },
+  {
+   "label": "B (Constitution bans all private discrimination)",
+   "text": "is cut on the threshold problem. The Equal Protection Clause requires state action; the overclaim that the Constitution bans all private discrimination is wrong. Visible from the stem: the book club is a private social group, and the constitutional claim requires state action. The choice is NOT_TRUE for asserting an overbroad \"Constitution bans all private discrimination\" framing."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: does strict scrutiny apply because the book club uses race or ethnicity, or does the constitutional claim fail at the state-action threshold before any scrutiny tier is reached? The axis they fight on is whether the state-action threshold is the threshold problem, or whether the scrutiny tier is the threshold problem."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. The Equal Protection Clause is, by its terms, a constraint on government action; the threshold problem is state action, and the scrutiny tier is reached only after state action is established. On these facts, the book club is a private social group with no government funding and no public-function role; the constitutional claim fails at the state-action threshold, before any scrutiny tier is reached. Apply the state-action doctrine → C. A student without the Gold Key is in anchor_gap territory on the state-action threshold question, but the answer is settled by the doctrine that the Equal Protection Clause is a constraint on government action."
+  }
+ ],
+ "studentScript": "Step 1: What is the threshold problem? State action. The Equal Protection Clause is, by its terms, a constraint on government action. Step 2: Is there state action here? The book club is a private social group with no government funding and no public-function role. No state-action theory applies. The constitutional claim fails at the state-action threshold. Step 3: Does the 'Constitution bans all private discrimination' framing help? No — the overclaim is wrong. The Equal Protection Clause requires state action. Step 4: Does the 'rational-basis-deference' framing help? No — the constitutional claim fails at state action, not at the scrutiny tier. Step 5: Does the 'strict scrutiny applies because race is involved' framing help? No — the scrutiny tier is reached only after state action is established. Gold Key: the threshold problem is state action; the scrutiny tier is reached only after state action is established. Silver Key: when a constitutional claim against a private actor is filed, run the state-action threshold first. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student skips the state-action threshold and goes straight to the scrutiny tier. The Gold Key tells the student that the threshold problem is state action, and the scrutiny tier is reached only after state action is established.",
+   "lawyer": "The scrutiny tier is reached only after state action is established. The book club is a private social group with no government funding and no public-function role; the constitutional claim fails at the state-action threshold before any scrutiny tier is reached. The Civil Rights Cases, 109 U.S. 3 (1883).",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The student overclaims that the Constitution bans all private discrimination. The Equal Protection Clause requires state action; other constitutional provisions and federal civil-rights statutes may reach some private discrimination, but the EP claim itself requires state action.",
+   "lawyer": "The Equal Protection Clause requires state action. The Civil Rights Cases, 109 U.S. 3 (1883). Other constitutional provisions (e.g., Thirteenth Amendment) and federal civil-rights statutes (e.g., 42 U.S.C. § 1981) may reach some private discrimination, but the Equal Protection claim itself fails at state action.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "After the Constitution-bans-all and rational-basis-deference distractors are cut and the strict-scrutiny-vs-state-action-threshold axis is named, the Gold Key resolves to the no-state-action answer.",
+   "lawyer": "The Equal Protection Clause is, by its terms, a constraint on government action. The state-action threshold requires that the discriminatory conduct be attributable to the State. The book club is a private social group with no government funding and no public-function role; the constitutional claim fails at the state-action threshold. The Civil Rights Cases, 109 U.S. 3 (1883); Burton v. Wilmington Parking Authority, 365 U.S. 715 (1961); Jackson v. Metropolitan Edison Co., 419 U.S. 345 (1974); Brentwood Academy v. Tennessee Secondary School Athletic Association, 531 U.S. 288 (2001).",
+   "mold": null
+  },
+  "D": {
+   "signal": "The student reaches for the 'private clubs receive deference' framing. The constitutional claim fails at state action, not at the scrutiny tier.",
+   "lawyer": "The constitutional claim fails at the state-action threshold, before any scrutiny tier is reached. The 'rational basis' framing is the wrong level of analysis; the right level of analysis is whether the Equal Protection Clause reaches the conduct at all.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL-LAW-LYDIA-BOOK-CLUB-01",
+   "statement": "The Equal Protection Clause is, by its terms, a constraint on government action; the threshold problem is state action, and the scrutiny tier is reached only after state action is established.",
+   "trigger": "constitutional claim (Equal Protection or Due Process) filed against a private actor with no government funding or public-function role",
+   "unlocks": "strict-scrutiny-applies-because-of-ethnicity dominant trap (A)",
+   "authority": "The Civil Rights Cases, 109 U.S. 3 (1883); Burton v. Wilmington Parking Authority, 365 U.S. 715 (1961); Jackson v. Metropolitan Edison Co., 419 U.S. 345 (1974); Brentwood Academy v. Tennessee Secondary School Athletic Association, 531 U.S. 288 (2001)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "State-action threshold in Equal Protection challenges to private actors",
+  "signal": "A constitutional claim (Equal Protection or Due Process) is filed against a private actor with no government funding or public-function role.",
+  "studentMove": "Run the state-action threshold first. The Equal Protection Clause is, by its terms, a constraint on government action. The scrutiny tier is reached only after state action is established.",
+  "tinyRule": "The threshold problem is state action; the scrutiny tier is reached only after state action is established.",
+  "trap": "The strict-scrutiny framing is the dominant trap; the student skips the threshold problem and goes straight to the scrutiny tier. The 'Constitution bans all private discrimination' overclaim and the 'rational-basis-deference' framing are also wrong levels of analysis."
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "id": "CQ20594",
+ "title": "Daniels Whale Float",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Duty; foreseeable rescuers; rescue doctrine",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "For a private Bible-story block party in his driveway, Daniel built a wheeled “Jonah’s whale” float. The night before the party, Daniel climbed inside the float to test the hatch on his sloped driveway, even though he had not set the brake or chocked the wheels. The float began rolling downhill toward a retention pond with Daniel trapped inside. Lydia saw the float rolling, ran to pull open the hatch before it reached the water, and the hatch spring snapped back and broke her wrist. Daniel did not see Lydia approach before she was hurt.\n\nIf Lydia asserts a negligence claim against Daniel for the injury she sustained, the court should find for:",
+ "call": "If Lydia asserts a negligence claim against Daniel for the injury she sustained, the court should find for:",
+ "choices": {
+  "A": "Lydia, because a rescuer is entitled to indemnity from the person whom the rescuer was attempting to rescue.",
+  "B": "Daniel, because Daniel did not know that Lydia would try to rescue him.",
+  "C": "Lydia, because her injury resulted from Daniel’s failure to act reasonably.",
+  "D": "Daniel, because Lydia was an officious intermeddler."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: Danger invites rescue. When Daniel unreasonably created a danger to human life, including his own, a rescue attempt was a foreseeable response. Lydia’s injury came from trying to respond to that danger, so the negligence answer that ties her injury to Daniel’s unreasonable conduct is the credited answer.\n\nSilver Key: On a “because” answer set, do not pick the party first. Test the because-clause. C wins because it gives the legally operative ground: unreasonable danger causing a foreseeable rescue injury.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "automatic “rescuer is entitled to indemnity” language is an overclaim. It gives a categorical payment rule instead of the negligence basis."
+  },
+  {
+   "label": "CUT B",
+   "text": "Daniel’s lack of actual awareness answers the wrong element. The lane is reasonable foreseeability of rescue, not subjective knowledge."
+  },
+  {
+   "label": "CUT D",
+   "text": "“officious intermeddler” imports the wrong frame. The stem presents an apparent human rescue, not pointless interference."
+  },
+  {
+   "label": "Residual",
+   "text": "C."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the Gold Key cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "Daniel made the danger; Lydia got hurt trying to rescue him. Cut automatic indemnity, cut actual-awareness, cut officious intermeddler. Pick the negligence/rescue-duty answer.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice gives every rescuer a categorical indemnity right instead of tying recovery to Daniel's unreasonable danger.",
+   "lawyer": "Rescue doctrine supports tort recovery through negligent creation of peril and foreseeable rescue, not a blanket indemnity entitlement.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The choice treats Daniel's subjective knowledge as the deciding element.",
+   "lawyer": "Under the rescue doctrine, the relevant idea is foreseeability of rescue, not the defendant's actual knowledge that this rescuer would appear.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This choice ties Lydia's injury to Daniel's unreasonable conduct, which is the operative rescue-duty lane.",
+   "lawyer": "Danger invites rescue; Daniel's negligent self-peril can create a duty to a foreseeable rescuer.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The stem shows an apparent human rescue, not purposeless interference.",
+   "lawyer": "The officious-intermeddler label does not defeat a rescue-doctrine negligence claim when apparent human peril supplies a legitimate reason to act.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-DANGER-INVITES-RESCUE-01",
+   "statement": "Danger invites rescue: when a person negligently creates apparent human peril, even to himself, a reasonable rescue attempt is foreseeable and the rescuer may recover for rescue injuries caused by that negligence.",
+   "trigger": "rescuer injured while trying to save someone from danger the defendant negligently created",
+   "unlocks": "actual-awareness and officious-intermeddler traps",
+   "authority": "Wagner v. International Railway Co., 232 N.Y. 176 (1921); self-peril applications recognized in later rescue-doctrine cases."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-BECAUSE-CLAUSE-01",
+   "statement": "In a party-result answer set, test the because-clause before choosing the winner. A correct party with a wrong reason is still out.",
+   "trigger": "choices split between plaintiff/defendant and each uses 'because'",
+   "unlocks": "two plaintiff answers and two defendant answers with competing rationales",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Danger invites rescue, not automatic indemnity",
+  "signal": "Rescuer injured while responding to apparent human peril.",
+  "studentMove": "Ask whether the defendant's unreasonable conduct created the danger; then reject actual-awareness and automatic-payment traps.",
+  "tinyRule": "Rescue is foreseeable when negligent danger creates apparent human peril.",
+  "trap": "Treating rescue as either meddling or automatic reimbursement."
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "id": "CQ18982",
+ "title": "Homeschool Coop Month",
+ "subject": "Torts",
+ "topic": "Defamation",
+ "subtopic": "Falsity and substantial truth",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A faith-based homeschool-co-op newsletter stated that a co-op member's childcare license was revoked in May for failing a state safety inspection. The license was actually revoked in June for the same safety-inspection failure. The member sued the newsletter for defamation based only on the wrong month.",
+ "call": "What is the best defense?",
+ "choices": {
+  "A": "Absolute privilege, because all private newsletters are protected.",
+  "B": "Opinion, because license status is subjective.",
+  "C": "Substantial truth, because the sting of the statement was true despite the wrong month.",
+  "D": "No defense, because any factual mistake defeats truth."
+ },
+ "key": "C",
+ "dominantTrap": "D",
+ "rightExplanation": "C is correct. Defamation requires a false statement of fact. A statement is not defamatory if the gist or sting is substantially true, even if minor details (such as the exact month) are inaccurate. Here, the defamatory sting is \"childcare license revoked for failing a state safety inspection.\" The license was revoked for failing the safety inspection — that is substantially true. The wrong month (May vs. June) is a minor inaccuracy that does not change the sting; the statement is not actionable.\n\nGold Key: defamation is a falsity tort. A statement is not defamatory if the gist or sting is substantially true. Minor inaccuracies that do not change the gist or sting are tolerated.",
+ "wrongExplanations": {
+  "A": "Absolute privilege, because all private newsletters are protected.\n\nThis is the invented-privilege trap. There is no automatic absolute privilege for all private newsletters. Absolute privilege is reserved for a small set of institutional speakers (legislators, judges, witnesses in judicial proceedings, executive officials speaking on matters of state, etc.). The newsletter is a private publication, not an institutional speaker, so the absolute-privilege route is unavailable. The breaker is the Gold Key plus the recognition that absolute privilege has narrow, traditional applications that do not extend to private newsletters.",
+  "B": "Opinion, because license status is subjective.\n\nThis is the false-recharacterization trap. License status is a factual matter: a state agency either revoked a license or did not, on a specific date, for a specific reason. The statement \"your license was revoked in May for failing a safety inspection\" is a factual assertion, not an opinion. The opinion defense requires that the statement be one that cannot be proven true or false — a subjective assessment, a loose figurative statement, or rhetorical hyperbola. License revocation is none of these. The breaker is the Gold Key plus the recognition that \"license was revoked\" is a verifiable fact.",
+  "D": "No defense, because any factual mistake defeats truth.\n\nThis is the dominant trap. The any-inaccuracy myth is the classic MBE misconception here: a student who half-remembers \"defamation requires truth\" reasons that any mistake (even a one-month error) makes the statement false. The breaker is the Gold Key: defamation requires falsity, but a statement is not false if the gist or sting is substantially true. The wrong-month inaccuracy does not change the sting (license revoked for failing a state safety inspection), so substantial truth is the defense."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

@@ -1,0 +1,72 @@
+{
+ "id": "CQ18974",
+ "title": "Subscription Meal Kit 23f",
+ "subject": "Civil Procedure",
+ "topic": "Appeals and Finality",
+ "subtopic": "Class Certification Appeals",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A national subscription home-meal-kit service bills its customers on a recurring monthly basis. A group of consumers sues the company in federal court, alleging a hidden-fee billing scheme. The district court certifies a consumer class. The meal-kit company immediately files a notice of appeal and argues that class certification is so consequential that the court of appeals must hear it as of right.\n\nWhat is the correct appellate route?",
+ "call": "What is the correct appellate route?",
+ "choices": {
+  "A": "Immediate appeal only if the case also contains a federal question.",
+  "B": "Automatic appeal as of right because class certification is important.",
+  "C": "A discretionary Rule 23(f) petition for permission to appeal.",
+  "D": "No possible review ever, even after final judgment."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. A district-court order granting or denying class certification is not appealable as of right. The route to the court of appeals is Rule 23(f) of the Federal Rules of Civil Procedure, which lets a party petition the court of appeals for permission to appeal. The court of appeals has discretion whether to grant the petition; permission is not guaranteed. Neither the importance of the class-certification question nor the presence of a federal question changes the route.\n\nSilver Key: when the call asks \"what is the appellate route\" for a non-final order, scan for a permission-based statute or rule (Rule 23(f), 28 U.S.C. § 1292(b), mandamus, collateral order). The default is no interlocutory appeal as of right.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (immediate appeal only if federal question)",
+   "text": "is cut on misstating the rule. The presence of a federal question is not the gate; Rule 23(f) is. The misstatement is visible from the answer text: the rule stated is not the rule that exists. Filter: NOT_TRUE."
+  },
+  {
+   "label": "D (no possible review ever, even after final judgment)",
+   "text": "is cut on overclaim. Final-judgment review under 28 U.S.C. § 1291 is always available at the end of the case, and Rule 23(f) interlocutory review is available now. The \"no review ever\" framing is a flat overclaim. Filter: NOT_TRUE."
+  },
+  {
+   "label": "CLASH",
+   "text": "B and C survive to the final axis: does the importance of the class-certification order create appellate jurisdiction as of right, or does it only unlock a Rule 23(f) discretionary petition? The single axis they fight on is as-of-right appellate jurisdiction vs. permission-based review."
+  },
+  {
+   "label": "CALL",
+   "text": "The Silver Key (or the controlling default rule) resolves the axis. The default is no appeal as of right for an interlocutory order. Rule 23(f) is the narrow permission-based carve-out, not an as-of-right exception. C wins; B is the importance-as-jurisdiction myth."
+  }
+ ],
+ "studentScript": "Step 1: Is the order final? No — a class-certification order is interlocutory; the case continues. The default final-judgment rule of 28 U.S.C. § 1291 means no appeal as of right. Step 2: Is there a specific permission-based rule? Yes — Rule 23(f) lets a party petition the court of appeals for permission to appeal a class-certification order. The court of appeals has discretion. Step 3: Does importance of the question change the route? No — importance does not create appellate jurisdiction. Silver Key: when the call asks 'what is the appellate route' for a non-final order, scan for a permission-based statute or rule; the default is no interlocutory appeal as of right. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student treats 'federal question' as the procedural gate. The Rule 23(f) route is the same whether or not the case has a federal question. The answer text itself states a rule that is not the law.",
+   "lawyer": "The appellate route for a class-certification order is Rule 23(f), which is not conditioned on the presence of a federal question. Federal-question jurisdiction is a subject-matter-jurisdiction concept, not a procedural-route trigger.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The student accepts the importance argument and concludes that an as-of-right appeal must exist. The breaker is the final-judgment rule plus Rule 23(f)'s narrow, permission-based carve-out; importance is not a statutory hook.",
+   "lawyer": "Final-judgment rule of 28 U.S.C. § 1291 is the default. Rule 23(f) is a narrow permission-based exception; it does not make the class-certification order appealable as of right. Importance does not create appellate jurisdiction.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "After the dominant trap (B) is recognized as the importance-as-jurisdiction myth and the two single-filter distractors (A, D) are cut, the residual is the discretionary Rule 23(f) petition.",
+   "lawyer": "Federal Rule of Civil Procedure 23(f) provides that a court of appeals may permit an appeal from an order granting or denying class-action certification if a petition is filed within fourteen days. The decision is discretionary, not as of right.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The 'no possible review ever, even after final judgment' framing is a flat overclaim. The breaker is that final-judgment review under 28 U.S.C. § 1291 is always available at the end of the case, and Rule 23(f) interlocutory review is available now.",
+   "lawyer": "Class-certification rulings are reviewable on appeal from final judgment under 28 U.S.C. § 1291 and, in many cases, immediately under Rule 23(f). The 'no review ever' framing is a misstatement of the law.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Class-certification orders are not appealable as of right; the route is Rule 23(f)",
+  "signal": "A district court grants or denies class certification; the losing party files an immediate notice of appeal. The call is the appellate route.",
+  "studentMove": "When the call asks 'what is the appellate route' for a non-final class-certification order, the answer is a Rule 23(f) petition for permission to appeal — never an as-of-right appeal. Importance of the issue does not change the route.",
+  "tinyRule": "A class-certification order is not appealable as of right; the route is a Rule 23(f) discretionary petition.",
+  "trap": "Importance-as-jurisdiction bait. Many students accept the importance argument and pick 'automatic appeal as of right.' The final-judgment rule is the default, and Rule 23(f) is permission-based, not as-of-right."
+ }
+}

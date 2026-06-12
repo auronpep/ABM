@@ -1,32 +1,88 @@
 {
  "id": "CQ21869",
- "title": "Home Health Apartment Entry",
+ "title": "Tiny House Hymn Sheet",
  "subject": "Criminal Law & Procedure",
- "topic": null,
- "subtopic": "Fourth Amendment - arrest warrant entry into third party home",
- "difficulty": null,
+ "topic": "Fourth Amendment",
+ "subtopic": "Arrest warrants and home entry",
+ "difficulty": "medium-hard",
  "tension": null,
- "stem": "At 8:15 p.m., officers holding an arrest warrant for Stephen received a message that Stephen was spending the evening at Ruth's apartment after Ruth finished a home-health shift. The officers went to Ruth's building. They had no consent, no exigent circumstances, and no search warrant for Ruth's apartment. They entered anyway and arrested Stephen in Ruth's kitchen.",
- "call": "Was the entry into Ruth's apartment lawful?",
+ "stem": "Source row: QID 21869, Criminal Procedure / Fourth Amendment, tested rule: arrest warrant for a suspect does not by itself authorize entry into a third party’s home without a search warrant or valid exception. The source row gives official key B and states the arrest warrant did not authorize warrantless third-party-home entry absent consent or exigency.\n\nFinal Christian variation — “Tiny-House Hymn-Sheet Night”\n\nAt Lydia’s tiny house, a private psalm-singing rehearsal has turned into a hymn-sheet stapling contest. Police, holding an arrest warrant for Timothy, get a tip that Timothy is helping there. They have no search warrant for Lydia’s home, no consent, and no emergency. They enter the tiny house and arrest Timothy in the prayer nook.\n\nCall: Was the entry lawful?",
+ "call": "Was the entry lawful?",
  "choices": {
-  "A": "Yes, because the message gave police reasonable suspicion that Stephen was inside.",
-  "B": "No, but only because Stephen was found in the kitchen rather than near the apartment door.",
-  "C": "No, because police needed a search warrant for Ruth's home or a valid exception.",
-  "D": "Yes, because an arrest warrant permits police to follow the named suspect into any residence."
+  "A": "Yes, because the tip gave officers reasonable suspicion that Timothy was inside.",
+  "B": "Yes, because an arrest warrant travels with the suspect into any private home.",
+  "C": "No, but only because Timothy was seized in the prayer nook rather than at the front door.",
+  "D": "No, because officers needed a search warrant for Lydia’s home or a valid exception."
  },
- "key": "C",
- "dominantTrap": "D",
- "rightExplanation": "C is correct. An arrest warrant authorizes officers to arrest the person named in the warrant, but it does not itself authorize warrantless entry into a third party's home. Ruth's apartment had its own Fourth Amendment protection. Because the officers had no search warrant for Ruth's apartment and no consent or exigent circumstances, the entry was unlawful even though the arrest warrant for Stephen was valid.",
- "wrongExplanations": {
-  "A": "The message makes this attractive because it gave police a reason to think Stephen was there. The breaker is that suspicion alone does not authorize entry into a home.",
-  "B": "The kitchen detail invites a room-by-room limitation. The breaker is that the Fourth Amendment violation occurred at the threshold, before the officers reached any room.",
-  "D": "This tracks the common Payton confusion. The breaker is that an arrest warrant may justify entry into the suspect's own residence, not a third party's home without more."
- },
- "c3": [],
- "studentScript": null,
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The entry was into Lydia’s home, not Timothy’s. Gold Key: an arrest warrant authorizes seizure of the named person; it does not itself authorize officers to enter and search a third party’s home for that person. The officers needed a search warrant for Lydia’s home or a valid exception such as consent or exigency. Silver Key: resolve the door before the room. The question asks about crossing Lydia’s threshold, so the prayer-nook detail comes too late to supply entry authority.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Reasonable suspicion” is a lower-threshold authority claim. Gold Key cuts it: third-party home entry requires a search warrant or valid exception."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Any private home” is the overbroad portability claim. Gold Key cuts it: an arrest warrant for Timothy does not become a search warrant for Lydia’s home."
+  },
+  {
+   "label": "CUT C",
+   "text": "This answers the wrong point in time. The call asks whether officers could enter Lydia’s home; “prayer nook rather than front door” is an interior-location issue after entry."
+  },
+  {
+   "label": "Residual",
+   "text": "D is true and responsive. No CLASH or CALL needed."
+  }
+ ],
+ "studentScript": "Door first. This is Lydia’s home, not Timothy’s. No search warrant, no consent, no emergency. Cut the any-home answer, cut reasonable suspicion, cut the prayer-nook answer. Pick D.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
- "silverKeys": [],
- "remediation": null
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer uses a suspicion standard to justify crossing a home threshold.",
+   "lawyer": "Reasonable suspicion that the suspect is inside does not substitute for a search warrant or exception for a third party's home.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "The phrase 'any private home' is the overclaim; the Gold Key tells the student why the scope is too broad.",
+   "lawyer": "An arrest warrant for Timothy does not authorize entry into Lydia's home absent a search warrant or valid exception.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The choice answers where Timothy was seized after entry, not whether officers could cross Lydia's threshold.",
+   "lawyer": "The legal defect is the entry into the third party's home, not the prayer-nook location.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "This is the only choice that answers the threshold-entry call with the missing search warrant or exception.",
+   "lawyer": "This states the Steagald rule.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-THIRD-PARTY-HOME-01",
+   "statement": "An arrest warrant lets police seize the named suspect; it does not by itself authorize entry into someone else’s home. For a third party’s home, look for a search warrant for that home, consent, or exigency.",
+   "trigger": "arrest warrant + suspect located in a third party's home",
+   "unlocks": "arrest-warrant-follows-suspect trap",
+   "authority": "Steagald v. United States, 451 U.S. 204 (1981); Payton v. New York, 445 U.S. 573 (1980)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-ENTRY-FIRST-01",
+   "statement": "When the call asks whether entry into a home was lawful, decide the door before the room. A bedroom, prayer nook, or living room fact cannot supply authority to cross the threshold.",
+   "trigger": "answer turns on where the suspect was found after entry",
+   "unlocks": "interior-room distractor",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Person warrant vs place warrant",
+  "signal": "Arrest warrant for suspect + suspect inside someone else's home.",
+  "studentMove": "Ask whose home is being entered.",
+  "tinyRule": "Own home may be Payton; third-party home needs Steagald search warrant or exception.",
+  "trap": "Arrest-warrant portability."
+ }
 }

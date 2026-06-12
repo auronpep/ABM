@@ -1,0 +1,88 @@
+{
+ "id": "CQ14467",
+ "title": "Psalm Tutor Installments",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Performance, Breach, and Discharge",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary asked Lydia, a private tutor known for Bible-quiz preparation, to create a Psalm-memorization coaching package for her. Lydia replied that she would do so only after Peter sent a signed reference confirming that Mary had successfully completed Peter’s prior private tutoring course. At Mary’s request, Peter mailed Lydia a signed note: “Mary completed my course and paid me; I recommend working with her.”\n\nOn March 3, after reading Peter’s note, Lydia and Mary signed a contract. Lydia immediately delivered the complete coaching package to Mary, and Mary agreed to pay Lydia $1,200 in installments of $120 plus accrued interest on the 20th day of each month beginning April 20. On March 4, Peter left for a six-month wilderness retreat. Later that same day, unaware that Peter had left, Lydia mailed Peter a thank-you postcard saying that she had delivered the coaching package on March 3.\n\nMary did not pay the installments due on April 20, May 20, or June 20, and she has informed Lydia that she will be unable to make payments in the foreseeable future.\n\nOn July 5, Lydia is entitled to a judgment against Mary for which of the following amounts?",
+ "call": "On July 5, Lydia is entitled to a judgment against Mary for which of the following amounts?",
+ "choices": {
+  "A": "$1,200 plus the accrued interest, because Mary’s unexcused failure to pay three installments is a material breach.",
+  "B": "$1,200 plus the accrued interest, because the failure to pay her obligations as they come due indicates that Mary is insolvent and Lydia is thereby entitled to accelerate payment of the balance.",
+  "C": "$360 plus the accrued interest, because Mary’s breach is only a partial breach.",
+  "D": "Nothing, because if Lydia sues before the entire amount is due, she will be splitting her cause of action."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. By July 5, exactly three $120 installments have matured: April 20, May 20, and June 20. That totals $360, plus accrued interest. Mary’s statement that she cannot pay in the foreseeable future makes the full-balance choices tempting, but the contract does not supply an acceleration term, and the call asks what amount is recoverable on July 5.\n\nGold Key: When the only remaining duty is to pay money in separate installments, missing fewer than all installments normally creates only a partial-breach claim for matured payments unless the agreement gives an acceleration right.\n\nSilver Key: Read the choices as an amount ladder: nothing, matured installments, or the full balance. The due-installment answer wins unless the stem gives a full-balance trigger.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "“Nothing” breaks the call/fact relation. Three installments have already matured. The choice tries to make a suit for matured debt look like forbidden splitting."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Insolvent, therefore acceleration” supplies a remedy the stem does not give. This is a fabricated-rule trap, anchor-assisted by the Gold Key."
+  },
+  {
+   "label": "CLASH A vs C",
+   "text": "Both answer the amount question. The axis is: matured installments only or full-balance recovery. The splitting fact is that only three installments have matured and no acceleration trigger appears."
+  },
+  {
+   "label": "CALL through Gold Key",
+   "text": "The installment-payment Gold Key resolves the full-balance trap. C survives."
+  }
+ ],
+ "studentScript": "Count what is due on July 5: three payments of $120. Full balance needs acceleration; nothing ignores matured debt. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer jumps from three missed installments to the whole balance.",
+   "lawyer": "Under the installment-payment rule, this is not a total-breach recovery absent an acceleration trigger.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "The answer supplies an acceleration entitlement not stated in the stem.",
+   "lawyer": "Insolvency language does not itself make unmatured installments immediately due on these facts.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "This is the only answer that matches the matured amount on the call date.",
+   "lawyer": "The matured unpaid installments total $360 plus accrued interest.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer ignores three matured payments already due.",
+   "lawyer": "A suit for matured installments is not barred merely because future installments have not yet matured.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PSALM-TUTOR-INSTALLMENTS-01",
+   "statement": "When the only remaining duty is to pay money in separate installments, missing fewer than all installments normally creates only a partial-breach claim for matured payments unless the agreement gives an acceleration right.",
+   "trigger": "completed performance plus a monthly payment schedule, missed installments, and no acceleration term supplied",
+   "unlocks": "the full-balance material-breach and insolvency-acceleration traps",
+   "authority": "Restatement (Second) of Contracts § 243(3); acceleration-clause doctrine"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PSALM-TUTOR-INSTALLMENTS-01",
+   "statement": "Read the choices as an amount ladder: nothing, matured installments, or the full balance. When two choices demand the full balance, ask what fact authorizes acceleration; if the stem gives no such fact, keep the due-installment answer.",
+   "trigger": "a payment schedule with missed installments and a call asking what amount is recoverable before the whole schedule matures",
+   "unlocks": "the nothing-versus-partial-versus-full-balance answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Installment amount ladder",
+  "signal": "The answer choices offer nothing, matured installments, and full balance.",
+  "studentMove": "Lock the date in the call and count what has matured before considering full-balance remedies.",
+  "tinyRule": "Due installments are collectible now; unmatured installments need an acceleration trigger.",
+  "trap": "Upgrading a few missed payments into the whole balance."
+ }
+}

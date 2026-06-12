@@ -1,0 +1,95 @@
+{
+ "id": "CQ19430",
+ "title": "Harp Instructor Olive Grove",
+ "subject": "Real Property",
+ "topic": "Conveyance by Deed — Requirements for Valid Deed",
+ "subtopic": "B1",
+ "difficulty": "Calibration",
+ "tension": null,
+ "stem": "Lydia owned a fenced olive grove outside Capernaum. Before leaving for a psalm-singing festival, she signed and delivered a deed stating, “I convey the olive grove to the harp instructor of Capernaum Hymn School today.” At that moment, Daniel was the only harp instructor of Capernaum Hymn School. Daniel accepted the deed.\n\nWho owns the olive grove?",
+ "call": "Who owns the olive grove?",
+ "choices": {
+  "A": "Daniel, because the role description identified a specific person when the deed was delivered.",
+  "B": "Lydia, because Daniel did not sign the deed.",
+  "C": "Lydia, because a deed must state the grantee’s personal name.",
+  "D": "Capernaum Hymn School, because the role title automatically makes the school the grantee."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The deed uses a role description, not Daniel’s personal name. Gold Key: A deed can identify a grantee by an office or role if one person fitting that description is reasonably ascertainable when the deed is delivered. Silver Key: Read the recipient phrase before reading the formalities traps: “to the harp instructor” points first to the person who holds that role, not automatically to the school and not back to the grantor.\n\nDaniel was the only harp instructor at the moment of delivery, and he accepted the deed. That makes Daniel the ascertainable grantee.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A survives",
+   "text": "It is true and responsive once the Gold Key is available: the deed’s role description identifies Daniel at delivery."
+  },
+  {
+   "label": "B — CUT",
+   "text": "It invents a deed-signature requirement for the grantee. This is an anchor-assisted NOT_TRUE cut."
+  },
+  {
+   "label": "C — CUT",
+   "text": "It invents a personal-name requirement. This is an anchor-assisted NOT_TRUE cut."
+  },
+  {
+   "label": "D — CUT",
+   "text": "It turns a role-holder description into an automatic entity grantee. The answer switches the recipient from the person described to the organization named inside the description.\n\nNo CLASH remains after the CUT. No CALL is needed."
+  }
+ ],
+ "studentScript": "Deed recipient phrase first. It says harp instructor, and Daniel was the only one at delivery. A role description can identify a grantee; Daniel accepted. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice answers the call and uses the stem’s timing fact: Daniel was the only person fitting the role at delivery.",
+   "lawyer": "A deed may identify a grantee by description if the person is ascertainable at delivery; Daniel accepted.",
+   "mold": null
+  },
+  "B": {
+   "signal": "This choice adds a required signature by Daniel.",
+   "lawyer": "The deed-signature requirement runs to the conveyor/grantor; acceptance by the grantee is enough for this trap.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "This choice adds a personal-name requirement.",
+   "lawyer": "A grantee can be described rather than named if ascertainable.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The answer changes the recipient from the role-holder to the organization.",
+   "lawyer": "The deed describes the current role-holder; it does not automatically convey to the school entity.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-ASCERTAINABLE-GRANTEE-01",
+   "statement": "A deed does not fail merely because the grantee is described by role rather than personal name. If one person fits the description at delivery, that person is ascertainable and can take title.",
+   "trigger": "Deed says “to the [office/role holder]” and the stem says one person held that role at delivery.",
+   "unlocks": "personal-name-required trap",
+   "authority": "Vineyard v. O’Connor, 36 S.W. 424 (Tex. 1896), as cited in ConocoPhillips Co. v. Hahn."
+  },
+  {
+   "id": "GK-REAL_PROPERTY-GRANTEE-SIGNATURE-01",
+   "statement": "A grantee generally need not sign the deed to take title; delivery by the grantor and acceptance by the grantee do the work.",
+   "trigger": "Answer says the named recipient loses because the recipient did not sign.",
+   "unlocks": "grantee-signature-required trap",
+   "authority": "Tex. Prop. Code § 5.021 requires the conveyance to be subscribed and delivered by the conveyor or authorized agent."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-ROLE-GRANTEE-01",
+   "statement": "When a deed names a role, separate the role-holder from the organization named inside the role phrase before checking formalities.",
+   "trigger": "Choice set includes the person, the grantor, and the organization as possible owners.",
+   "unlocks": "role-holder vs entity ownership trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Role Description as Grantee",
+  "signal": "Deed conveys to “the [role holder] of [organization].”",
+  "studentMove": "Ask whether one person fit that role at delivery.",
+  "tinyRule": "Role description is enough if it identifies one person at delivery.",
+  "trap": "Do not require the personal name or grantee signature."
+ }
+}

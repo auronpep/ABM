@@ -1,0 +1,96 @@
+{
+ "id": "CQ14447",
+ "title": "Jericho Trumpet Deposit",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Promissory Estoppel",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "Timothy, a cheerful but chronically overextended collector of Christian festival props, received an audio message from Lydia, his careful aunt, who kept a color-coded prayer-and-budget journal:\n\n“On Reformation Day next month, I will send you $7,200 to help you get your finances steady. Spend it wisely; this is the last rescue I can make.”\n\nBefore that day, Timothy signed a contract with a festival vendor to rent a $58,000 portable “Jericho trumpet” sound-and-light rig and to make a $7,200 deposit the morning after Reformation Day. After Lydia learned of the rental contract, she repudiated her promise.\n\nIf Timothy sues Lydia for $7,200, which of the following is Lydia’s best defense?",
+ "call": "Which of the following is Lydia's best defense?",
+ "choices": {
+  "A": "Reliance by the promisee on a promise to make a future gift does not make the promise enforceable unless that reliance also results in an economic benefit to the promisor.",
+  "B": "Reliance by the promisee on a promise to make a future gift does not make the promise enforceable unless injustice can be avoided only by such enforcement.",
+  "C": "A promise to make a gift in the future is not enforceable.",
+  "D": "Reliance by the promisee on a promise to make a future gift does not make the promise enforceable unless the value of the promised gift is substantially equivalent to the promisee's loss by reliance."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The answer names the real promissory-estoppel gate: reliance on a future gift promise matters only if enforcement is needed to avoid injustice.\n\nGold Key: A future gift promise can be enforceable by promissory estoppel, but only through the actual reliance gates: expected reliance, actual reliance, and injustice. No “equivalent loss” gate and no “benefit to promisor” gate is part of the rule.\n\nSilver Key: Read the array as a gate list. Three choices either delete the reliance exception or invent extra gates. B is the only choice that names the real gate.\n\nTimothy did rely by signing the rental contract. But his reliance—renting a $58,000 Jericho-trumpet rig right after receiving a promise meant to help him get financially steady—cuts against the claim that justice requires enforcing Lydia’s promise. That makes B Lydia’s best defense.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A adds an economic-benefit-to-promisor condition. That condition is not in the Gold Key gate list. NOT_TRUE → fabricated_rule."
+  },
+  {
+   "label": "CUT C",
+   "text": "C says future gift promises are not enforceable. The absolute deletes the reliance exception. NOT_TRUE → tiered_absolute."
+  },
+  {
+   "label": "CUT D",
+   "text": "D adds a substantial-equivalence requirement. That is a made-up math gate. NOT_TRUE → fabricated_rule."
+  },
+  {
+   "label": "Residual B",
+   "text": "B states the actual gate: enforcement only if needed to avoid injustice. The stem gives Lydia a strong defense on that gate because Timothy’s reliance conflicts with the financial-stability purpose of the promised gift."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not reached after CUT. One answer survives."
+  },
+  {
+   "label": "CALL",
+   "text": "Anchor-assisted gate check. No fork."
+  }
+ ],
+ "studentScript": "Gift promise plus reliance. Real gate is injustice. The rental reliance undercuts justice. B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice adds a condition not in the Gold Key gate list.",
+   "lawyer": "Promissory estoppel does not require economic benefit to the promisor; Restatement (Second) of Contracts § 90 focuses on expected reliance, actual reliance, and injustice.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "This choice names the real gate and answers Lydia's defense.",
+   "lawyer": "This tracks Restatement (Second) of Contracts § 90 and applies the injustice requirement to Timothy's inconsistent reliance.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The absolute deletes the reliance exception taught by the Gold Key.",
+   "lawyer": "A gratuitous promise may be enforceable under promissory estoppel when § 90 is satisfied; this statement is overbroad.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The choice turns the injustice standard into a made-up math match.",
+   "lawyer": "Restatement § 90 does not require the promised gift to equal the reliance loss; the remedy may be limited as justice requires.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PROMISSORY-ESTOPPEL-GIFT-01",
+   "statement": "A future gift promise can be enforceable by promissory estoppel only when the promisor should expect reliance, reliance occurs, and enforcement is needed to avoid injustice; the rule does not require equivalent loss or a benefit to the promisor.",
+   "trigger": "a gratuitous future promise followed by reliance and a defense asking why enforcement should fail",
+   "unlocks": "the future-gift-is-never-enforceable trap and the two invented extra-gate traps",
+   "authority": "Restatement (Second) of Contracts § 90(1)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-JERICHO-TRUMPET-01",
+   "statement": "When every choice says future gift plus reliance unless something else, read the answers as a gate list. Keep the choice that names the real gate, then use the stem facts to see whether that gate helps the defending party.",
+   "trigger": "one choice deletes the reliance exception, two choices invent extra conditions, and one choice names the injustice gate",
+   "unlocks": "four-choice gate-list answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Promissory Estoppel Gate List",
+  "signal": null,
+  "studentMove": "When reliance appears after a future gift promise, cut broad no-gift and invented-extra-gate answers.",
+  "tinyRule": "Gift promise plus reliance can be enforceable only if enforcement is needed to avoid injustice.",
+  "trap": null
+ }
+}

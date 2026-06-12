@@ -1,0 +1,72 @@
+{
+ "id": "CQ17711",
+ "title": "Mercy Clinic Zoning",
+ "subject": "Civil Procedure",
+ "topic": "Joinder, Class Actions, and Intervention",
+ "subtopic": "Timeliness under Rule 24",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A chain of mobile medical clinics called Mary's Mercy — a 501(c)(3) that provides free ultrasound and Christian counseling in underserved neighborhoods — followed a zoning lawsuit from the day it was filed. After summary judgment briefing closed and trial was scheduled, Mary's Mercy moved to intervene to present traffic and parking-impact arguments it could have raised earlier. Existing parties object that adding Mary's Mercy now would require reopening discovery and delaying trial.\n\nWhat is the strongest basis for denying the motion to intervene?",
+ "call": "What is the strongest basis for denying the motion to intervene?",
+ "choices": {
+  "A": "The motion is untimely because Mary's Mercy waited despite knowing about the case, and late intervention would prejudice existing parties.",
+  "B": "Intervention is required because zoning decisions affect the public.",
+  "C": "Intervention must be denied because only original parties may raise traffic-impact arguments.",
+  "D": "Mary's Mercy has no possible interest because it is not a property owner."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The strongest basis for denial is untimeliness combined with prejudice to the existing parties. Mary's Mercy followed the case from the day it was filed, then waited until the eve of trial — after summary judgment briefing had closed — to move to intervene, and the proposed intervention would require reopening discovery and delaying trial. Both Rule 24(a) (intervention of right) and Rule 24(b) (permissive intervention) require the motion to be timely; courts weigh how far the case has progressed, the movant's reason for the delay, and the prejudice that intervention would cause existing parties. Silver Key: when the movant knew of the case from day one, run the Rule 24 timeliness factors first; the public-importance choice is a misstatement of the mandatory-intervention rule (public interest alone is not a magic override of the timeliness requirement).",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (no interest)",
+   "text": "is cut on the Rule 24(a)(2) interest test. Property ownership is not required. Visible from the stem: Mary's Mercy operates clinics in the affected neighborhood and would suffer traffic, parking, and patient-access impacts. The choice is NOT_TRUE for misstating the interest test."
+  },
+  {
+   "label": "C (only original parties)",
+   "text": "is cut on Rule 24's plain text. Non-parties may move to intervene; the question is whether the Rule 24 requirements are met. The choice is NOT_TRUE for misstating who may intervene."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: timeliness + prejudice on the one hand, mandatory intervention because of public importance on the other. The single axis they fight on is whether the public importance of zoning is enough to overcome Rule 24's timeliness gate."
+  },
+  {
+   "label": "CALL",
+   "text": "The Silver Key resolves the axis: public interest is not a magic override of Rule 24's timeliness requirement. The \"intervention is required\" framing misstates the mandatory-intervention rule, which requires a separate Rule 24(a)(2) showing of impairment of a legally protected interest, not merely a general public concern. Apply Rule 24(a)/(b) timeliness + prejudice → A."
+  }
+ ],
+ "studentScript": "Step 1: Is the motion timely? The movant knew of the case from day 1, waited until summary judgment briefing closed and trial was scheduled, and the proposed intervention would require reopening discovery and delay trial. The Rule 24 timeliness factors cut against the movant, and the prejudice to existing parties is concrete. Step 2: Is there a separate mandatory-intervention ground? The public importance of zoning is real, but the public interest is not a magic override of Rule 24's timeliness gate; 'intervention is required' misstates the mandatory-intervention rule. Cut B. Step 3: Is there an interest problem? Rule 24(a)(2) does not require property ownership; a mobile-medical ministry that operates clinics in the affected neighborhood has a cognizable interest in traffic, parking, and patient access. Cut D. Step 4: Is there a 'only original parties' problem? Rule 24 expressly allows non-parties to raise arguments. Cut C. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The movant knew of the case from the start, waited until the eve of trial, and the proposed intervention would require reopening discovery and delay trial. Both Rule 24(a) and Rule 24(b) require timeliness; courts weigh the four factors and the prejudice to existing parties.",
+   "lawyer": "Rule 24(a) (intervention of right) and Rule 24(b) (permissive intervention) both require a timely motion; courts evaluate timeliness by reference to how far the case has progressed, the movant's reason for the delay, and the prejudice that intervention would impose on existing parties. NAACP v. New York, 413 U.S. 345 (1973); cf. Stallworth v. Monsanto Co., 558 F.2d 741 (5th Cir. 1977) (four-factor test).",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student hears 'zoning' and 'public' and assumes intervention is mandatory. The Silver Key tells them the public importance of zoning is not a magic override of Rule 24's timeliness requirement.",
+   "lawyer": "The mandatory-intervention rule (Rule 24(a)(2)) requires a separate showing of impairment of a legally protected interest, not merely a general public concern. The public importance of zoning is real but does not bypass the timeliness gate.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "Rule 24 expressly allows non-parties to raise arguments; the question is whether the Rule 24 requirements are met, not whether the movant is a named party.",
+   "lawyer": "Rule 24(a) and Rule 24(b) both contemplate non-parties as movants. The choice misstates who may intervene.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "Rule 24(a)(2) requires an interest that may be impaired by the disposition; it does not require property ownership. A mobile-medical ministry that operates clinics in the affected neighborhood has a cognizable interest in traffic, parking, and patient access.",
+   "lawyer": "The Rule 24(a)(2) interest test is functional, not property-based. The choice misstates the interest test.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Rule 24 timeliness + prejudice",
+  "signal": "A non-party that knew of the case from the start waits until the eve of trial to move to intervene to raise arguments it could have raised earlier, and existing parties object on prejudice grounds.",
+  "studentMove": "Run the Rule 24 timeliness factors first (how far the case has progressed, the movant's reason for the delay, the prejudice to existing parties). Do not be drawn into the public-importance argument; the public interest is not a magic override of Rule 24's timeliness gate.",
+  "tinyRule": "When the movant knew of the case from day 1, the eve-of-trial intervention is denied on untimeliness and prejudice to existing parties.",
+  "trap": "The public-importance overreach (B) feels right because zoning IS public. It is not a magic override."
+ }
+}

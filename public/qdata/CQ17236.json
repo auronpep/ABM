@@ -1,0 +1,32 @@
+{
+ "id": "CQ17236",
+ "title": "Wellness Visit Revocation",
+ "subject": "Torts",
+ "topic": "Privileges and defenses",
+ "subtopic": "Consent (revocation before contact)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Hannah, a private violin teacher, signed a written consent form for a minor cosmetic injection during a visit to a private wellness clinic. Before the injection began, she clearly told the doctor, Daniel, \"I changed my mind. Do not inject me.\" Daniel said she was being silly and intentionally gave the injection anyway. Hannah sues Daniel for battery.",
+ "call": "Can Daniel rely on the signed consent form?",
+ "choices": {
+  "A": "Yes, because written consent can never be withdrawn.",
+  "B": "No, because consent is never a defense to battery.",
+  "C": "No, because the patient revoked consent before the contact occurred.",
+  "D": "Yes, because the injection was minor."
+ },
+ "key": "C",
+ "dominantTrap": "A",
+ "rightExplanation": "Daniel cannot rely on the signed consent form. A patient may revoke consent at any time before the contact occurs; the revocation need not be in any particular form. Once Hannah clearly told Daniel \"I changed my mind. Do not inject me,\" her earlier written consent no longer authorized the contact, and the injection that followed was an unauthorized intentional contact — battery. Gold Key: a signed consent form is a license that the patient can revoke at any time before the act; revocation does not require written notice or any particular magic words. Silver Key: battery does not require serious injury; an unauthorized offensive or harmful contact is enough.",
+ "wrongExplanations": {
+  "A": "Yes, because written consent can never be withdrawn.\n\nThis is the dominant trap. It treats a signed form as a contract-like instrument that locks the patient in once signed. The breaker is the Gold Key: a consent to a non-trivial touching is a present license that the patient may revoke at any time before the contact occurs, regardless of the form. The \"never withdrawn\" formulation is a flat misstatement of the law.",
+  "B": "No, because consent is never a defense to battery.\n\nThis is the mirror-image trap. The student overcorrects, hears \"revoked before contact\" and concludes that consent never matters. The breaker is the foundational rule: consent is a defense to battery when it is valid, voluntary, and unrevoked. Hannah's revocation made the consent invalid at the moment of contact — not because consent is never a defense, but because this consent was no longer operative at the moment of contact.",
+  "D": "Yes, because the injection was minor.\n\nThis is the \"no harm, no foul\" trap. The student maps battery onto a serious-injury requirement (the everyday-negligence frame). The breaker is the Silver Key: battery requires only an unauthorized offensive or harmful contact; the contact itself can be minor, cosmetic, even trivial in physical terms. A botox-style injection without consent is a battery even though it causes no lasting damage."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

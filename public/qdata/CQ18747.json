@@ -1,0 +1,80 @@
+{
+ "id": "CQ18747",
+ "title": "Vintage Bible Embezzlement",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Property Crimes",
+ "subtopic": "Other Crimes",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Timothy entrusted his late grandfather's leather-bound 1898 family Bible — with a hand-tooled cover, raised hub, and gold-leaf edges — to a small leather bookbinding and restoration shop run by Stephen, a popular bookbinder in a farming community. The Bible had been in the family for four generations. Stephen accepted the Bible for a leather-cover restoration and edge repair, quoted $380, and told Timothy the work would be ready in six weeks. Before completing the work, Stephen sold the Bible to a private collector at an online auction for $4,200 and kept the proceeds. Timothy learned the Bible had been sold when he returned to the shop to pick it up. The state has not codified a separate embezzlement statute; the modern bar treats the conversion of lawfully possessed entrusted property as embezzlement.\n\nWhat is the best theft offense?",
+ "call": "What is the best theft offense?",
+ "choices": {
+  "A": "Larceny, because every wrongful taking of property is larceny.",
+  "B": "No offense, because Timothy voluntarily handed over the Bible.",
+  "C": "Embezzlement, because Stephen lawfully possessed the Bible before converting it.",
+  "D": "False pretenses, because Stephen sold the Bible to someone else."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "Stephen committed embezzlement. The common-law distinction between the theft offenses turns on the manner in which the defendant first came into possession of the property. Larceny requires a trespassory taking — a wrongful caption at the outset. False pretenses requires a false representation of a material past or present fact that induces the victim to pass title to the property. Embezzlement, by contrast, covers the fraudulent conversion of property that the defendant lawfully came into possession of by entrustment. The facts put this squarely in embezzlement: Timothy lawfully entrusted the Bible to Stephen for restoration; Stephen lawfully accepted possession; and Stephen then fraudulently converted the Bible by selling it to a private collector and keeping the proceeds. Gold Key: the lawful possession is what makes the later conversion embezzlement, not larceny or false pretenses.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (every wrongful taking is larceny)",
+   "text": "is cut on the overclaim. Larceny requires a trespassory taking — a wrongful caption at the outset — and here Stephen's possession was lawful. The overclaim is visible from the answer text itself. The choice is NOT_TRUE for misstating the scope of larceny. Gold Key confirms."
+  },
+  {
+   "label": "D (false pretenses because Stephen sold the Bible)",
+   "text": "is cut on the mechanics. False pretenses requires a false representation of a material fact that induces the victim to pass title; here Stephen never made a false representation to Timothy, and Timothy did not pass title. Visible from the stem: \"Stephen accepted the Bible for a leather-cover restoration and edge repair\" and then \"sold the Bible to a private collector.\" The choice is NOT_RESPONSIVE for asserting a misfit doctrine (bait_doctrine). The offense against Timothy is conversion of entrusted property, not obtaining title by fraud.\n- B (no offense because Timothy voluntarily handed over the Bible) is cut on the consent-coverage overclaim. Consent to entrust property for restoration does not authorize fraudulent conversion to a different purpose. Visible from the answer text itself. The choice is NOT_TRUE for misstating the scope of consent as a defense to conversion."
+  },
+  {
+   "label": "CLASH",
+   "text": "No choices survive to clash. After three clean CUTs, only the correct answer C remains."
+  },
+  {
+   "label": "CALL",
+   "text": "C — Stephen committed embezzlement by converting the lawfully possessed entrusted Bible. Residual answer: C. No Gold Key escalation is needed for the credited answer; the Gold Key is referenced in the explanation to confirm the overclaim breaker for A."
+  }
+ ],
+ "studentScript": "The call asks for the best theft offense. Cut A: larceny requires a trespassory taking, and Stephen's possession was lawful. Cut B: consent to entrust for restoration does not authorize fraudulent conversion. Cut D: false pretenses requires a false representation that induces the victim to pass title, and there was no such misrepresentation here. Residual answer: C — embezzlement.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Larceny requires a trespassory taking — a wrongful caption at the outset — and here Stephen's possession was lawful.",
+   "lawyer": "Larceny is the trespassory taking and carrying away of the personal property of another with intent to permanently deprive. Where possession is lawful at the outset, the later conversion is embezzlement, not larceny.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "Consent to entrust property for one purpose does not authorize fraudulent conversion to a different purpose.",
+   "lawyer": "Embezzlement is the fraudulent conversion of property by one who is already in lawful possession of it; the lawful possession comes from the entrustment, and the offense is the later conversion, not the original taking.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "Lawful possession plus later fraudulent conversion is the textbook embezzlement fact pattern.",
+   "lawyer": "Embezzlement is the fraudulent conversion of the personal property of another by one who is already in lawful possession of it. Stephen lawfully accepted the Bible for restoration and later sold it and kept the proceeds.",
+   "mold": null
+  },
+  "D": {
+   "signal": "False pretenses requires a false representation of a material fact that induces the victim to pass title; here Stephen never made a false representation to Timothy, and Timothy did not pass title.",
+   "lawyer": "False pretenses is the fraudulent obtaining of title to the personal property of another by means of a false representation of a material past or present fact, made with intent to defraud, on which the victim relies. The sale to the collector is a downstream disposition, not a misrepresentation to Timothy.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-VINTAGE-BIBLE-EMBEZZLEMENT-01",
+   "statement": "The lawful possession at the outset re-routes the offense from larceny to embezzlement; the conversion of entrusted property is the embezzlement element, and the larceny trespassory-taking requirement is not met.",
+   "trigger": "owner entrusts property to repair/restoration shop, shop lawfully accepts, shop then sells to a third party and keeps the proceeds",
+   "unlocks": "colloquial 'every wrongful taking is larceny' overclaim",
+   "authority": "Common-law embezzlement doctrine; Restatement (Third) of Restitution and Unjust Enrichment; Model Penal Code § 223.4"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Embezzlement vs larceny vs false pretenses",
+  "signal": "owner entrusts property to a repair/restoration shop, shop lawfully accepts, shop then sells to a third party and keeps the proceeds",
+  "studentMove": "Cut the colloquial-larceny overclaim (A) and the consent-coverage overclaim (B) and the false-pretenses misfit (D); the residual is embezzlement (C).",
+  "tinyRule": "Lawful possession at the outset re-routes the offense from larceny to embezzlement.",
+  "trap": "Everyday English treats 'theft' as a synonym for larceny, but the theft-offense distinction turns on the manner in which the defendant first came into possession."
+ }
+}

@@ -1,32 +1,88 @@
 {
  "id": "CQ21867",
- "title": "Misdemeanor Manslaughter Causation",
+ "title": "Psalm Puzzle Booth",
  "subject": "Criminal Law & Procedure",
- "topic": null,
- "subtopic": "Homicide - misdemeanor manslaughter causation",
- "difficulty": null,
+ "topic": "Homicide",
+ "subtopic": "Homicide",
+ "difficulty": "moderate",
  "tension": null,
- "stem": "Mary was charged with involuntary manslaughter after a city inspector learned how Deborah died. Mary operated a small courier van without the city delivery-service permit required by ordinance. The ordinance made unlicensed courier work a misdemeanor. Deborah paid Mary to carry a sealed box of printed programs across town. Mary delivered the box to the address Deborah gave her. Later that afternoon, while Deborah was standing under a hotel loading canopy, a delivery truck backed into a support post, the canopy collapsed, and Deborah was killed.",
- "call": "May Mary properly be convicted of involuntary manslaughter on a misdemeanor-manslaughter theory?",
+ "stem": "At a Christian homeschool co-op fair in a rented convention hall, Peter ran a paid Bible-verse puzzle booth without the required county amusement permit, a misdemeanor. Ruth bought a ticket, completed the puzzle, collected a bookmark, and left. Later that afternoon, while helping Stephen hang a banner at a bakery for a separate youth-group fundraiser, Ruth stood on a defective stepstool, fell, and died. Peter was charged with involuntary manslaughter based on operating the booth without the permit.\n\nIs Peter guilty of misdemeanor manslaughter?",
+ "call": "Is Peter guilty of misdemeanor manslaughter?",
  "choices": {
-  "A": "No, because Mary's unlicensed courier work did not actually or proximately cause Deborah's death.",
-  "B": "Yes, because any death that follows a misdemeanor is involuntary manslaughter.",
+  "A": "No, because operating the unpermitted puzzle booth did not actually or proximately cause Ruth’s fall from the stepstool.",
+  "B": "Yes, because Peter was committing a misdemeanor when he operated the puzzle booth.",
   "C": "No, because misdemeanor manslaughter applies only to violent misdemeanors.",
-  "D": "Yes, because Mary was committing a misdemeanor when she performed the courier delivery."
+  "D": "Yes, because any death after a misdemeanor is involuntary manslaughter."
  },
  "key": "A",
- "dominantTrap": "D",
- "rightExplanation": "Misdemeanor manslaughter requires more than proof that the defendant committed a misdemeanor before someone died. The unlawful act must actually and proximately cause the death. Mary's permit violation allowed the courier delivery, but the death resulted from the truck striking the canopy after the delivery was complete. The missing permit did not cause that fatal event. The misdemeanor label alone does not supply homicide liability.",
- "wrongExplanations": {
-  "B": "Attractive because unlawful-act manslaughter uses a misdemeanor as the predicate offense. The death still must be caused by that unlawful act.",
-  "C": "Attractive by trying to narrow the doctrine to dangerous conduct. The decisive defect is not the misdemeanor's label; it is the absence of actual and proximate causation.",
-  "D": "Attractive because Mary was violating the permit ordinance during the paid delivery. Commission of a misdemeanor is not enough unless the misdemeanor caused the death."
- },
- "c3": [],
- "studentScript": null,
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The charged theory is misdemeanor manslaughter based on the unpermitted puzzle booth. The booth did not produce, set up, or increase the risk of Ruth’s later fall from a defective stepstool at a different location. Gold Key: misdemeanor manslaughter still needs actual and proximate causation; a misdemeanor that merely happened earlier is not enough. Silver Key: when one answer links the misdemeanor to the death and another only names the misdemeanor, choose the cause-link answer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "not responsive. It proves the misdemeanor only. It does not connect the misdemeanor to Ruth’s death."
+  },
+  {
+   "label": "CUT D",
+   "text": "not true. “Any death after a misdemeanor” is an absolute chronology rule. The answer overclaims."
+  },
+  {
+   "label": "CUT C",
+   "text": "anchor-assisted not true. It invents a violent-only threshold. The better no-liability reason is causation."
+  },
+  {
+   "label": "Residual",
+   "text": "A. It is true and responsive after the Gold Key is applied. No Clash or Call needed."
+  }
+ ],
+ "studentScript": "The call asks misdemeanor manslaughter. The misdemeanor is the unpermitted booth. Ruth died later from a stepstool fall. Gold Key: misdemeanor manslaughter needs actual and proximate cause. Cut the label-only answer, cut the any-death overclaim, cut the violent-only threshold. A remains.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
- "silverKeys": [],
- "remediation": null
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice connects the charged misdemeanor to the death mechanism and says the link is missing.",
+   "lawyer": "Correct under misdemeanor-manslaughter causation. The unpermitted booth did not actually or proximately cause the stepstool fall.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It proves the unlawful act but does not connect that act to Ruth’s death.",
+   "lawyer": "The predicate misdemeanor alone does not establish misdemeanor manslaughter; causation remains required.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "It ignores the cause-link fact and substitutes a violent-only rule.",
+   "lawyer": "The decisive defect is not that the misdemeanor was nonviolent; the defect is lack of actual and proximate causation.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The word 'any' turns a cause rule into a pure timeline rule.",
+   "lawyer": "Misdemeanor manslaughter is not strict liability for every later death; actual and proximate cause remain required.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-MISDEMEANOR-MANSLAUGHTER-01",
+   "statement": "Misdemeanor manslaughter still needs actual and proximate causation. A misdemeanor that merely happens before a death is not enough.",
+   "trigger": "unlawful act followed by a separate death mechanism",
+   "unlocks": "misdemeanor-label and any-death-after traps",
+   "authority": "MPC §2.03; People v. Penny; Logan/Ceasar line reflected in Oklahoma jury-instruction commentary"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIM-MISDEMEANOR-MANSLAUGHTER-01",
+   "statement": "When the array gives you a misdemeanor-label answer and a cause-link answer, lock the cause link before debating the label.",
+   "trigger": "one choice says the misdemeanor happened; another choice says the misdemeanor did not cause the death",
+   "unlocks": "cause-link answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Misdemeanor label is not a death cause",
+  "signal": "A misdemeanor is followed by a death from a separate event.",
+  "studentMove": "Ask whether the misdemeanor produced the death, not merely whether it came first.",
+  "tinyRule": "No cause link, no misdemeanor manslaughter.",
+  "trap": "Counting chronology as causation."
+ }
 }

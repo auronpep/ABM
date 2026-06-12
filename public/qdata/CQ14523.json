@@ -1,0 +1,96 @@
+{
+ "id": "CQ14523",
+ "title": "Psalm Calligraphy Stipend",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "Specific performance",
+ "difficulty": "source row: 30% correct; no difficulty label supplied",
+ "tension": null,
+ "stem": "Stem + call: At a Saturday Bible-memory fair in a rented community hall, Martha and Peter, both adults, learned that Hannah, their former Scripture-calligraphy teacher, wanted to hire a private studio aide so she could keep teaching from her backyard workshop. Hannah could afford only half of the aide's $2,400 monthly fee. Martha and Peter signed a contract with each other providing that, on the first day of May and on the first day of each succeeding month during Hannah's lifetime, each would pay Hannah $600. Hannah then hired the aide. Martha and Peter made the payments in May, June, and July. In August, Peter refused to make any payment and notified Martha and Hannah that he would make no further payments. The contract between Martha and Peter is valid, but Hannah has declined to sue Peter. Will Martha likely prevail in an action against Peter seeking a court order requiring Peter to continue making the payments to Hannah under the contract?",
+ "call": "Will Martha likely prevail in an action against Peter seeking a court order requiring Peter to continue making the payments to Hannah under the contract?",
+ "choices": {
+  "A": "Yes, because Martha's burden of keeping Hannah's aide will be increased if Peter does not contribute his share.",
+  "B": "No, because Peter's breach of contract has caused no economic harm to Martha.",
+  "C": "Yes, because Martha's remedy at law is inadequate.",
+  "D": "No, because a court will not grant specific performance of a promise to pay money."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Peter promised to make continuing monthly payments to Hannah for the rest of Hannah's life. Martha is not asking for a one-time damages award; she is asking the court to make Peter perform the continuing payment promise. Silver Key: first lock the remedy call. The question is whether a legal remedy is adequate, not whether Martha feels pressure or has already lost money. Gold Key: a payment promise is not automatically outside specific performance. Where damages are not an adequate substitute, a court may order the promised performance.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_RESPONSIVE / wrong_element",
+   "text": "The choice answers a burden-on-Martha question. The call asks whether Peter should be ordered to continue payments to Hannah."
+  },
+  {
+   "label": "CUT B — NOT_RESPONSIVE / wrong_element",
+   "text": "The choice answers a no-pocket-loss damages question. The call asks for a court-order remedy for a continuing payment promise."
+  },
+  {
+   "label": "CUT D — NOT_TRUE / tiered_absolute",
+   "text": "The phrase \"will not grant\" turns the ordinary damages preference into a categorical bar. Use the Gold Key to cut it: adequacy controls."
+  },
+  {
+   "label": "Residual C",
+   "text": "The answer is true and responsive. It gives the remedy reason that matches the call: Martha's legal remedy is inadequate."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not reached after the Gold Key cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed. The Silver Key is a call-focus navigation move, not a final tiebreaker."
+  }
+ ],
+ "studentScript": "The call asks for a court order. Cut the answers about Martha's burden or pocket loss because they do not answer that remedy call. Use the Gold Key to cut the categorical no-money answer. Residual: C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about Martha's burden, but the call asks whether Peter can be ordered to perform his promise to Hannah.",
+   "lawyer": "The brother-equivalent's breach does not create a legal duty for the enforcing party to cover the shortfall; the remedy turns on inadequacy of damages and enforceability of the promise.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The answer measures Martha's current economic loss, not whether damages are an adequate substitute for Peter's continuing payment promise.",
+   "lawyer": "A lack of direct economic loss to Martha does not bar equitable enforcement of a valid contract promise made for Hannah's benefit when legal damages are inadequate.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This answer matches the call: it gives the reason a court-order remedy may be used instead of a damages substitute.",
+   "lawyer": "Damages are inadequate because the promised stream depends on Hannah's lifetime and cannot be reduced to a just substitute with reasonable certainty.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The phrase 'will not grant' makes a categorical rule out of a remedy that turns on adequacy.",
+   "lawyer": "Gold Key: Courts generally deny specific performance when money damages are adequate, but they are not categorically barred from specifically enforcing a money-payment promise when damages are inadequate.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PSALM-CALLIGRAPHY-STIPEND-01",
+   "statement": "Specific performance is not categorically barred merely because the promised act is payment of money. If damages are inadequate because the promised stream is hard to value, the court can order the payment promise performed.",
+   "trigger": "A valid contract requires continuing payments to a third person for an uncertain lifetime duration.",
+   "unlocks": "Defeats the categorical no-specific-performance-for-money trap.",
+   "authority": "Restatement (Second) of Contracts §§ 359-360; specific performance when damages are inadequate."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PSALM-CALLIGRAPHY-STIPEND-01",
+   "statement": "For a court-order remedy call, lock the remedy axis first: money damages adequate or inadequate. Do not let choices about moral burden or no pocket loss replace the remedy question.",
+   "trigger": "The call asks for a court order requiring future payments rather than a damages award.",
+   "unlocks": "Separates the remedy-adequacy answer from burden/no-loss distractors.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Money promise is not an automatic no-SP answer",
+  "signal": "Answer says a court will not specifically enforce a promise to pay money.",
+  "studentMove": "Treat the categorical no as suspect and ask whether damages are adequate.",
+  "tinyRule": "Specific performance turns on adequacy, not on a blanket money/non-money label.",
+  "trap": "Confusing personal-service refusal with money-payment promises."
+ }
+}

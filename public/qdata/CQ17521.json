@@ -1,0 +1,88 @@
+{
+ "id": "CQ17521",
+ "title": "Christian Wedding Cake",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Acceptance by mail — mailbox rule and the 'properly dispatched' element",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Paul, a custom cake baker in Tulsa, Oklahoma, mailed Mary, a bride in Norman, Oklahoma, a signed offer to bake and decorate her June wedding cake for $1,200, with delivery to the reception venue. Mary immediately mailed back her acceptance, which was properly addressed to Paul's bakery and bore the correct amount of postage. The post office lost the letter and Paul never received it. Paul now claims no contract was formed. Is there a contract?",
+ "call": "Is there a contract?",
+ "choices": {
+  "A": "Yes, because Mary mailed her acceptance.",
+  "B": "No, because the post office lost the letter.",
+  "C": "Yes, because the acceptance was properly addressed with the correct amount of postage.",
+  "D": "No, because Paul was excused from performance since he did not receive the letter."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "A contract was formed. The mailbox rule (Restatement (Second) of Contracts § 63) makes an acceptance sent by mail effective on dispatch — that is, when the offeree deposits the acceptance in the mail — provided the acceptance is properly dispatched (correct address and correct postage). The post office's subsequent loss of the letter is irrelevant; the risk of postal loss falls on the offeror, not the offeree. Here, the stem states that Mary's acceptance was \"properly addressed to Paul's bakery and bore the correct amount of postage,\" so the mailbox rule applies and the acceptance was effective the moment Mary deposited it in the mail.\n\nGold Key: the mailbox rule turns on proper dispatch (correct address + correct postage), not merely on the act of mailing. A mailed-but-misaddressed or unstamped acceptance is NOT effective on dispatch. The testable element of the rule is the \"properly dispatched\" requirement, not the \"mailed\" verb. Silver Key: the post office losing a properly dispatched acceptance does not undo the contract; the offeror bears the risk of postal loss.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (post office lost = no contract)",
+   "text": "is cut on the mailbox rule itself. The mailbox rule exists precisely to allocate the risk of postal loss to the offeror. Visible from the stem: Mary's acceptance was properly dispatched, so the loss is irrelevant. The choice is NOT_TRUE for asserting a rule (loss undoes the contract) that is the opposite of the governing rule (the offeror bears the risk of postal loss)."
+  },
+  {
+   "label": "D (excuse from performance)",
+   "text": "is cut on the issue frame. The question is formation, not excuse. Visible from the stem: nothing in the facts supports an excuse argument. The choice is NOT_RESPONSIVE for asserting a doctrine (excuse from performance) that does not apply to the formation question the stem poses."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: do they agree? Both are \"Yes\" answers. C is the correct one because it states the properly dispatched element; A states the mailing act without the element. The single axis they fight on is whether the mailbox rule's testable element is \"mailed\" (A) or \"properly dispatched\" (C)."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: the mailbox rule applies only when the acceptance is properly dispatched. A student without the Gold Key is in anchor_gap territory on the A/C axis; the trap is the testable-element attractiveness of A, not a structural cut on A. Apply the Gold Key → C."
+  }
+ ],
+ "studentScript": "Step 1: Was a contract formed? The mailbox rule makes acceptance by mail effective on dispatch, but only when the acceptance is properly dispatched (correct address + correct postage). Visible from the stem: Mary's acceptance was properly addressed to Paul's bakery and bore the correct amount of postage, so the rule applies. The acceptance was effective on dispatch when Mary deposited it in the mail. The post office's loss of the letter is irrelevant (Silver Key). Step 2: Are any distractors cut? B (loss = no contract) is a wrong-rule cut (the mailbox rule reverses this). D (excuse from performance) is an issue-frame cut (the question is formation, not excuse). Step 3: A vs C. Both are 'Yes' answers; A omits the 'properly dispatched' element. Apply the Gold Key: the testable element is proper dispatch, not the act of mailing. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The mailbox rule applies only when the acceptance is properly dispatched. A mailed-but-misaddressed or unstamped acceptance is NOT effective on dispatch. Visible from the stem: the acceptance was properly addressed and bore the correct postage, so the rule applies — but not because Mary merely mailed it.",
+   "lawyer": "Restatement (Second) of Contracts § 63: acceptance by mail is effective on dispatch. Sub-element: the acceptance must be properly addressed and bear the correct postage. A mailed-but-misaddressed or unstamped acceptance is not effective on dispatch.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The mailbox rule exists precisely to allocate the risk of postal loss to the offeror. When an acceptance is properly dispatched, the offeror bears the risk that the letter is lost or delayed.",
+   "lawyer": "Restatement (Second) of Contracts § 63, plus the foundational case Adams v. Lindsell, 9 B. & C. 681 (K.B. 1818). The offeror bears the risk of postal loss of a properly dispatched acceptance.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "Mary's acceptance was properly addressed and bore the correct postage, so the mailbox rule applies. The acceptance was effective on dispatch when Mary deposited it in the mail, regardless of the postal loss.",
+   "lawyer": "Restatement (Second) of Contracts § 63. The acceptance was effective on dispatch; a contract was formed.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The question is formation, not excuse. An offeror's failure to receive a mailed acceptance does not, by itself, constitute an excuse from performance. The mailbox rule is the dispositive doctrine.",
+   "lawyer": "The excuse doctrines (impracticability, illegality, impossibility) require a supervening event or changed circumstances. An offeror's non-receipt of a properly dispatched acceptance is not an excuse — it is a foreseeable risk allocated to the offeror by the mailbox rule.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-CHRISTIAN-WEDDING-CAKE-01",
+   "statement": "The mailbox rule makes acceptance effective on dispatch ONLY when the acceptance is properly dispatched (correct address + correct postage); a mailed-but-misaddressed or unstamped acceptance is NOT effective on dispatch.",
+   "trigger": "stem mentions a mailed acceptance AND the question tests whether the mailbox rule applies",
+   "unlocks": "dominant-trap discrimination between A (mailed) and C (properly dispatched) on a mailbox-rule item",
+   "authority": "Restatement (Second) of Contracts § 63; sub-element on proper dispatch"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-CHRISTIAN-WEDDING-CAKE-01",
+   "statement": "The post office's loss of a properly dispatched acceptance is irrelevant; the offeror bears the risk of postal loss.",
+   "trigger": "stem describes a mailed acceptance that was lost or delayed in transit",
+   "unlocks": "postal-loss trap on a mailbox-rule item; lets the student cut the 'no, because the mail was lost' answer without invoking doctrine",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Mailbox rule — proper dispatch and postal loss",
+  "signal": "A mailed acceptance is lost or delayed; the question is whether a contract was formed.",
+  "studentMove": "Apply the Gold Key: the mailbox rule applies only when the acceptance is properly dispatched (correct address + correct postage). If the acceptance was properly dispatched, the rule applies; the post office's loss is irrelevant (Silver Key). If the acceptance was misaddressed or unstamped, the rule does not apply.",
+  "tinyRule": "Mailbox rule = acceptance effective on dispatch ONLY when properly dispatched (correct address + correct postage).",
+  "trap": "The dominant trap is 'Yes, because the offeree mailed the acceptance' — it omits the properly dispatched element. The secondary trap is 'No, because the mail was lost' — it reverses the mailbox rule's allocation of postal risk."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "CQ20599",
+ "title": "Advent Handbell Integration",
+ "subject": "Contracts",
+ "topic": "CM-B — Parol evidence rule core",
+ "subtopic": "Complete integration / merger clause / consistent additional term barred",
+ "difficulty": "Trap Repair",
+ "tension": null,
+ "stem": "Stephen agreed to write and rehearse a Scripture-themed puppet play for Martha’s family Advent party. Before anyone signed, Stephen allegedly said he would also prepare a handbell cue sheet at no extra charge. The signed agreement that followed listed the fee, scenes to be written, rehearsal dates, delivery deadline, and payment schedule. It also provided, “This writing is the complete and exclusive statement of the parties’ agreement.” When a dispute arose, Martha offered evidence of the earlier handbell promise. The agreement says nothing about handbells.\n\nHow should the court rule?",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Exclude the oral promise because the writing was intended as a complete and exclusive statement of the parties’ agreement.",
+  "B": "Admit the oral promise because it does not conflict with any term in the signed writing.",
+  "C": "Exclude the signed writing because it left out the handbell cue sheet.",
+  "D": "Admit the oral promise because merger clauses affect only sales of goods."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The signed agreement says it is the complete and exclusive statement of the parties’ agreement. Martha is offering a prior oral add-on inside the same writing/rehearsal deal. Gold Key: a complete-and-exclusive integration bars prior or contemporaneous consistent additional terms within its scope; “it does not conflict” is not enough. Silver Key: clash “not conflicting” against “complete and exclusive,” then let the integration phrase decide.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "The call asks what to do with the oral promise. C attacks the signed writing. Wrong object."
+  },
+  {
+   "label": "CUT D",
+   "text": "The “only sales of goods” statement is a false frame. It needs the Gold Key because a student cannot know that from structure alone."
+  },
+  {
+   "label": "CLASH A vs B",
+   "text": "Axis: Does non-conflict suffice, or does complete-and-exclusive language block the oral add-on? Splitting fact: the writing says “complete and exclusive.” A wins."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual call needed after the anchor-assisted clash."
+  }
+ ],
+ "studentScript": "The call is the oral promise. C attacks the signed writing, so cut it. D is the goods-only myth, killed by the Gold Key. A and B clash on complete/exclusive versus mere consistency. Complete/exclusive wins; choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Matches the complete-and-exclusive trigger and answers the evidence offered.",
+   "lawyer": "A completely integrated agreement bars prior consistent additional terms within its scope.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It answers the partial-integration question, not the complete-and-exclusive question.",
+   "lawyer": "Consistent additional terms may supplement an integrated agreement unless the court finds complete integration.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The offered evidence is the oral promise; the answer excludes the signed writing.",
+   "lawyer": "Omission of an alleged oral term does not make the integrated writing inadmissible.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The word only is a danger signal, but the falsehood needs the Gold Key.",
+   "lawyer": "Complete integration and merger-clause analysis applies in common-law contracts; it is not limited to Article 2 sales.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-COMPLETE-INTEGRATION-01",
+   "statement": "A complete-and-exclusive writing is a complete integration. Prior or contemporaneous oral additions inside the same deal are excluded even if they do not contradict the writing.",
+   "trigger": "complete and exclusive statement + prior oral extra term",
+   "unlocks": "complete integration vs consistent-additional-term trap",
+   "authority": "Restatement (Second) of Contracts §§ 210, 213, 216"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-INTEGRATION-CLASH-01",
+   "statement": "When one choice says the oral term does not contradict and another points to complete/exclusive language, clash them on integration level before judging consistency.",
+   "trigger": "not conflict vs complete and exclusive",
+   "unlocks": "A/B high-overlap clash",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Complete beats consistent",
+  "signal": "Signed writing says complete and exclusive; offered term came before signing.",
+  "studentMove": "Do not ask only whether the oral term conflicts; ask whether the writing is complete.",
+  "tinyRule": "Complete integration excludes prior consistent add-ons.",
+  "trap": "Consistency trap"
+ }
+}

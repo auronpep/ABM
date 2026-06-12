@@ -1,0 +1,92 @@
+{
+ "id": "CQ14530",
+ "title": "Lantern Courtyard",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "Damages",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Ruth wanted to buy the Lantern Courtyard, a small city parcel decorated with Scripture calligraphy for her private hymn-printing studio. On February 18, before Lydia had received any payment or communication from Ruth, Lydia sold and conveyed the Lantern Courtyard to Hannah for $515,000.\n\nFifteen days earlier, Lydia and Ruth had signed a writing in which Lydia, in consideration of $470 to be paid by Ruth, offered Ruth the right to purchase the Lantern Courtyard for $470,000 within 24 days. The writing stated, “This offer will become effective as an option only if and when the $470 consideration is in fact paid.”\n\nOn February 19, Lydia received a courier envelope from Ruth enclosing a cashier’s check for $470 payable to Lydia and stating, “I am hereby exercising my option to purchase the Lantern Courtyard and am prepared to close whenever you’re ready.”\n\nAssume that, for whatever reason, Ruth prevails in the suit against Lydia. Which of the following is Ruth entitled to recover?",
+ "call": "Assume that, for whatever reason, Ruth prevails in the suit against Lydia. Which of the following is Ruth entitled to recover?",
+ "choices": {
+  "A": "The fair market value, if any, of an assignable option to purchase the Lantern Courtyard for $470,000.",
+  "B": "The amount, if any, by which the fair market value of the Lantern Courtyard on the date of Lydia's breach exceeded $470,000.",
+  "C": "Nominal damages only, because the remedy of specific performance was not available to Ruth.",
+  "D": "$45,000, plus the amount, if any, by which the fair market value of the Lantern Courtyard on the date of Lydia's breach exceeded $515,000."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The call gives away the lane: Ruth is assumed to win. That means the option fight is over. The only live task is the remedy. Silver Key: when the stem says to assume the buyer prevails, stop fighting option formation and price the property bargain, not the option paper. Gold Key: a winning buyer’s land-sale expectancy is measured by the fair market value of the contracted-for property minus the contract price, plus any proper incidental or consequential losses. Here, the contract price was $470,000, so the recoverable base is the amount, if any, by which the Lantern Courtyard’s fair market value exceeded $470,000. A court applying expectation damages asks for the loss in value of the promised performance, and land-sale buyer damages are commonly expressed as market value of the contracted-for property minus the contract price. ([Justia Law][1])",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "Contracts / Remedies. The call asks what Ruth may recover. The stem assumes Ruth prevails. Do not decide whether the option was valid."
+  },
+  {
+   "label": "CUT",
+   "text": "* A breaks NOT_RESPONSIVE. It prices the wrong object. It answers “what was the option worth?” The call asks what a winning buyer recovers for the lost property bargain.\n* C breaks NOT_TRUE, anchor-assisted. “Nominal damages only” is an absolute remedial collapse. The Gold Key preserves expectation damages even if specific performance is unavailable.\n* D breaks NOT_TRUE, anchor-assisted. It invents a resale-price hybrid formula. The third-party sale price is not the benchmark."
+  },
+  {
+   "label": "Residual",
+   "text": "B remains. It uses the contract price as the baseline and market value as the comparison point."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two-answer clash remains after the anchor-assisted cut."
+  },
+  {
+   "label": "CALL",
+   "text": "No final tiebreaker is needed. The call-focus Silver Key prevents option-layer drift."
+  }
+ ],
+ "studentScript": "The call says Ruth wins, so do not fight the option. Price what she lost: the land bargain. Cut option value, nominal-only, and resale hybrid. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call assumes Ruth wins and asks for recovery; this choice prices the option itself.",
+   "lawyer": "If the buyer prevails on the land bargain, the loss is not merely the market value of an assignable option; the remedy is expectation damages for the contracted-for property.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This is the only answer that matches the assumed-win remedies call and uses the contract price as the bargain baseline.",
+   "lawyer": "The buyer's expectation damages are measured by the difference between the contract price and fair market value of the contracted-for property, plus any proper incidental or consequential damages.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word 'only' tries to collapse the remedy because specific performance is unavailable.",
+   "lawyer": "A winning buyer is not limited to nominal damages merely because specific performance is unavailable; expectation damages remain available.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The answer grabs the visible resale spread and then adds a second market-value layer.",
+   "lawyer": "The third-party sale price is not the independent damages baseline; the expectation measure compares the contract price with the property's fair market value.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-LANTERN-01",
+   "statement": "For a winning buyer after a seller's breach of a land-sale contract, damages track the land bargain: fair market value of the contracted-for property at the relevant breach/performance point minus the contract price, plus proper incidental or consequential losses.",
+   "trigger": "The call says the buyer prevails and asks what the buyer may recover after the seller conveyed the property to someone else.",
+   "unlocks": "Defeats nominal-only, option-value, and resale-price baselines by identifying the correct expectation-damages object and benchmark.",
+   "authority": "Restatement (Second) of Contracts § 347; Davis v. Blast Properties Inc., No. 1:2021cv00218, Document 82 (D. Idaho May 3, 2023)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-LANTERN-01",
+   "statement": "When the stem says to assume the buyer prevails, stop fighting option formation and lock the call: remedies only. Any answer pricing the paper option instead of the property bargain is answering the wrong layer.",
+   "trigger": "A fact-heavy option setup followed by an assumption of liability and a damages-only call.",
+   "unlocks": "Option-validity bait and remedy-object drift.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Remedy object before formula",
+  "signal": "A remedies call follows a dense formation or option setup.",
+  "studentMove": "Name what the winner lost before calculating.",
+  "tinyRule": "If buyer wins on the land bargain, use fair market value of the property minus contract price.",
+  "trap": "Students price the wrong object or treat specific performance's unavailability as nominal-only."
+ }
+}

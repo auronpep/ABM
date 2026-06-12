@@ -1,0 +1,88 @@
+{
+ "id": "CQ20024",
+ "title": "Loaves Fishes Crate Count",
+ "subject": "Torts",
+ "topic": "Negligence damages",
+ "subtopic": "Negligent misrepresentation and economic loss",
+ "difficulty": "hard",
+ "tension": null,
+ "stem": "At a for-profit Bible-camp supply expo, Martha sold off the remaining stock from her “Loaves & Fishes” craft-kit shop. Weeks earlier, Lydia, a professional inventory consultant, had prepared a crate-count sheet solely so Martha could plan warehouse space and packing for the expo. The sheet mistakenly listed 900 sealed craft kits instead of 90. Lydia was not told that the sheet would be shown to buyers or used in any sale. Martha later slipped a copy of the sheet into a sale packet on her booth table. Timothy, who had never dealt with Lydia, used the sheet to buy the remaining kits for his own resale booth and lost money when the count proved wrong.\n\nIn Timothy’s negligent-misrepresentation claim against Lydia, how should the court rule?",
+ "call": "In Timothy's negligent-misrepresentation claim against Lydia, how should the court rule?",
+ "choices": {
+  "A": "Yes, because inventory consultants are strictly liable for inaccurate count sheets.",
+  "B": "No, because Timothy was not within a known or limited class for a specific transaction.",
+  "C": "No, because pure economic loss is never recoverable for negligent misrepresentation.",
+  "D": "Yes, because it was foreseeable that someone might read the booth packet."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The court should rule for Lydia. The count sheet was made for Martha’s internal planning, not for Timothy, not for a known or limited group of buyers, and not for a specific sale Lydia was hired to guide.\n\nGold Key: A professional information supplier’s negligent-misrepresentation duty for economic loss does not run to every foreseeable later reader; it is limited to a known person or limited group for a transaction the supplier intended or knew the information would influence.\n\nSilver Key: When one choice says “foreseeable reader” and another says “known or limited class for a specific transaction,” the fight is not general foreseeability. The fight is targeted-use duty.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A — CUT",
+   "text": "“Strictly liable” is a wrong-frame answer. The call asks negligent misrepresentation, not strict liability."
+  },
+  {
+   "label": "C — CUT",
+   "text": "“Never recoverable” is an overclaim. The answer says too much."
+  },
+  {
+   "label": "D — CLASH",
+   "text": "D fights B on the single axis: open-ended foreseeability versus targeted-use duty. The splitting fact is that Lydia prepared the sheet only for internal planning and was not told it would be used for buyers or a sale."
+  },
+  {
+   "label": "B — CALL / residual",
+   "text": "With the Gold Key, B is true and responsive. Timothy is outside the known or limited transaction class."
+  }
+ ],
+ "studentScript": "Strict liability is the wrong frame. Economic loss never is too broad. Foreseeability alone is not the targeted-use duty. The buyer was not in the known limited transaction class, so pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call says negligent misrepresentation; the choice answers a strict-liability version.",
+   "lawyer": "Professional information suppliers are not strictly liable merely because a count sheet is inaccurate.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "This is the answer that names the targeted class and transaction axis.",
+   "lawyer": "This matches Restatement (Second) of Torts § 552's limited plaintiff-and-transaction scope.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word 'never' is too broad; it would wipe out the negligent-misrepresentation category.",
+   "lawyer": "Negligent misrepresentation can allow recovery for economic loss in a limited information-supply relationship.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "It proves only that someone might read the packet; it does not answer the limited-class transaction question.",
+   "lawyer": "Foreseeability alone does not create professional negligent-misrepresentation duty to every later reader.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-LIMITED-CLASS-01",
+   "statement": "For negligent misrepresentation by a professional information supplier, economic-loss duty is limited to a known person or limited group for a specific transaction or substantially similar transaction. It does not run to every foreseeable later reader.",
+   "trigger": "professional report, economic loss, unknown third-party reader",
+   "unlocks": "foreseeability-only trap",
+   "authority": "Restatement (Second) of Torts § 552; Bily v. Arthur Young & Co.; Ultramares Corp. v. Touche."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-TARGETED-USE-01",
+   "statement": "When one finalist says 'foreseeable reader' and another says 'known or limited class for a transaction,' name the axis as targeted-use duty, not general foreseeability.",
+   "trigger": "unknown later reader relying on a client-republished report",
+   "unlocks": "D versus B",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Foreseeability is not the whole duty gate.",
+  "signal": "Professional information + economic loss + unknown later reader.",
+  "studentMove": "Ask: targeted person/class and targeted transaction?",
+  "tinyRule": "Foreseeability alone loses to targeted-use duty.",
+  "trap": "General negligence reflex."
+ }
+}

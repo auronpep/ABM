@@ -1,0 +1,84 @@
+{
+ "id": "CQ17412",
+ "title": "Seminary Faculty Apartment",
+ "subject": "Civil Procedure",
+ "topic": "Subject Matter Jurisdiction",
+ "subtopic": "Diversity - Individual Citizenship (Domicile)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia grew up in Texas, where she keeps her voter registration, driver's license, and permanent home. She accepted a one-semester teaching appointment at a small private Christian college in Massachusetts and rents a faculty apartment in Massachusetts for the nine-month term. She plans to return to Texas when the appointment ends. She sues a Massachusetts citizen in federal court for $90,000 under state law for breach of her employment contract.\n\nFor diversity purposes, what is Lydia's state citizenship?",
+ "call": "For diversity purposes, what is Lydia's state citizenship?",
+ "choices": {
+  "A": "Texas, because she remains domiciled there despite her temporary residence in Massachusetts.",
+  "B": "Massachusetts, because she currently resides there.",
+  "C": "Both Texas and Massachusetts, because individuals have citizenship wherever they live during a year.",
+  "D": "No state, because she is away from her permanent home."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Lydia's state citizenship is Texas. Gold Key: a natural person's state citizenship for diversity purposes is the state of domicile — the state of physical presence coupled with intent to remain indefinitely. Lydia is physically present in Massachusetts for a fixed nine-month teaching appointment, but she has not formed the intent to remain in Massachusetts indefinitely. She keeps her permanent home, voter registration, and driver's license in Texas and plans to return to Texas when the appointment ends. Her domicile is therefore Texas, and her state citizenship for diversity purposes is Texas. Silver Key: when the call is \"for diversity purposes, what is the person's citizenship,\" translate the question to \"where is the person's domicile\" and test the two-element definition (physical presence + intent to remain indefinitely) before picking.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (Massachusetts because she resides there)",
+   "text": "is the dominant trap and is not student-accessibly cut without the Gold Key. The student sees \"currently resides\" and picks the current-residence state. Visible only by translating \"citizenship\" to \"domicile\" and applying the two-element test. The choice is NOT_TRUE under the Gold Key, but the defect is doctrinal, not structural."
+  },
+  {
+   "label": "C (both states)",
+   "text": "is cut on the structural test. An individual has one domicile at a time. The choice asserts dual citizenship, which the diversity rule does not allow. The choice is NOT_TRUE for misstating the rule (an individual can hold only one state citizenship at a time for diversity purposes)."
+  },
+  {
+   "label": "D (no state)",
+   "text": "is cut on the sticky-domicile test. Domicile persists through physical absence. The choice asserts that absence from the permanent home destroys the domicile. The choice is NOT_TRUE for misstating the rule (a person keeps a domicile until acquiring a new one; mere physical absence is not enough)."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis. They fight on whether physical presence alone (B) or domicile — physical presence plus intent to remain indefinitely (A) — is the right test."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves: domicile requires both elements, and Lydia's intent is to return to Texas. Residual answer: A."
+  }
+ ],
+ "studentScript": "Step 1: Translate the call. 'For diversity purposes, what is her citizenship' = 'where is her domicile.' Step 2: Test the two-element definition. Lydia is physically present in Massachusetts (yes) AND intends to remain there indefinitely (no — she plans to return to Texas). The two-element test resolves to Texas. Step 3: Apply the sticky-domicile rule. Lydia's Texas domicile persists because she has not acquired a Massachusetts domicile. Silver Key: when the call is 'for diversity purposes, what is her citizenship,' translate the question to 'where is her domicile.' Gold Key: domicile requires physical presence AND intent to remain indefinitely. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the residence-, dual-, and no-state distractors are cut on the rule text, the Gold Key resolves the residue to domicile in Texas.",
+   "lawyer": "A natural person's state citizenship for diversity purposes is the state of domicile, defined as physical presence coupled with intent to remain indefinitely. Lydia's intent is to return to Texas; her Texas domicile persists.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student sees 'currently resides' and picks the current-residence state. The Gold Key tells the student domicile requires both elements, and Lydia's intent is to return to Texas.",
+   "lawyer": "Domicile requires both physical presence and intent to remain indefinitely. Lydia is physically present in Massachusetts but lacks the intent to remain indefinitely. Residence alone does not establish domicile.",
+   "mold": "colloquialism"
+  },
+  "C": {
+   "signal": "The choice asserts dual state citizenship, which the diversity rule does not allow. An individual has one domicile at a time.",
+   "lawyer": "An individual can have only one domicile at a time for diversity purposes. Lydia's domicile is Texas. The Massachusetts apartment is a residence, not a competing domicile.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The choice asserts that physical absence from the permanent home destroys the domicile. The sticky-domicile test defeats this: domicile persists through physical absence until a new domicile is acquired.",
+   "lawyer": "A person keeps a domicile until acquiring a new one by satisfying both elements in a different state. Mere physical absence from Texas does not destroy Lydia's Texas domicile; she has not acquired a Massachusetts domicile.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-SEMINARY-FACULTY-APARTMENT-01",
+   "statement": "A natural person's state citizenship for diversity purposes is the state of domicile, defined as physical presence coupled with intent to remain indefinitely. A fixed-term temporary stay does not change domicile; a person keeps her existing domicile until she acquires a new one in a different state.",
+   "trigger": "person with clear permanent-home state + fixed-term temporary stay in another state + clear intent to return",
+   "unlocks": "residence = citizenship dominant trap (B)",
+   "authority": "28 U.S.C. § 1332(a)(1); Stifel v. Hopkins, 477 U.S. 407 (1986)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Diversity citizenship = domicile (physical presence + intent to remain indefinitely)",
+  "signal": "A person has a clear permanent-home state, accepts a fixed-term temporary stay in another state, and plans to return.",
+  "studentMove": "Translate the citizenship question to a domicile question. Test the two-element definition (physical presence + intent to remain indefinitely). Apply the sticky-domicile rule: a person keeps her existing domicile until acquiring a new one.",
+  "tinyRule": "Domicile requires physical presence AND intent to remain indefinitely. A fixed-term temporary stay does not change domicile.",
+  "trap": "The dominant trap treats residence as if it were domicile. A related trap invents dual citizenship or a no-state edge case."
+ }
+}

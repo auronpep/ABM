@@ -1,0 +1,95 @@
+{
+ "id": "CQ20516",
+ "title": "Question 20516",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Defenses",
+ "subtopic": "General Principles",
+ "difficulty": "medium_high",
+ "tension": null,
+ "stem": "Timothy works the evening shift in the shipping room at Manna Games, a private company that sells Bible-themed board games and collector study-Bible sets. On Monday night, Barnabas, a collector with a reputation for using hired muscle, sends Timothy a video message from a retreat center three states away:\n\n“Before the warehouse closes on Friday, take the locked case of gold-edition study Bibles worth $18,000 and leave it behind the Noah’s Ark mini-golf sign, or after next Sunday’s hymn-sing I will have your sister Hannah badly hurt.”\n\nTimothy believes Barnabas is serious and is terrified for Hannah. On Thursday, Timothy takes the case. Charged with theft, Timothy asserts duress.\n\nShould the court accept Timothy’s duress defense?",
+ "call": "Should the court accept Timothy’s duress defense?",
+ "choices": {
+  "A": "Yes, because the threat was directed at Timothy’s sister, a close family member, which is sufficient.",
+  "B": "No, because the threat was not imminent — the threatened harm was scheduled for a future time and Barnabas was physically absent.",
+  "C": "No, because duress is available only as a defense to violent crimes.",
+  "D": "Yes, because Timothy had a genuine and reasonable fear that Barnabas would hurt Hannah."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct.\n\nGold Key: Common-law duress is not a “real fear” defense. It needs an imminent human threat of death or serious bodily harm, directed at the defendant or a close family member, with no reasonable legal alternative. Here, the threat was for a future time, and Barnabas was physically absent. Timothy had time to seek help or protect Hannah without stealing.\n\nSilver Key: Read the answer array as an element-completion test. Two “Yes” answers name sympathetic facts. The credited “No” answer names the missing threshold.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Access limit",
+   "text": "without the Gold Key, C3 cannot know which duress element controls. With the Gold Key, this is an ANCHOR_SOLVE."
+  },
+  {
+   "label": "CUT",
+   "text": "A cuts as NOT_RESPONSIVE / wrong_element. It names a true element — close family — but does not answer the missing threshold: imminence.\n\nC cuts as NOT_TRUE / tiered_absolute. The word “only” creates a categorical violent-crime-only rule that the Gold Key rejects.\n\nD cuts as NOT_RESPONSIVE / wrong_element. It names genuine, reasonable fear, but the call asks whether the full defense succeeds.\n\nB survives. It is true and responsive because it names the missing threshold and ties it to the facts."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the anchor-assisted Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "No. I need imminent threat, not just real fear. Barnabas was away and threatened harm later. B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice names close family, but the defense-success call needs the full threshold.",
+   "lawyer": "A threat to a close family member may count, but it does not replace imminence and no reasonable legal alternative.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This is the only answer that matches the missing threshold fact: future harm from an absent threatener.",
+   "lawyer": "Common-law duress fails without an imminent threat and no reasonable escape.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word only creates a categorical rule that the Gold Key rejects.",
+   "lawyer": "Duress is not limited to violent crimes; the common limitation concerns homicide-type offenses, not theft.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The choice answers whether the fear was believable, not whether the defense threshold is satisfied.",
+   "lawyer": "A genuine and reasonable fear is necessary but not sufficient when the threat is non-imminent.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-DURESS-IMMINENCE-01",
+   "statement": "Common-law duress needs an imminent human threat of death or serious bodily harm, directed at the defendant or a close family member, with no reasonable legal alternative.",
+   "trigger": "Threat scheduled for later, threatener absent, time to seek help.",
+   "unlocks": "Fear/family traps that omit imminence.",
+   "authority": "Common-law duress; United States v. Bailey and federal duress formulations."
+  },
+  {
+   "id": "GK-CRIMINAL-DURESS-SCOPE-02",
+   "statement": "Duress is not a violent-crime-only defense; theft is not excluded if the duress elements are met.",
+   "trigger": "Answer says duress is only for violent crimes.",
+   "unlocks": "Wrong-result/wrong-reason scope trap.",
+   "authority": "Common-law duress scope; homicide limitation."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-DURESS-ARRAY-01",
+   "statement": "When two Yes answers each name one sympathetic fact and a No answer names a missing threshold, treat the array as an element-completion test.",
+   "trigger": "Defense-success call with multiple partial-element answers.",
+   "unlocks": "Yes/family and Yes/fear traps.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Duress requires now-pressure.",
+  "signal": "Future threat, remote threatener, time to seek help.",
+  "studentMove": "Cut fear-only and family-only answers; keep the answer that checks imminence.",
+  "tinyRule": "Duress is immediate-threat plus no reasonable escape, not fear alone.",
+  "trap": "Sympathy for a believable family threat."
+ }
+}

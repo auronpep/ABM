@@ -1,0 +1,84 @@
+{
+ "id": "CQ17857",
+ "title": "Living Nativity Carver",
+ "subject": "Torts",
+ "topic": "Economic torts",
+ "subtopic": "Intentional interference with prospective advantage (competition privilege)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Esther has built a hand-carved outdoor Living Nativity scene for Mary's small church each December for the past nine years under a hand-shake annual arrangement. Each fall, Mary and Esther would agree on a price and a delivery date for the next season, but no written renewal contract was ever signed. In late summer, Paul, another local woodworker with a similar style, quoted Mary $3,200 for a comparable Living Nativity scene — $700 below Esther's most recent price — and Mary accepted Paul's offer. Esther now sues Paul for interference with prospective economic advantage.\n\nIs Esther likely to prevail against Paul?",
+ "call": "Is Esther likely to prevail against Paul?",
+ "choices": {
+  "A": "No, because truthful price competition without improper means is generally privileged.",
+  "B": "Yes, because any expected annual commission is tortious interference.",
+  "C": "Yes, because the competition privilege applies only to existing contracts.",
+  "D": "No, because business expectancies are never protected."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Esther is not likely to prevail. The competition privilege protects competitors who seek prospective business through lawful means, including truthful price competition. Esther had no signed renewal contract, so her \"expectancy\" was at most an unwritten course-of-dealing, not a contractual right. Paul's means were a truthful lower quote — that is the textbook lawful competition. Gold Key: competition for prospective business through truthful pricing is privileged; liability for interference with prospective economic advantage requires improper means, not lawful price competition. Silver Key: when a stem pairs \"no signed renewal\" with \"truthful lower price,\" the privilege line is the deciding axis — cut the \"tortious because lost a deal\" answers first.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (any expected commission is tortious interference)",
+   "text": "is cut on tiered_absolute. The \"any\" overclaims the rule. Interference with prospective advantage requires improper means (or an existing contract); lawful price competition is privileged. Visible from the answer text: the answer asserts an absolute that contradicts the privilege."
+  },
+  {
+   "label": "C (privilege applies only to existing contracts)",
+   "text": "is cut on backwards (EAR_FALSITY). The privilege applies to competition for prospective business, including the renewal-type relationship. The student reversed the rule's direction. Visible from the answer text: \"only to existing contracts\" directly contradicts the prospective-deal scope of the privilege."
+  },
+  {
+   "label": "D (expectancies are never protected)",
+   "text": "is cut on extreme_of_range (EAR_OVERCLAIM). \"Never\" is an overclaim; expectancies can be protected when interference is by improper means or with an existing contract. Visible from the answer text: the absolute \"never\" is structurally defective on its face."
+  },
+  {
+   "label": "CLASH",
+   "text": "None — the three distractors all fail on visible defects and do not need a CLASH. The two No answers (A and D) present the residual axis: the privilege defeats the claim on these facts (A) versus expectancies are categorically unprotected (D). A is true on its face and responsive to the call; D is facially overbroad."
+  },
+  {
+   "label": "CALL",
+   "text": "C residual. The correct answer is A (truthful price competition without improper means is privileged). The call focus and the \"no signed renewal\" trigger fact drive the answer; the Gold Key confirms the privilege scope."
+  }
+ ],
+ "studentScript": "No signed renewal means the analysis runs in the prospective-advantage lane. Paul's means were a truthful lower price — that is the textbook lawful competition. B overclaims with 'any expected commission'; C reverses the privilege scope; D overclaims with 'never protected.' Choose A: truthful price competition is privileged.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The truthful lower price plus no signed renewal maps directly to the competition privilege.",
+   "lawyer": "Under Restatement (Second) of Torts § 768 and Restatement (Third) of Torts: Liability for Economic Harm § 4, the competition privilege defeats a prospective-advantage claim where the competitor used truthful price competition; improper means are required for liability.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The 'any' overclaims; the rule requires improper means or an existing contract, not just any lost expectancy.",
+   "lawyer": "The 'any lost deal' formulation is an overbroad statement of the prospective-advantage rule; lawful price competition is privileged, so the mere loss of an expected commission is not tortious interference.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The privilege applies to competition for prospective business, including the renewal-type relationship; it is not limited to existing contracts.",
+   "lawyer": "The competition privilege protects competition for prospective advantage; the rule is not confined to existing-contract cases. Reversing the rule's scope is a misstatement of the law.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "The 'never' overclaims; business expectancies can be protected when interference is by improper means or with an existing contract.",
+   "lawyer": "Business expectancies are not categorically unprotected; they can support a claim when interference is by improper means or with an existing contract. 'Never' is an overclaim.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-LIVING-NATIVITY-CARVER-01",
+   "statement": "Competition for prospective business through truthful pricing is privileged; liability for interference with prospective economic advantage requires improper means, not lawful price competition.",
+   "trigger": "no signed renewal plus truthful lower price by a competitor",
+   "unlocks": "the 'any lost deal is tortious' overclaim and the 'privilege is only for existing contracts' reversed rule",
+   "authority": "Restatement (Second) of Torts § 768; Restatement (Third) of Torts: Liability for Economic Harm § 4"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Prospective advantage vs. competition privilege",
+  "signal": "No signed renewal; competitor quotes a truthful lower price; long-time supplier sues the competitor.",
+  "studentMove": "Cut the 'any lost deal' and 'privilege only for existing contracts' answers on visible defects; the privilege answer is residual.",
+  "tinyRule": "Truthful price competition is privileged competition for prospective business; improper means are required for liability.",
+  "trap": "Long-time relationship feels protective, but the privilege is the deciding line on these facts."
+ }
+}

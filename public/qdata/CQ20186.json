@@ -1,0 +1,92 @@
+{
+ "id": "CQ20186",
+ "title": "Road To Emmaus Royalty Ledgers",
+ "subject": "Constitutional Law",
+ "topic": "Separation of Powers",
+ "subtopic": "Congressional subpoenas",
+ "difficulty": "high",
+ "tension": null,
+ "stem": "Final stem + call\n\nBefore taking office, President Daniel licensed a scripture-themed family board game, Road to Emmaus, and a devotional planner to Lydia’s Lamp Games LLC. A House committee, saying it is studying legislation requiring federal officials to disclose outside royalty streams and business entanglements, subpoenas the company for twelve years of Daniel’s licensing agreements, royalty statements, vendor invoices, and payment ledgers. The subpoena is sweeping. Daniel objects that the committee mainly wants to parade private details from a Christian-themed side project and that the search would burden the presidency.\n\nWhat is the best description of the court’s task?\n\nSource row: QID 20186 is a Constitutional Law / Separation of Powers / congressional-subpoenas item, with a presidential-records subpoena, financial-disclosure legislative purpose, broad request, separation-of-powers burden objection, and official key C.",
+ "call": "What is the best description of the court's task?",
+ "choices": {
+  "A": "Quash the subpoena automatically because presidential personal records can never be obtained by Congress.",
+  "B": "Enforce the subpoena only if the committee is conducting an impeachment inquiry.",
+  "C": "Enforce the subpoena automatically because Congress has unlimited investigative power over presidential personal records.",
+  "D": "Evaluate whether the subpoena serves a valid legislative purpose and is appropriately tailored in light of separation-of-powers concerns."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is the best description of the court’s task. Gold Key: A congressional subpoena seeking a President’s personal information is not enforced automatically and is not defeated automatically; the court checks valid legislative purpose, reasonable tailoring, and separation-of-powers burdens. Silver Key: In a three-automatic-extremes array, the answer that states the court’s calibrated task usually wins over “automatically,” “never,” “unlimited,” or “only if.”",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“automatically” + “can never” is an absolute-immunity overclaim."
+  },
+  {
+   "label": "CUT B",
+   "text": "“only if impeachment” invents a threshold and answers a narrower frame than the legislative-purpose call."
+  },
+  {
+   "label": "CUT C",
+   "text": "“automatically” + “unlimited” is an overclaim."
+  },
+  {
+   "label": "Residual",
+   "text": "D is the only answer that describes a court’s actual task: evaluate purpose, tailoring, and separation-of-powers burden."
+  },
+  {
+   "label": "CLASH/CALL",
+   "text": "not needed after the anchor-assisted cut."
+  }
+ ],
+ "studentScript": "Court-task call. Cut automatic extremes. Keep the calibrated purpose/tailoring/separation-of-powers answer.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "'automatically' and 'can never' are extreme words in a branch-conflict standard.",
+   "lawyer": "Presidential status does not create automatic immunity from congressional subpoenas for personal information held by third parties; Mazars requires calibrated review.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "'only if' narrows the call to an impeachment frame the stem did not assign.",
+   "lawyer": "Congress may investigate for valid legislative purposes outside impeachment, subject to separation-of-powers limits.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "'automatically' and 'unlimited' are loud overclaim words.",
+   "lawyer": "Congress has broad investigatory power, but not unlimited access to presidential personal records.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "This is the only answer that describes an evaluation rather than an automatic result.",
+   "lawyer": "This matches the Mazars framework: valid legislative purpose, reasonable tailoring, evidence of need, and presidential burden.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-MAZARS-PRESIDENTIAL-01",
+   "statement": "When Congress subpoenas a President's personal information, there is no automatic enforcement and no automatic immunity. Courts check valid legislative purpose, need, reasonable tailoring, and burdens on the presidency.",
+   "trigger": "congressional subpoena for President's personal records held by a third party",
+   "unlocks": "automatic enforcement, automatic immunity, and impeachment-only traps",
+   "authority": "Trump v. Mazars USA, LLP, 591 U.S. ___ (2020)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-AUTOMATIC-EXTREMES-01",
+   "statement": "When three choices give automatic outcomes and one describes a judicial evaluation, lock the call before choosing. The court-task call usually wants the calibrated evaluation, not a branch-power slogan.",
+   "trigger": "automatically / never / unlimited / only if",
+   "unlocks": "3-vs-1 automatic-extremes array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Presidential subpoena = calibrated review",
+  "signal": "Congress seeks President's personal information from a third party.",
+  "studentMove": "Cut automatic extremes; then apply the Gold Key.",
+  "tinyRule": "No automatic enforcement, no automatic immunity; court checks purpose, tailoring, and burdens.",
+  "trap": "Choosing the branch slogan instead of the court's task."
+ }
+}

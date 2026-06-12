@@ -23,11 +23,18 @@ import {
 } from "../lib/api.ts";
 import { track } from "../lib/events.ts";
 import { createAttemptRecorder } from "../lib/attemptTelemetry.ts";
+import { ConfidenceSelector } from "../components/ConfidenceSelector.tsx";
+import { ForensicsPanel } from "../components/ForensicsPanel.tsx";
+import { QuestionCard } from "../components/QuestionCard.tsx";
 import { VerseLine } from "../components/VerseLine.tsx";
 import type { PageProps } from "../types.ts";
 
 const SET_SIZE = 10;
-const DEFAULT_CONFIDENCE = 3;
+
+// Per-subject drilling is fully built (UI below + the API's "subject" drill
+// kind) but hidden from students for now (founder, 2026-06-12) — flip this to
+// true to surface the subject grid. Nothing links to it from the dashboard.
+const SHOW_SUBJECT_PRACTICE = false;
 
 type StartBody =
   | { kind: "subject"; subject: string; size: number }
@@ -169,9 +176,11 @@ export function Practice({ navigate }: PageProps) {
         The full bank, on your terms.
       </h1>
       <p className="body-lg" style={{ maxWidth: "62ch", marginBottom: 8 }}>
-        Pick a subject for a fresh set, walk the official outline, or jump straight to an
-        outline code. Every question you answer is recorded once — you will never be served
-        a repeat unless we choose to retest you.
+        {SHOW_SUBJECT_PRACTICE
+          ? "Pick a subject for a fresh set, walk the official outline, or jump straight to an outline code. "
+          : "Walk the official outline or jump straight to an outline code. "}
+        Every question you answer is recorded once — you will never be served a repeat
+        unless we choose to retest you.
       </p>
       <VerseLine theme="diligence" style={{ maxWidth: "56ch", margin: "10px 0 18px" }} />
 
@@ -186,10 +195,12 @@ export function Practice({ navigate }: PageProps) {
         </p>
       )}
 
-      {/* 1 — subjects */}
-      <div className="section-rule">
-        <span className="label">Practice one subject</span>
-      </div>
+      {/* 1 — subjects (built out, hidden behind SHOW_SUBJECT_PRACTICE) */}
+      {SHOW_SUBJECT_PRACTICE && (
+        <div className="section-rule">
+          <span className="label">Practice one subject</span>
+        </div>
+      )}
       {!isLoaded && !outline && !outlineError && (
         <PracticeUnavailable
           title="Checking account access."
@@ -222,7 +233,7 @@ export function Practice({ navigate }: PageProps) {
           Loading the bank…
         </p>
       )}
-      {outline && (
+      {SHOW_SUBJECT_PRACTICE && outline && (
         <div className="drill-grid">
           {outline.subjects.map((s) => (
             <button
@@ -417,6 +428,7 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
   const [question, setQuestion] = useState<PracticeQuestion | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [picked, setPicked] = useState<"A" | "B" | "C" | "D" | null>(null);
+  const [confidence, setConfidence] = useState<number | null>(3);
   const [attempt, setAttempt] = useState<AttemptResponse | null>(null);
   const [forensics, setForensics] = useState<ForensicsPayload | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -430,6 +442,7 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
     if (!qid) return;
     setQuestion(null);
     setPicked(null);
+    setConfidence(3);
     setAttempt(null);
     setForensics(null);
     setLoadError(null);
@@ -483,12 +496,11 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
     })();
   }, [finished, getToken, run, total]);
 
-  const choose = async (letter: "A" | "B" | "C" | "D") => {
-    if (!question || picked || submitting) return;
+  const submitPicked = async () => {
+    if (!question || !picked || submitting || attempt) return;
     setSubmitting(true);
-    setPicked(letter);
     const timeSeconds = Math.max(0, Math.round((Date.now() - shownAt.current) / 1000));
-    const interactionLog = recorder.current.snapshot(letter);
+    const interactionLog = recorder.current.snapshot(picked);
     try {
       const token = await getToken();
       const result = await apiFetch<AttemptResponse>("/api/attempts", {
@@ -496,8 +508,8 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
         token,
         body: {
           question_id: question.question_id,
-          selected_letter: letter,
-          confidence: DEFAULT_CONFIDENCE,
+          selected_letter: picked,
+          confidence: confidence ?? 3,
           time_seconds: timeSeconds,
           platform: "web",
           set_id: run.drill.drill_id,
@@ -510,7 +522,6 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
         .then(setForensics)
         .catch(() => setForensics(null));
     } catch (e: unknown) {
-      setPicked(null);
       setLoadError(e instanceof Error ? e.message : "Could not record the answer");
     } finally {
       setSubmitting(false);
@@ -580,6 +591,21 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
   }
 
   const isCorrect = attempt?.correct === true;
+  const choices = question.choices.map((c) => ({ id: c.letter, text: c.choice_text }));
+  const forensicsPayload = attempt
+    ? {
+        correct: attempt.correct,
+        selected: picked,
+        correctAnswer: attempt.correct_answer,
+        counterfeit: forensics?.trap_name ?? null,
+        whyAttractive: forensics?.why_attractive ?? null,
+        whyWrong: forensics?.why_wrong ?? null,
+        whyCorrect: forensics?.why_correct ?? null,
+        futureCue: forensics?.future_cue ?? null,
+        repairLogged: true,
+        cohortPct: null,
+      }
+    : null;
 
   return (
     <div className="container section drill-player">
@@ -603,83 +629,37 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
         </span>
       </div>
 
-      <div className="body-lg" style={{ whiteSpace: "pre-wrap", maxWidth: "70ch" }}>
-        {question.fact_pattern}
-      </div>
-      {question.call_of_question && (
-        <p className="body-lg" style={{ fontWeight: 600, maxWidth: "70ch" }}>
-          {question.call_of_question}
-        </p>
-      )}
+      <QuestionCard
+        stem={question.fact_pattern}
+        call={question.call_of_question}
+        choices={choices}
+        selected={picked}
+        correct={attempt?.correct_answer ?? null}
+        revealed={attempt !== null}
+        disabled={submitting}
+        onSelect={(letter) => {
+          if (!attempt) setPicked(letter as "A" | "B" | "C" | "D");
+        }}
+      />
 
-      <div style={{ display: "grid", gap: 10, maxWidth: "70ch", margin: "16px 0" }}>
-        {question.choices.map((c) => {
-          const chosen = picked === c.letter;
-          const revealCorrect = attempt && attempt.correct_answer === c.letter;
-          return (
-            <button
-              key={c.letter}
-              className="drill-card"
-              style={{
-                textAlign: "left",
-                outline: revealCorrect
-                  ? "2px solid var(--bm-brass, #8f742f)"
-                  : chosen && attempt && !isCorrect
-                    ? "2px solid var(--bm-red, #b3261e)"
-                    : undefined,
-              }}
-              disabled={picked !== null}
-              onClick={() => void choose(c.letter)}
-            >
-              <span className="mono id">{c.letter}</span> {c.choice_text}
-            </button>
-          );
-        })}
-      </div>
-
-      {attempt && (
+      {picked && !attempt && (
         <div style={{ maxWidth: "70ch" }}>
-          <div className="eyebrow-red" style={{ marginBottom: 8 }}>
-            {isCorrect ? "▌ True and responsive." : `▌ Counterfeit${forensics?.trap_name ? ` — ${forensics.trap_name}` : ""}`}
-          </div>
-          {forensics && isCorrect && forensics.why_correct && (
-            <p className="body-lg">{forensics.why_correct}</p>
-          )}
-          {forensics && !isCorrect && (
-            <>
-              {forensics.why_attractive && (
-                <p className="body-lg">
-                  <strong>Why it pulled you:</strong> {forensics.why_attractive}
-                </p>
-              )}
-              {forensics.why_wrong && (
-                <p className="body-lg">
-                  <strong>Why it fails:</strong> {forensics.why_wrong}
-                </p>
-              )}
-              {forensics.future_cue && (
-                <p className="body-lg">
-                  <strong>Next time:</strong> {forensics.future_cue}
-                </p>
-              )}
-            </>
-          )}
-          <button
-            className="btn red btn-lg"
-            onClick={() => {
-              sendDwell(attempt);
-              onAdvance(isCorrect);
-            }}
-          >
-            {run.index + 1 < total ? (
-              <>
-                Next question <span className="arrow">→</span>
-              </>
-            ) : (
-              "Finish the set"
-            )}
+          <ConfidenceSelector value={confidence} onChange={setConfidence} />
+          <button className="btn red btn-lg" disabled={submitting} onClick={() => void submitPicked()}>
+            {submitting ? "Recording…" : "Reveal the forensics"} <span className="arrow">→</span>
           </button>
         </div>
+      )}
+
+      {attempt && forensicsPayload && (
+        <ForensicsPanel
+          forensics={forensicsPayload}
+          isLast={run.index + 1 >= total}
+          onNext={() => {
+            sendDwell(attempt);
+            onAdvance(isCorrect);
+          }}
+        />
       )}
     </div>
   );

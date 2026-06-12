@@ -1,0 +1,80 @@
+{
+ "id": "CQ18438",
+ "title": "Hannah David Medicaid",
+ "subject": "Constitutional Law",
+ "topic": "Equal Protection",
+ "subtopic": "Fundamental rights — right to interstate travel",
+ "difficulty": null,
+ "tension": null,
+ "stem": "State A's Medicaid program provides full Medicaid coverage to long-term residents. For new residents, State A limits the first-year Medicaid coverage to the lower of (a) the amount the new resident would have received in her prior state of residence or (b) State A's full coverage. Hannah and David, a Christian family who recently moved from State B to State A with their young son who has a chronic medical condition requiring ongoing care, are denied full State A Medicaid coverage for their son's care during their first year in State A. Hannah and David sue State A under the Equal Protection Clause. What is the strongest Equal Protection argument?",
+ "call": "Hannah and David sue State A under the Equal Protection Clause. What is the strongest Equal Protection argument?",
+ "choices": {
+  "A": "Rational basis applies because public benefits are always discretionary and the state may allocate them as it wishes.",
+  "B": "The rule is valid because states may always favor long-term residents over newcomers.",
+  "C": "Strict scrutiny applies only if the new resident crossed an international border.",
+  "D": "The rule may penalize the fundamental right to interstate travel and trigger strict scrutiny."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "The strongest Equal Protection argument is that the rule may penalize the fundamental right to interstate travel and therefore triggers strict scrutiny. The constitutional right to travel has three components: (1) the right to enter and leave a state, (2) the right to be treated as a welcome visitor while temporarily in another state, and (3) the right to be treated equally to other residents once the traveler has established residence in the new state. The third component — the \"equal-treatment\" or \"newcomer\" right — is squarely at issue here. A state rule that conditions full Medicaid coverage on a one-year residency period, or that limits new residents to the lower of their prior state's level or the current state's level, draws a classification between established residents and new residents. That classification penalizes the right to travel because it operates as a financial disincentive to relocate and conditions the receipt of a basic public benefit on the exercise of the constitutional right to move. The Supreme Court has held that durational-residency classifications that burden the right to travel are subject to strict scrutiny and are generally invalid. Gold Key: the constitutional right at issue is INTERSTATE travel, not international travel; durational-residency rules that disadvantage new residents because they recently moved trigger strict scrutiny.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (strict scrutiny only for international border)",
+   "text": "is cut on the constitutional right. The right at issue is INTERSTATE travel, not international travel. Visible from the stem: Hannah and David moved from State B to State A — an interstate move, not an international one. The choice is NOT_TRUE for misstating the constitutional right (international travel vs. interstate travel)."
+  },
+  {
+   "label": "B (states may always favor long-term residents)",
+   "text": "is cut on the constitutional limit. The state's general police power to favor long-term residents is limited by the constitutional right to travel. A durational-residency classification that disadvantages new residents because they recently moved is a textbook right-to-travel violation. The choice is NOT_TRUE for asserting a general-police-power framing that the constitutional right to travel overrides."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and D survive to the final axis: does rational basis apply because public benefits are discretionary, or does strict scrutiny apply because the rule burdens the fundamental right to interstate travel? The axis they fight on is whether the durational-residency classification operates as a penalty on the right to move and therefore triggers strict scrutiny."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. The right to interstate travel is a fundamental right, and durational-residency classifications that disadvantage new residents because they recently moved are subject to strict scrutiny. The \"public benefits are discretionary\" framing in A is wrong because public-benefit rules can still burden fundamental rights; the discretionary-benefits reasoning collapses when the eligibility rule operates as a penalty on the exercise of a constitutional right. Apply the right-to-travel doctrine → D. A student without the Gold Key is in anchor_gap territory on the right-to-travel scope question, but the answer is settled by the doctrine of the constitutional right to travel."
+  }
+ ],
+ "studentScript": "Step 1: What is the classification? State A draws a sharp line between long-term residents (full Medicaid coverage) and new residents (capped coverage for the first year). The classification is a durational-residency classification that disadvantages new residents. Step 2: What level of scrutiny applies? The right to be treated equally to other residents once the traveler has established residence is a component of the constitutional right to travel. Durational-residency rules that burden that right trigger strict scrutiny — not rational basis. Step 3: Does the international-border framing help? No. The right is INTERSTATE travel; Hannah and David moved from State B to State A. Step 4: Does the general-police-power framing help? No. The right to travel limits the state's general police power when the classification operates as a penalty on the right to move. Gold Key: durational-residency rules that disadvantage new residents trigger strict scrutiny. Silver Key: the constitutional right is INTERSTATE travel; public-benefit rules can still burden fundamental rights. Choose D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student reaches for the default rational-basis framing for benefit-classification cases. The Gold Key tells the student that public-benefit rules can still burden fundamental rights, and the right to travel is a fundamental right.",
+   "lawyer": "Public-benefit rules can still burden fundamental rights. The right to interstate travel is a fundamental right; durational-residency classifications that disadvantage new residents because they recently moved are subject to strict scrutiny. Shapiro v. Thompson, 394 U.S. 618 (1969); Memorial Hospital v. Maricopa County, 415 U.S. 250 (1974); Saenz v. Roe, 526 U.S. 489 (1999).",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The student hears 'states may always favor long-term residents' and assumes the state's general police power controls. It does not — the constitutional right to travel limits the state's general police power when the classification operates as a penalty on the right to move.",
+   "lawyer": "The right to be treated equally to other residents once the traveler has established residence in the new state is a component of the constitutional right to travel. Saenz v. Roe, 526 U.S. 489, 500–03 (1999). A durational-residency classification is a textbook violation of that component.",
+   "mold": "autonomy_appeal"
+  },
+  "C": {
+   "signal": "The student reads 'right to travel' and assumes it means international travel. It does not — the constitutional right at issue is INTERSTATE travel, and Hannah and David moved from State B to State A.",
+   "lawyer": "The constitutional right to travel includes the right to move from one state to another. The right is a component of the Privileges and Immunities Clause of Article IV, § 2, and of the Privileges or Immunities Clause and Equal Protection Clause of the Fourteenth Amendment. The 'international border' framing is wrong.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "After the international-border and general-police-power distractors are cut and the rational-basis-vs-strict-scrutiny axis is named, the Gold Key resolves to the right-to-travel strict-scrutiny answer.",
+   "lawyer": "The right to be treated equally to other residents once the traveler has established residence in the new state is a component of the constitutional right to travel. Durational-residency classifications that disadvantage new residents because they recently moved are subject to strict scrutiny. Shapiro v. Thompson, 394 U.S. 618 (1969); Saenz v. Roe, 526 U.S. 489 (1999).",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL-LAW-HANNAH-DAVID-MEDICAID-01",
+   "statement": "Durational-residency rules that disadvantage new residents because they recently moved trigger strict scrutiny under Equal Protection because they burden the fundamental right to interstate travel.",
+   "trigger": "state durational-residency classification disadvantaging new residents in a public benefit",
+   "unlocks": "rational-basis discretionary-benefits dominant trap (A)",
+   "authority": "Shapiro v. Thompson, 394 U.S. 618 (1969); Memorial Hospital v. Maricopa County, 415 U.S. 250 (1974); Saenz v. Roe, 526 U.S. 489 (1999)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Right to interstate travel and durational-residency rules",
+  "signal": "A state durational-residency classification disadvantages new residents in a public benefit (welfare, Medicaid, food assistance, in-state tuition, voting, bar admission).",
+  "studentMove": "Apply the right-to-travel doctrine: the right to be treated equally to other residents once the traveler has established residence is a fundamental right. Durational-residency rules that burden that right trigger strict scrutiny.",
+  "tinyRule": "Public-benefit rules can still burden fundamental rights; durational-residency rules that disadvantage new residents trigger strict scrutiny.",
+  "trap": "The 'public benefits are always discretionary' framing is the dominant trap; the right to travel is a fundamental right, and the discretionary-benefits reasoning collapses when the eligibility rule operates as a penalty on the exercise of a constitutional right."
+ }
+}

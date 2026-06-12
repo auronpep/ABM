@@ -1,0 +1,84 @@
+{
+ "id": "CQ18488",
+ "title": "Youth Retreat Trailer",
+ "subject": "Civil Procedure",
+ "topic": "Pleadings, Rule 12 Motions, and Amendments",
+ "subtopic": "Rule 15(c) Party Change",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Daniel's pickup truck was rear-ended at a stop sign by an unmarked horse trailer that was pulling away from a church youth-group retreat. The driver of the trailer fled the scene on foot before Daniel could get a name. Daniel later obtained the trailer's plate number from a witness, but he could not identify the driver before the state limitations period expired. Daniel timely filed suit in federal court (diversity) against \"John Doe Driver.\" Daniel never served the real driver within the 90-day Rule 4(m) period, and the real driver had no actual notice of the action during that period. After limitations had run, Daniel discovered that the real driver was Stephen, who lived in a neighboring county. Daniel moved under Rule 15 to amend the complaint to substitute Stephen for the John Doe defendant. Stephen was served after limitations had expired and now contests the relation-back amendment.\n\nIs relation back likely?",
+ "call": "Is relation back likely?",
+ "choices": {
+  "A": "No, because the new driver lacked timely notice of the action and the omission was not shown to be a Rule 15(c) mistake concerning identity.",
+  "B": "Yes, because notice to the new driver after limitations is enough.",
+  "C": "No, because claims against drivers can never be amended.",
+  "D": "Yes, because a John Doe pleading always satisfies the Rule 15(c) mistake requirement."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The court is unlikely to permit relation back. Rule 15(c)(1)(C) permits a party-change amendment to relate back only when three conditions are met: (i) the claim arose out of the conduct, transaction, or occurrence set out in the original pleading; (ii) the new party received such notice of the action that it will not be prejudiced in maintaining a defense; and (iii) the new party knew or should have known that, but for a mistake concerning the identity of the proper party, it would have been named as a defendant. The facts knock out conditions (ii) and (iii): the real driver had no actual notice within the Rule 4(m) period, and the plaintiff has not shown the omission was a Rule 15(c) \"mistake concerning identity\" — the plaintiff did not know who the driver was, and a mere lack of knowledge is not automatically the required identity mistake. Gold Key: John Doe pleading plus post-limitations identification is not, by itself, a Rule 15(c) mistake; the plaintiff must show that the new party knew or should have known it would have been named but for an identity mistake, and timely notice to the new party is also required.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (John Doe always satisfies mistake)",
+   "text": "is cut on the overclaim. A John Doe pleading is not, by itself, a Rule 15(c) \"mistake concerning identity\"; the plaintiff must show the new party knew or should have known it would have been named but for an identity mistake. The overclaim is visible from the answer text itself. The choice is NOT_TRUE for misstating the rule. Gold Key confirms."
+  },
+  {
+   "label": "B (post-limitations notice enough)",
+   "text": "is cut on the timing rule. Rule 15(c)(1)(C)(ii) requires notice within the Rule 4(m) period (or shortly thereafter when the plaintiff could not have identified the new party). Visible from the stem: the real driver had no actual notice within the 90-day period. The choice is NOT_TRUE for misstating the timing rule."
+  },
+  {
+   "label": "C (claims against drivers can never be amended)",
+   "text": "is cut on the overclaim of immutability. Rule 15 freely grants leave to amend, and a proper party-change amendment does relate back. Visible from the answer text itself. The choice is NOT_TRUE for misstating the rule."
+  },
+  {
+   "label": "CLASH",
+   "text": "No choices survive to clash. After three clean CUTs, only the correct answer A remains."
+  },
+  {
+   "label": "CALL",
+   "text": "A — no timely notice and no shown identity mistake. Residual answer: A. No Gold Key escalation is needed for the credited answer; the Gold Key is referenced in the explanation to confirm the overclaim breaker for D."
+  }
+ ],
+ "studentScript": "The call asks whether relation back is likely. Cut D: a John Doe pleading is not, by itself, a Rule 15(c) identity mistake. Cut B: notice after limitations is the failure the rule is designed to police. Cut C: claims against drivers are not categorically unamendable. Residual answer: A — no timely notice and no shown identity mistake.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice names both required failures: no timely notice and no shown identity mistake.",
+   "lawyer": "Rule 15(c)(1)(C)(ii) and (iii) are not satisfied on these facts.",
+   "mold": null
+  },
+  "B": {
+   "signal": "Notice after limitations is the failure the rule is designed to police.",
+   "lawyer": "Rule 15(c)(1)(C)(ii) requires notice within the Rule 4(m) period; post-limitations notice is the failure, not the cure.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "Rule 15 freely grants leave to amend; some amendments do relate back.",
+   "lawyer": "Rule 15(a) freely grants leave to amend, and a proper Rule 15(c) party-change amendment does relate back.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "A John Doe pleading is not, by itself, a Rule 15(c) identity mistake.",
+   "lawyer": "Rule 15(c)(1)(C)(iii) requires that the new party knew or should have known it would have been named but for a mistake; a mere lack of knowledge is not automatically that mistake.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-YOUTH-RETREAT-TRAILER-01",
+   "statement": "Rule 15(c) party-change relation back requires both timely notice within the Rule 4(m) period and a shown Rule 15(c) identity mistake; a John Doe pleading plus a lack of identified defendant is not, by itself, the required mistake.",
+   "trigger": "John Doe pleading + no service within Rule 4(m) + post-limitations identification + Rule 15(c) motion",
+   "unlocks": "John Doe always satisfies mistake / late notice enough overclaims",
+   "authority": "Fed. R. Civ. P. 15(c)(1)(C); 1991 amendment Advisory Committee Notes"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Rule 15(c) party-change relation back",
+  "signal": "John Doe pleading + no service within Rule 4(m) + post-limitations identification + Rule 15(c) motion to substitute",
+  "studentMove": "Cut the two 'yes' overclaims (D, B) and the immutability overclaim (C); the residual is the answer that names both required failures.",
+  "tinyRule": "Rule 15(c) needs both timely notice and a shown identity mistake.",
+  "trap": "John Doe pleadings exist to bridge the unknown-defendant gap, but they do not by themselves satisfy the identity-mistake element."
+ }
+}

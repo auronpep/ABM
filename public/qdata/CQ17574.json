@@ -1,0 +1,91 @@
+{
+ "id": "CQ17574",
+ "title": "Christian Podcast School Board",
+ "subject": "Constitutional Law",
+ "topic": "First Amendment - Freedom of Speech",
+ "subtopic": "Prior Restraints",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A state court in Texas entered a pre-trial order in a defamation case brought by a local school-board member named Paul. The order bars Mary, a Christian podcaster in Houston who publishes a weekly commentary podcast about local civic affairs, from publishing any future podcast episodes about Paul unless Paul first reviews and approves the episode. Mary's podcast earns revenue from third-party ads. What First Amendment doctrine is most directly implicated?",
+ "call": "What First Amendment doctrine is most directly implicated?",
+ "choices": {
+  "A": "Rational basis, because defamation is a tort.",
+  "B": "Prior restraint, because the order requires advance approval before publication.",
+  "C": "Commercial speech, because the podcaster earns ad revenue.",
+  "D": "No First Amendment doctrine, because podcasts are not newspapers."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "The order is a prior restraint on speech. A prior restraint is a content-based restraint imposed before publication — typically a government requirement that the speaker obtain advance approval from a government official before speaking. Prior restraints carry a \"heavy presumption against [their] constitutional validity\" and are the most heavily disfavored form of speech regulation. New York Times Co. v. United States, 403 U.S. 713 (1971) (Pentagon Papers); Near v. Minnesota, 283 U.S. 697 (1931). The order here is a textbook prior restraint: it is a government requirement that Mary obtain Paul's approval before publishing any future podcast episodes about him, and it was entered before any final adjudication on the defamation claim.\n\nGold Key: a court order that requires a speaker to obtain advance approval from a government official (or a private party acting under government order) before publication is a prior restraint, regardless of the speaker's medium or whether the speech generates ad revenue. The medium and the revenue model are not the constitutional test; the test is whether the government is conditioning publication on prior approval. Silver Key: ad revenue does NOT convert political or civic commentary about public officials into commercial speech; commercial speech is speech that does no more than propose a commercial transaction. Silver Key: the First Amendment protects all speakers, not just institutional newspapers; the medium (podcast, blog, newsletter) does not determine whether the prior-restraint doctrine applies.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (rational basis)",
+   "text": "is cut on the level-of-scrutiny mismatch. Rational basis is the deferential review for economic and social-welfare legislation; speech restrictions are reviewed under strict scrutiny (content-based) or intermediate scrutiny (content-neutral). Visible from the stem: nothing in the facts supports a rational-basis analysis. The choice is NOT_RESPONSIVE for asserting a framework (rational basis) that does not apply to a First Amendment prior-restraint question."
+  },
+  {
+   "label": "CLASH",
+   "text": "B, C, and D survive to a final axis. D (no-doctrine-because-medium-not-press) is a CLASH cut on the scope-of-speech test: the First Amendment protects all speakers, not just institutional newspapers. C (commercial speech) is a CLASH cut on the commercial-speech test: political or civic commentary about public officials is not commercial speech, even when monetized. The single axis they fight on is which red-herring fact (medium vs. revenue model) is the more attractive misapplication of a related First Amendment doctrine."
+  },
+  {
+   "label": "CALL",
+   "text": "B is the residual. The order is a prior restraint because it is a content-based restraint imposed before publication, requiring a speaker to obtain advance approval from a party (Paul) under a government order. Apply the Gold Key: the test is whether the government is conditioning publication on prior approval, not what the medium is or whether the speech generates ad revenue. A student without the Gold Key is in anchor_gap territory on the C/D axis; the trap is the salience of the \"ad revenue\" and \"podcast\" facts."
+  }
+ ],
+ "studentScript": "Step 1: What is the order? A government court order requires Mary to obtain Paul's advance approval before publishing any future podcast episodes about him. That is the textbook definition of a prior restraint: a content-based restraint imposed before publication, requiring advance approval. Step 2: Are any distractors cut? A (rational basis) is a level-of-scrutiny cut (rational basis is for economic and social-welfare legislation, not First Amendment prior restraint). C (commercial speech) is a red-herring cut: ad revenue does not convert civic commentary into commercial speech (Silver Key #1). D (no doctrine, because podcasts are not newspapers) is a scope-of-speech cut: the First Amendment protects all speakers, not just institutional newspapers (Silver Key #2). Step 3: Lock B. The order is a prior restraint. Gold Key: the test is whether the government is conditioning publication on prior approval, not what the medium is or whether the speech generates ad revenue.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Rational basis is the deferential review for economic and social-welfare legislation; speech restrictions are reviewed under strict scrutiny (content-based) or intermediate scrutiny (content-neutral). The question is First Amendment prior restraint, not economic regulation.",
+   "lawyer": "Rational basis review applies to economic and social-welfare legislation that does not implicate a fundamental right or a suspect classification. Speech restrictions are reviewed under the First Amendment standards (strict or intermediate scrutiny), not rational basis.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "The order is a content-based restraint imposed before publication, requiring a speaker to obtain advance approval from a party (Paul) under a government order. That is the textbook definition of a prior restraint.",
+   "lawyer": "Near v. Minnesota, 283 U.S. 697 (1931); New York Times Co. v. United States, 403 U.S. 713 (1971) (the government 'carries a heavy burden' of showing justification for a prior restraint). Prior restraints carry a heavy presumption against constitutional validity.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Commercial speech is speech that does no more than propose a commercial transaction. Political or civic commentary about public officials is not commercial speech, even when monetized through ads. The ad-revenue fact is incidental, not the speech's character.",
+   "lawyer": "Central Hudson Gas & Electric Corp. v. Public Service Commission, 447 U.S. 557 (1980). Commercial speech is defined as speech that does no more than propose a commercial transaction. Civic commentary about public officials is fully protected by the First Amendment under the prior-restraint and content-based-speech doctrines, regardless of monetization.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The First Amendment protects all speakers, not just institutional newspapers. The medium (podcast, blog, newsletter) does not determine whether the prior-restraint doctrine applies.",
+   "lawyer": "First Amendment 'freedom of the press' applies to all speakers, regardless of medium. The modern doctrine extends press protections to bloggers, podcasters, YouTubers, newsletter writers, and self-publishers.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL-LAW-CHRISTIAN-PODCAST-01",
+   "statement": "A court order that requires a speaker to obtain advance approval from a government official (or a private party acting under a government order) before publication is a prior restraint, regardless of the speaker's medium or whether the speech generates ad revenue.",
+   "trigger": "stem describes a court order requiring advance approval for speech AND the speech generates ad revenue",
+   "unlocks": "dominant-trap discrimination between B (prior restraint) and C (commercial speech) on a prior-restraint item with an ad-revenue red herring",
+   "authority": "Near v. Minnesota, 283 U.S. 697 (1931); New York Times Co. v. United States, 403 U.S. 713 (1971)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL-LAW-CHRISTIAN-PODCAST-01",
+   "statement": "Ad revenue does NOT convert political or civic commentary about public officials into commercial speech; commercial speech is speech that does no more than propose a commercial transaction, not political or civic commentary that happens to be monetized.",
+   "trigger": "stem describes a speaker who earns ad revenue and is speaking about a public official",
+   "unlocks": "ad-revenue / commercial-speech red herring on a prior-restraint item; lets the student cut the commercial-speech answer without invoking the Central Hudson test",
+   "authority": null
+  },
+  {
+   "id": "SK-CONSTITUTIONAL-LAW-CHRISTIAN-PODCAST-02",
+   "statement": "The First Amendment protects all speakers, not just institutional newspapers; the medium (podcast, blog, newsletter) does not determine whether the prior-restraint doctrine applies.",
+   "trigger": "stem describes a non-newspaper speaker (blogger, podcaster, YouTuber, newsletter writer) facing a court order",
+   "unlocks": "medium-is-not-the-press trap on a prior-restraint item; lets the student cut the 'no doctrine, because podcasts are not newspapers' answer",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Prior restraint — advance approval orders and red-herring doctrines",
+  "signal": "A government court order entered before trial in a defamation case requires a private speaker to obtain advance approval from a government official (or a private party under a government order) before publishing any future speech about that official.",
+  "studentMove": "Apply the Gold Key: any advance-approval requirement imposed by a government order is a prior restraint. Do not be lured by red-herring facts (medium, ad revenue) toward the commercial-speech or 'not the institutional press' doctrines. Apply Silver Key #1 to cut the commercial-speech answer. Apply Silver Key #2 to cut the 'not the institutional press' answer.",
+  "tinyRule": "A court order requiring advance approval for speech is a prior restraint, regardless of medium or revenue model.",
+  "trap": "The dominant trap is the commercial-speech answer (the ad-revenue fact is salient). The secondary trap is the 'not the institutional press' answer (the medium is salient). The weakest trap is the rational-basis answer (level-of-scrutiny mismatch)."
+ }
+}

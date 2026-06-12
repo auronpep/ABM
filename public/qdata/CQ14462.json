@@ -1,0 +1,92 @@
+{
+ "id": "CQ14462",
+ "title": "Mustard Seed Carts",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Conditions / waiver of condition",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia Learning LLC, a private company that runs Bible-verse calligraphy camps, agreed in writing to buy from Ruth twelve hand-painted mobile coffee carts branded for “Mustard Seed Morning” events at a fixed price per cart. Lydia Learning was a subsidiary of Emmaus Market Group. Just before the written contract was signed, Martha, Lydia Learning’s purchasing director, said to Ruth, “Of course, our commitment to buy is subject to approval from Emmaus Market Group.” Ruth replied, “Fine. No problem.”\n\nRuth later refused to deliver the carts, arguing that Lydia Learning had never asked Emmaus Market Group to approve the contract. That was true. Barnabas, the chief executive officer of Emmaus Market Group, is prepared to testify that Emmaus Market Group would have routinely approved the contract if asked. Lydia Learning can also prove that it sold a delivery van to raise money for the coffee-cart purchase, although it admits that it had not anticipated any need to sell the van when it entered the contract.\n\nIf Lydia Learning sues Ruth for breach of contract, is Lydia Learning likely to prevail?",
+ "call": "If Lydia Learning sues Ruth for breach of contract, is Lydia Learning likely to prevail?",
+ "choices": {
+  "A": "No, because the express condition of Emmaus Market Group's approval had not occurred before the lawsuit.",
+  "B": "No, because obtaining Emmaus Market Group's approval was within Lydia Learning's control, and Lydia Learning's failure to obtain it was itself a material breach of contract.",
+  "C": "Yes, because the approval condition, being designed to protect only Lydia Learning and Emmaus Market Group, can be and has been waived by those entities.",
+  "D": "Yes, because Lydia Learning detrimentally relied on Ruth's commitment by selling its delivery van to finance the coffee-cart purchase."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The approval condition was phrased as a limit on Lydia Learning’s own commitment to buy. It protected the buyer side: Lydia Learning and its parent, Emmaus Market Group. The facts show that both protected entities are ready to proceed. Gold Key: a condition inserted only for one side’s benefit can be waived by that protected side. Silver Key: before asking whether the approval happened, ask whose duty the condition qualifies. Here, the condition qualified the buyer’s duty, not Ruth’s duty to deliver. Once the buyer-side condition is waived, Ruth cannot use its non-occurrence as her reason not to perform.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks whether Lydia Learning is likely to prevail against Ruth for breach. The adjacent trap is whether approval literally occurred. The precise issue is the effect of non-occurrence after the protected side waives the condition."
+  },
+  {
+   "label": "CUT D — wrong element",
+   "text": "Reliance vocabulary appears, but the call is not “did Lydia Learning rely in a foreseeable way?” The stem says Lydia Learning did not anticipate selling the van when it contracted. That makes reliance a weak, non-dispositive route."
+  },
+  {
+   "label": "CUT B — wrong layer / wrong element",
+   "text": "The choice punishes Lydia Learning for not requesting approval. But the call is whether Ruth can refuse to deliver. The condition was phrased as Lydia Learning’s own commitment to buy. This choice answers a neighboring question."
+  },
+  {
+   "label": "CLASH A vs C",
+   "text": "The axis is: condition failed versus condition waived. A says the non-occurrence ends the case. C says the protected side can waive the condition."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "Use the condition-waiver anchor: a condition inserted only for one side’s protection may be waived by that side. Lydia Learning and Emmaus Market Group are ready to proceed. Residual answer: C."
+  }
+ ],
+ "studentScript": "Call is breach by Ruth. Approval did not happen, but the approval condition was on Lydia Learning's commitment and protected the buyer side. Buyer side can waive. Cut reliance. Cut buyer-control breach. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It answers the approval-occurred question but not the waiver question.",
+   "lawyer": "Default nonoccurrence matters only before waiver/excuse is accounted for.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "It focuses on buyer control instead of whose duty the condition qualified.",
+   "lawyer": "The supplied explanation treats the condition as affecting the buyer's obligation, not Ruth's.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "It names the protected side and the waiver.",
+   "lawyer": "Restatement condition-waiver principles support the answer.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The van sale is a fact, but it does not answer the waiver question.",
+   "lawyer": "Promissory-estoppel-style reliance requires foreseeable reliance; the stem undercuts that route.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-CONDITION-WAIVER-01",
+   "statement": "A condition included only to protect one side may be waived by the protected side. After that waiver, the other party cannot use the condition's non-occurrence as its own escape.",
+   "trigger": "The condition is phrased as the buyer's own commitment and the protected buyer-side parties are ready to close.",
+   "unlocks": "The condition-nonoccurrence and buyer-control traps.",
+   "authority": "Restatement (Second) of Contracts §§ 84, 225."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-WHOSE-DUTY-01",
+   "statement": "Before asking whether the approval happened, ask whose duty the approval condition qualifies. A condition on the buyer's promise is not automatically a seller's defense.",
+   "trigger": "Choice language turns a buyer-side approval condition into the seller's reason not to perform.",
+   "unlocks": "Approval-condition answer array with yes/no pairs.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Protected condition waiver",
+  "signal": "One side says its own commitment depends on approval, but later wants to proceed anyway.",
+  "studentMove": "Ask whose protection the condition serves before treating nonoccurrence as a defense.",
+  "tinyRule": "The protected side can waive its own condition.",
+  "trap": "Treating nonoccurrence as automatically fatal."
+ }
+}

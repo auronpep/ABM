@@ -1,0 +1,88 @@
+{
+ "id": "CQ20654",
+ "title": "Nativity Ornaments Volition",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Defenses",
+ "subtopic": "General Principles",
+ "difficulty": "medium_hard",
+ "tension": null,
+ "stem": "Stem / Fact Pattern\n\nLydia has a severe compulsion disorder that psychiatrists recognize as a legitimate mental disease. She has been examined and found to understand fully that damaging another person’s property is illegal and wrong. Even so, whenever she visits a privately run Christian craft market and sees ceramic nativity ornaments for sale, she experiences overwhelming uncontrollable urges to snap the shepherd staffs off the ornaments. She does this on repeated visits and is charged with multiple counts of criminal mischief.\n\nThe jurisdiction uses both M’Naghten and the irresistible-impulse supplement. Lydia’s expert testifies that, because of her mental disease, her urges were genuinely uncontrollable and she could not conform her conduct to the law.\n\nCall of Question\n\nWhich of the following best states Lydia’s insanity claim?",
+ "call": "Which of the following best states Lydia's insanity claim?",
+ "choices": {
+  "A": "Lydia has an insanity defense because she has a recognized mental disease.",
+  "B": "Lydia may have an insanity defense under the irresistible-impulse supplement because she could not conform her conduct to the law despite knowing the damage was wrong.",
+  "C": "Lydia has no insanity defense because she knew breaking the ornaments was wrong.",
+  "D": "Lydia has an insanity defense under M'Naghten because the impulse overrides her cognition."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Lydia’s strongest insanity claim is not that she failed to know the act was wrong. The stem says she did know that. Her claim is that, because of a recognized mental disease, she could not conform her conduct to the law.\n\nGold Key: M’Naghten is the cognition lane: knowing the nature or wrongfulness of the act. Irresistible impulse is the volition lane: knowing wrong but unable to control or conform conduct.\nSilver Key: In this answer array, sort every choice into one of three buckets: cognition, volition, or diagnosis alone. The stem gives “knows wrong” and “cannot conform,” so the volition bucket wins.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Diagnosis alone is not enough. It proves a threshold fact, not the dispositive legal incapacity."
+  },
+  {
+   "label": "CUT C",
+   "text": "Knowledge of wrongfulness knocks out the cognitive lane only. It does not answer the volitional supplement."
+  },
+  {
+   "label": "CUT D",
+   "text": "The impulse fact is placed under the wrong test label. M’Naghten is not the impulse-control lane."
+  },
+  {
+   "label": "Residual",
+   "text": "B. No CLASH or CALL is needed after the Gold Key cut."
+  }
+ ],
+ "studentScript": "Knows wrong: not M'Naghten. Cannot conform: irresistible impulse. Diagnosis alone is not enough. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice grabs the threshold fact but does not answer which legal incapacity applies.",
+   "lawyer": "Mental disease is required for insanity but is not sufficient without the legally required cognitive or volitional incapacity.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This choice matches the jurisdiction trigger and the volition fact.",
+   "lawyer": "The irresistible-impulse supplement permits an insanity claim when mental disease prevents control even though wrongfulness is known.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice answers only the M'Naghten lane and ignores the supplement named in the stem.",
+   "lawyer": "Knowledge of wrongfulness defeats M'Naghten but does not defeat the irresistible-impulse supplement in a jurisdiction that uses it.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The choice puts the impulse fact under the cognition test label.",
+   "lawyer": "M'Naghten does not ask whether impulse overrides cognition; it asks about knowledge of nature or wrongfulness.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-IRRESISTIBLE-IMPULSE-01",
+   "statement": "M'Naghten is cognition: did the defendant know the nature or wrongfulness of the act? Irresistible impulse is volition: the defendant may know wrong but still be excused if mental disease prevents control.",
+   "trigger": "The stem says the jurisdiction uses M'Naghten plus irresistible impulse and gives both knowledge-of-wrongfulness and inability-to-conform facts.",
+   "unlocks": "cognition-only and wrong-test-label traps",
+   "authority": "M'Naghten's Case; Model Penal Code section 4.01 conform-conduct analogue; Cornell Wex summaries."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-IRRESISTIBLE-IMPULSE-01",
+   "statement": "Read the array as three buckets: diagnosis alone, cognition, and volition. When the stem gives both 'knows wrong' and 'cannot conform,' the answer must choose the volition bucket.",
+   "trigger": "Choices separately mention mental disease, knew wrong, M'Naghten, and irresistible impulse.",
+   "unlocks": "3-vs-1 answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Insanity tests: cognition vs volition",
+  "signal": "Stem gives M'Naghten plus irresistible impulse.",
+  "studentMove": "Match facts to lanes before picking.",
+  "tinyRule": "Know-wrong = cognition; cannot-conform = volition.",
+  "trap": "Treating one lane as the whole insanity defense."
+ }
+}

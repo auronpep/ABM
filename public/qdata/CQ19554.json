@@ -1,0 +1,80 @@
+{
+ "id": "CQ19554",
+ "title": "Road To Damascus Cashbox",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Property Crimes",
+ "subtopic": "Other Crimes",
+ "difficulty": "high",
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q# 19554, Criminal Law and Procedure, Property Crimes, common-law classification; credited classification is larceny.\n\nFinal Christian variation — QID 19554_road_to_damascus_cashbox\n\nLydia owns a private Bible-themed escape room called Road to Damascus. For one evening, she assigns Peter to the entry table for the “shipwreck puzzle” room. Peter may take visitors’ $18 admission fees and drop the bills through the slot of Lydia’s wooden ark-shaped cash box. During his shift, Peter pulls $360 from the box and hides it in his costume satchel, intending to keep it.\n\nCall: What is the best common-law classification?\n\n---",
+ "call": "What is the best common-law classification?",
+ "choices": {
+  "A": "False pretenses, because the visitors handed the admission fees to Peter voluntarily.",
+  "B": "No theft offense, because Peter was allowed to handle the admission money.",
+  "C": "Embezzlement, because all theft by a worker from the business is embezzlement.",
+  "D": "Larceny, because Peter had custody of the admission money while Lydia’s business retained possession."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Peter was only a table worker collecting admission money for Lydia’s business and putting it into her cash box. The best common-law classification is larceny because the worker had custody of the cash while the business retained possession.\n\nGold Key: Low-level workers who merely handle the owner’s cash usually have custody, not lawful possession. Pocketing that cash is larceny, not embezzlement.\n\nSilver Key: In a theft-classification array, do not start with the job label. Sort the property path: custody, possession, title, or no offense.\n\n---",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "False pretenses is a neighboring property-crime frame. The voluntary handoff fact does not answer title-by-deception to Peter."
+  },
+  {
+   "label": "CUT B",
+   "text": "Permission to handle is not permission to keep. This is a wrong-element answer."
+  },
+  {
+   "label": "CUT C",
+   "text": "“All theft by a worker” is an overclaim. It tries to classify by role instead of property relation."
+  },
+  {
+   "label": "CALL / Anchor confirmation",
+   "text": "D survives only with the Gold Key: custody is not lawful possession. Low-level custody plus pocketing is larceny.\n\n---"
+  }
+ ],
+ "studentScript": "Call: classify the theft. Cut C because all-worker theft is overbroad. Cut B because handling is not keeping. Use the Gold Key to cut A and keep D: custody plus owner possession equals larceny.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice points to voluntary payment, but the call asks Peter’s classification after he pockets business money.",
+   "lawyer": "False pretenses requires title obtained by deception; the visitors paid Lydia’s business, not Peter personally.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The answer proves only that Peter could handle the money; the stem says he hid it intending to keep it.",
+   "lawyer": "Limited authority to handle cash does not authorize appropriation.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The word all makes the answer too broad.",
+   "lawyer": "Worker theft can be larceny when the worker has custody rather than lawful possession.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "Matches the Gold Key: custody with owner-retained possession.",
+   "lawyer": "The common-law classification is larceny.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIM-CUSTODY-POSSESSION-01",
+   "statement": "A low-level worker who merely handles the owner’s cash usually has custody, not lawful possession. If the worker pockets it intending to keep it, the common-law classification is larceny.",
+   "trigger": "Worker is authorized to collect or handle money for the owner, then secretly pockets it.",
+   "unlocks": "Larceny versus embezzlement in low-level worker cash cases.",
+   "authority": "Lawyer-confirmation only: common-law larceny and embezzlement authorities."
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Custody is not possession",
+  "signal": "Low-level worker handles owner cash.",
+  "studentMove": "Ask whether the worker had custody only, lawful possession, title by deception, or no taking.",
+  "tinyRule": "Custody + pocketing owner cash = larceny.",
+  "trap": "Worker theft automatically means embezzlement."
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "id": "CQ17859",
+ "title": "Olive Branch Ornament",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Property Crimes",
+ "subtopic": "Larceny (asportation element)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Naomi, a customer at \"Olive Branch Christian Books,\" picks up a small hand-painted porcelain Christmas ornament — a shepherd-and-lamb scene — from an open display table, slips it into her tote bag, and turns toward the exit intending to keep it. A clerk named Stephen stops her after she has moved only two steps from the table. Has the carrying-away element of larceny been satisfied?",
+ "call": "Has the carrying-away element of larceny been satisfied?",
+ "choices": {
+  "A": "No, because the property must be removed from the building.",
+  "B": "No, because picking up merchandise in a store is always permitted until the customer leaves.",
+  "C": "Yes, because even slight movement of the property is enough.",
+  "D": "No, because the clerk stopped Naomi before she sold the ornament."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The carrying-away element is satisfied. Larceny at common law requires a trespassory taking and carrying away of personal property of another with intent to permanently deprive. The asportation element is satisfied by any movement, however slight, that is part of the taking — moving the ornament from the open display table into the tote bag, even by two steps, is enough. The ornament need not leave the building, and no sale is required. Gold Key: asportation in larceny is satisfied by even minimal movement of the property; the property need not leave the building and the act of sale is not an element. Silver Key: when a stem gives a \"small item, two steps, stopped before exit\" pattern, lock the call to the asportation minimum and cut the \"must leave the building\" and \"must have sold it\" distractors first.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (must be removed from the building)",
+   "text": "is cut on extreme_of_range. Asportation requires only minimal movement, not removal from the building. Visible from the answer text: \"must be removed\" is a higher/different threshold than the law. The choice is NOT_TRUE for pushing the real rule too far."
+  },
+  {
+   "label": "B (always permitted until the customer leaves)",
+   "text": "is cut on tiered_absolute. The store consents to inspection and ordinary handling, not to concealment with intent to steal. Visible from the answer text: \"always permitted\" is the absolute. The choice is NOT_TRUE for the absolute + the misframing of consent scope."
+  },
+  {
+   "label": "D (stopped before she sold the ornament)",
+   "text": "is cut on misfit (wrong_element). Sale is not an element of larceny; the offense is complete on trespassory taking + asportation + intent. Visible from the answer text: the answer reasons from a downstream disposition (sale) that the law does not require. The choice is NOT_RESPONSIVE for proving a non-dispositive element."
+  },
+  {
+   "label": "CLASH",
+   "text": "None — the three distractors all fail on visible defects and do not need a CLASH. The two \"No\" answers (A and B) present the residual axis: removal from the building (A) versus consent-until-exit (B). Both are overclaims; both die on visible defect cuts. C is the lone \"Yes\" answer and matches the call focus on asportation."
+  },
+  {
+   "label": "CALL",
+   "text": "C residual. The correct answer is C (slight movement of the property is enough). The Gold Key confirms the asportation minimum and explains why A and D are wrong; the Silver Key tells the student to read the \"small item, two steps, stopped before exit\" pattern as an asportation-minimum trigger."
+  }
+ ],
+ "studentScript": "Naomi slipped the ornament into her tote bag and took two steps toward the exit with intent to keep it. A is the dominant trap: asportation does not require leaving the building. B is the consent-based overclaim: store consent covers inspection, not concealment with intent to steal. D is the misfit: sale is not an element. C is residual: slight movement of the property is enough. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The 'must be removed' pushes the asportation rule too far; the rule requires only minimal movement.",
+   "lawyer": "Common-law asportation is satisfied by any movement, however slight; the property need not leave the building. The 'must be removed from the building' formulation is an extreme_of_range misstatement.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "The 'always permitted' framing is an absolute that ignores the consent-scope rule (consent covers inspection, not concealment with intent to steal).",
+   "lawyer": "Stores consent to ordinary handling and inspection; that consent does not extend to concealment with intent to steal. 'Always permitted until the customer leaves' is an overclaim of the consent rule.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "Two steps with the ornament already in the tote bag is the textbook minimal asportation.",
+   "lawyer": "Under common-law larceny, asportation is satisfied by any movement, however slight, that is part of the taking. Naomi's two steps toward the exit with the ornament in her bag satisfy asportation.",
+   "mold": null
+  },
+  "D": {
+   "signal": "Sale is a downstream disposition; the elements of larceny are trespassory taking + asportation + intent to permanently deprive.",
+   "lawyer": "Sale is not an element of larceny. The clerk's interception does not undo the trespassory taking and asportation that already occurred; it affects apprehension, not the offense elements.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-OLIVE-BRANCH-ORNAMENT-01",
+   "statement": "Asportation in larceny is satisfied by even minimal movement of the property; the property need not leave the building and the act of sale is not an element.",
+   "trigger": "small item, two steps toward the exit, stopped before leaving the building",
+   "unlocks": "the 'must be removed from the building' trap and the 'stopped before she sold it' misfit",
+   "authority": "Common-law larceny five-element formulation; Model Penal Code § 223.2 (where the jurisdiction has adopted it)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Asportation minimum vs. removal / sale",
+  "signal": "Customer slips a small item from an open display, takes a few steps, and is stopped before leaving the building.",
+  "studentMove": "Cut 'must leave the building' and 'stopped before she sold' on visible defects; the slight-movement answer is residual.",
+  "tinyRule": "Asportation is satisfied by even minimal movement; the property need not leave the building and sale is not an element.",
+  "trap": "Conflating asportation with a successful shoplifting exit, or looking for a sale element that does not exist."
+ }
+}

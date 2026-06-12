@@ -1,0 +1,88 @@
+{
+ "id": "CQ20567",
+ "title": "Psalm Panels Venue",
+ "subject": "Civil Procedure",
+ "topic": "Erie Doctrine and Choice of Law",
+ "subtopic": "Federal Statute Directly Controls",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Mary, a citizen of State Jordan, runs a private business that rents hand-painted “Psalms & Parables” stage panels for paid community programs. She sued Barnabas, a citizen of State Carmel, in the U.S. District Court for the Northern District of State Carmel for breach of a paid restoration contract involving those panels.\n\nA State Carmel statute provides that a civil action may be filed only in the county where the defendant resides. Barnabas resides in a county located in the Southern District of State Carmel. Federal venue statute § 1391 provides that venue is proper in a federal district where a substantial part of the events or omissions giving rise to the claim occurred. The design meetings, payment, restoration work, and disputed delivery all occurred in the Northern District.\n\nWhich venue rule should the federal court apply?",
+ "call": "Which venue rule should the federal court apply?",
+ "choices": {
+  "A": "Whichever rule would require dismissal, because Erie discourages forum shopping.",
+  "B": "Neither rule, because a diversity case in federal court has no venue requirement.",
+  "C": "Section 1391, because a valid federal statute directly controls federal venue.",
+  "D": "The state county venue statute, because Mary’s claim arises under state law."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The call asks which venue rule the federal court should apply. The stem supplies a federal venue statute that directly governs venue in a federal district where a substantial part of the events occurred. The events occurred in the chosen federal district.\n\nGold Key: When a valid federal statute directly controls a federal-court procedural issue, apply the federal statute before doing Erie twin-aims balancing.\n\nSilver Key: Lock the call as a rule-source question, not a dismissal-outcome question. The answer is the rule that controls federal venue, not the rule that makes one party win fastest.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Forum-shopping language is attractive, but it answers the wrong step. The student must not jump to Erie policy when the stem gives a federal statute directly on point."
+  },
+  {
+   "label": "CUT B",
+   "text": "The answer denies venue requirements even though the stem names venue statutes. This is a visible setup conflict."
+  },
+  {
+   "label": "CUT D",
+   "text": "State-law-claim language is the dominant bait. It applies the state-law merits instinct to a federal venue statute problem."
+  },
+  {
+   "label": "Residual",
+   "text": "C. No CLASH needed after the Gold Key cut."
+  }
+ ],
+ "studentScript": "Federal court venue. The stem gives § 1391 directly on point. Erie policy and state-law-claim language are bait. C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answer jumps from the rule-source call to an outcome/dismissal frame.",
+   "lawyer": "Forum-shopping concerns do not displace a valid federal statute that directly controls federal venue.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The stem asks which venue rule controls and names a federal venue statute; the answer says venue does not exist.",
+   "lawyer": "Federal venue requirements apply in diversity cases.",
+   "mold": "contradiction"
+  },
+  "C": {
+   "signal": "This answer matches the rule-source call and the federal-statute trigger.",
+   "lawyer": "A valid federal venue statute on point controls federal venue in federal court.",
+   "mold": null
+  },
+  "D": {
+   "signal": "This answer answers the adjacent merits-law instinct, not the federal venue statute call.",
+   "lawyer": "State-law claims do not make a state venue statute control when § 1391 directly governs federal venue.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-FED-STATUTE-VENUE-01",
+   "statement": "When a valid federal statute directly controls a federal-court procedural issue, apply the federal statute before Erie twin-aims balancing.",
+   "trigger": "Diversity case + state procedural rule + federal statute on point.",
+   "unlocks": "State-law-claim and forum-shopping Erie bait.",
+   "authority": "28 U.S.C. § 1391; Hanna v. Plumer; Stewart Organization v. Ricoh."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-RULE-SOURCE-CALL-01",
+   "statement": "On a 'which rule controls' call, do not pick the rule that creates the preferred outcome. First identify whether a federal statute directly answers the procedural question.",
+   "trigger": "Answer choices compare state rule, federal statute, and forum-shopping policy.",
+   "unlocks": "Outcome/dismissal bait and state-law-claim bait.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Federal statute on point beats Erie balancing",
+  "signal": "Diversity + state rule + federal statute directly addressing procedure.",
+  "studentMove": "Ask whether the federal statute directly controls before discussing forum shopping.",
+  "tinyRule": "Federal statute on point first; Erie twin aims only after no controlling federal law.",
+  "trap": "State-law claim language makes the state procedural rule feel controlling."
+ }
+}

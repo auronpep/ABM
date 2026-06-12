@@ -1,0 +1,84 @@
+{
+ "id": "CQ18843",
+ "title": "Patio Pressure Washer",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Property Crimes",
+ "subtopic": "Larceny — temporary use (no intent to permanently deprive)",
+ "difficulty": "Core (carried from source row; not separately scored)",
+ "tension": null,
+ "stem": "Naomi owns a heavy-duty electric pressure washer. Without asking first, Lydia takes the pressure washer from Naomi's unlocked garage, intending to use it to clean the side patio of her home in preparation for a Saturday family gathering. She plans to return it the next day. Police stop her while she is loading the pressure washer into her car to take it home.\n\nIs Lydia guilty of common-law larceny?",
+ "call": "Is Lydia guilty of common-law larceny?",
+ "choices": {
+  "A": "No, because she intended only a short, safe temporary use and return.",
+  "B": "No, because power tools are not personal property.",
+  "C": "Yes, because any unauthorized use of property is larceny.",
+  "D": "Yes, because the pressure washer moved from one place to another."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Lydia is not guilty of common-law larceny. Larceny is the trespassory taking and carrying away of the personal property of another, with intent to permanently deprive the owner. The intent-to-permanently-deprive element is the linchpin on these facts. The stem supplies clear temporary-use and intent-to-return facts: she took the pressure washer for a single defined task (cleaning the side patio for a Saturday family gathering), she planned to return it the next day, and she had no use for the property beyond her own home. A taking for a short, safe, temporary use with an actual return plan is the textbook non-larceny \"borrowing\" pattern. The trespassory element may be present (she took it without asking), but larceny requires all elements including the specific intent to permanently deprive, and that element is missing. Gold Key: unauthorized borrowing is not larceny unless the borrower's intended use creates a substantial risk of permanent loss or otherwise shows intent to permanently deprive. Silver Key: on a larceny question, look for the intent-to-permanently-deprive anchor before locking any \"Yes\" answer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (\"power tools are not personal property\")",
+   "text": "is cut on NOT_TRUE. A pressure washer is the textbook case of movable, tangible personal property. The \"not personal property\" framing is a tiered_absolute overclaim that loses to the obvious counterexample. Cut on filter broken: NOT_TRUE. Mold: half_truth (gestures at the personal-property element but misapplies it)."
+  },
+  {
+   "label": "C (\"any unauthorized use of property is larceny\")",
+   "text": "is cut on NOT_TRUE. The word \"any\" is the visible overclaim marker. Larceny requires the intent to permanently deprive, not merely unauthorized use. Safe, short, return-planned borrowing is a counterexample that the universal quantifier cannot capture. Cut on filter broken: NOT_TRUE. Mold: tiered_absolute. Dominant trap, but cut on the overclaim structure."
+  },
+  {
+   "label": "D (\"the pressure washer moved from one place to another\")",
+   "text": "is cut on NOT_TRUE. Asportation (carrying away) is one element of larceny, not the whole thing. The intent-to-permanently-deprive element is independently required, and the stem supplies clear temporary-use and intent-to-return facts that defeat the intent element on their face. Cut on filter broken: NOT_TRUE. Mold: wrong_element (proves a non-disposable element)."
+  },
+  {
+   "label": "CLASH",
+   "text": "A, the correct answer, breaks neither filter on the visible stem facts. After B, C, and D are cut, A is the residual: it is true (the intent-to-permanently-deprive element is missing on these facts) and it is responsive (it directly answers whether the borrower is guilty of common-law larceny)."
+  },
+  {
+   "label": "CALL",
+   "text": "A is the residual. Pick A."
+  }
+ ],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Breaks neither filter. The choice is true (the intent-to-permanently-deprive element is missing on these facts) and responsive (it answers whether the borrower is guilty of common-law larceny). Visible from the stem: clear temporary-use and intent-to-return facts.",
+   "lawyer": "Common-law larceny requires the trespassory taking and carrying away of the personal property of another with the intent to permanently deprive. The intent-to-permanently-deprive element is missing. A taking for a short, safe, temporary use and return is the textbook non-larceny 'borrowing' pattern. Perkins & Boyce, Criminal Law 305-06 (3d ed. 1982); cf. Model Penal Code § 223.0(1) (purpose to deprive reaches the borrowing case only when the borrowing is so extended or risky that the deprivation is permanent or for an indefinite period or creates a substantial risk of permanent loss).",
+   "mold": "correct_answer"
+  },
+  "B": {
+   "signal": "The 'not personal property' framing is a `tiered_absolute` overclaim that loses to the obvious counterexample: a pressure washer is a movable, tangible item of personal property capable of being larcenized. The choice is also NOT_RESPONSIVE to the real issue, which is the intent-to-permanently-deprive element, not the personal-property element.",
+   "lawyer": "Personal property at common law includes any movable, tangible chattel. A pressure washer is a textbook chattel. The 'not personal property' framing is a misstatement of the law.",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "The word 'any' is the visible overclaim marker. Larceny requires the intent to permanently deprive, not merely unauthorized use. Safe, short, return-planned borrowing is the counterexample that the universal quantifier cannot capture. Dominant trap.",
+   "lawyer": "Larceny requires the specific intent to permanently deprive. A taking for short, safe, temporary use and return is not larceny. The word 'any' is a `tiered_absolute` overclaim that loses to the counterexample. **Gold Key** (GK-CRIMINAL-LARCENY-INTENT-01): unauthorized borrowing is not larceny unless the borrower's intended use creates a substantial risk of permanent loss or otherwise shows intent to permanently deprive.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "Asportation is one of the elements of larceny, not the whole thing. The intent-to-permanently-deprive element is independently required, and the stem supplies clear temporary-use and intent-to-return facts that defeat the intent element on their face.",
+   "lawyer": "Asportation (carrying away) is one of the four elements of larceny, not the whole thing. The trespassory taking, the personal property of another, and the intent to permanently deprive are each independently required. Movement without intent is not larceny.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-LARCENY-INTENT-01",
+   "statement": "Unauthorized borrowing is not common-law larceny unless the borrower's intended use creates a substantial risk of permanent loss or otherwise shows intent to permanently deprive.",
+   "trigger": "When the stem shows a defined short-term use and an actual return plan (no permanent-loss risk), the intent-to-permanently-deprive element fails, and the larceny claim fails with it.",
+   "unlocks": "The any-unauthorized-use dominant trap (choice C); the asportation-only trap (choice D) by anchoring on the missing intent element.",
+   "authority": "Perkins & Boyce, Criminal Law 305-06 (3d ed. 1982); cf. Model Penal Code § 223.0(1), § 223.1."
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Larceny — temporary-use and return is not larceny",
+  "signal": "Taking of another's personal property without permission, defined short-term use, actual return plan, police stop before return",
+  "studentMove": "Lock the intent-to-permanently-deprive element on the temporary-use-and-return fact pattern. Cut C (any unauthorized use) on the universal-quantifier marker. Cut D (asportation) on the missing-intent element. Cut B (power tools not personal property) on the obvious-chattel counterexample.",
+  "tinyRule": "Larceny requires the intent to permanently deprive; short, safe, return-planned borrowing is not larceny.",
+  "trap": "The 'any unauthorized use' shortcut that fuses trespass with the common-law definition."
+ }
+}

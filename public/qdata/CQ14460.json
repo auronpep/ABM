@@ -1,109 +1,96 @@
 {
  "id": "CQ14460",
- "title": "Prayer Garden Waiver",
+ "title": "Fish Loaves Mosaic",
  "subject": "Contracts",
- "topic": "Contracts",
- "subtopic": "Performance, Breach, and Discharge",
- "difficulty": 3,
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Excuse of condition / waiver",
+ "difficulty": "not_supplied",
  "tension": null,
- "stem": "BARMATRIX Q# 14460 — Christian variation: 14460_prayer_garden_waiver\n\nMartha, a property owner, and Barnabas, a landscape architect, signed a detailed writing in which Barnabas agreed to landscape Martha's residential property — including a quiet prayer garden — in accordance with a design Barnabas prepared and incorporated in the writing. Martha agreed to pay $10,000 for the work upon its completion. Martha's husband, Timothy, was not a party to the agreement and had no ownership interest in the premises. At Martha's insistence, the written agreement contained a provision that neither party would be bound unless Ruth, Martha's law partner and an avid student of landscaping, should approve Barnabas's design. Before Barnabas commenced the work, Ruth, in the presence of both Martha and Barnabas, expressly disapproved the landscaping design. Nevertheless, Martha ordered Barnabas to proceed with the work, and Barnabas reluctantly did so. When Barnabas's performance was 40% complete, Martha repudiated her duty, if any, to pay the contract price or any part thereof.\n\nIf Barnabas now sues Martha for damages for breach of contract, which of the following concepts best supports Barnabas's claim?",
- "call": "If Barnabas now sues Martha for damages for breach of contract, which of the following concepts best supports Barnabas's claim?",
+ "stem": "Before Mary laid a tile, Timothy, Peter’s choir friend and an avid collector of Christian art, said in front of both Peter and Mary that he would not approve Mary’s sketch. That rejection mattered because Peter and Mary had already signed a detailed writing: Mary would cover the side of Peter’s privately owned vintage camper with a fish-and-loaves mosaic according to Mary’s attached sketch, and Peter would pay $18,000 at completion. Peter’s sister Ruth was not a party to the agreement and owned no interest in the camper. At Peter’s insistence, the writing said that neither party would be bound unless Timothy approved Mary’s sketch. After Timothy rejected the sketch, Peter nevertheless told Mary to go ahead with the mosaic. Mary reluctantly began and completed 45% of the work. Peter then repudiated any duty to pay the contract price or any part of it.\n\nIf Mary now sues Peter for damages for breach of contract, which concept best supports Mary’s claim?",
+ "call": "If Mary now sues Peter for damages for breach of contract, which concept best supports Mary's claim?",
  "choices": {
-  "A": "Substantial performance.",
-  "B": "Promissory estoppel.",
-  "C": "Irrevocable waiver of condition.",
-  "D": "Unjust enrichment."
+  "A": "{'text': 'Promissory estoppel.', 'why_wrong_or_correct': 'Attractive because Mary relied; not responsive because the call and signed writing point to a breach-of-contract waiver concept.'}",
+  "B": "{'text': 'Irrevocable waiver of condition.', 'why_wrong_or_correct': \"Correct. Gold Key: Peter waived the approval condition by ordering performance after rejection, and Mary's 45% performance made the waiver irrevocable.\"}",
+  "C": "{'text': 'Unjust enrichment.', 'why_wrong_or_correct': 'Attractive because Peter received a benefit; not responsive because unjust enrichment is a backup recovery lane, not the best support for this breach-of-contract claim.'}",
+  "D": "{'text': 'Substantial performance.', 'why_wrong_or_correct': 'Attractive because Mary partly performed; not responsive because the issue is waiver of a failed express approval condition, not substantial completion.'}"
  },
- "key": "C",
+ "key": "B",
  "dominantTrap": null,
- "rightExplanation": "C is correct. Gold Key: A party may waive an express condition that exists for her own benefit, even after the condition has failed; once the other side materially relies on the waiver — here, by performing 40% of the work — the waiver cannot be retracted. The approval condition was inserted at Martha's insistence and protected her. When Ruth expressly disapproved, the condition failed; when Martha then ordered Barnabas to proceed, she waived it. Barnabas's 40% performance is the reliance that locks the waiver in, so Martha's duty to pay is enforceable and her repudiation is a breach.\n\nSilver Key: The call asks which concept supports damages for breach of contract. Cut every choice naming an off-contract backup theory — the winning concept must live inside the contract and explain why the failed condition no longer matters. Only C does both.",
- "wrongExplanations": {
-  "A": "This choice reaches for the most familiar performance doctrine, and Barnabas did perform real work under a real design. It misses that the stem caps performance at 40% complete — \"substantial performance\" overclaims against that number on its face. Gold Key: substantial performance softens only constructive conditions; the approval term here is an express condition, which demands strict compliance unless waived or excused — so the doctrine never even reaches this stem.",
-  "B": "This choice hears \"ordered Barnabas to proceed and he reluctantly did so\" as reliance on a promise, which is the promissory-estoppel fact pattern. It misses that a signed, bargained-for contract already exists — estoppel is the substitute theory for when there is no enforceable contract, and Barnabas can sue on the actual contract. Gold Key: promissory estoppel and unjust enrichment are no-contract backup theories; when a valid contract covers the dispute, sue on the contract.",
-  "D": "This choice sees Martha keeping 40% of a landscaping job without paying and reaches for the fairness theory that fits that picture. It misses that the call asks which concept supports a claim for damages for breach of contract — unjust enrichment is the off-contract restitution backup, not a breach concept. Silver Key: when the call locks \"breach of contract,\" cut the off-contract backup theories first; the fairness pull of D is exactly the engineered trap."
- },
+ "rightExplanation": "B is correct. Peter’s duty to pay was tied to Timothy’s approval, but Peter chose to go forward after Timothy rejected the sketch. That conduct waived the approval condition. Mary then materially relied on that waiver by completing 45% of the mosaic. Gold Key: a protected party who orders performance after an express condition fails has waived the condition, and after material reliance the waiver cannot be revoked. Silver Key: lock the call before the labels: this is a breach-of-contract claim on a signed writing, so the contract-lane concept beats backup recovery labels.",
+ "wrongExplanations": {},
  "c3": [
   {
-   "label": "CUT",
-   "text": "- A is cut on a visible overclaim: the answer's own word \"substantial\" collides with the stem's stated \"40% complete.\" A student needs no doctrine to see that 40% is not substantially everything. (The deeper express-vs-constructive point stays in lawyer confirmation.)\n- B and D are cut at the call with the backup-theories anchor: the call demands a concept supporting damages for breach of contract; promissory estoppel and unjust enrichment are taught as the no-contract backup theories, and the stem hands the student a signed, detailed, bargained-for contract."
+   "label": "CUT A — Promissory estoppel",
+   "text": "The call asks for a concept supporting a breach-of-contract claim. A signed writing is already on the page. Promissory estoppel is a neighboring reliance concept, but it is not the best lane when the contract lane is open."
+  },
+  {
+   "label": "CUT C — Unjust enrichment",
+   "text": "The choice answers the fairness question: “Should Peter keep the benefit without paying?” The call is narrower: “What contract concept supports Mary’s breach claim?” That makes C not responsive."
+  },
+  {
+   "label": "CUT D — Substantial performance",
+   "text": "The choice points to the amount of work completed. The stem points to a failed approval condition followed by an order to proceed. The better concept is waiver of the condition, not substantial completion."
+  },
+  {
+   "label": "Residual",
+   "text": "B remains. It matches the stem’s three-part trigger: failed condition, order to proceed, reliance."
   },
   {
    "label": "CLASH",
-   "text": "If A is kept alive, the surviving pair A vs. C clashes on one axis: which doctrine answers the actual obstacle in this stem — incomplete performance, or a failed express condition? The splitting fact is Ruth's express disapproval followed by Martha's order to proceed: the obstacle is the condition, and only C speaks to it."
+   "text": "Not needed. The CUT leaves one residual."
   },
   {
    "label": "CALL",
-   "text": "The Gold Key locks it: a benefited party may waive an express condition even after it fails, and reliance by part performance makes the waiver irrevocable. Residual answer: C."
+   "text": "Anchor-assisted call only: apply the Gold Key for waiver of condition after reliance."
   }
  ],
- "studentScript": "The call says breach of contract. B and D are no-contract backup theories — cut. A says substantial, but the stem says 40% — cut. The real obstacle is the disapproved design, and Martha ordered the work forward anyway: she waived the condition, and Barnabas's 40% reliance makes it stick. Pick C.",
+ "studentScript": "Signed writing. Approval failed. Peter said proceed. Mary relied. Backup labels are wrong lane. Pick irrevocable waiver of condition.",
  "recoveryPaths": [],
  "choiceSignals": {
   "A": {
-   "signal": "The choice's own word 'substantial' collides with the stem's stated '40% complete' — a visible answer-text-vs-stem-fact mismatch.",
-   "lawyer": "Substantial performance satisfies only constructive conditions of exchange despite immaterial deviations (Jacob & Youngs v. Kent; Restatement (Second) § 237 cmt. d); it does not excuse non-occurrence of an express condition, and 40% would not be substantial regardless.",
+   "signal": "The call says breach of contract and the stem gives a detailed writing.",
+   "lawyer": "Promissory estoppel is not the best theory where an actual contract claim is available and the rule issue is waiver of condition.",
    "mold": "bait_doctrine"
   },
   "B": {
-   "signal": "The stem hands the student a signed, detailed, bargained contract; with the backup-theories anchor, a substitute-for-contract theory cannot be the BEST concept.",
-   "lawyer": "Promissory estoppel (Restatement (Second) § 90) substitutes for consideration where no enforceable bargain exists; consideration is undisputed here, so suing on the actual contract is the direct and stronger theory.",
-   "mold": "misfit"
-  },
-  "C": {
-   "signal": "Only this concept speaks to the stem's actual obstacle — the disapproved design condition — and explains why the duty to pay still binds.",
-   "lawyer": "Martha waived the approval condition for her benefit by ordering performance after its non-occurrence; under Restatement (Second) § 84(2) the waiver became irrevocable when Barnabas materially relied by performing to 40%.",
+   "signal": "The answer names the condition event that the stem keeps repeating.",
+   "lawyer": "Restatement (Second) of Contracts §§ 84 and 246 support waiver/excuse of condition after conduct and reliance.",
    "mold": null
   },
+  "C": {
+   "signal": "The answer tracks benefit received, not the contract concept assigned by the call.",
+   "lawyer": "Unjust enrichment is not the best support for a breach claim when a valid contract supplies the duty.",
+   "mold": "bait_doctrine"
+  },
   "D": {
-   "signal": "The call locks 'damages for breach of contract'; with the backup-theories anchor, a restitution theory answers a different claim than the one the call names.",
-   "lawyer": "Unjust enrichment is off-contract restitution; a valid enforceable contract displaces it as to matters the contract governs (Restatement (Third) of Restitution § 2(2)), and it does not support breach-of-contract damages.",
-   "mold": "misfit"
+   "signal": "The stem's decisive facts are condition failure and order to proceed, not completion level.",
+   "lawyer": "Substantial performance is a constructive-condition performance doctrine; this item turns on waiver of an express condition.",
+   "mold": "bait_doctrine"
   }
  },
  "goldKeys": [
   {
-   "id": "GK-CONTRACTS-WAIVER-IRREVOCABLE-01",
-   "statement": "A party may waive an express condition that exists for her benefit, even after it fails; once the other side materially relies on the waiver — as by performing — the waiver cannot be retracted.",
-   "trigger": "a party orders performance forward after a condition fails, then repudiates",
-   "unlocks": "C is the concept that keeps the contract claim alive despite the failed approval condition.",
-   "authority": "Restatement (Second) of Contracts § 84"
-  },
-  {
-   "id": "GK-CONTRACTS-BACKUP-THEORIES-01",
-   "statement": "Promissory estoppel and unjust enrichment are backup theories for when no enforceable contract exists; when a valid contract covers the dispute, sue on the contract.",
-   "trigger": "a 'best theory/concept' call where the stem contains a signed bargained contract",
-   "unlocks": "B and D traps",
-   "authority": "Restatement (Second) of Contracts § 90; Restatement (Third) of Restitution and Unjust Enrichment § 2(2)"
-  },
-  {
-   "id": "GK-CONTRACTS-SUBSTANTIAL-EXPRESS-01",
-   "statement": "Substantial performance softens only constructive conditions; an express condition demands strict compliance unless waived or excused.",
-   "trigger": "an express written condition fails and a completion doctrine appears in the choices",
-   "unlocks": "A trap (and confirms why the right answer must be a waiver/excuse concept)",
-   "authority": "Jacob & Youngs v. Kent, 230 N.Y. 239 (1921); Restatement (Second) of Contracts § 237 cmt. d"
+   "id": "GK-CONTRACTS-WAIVER-CONDITION-01",
+   "statement": "A party protected by an express condition can waive that condition by ordering performance after the condition fails; after the other party materially relies, the waiver cannot be revoked.",
+   "trigger": "Approval condition fails; protected party says proceed; performing party completes a meaningful part of the work.",
+   "unlocks": "The condition-failed-but-proceed-then-repudiate trap.",
+   "authority": "Restatement (Second) of Contracts §§ 84, 246; Clark v. West, 193 N.Y. 349, 86 N.E. 1 (1908)."
   }
  ],
  "silverKeys": [
   {
-   "id": "SK-CONTRACTS-WAIVER-CALL-FOCUS-01",
-   "statement": "When the call asks which concept supports damages for breach of contract, sort the four choices into inside-the-contract concepts and off-contract backups, and cut the backups first.",
-   "trigger": "a 'best concept/theory' call that names breach of contract",
-   "unlocks": "the estoppel and unjust-enrichment fairness pulls (B and D)",
-   "authority": null
-  },
-  {
-   "id": "SK-CONTRACTS-WAIVER-QUANTITY-01",
-   "statement": "Check every quantity word in the choices (substantial, complete, full) against any percentage or fraction the stem states; a stated 40% kills a 'substantial performance' choice on its face.",
-   "trigger": "a stem that states a numeric completion level",
-   "unlocks": "the A vs C tension without doctrine",
+   "id": "SK-CONTRACTS-WAIVER-CONDITION-01",
+   "statement": "Lock the call before the labels: the question asks for the concept supporting a breach-of-contract claim, so backup recovery labels move behind the contract-lane answer unless the contract lane is blocked.",
+   "trigger": "A signed writing plus a call asking for damages for breach of contract.",
+   "unlocks": "Promissory-estoppel and unjust-enrichment bait when a signed contract is on the page.",
    "authority": null
   }
  ],
  "remediation": {
-  "title": "Failed condition? Look for the waiver",
-  "signal": "An express condition fails, but the protected party pushes the deal forward anyway and later refuses to pay.",
-  "studentMove": "Cut off-contract backup theories at the call, check quantity words against stem numbers, then ask which concept clears the failed condition.",
-  "tinyRule": "Ordering performance after a condition fails waives the condition; part performance in reliance makes the waiver irrevocable.",
-  "trap": "Picking unjust enrichment because keeping 40% of a job unpaid feels like the unfairness being tested."
+  "title": "Contract lane before backup remedy lane",
+  "signal": "The call says breach of contract and the stem gives a signed writing.",
+  "studentMove": "Cut promissory estoppel and unjust enrichment unless the contract lane is blocked.",
+  "tinyRule": "Use waiver when the protected party gives up a failed condition and the other side relies.",
+  "trap": "Choosing the fairest-sounding payment theory instead of the contract concept."
  }
 }

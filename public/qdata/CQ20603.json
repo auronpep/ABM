@@ -1,0 +1,96 @@
+{
+ "id": "CQ20603",
+ "title": "Road To Emmaus Escape Room",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Negligence",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q# 20603 is a Torts / Negligence rescuer-doctrine item. The supplied row gives the original stem, call, answer choices, official key, official explanation, wrong-answer explanations, and additional rescue-doctrine note.\n\nFinal variation:\n\nDuring a private, for-profit Bible-themed escape-room contest called “The Road to Emmaus,” Daniel, although acting with reasonable care, crawled into a narrow prop tunnel as part of the puzzle and became wedged, unconscious, and critically injured in a compartment that was difficult to reach. Ruth, an experienced stagehand who was attending the event, was seriously injured while trying to free Daniel. Ruth’s attempt failed, and Daniel died before he could be reached. Ruth brought an action against Daniel’s estate for compensation for her injuries. In this jurisdiction, traditional common-law rules relating to contributory negligence and assumption of risk remain in effect.\n\nIs Ruth likely to prevail against Daniel’s estate?",
+ "call": "Is Ruth likely to prevail against Daniel's estate?",
+ "choices": {
+  "A": "Yes, because the law should encourage rescue of helpless people.",
+  "B": "No, because Daniel's peril did not arise from his own failure to exercise reasonable care.",
+  "C": "Yes, because Ruth's rescue attempt was reasonable.",
+  "D": "No, because Ruth's attempt failed and therefore did not benefit Daniel."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Daniel is the person Ruth sued. The answer must explain why Daniel’s estate is or is not responsible for Ruth’s injury. The stem says Daniel was acting with reasonable care. That fact blocks the rescue-doctrine route against Daniel’s estate.\n\nGold Key: Rescue doctrine needs a negligent peril-maker. A rescuer’s injury is charged to the person whose negligence created the peril, not merely to the person who needed help.\n\nSilver Key: Lock the target actor. When the rescuer sues the imperiled person’s estate, ask what the imperiled person did wrong. Do not start with how noble, reasonable, or unsuccessful the rescue was.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Moral policy language. It says what law “should” encourage, not what Daniel did wrong."
+  },
+  {
+   "label": "CUT C",
+   "text": "True-sounding rescuer fact. It answers whether Ruth acted reasonably, not whether Daniel’s estate is liable."
+  },
+  {
+   "label": "CUT D",
+   "text": "True-sounding failed-rescue fact. It answers benefit/success, not negligent peril."
+  },
+  {
+   "label": "Residual B",
+   "text": "Only B uses the defendant-side trigger fact: Daniel’s peril did not arise from his own failure to exercise reasonable care."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the Gold Key confirms the residual."
+  }
+ ],
+ "studentScript": "I am suing Daniel's estate, so I need Daniel's fault. The stem says Daniel acted with reasonable care. Cut policy, rescuer reasonableness, and failed-benefit answers. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice says what the law should encourage, but it never states what Daniel did wrong.",
+   "lawyer": "Rescue policy does not create liability against a non-negligent imperiled person.",
+   "mold": "colloquialism"
+  },
+  "B": {
+   "signal": "This choice locks onto the defendant-side fact: Daniel did not fail to exercise reasonable care.",
+   "lawyer": "The rescue doctrine attaches to negligent creation of peril; Daniel's reasonable care defeats liability.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The call is against Daniel's estate; this choice talks only about Ruth's rescue attempt.",
+   "lawyer": "A non-reckless or reasonable rescue is not enough unless Daniel negligently created the peril.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The answer focuses on whether Daniel was saved or benefited, but the call asks whether Ruth can recover for her own injury.",
+   "lawyer": "A failed rescue would not defeat liability if Daniel had negligently created the peril.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-RESCUE-NEGLIGENT-PERIL-01",
+   "statement": "Rescue doctrine needs a negligent peril-maker. A rescuer's injury is charged to the person whose negligence created the peril, not merely to the person who needed help.",
+   "trigger": "rescuer sues the imperiled person's estate",
+   "unlocks": "reasonable-rescue and policy traps",
+   "authority": "Wagner v. International Railway, 232 N.Y. 176, 133 N.E. 437 (N.Y. 1921); Cornell Wex rescue doctrine"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-TARGET-ACTOR-01",
+   "statement": "Lock the target actor before judging the rescue. If the rescuer sues the imperiled person's estate, ask what that imperiled person did wrong.",
+   "trigger": "choices discuss the rescuer's reasonableness, public policy, or failed benefit",
+   "unlocks": "rescuer-focused distractors",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Rescue Doctrine: Actor-Fault Gate",
+  "signal": "Rescuer is hurt and sues the person rescued or that person's estate.",
+  "studentMove": "Target the defendant's negligence before praising the rescue.",
+  "tinyRule": "No negligent peril-maker, no rescuer recovery from that defendant.",
+  "trap": "Noble rescue facts feel dispositive."
+ }
+}

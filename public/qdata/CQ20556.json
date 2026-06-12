@@ -1,0 +1,88 @@
+{
+ "id": "CQ20556",
+ "title": "Mustard Seed Puppet Caravan",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Prospective inability to perform; reliance before cure",
+ "difficulty": "hard",
+ "tension": null,
+ "stem": "Martha owns and operates Mustard Seed Puppet Caravan, a private for-profit company that tours Bible-story puppet shows for families. The caravan hires only one full-time performer-driver for each tour season because that person travels with the caravan, sleeps in its bunk compartment, receives meals, drives between towns, and maintains the puppets and sound equipment.\n\nOn September 3, Stephen entered into a valid written contract with Martha. Under the contract, Stephen was to begin traveling with the caravan on January 10 and continue until July 10. Martha was to pay Stephen $18,500 at the end of the season, and Stephen was to receive meals and bunk space during the tour.\n\nOn September 18, Stephen signed a three-year contract to join an overseas gospel recording tour. That tour was scheduled to begin on December 20. A notice of Stephen’s new tour contract appeared in the “Praise Notes” column of a local arts newsletter and was read by Martha’s managers. Martha immediately began looking for another performer-driver. On December 5, Martha entered into a valid written contract with Barnabas on terms identical to Stephen’s contract.\n\nOn December 12, Stephen failed the overseas tour’s health-clearance requirement and was released from that contract. On January 10, Stephen arrived at Martha’s garage ready to travel with the caravan, but Martha told him that his services were not needed.\n\nIf Stephen asserts a claim against Martha for damages resulting from breach of contract, the court should find for whom?",
+ "call": "If Stephen asserts a claim against Martha for damages resulting from breach of contract, the court should find for whom?",
+ "choices": {
+  "A": "Stephen, since he never personally notified Martha that he would not report for the caravan job.",
+  "B": "Martha, since Stephen's contract with the overseas tour was an anticipatory repudiation of his contract with Martha.",
+  "C": "Martha, since Martha hired Barnabas in reliance on the reasonable belief that Stephen would be unable to perform as agreed.",
+  "D": "Stephen, since he was ready, willing, and able to perform as agreed on January 10."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Martha reasonably treated Stephen’s overseas-tour contract as creating a prospective inability to perform the puppet-caravan contract. The fact that matters is not Stephen’s later readiness on January 10. The fact that matters is that Martha changed position first by hiring Barnabas on identical terms while Stephen still appeared unavailable.\n\nGold Key: A future-performance problem is locked when one side reasonably relies before the apparent inability disappears. Later readiness does not undo a completed, reasonable replacement step.\n\nSilver Key: When one defendant answer gives the reliance/timing fact and another gives only a legal label, keep the fact-loaded answer. The answer that uses the reliance fact is doing the work.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "True-looking, but not responsive. It answers “did Stephen personally warn Martha?” The call asks whether Martha reasonably relied on apparent inability."
+  },
+  {
+   "label": "CUT D",
+   "text": "True-looking, but wrong timing. It answers “was Stephen ready on January 10?” The call turns on what Martha reasonably did before December 12."
+  },
+  {
+   "label": "CLASH B vs C",
+   "text": "Both are defendant answers. Axis: bare label vs reliance fact. The splitting fact is Martha’s December 5 replacement contract, which came before Stephen’s December 12 release. C wins."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual call needed after the Gold Key and Silver Key."
+  }
+ ],
+ "studentScript": "Find the date Martha relied. Barnabas was hired on December 5. Stephen was released on December 12. Reliance came first. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer points to who spoke, but the stem gives Martha's knowledge and reliance.",
+   "lawyer": "Direct personal notice is not the decisive element under the supplied prospective-inability/reliance rule.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This defendant answer gives a legal label but not the reliance-before-cure fact.",
+   "lawyer": "Modern terminology may overlap, but the tested ground is the reliance/nullification sequence; the official row treats bare anticipatory-repudiation framing as the distractor.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "It uses the fact that Martha hired Barnabas before Stephen's outside-tour obstacle disappeared.",
+   "lawyer": "The reliance-before-cure sequence supports discharge of Martha's duty under the tested rule.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer uses January 10; the trigger fact is December 5 before December 12.",
+   "lawyer": "Later readiness does not defeat the prior justified material change of position.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PROSPECTIVE-INABILITY-01",
+   "statement": "If a party's own conduct makes future performance reasonably appear impossible, the other side can be discharged when it materially changes position in reliance before the obstacle disappears.",
+   "trigger": "Outside commitment begins before contract performance; replacement hired before later release.",
+   "unlocks": "later-readiness and label-only traps",
+   "authority": "Restatement (Second) of Contracts §§ 250, 253, 256."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-RELIANCE-TIMING-01",
+   "statement": "In a future-performance clash, prefer the answer that states the reliance/timing fact over the answer that gives only a legal label.",
+   "trigger": "Two defendant answers remain; one says only 'anticipatory repudiation,' the other says reliance.",
+   "unlocks": "B versus C defendant pair",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Prospective inability: reliance before cure",
+  "signal": "Future performance appears impossible, then later becomes possible.",
+  "studentMove": "Ask whether the other party changed position before the cure.",
+  "tinyRule": "Reliance before cure locks the defendant-side discharge.",
+  "trap": "Later readiness feels decisive, but it is late."
+ }
+}

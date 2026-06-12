@@ -1,0 +1,76 @@
+{
+ "id": "CQ18784",
+ "title": "Fellowship Lot Used Car",
+ "subject": "Torts",
+ "topic": "Economic torts",
+ "subtopic": "Fraud",
+ "difficulty": "Core (carried from source row; not separately scored)",
+ "tension": null,
+ "stem": "After a Sunday service, Daniel, a longtime member of the congregation, told Ruth, a fellow churchgoer, that the 2012 Civic he was selling from the church parking lot \"has no mechanical problems and runs like new.\" The one-page bill of sale, in bold type directly above Ruth's signature line, stated \"SOLD AS-IS — NO WARRANTIES OF ANY KIND.\" Ruth signed the bill of sale without reading the printed terms and later sued Daniel for fraud, claiming she relied on his oral assurance.\n\nWhich of the following is Daniel's strongest defense?",
+ "call": "Which of the following is Daniel's strongest defense?",
+ "choices": {
+  "A": "Fraud never applies to private sales between acquaintances.",
+  "B": "Ruth wins because reliance is presumed whenever a seller speaks.",
+  "C": "Ruth may not have justifiably relied on a statement plainly contradicted by the obvious AS-IS term.",
+  "D": "Daniel's oral assurance was automatically incorporated into the bill of sale."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "Daniel's strongest defense is that Ruth may not have justifiably relied on his oral assurance, because that assurance was plainly contradicted by the obvious written AS-IS term Ruth signed. Fraud is a separate tort with its own elements: a false representation of a material fact, scienter, intent to induce reliance, and justifiable reliance by the plaintiff. Justifiable reliance is not satisfied when the alleged oral statement is so obviously contradicted by a written term, in bold capital letters above the signature line, that no reasonable buyer in Ruth's position would have relied on the oral statement alone. The AS-IS language is the kind of term a buyer is charged with reading. Daniel wins on the reliance element; the other elements of fraud need not be reached.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- A (\"fraud never applies to private sales between acquaintances\") is cut on NOT_TRUE. Fraud is an intentional tort and applies in any commercial context where the elements are met. The clause \"never applies\" is a tiered_absolute overclaim — the kind of universal-quantifier phrasing that loses to a single counterexample. Visible from the choice text itself: \"never.\" Cut on filter broken: NOT_TRUE. Dominant trap, but cut on overclaim structure.\n- D (\"oral assurance was automatically incorporated into the bill of sale\") is cut on NOT_RESPONSIVE. The stem asks for the tort defense to a fraud claim, not the contract-integration question. The choice answers a different question (did the oral statement become part of the contract?) and does not address the call (what is the strongest defense to fraud?). Visible from the call: the call is in tort; the choice is in contract. Cut on filter broken: NOT_RESPONSIVE.\n- B (\"Ruth wins because reliance is presumed whenever a seller speaks\") is cut on NOT_TRUE. Reliance is an affirmative element the plaintiff must prove, and \"presumed whenever a seller speaks\" is a tiered_absolute overclaim that has no doctrinal anchor. A reasonable-reliance inquiry is required in every fraud claim, and a clearly visible contradictory written term defeats the presumption at the threshold. Cut on filter broken: NOT_TRUE."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and A survive. Wait — actually A is already cut. So C and the wrong answers need to fight on the right axis. After A, B, and D are cut, C is the residual: Ruth may not have justifiably relied.\n\nActually, on the strict CUT-against-A axis: A is the dominant trap and the overclaim is visible (the word \"never\" is the giveaway). So A is cut. B is also cut on the same \"presumed\" overclaim. D is cut on NOT_RESPONSIVE. C is the residual; it is the true and responsive answer, and it matches the credited answer."
+  },
+  {
+   "label": "CALL",
+   "text": "C is the residual. It breaks neither filter: it is true (the reliance element of fraud can fail on these facts) and it is responsive (it answers the seller's strongest defense to a tort fraud claim). Pick C."
+  }
+ ],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'never' is the visible overclaim marker. Fraud applies in every commercial context where the elements are met; the acquaintance status is irrelevant.",
+   "lawyer": "Fraud (intentional misrepresentation) is a common-law intentional tort. Restatement (Second) of Torts § 525. The acquaintance-or-not status of the parties does not modify any of the five elements (false representation, scienter, intent, justifiable reliance, damages). The 'never applies' clause is false on its face.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The word 'presumed' is the visible overclaim marker. Reliance is an affirmative element the plaintiff must prove, and reasonable-reliance inquiry is required in every fraud claim.",
+   "lawyer": "Justifiable reliance is an essential element of fraud. Restatement (Second) of Torts §§ 525, 537A, 545. There is no presumption of reliance in a fraud claim; the plaintiff must affirmatively show her reliance was reasonable, and an obvious contradictory writing defeats that reasonableness as a matter of law under § 541.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "Breaks neither filter: the choice is true (the reliance element can fail on these facts) and responsive (it answers the strongest defense to a tort fraud claim).",
+   "lawyer": "Under Restatement (Second) of Torts §§ 525, 537A, 541, when a plaintiff's alleged reliance is on a representation plainly contradicted by a writing she signed (in bold type directly above her signature), a reasonable plaintiff could not have justifiably relied on the oral representation alone. Daniel's strongest defense is the failure of the justifiable-reliance element.",
+   "mold": "correct_answer"
+  },
+  "D": {
+   "signal": "The call is in tort (fraud defense); the choice is in contract (parol evidence / contract integration). The choice answers a different question than the one asked.",
+   "lawyer": "Whether an oral statement is incorporated into a written contract is a contract-law question under the parol evidence rule and merger/integration doctrine. It is not the doctrinal lane for evaluating the justifiable-reliance element of a tort fraud claim. The choice fails the True & Responsive axiom: it does not address the call.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-FRAUD-RELIANCE-01",
+   "statement": "A plaintiff cannot justifiably rely on an oral assurance that is plainly contradicted by a written term the plaintiff signed, where the writing is in obvious form (here, bold type above the signature line).",
+   "trigger": "When the stem has a signed writing that flatly contradicts an alleged oral representation, and the plaintiff sues in tort based on the oral representation, ask first whether the reliance element can survive the obviousness of the writing.",
+   "unlocks": "The dominant trap (broad-absolute overclaim 'fraud never applies') and the presumed-reliance overclaim; the contract-integration misframe; and the failure to spot the AS-IS term as the visible contradiction.",
+   "authority": "Restatement (Second) of Torts §§ 525, 537A, 541 (1977); Holcomb v. Hoffman, 695 N.W.2d 65 (Wis. 2005) (oral assurances contradicted by unambiguous integration clause are not justifiably relied upon)."
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "AS-IS / obvious writing kills justifiable reliance",
+  "signal": "Oral assurance + signed contradictory writing in obvious form (bold type, above signature)",
+  "studentMove": "Spot the visible writing. Cut all 'fraud applies' / 'reliance presumed' overclaim distractors. Lock the 'justifiable reliance defeated by obvious writing' answer.",
+  "tinyRule": "Justifiable reliance requires the reliance to be reasonable in light of plainly visible contradictory information the plaintiff signed.",
+  "trap": "The contract-integration misframe (parol evidence lane) and the broad-absolute 'fraud never applies' overclaim."
+ }
+}

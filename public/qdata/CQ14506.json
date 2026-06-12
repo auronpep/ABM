@@ -1,0 +1,95 @@
+{
+ "id": "CQ14506",
+ "title": "Lydia Rooftop Loft",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "Specific performance",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "Mary signed a written contract to sell Timothy a downtown parcel known as Psalm Loft, a three-story brick building with a rooftop garden and a narrow parking strip, for $742,000 in cash. The contract called for Mary to deliver the deed and possession, and for Timothy to pay the price, on March 4.\n\nOn March 4, Mary told Timothy that Lydia, who had rented one storage bay for a private choir-robe pop-up shop, was wrongfully refusing to leave until March 19. Mary assured Timothy that she would tender the deed and possession on March 19. On March 19, after Lydia left, Mary tendered both the deed and possession. Timothy refused to accept either and refused to pay the $742,000. Throughout March, Psalm Loft’s market value was $756,000, and its fair monthly rental value was $7,200.\n\nWill Mary probably succeed in an action against Timothy for specific performance?",
+ "call": "Will Mary probably succeed in an action against Timothy for specific performance?",
+ "choices": {
+  "A": "No, because Mary breached by failing to tender the deed and possession on March 4.",
+  "B": "No, because Mary has an adequate remedy at law for money damages.",
+  "C": "Yes, because the court will excuse Mary's late tender as temporary impossibility caused by Lydia's wrongful holdover.",
+  "D": "Yes, because time is ordinarily not of the essence in a land-sale contract."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The date mattered, but it was not made decisive. Mary’s 15-day delay is a breach, but the facts do not turn that delay into a total breach that lets Timothy walk away. Mary cured by tendering deed and possession on March 19. Timothy then refused to close.\n\nGold Key: In land-sale contracts, a closing date is ordinarily not a drop-dead condition unless the agreement or circumstances make time essential.\n\nSilver Key: In a 2-yes/2-no because-clause array, do not pick by outcome. Test the reason. Choice D gives the reason that answers the call: the missed date did not end Timothy’s duty to close.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C — right result, wrong frame",
+   "text": "C says yes, but it uses temporary impossibility. That is the neighboring doctrine. The answer changes the path. Cut as NOT_RESPONSIVE, bait_doctrine, wrong_frame."
+  },
+  {
+   "label": "CUT B — money-remedy myth",
+   "text": "B says no because money is adequate. That needs the land-specific Gold Key. Land is specific-performance territory. Cut as NOT_TRUE, flat_misstatement."
+  },
+  {
+   "label": "CLASH A vs D — missed date versus time-not-essential",
+   "text": "A says the missed date ends Mary’s case. D says the missed date does not end it because time is ordinarily not essential in a land sale. The splitting fact is the absence of time-essential language plus the later tender. D wins."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tie remains. D is the true-and-responsive residual."
+  }
+ ],
+ "studentScript": "Cut C as right result, wrong frame; cut B with the land-specific performance Gold Key; clash A against D on whether missing the date ends the deal; pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It proves a breach but not that the breach ends the whole deal.",
+   "lawyer": "A late tender can be a breach without discharging the buyer's remaining duty where time was not made essential.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This requires the land-specific performance Gold Key.",
+   "lawyer": "Land-sale contracts are traditionally suitable for specific performance; damages are not treated as categorically adequate.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "It answers through excuse doctrine instead of partial breach/time-not-essential.",
+   "lawyer": "The result is not based on temporary impossibility; the late tender is treated as only partial breach.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "It resolves the missed-date clash with the land-sale timing Gold Key.",
+   "lawyer": "Time was not made essential; Mary's late tender was not a total breach, and Timothy's refusal supports specific performance.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-LYDIA-ROOFTOP-01",
+   "statement": "A closing date in a land-sale contract is ordinarily not a drop-dead condition by itself; a short late tender is usually a partial breach unless the contract or circumstances make time essential.",
+   "trigger": "land sale, stated closing date, later tender, no facts making that date essential",
+   "unlocks": "missed-date-as-total-breach trap",
+   "authority": "Restatement (Second) of Contracts §242(c)."
+  },
+  {
+   "id": "GK-CONTRACTS-LYDIA-ROOFTOP-02",
+   "statement": "Land-sale contracts are the classic specific-performance setting; money damages are treated as inadequate, and either side may seek specific performance when the other refuses to close.",
+   "trigger": "specific performance requested on a contract to sell land",
+   "unlocks": "adequate-money-remedy trap",
+   "authority": "Restatement (Second) of Contracts §§357, 359, 360; Restatement of Contracts §360."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-LYDIA-ROOFTOP-01",
+   "statement": "In a 2-yes/2-no because-clause array, do not pick by outcome. Keep the result separate from the reason, then clash the missed-date answer against the time-not-essential answer.",
+   "trigger": "two choices say yes, two say no, and each turns on a different reason",
+   "unlocks": "right-result/wrong-reason yes trap plus missed-date/no-missed-date clash",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Land-sale late tender: date breach is not automatic walkaway",
+  "signal": null,
+  "studentMove": "Clash missed date against time-not-essential; then apply land-specific performance anchor.",
+  "tinyRule": null,
+  "trap": null
+ }
+}

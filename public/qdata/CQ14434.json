@@ -1,0 +1,88 @@
+{
+ "id": "CQ14434",
+ "title": "Crossed Handbells",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Mutual Assent",
+ "difficulty": null,
+ "tension": null,
+ "stem": "After a few rounds of bargaining, Daniel, who operated a shop selling premium handbell sets, knew that Hannah wanted a new set for her nephew’s hymn-themed wedding procession. On March 10, Daniel sent Hannah a signed, dated note saying, “If by Friday we land on the same handbell set and price, are we agreed?” Hannah wrote “Yes,” signed below it, and returned the note on March 12.\n\nOn March 14, Hannah mailed Daniel a signed letter offering to buy “one new five-octave handbell set, with all carrying cases and accessories, for $24,600 cash on delivery not later than April 15.” By coincidence, Daniel mailed Hannah a signed letter on March 14 offering to sell her “one new five-octave handbell set, with all carrying cases and accessories, for $24,600 cash on delivery not later than April 15.” The letters crossed in the mail and were received and read by both Hannah and Daniel on March 15.\n\nIn an action brought by Hannah, if Daniel denies that the parties had a binding contract on March 16, which argument most persuasively supports Hannah’s position?",
+ "call": "which argument most persuasively supports Hannah's position",
+ "choices": {
+  "A": "As to both formation and consideration, identical cross-offers are functionally equivalent to an offer followed by a responsive acceptance.",
+  "B": "Because Daniel was a merchant seller and Hannah was not a merchant buyer, Daniel is estopped to deny that their writings created a binding contract.",
+  "C": "A sale-of-goods contract may be made in any manner sufficient to show agreement, even if the exact moment of formation cannot be determined.",
+  "D": "A sale-of-goods contract does not require the acceptance to mirror the offer exactly."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is the best support for Hannah. The matching signed letters show the same goods, price, payment method, and delivery date within the short window Daniel’s earlier note created. Gold Key: Article 2 can find a sale-of-goods contract from writings that show agreement even when no single offer-and-acceptance moment can be pinned down. Silver Key: keep the uncertainty; do not force the facts into a cleaner sequence than the stem gives.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "The mirror-image answer points to a mismatch problem. The facts give matching terms. Filter broken: NOT_RESPONSIVE. Mold: bait_doctrine."
+  },
+  {
+   "label": "CUT B",
+   "text": "The merchant-status answer invents a shortcut from seller status to estoppel. It does not provide the formation ground. Filter broken: NOT_TRUE. Mold: fabricated_rule."
+  },
+  {
+   "label": "CLASH A vs C",
+   "text": "Both choices try to use the matching letters. The axis is: “Do we support formation by pretending the crossed writings are clean offer-plus-acceptance, or by preserving the uncertain formation moment?”"
+  },
+  {
+   "label": "CALL C",
+   "text": "Use the Gold Key. Article 2 allows agreement even though the moment is uncertain. C preserves that. A erases it."
+  }
+ ],
+ "studentScript": "Cut D because mirror-image doctrine solves mismatched terms. Cut B because merchant status does not itself make the deal. Between A and C, keep the uncertainty: C says agreement can exist even though the moment is unclear.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It erases the uncertainty by pretending there was a clean responsive acceptance.",
+   "lawyer": "Identical cross-offers are not themselves a responsive acceptance; the better Article 2 formation ground is agreement despite an uncertain moment.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "It jumps from status labels to estoppel without a formation bridge.",
+   "lawyer": "Merchant status alone does not estop denial of contract formation.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "It matches the stem's same-terms facts and preserves the uncertain moment.",
+   "lawyer": "UCC § 2-204 supports formation in any manner sufficient to show agreement even if the exact moment is undetermined.",
+   "mold": null
+  },
+  "D": {
+   "signal": "It solves a mismatch problem; the stem gives matching terms.",
+   "lawyer": "UCC non-mirror-image rules are not the best support when the writings contain identical terms.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-CROSSED-HANDBELLS-01",
+   "statement": "Article 2 can find a sale-of-goods contract from writings that show agreement even when no single offer-and-acceptance moment can be pinned down; do not relabel identical cross-offers as a responsive acceptance.",
+   "trigger": "Two signed writings with identical goods, price, and delivery terms cross after a prior note asking whether matching terms will make a deal.",
+   "unlocks": "The trap that treats matching crossed letters as legally identical to offer followed by acceptance.",
+   "authority": "UCC § 2-204; Restatement (Second) of Contracts §§ 22-23."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-CROSSED-HANDBELLS-01",
+   "statement": "When two choices both like the matching letters, pick the one that preserves the stem's uncertainty instead of pretending there was a clean offer-then-acceptance sequence.",
+   "trigger": "Matching signed letters plus a call asking for the best support for a contract despite no clean formation moment.",
+   "unlocks": "The A/C fight between crossed-letter formalism and flexible agreement formation.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Crossed writings: preserve the uncertainty",
+  "signal": "Two matching writings cross and the call asks whether a contract already exists.",
+  "studentMove": "Do not force a clean acceptance story; ask whether the answer preserves the uncertain formation moment.",
+  "tinyRule": "Article 2 can recognize agreement even when no exact formation moment is identified.",
+  "trap": "Treating identical cross-offers as an offer followed by acceptance."
+ }
+}

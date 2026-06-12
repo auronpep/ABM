@@ -1,0 +1,84 @@
+{
+ "id": "CQ20729",
+ "title": "Courtyard Stormwater",
+ "subject": "Real Property",
+ "topic": "Rights in Land",
+ "subtopic": "Takings / Landlord-Tenant",
+ "difficulty": "medium-hard anchor array",
+ "tension": null,
+ "stem": "Lydia leased an urban courtyard lot that she owned to Timothy for a seven-year term so Timothy could run evening Bible-verse calligraphy workshops there. In the third year of the term, the city condemned the entire courtyard lot by eminent domain for a public stormwater basin.\n\nWhich statement best describes Timothy’s rights?",
+ "call": "Which statement best describes Timothy's rights?",
+ "choices": {
+  "A": "Timothy is entitled to a share of the condemnation award based on the value of the unexpired term of the leasehold less the rent that would have become due during that term.",
+  "B": "Timothy may continue to use the courtyard for the balance of the term unless his leasehold interest was specifically named in the condemnation award.",
+  "C": "Timothy is freed of the obligation to pay rent for the balance of the term and is also entitled to a share of the condemnation award based on the value of the unexpired term of the leasehold less the rent that would have become due during that term.",
+  "D": "Timothy is freed of the obligation to pay rent for the balance of the term."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: when the government takes the entire leased parcel, the taking reaches the leasehold as well as the landlord’s interest. The tenant loses possession, so future rent stops, and the tenant also has a compensable leasehold interest measured by the value of the unexpired term minus the rent the tenant no longer has to pay.\n\nSilver Key: the answer array splits the rule into two single-consequence answers and one combined answer. Once both consequences are true, the combined answer is the complete response.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "The “unless named in the award” condition is the trap. Under the Gold Key, total condemnation reaches the leasehold; the tenant does not continue occupying merely because the leasehold was not separately named."
+  },
+  {
+   "label": "CLASH/CALL A vs D vs C",
+   "text": "A gives the award half. D gives the rent half. C gives both."
+  },
+  {
+   "label": "CALL C",
+   "text": "Apply the Silver Key: when the array gives one answer for each component and one answer combining both, test the two components. Both are true under the Gold Key, so the combined answer is the residual."
+  }
+ ],
+ "studentScript": "Whole leased lot taken. Gold Key says two consequences: no future rent and leasehold-value compensation. A and D are half answers; B invents continued occupancy. C is both.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This gives only one of the two rights in the array.",
+   "lawyer": "A tenant whose leasehold is taken can have a compensation claim, but this answer omits the rent-discharge consequence.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The answer invents a formal naming condition.",
+   "lawyer": "A total taking includes the leasehold; the tenant does not keep possession merely because the award fails to name the leasehold.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "This answer contains both true components.",
+   "lawyer": "The tenant is released from future rent and has a compensable leasehold interest measured by the value of the unexpired term minus rent no longer owed.",
+   "mold": null
+  },
+  "D": {
+   "signal": "This gives only one of the two rights in the array.",
+   "lawyer": "A total taking releases the tenant from future rent, but the answer omits the compensation consequence.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-WHOLE-TAKING-01",
+   "statement": "A total eminent-domain taking of leased land reaches the tenant's leasehold: future rent stops, and the tenant may claim the value of the leasehold interest taken.",
+   "trigger": "entire leased parcel taken by eminent domain during the lease term",
+   "unlocks": "continued-occupancy trap and one-component rent/award traps",
+   "authority": "U.S. Const. amend. V; United States v. General Motors Corp.; Farr v. Williams; City of Vista v. Fielder"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-COMPONENT-PACKAGE-01",
+   "statement": "When two choices each give one consequence and a third combines them, test each component. If both components are true, the combined choice is the complete answer.",
+   "trigger": "one answer says X, one says Y, one says X plus Y",
+   "unlocks": "rent-only and award-only half answers",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Whole taking of leased premises",
+  "signal": "Entire leased parcel is condemned during an unexpired term.",
+  "studentMove": "Ask for both consequences: rent and award.",
+  "tinyRule": "Whole taking = leasehold gone; future rent gone; leasehold value claim remains.",
+  "trap": "Picking only the rent half or only the award half."
+ }
+}

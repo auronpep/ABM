@@ -1,0 +1,95 @@
+{
+ "id": "CQ19607",
+ "title": "Cana Hills Bethany Flats",
+ "subject": "Constitutional Law",
+ "topic": "Equal Protection",
+ "subtopic": "Rational basis — non-fundamental right / education",
+ "difficulty": "medium-hard anchor",
+ "tension": null,
+ "stem": "The State of Galilee funds its public schools with a statewide foundation grant plus whatever each local district raises through local property taxes. In Cana Hills, a lakeside district with expensive homes and commercial property, the public schools spend about $22,400 per student each year. In Bethany Flats, an old cannery district with a small tax base, the public schools spend about $7,300 per student each year.\n\nMary, Peter, and Lydia, parents of children in Bethany Flats, bring an Equal Protection challenge. They argue that the funding plan denies their children an equal public education. The state responds that the plan preserves local control of schools and rationally connects local tax revenue to local school spending.\n\nUnder Equal Protection analysis, which standard of review applies, and how should the court likely rule?",
+ "call": "Under Equal Protection analysis, which standard of review applies, and how should the court likely rule?",
+ "choices": {
+  "A": "{'text': 'Strict scrutiny applies because the funding gap falls most heavily on low-income students, and low-income students are a suspect class.', 'why_wrong_or_correct': 'Attractive because the inequality feels suspect. Gold Key: local wealth / low-income status does not create a suspect-class trigger in this school-funding setting.'}",
+  "B": "{'text': 'Strict scrutiny applies because the disparity effectively denies students in the lower-tax-base district equal access to public education, which is a fundamental right.', 'why_wrong_or_correct': 'Attractive because education feels fundamental. Gold Key: education is not a federal fundamental right for this Equal Protection school-funding challenge.'}",
+  "C": "{'text': 'Intermediate scrutiny applies because the facially neutral funding plan systematically disadvantages lower-income districts that substantially overlap with racial-minority communities.', 'why_wrong_or_correct': 'Attractive because racial overlap sounds like a heightened-review trigger. Gold Key: disparate impact from a neutral formula does not by itself trigger heightened scrutiny without discriminatory purpose or classification.'}",
+  "D": "{'text': 'Rational basis review applies, and the plan likely survives because local control of public schools and tying local tax revenue to local school spending are conceivable legitimate government interests.', 'why_wrong_or_correct': 'Correct. Gold Key: Rodriguez places local-property-tax school-funding disparities in rational basis review; Silver Key: in a tier array, validate the trigger before choosing the tier.'}"
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Gold Key: School-funding disparities tied to local property-tax bases do not trigger strict scrutiny under federal Equal Protection merely because education is important or because the lower-funded district is poorer. Gold Key: Racially unequal effects from a facially neutral formula do not by themselves trigger heightened scrutiny without a discriminatory-purpose or classification trigger. Silver Key: In a scrutiny-tier answer array, do not start with the strongest-sounding tier; first ask what valid trigger the choice names. If no valid heightened-review trigger survives, the default tier is rational basis.\n\nThe plan likely survives because local control of public schools and the connection between local tax revenue and local spending are legitimate interests under rational basis review.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A names strict scrutiny but uses low-income status as the trigger. That is not a student-accessible hard cut until the Gold Key is applied. With the Gold Key, the trigger fails."
+  },
+  {
+   "label": "CUT B",
+   "text": "B names strict scrutiny but uses education as the fundamental-right trigger. That is also Gold-Key-dependent. With the Gold Key, the trigger fails."
+  },
+  {
+   "label": "CUT C",
+   "text": "C names heightened scrutiny from racial overlap / disparate impact. With the disparate-impact Gold Key, the trigger fails because the stem gives impact, not discriminatory purpose or a racial classification."
+  },
+  {
+   "label": "Residual D",
+   "text": "D uses the default tier and matches the state’s local-control rationale. No CLASH remains. No CALL is needed."
+  }
+ ],
+ "studentScript": "This is a tier-trigger array. Strict scrutiny needs a real fundamental-right or suspect-class trigger; intermediate scrutiny needs a real quasi-suspect trigger. The school-funding Gold Key cuts education, poverty, and disparate-impact triggers, so rational basis survives: D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Strict scrutiny requires a valid heightened-review trigger; this choice names poverty/low income as the trigger.",
+   "lawyer": "Rodriguez rejects wealth/poverty as a suspect-class trigger in this school-funding context.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "Strict scrutiny requires a valid fundamental-right trigger; this choice supplies education.",
+   "lawyer": "Rodriguez holds education is not a federal fundamental right for this Equal Protection school-funding challenge.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "The choice names effect and racial overlap, but the heightened-review trigger is not supplied.",
+   "lawyer": "Washington v. Davis requires discriminatory purpose for disparate-impact constitutional claims; impact alone is not enough.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "Default tier plus state rationale matches the call.",
+   "lawyer": "Rodriguez applies rational basis and accepts local control as a legitimate state interest.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONLAW-SCHOOL-FUNDING-01",
+   "statement": "Public education is not a federal fundamental right, and poverty/local district wealth is not a suspect class for school-funding disparities; rational basis applies.",
+   "trigger": "public-school funding gap caused by local property-tax bases",
+   "unlocks": "education-as-fundamental-right and poverty-as-suspect-class traps",
+   "authority": "San Antonio Independent School District v. Rodriguez, 411 U.S. 1 (1973)"
+  },
+  {
+   "id": "GK-CONLAW-DISPARATE-IMPACT-01",
+   "statement": "A facially neutral policy’s racial disparate impact does not by itself trigger heightened Equal Protection scrutiny; look for discriminatory purpose or a racial classification.",
+   "trigger": "neutral funding formula plus racial overlap language",
+   "unlocks": "racial-overlap / disparate-impact trap",
+   "authority": "Washington v. Davis, 426 U.S. 229 (1976)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONLAW-SCHOOL-FUNDING-01",
+   "statement": "In a scrutiny-tier array, read each heightened-review answer by its trigger, not by how morally serious the inequality feels.",
+   "trigger": "Strict / intermediate / rational-basis answer spread",
+   "unlocks": "3-vs-1 heightened-trigger array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Tier trigger before tier label",
+  "signal": "Answer names strict or intermediate scrutiny.",
+  "studentMove": "Ask what trigger the answer supplies.",
+  "tinyRule": "No valid trigger means default rational basis.",
+  "trap": "Picking the strongest-sounding tier because the facts feel unfair."
+ }
+}

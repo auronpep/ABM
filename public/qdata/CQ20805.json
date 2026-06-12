@@ -1,0 +1,96 @@
+{
+ "id": "CQ20805",
+ "title": "Psalm Lanterns Confirmation",
+ "subject": "Contracts",
+ "topic": "Statute of Frauds",
+ "subtopic": "D",
+ "difficulty": "Trap Repair",
+ "tension": null,
+ "stem": "Martha and Timothy are both merchants who wholesale supplies for Christian camp stores. At a trade fair, Timothy orally agrees to buy 180 brass lanterns with Psalm-themed labels from Martha for $18,000. Later that week, Martha mails Timothy a signed written confirmation of the deal. On the eighth day after receiving it, Timothy leaves Martha a voicemail: “I object to your confirmation.” Timothy sends no written objection and later refuses the lanterns. Which statement best states the result?",
+ "call": "Which statement best states the result?",
+ "choices": {
+  "A": "The confirmation fails because Timothy did not sign it.",
+  "B": "The confirmation fails unless Martha proves Timothy actually read every word of it before leaving the voicemail.",
+  "C": "Timothy’s voicemail does not prevent the merchant-confirmation rule from applying, because the objection must be written.",
+  "D": "Timothy’s voicemail prevents the confirmation from satisfying the Statute of Frauds because any objection within 10 days is enough."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: in a UCC merchant-confirmation problem, the receiving merchant must give a written notice of objection within 10 days after receiving the confirmation. A voicemail objection is not the required objection.\n\nSilver Key: do not let the “within 10 days” fact swallow the “written notice” requirement. Timing and form are separate boxes.\n\nHere, Timothy received a signed written confirmation from Martha and objected only by voicemail. Because Timothy sent no written objection, his oral objection does not stop the merchant-confirmation rule from applying.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Anchor-assisted false rule. The recipient’s missing signature does not defeat the merchant-confirmation rule."
+  },
+  {
+   "label": "CUT B",
+   "text": "Fabricated proof requirement. “Actually read every word” is too much and not the rule."
+  },
+  {
+   "label": "CUT D",
+   "text": "Dominant anchor trap. “Any objection within 10 days” overclaims; the objection must be written."
+  },
+  {
+   "label": "Residual",
+   "text": "C is true and responsive."
+  },
+  {
+   "label": "CLASH",
+   "text": "None needed."
+  },
+  {
+   "label": "CALL",
+   "text": "None needed after Gold Key anchor cut."
+  }
+ ],
+ "studentScript": "Two merchants. Signed confirmation. Voicemail objection inside 10 days, but no written objection. Gold Key: written objection required. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This asks for the recipient’s signature even though the Gold Key tells you the merchant-confirmation route can work without it.",
+   "lawyer": "UCC §2-201(2) can satisfy the writing requirement against the recipient merchant without that recipient’s signature when no written objection is sent within 10 days.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "The words 'actually read every word' add a proof demand the answer itself invents; the Gold Key supplies the real standard.",
+   "lawyer": "The statute asks whether the receiving merchant had reason to know the contents, not whether the sender proves actual word-by-word reading.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "This is the only choice that keeps timing and written form separate.",
+   "lawyer": "An oral voicemail objection does not satisfy the written-notice objection requirement under UCC §2-201(2).",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice notices 10 days but overclaims with 'any objection.' The Gold Key says the objection must be written.",
+   "lawyer": "UCC §2-201(2) requires written notice of objection within 10 days; oral objection is insufficient.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-MERCHANT-CONFIRMATION-01",
+   "statement": "Between merchants, a signed written confirmation sufficient against the sender can satisfy the UCC Statute of Frauds against the recipient if the recipient has reason to know its contents and does not give written notice of objection within 10 days. Oral objection is not enough.",
+   "trigger": "two merchants + oral goods deal + signed written confirmation + oral/no written objection",
+   "unlocks": "merchant-confirmation written-objection trap",
+   "authority": "UCC §2-201(2)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-TIMING-VS-FORM-01",
+   "statement": "When a choice says the objection was within 10 days, ask a second question: was it in the required form? Timing does not cure the wrong method of objection.",
+   "trigger": "oral objection inside a time window",
+   "unlocks": "timely oral objection versus written objection",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Merchant confirmation: oral objection trap",
+  "signal": "Two merchants, oral goods deal, signed confirmation, oral objection.",
+  "studentMove": "Check whether the recipient sent written notice of objection within 10 days.",
+  "tinyRule": "Written objection required; oral objection is not enough.",
+  "trap": "Treating any timely objection as enough."
+ }
+}

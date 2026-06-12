@@ -1,0 +1,88 @@
+{
+ "id": "CQ20627",
+ "title": "Ruth Hymn Poster Contract",
+ "subject": "Civil Procedure",
+ "topic": "Subject Matter Jurisdiction",
+ "subtopic": "Diversity - Time of Filing",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q# 20627, Civil Procedure, Subject Matter Jurisdiction, Diversity — Time of Filing. The supplied row states that both parties were Maine citizens when the complaint was filed, the defendant later moved before responding, and the correct answer is no diversity jurisdiction because citizenship is determined at filing.\n\nFinal Christian variation: Ruth’s Illuminated Hymn-Poster Contract\n\nDaniel was packing his private Scripture-verse printing booth for a Colorado craft fair when Ruth sued him in federal district court. The lawsuit, filed on April 4, was a state-law contract action seeking $144,000 for allegedly ruined illuminated hymn posters Ruth had commissioned for her private Easter pageant. When the complaint was filed, Ruth was domiciled in Arizona, and Daniel was also domiciled in Arizona. On April 25, before filing any answer, Daniel permanently moved to Colorado and changed his domicile.\n\nCall: Did Daniel’s Colorado move create diversity jurisdiction?",
+ "call": "Did Daniel’s Colorado move create diversity jurisdiction?",
+ "choices": {
+  "A": "No, because state-law contract claims can never be heard under diversity.",
+  "B": "Yes, because any change in citizenship before trial controls.",
+  "C": "No, because Ruth and Daniel were both Arizona citizens when the complaint was filed.",
+  "D": "Yes, because diversity is measured when Daniel first answers."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The answer locks the jurisdiction snapshot at the filing date. At that point, Ruth and Daniel were both Arizona citizens, so complete diversity was absent. Daniel’s later move to Colorado, even before his first answer, does not retroactively create diversity.\n\nGold Key: Diversity citizenship is measured when the complaint is filed. A later domicile change does not cure missing complete diversity.\n\nSilver Key: When a Civ Pro jurisdiction stem gives both a filing-day citizenship fact and a later move, freeze the snapshot at filing before reading answer choices that try to move the measurement point.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Contract claims can never be heard under diversity” is a visible never overclaim. Cut."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Any change before trial controls” is a visible any overclaim and timing trap. Cut with the Gold Key."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Measured when Daniel first answers” moves the snapshot from filing to response. Cut with the Gold Key."
+  },
+  {
+   "label": "CALL / residual",
+   "text": "C remains. It answers the call directly: no diversity because both parties were citizens of the same state at filing."
+  }
+ ],
+ "studentScript": "No. Freeze citizenship at filing. Ruth and Daniel were both Arizona citizens then, so Daniel’s later Colorado move does not create diversity.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'never' makes a category-wide claim.",
+   "lawyer": "State-law civil claims, including contract claims, may be heard in diversity if § 1332 requirements are met.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The word 'any' tries to make all pretrial changes control.",
+   "lawyer": "The time-of-filing rule defeats this. Later domicile changes do not create diversity missing at filing.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "This choice answers the exact call and uses the filing-day fact.",
+   "lawyer": "Correct under the time-of-filing rule.",
+   "mold": null
+  },
+  "D": {
+   "signal": "This choice moves the measurement point from filing to answer.",
+   "lawyer": "Citizenship is not measured at the first answer for ordinary diversity jurisdiction.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-DIVERSITY-FILING-01",
+   "statement": "For ordinary diversity jurisdiction, citizenship is measured when the complaint is filed. A later move does not create diversity that was missing at filing.",
+   "trigger": "A stem gives citizenship at filing and a later domicile change.",
+   "unlocks": "wrong timing traps that measure citizenship at answer, trial, or another later event",
+   "authority": "28 U.S.C. § 1332(a); Grupo Dataflux v. Atlas Global Group, L.P.; Mollan v. Torrance"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-DIVERSITY-SNAPSHOT-01",
+   "statement": "When a jurisdiction stem gives filing-day citizenship and later domicile facts, freeze the snapshot at filing before judging the later facts.",
+   "trigger": "same-state parties at filing plus a later move before answer or trial",
+   "unlocks": "later-move timing trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Diversity snapshot",
+  "signal": "Filing-day citizenship plus later move.",
+  "studentMove": "Freeze citizenship at filing before reading later procedural facts.",
+  "tinyRule": "Diversity citizenship is checked at filing.",
+  "trap": "response-date and before-trial timing choices"
+ }
+}

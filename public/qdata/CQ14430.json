@@ -1,0 +1,103 @@
+{
+ "id": "CQ14430",
+ "title": "Psalm Room Option",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Formation of Contracts",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "On September 3, Daniel and Timothy signed a writing in Daniel’s apartment above a Christian bookstore. In the writing, Daniel, in consideration of $75 to be paid by Timothy, offered Timothy the right to lease Daniel’s privately owned rooftop music studio, the “Psalm Room,” for 12 months at a rent of $3,600 if Timothy acted within 21 days. The writing further provided, “This offer will operate as an option only if and when the $75 option payment is actually received.”\n\nBy September 14, Daniel had received no payment or other communication from Timothy. Daniel then leased the Psalm Room to Naomi for the same 12-month period at a rent of $4,100. On September 15, Daniel received a letter from Timothy enclosing a cashier’s check for $75 payable to Daniel and stating, “I am hereby exercising my option to lease the Psalm Room and am prepared to sign the lease whenever you are ready.”\n\nWhich of the following, if proved, best supports Timothy’s suit against Daniel for breach of contract?",
+ "call": "Which of the following, if proved, best supports Timothy's suit against Daniel for breach of contract?",
+ "choices": {
+  "A": "When the September 3 writing was signed, Daniel said to Timothy, \"Don't worry about the $75; the recital of '$75 to be paid' makes this binding.\"",
+  "B": "Timothy did not know Daniel had leased the Psalm Room to Naomi when Daniel received Timothy's letter and check on September 15.",
+  "C": "Daniel and Timothy both regularly arrange paid retreats and studio leases for Christian events.",
+  "D": "On September 10, Timothy decided to lease the Psalm Room, and he applied for and obtained a commitment from a credit union for a $2,700 loan to help pay the rent."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B best supports Timothy’s suit. The $75 condition means Timothy did not yet have a binding option before September 15. But that only makes Daniel’s offer revocable; it does not prove that the offer had already been revoked. If Timothy had not learned of Daniel’s lease to Naomi before Daniel received Timothy’s payment-and-acceptance letter, Timothy can argue that he accepted the still-open offer within the stated time.\n\nGold Key: A failed option is not the same thing as a revoked offer; the offeror may have the power to revoke, but the offeree’s power of acceptance ends only when revocation is received or the offeree receives reliable information of an inconsistent act.\n\nSilver Key: Stay in the acceptance/no-revocation lane. Do not let the word “option” pull the call into the wrong lane if the best supporting fact is notice before acceptance.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "The answer tries to erase the payment condition with an oral reassurance. The condition is visible in the stem: option status begins only if the $75 is actually received. Cut as NOT_TRUE, flat_misstatement, anchor-assisted."
+  },
+  {
+   "label": "CUT C",
+   "text": "Party experience does not answer the call. The call asks for the fact that supports Timothy’s breach claim after Daniel dealt with Naomi. Cut as NOT_RESPONSIVE, misfit."
+  },
+  {
+   "label": "CUT D",
+   "text": "Financing preparation is not the deciding fact. It may show Timothy was interested, but it does not show acceptance before revocation. Cut as NOT_RESPONSIVE, wrong_element."
+  },
+  {
+   "label": "RESIDUAL B",
+   "text": "B supplies the missing link: Timothy lacked notice of the inconsistent lease before Daniel received the acceptance/payment letter. That is the fact that keeps the revocation trap from defeating acceptance."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two clean survivors remain after the CUT."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tiebreaker needed. The item is anchor-assisted because the decisive distinction is “revocable” versus “revoked.”"
+  }
+ ],
+ "studentScript": "No paid option yet, so Daniel could revoke. But could revoke is not did revoke. The question asks what fact helps Timothy. B gives the missing notice fact: Timothy did not know about Naomi before Daniel received acceptance. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer tries to make the recital do work that the stem's payment condition withholds.",
+   "lawyer": "The writing conditions option status on actual receipt of the $75. Under traditional option-consideration doctrine, unpaid consideration does not make the option binding; the case remains an ordinary revocable-offer problem unless acceptance occurs before effective revocation.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "This is the only choice that answers whether Timothy accepted before effective revocation.",
+   "lawyer": "If Timothy lacked notice or reliable information of Daniel's inconsistent lease to Naomi before Daniel received Timothy's acceptance/payment, the offer had not been effectively revoked before acceptance.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The parties' event-space experience does not answer acceptance before revocation.",
+   "lawyer": "Professional status would matter in a merchant firm-offer goods lane, but this is a common-law real-property lease formation question.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "Private financing preparation does not tell whether Daniel received acceptance before revocation.",
+   "lawyer": "Loan preparation is not acceptance and is not the reliance fact needed to make this unaccepted offer irrevocable.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PSALM-ROOM-01",
+   "statement": "A failed option is not the same as a revoked offer; an offeree may still accept a revocable offer before effective revocation.",
+   "trigger": "The option payment was not made, but the offeree later sends payment and acceptance within the stated time.",
+   "unlocks": "revocable-vs-revoked trap",
+   "authority": "Restatement (Second) of Contracts §§42-43; Berryman v. Kmoch, 221 Kan. 304, 559 P.2d 790 (1977)."
+  },
+  {
+   "id": "GK-CONTRACTS-PSALM-ROOM-02",
+   "statement": "When option status is expressly conditioned on actual payment, an unpaid recital does not make the option already binding.",
+   "trigger": "The answer says a recital makes the deal binding despite a payment-before-option condition.",
+   "unlocks": "unpaid-recital dominant trap",
+   "authority": "Berryman v. Kmoch, 221 Kan. 304, 559 P.2d 790 (1977)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PSALM-ROOM-01",
+   "statement": "Do not stop at 'no option.' Ask the next call question: was the revocable offer actually revoked before acceptance?",
+   "trigger": "The stem says the option payment was unpaid but the offeree later sends payment and acceptance.",
+   "unlocks": "option-status lane versus acceptance/no-revocation lane",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Revocable is not revoked",
+  "signal": "Unpaid option consideration plus later acceptance attempt",
+  "studentMove": "Separate option status from offer status.",
+  "tinyRule": "No option means the offer can be revoked; it does not mean the offer already ended.",
+  "trap": "Treating failed irrevocability as automatic revocation."
+ }
+}

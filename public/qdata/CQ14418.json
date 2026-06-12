@@ -1,0 +1,99 @@
+{
+ "id": "CQ14418",
+ "title": "Jericho Lamp Credit",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Formation of Contracts",
+ "difficulty": "35_percent_correct",
+ "tension": null,
+ "stem": "Paul, who runs a small shop making hand-carved Scripture stands in Oregon, wrote a signed note to Barnabas, a supplier of portable reading lamps and Bible-journaling kits in Savannah. The note said:\n\nLydia is opening a private Advent pop-up bookstall at a Christian artists’ fair near Savannah. If you let her have the goods on credit, I will make good any loss up to $18,000 if she defaults.\n/Signed/ Paul\n\nLydia showed the note to Barnabas. Barnabas then sold and delivered $14,400 worth of lamps and journaling kits to Lydia on credit and promptly sent Paul notice of the sale.\n\nWhich of the following is NOT an accurate statement concerning the arrangement between Paul and Barnabas?",
+ "call": "Which of the following is NOT an accurate statement concerning the arrangement between Paul and Barnabas?",
+ "choices": {
+  "A": "By providing the goods to Lydia on credit, Barnabas effectively accepted Paul's offer for a unilateral contract.",
+  "B": "Paul's promise is enforceable by Barnabas whether or not Barnabas gave Paul seasonable notice of the extension of credit to Lydia.",
+  "C": "It was important to the enforceability of Paul's promise to Barnabas that it be embodied in a signed writing.",
+  "D": "Although Paul received no consideration from Lydia, Paul's promise is enforceable by Barnabas."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the NOT accurate statement.\n\nSilver Key: On a NOT-accurate call, flip the normal task. Three choices may be accurate legal statements. The answer is the one inaccurate statement.\n\nGold Key: Performance can accept a unilateral offer, but notice can still matter when the offeror otherwise lacks an adequate way to learn that the performance occurred. Barnabas did give Paul prompt notice. So the promise is not enforceable “whether or not” notice was given. That phrase makes B too broad and makes it the target of the negative call.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "This is a NOT-accurate question. A, C, and D are accurate contract statements. B is the overbroad notice statement, so B is the answer.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It proves a real formation point but does not supply the inaccurate statement.",
+   "lawyer": "The credit extension was the invited performance accepting the unilateral offer.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The phrase 'whether or not notice' is an absolute notice claim; the stem includes prompt notice.",
+   "lawyer": "The statement is inaccurate because notice can be required when the offeror otherwise lacks an adequate means to learn of performance.",
+   "mold": null
+  },
+  "C": {
+   "signal": "It answers an affirmative enforceability issue, not the negative call.",
+   "lawyer": "A signed writing matters because this is a promise to answer for another's duty.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "It resolves a no-consideration concern but not the inaccurate-statement target.",
+   "lawyer": "Barnabas's requested performance supplied consideration even though Lydia gave Paul nothing.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-NOTICE-PERFORMANCE-01",
+   "statement": "When a unilateral offer is accepted by performance, notice is usually not needed unless the offeree has reason to know the offeror otherwise lacks an adequate way to learn of the performance promptly and reliably.",
+   "trigger": "A signed promise to cover another person's credit purchase, followed by the creditor extending credit and notifying the promisor.",
+   "unlocks": "The notice overclaim that says enforceability is unaffected whether or not notice was given.",
+   "authority": "Restatement (Second) of Contracts § 54."
+  },
+  {
+   "id": "GK-CONTRACTS-UNILATERAL-CREDIT-01",
+   "statement": "A promise to pay if the creditor extends credit invites acceptance by the creditor's performance, not by a return promise.",
+   "trigger": "The promisor says, in substance, 'If you let this person have goods on credit, I will cover the loss if they default.'",
+   "unlocks": "The dominant trap that treats the credit extension as suspicious even though it is the invited performance.",
+   "authority": "Restatement (Second) of Contracts § 54."
+  },
+  {
+   "id": "GK-CONTRACTS-SURETYSHIP-WRITING-01",
+   "statement": "A promise to answer for another person's debt falls within the suretyship branch of the Statute of Frauds, so a signed writing matters.",
+   "trigger": "A promisor agrees to make good the loss if a buyer defaults on credit extended by a seller.",
+   "unlocks": "The signed-writing distractor that is accurate and therefore not the target of a NOT-accurate call.",
+   "authority": "Restatement (Second) of Contracts §§ 110, 112."
+  },
+  {
+   "id": "GK-CONTRACTS-CONSIDERATION-PERFORMANCE-01",
+   "statement": "Consideration can be the creditor's requested performance even when the promisor receives no consideration from the third-party buyer.",
+   "trigger": "The creditor extends credit to the buyer because the guarantor asked the creditor to do so.",
+   "unlocks": "The no-consideration distractor that is accurate because the creditor's credit extension supplies the exchange.",
+   "authority": "Restatement (Second) of Contracts § 71."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-NEGATIVE-STEM-01",
+   "statement": "On a NOT-accurate call, invert the normal residual: three accurate statements are wrong answers, and the credited answer is the inaccurate statement.",
+   "trigger": "The call asks which statement is NOT accurate.",
+   "unlocks": "The negative-stem inversion that makes accurate doctrine choices traps.",
+   "authority": null
+  },
+  {
+   "id": "SK-CONTRACTS-ANSWER-ARRAY-01",
+   "statement": "Read this array as 3 accurate anchors versus 1 notice overclaim; do not pick the best-sounding accurate rule.",
+   "trigger": "Three choices state familiar accurate contract doctrines and one says notice never matters.",
+   "unlocks": "The 3-vs-1 negative-stem answer geometry.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "NOT accurate + performance notice",
+  "signal": "A negative call asks for the inaccurate statement in a unilateral credit-guaranty setup.",
+  "studentMove": "Invert the call first, then test the notice phrase against the performance-acceptance anchor.",
+  "tinyRule": "Performance can accept a unilateral offer, but notice can still matter when the offeror otherwise lacks a reliable way to learn that performance occurred.",
+  "trap": "Picking an accurate contract rule because it sounds familiar."
+ }
+}

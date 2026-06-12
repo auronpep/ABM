@@ -1,0 +1,88 @@
+{
+ "id": "CQ20496",
+ "title": "Loaves Prop Cart",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Damages / Collateral Source Rule",
+ "difficulty": "medium_hard",
+ "tension": null,
+ "stem": "At Esther’s backyard “Loaves and Fishes” game night, Lydia was standing beside a table of Bible-verse prize cards when Daniel negligently lost control of a wheeled prop cart stacked with foam bread baskets. The cart struck Lydia and caused injuries that required emergency treatment. Lydia’s medical bills were substantial, but they were paid in full under a health-insurance policy that Lydia had purchased before the game night.\n\nLydia sued Daniel for negligence. The jury found for Lydia and awarded her $64,000. Before judgment was entered, Daniel’s lawyer made a proper motion asking the court to reduce the award by the amount Lydia had already received from her health insurer.\n\nThe motion to reduce Lydia’s damage award should be:",
+ "call": "The motion to reduce Lydia's damage award should be:",
+ "choices": {
+  "A": "Denied, because the payment from Lydia's insurer was not made after any court decided that Daniel was liable.",
+  "B": "Granted, because Daniel is entitled to partial indemnity.",
+  "C": "Denied, because Lydia's insurer was not acting for anyone who was liable to Lydia for negligence.",
+  "D": "Granted, because Lydia should not be allowed to recover twice for the same medical expenses."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The motion should be denied. The answer locks onto the source of the payment: Lydia’s own health insurer, not Daniel, not someone acting for Daniel, and not another person liable to Lydia for the same injury.\n\nGold Key: A negligent defendant does not get a credit for payments the injured plaintiff received from the plaintiff’s own insurance or another source independent of the defendant. The defendant gets credit only for payments made by the defendant, someone acting for the defendant, or another person subject to the same tort liability.\n\nSilver Key: Do not start with “double recovery.” Start with “who paid, and whose liability was the payer connected to?” That source check points to C.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Denial is the right result, but the stated reason is the wrong element. Judicial determination is not the source-identity switch."
+  },
+  {
+   "label": "CUT B",
+   "text": "Partial indemnity is a wrong-frame doctrine. It belongs to allocation among tortfeasors, not a setoff from the plaintiff’s own insurer."
+  },
+  {
+   "label": "CUT D",
+   "text": "“No double recovery” is the common-sense fairness trap. The Gold Key overrides it: collateral payments from plaintiff-side insurance do not reduce the tortfeasor’s judgment."
+  },
+  {
+   "label": "CALL / Residual",
+   "text": "C is the only answer that names the operative source relation: the insurer was not acting for anyone liable to Lydia."
+  }
+ ],
+ "studentScript": "Motion to reduce. Ask who paid. Lydia's own insurer paid; not Daniel and not someone liable with Daniel. Cut double recovery. Cut indemnity. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about court determination; the stem's payment problem is source identity.",
+   "lawyer": "Judicial determination is not required for a credit or setoff analysis; source relation controls.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Partial indemnity belongs to allocation among liable actors, not plaintiff-side insurance.",
+   "lawyer": "Indemnity/contribution concepts require a party responsible for common tort liability; Lydia's insurer is not that actor.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This choice names the decisive source relation: the payer was not acting for anyone liable to Lydia.",
+   "lawyer": "Correct under the collateral source rule.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer substitutes a fairness slogan for the source-identity rule.",
+   "lawyer": "The collateral source rule allows the plaintiff to keep the benefit of plaintiff-side insurance even if it overlaps with damages.",
+   "mold": "colloquialism"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-COLLATERAL-SOURCE-01",
+   "statement": "Plaintiff-side insurance is collateral. A negligence defendant gets no credit for benefits paid by the plaintiff's own insurer; credit is for payments by the defendant, someone acting for the defendant, or another actor subject to the same tort liability.",
+   "trigger": "Defendant asks to reduce a tort award because plaintiff's own insurer already paid.",
+   "unlocks": "Double-recovery trap and wrong-payer setoff trap.",
+   "authority": "Restatement (Second) of Torts § 920A."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-COLLATERAL-SOURCE-01",
+   "statement": "For setoff questions, ask who paid and whose liability the payer was tied to before reacting to double-recovery language.",
+   "trigger": "Motion to reduce damages after insurance or settlement payment.",
+   "unlocks": "Source-identity vs fairness-language trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Who paid?",
+  "signal": "Insurance payment before or after tort verdict.",
+  "studentMove": "Sort the payer: defendant-side, joint-tortfeasor-side, or plaintiff-side.",
+  "tinyRule": "Plaintiff-side insurance does not reduce the judgment.",
+  "trap": "Double recovery feels fair but points the wrong way."
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "CQ17179",
+ "title": "Potluck Lot Rear End",
+ "subject": "Civil Procedure",
+ "topic": "Joinder",
+ "subtopic": "Counterclaims and crossclaims (Rule 13)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary and Paul, both headed separately to a Saturday-evening church potluck in their own cars, were involved in a rear-end collision in the church parking lot. Hannah, a passenger in Mary's car, sued both Mary and Paul for the same accident. Mary now asserts that Paul was negligent and must reimburse Mary for any amount Mary pays Hannah.\n\nWhat is Mary's claim against Paul?",
+ "call": "What is Mary's claim against Paul?",
+ "choices": {
+  "A": "A crossclaim, because it is a claim by one co-party against another arising from the same accident.",
+  "B": "A required-party motion, because Paul's fault must be adjudicated.",
+  "C": "A counterclaim, because it is a claim asserted by a defendant.",
+  "D": "An impleader claim, because Paul may be liable for the plaintiff's damages."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Mary's claim against Paul is a crossclaim. Mary and Paul are co-defendants in Hannah's suit, and the claim arises out of the same parking-lot collision that is the subject of the original action. Under FRCP 13(g), a crossclaim may be asserted by a party against a co-party when the claim arises out of the same transaction or occurrence. Gold Key: a counterclaim runs against an opposing party (typically a plaintiff), not a co-defendant. The moment the second defendant is already a party on the same side of the \"v.,\" the claim is a crossclaim. Silver Key: when the second defendant is already named in the caption, do not reach for impleader (Rule 14) — impleader exists precisely to pull a non-party in.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (required-party motion)",
+   "text": "is cut on the procedural-posture axis. Rule 19 governs the joinder of absent persons; Mary is not asking the court to add anyone. The label on the existing claim is what is being asked, and Rule 19 does not generate a labeled pleading. The choice is NOT_RESPONSIVE for substituting a motion-to-join label for a labeled pleading."
+  },
+  {
+   "label": "D (impleader / Rule 14)",
+   "text": "is cut on the party-status axis. Paul is already a named co-defendant; impleader presupposes a non-party. The choice is NOT_RESPONSIVE for asserting a third-party-practice label that is unavailable when the third person is already a party."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: crossclaim (co-party label) versus counterclaim (opposing-party label). The single axis they fight on is the party alignment of Paul — is he on Mary's side of the caption or not?"
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Hannah is the plaintiff; Mary and Paul are co-defendants. Paul is therefore a co-party of Mary, not an opposing party. The label is crossclaim. Gold Key: crossclaim = co-party; counterclaim = opposing party. Silver Key: when the second defendant is already named in the caption, do not reach for impleader. Residual answer: A."
+  }
+ ],
+ "studentScript": "The caption shows Hannah versus Mary and Paul. Mary and Paul are co-defendants, on the same side. Mary is suing Paul from the same-side chair, so the claim is a crossclaim, not a counterclaim. Impleader is wrong because Paul is already a party. Required-party motion is wrong because Paul is not absent. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Paul is a co-defendant; Rule 13(g) crossclaim is the matching label.",
+   "lawyer": "FRCP 13(g) allows a claim by one party against a co-party that arises out of the same transaction or occurrence. Mary's reimbursement claim against Paul fits.",
+   "mold": null
+  },
+  "B": {
+   "signal": "Rule 19 is a joinder motion, not a labeled pleading; Paul is already a party.",
+   "lawyer": "FRCP 19 governs joinder of absent persons; it does not generate a labeled pleading and does not apply because Paul is already a named defendant.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "Counterclaim runs against an *opposing* party. Paul is a co-defendant, not opposing.",
+   "lawyer": "FRCP 13(a) defines counterclaim as a claim against an opposing party; FRCP 13(g) defines crossclaim as a claim against a co-party. Paul is on Mary's side of the caption.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "Impleader brings in a non-party. Paul is already a party.",
+   "lawyer": "FRCP 14(a) authorizes impleader against a person 'who is or may be liable to the impleading party'; the device presupposes the third person is not already a party.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-POTLUCK-LOT-01",
+   "statement": "A crossclaim runs against a co-party; a counterclaim runs against an opposing party. Co-defendants on the same side of the caption are co-parties, so the labeled claim between them is a crossclaim under FRCP 13(g).",
+   "trigger": "one defendant asserts a claim against a co-defendant in the same suit",
+   "unlocks": "counterclaim-vs-crossclaim mislabel trap",
+   "authority": "Federal Rule of Civil Procedure 13(a), 13(g)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Counterclaim vs Crossclaim vs Impleader",
+  "signal": "One defendant in a multi-defendant suit asserts a claim against another defendant; the caption shows the same side of the 'v.'.",
+  "studentMove": "Check the caption's party alignment first. Same-side defendants = co-parties = crossclaim. Opposite sides = counterclaim. Non-party = impleader (Rule 14).",
+  "tinyRule": "Crossclaim = co-party; counterclaim = opposing party.",
+  "trap": "Counterclaim is the everyday word; students reach for it on any defendant-asserted claim."
+ }
+}

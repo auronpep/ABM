@@ -1,0 +1,88 @@
+{
+ "id": "CQ20606",
+ "title": "Lydia Festival Venue",
+ "subject": "Civil Procedure",
+ "topic": "Civil Procedure",
+ "subtopic": "Jurisdiction and Venue",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Source row: BarMatrix Q# 20606 is a federal diversity venue question with the official credited answer listing the accident district plus both defendants’ residence districts.\n\nFinal Christian variation\n\nLydia, a worship harpist domiciled in the Northern District of State G, was injured when a propane coffee cart exploded during a privately run Christian music festival in the Central District of State H. Lydia filed a federal action based on diversity against two individuals involved in setting up the cart. Peter, a stage electrician, is domiciled in the Eastern District of State J. Ruth, a carpenter who built the cart platform, is domiciled in the Western District of State J.\n\nIn which judicial districts would venue be proper for Lydia’s action?\n\n---",
+ "call": "In which judicial districts would venue be proper for Lydia's action?",
+ "choices": {
+  "A": "The Eastern District of State J and the Western District of State J.",
+  "B": "The Central District of State H.",
+  "C": "The Central District of State H, the Eastern District of State J, and the Western District of State J.",
+  "D": "The Northern District of State G and the Central District of State H."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: For ordinary federal civil actions, venue can be proper in a district where a substantial part of the events occurred, and also in a district where any defendant resides if all defendants reside in that same state. Silver Key: Treat the answer choices as bucket checklists: event bucket, defendant-residence bucket, and plaintiff-home lure.\n\nThe explosion occurred in the Central District of State H, so that district is a proper event venue. Peter and Ruth both reside in State J, though in different districts, so each district where one of them resides is also a proper defendant-residence venue. The complete list is therefore the Central District of State H, the Eastern District of State J, and the Western District of State J.\n\n---",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Keeps the defendant-residence bucket but omits the event bucket. Anchor-assisted wrong-element cut."
+  },
+  {
+   "label": "CUT B",
+   "text": "Keeps the event bucket but omits the defendant-residence bucket. Anchor-assisted wrong-element cut."
+  },
+  {
+   "label": "CUT D",
+   "text": "Adds the plaintiff-home bucket. Anchor-assisted flat-misstatement cut."
+  },
+  {
+   "label": "Residual",
+   "text": "C. No CLASH or CALL needed after the anchor-assisted cuts.\n\n---"
+  }
+ ],
+ "studentScript": "Venue buckets: event in State H, defendants in State J. Keep Central H, Eastern J, Western J. Do not add Northern G.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It keeps defendant residence districts but drops the event district.",
+   "lawyer": "Venue also lies where a substantial part of the events occurred.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "It keeps the accident district but drops both defendant-residence districts.",
+   "lawyer": "Venue also lies in a district where any defendant resides when all defendants reside in that state.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "It includes the event district and both defendant-residence districts, with no plaintiff-home lure.",
+   "lawyer": "This matches the event venue and same-state defendant-residence venue rules.",
+   "mold": null
+  },
+  "D": {
+   "signal": "It adds Lydia's home district, which the Gold Key marks as outside the ordinary venue buckets.",
+   "lawyer": "The ordinary private-defendant venue rule does not make the plaintiff's home district proper merely because the plaintiff resides there.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-VENUE-BUCKETS-01",
+   "statement": "For ordinary federal civil actions, venue can sit in the event district or in a defendant-residence district when all defendants reside in that same state; the plaintiff's home is not a venue bucket.",
+   "trigger": "The call asks which judicial districts are proper and gives accident location plus defendants from different districts of one state.",
+   "unlocks": "venue-bucket list traps",
+   "authority": "28 U.S.C. § 1391(b)(1), (b)(2), (c)(1)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-VENUE-BUCKETS-01",
+   "statement": "Read list answers as bucket checklists: keep every valid bucket and reject any answer that adds a false bucket or omits a true one.",
+   "trigger": "Choices mix event district, defendant districts, and plaintiff home district.",
+   "unlocks": "all-proper-venue-districts list question",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Venue bucket checklist",
+  "signal": "The call asks which judicial districts are proper.",
+  "studentMove": "Build the complete bucket list before reading combinations.",
+  "tinyRule": "Event district plus qualifying defendant-residence districts; plaintiff home is a lure.",
+  "trap": "Stopping after the loudest venue fact."
+ }
+}

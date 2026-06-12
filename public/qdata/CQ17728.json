@@ -1,0 +1,80 @@
+{
+ "id": "CQ17728",
+ "title": "Illuminated Manuscript",
+ "subject": "Constitutional Law",
+ "topic": "Federal Powers",
+ "subtopic": "Channels of commerce",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A federal statute, the National Stolen Property Act, prohibits knowingly shipping stolen property across state lines. Daniel, who lives in State A, broke into a private collector's climate-controlled library in State A and stole a 12th-century illuminated Christian gospel lectionary and a 6th-century Coptic gospel codex. He shipped the manuscripts to Paul, a buyer in State B, who paid Daniel $90,000 in cash. Federal authorities charge Daniel under the Act. At trial, Daniel argues Congress cannot punish him because the theft occurred entirely within State A and only the shipment crossed state lines afterward.\n\nWhat is the best response?",
+ "call": "What is the best response?",
+ "choices": {
+  "A": "Congress lacks power unless the theft itself happened in multiple states.",
+  "B": "Congress may regulate use of interstate channels to move stolen goods.",
+  "C": "Congress may regulate only if the defendant personally owns a shipping company.",
+  "D": "Congress lacks power because stolen goods are outside commerce."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "The best response is B. The National Stolen Property Act targets the act of shipping stolen property across state lines — the use of the channels of interstate commerce. Congress's commerce power reaches the channels themselves, and Congress may keep harmful or stolen goods from moving through those channels, regardless of whether the original taking was in-state. Gold Key: the channels-of-commerce power depends on Congress's authority over the channels and instrumentalities of interstate commerce, not on the commercial character of the underlying goods; the in-state origin of the stolen property is therefore not a defense to a charge of knowingly shipping it across state lines. The Supreme Court has long recognized this channel-of-commerce authority alongside the broader Commerce Clause cases. See Heart of Atlanta Motel, Inc. v. United States, 379 U.S. 241 (1964); Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1 (1824); cf. United States v. Lopez, 514 U.S. 549, 558–559 (1995) (recognizing channels-of-commerce as a separate category of Commerce Clause authority, distinct from regulation of non-economic activity).",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (no-power-unless-theft-itself-was-interstate)",
+   "text": "is cut on the regulated-act / taking distinction. The Commerce Clause, including the channels-of-commerce power, is not conditioned on the multi-state character of the underlying offense. The regulated act is the interstate shipment, which is itself a use of the channels of interstate commerce. Visible from the stem: the federal statute targets the act of shipping stolen property across state lines."
+  },
+  {
+   "label": "C (must-own-shipping-company)",
+   "text": "is cut on the National Stolen Property Act's plain text and the channels-of-commerce power. The statute reaches any person who knowingly ships stolen property across state lines, whether or not the defendant owns a shipping company. The \"must own a shipping company\" framing misstates who the statute can reach."
+  },
+  {
+   "label": "CLASH",
+   "text": "B and D survive to the final axis: the channels-of-commerce power reaches the channels themselves (B), or stolen goods are outside the reach of the commerce power because they are not commercially clean (D). The single axis they fight on is whether the channels-of-commerce power depends on the commercial character of the underlying goods."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: the channels-of-commerce power reaches the channels themselves, not the goods in them. Even if stolen goods have no clean commercial title, Congress can still regulate their movement through the channels of interstate commerce. Apply the channels-of-commerce power → B. A student who picks D has misstated the channels-of-commerce power; the in-state origin of the taking is not a defense to the federal charge of knowingly shipping stolen property across state lines."
+  }
+ ],
+ "studentScript": "Step 1: What is the regulated act? The federal statute (NSPA) targets the act of shipping stolen property across state lines — the use of a federal channel. Step 2: Does Congress have commerce power over that act? Yes — the channels-of-commerce power is a long-standing component of the Commerce Clause. Gold Key: the channels power reaches the channels themselves, not the goods in them. The in-state origin of the taking is not a defense. Cut A (no-power-unless-theft-itself-was-interstate misstates the rule). Cut C (must-own-shipping-company misstates who the statute can reach). Cut D (stolen-goods-outside-commerce misstates the channels power). Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The Commerce Clause, including the channels-of-commerce power, is not conditioned on the multi-state character of the underlying offense. The regulated act is the interstate shipment, which is itself a use of the channels of interstate commerce.",
+   "lawyer": "The regulated act is the interstate shipment, not the underlying taking. The in-state character of the original taking is not a defense to a federal charge of knowingly shipping stolen property across state lines.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "The federal statute targets the act of shipping stolen property across state lines — the use of the channels of interstate commerce. Congress's commerce power reaches the channels themselves.",
+   "lawyer": "The channels-of-commerce power is a long-standing component of the Commerce Clause. The National Stolen Property Act, 18 U.S.C. § 2314, is a paradigmatic channels-of-commerce statute. Heart of Atlanta Motel v. United States, 379 U.S. 241 (1964); Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1 (1824); cf. United States v. Lopez, 514 U.S. 549, 558-559 (1995).",
+   "mold": null
+  },
+  "C": {
+   "signal": "The National Stolen Property Act reaches any person who knowingly ships stolen property across state lines, whether or not the defendant owns a shipping company. The statute targets the act of using the channels, not the defendant's occupational status.",
+   "lawyer": "The statute targets the act of using the channels, not the defendant's occupational status. The 'must own a shipping company' framing misstates who the statute can reach.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The student hears 'stolen goods' and 'outside commerce' and assumes Congress cannot reach them. The Gold Key tells them the channels-of-commerce power reaches the channels themselves, not the goods in them.",
+   "lawyer": "The channels-of-commerce power reaches the channels themselves; the inquiry is whether the statute regulates the use of a channel, not whether the goods are commercially clean. Even if stolen goods have no clean commercial title, Congress can still regulate their movement through the channels of interstate commerce.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONLAW-ILLUMINATED-MANUSCRIPT-01",
+   "statement": "Congress's commerce power reaches the channels of interstate commerce themselves, including the power to keep harmful or stolen goods from moving through those channels; the power does not depend on the commercial character of the underlying goods.",
+   "trigger": "federal statute targets the use of a channel; defendant argues the in-state origin of the taking is outside federal reach",
+   "unlocks": "stolen-goods-outside-commerce overreach (D)",
+   "authority": "U.S. Const. art. I, § 8, cl. 3; Heart of Atlanta Motel, Inc. v. United States, 379 U.S. 241 (1964); Gibbons v. Ogden, 22 U.S. (9 Wheat.) 1 (1824); cf. United States v. Lopez, 514 U.S. 549, 558-559 (1995); National Stolen Property Act, 18 U.S.C. § 2314"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Channels-of-commerce power — the channels, not the goods",
+  "signal": "A federal statute targets the act of shipping stolen property across state lines; the defendant argues the in-state taking is outside federal reach.",
+  "studentMove": "Identify the regulated act (the use of a channel), then apply the channels-of-commerce power. The in-state origin of the taking is not a defense.",
+  "tinyRule": "The channels-of-commerce power reaches the channels themselves; the inquiry is whether the statute regulates the use of a channel, not whether the goods are commercially clean.",
+  "trap": "The 'stolen goods are outside commerce' overreach (D) feels right because stolen goods have a dirty chain of title. The channels power is about the channel, not the goods."
+ }
+}

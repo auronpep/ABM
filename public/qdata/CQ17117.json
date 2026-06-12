@@ -1,0 +1,80 @@
+{
+ "id": "CQ17117",
+ "title": "Day School Playground Jmol",
+ "subject": "Civil Procedure",
+ "topic": "JMOL and Trial Motions",
+ "subtopic": "Rule 50(b) renewed JMOL — preservation of grounds from Rule 50(a)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary runs a small Christian day school. She hired Paul, a playground-equipment contractor, to build a new playground on the school grounds for $32,000. Six weeks after completion, a five-year-old child broke her arm when a climber panel gave way. Mary sued Paul in federal district court on diversity grounds, asserting negligence and breach of warranty and seeking $40,000 in damages. Before the case was submitted to the jury, Paul moved for judgment as a matter of law under Rule 50(a) on the single ground that the $40,000 damages figure was not supported by the evidence. The court denied the motion. The jury returned a verdict for Mary and awarded $40,000. After the verdict, Paul filed a renewed motion for judgment as a matter of law under Rule 50(b) — his first time challenging causation — arguing that Mary had failed to introduce legally sufficient evidence that the climber's failure caused the child's broken arm.\n\nMay the court grant the renewed Rule 50(b) motion on the new causation ground?",
+ "call": "May the court grant the renewed Rule 50(b) motion on the new causation ground?",
+ "choices": {
+  "A": "Yes, because any pre-verdict Rule 50(a) motion preserves every possible post-verdict Rule 50(b) ground, regardless of whether the ground was raised before submission.",
+  "B": "No, because Paul did not fairly raise the causation ground in his pre-verdict Rule 50(a) motion, and a Rule 50(b) motion may not introduce a new legal-sufficiency ground.",
+  "C": "No, because Rule 50(b) is available only to plaintiffs, not to defendants, after an adverse jury verdict.",
+  "D": "Yes, because causation is more important than damages, and a court may grant renewed JMOL on any ground that is more important than the ground the defendant did raise pre-verdict."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "The court may not grant the renewed Rule 50(b) motion on the new causation ground. A Rule 50(b) motion is a renewal of a pre-verdict Rule 50(a) motion, not a new motion; the post-verdict motion is limited to grounds that were fairly raised in the pre-verdict motion. Paul raised only the damages ground in his Rule 50(a) motion; the causation ground is new and is not properly before the court on a Rule 50(b) renewal. The general rule is that \"a party may not urge in support of a renewed motion for judgment as a matter of law under Rule 50(b) any ground not fairly raised in support of the party's earlier Rule 50(a) motion.\" Unitherm Food Systems, Inc. v. Swift-Eckrich, Inc., 546 U.S. 394, 404 (2006). Gold Key: Rule 50(b) renews, rather than invents, a Rule 50(a) legal-sufficiency challenge. Silver Key: lock the call to whether the new ground was preserved in the pre-verdict 50(a) motion, not to whether the new ground is doctrinally strong.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (Rule 50(b) is for plaintiffs only)",
+   "text": "is cut on misfit (ISSUE_SENSE). Rule 50(b) is available to any party meeting the Rule 50 requirements; a defendant after an adverse jury verdict is the paradigmatic Rule 50(b) movant. Visible from the answer text: it asserts a party-availability rule that is the inverse of the actual rule."
+  },
+  {
+   "label": "D (importance-priority fallacy)",
+   "text": "is cut on misfit (ISSUE_SENSE). Rule 50(b) is a renewal motion, not an importance-priority vehicle; a new ground is not properly before the court simply because it is doctrinally more important than the ground the defendant did raise pre-verdict. Visible from the answer text: it converts a doctrinal-strength observation into a preservation rule."
+  },
+  {
+   "label": "A (unlimited preservation) and B (preservation required)",
+   "text": "survive to the deciding axis: does a pre-verdict Rule 50(a) motion preserve every possible post-verdict Rule 50(b) ground, or is the post-verdict motion limited to grounds fairly raised pre-verdict? The single axis they fight on is the renewal-not-invention rule for Rule 50(b)."
+  },
+  {
+   "label": "CALL",
+   "text": "- The Gold Key resolves the axis. A Rule 50(b) motion is a renewal of the pre-verdict Rule 50(a) motion; the post-verdict motion is limited to grounds fairly raised pre-verdict. The causation ground is new; the renewed motion cannot introduce it. Residual: B."
+  }
+ ],
+ "studentScript": "The call asks whether the court may grant the renewed Rule 50(b) motion on the new causation ground. C is the plaintiff-only availability misframe (Rule 50 is available to any party). D is the importance-priority fallacy (importance does not substitute for preservation). A is the dominant trap: unlimited preservation. Gold Key: Rule 50(b) renews, rather than invents, a Rule 50(a) legal-sufficiency challenge. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice asserts a flat rule that any pre-verdict Rule 50(a) motion preserves every possible post-verdict Rule 50(b) ground. The doctrinal overclaim is not student-accessibly false without the Gold Key.",
+   "lawyer": "Unitherm Food Systems, Inc. v. Swift-Eckrich, Inc., 546 U.S. 394, 404 (2006), squarely held that a party may not urge in support of a renewed Rule 50(b) motion any ground not fairly raised in support of the party's earlier Rule 50(a) motion.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This is the only choice that names the renewal-not-invention rule. It is true and responsive.",
+   "lawyer": "A Rule 50(b) motion renews, rather than invents, a Rule 50(a) legal-sufficiency challenge. The post-verdict motion is limited to grounds fairly raised pre-verdict; the causation ground is new and is not properly before the court.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice asserts a party-availability rule that is the inverse of the actual rule. Rule 50 is available to any party meeting the Rule 50 requirements; a defendant after an adverse jury verdict is the paradigmatic Rule 50(b) movant.",
+   "lawyer": "Rule 50(a) and Rule 50(b) are both available to plaintiffs and defendants. A defendant after an adverse jury verdict is the paradigmatic Rule 50(b) movant.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The choice converts a doctrinal-strength observation into a preservation rule. Importance does not substitute for preservation; Rule 50(b) is a renewal motion, not an importance-priority vehicle.",
+   "lawyer": "Importance does not substitute for preservation. Rule 50(b) is a renewal motion; a new ground is not properly before the court simply because it is doctrinally more important than the ground the defendant did raise pre-verdict.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-DAY-SCHOOL-PLAYGROUND-JMOL-01",
+   "statement": "A Rule 50(b) motion renews, rather than invents, a Rule 50(a) legal-sufficiency challenge; the post-verdict motion is limited to grounds fairly raised in the pre-verdict Rule 50(a) motion.",
+   "trigger": "defendant files a Rule 50(b) motion on a new ground not raised in the pre-verdict Rule 50(a) motion",
+   "unlocks": "unlimited-preservation overclaim",
+   "authority": "Unitherm Food Systems, Inc. v. Swift-Eckrich, Inc., 546 U.S. 394, 404 (2006); Federal Rule of Civil Procedure 50(b)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Rule 50(b) is a renewal, not a new motion",
+  "signal": "A defendant files a Rule 50(b) motion on a new ground not raised in the pre-verdict Rule 50(a) motion.",
+  "studentMove": "Cut the plaintiff-only availability and importance-priority misframes on the answer text. Then use the Gold Key to kill the unlimited-preservation trap.",
+  "tinyRule": "Rule 50(b) renews, rather than invents, a Rule 50(a) legal-sufficiency challenge.",
+  "trap": "Filing a Rule 50(a) motion does not preserve every possible Rule 50(b) ground; the post-verdict motion is limited to grounds fairly raised pre-verdict."
+ }
+}

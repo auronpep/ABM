@@ -1,0 +1,88 @@
+{
+ "id": "CQ20423",
+ "title": "Galilee Props Bias",
+ "subject": "Evidence",
+ "topic": "Opinion or reputation",
+ "subtopic": "E5",
+ "difficulty": "Trap",
+ "tension": null,
+ "stem": "At a federal civil trial over a broken Christmas-pageant stage wagon, Peter sues Galilee Props, Inc., a private prop-rental company. Ruth testifies for Galilee. On cross-examination, Peter’s lawyer asks Ruth whether she is the paid treasurer of New Covenant Fellowship, the religious organization that owns Galilee’s voting shares and appoints its managers. Galilee objects under the rule barring religious-belief credibility evidence. Peter says he offers the question to show Ruth’s possible bias toward Galilee, not to suggest that her religious views make her truthful or untruthful.\n\nHow should the court rule?\n\nThe source row for QID 20423 supplies the Evidence topic, original Rule 610 bias-purpose stem, original answer choices, official key C, and official explanation.",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Overrule the objection because the question targets possible bias from Ruth’s paid tie to the organization that owns Galilee, not her religious beliefs as a truthfulness trait.",
+  "B": "Sustain the objection because any reference to a witness’s religious affiliation is inadmissible.",
+  "C": "Overrule the objection only if Ruth’s character for truthfulness has first been attacked.",
+  "D": "Sustain the objection because bias may be shown only by reputation evidence."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The objection should be overruled because the question is aimed at Ruth’s possible bias: she is a paid treasurer of the religious organization that owns and controls Galilee. Gold Key: Rule 610 blocks religion-as-truthfulness use; it does not block affiliation or interest evidence offered to show bias. Silver Key: Purpose first. The same religious-affiliation fact is barred for one credibility purpose but allowed for a different credibility purpose.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "“Any reference” is an overclaim. The stem says the purpose is bias, not belief-based truthfulness."
+  },
+  {
+   "label": "CUT C",
+   "text": "The answer moves to truthfulness-character rehabilitation. The stem’s lane is bias."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Only by reputation evidence” invents a proof limit. The item asks about a cross-examination question aimed at bias."
+  },
+  {
+   "label": "Residual A",
+   "text": "It matches the offered purpose and the bias fact."
+  }
+ ],
+ "studentScript": "Purpose first. This is bias, not belief-truthfulness. Cut the any-religion ban, cut the truthfulness-foundation answer, cut the reputation-only limit. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It matches the stem’s offered purpose: bias, not belief-based truthfulness.",
+   "lawyer": "Rule 610 does not bar affiliation evidence offered to show bias or interest.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The word 'any' tries to erase the offered-purpose distinction.",
+   "lawyer": "Rule 610 is not an absolute ban on religious-affiliation evidence.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The answer talks about truthfulness-character attack; the stem says bias.",
+   "lawyer": "Rule 608(a)’s truthful-character precondition does not govern bias impeachment.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The word 'only' invents a proof-method restriction for bias.",
+   "lawyer": "Bias is not limited to reputation evidence.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-RELIGION-BIAS-01",
+   "statement": "Rule 610 blocks religion-as-truthfulness evidence. It does not block religious affiliation or organizational ties when offered to show bias, interest, or relationship to a party.",
+   "trigger": "religion objection plus paid role or organizational tie to a party",
+   "unlocks": "religious-affiliation evidence offered for bias",
+   "authority": "Federal Rule of Evidence 610 Advisory Committee Note"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-PURPOSE-AXIS-01",
+   "statement": "When an Evidence answer turns on the same fact being used for different credibility purposes, name the offered purpose first and grade only that lane.",
+   "trigger": "The stem says 'offered to show bias' and 'not to show truthfulness.'",
+   "unlocks": "Rule 610 truthfulness lane versus bias lane",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Religion Evidence: Purpose Split",
+  "signal": "Religious affiliation appears, but the proponent says bias.",
+  "studentMove": "Do not stop at the religious-evidence objection. Ask the offered purpose.",
+  "tinyRule": "Belief-as-truthfulness is barred; affiliation-for-bias is not.",
+  "trap": "Blanket religious-affiliation ban."
+ }
+}

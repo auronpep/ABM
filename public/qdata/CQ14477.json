@@ -1,0 +1,88 @@
+{
+ "id": "CQ14477",
+ "title": "Advent Mugs",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Options and Cooperation Respecting Performance",
+ "difficulty": "not_supplied_in_source_row",
+ "tension": null,
+ "stem": "By a signed order, Lydia, a private maker of Scripture-themed ceramic mug sets, promised to supply Barnabas’s Christian bookstore with 640 boxed mug sets for its November and December shelves. The order left Barnabas to choose, by August 15, how many boxes would bear each of four verse designs. When August 15 passed without a choice, Lydia still had every design needed and made no inventory commitments on August 15 or August 16. On the morning of August 16, Lydia sent Barnabas a message canceling the order because he had missed the assortment date. That afternoon, after receiving the message, Barnabas sent the full design breakdown and demanded shipment. Lydia refused.\n\nIf Barnabas sues Lydia for breach of contract, is Barnabas likely to prevail?",
+ "call": "If Barnabas sues Lydia for breach of contract, is Barnabas likely to prevail?",
+ "choices": {
+  "A": "Yes, because once Barnabas missed the date for choosing the assortments, Lydia was required to choose a reasonable assortment.",
+  "B": "Yes, because the one-day delay in choosing the assortment did not materially affect Lydia’s ability to perform.",
+  "C": "No, because no contract existed until Barnabas chose the particular assortments, and Lydia withdrew before that choice.",
+  "D": "No, because choosing the assortments by August 15 was an express condition to Lydia’s duty to perform."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The delay was only one day, Lydia still had every design needed, and Lydia made no inventory commitments on either relevant day. That means the late assortment choice did not materially affect Lydia’s ability to perform.\n\nSilver Key: Do not stop at “missed deadline.” Name the axis: did the late specification materially affect the seller’s performance? The inventory/no-commitment facts answer that axis.\n\nGold Key: In a UCC sale, leaving assortment particulars for one party to specify later does not invalidate the contract, and a late specification gives the other party stronger remedies only when the lateness materially affects performance.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "C denies the contract frame by saying no contract existed until the assortment was chosen. That is a Gold-Key cut: UCC sales can leave performance particulars for later specification."
+  },
+  {
+   "label": "CUT A",
+   "text": "A creates an automatic seller duty to choose a reasonable assortment. That is a fabricated-remedy cut. The stem’s no-material-effect facts keep the seller from reaching that stronger remedy path."
+  },
+  {
+   "label": "CLASH B vs D",
+   "text": "The surviving tension is “late-but-not-material” versus “deadline-as-express-condition.” The splitting fact is Lydia’s unchanged performance position: all designs ready, no inventory commitments, only one day late. That resolves the clash for B."
+  },
+  {
+   "label": "CALL",
+   "text": "No CALL needed after the CLASH."
+  }
+ ],
+ "studentScript": "This is not just a missed-deadline question. The fight is whether the one-day late selection materially affected the seller. The seller had all goods ready and no commitments changed, so the buyer wins.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice turns a missed buyer specification into an automatic seller duty.",
+   "lawyer": "Under UCC § 2-311, proceeding in a reasonable manner is not an automatic duty on these facts; the late specification did not materially affect performance.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "This choice uses the one fact the clash turns on: no material effect.",
+   "lawyer": "UCC § 2-311 supports the result because the one-day delay caused no material effect on Lydia’s performance.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice denies the signed-order frame and treats the open assortment as fatal.",
+   "lawyer": "UCC § 2-311 states that an otherwise definite sale contract is not invalid merely because performance particulars are left for later specification.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "The choice treats deadline language as automatically fatal and skips the material-effect fact.",
+   "lawyer": "The selection duty was not an express condition that discharged Lydia when the one-day delay did not materially affect her performance.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-ADVENT-MUGS-01",
+   "statement": "In a UCC sale, leaving assortment particulars for later buyer specification does not invalidate the contract; a late specification matters only if it materially affects the seller’s performance.",
+   "trigger": "goods sale with buyer left to choose assortments later",
+   "unlocks": "formation-frame and fatal-deadline traps",
+   "authority": "UCC § 2-311"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-ADVENT-MUGS-01",
+   "statement": "When a deadline choice fights a no-effect choice, name the axis before deciding: did the missed specification materially affect the seller’s performance?",
+   "trigger": "one-day late specification plus inventory/no-commitment facts",
+   "unlocks": "fatal-deadline versus no-material-effect tension",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Late specification is not automatically fatal",
+  "signal": "goods sale leaves assortment or performance particulars for later",
+  "studentMove": "Ask whether the late choice materially affected the other party’s performance.",
+  "tinyRule": "No material effect means no refusal to perform.",
+  "trap": "deadline language treated as an express condition"
+ }
+}

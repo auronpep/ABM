@@ -1,0 +1,88 @@
+{
+ "id": "CQ20733",
+ "title": "Galilee Trails Death Notice",
+ "subject": "Torts",
+ "topic": "Negligence damages",
+ "subtopic": "Special NIED categories",
+ "difficulty": "medium_high",
+ "tension": null,
+ "stem": "BARMATRIX Q#: 20733_galilee_trails_death_notice\n\nGalilee Trails, a private company that runs paid Christian wilderness retreats, required each participant to list an emergency contact. During a dawn prayer hike, Lydia became separated from her group. Peter, the company’s trip coordinator, mixed up two radio reports and sent Lydia’s husband, Timothy, an emergency text saying that Lydia had been found dead near the overlook. Lydia was actually alive and waiting in a ranger cabin with Ruth, a first-aid volunteer. Timothy suffered severe emotional distress from the death notice. The jurisdiction recognizes negligent erroneous death notice as a special NIED category.\n\nCall: If Timothy sues Galilee Trails, how should a court likely rule on the emotional-distress claim?",
+ "call": "If Timothy sues Galilee Trails, how should a court likely rule on the emotional-distress claim?",
+ "choices": {
+  "A": "Yes, because any careless emergency message that causes grief creates emotional-distress liability.",
+  "B": "No, because Lydia was alive, so Timothy cannot have legally cognizable distress from the message.",
+  "C": "Yes, under the jurisdiction’s special category for negligent erroneous death notice.",
+  "D": "No, because Timothy was never in physical danger from the retreat company’s mistake."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The stem gives the key gate: this jurisdiction recognizes negligent erroneous death notice as a special NIED category. Timothy received a negligent false death notice about Lydia, and the stem states that he suffered severe emotional distress from that notice.\n\nGold Key: Erroneous death notice is a special NIED category when the jurisdiction recognizes it; do not import the ordinary physical-danger or bystander screens.\n\nSilver Key: When the stem says “special category,” cut answers that answer the ordinary default rule instead of the special-category rule.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A — CUT",
+   "text": "“Any careless emergency message” is an overclaim. The stem gives a special category, not universal liability for every negligent message."
+  },
+  {
+   "label": "B — CUT",
+   "text": "The answer uses the fact that Lydia was alive to deny distress. That fact makes the death notice erroneous. It does not defeat the emotional-distress fact given in the stem."
+  },
+  {
+   "label": "D — CUT",
+   "text": "The answer imports the ordinary physical-danger gate. The stem gives a special category. Gold Key controls the cut."
+  },
+  {
+   "label": "Residual — C",
+   "text": "C directly matches the call and the trigger facts: negligent false death notice, spouse, severe distress, jurisdiction recognizes the category.\n\nNo CLASH remains. No CALL needed."
+  }
+ ],
+ "studentScript": "Special category given. A overclaims any message. B uses the falsehood to deny harm. D imports physical danger. C matches the special category. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word any turns a special category into a universal rule.",
+   "lawyer": "NIED recovery for false death notice depends on a recognized duty/category; not every negligent message causing grief creates liability.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The fact that Lydia was alive makes the death notice erroneous; it does not erase Timothy’s distress.",
+   "lawyer": "Erroneous death-notice cases treat the false notice itself as the emotional-harm trigger.",
+   "mold": "contradiction"
+  },
+  "C": {
+   "signal": "This choice matches the call and the stem’s special-category trigger.",
+   "lawyer": "The source row and Johnson-style authority support viability where a negligent false death notice causes serious emotional harm.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice answers ordinary physical-danger NIED, not the special death-notice category.",
+   "lawyer": "Ordinary zone-of-danger limitations do not control when the jurisdiction recognizes the erroneous-death-notice category.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-ERRONEOUS-DEATH-NOTICE-01",
+   "statement": "When a jurisdiction recognizes negligent erroneous death notice, the claim does not fail merely because the plaintiff was outside physical danger or because the reported death was false.",
+   "trigger": "False death notice to close family + severe distress + jurisdiction recognizes the category.",
+   "unlocks": "The ordinary zone-of-danger trap.",
+   "authority": "Johnson v. State of New York, 37 N.Y.2d 378 (1975); Restatement (Third) of Torts: Liability for Physical and Emotional Harm § 47(b)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-SPECIAL-CATEGORY-CUT-01",
+   "statement": "When the stem says the jurisdiction recognizes a special category, cut choices that answer the ordinary default lane instead of the special lane.",
+   "trigger": "Stem phrase: jurisdiction recognizes negligent erroneous death notice as a special NIED category.",
+   "unlocks": "Special-category lane versus ordinary NIED physical-danger lane.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Special category beats ordinary NIED gate",
+  "signal": "Stem gives a recognized emotional-distress category.",
+  "studentMove": "Do not import zone-of-danger or bystander requirements unless the call asks for the ordinary rule.",
+  "tinyRule": "Recognized erroneous death notice is its own NIED lane.",
+  "trap": "Physical danger sounds like the default NIED screen."
+ }
+}

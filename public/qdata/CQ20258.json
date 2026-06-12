@@ -1,0 +1,110 @@
+{
+ "id": "CQ20258",
+ "title": "Psalter Pressure",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Fifth Amendment",
+ "subtopic": "Constitutional Protection of Accused Persons",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "The source row is BARMATRIX Q# 20258, a Criminal Procedure / Fifth Amendment item testing whether coercive police threats and interrogation conditions render a confession involuntary and inadmissible in the prosecution’s case-in-chief.\n\nChristian divergent variation — 20258_psalter_pressure\n\nInvestigators were questioning Martha about the theft of Stephen’s rare hand-illustrated psalter from a booth at a Christian arts festival. Before questioning, the investigators gave Martha Miranda warnings, and Martha said she understood them. Later, the investigators falsely told Martha that unless she admitted taking the psalter, they would have Barnabas, her brother, arrested that night and would call social services to remove Ruth, the niece Martha was raising. The questioning continued through the dinner hour for eight hours without food. Martha then confessed to the theft.\n\nIn Martha’s prosecution for theft, should the confession be admitted in the prosecution’s case-in-chief?",
+ "call": "In Martha’s prosecution for theft, should the confession be admitted in the prosecution’s case-in-chief?",
+ "choices": {
+  "A": "Yes, because investigators may use any deception during interrogation.",
+  "B": "No, because the investigators’ coercive threats and interrogation conditions rendered the confession involuntary.",
+  "C": "No, but only because Martha did not sign a written waiver form.",
+  "D": "Yes, because Martha received and understood Miranda warnings before confessing."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Gold Key: A Miranda warning is not a force field around a later confession. If officers use coercive threats and conditions that overbear the suspect’s will, the confession is involuntary and cannot be used in the prosecution’s case-in-chief.\n\nSilver Key: Do not stop at the first clean procedure fact. The stem gives warnings first, then gives family-threat and deprivation facts. The answer must account for those pressure facts.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“any deception” is a visible overclaim. The word any makes the answer too broad."
+  },
+  {
+   "label": "CUT C",
+   "text": "the choice invents a form requirement and uses “only because” to point away from the pressure facts."
+  },
+  {
+   "label": "CUT D",
+   "text": "the choice answers the warning fact and skips the coercion facts. True-sounding, wrong layer."
+  },
+  {
+   "label": "Residual B",
+   "text": "only B uses the pressure facts that the call is testing."
+  },
+  {
+   "label": "CLASH",
+   "text": "not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "not needed beyond the Gold Key distinguishing Miranda from due-process voluntariness."
+  }
+ ],
+ "studentScript": "Warnings are a trap fact. The stem spends most of its energy on threats and pressure. Cut 'any deception,' cut the form-paper answer, cut the warning-only answer, and keep the coercion answer.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'any' makes a broad rule that cannot survive a pressure-heavy stem.",
+   "lawyer": "Ordinary deception may not automatically make a confession involuntary, but coercive threats and deprivation can.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This is the only choice that uses the threats and interrogation conditions.",
+   "lawyer": "The confession is inadmissible because coercive police conduct overbore the will under the totality of circumstances.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer uses 'only because' to point away from the pressure facts and invents a form gate.",
+   "lawyer": "A signed written waiver is not invariably required; the defect is voluntariness.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The choice answers the warning fact but skips the pressure facts.",
+   "lawyer": "Miranda warnings and due-process voluntariness are separate admissibility gates.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-PSALTER-PRESSURE-01",
+   "statement": "A confession produced by coercive police threats or conditions that overbear the suspect’s will is involuntary and cannot be used in the prosecution’s case-in-chief.",
+   "trigger": "Warnings plus threats against family plus deprivation",
+   "unlocks": "Correct answer and pressure-fact recognition",
+   "authority": "Lynumn v. Illinois; Colorado v. Connelly; Mincey v. Arizona"
+  },
+  {
+   "id": "GK-CRIMINAL-MIRANDA-SEPARATE-02",
+   "statement": "Miranda waiver and due-process voluntariness are separate gates; warnings or a waiver form do not cure a coerced confession.",
+   "trigger": "The stem gives warnings, then pressure facts",
+   "unlocks": "Miranda-warning and written-waiver traps",
+   "authority": "Mincey v. Arizona; North Carolina v. Butler"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-PSALTER-PRESSURE-01",
+   "statement": "When a stem gives one clean procedure fact and then piles on pressure facts, do not stop at the procedure fact; the answer must account for the pressure facts.",
+   "trigger": "Warnings appear before coercion facts",
+   "unlocks": "Miranda-first lure",
+   "authority": null
+  },
+  {
+   "id": "SK-CRIMINAL-PSALTER-PRESSURE-02",
+   "statement": "In a yes/no answer set, a no answer with the wrong reason still gets cut; match both the result and the reason.",
+   "trigger": "Two no answers appear",
+   "unlocks": "No-but-wrong-reason form trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Warnings are not a pressure shield",
+  "signal": "Stem gives Miranda warnings and then coercive pressure facts.",
+  "studentMove": "Separate warning/form facts from voluntariness facts.",
+  "tinyRule": "Coercion can defeat admissibility even after warnings.",
+  "trap": "Picking the warning answer because it sounds procedurally clean."
+ }
+}

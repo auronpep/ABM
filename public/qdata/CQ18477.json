@@ -1,0 +1,76 @@
+{
+ "id": "CQ18477",
+ "title": "Church Craft Fair Quilt",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Property Crimes",
+ "subtopic": "Receipt of stolen property",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Naomi, a member of a local church, attended the church's annual Christmas craft fair, a benefit event open to the public. At the fair, she bought a hand-stitched quilt that had been entered in the fair's juried show by Ruth, a fellow church member Naomi has known and trusted for years. Naomi paid the fair's listed price for the quilt; nothing about Ruth, the quilt, or the transaction suggested the quilt was stolen. The next day, Ruth tearfully confessed to Naomi that she had stolen the fabric she used to make the quilt. Naomi immediately took the quilt to the local police. Is Naomi guilty of receiving stolen property?",
+ "call": "Is Naomi guilty of receiving stolen property?",
+ "choices": {
+  "A": "Yes, because the quilt was stolen before Naomi bought it.",
+  "B": "No, because she lacked knowledge when she received control of the quilt and promptly returned it after learning.",
+  "C": "No, because receiving stolen property applies only to cash.",
+  "D": "Yes, because later knowledge always relates back to the purchase."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "Naomi is not guilty of receiving stolen property. The common-law offense (and the offense as defined in modern statutes modeled on the Model Penal Code) requires that the defendant know or believe the property was stolen at the time she receives control of it. The required knowledge must exist at receipt; later discovery that the property was stolen does not retroactively supply the receipt-time mens rea. Naomi paid a normal price, bought the quilt from a person she had known and trusted for years, and saw nothing about the transaction that suggested the quilt was stolen. She had no knowledge or belief that the quilt was stolen when she received control of it at the craft fair. The next day's confession gave her knowledge, but that knowledge came too late to be the receipt-time mens rea. The element is missing; the offense is not made out. Gold Key: receipt-time knowledge is the dispositive element; the offense is not made out by the fact that property was stolen before the defendant received it, by retroactive imputation of later knowledge, or by limiting the offense to cash. Silver Key: when the call is \"guilty of receiving stolen property?\" with a prompt-return fact pattern, the first move is to test whether the defendant had knowledge or belief at the moment of receipt — if not, the offense fails on the mens rea element and the rest of the analysis is unnecessary.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- C (No, because receiving stolen property applies only to cash) is cut on NOT_RESPONSIVE / misfit. The common-law and modern-statutory offense covers all personal property capable of being stolen, not just cash. Visible from the stem: the quilt is a hand-stitched personal-property item; receiving stolen property covers quilts as well as cash. The choice is NOT_RESPONSIVE for misstating the scope of the offense.\n- D (Yes, because later knowledge always relates back to the purchase) is cut on NOT_TRUE / fabricated_rule. The mens rea must exist at the time of receipt; later knowledge does not retroactively supply it. Visible from the stem: Naomi received the quilt at the craft fair without knowledge or belief that it was stolen, and learned the truth only the next day. The choice is NOT_TRUE for asserting a retroactive-mens-rea rule that does not exist."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: does the fact that the quilt was stolen before Naomi bought it make her guilty (stolen-before-purchase rule) or is receipt-time knowledge the dispositive element (no receipt-time knowledge, no offense)? The single axis they fight on is the knowledge-or-belief-at-receipt requirement."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. The common-law and modern-statutory offense requires knowledge or belief at the time the defendant receives control of the property. Naomi had no such knowledge when she received the quilt at the fair; the next-day confession came too late. The element is missing; the offense is not made out → B. A student without the Gold Key sits in anchor_assisted territory on the receipt-time-knowledge pivot, but the answer is settled by the mens rea doctrine."
+  }
+ ],
+ "studentScript": "Step 1: Did the buyer receive stolen property? Yes — the quilt was stolen, and Naomi received it. The fact-of-receipt is satisfied. Step 2: Did the buyer have knowledge or belief at the time of receipt? No — Naomi paid a normal price, bought from a person she had known and trusted for years, and saw nothing that suggested the quilt was stolen. Receipt-time knowledge is missing. Step 3: Does later knowledge relate back? No. Gold Key: the mens rea must exist at the moment of receipt; later knowledge does not retroactively supply it. Step 4: Is the offense limited to cash? No. Silver Key: receiving stolen property covers all stolen personal property. Step 5: Did the buyer promptly return the property? Yes — Naomi immediately took the quilt to the police. This reinforces the absence of any continuing mens rea. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student reasons that the quilt was stolen, that Naomi received it, and that the offense is therefore made out. The student skips the knowledge or belief at receipt element. The Gold Key tells them: receipt-time knowledge is the dispositive element; the offense is not made out by the fact that property was stolen before the defendant received it.",
+   "lawyer": "The common-law and modern-statutory offense also requires that the defendant know or believe the property was stolen at the time of receipt. A good-faith purchaser who has no reason to know or believe the property was stolen does not commit the offense even if the property turns out to have been stolen.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "After the cash-only and retroactive-mens-rea distractors are cut, the stolen-before-purchase vs receipt-time-knowledge axis is the only axis left. The Gold Key resolves to receipt-time knowledge: Naomi had no such knowledge at the fair, and the next-day confession came too late.",
+   "lawyer": "The common-law and modern-statutory offense requires knowledge or belief at the time the defendant receives control of the property. Naomi had no such knowledge when she received the quilt at the fair; the next-day confession came too late. The element is missing; the offense is not made out.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The student reads 'stolen property' too narrowly and concludes that the offense covers only cash, not tangible personal property like a quilt. The Silver Key tells them: receiving stolen property covers all stolen personal property, not just cash; the dispositive question is the defendant's knowledge or belief at receipt, not the type of property.",
+   "lawyer": "The common-law offense and modern statutes cover all personal property capable of being stolen, including quilts, cameras, livestock, vehicles, and electronics. The offense is not limited to cash.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The student treats later knowledge as if it could supply the missing receipt-time mens rea. The offense is not made out by retroactive imputation. The Gold Key tells them: the mens rea must exist at the moment of receipt; later knowledge does not relate back.",
+   "lawyer": "The mens rea must exist at the time the defendant takes possession or control of the property; later knowledge does not retroactively supply it.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-CHURCH-CRAFT-FAIR-QUILT-01",
+   "statement": "Receiving stolen property requires that the defendant know or believe the property was stolen at the time she received control of it. The fact that the property was stolen before the defendant received it is necessary but not sufficient; the common-law and modern-statutory offense also requires knowledge or belief at the time of receipt. Later knowledge does not retroactively supply the missing mens rea.",
+   "trigger": "buyer purchases property at a normal price from a person she has known and trusted for years; nothing suggests the property is stolen; the seller confesses or the buyer learns the truth later; the buyer promptly returns the property",
+   "unlocks": "stolen-before-purchase dominant trap (A); retroactive-mens-rea distractor (D)",
+   "authority": "Model Penal Code § 223.6; Wayne R. LaFave, Substantive Criminal Law § 19.6 (3d ed.)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Receiving stolen property — receipt-time knowledge is the dispositive element",
+  "signal": "Buyer purchases property at a normal price from a trusted seller; nothing suggests the property is stolen; the buyer learns the truth later; the buyer promptly returns the property. The call is whether the buyer is guilty of receiving stolen property.",
+  "studentMove": "Test whether the defendant had knowledge or belief that the property was stolen at the moment of receipt. If not, the offense fails on the mens rea element and the rest of the analysis is unnecessary. Later knowledge does not retroactively supply the missing mens rea. The fact that the property was stolen before the defendant received it is necessary but not sufficient.",
+  "tinyRule": "Receiving stolen property requires that the defendant know or believe the property was stolen at the time she received control of it; later knowledge does not retroactively supply the receipt-time mens rea.",
+  "trap": "The stolen-before-purchase trap is the dominant misconception. Many students reason that because the property was stolen, anyone who received it must be guilty. The error is that the offense also requires knowledge or belief at the time of receipt — a good-faith purchaser is not guilty."
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "CQ18197",
+ "title": "Athletics Bus Collision",
+ "subject": "Torts",
+ "topic": "Other Torts",
+ "subtopic": "Joint tortfeasors — joint and several liability",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A Christian academy operates a school-bus service for its athletic program. Lydia, an employee of the academy, was driving a school bus to a Saturday basketball game at another Christian school when the bus collided with a car driven by Paul. Hannah, a parent volunteer riding on the bus to help supervise the team, was injured. The court held the academy, Lydia, and Paul jointly and severally liable for Hannah's damages, and the jury found Hannah to be free from fault. In enforcing the judgment, what portion of her damages is Hannah entitled to collect from the employee, Lydia?",
+ "call": "In enforcing the judgment, what portion of her damages is Hannah entitled to collect from the employee, Lydia?",
+ "choices": {
+  "A": "50 percent.",
+  "B": "100 percent.",
+  "C": "0 percent.",
+  "D": "40 percent."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "Hannah is entitled to collect 100 percent of her damages from Lydia. The court held the academy, Lydia, and Paul jointly and severally liable for Hannah's damages, and the jury found Hannah free of fault. Under joint and several liability, a plaintiff who has obtained a joint-and-several judgment may enforce the entire judgment against any one defendant, even if other defendants are also liable. The plaintiff is not required to apportion the damages among the defendants; the apportionment problem is the defendants' inter-se contribution claim against each other, not the plaintiff's collection problem. Gold Key: joint and several liability lets the plaintiff collect 100% from any one defendant; proportional sharing is the joint-tortfeasors' inter-se problem (contribution), not the plaintiff's problem. Silver Key: when the call asks \"what portion can the plaintiff collect from one defendant\" and the stem says \"jointly and severally liable,\" the answer is 100%.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (0%)",
+   "text": "is cut on misfit. The choice asserts that the plaintiff can collect nothing from the joint tortfeasor; that contradicts the very definition of joint and several liability. Visible from the stem (\"the court held the academy, Lydia, and Paul jointly and severally liable\"). The choice is NOT_RESPONSIVE for asserting a zero-collection outcome when the stem supplies a joint-and-several judgment that the plaintiff may enforce in full against any one defendant."
+  },
+  {
+   "label": "D (40%)",
+   "text": "is cut on overclaim / non-doctrinal-specificity. The choice asserts a specific 40% share that does not correspond to any doctrinal principle in the stem. Visible from the choice text itself (40% is not a recognized share in any contribution or apportionment doctrine in the stem). The choice is NOT_TRUE for asserting a non-doctrinal specific share as if it were a recognized outcome."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: does joint and several liability let the plaintiff collect 100% from any one defendant, or is the plaintiff's recovery capped at a proportional share (50%)? The single axis they fight on is the plaintiff's collection right vs. the defendants' inter-se contribution problem."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Joint and several liability lets the plaintiff collect 100% from any one defendant. The proportional split is the defendants' inter-se contribution problem, not the plaintiff's. B."
+  }
+ ],
+ "studentScript": "Step 1: Identify the doctrinal pivot. The court held the academy, Lydia, and Paul jointly and severally liable. Step 2: Distinguish the plaintiff's right from the defendants' inter-se problem. The plaintiff may collect 100% from any one defendant; the proportional split is the defendants' inter-se contribution problem, not the plaintiff's. Step 3: Apply the facts. Hannah is free of fault. She may collect 100% from Lydia. Step 4: Defeat the traps. C is a misfit (joint and several does not block the plaintiff from collecting from any one defendant). D is a non-doctrinal specific share (40% is not a recognized share in any contribution or apportionment doctrine in the stem). A is the dominant proportional-liability / contribution confusion trap. Gold Key: joint and several lets the plaintiff collect 100% from any one defendant; the proportional split is the defendants' inter-se problem. Silver Key: when the call asks 'what portion can the plaintiff collect from one defendant' and the stem says 'jointly and severally liable,' the answer is 100%. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student confuses the plaintiff's collection right (joint and several = full recovery from any one) with the defendants' inter-se contribution problem. The Gold Key tells them joint and several lets the plaintiff collect 100% from any one defendant; the proportional split is the defendants' inter-se problem.",
+   "lawyer": "Joint and several liability lets the plaintiff collect the full damages from any one defendant. The proportional split between defendants is the inter-se contribution problem, governed by the Uniform Contribution Among Tortfeasors Act and the majority common-law rule; it is a separate question from the plaintiff's collection right. Restatement (Third) of Torts: Apportionment of Liability §§ 1, 4, 10.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "After C and D are cut on misfit and non-doctrinal-specificity, A and B survive to the joint-and-several-vs-proportional clash. The Gold Key resolves the axis: joint and several lets the plaintiff collect 100% from any one defendant.",
+   "lawyer": "Under joint and several liability for an indivisible injury caused by multiple tortfeasors, the plaintiff may enforce the entire judgment against any one defendant. Restatement (Third) of Torts: Apportionment of Liability §§ 1, 4. The plaintiff's right to full recovery from any one defendant is not affected by the defendants' inter-se contribution problem.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The student assumes the plaintiff must pursue the defendants together, or that the plaintiff can be blocked from collecting from any single defendant. Visible from the stem: 'the court held the academy, Lydia, and Paul jointly and severally liable.' Joint and several liability means the plaintiff may enforce the full judgment against any one defendant.",
+   "lawyer": "Joint and several liability is the doctrinal rule that lets a plaintiff enforce the full judgment against any one defendant. The very definition of joint and several liability is that the plaintiff is not required to apportion the damages among the defendants. Restatement (Third) of Torts: Apportionment of Liability §§ 1, 4.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The student latches onto a number that does not correspond to any doctrinal principle in the stem and treats it as if it were a recognized share. Visible from the choice text itself (40% is not a recognized share in any contribution or apportionment doctrine in the stem).",
+   "lawyer": "The only doctrinally grounded options in this stem are 100% (joint and several — full recovery from any one) and 0% (no liability — contradicted by the court's holding). 40% is not a recognized share in any contribution or apportionment doctrine, and the stem supplies no factual basis for 40%.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-ATHLETICS-BUS-COLLISION-01",
+   "statement": "Joint and several liability lets the plaintiff collect 100% of damages from any one defendant. The proportional split between defendants is the inter-se contribution problem, not the plaintiff's problem.",
+   "trigger": "multiple defendants held jointly and severally liable; plaintiff free of fault; call asks what portion the plaintiff may collect from one defendant",
+   "unlocks": "proportional-liability / contribution confusion dominant trap (A)",
+   "authority": "Restatement (Third) of Torts: Apportionment of Liability §§ 1, 4; Uniform Contribution Among Tortfeasors Act (UCATA)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Joint and several liability — plaintiff collects 100% from any one defendant; contribution is inter-se",
+  "signal": "Multiple defendants held jointly and severally liable; plaintiff free of fault; call asks what portion the plaintiff may collect from one defendant.",
+  "studentMove": "Distinguish the plaintiff's collection right from the defendants' inter-se contribution problem. The plaintiff may collect 100% from any one defendant; the defendants' inter-se contribution claim is a separate question.",
+  "tinyRule": "Joint and several = plaintiff collects 100% from any one defendant; the proportional split is the defendants' inter-se problem, not the plaintiff's.",
+  "trap": "The dominant trap is the proportional-liability / contribution confusion. Many students half-remember that 'multiple defendants means a proportional split' and apply the defendants' inter-se rule to the plaintiff's collection right."
+ }
+}

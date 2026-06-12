@@ -1,0 +1,88 @@
+{
+ "id": "CQ20351",
+ "title": "Red Sea Mini Golf",
+ "subject": "Contracts",
+ "topic": "Mistake / Lack of Mutual Assent",
+ "subtopic": "F",
+ "difficulty": "Trap Repair",
+ "tension": null,
+ "stem": "Barnabas owns a privately run Bible-story mini-golf course called The Exodus Course. He sells it to Ruth. The sale contract says that Ruth buys the course “as is, including all hidden subsurface drainage defects, whether known or unknown.” Both Barnabas and Ruth believe the underground drainage tunnels beneath the “Red Sea Crossing” hole are intact. Before signing, however, those tunnels had already collapsed from storm erosion. Ruth later discovers the collapse and seeks rescission for mutual mistake.\n\nHow should the court rule?",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Grant rescission because hidden subsurface drainage defects are always outside an as-is clause.",
+  "B": "Deny rescission only if Barnabas proves that Ruth personally inspected every drainage tunnel.",
+  "C": "Grant rescission because both parties were mistaken about the drainage tunnels.",
+  "D": "Deny rescission because Ruth expressly assumed the risk of hidden subsurface drainage defects."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Gold Key: mutual mistake does not get you rescission if the party seeking rescission bore the risk of the mistake. The contract did that work here: Ruth accepted the course “as is,” including hidden subsurface drainage defects, whether known or unknown. Silver Key: when the answer set splits between “both were mistaken” and “risk was assigned,” read the as-is clause as the locking fact. The mistake exists, but Ruth bought the risk.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "always is the visible overclaim. A clause can allocate the risk it expressly names."
+  },
+  {
+   "label": "CUT B",
+   "text": "only if plus “personally inspected every drainage tunnel” invents a condition."
+  },
+  {
+   "label": "CUT C",
+   "text": "it proves only the mistake fact. It does not answer the risk-allocation fact in the stem."
+  },
+  {
+   "label": "RESIDUAL D",
+   "text": "D tracks the exact contract term and the exact call. No CLASH remains. CALL is not needed beyond the Gold Key."
+  }
+ ],
+ "studentScript": "Both sides were wrong, but the contract assigned hidden drainage defects to Ruth. A overclaims with always. B invents inspection. C stops at the wrong element. D is the residual.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word always claims hidden defects can never be allocated by an as-is clause, even when the clause expressly names them.",
+   "lawyer": "The as-is term can allocate the hidden-defect risk; no categorical hidden-defect carveout controls this item.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "Only if plus every drainage tunnel creates a proof condition the stem and answer array do not support.",
+   "lawyer": "Risk can be allocated by the written agreement without proof that the buyer personally inspected each hidden component.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "This answers whether both parties were mistaken; it does not answer the risk-allocation fact in the call.",
+   "lawyer": "Mutual mistake is not enough when the party seeking rescission bears the risk of that mistake.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "This choice matches the explicit as-is hidden-defect term and answers why rescission is denied.",
+   "lawyer": "Because the agreement allocated hidden subsurface drainage defects to Ruth, she bears the mistake risk and cannot rescind.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-AS-IS-MISTAKE-01",
+   "statement": "A mutual mistake does not support rescission if the party seeking rescission bore the risk. An as-is clause can allocate unknown hidden-defect risk to that party.",
+   "trigger": "A mutual mistake stem plus an express as-is or unknown-defect risk-allocation term.",
+   "unlocks": "The mutual-mistake-only trap.",
+   "authority": "Restatement (Second) of Contracts §§ 152, 154."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-AS-IS-MISTAKE-01",
+   "statement": "In a grant/deny rescission matrix, separate the mistake fact from the risk-allocation fact. The answer that engages the explicit risk term beats the answer that only says both parties were mistaken.",
+   "trigger": "Two choices grant rescission, two deny; one denial tracks the as-is clause.",
+   "unlocks": "2x2 grant/deny matrix with a mutual-mistake lure.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Risk before rescission",
+  "signal": "Mutual mistake plus as-is / unknown-defect clause.",
+  "studentMove": "Do not stop at both mistaken. Ask who took the risk.",
+  "tinyRule": "If the claimant accepted the mistake-risk, rescission is denied.",
+  "trap": "Picking the mutual-mistake-only grant answer."
+ }
+}

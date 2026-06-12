@@ -1,0 +1,96 @@
+{
+ "id": "CQ19793",
+ "title": "Dove Candle Ledgers",
+ "subject": "Civil Procedure",
+ "topic": "Appeals and Finality",
+ "subtopic": "Collateral Order Narrowness",
+ "difficulty": "medium",
+ "tension": null,
+ "stem": "Mary sued Peter in federal district court over a private contract for dove-shaped Christmas Eve candles sold through Peter’s “Light of the World” craft booth. During discovery, the judge ordered Peter to produce nonprivileged wax-batch logs, shipping receipts, and supplier invoices stored in a rented warehouse. Peter says paying workers to locate, box, and scan the papers will be expensive, so he seeks an immediate appeal under the collateral order doctrine.\n\nCall: Is the court of appeals likely to hear the appeal now?",
+ "call": "Is the court of appeals likely to hear the appeal now?",
+ "choices": {
+  "A": "Yes, because any discovery order that deals with a side issue instead of the merits is immediately appealable.",
+  "B": "No, because an ordinary document-production order usually must wait for final-judgment review.",
+  "C": "No, because a discovery order can never be challenged by any route.",
+  "D": "Yes, because an expensive production order automatically qualifies as a collateral order."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the best answer. The order is an ordinary document-production order. The fact that retrieving and scanning the documents will cost money does not make the order immediately appealable.\n\nGold Key: Collateral-order review is narrow. A discovery order must fit the small class of orders that are effectively unreviewable after final judgment; ordinary discovery-cost complaints do not.\n\nSilver Key: In an appealability array, read the fight as review now vs review later. Cut the extreme “any/every/never/automatically” answers first, then ask whether final-judgment review is enough.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "“automatically” is the overclaim. Expense does not automatically create immediate appeal."
+  },
+  {
+   "label": "CUT C",
+   "text": "“never” is the overclaim. Waiting for final judgment is not the same as no challenge ever."
+  },
+  {
+   "label": "CUT A",
+   "text": "one true-sounding prong is incomplete. “Side issue” / separate from merits is not enough."
+  },
+  {
+   "label": "Residual",
+   "text": "B. Ordinary document-production orders generally wait for final-judgment review."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the anchor-assisted CUT leaves one."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "Call: appeal now? Trigger: ordinary nonprivileged discovery plus expense. Cut any/never/automatically. Use the Gold Key: ordinary discovery waits. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer gives only side-issue separateness and treats it as enough.",
+   "lawyer": "Collateral order doctrine also requires conclusiveness, importance, and effective unreviewability after final judgment.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "The answer matches the procedural gate and the ordinary-discovery trigger.",
+   "lawyer": "Ordinary discovery orders generally do not qualify for immediate appeal under the collateral order doctrine.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word never overclaims. Later or extraordinary review is not the same as immediate appeal.",
+   "lawyer": "Discovery orders can be reviewed after final judgment or through extraordinary mechanisms in rare cases.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "Automatically turns litigation cost into immediate appeal.",
+   "lawyer": "Cost and inconvenience do not make ordinary discovery orders collateral orders.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-COLLATERAL-ORDER-NARROWNESS-01",
+   "statement": "Collateral-order review is narrow. Ordinary discovery orders generally wait for final judgment; expense alone is not effective unreviewability.",
+   "trigger": "Immediate appeal from a discovery order under the collateral order doctrine.",
+   "unlocks": "The side-issue and cost traps.",
+   "authority": "28 U.S.C. §1291; Cohen; Mohawk; Cunningham."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-DOVE-CANDLE-LEDGERS-01",
+   "statement": "In an appealability array, sort answers as review-now or review-later. Cut the extreme words first, then ask whether final judgment review is enough.",
+   "trigger": "Immediate appeal + discovery order + collateral order doctrine.",
+   "unlocks": "The yes/no immediate-appeal answer geometry.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Finality Gate: Ordinary Discovery Waits",
+  "signal": "Immediate appeal from a discovery order.",
+  "studentMove": "Treat cost as bait; check whether later review is enough.",
+  "tinyRule": "Collateral order is narrow; ordinary discovery orders usually wait.",
+  "trap": "Turning expense or separateness into immediate appeal."
+ }
+}

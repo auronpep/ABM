@@ -1,0 +1,80 @@
+{
+ "id": "CQ18811",
+ "title": "Elevator Access Class",
+ "subject": "Civil Procedure",
+ "topic": "Joinder, Class Actions, and Intervention",
+ "subtopic": "Rule 23(b)(2) injunctive or declaratory classes",
+ "difficulty": "Core (carried from source row; not separately scored)",
+ "tension": null,
+ "stem": "Hannah, Stephen, and Lydia are students at a public state university. Each of them uses a wheelchair and lives in an upper-floor dormitory room. For three months, the only elevator serving their dormitory building has been out of service, and the university has not repaired it. The students, on behalf of themselves and a class of more than forty similarly situated dormitory residents who use wheelchairs, sue the university. They seek a single injunction requiring the university to repair the elevator or to provide accessible alternative housing. They do not seek individualized damages in the class claim.\n\nWhich Rule 23(b) category is the most natural fit?",
+ "call": "Which Rule 23(b) category is the most natural fit?",
+ "choices": {
+  "A": "No class can be certified, because each student uses the elevator at different times of day.",
+  "B": "Rule 23(b)(1) only, because a judgment about one student could influence the university's conduct toward the others.",
+  "C": "Rule 23(b)(2), because the requested injunction would provide classwide relief from conduct generally applicable to the class.",
+  "D": "Rule 23(b)(3), because every class action involving many people must satisfy predominance and superiority."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "Rule 23(b)(2) is the most natural fit. The university has allegedly acted or refused to act on grounds generally applicable to the class (a uniform failure to repair a single elevator serving the entire dormitory, affecting every wheelchair-using resident in the same way). The remedy the class seeks is a single injunction of a kind that, if granted, would provide classwide relief: either fix the elevator or provide accessible alternative housing. The students do not ask for individualized damages, so the predominance-and-superiority inquiry that drives Rule 23(b)(3) is not the right lens. Rule 23(b)(1) (mandatory classes) does not fit because there is no risk of inconsistent adjudications or impairment of absent members' interests from separate suits. The class is the textbook Rule 23(b)(2) injunctive class.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (\"no class can be certified\")",
+   "text": "is cut on NOT_RESPONSIVE. The call asks which Rule 23(b) category is the most natural fit; \"no class can be certified\" refuses the call entirely. The choice answers a different question (can a class exist?) and does not address the call (which category?). Visible from the call: the call is \"which category\"; the choice is \"no class.\" Cut on filter broken: NOT_RESPONSIVE."
+  },
+  {
+   "label": "B (\"Rule 23(b)(1) only\")",
+   "text": "is cut on NOT_TRUE. Rule 23(b)(1) covers only mandatory classes where separate actions would risk inconsistent adjudications or impairment of absent members' interests. The dormitory-access claim fits neither. The \"could influence the university's conduct\" framing is a half_truth — it gestures at the right area but picks the wrong subsection. Cut on filter broken: NOT_TRUE.\n- D (\"Rule 23(b)(3), because every class action involving many people must satisfy predominance and superiority\") is cut on NOT_TRUE. The \"every class action\" clause is a tiered_absolute overclaim. Rule 23(b)(2) is a separate category that does not require predominance or superiority. The dominant trap is cut on the overclaim marker."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and D survive on the surface, but D is cut on the overclaim. After the three cuts, C is the residual. It breaks neither filter: it is true (Rule 23(b)(2) fits the dormitory-access claim) and responsive (it answers which Rule 23(b) category fits)."
+  },
+  {
+   "label": "CALL",
+   "text": "C is the residual. Pick C."
+  }
+ ],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call is 'which Rule 23(b) category is the most natural fit?' The choice refuses the call entirely — it answers 'no class can be certified,' which is a different question (can a class exist at all?).",
+   "lawyer": "Rule 23(a) commonality requires only that there are questions of law or fact common to the class — not that all class members behave identically. Different times-of-day use do not defeat commonality when the conduct and the relief are classwide. The choice fails the True & Responsive axiom.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "Rule 23(b)(1) covers mandatory classes where separate actions would risk inconsistent adjudications or impairment of absent members' interests. The dormitory-access claim fits neither prong. The 'could influence the university's conduct' framing is a half-truth that gestures at the right area but picks the wrong subsection.",
+   "lawyer": "Rule 23(b)(1)(A) and (B) cover (A) the risk of inconsistent adjudications that would impose incompatible standards on the defendant, or (B) the risk of adjudications that as a practical matter would impair absent members' ability to protect their interests (e.g., limited fund). The dormitory-access claim fits neither. The choice is wrong on the rule.",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "Breaks neither filter. The choice is true (Rule 23(b)(2) fits the dormitory-access claim) and responsive (it answers which Rule 23(b) category fits). Visible from the stem: single defendant, single uniform conduct, single injunctive remedy, no individualized damages.",
+   "lawyer": "Rule 23(b)(2) applies when 'the party opposing the class has acted or refused to act on grounds that apply generally to the class, making final injunctive or declaratory relief appropriate with respect to the class as a whole.' The university's alleged refusal to repair the elevator is precisely the kind of 'refus[al] to act on grounds that apply generally to the class' that Rule 23(b)(2) was written for. Wal-Mart v. Dukes, 564 U.S. 338 (2011), confirms the cohesion test is satisfied.",
+   "mold": "correct_answer"
+  },
+  "D": {
+   "signal": "The word 'every' is the visible overclaim marker. Rule 23(b)(2) is a separate category that does not require predominance or superiority. The dominant trap.",
+   "lawyer": "Rule 23(b)(3) is not the only class category. Rule 23(b)(2) does not require predominance or superiority; it requires only that the defendant has acted on grounds generally applicable to the class and that final injunctive or declaratory relief is appropriate for the class as a whole. A single injunction against a single uniform policy is the textbook Rule 23(b)(2) case. The 'every class action' framing is a `tiered_absolute` overclaim that loses to that counterexample.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-RULE23-23B2-01",
+   "statement": "Rule 23(b)(2) is the natural fit when a class claim targets a single defendant for a single uniform policy or course of conduct and seeks a single injunctive or declaratory remedy that would provide classwide relief — no predominance, no superiority, no opt-out.",
+   "trigger": "When the stem has one defendant, one uniform conduct, one injunctive remedy, and no individualized damages, ask 'is this a Rule 23(b)(2) case?' first, before defaulting to Rule 23(b)(3).",
+   "unlocks": "The 23(b)(3) dominant trap (overclaim 'every class action must satisfy predominance'); the 23(b)(1)-only misframe; the broad-absolute 'no class can be certified' negative.",
+   "authority": "Federal Rule of Civil Procedure 23(b)(2); Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338 (2011) (cohesion test for Rule 23(b)(2) classes)."
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Rule 23(b)(2) — single defendant, single conduct, single injunction",
+  "signal": "One defendant + one uniform conduct or policy + one injunctive remedy + no individualized damages",
+  "studentMove": "Spot the 1-1-1-0 pattern. Default to Rule 23(b)(2). Cut 23(b)(3) overclaim ('every class action') on the word. Cut 23(b)(1) on the mandatory-class fit. Cut 'no class can be certified' on the True & Responsive axiom.",
+  "tinyRule": "Rule 23(b)(2) applies when the defendant has acted or refused to act on grounds generally applicable to the class, making final injunctive or declaratory relief appropriate for the class as a whole.",
+  "trap": "The 23(b)(3) default ('every class action needs predominance') and the 23(b)(1) misframe."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "CQ19386",
+ "title": "Scripture Audio Cap",
+ "subject": "Contracts",
+ "topic": "Third-Party Beneficiary Contracts",
+ "subtopic": "VII-A",
+ "difficulty": "Core Diagnostic",
+ "tension": null,
+ "stem": "Hannah spent $26,000 replacing unusable Scripture-memory audio tracks after Lydia, a freelance sound engineer, delivered corrupted masters. The work had been commissioned under Peter’s written service contract with Lydia. That contract required Lydia to prepare the tracks for Hannah’s private tutoring program and stated, “Lydia’s total liability for any audio-work claim is capped at $12,000.” Hannah sues Lydia as an intended beneficiary and seeks $26,000.\n\nWhich argument is Lydia’s strongest response?",
+ "call": "Which argument is Lydia's strongest response?",
+ "choices": {
+  "A": "Hannah may enforce the promise only up to the contract's $12,000 liability cap.",
+  "B": "Hannah may recover only if Peter first assigns her the audio-service contract.",
+  "C": "Hannah cannot recover anything because beneficiaries can never enforce audio-service contracts.",
+  "D": "Hannah may recover the full $26,000 because she did not sign the liability cap."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Gold Key: an intended beneficiary takes the contract as written. The same written agreement that gives Hannah the right to claim the benefit also caps Lydia’s liability for audio-work claims at $12,000. Hannah may not enforce the beneficiary promise while treating the same contract’s limit as if it does not travel with the promise.\n\nSilver Key: when a third-party-beneficiary answer set offers “nothing,” “full amount,” “cap,” and “assignment,” locate the source of the right and the source of the limit. If both come from the same contract, the cap answer is the package answer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "“Beneficiaries can never enforce audio-service contracts” is an overclaim. The word “never” is the visible breaker."
+  },
+  {
+   "label": "CUT B",
+   "text": "Assignment is the wrong route. The stem and call put Hannah in the intended-beneficiary lane, not the later-assignment lane."
+  },
+  {
+   "label": "CLASH A vs D",
+   "text": "Both remaining choices assume Hannah can sue. They fight on one axis: does Hannah take the same contract’s cap with the same contract’s benefit? The splitting fact is that the beneficiary promise and liability cap are in the same written contract."
+  },
+  {
+   "label": "CALL / Anchor",
+   "text": "Apply the Gold Key: intended beneficiary takes the contract as written. Residual answer: A."
+  }
+ ],
+ "studentScript": "This is a package question. Cut the never answer. Cut assignment because the stem says intended beneficiary. Between cap and full amount, the same contract gives the right and the limit. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice keeps the benefit and the cap inside the same contract.",
+   "lawyer": "An intended beneficiary's enforcement right is measured by the contract that created it, including the liability cap.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The stem says intended beneficiary; the answer demands assignment.",
+   "lawyer": "Assignment is a different contract-rights route. A person who qualifies as an intended beneficiary need not first receive an assignment.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The word 'never' makes a categorical claim the stem itself pressures.",
+   "lawyer": "Intended beneficiaries may enforce contracts made for their benefit; there is no categorical bar for audio-service contracts.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "It uses the contract for the right but rejects the same contract for the cap.",
+   "lawyer": "A beneficiary is not better off than the promisee under the contract terms; the contract's liability cap applies.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-TPB-CAP-01",
+   "statement": "An intended beneficiary takes the contract as written. If the same contract creates the beneficiary's right and caps liability, the beneficiary's claim is capped.",
+   "trigger": "A nonparty sues as an intended beneficiary and seeks more than a limit in the same contract.",
+   "unlocks": "The nonparty-status trap that tries to keep the contract benefit while avoiding the contract limit.",
+   "authority": "Restatement (Second) of Contracts §§ 302, 309."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-TPB-CAP-01",
+   "statement": "In a no-recovery / capped-recovery / full-recovery / assignment answer set, compare the source of the right with the source of the limit. Same source means package answer.",
+   "trigger": "A beneficiary claims more than a contract limit.",
+   "unlocks": "The entitlement-scope quartet.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Third-party beneficiary package deal",
+  "signal": "A nonparty enforces a contract that also limits the claim.",
+  "studentMove": "Do not split the contract into benefit-only and cap-free pieces.",
+  "tinyRule": "TPB right travels with the contract terms.",
+  "trap": "Nonparty status feels like freedom from the cap."
+ }
+}

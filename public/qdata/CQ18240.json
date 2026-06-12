@@ -1,0 +1,80 @@
+{
+ "id": "CQ18240",
+ "title": "Family Table Refund",
+ "subject": "Civil Procedure",
+ "topic": "Subject Matter Jurisdiction",
+ "subtopic": "Diversity - Amount in Controversy",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Naomi, a Washington resident, contracted with Paul, a California furniture maker, to hand-build a custom dining table for the family home she shares with her husband. The contract was for a meaningful, hand-forged iron base and a carved Bible-verse inscription on the apron. Naomi paid $90,000 in advance. When Paul delivered the table, the apron had warped so badly that the verse inscription was illegible, and the iron base was unstable. Naomi, who is the plaintiff in the action, is a Washington citizen; Paul, the defendant, is a California citizen. The parties are completely diverse. Naomi sues Paul in federal court for $90,000 in compensatory damages. Paul moves to dismiss for lack of subject-matter jurisdiction, arguing that discovery will probably show her actual damages are only $40,000. No statute or contract provision caps Naomi's recovery below $75,000. Should the court dismiss for lack of the amount in controversy?",
+ "call": "Should the court dismiss for lack of the amount in controversy?",
+ "choices": {
+  "A": "No, because it is not legally certain on these facts that the plaintiff cannot recover more than $75,000.",
+  "B": "No, but only if the claim arises under federal law.",
+  "C": "Yes, because likely recovery below $75,000 defeats jurisdiction.",
+  "D": "Yes, because the defendant disputes damages."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The court should not dismiss for lack of the amount in controversy. The diversity statute, 28 U.S.C. § 1332, requires that the amount in controversy exceed $75,000, exclusive of interest and costs. A plaintiff who pleads damages in excess of that threshold in good faith controls the jurisdictional inquiry, and the suit will be dismissed for failure to satisfy the amount-in-controversy requirement only when it appears to a legal certainty that the plaintiff cannot recover more than the threshold. Gold Key: \"legal certainty\" means a fact that the law makes impossible on the face of the complaint — for example, a statutory cap, an admitted contract limitation, or a binding prior judgment — not a party's prediction of what discovery will reveal. Here, Naomi pleaded $90,000 in good faith, no statute caps her recovery below $75,000, and no contract clause limits her damages to $40,000 or less. Paul's argument that discovery will probably show only $40,000 is a factual prediction, not a legal bar, so the court cannot dismiss at the pleading stage.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (Yes, because the defendant disputes damages)",
+   "text": "is cut on NOT_RESPONSIVE / misfit. A defendant's factual contention that damages are lower than pleaded does not itself defeat the amount-in-controversy requirement. The damages dispute goes to the merits, not to subject-matter jurisdiction. Visible from the stem: Paul \"argues that discovery will probably show $40,000\" — a factual prediction, not a legal cap. The choice is NOT_RESPONSIVE for asserting a jurisdictional consequence of a fact dispute."
+  },
+  {
+   "label": "B (No, but only if the claim arises under federal law)",
+   "text": "is cut on NOT_RESPONSIVE / misfit. The call is the amount-in-controversy question, and the suit is grounded in diversity of citizenship. The presence or absence of a federal question is irrelevant to the § 1332 amount analysis. Visible from the stem: the parties are diverse, the call is the amount question, and no federal claim is at issue. The choice is NOT_RESPONSIVE for importing a different jurisdictional doctrine."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and A survive to the final axis: does a defendant's prediction of probable recovery below the threshold authorize dismissal (probability test) or does the legal-certainty test protect a good-faith pleading absent a legal cap? The single axis they fight on is the legal-certainty vs probability-of-recovery test."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Under St. Paul Mercury, the court will not dismiss for lack of amount in controversy unless it appears to a legal certainty that the plaintiff cannot recover more than $75,000. A defendant's prediction that discovery will show lower damages is a factual probability, not a legal bar. Here, Naomi pleaded $90,000 in good faith and no statute or contract caps her recovery below $75,000, so the legal ceiling is at least $90,000. The court should not dismiss → A. A student without the Gold Key sits in anchor_assisted territory on the probability-vs-certainty pivot, but the answer is settled by the St. Paul Mercury doctrine."
+  }
+ ],
+ "studentScript": "Step 1: Diversity. Naomi is a Washington citizen; Paul is a California citizen. Complete diversity is satisfied. Step 2: Amount. Naomi pleaded $90,000 in good faith. The amount-in-controversy threshold is $75,000. Step 3: Legal-certainty test. No statute caps recovery below $75,000; no contract clause limits her damages. The legal ceiling is at least $90,000. Step 4: Defendant's argument. Paul argues discovery will probably show $40,000. This is a factual probability, not a legal cap. Gold Key: under St. Paul Mercury, a probability of low recovery is not a legal bar. Silver Key: a defendant's damages dispute goes to the merits, not to subject-matter jurisdiction. Step 5: Federal-question red herring. The call is the amount question, not whether a federal claim is pleaded. B is wrong-doctrine. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the wrong-doctrine and damages-dispute distractors are cut, the legal-certainty vs probability axis is the only axis left. The Gold Key resolves to legal certainty: no statute or contract caps recovery below the threshold, so the good-faith pleading controls.",
+   "lawyer": "Under St. Paul Mercury Indemnity Co. v. Red Cab Co., 303 U.S. 283 (1938), a federal court will not dismiss for lack of amount in controversy unless it appears to a legal certainty that the plaintiff cannot recover more than the statutory threshold. Here, Naomi pleaded $90,000 in good faith, no statute caps recovery below $75,000, and no contract clause limits her damages to $40,000 or less. The court should not dismiss.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student imports federal-question jurisdiction into a pure amount-in-controversy problem. The presence or absence of a federal question is irrelevant when the suit rests on diversity of citizenship and the amount in controversy. The Gold Key (legal-certainty test) is unrelated to this distractor; the cut is on issue-senses (misfit) — federal-question jurisdiction is not in play.",
+   "lawyer": "Federal-question jurisdiction under 28 U.S.C. § 1331 has no amount-in-controversy requirement at all. The call asks about amount in controversy, not about federal-question jurisdiction; the analysis is whether the pleaded amount clears the $75,000 threshold by legal certainty, not whether a federal claim is pleaded.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The student confuses the legal-certainty test with a probability-of-recovery test. The amount-in-controversy requirement is jurisdictional, but the jurisdictional inquiry is governed by what the plaintiff pleaded in good faith and what the law (statutes and contracts) makes legally possible — not by what either party predicts discovery will reveal. The Gold Key resolves: 'legal certainty' means a fact that the law makes impossible, not a party's prediction.",
+   "lawyer": "Under St. Paul Mercury, a defendant's prediction that discovery will reduce actual recovery does not authorize dismissal at the pleading stage. The probability-vs-certainty distinction is the central trap; a probability of low recovery is not a legal bar.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The student treats the defendant's factual contention that damages are lower than pleaded as itself defeating the amount in controversy. The damages dispute goes to the merits, not to subject-matter jurisdiction. The Silver Key tells the student: a defendant's damages dispute is not a jurisdictional defect.",
+   "lawyer": "Diversity jurisdiction is tested by the good-faith pleading plus the absence of a legal cap, not by the parties' factual disagreement. Contested damages go to the merits; the jurisdictional defect is not present at the threshold.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-FAMILY-TABLE-01",
+   "statement": "Under the legal-certainty test, a federal court will not dismiss for lack of amount in controversy unless it appears to a legal certainty that the plaintiff cannot recover more than the statutory threshold. A defendant's prediction that discovery will reduce actual recovery is a factual probability, not a legal bar.",
+   "trigger": "diverse parties, good-faith pleading above the threshold, defendant argues discovery will show lower damages, no statute or contract caps recovery below the threshold",
+   "unlocks": "probability-vs-certainty dominant trap (C)",
+   "authority": "St. Paul Mercury Indemnity Co. v. Red Cab Co., 303 U.S. 283 (1938); 28 U.S.C. § 1332(a)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Amount in controversy — legal certainty, not probability",
+  "signal": "Diverse parties, good-faith pleading above the $75,000 threshold, defendant argues discovery will show lower damages, no statute or contract caps recovery below the threshold. The call is whether the court will dismiss for lack of amount in controversy.",
+  "studentMove": "Check the legal-certainty test. If no statute or contract makes it legally impossible to recover more than the threshold, the good-faith pleading controls and the court will not dismiss. A defendant's prediction of low recovery is a fact, not a legal bar.",
+  "tinyRule": "A good-faith allegation of damages in excess of the amount-in-controversy threshold controls unless it appears to a legal certainty that the plaintiff cannot recover more than that amount.",
+  "trap": "The probability-vs-certainty trap is the dominant misconception. Many students substitute 'discovery will probably show lower damages' for a legal cap and walk into the dismissal answer."
+ }
+}

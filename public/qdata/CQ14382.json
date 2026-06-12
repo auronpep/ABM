@@ -1,0 +1,92 @@
+{
+ "id": "CQ14382",
+ "title": "Bethlehem Lanterns",
+ "subject": "Contracts",
+ "topic": "Contract Content and Meaning",
+ "subtopic": "Parol Evidence Rule / Usage of Trade",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Peter’s Pilgrim Supply, a private regional distributor that sells Christian craft goods to bookstores and camp stores, signed a written agreement with Lydia Lantern Works. Under the agreement, Peter’s would distribute Lydia’s “Bethlehem Star” devotional lantern kits for four years throughout an eleven-town river district. The agreement required Peter’s to “promote in good faith the sale of Bethlehem Star lantern kits” in that district, but it said nothing about whether Peter’s could distribute other devotional lantern kits.\n\nNine months later, Peter’s agreed with Barnabas Bright Crafts to distribute Barnabas’s battery-free devotional lantern kits in the same eleven-town district.\n\nIf Lydia Lantern Works sues Peter’s Pilgrim Supply for breach of their distribution contract, which of the following facts, if established, would most strengthen Lydia’s case?",
+ "call": "If Lydia Lantern Works sues Peter’s Pilgrim Supply for breach of their distribution contract, which of the following facts, if established, would most strengthen Lydia’s case?",
+ "choices": {
+  "A": "Since Peter’s began distributing Barnabas lantern kits, sales of Bethlehem Star lantern kits have fallen 4% in the eleven-town district.",
+  "B": "For many years in the private Christian craft-kit industry, it has been a uniform practice for regional distributors to handle only one brand of devotional lantern kit.",
+  "C": "Barnabas Bright Crafts’ national advertising campaign disparages Bethlehem Star lantern kits by saying, “Faith does not need batteries, and neither should your lantern.”",
+  "D": "Before the written agreement was signed, a representative of Peter’s told Lydia Lantern Works that the arrangement would be “exclusive.”"
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The agreement is silent about whether Peter’s may carry competing devotional lantern kits. The strongest fact is an objective industry practice showing that distributors in this trade uniformly handle only one brand of devotional lantern kit. Gold Key: under the UCC, trade usage can explain, supplement, or qualify a written goods agreement when it can reasonably fit with the writing. Silver Key: when the finalist choices try to fill a silent term, sort by source. Objective trade practice is the responsive source; a prior spoken label is the trap source.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks which fact would most strengthen Lydia’s breach case. It does not ask which fact shows market harm, which rival acted badly, or which phrase sounds most like exclusivity."
+  },
+  {
+   "label": "CUT C",
+   "text": "Barnabas’s ad is a wrong-actor fact. It attacks Lydia’s product, but Barnabas is not the promisor. Filter: NOT_RESPONSIVE. Mold: wrong_element."
+  },
+  {
+   "label": "CUT A",
+   "text": "A 4% sales decline is an effect fact. It may show market movement, but it does not create an exclusivity term or show Peter’s breached one. Filter: NOT_RESPONSIVE. Mold: wrong_element."
+  },
+  {
+   "label": "CLASH B vs. D",
+   "text": "Both finalists speak to exclusivity. The axis is the source of the missing term: objective trade usage or prior oral statement."
+  },
+  {
+   "label": "CALL / anchor-assisted resolution",
+   "text": "Use the Gold Key. UCC usage of trade can explain or supplement a silent written goods agreement if reasonably consistent. A prior oral “exclusive” statement is vulnerable under the parol evidence rule. Residual: B."
+  }
+ ],
+ "studentScript": "The call is breach, not market harm. Cut the sales drop and rival ad. The two real sources are industry practice and prior oral words. Gold Key: UCC lets trade usage fill a silent written term when consistent; prior oral contradiction is vulnerable. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A sales drop answers business harm, not the missing exclusivity term.",
+   "lawyer": "A sales decline may be relevant to damages or causation but does not establish a contract restriction or breach of the good-faith promotion clause.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Uniform industry practice supplies the strongest source for reading the silent term.",
+   "lawyer": "UCC 1-303 and 2-202 allow usage of trade to explain or supplement a written goods agreement when reasonably consistent with express terms.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Barnabas made the ad; the suit is against Peter’s.",
+   "lawyer": "A competitor’s disparaging ad does not by itself establish that Peter’s breached its contract.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The exact word 'exclusive' is tempting, but it comes from the wrong source.",
+   "lawyer": "Under UCC 2-202, a prior or contemporaneous oral agreement cannot contradict a final written expression; trade usage is a distinct recognized source.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-TRADE-USAGE-01",
+   "statement": "Under the UCC, trade usage can explain, supplement, or qualify a written goods agreement if it can reasonably be read consistently with the express terms. A prior or contemporaneous oral agreement cannot contradict a final written expression.",
+   "trigger": "A written goods contract is silent on a restriction, and the choices compare industry practice with a prior oral promise.",
+   "unlocks": "The trap that a direct oral 'exclusive' statement is stronger than objective trade usage.",
+   "authority": "UCC 1-303(c)-(e); UCC 2-202(a)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-TRADE-USAGE-01",
+   "statement": "When two finalists try to fill a silent written term, sort by source: objective trade practice is the responsive source; a prior spoken label is the trap source.",
+   "trigger": "Choices split between industry practice and a pre-signing oral exclusivity statement.",
+   "unlocks": "The B-versus-D source-of-meaning clash.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Source of the missing term",
+  "signal": "Written goods contract is silent; choices offer trade practice, oral words, business harm, and competitor conduct.",
+  "studentMove": "Cut actor/effect facts; clash the two source facts.",
+  "tinyRule": "Trade usage can be a UCC source of meaning; prior oral contradiction is not the same source.",
+  "trap": "Direct word-match to 'exclusive.'"
+ }
+}

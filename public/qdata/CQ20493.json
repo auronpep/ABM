@@ -1,0 +1,88 @@
+{
+ "id": "CQ20493",
+ "title": "Fish Mark Picnic Lot",
+ "subject": "Real Property",
+ "topic": "Conveyance by Deed — Requirements for Valid Deed",
+ "subtopic": "B1",
+ "difficulty": "Core Diagnostic",
+ "tension": null,
+ "stem": "Esther owned a small vacant lot that she used for neighborhood Bible-memory picnics. After one picnic, she pulled a clean paper lunch wrapper from the basket and wrote, “I convey my vacant lot at 48 Galilee Court to Timothy.” Because Esther’s hands were too stiff to write her name, she drew a small fish symbol at the bottom intending it as her signature. She gave the wrapper to Timothy and said, “This little lot belongs to you today.” Timothy accepted. Timothy paid nothing, and nobody notarized or recorded the wrapper.\n\nWho owns the lot?",
+ "call": "Who owns the lot?",
+ "choices": {
+  "A": "Esther, unless the wrapper is later notarized and recorded.",
+  "B": "Timothy, because the writing identified the grantor, grantee, land, present transfer, and Esther authenticated it by her mark.",
+  "C": "Esther, because a deed must be prepared on a formal real-estate deed form.",
+  "D": "Esther, because Timothy paid no consideration."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The wrapper does the legally relevant work. It names Esther as grantor, names Timothy as grantee, identifies the lot, uses present transfer words, and carries Esther’s intended signature mark. It was also handed over with present-transfer words, and Timothy accepted.\n\nGold Key: For baseline validity between grantor and grantee, a deed needs minimal transfer formalities, not ceremony: writing, land identification, grantor/grantee, present transfer, grantor authentication, delivery, and acceptance. Printed deed forms, consideration, notarization, and recording are not the validity lock.\n\nSilver Key: Read this answer array as an “extra gate” array. Three answers add a formal extra condition. The survivor lists the minimum deed elements.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "Call: “Who owns the lot?” This is a deed-validity question, not a recording-priority question."
+  },
+  {
+   "label": "CUT",
+   "text": "A adds a later notarization/recording gate. After the Gold Key, that is an invented extra validity condition. Cut.\n\nC adds a formal printed deed-form gate. After the Gold Key, that is an invented extra validity condition. Cut.\n\nD adds a consideration gate. After the Gold Key, that is an invented extra validity condition. Cut.\n\nB lists the minimal transfer elements and matches the stem facts. Residual answer."
+  },
+  {
+   "label": "CLASH",
+   "text": "No Clash remains after the anchor-assisted Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "No Call needed."
+  }
+ ],
+ "studentScript": "Call is ownership now. This is a deed-formality anchor. The wrapper names the people, land, and present transfer; Esther authenticated by mark, delivered it, and Timothy accepted. Cut printed form, consideration, and notary-recording. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the Gold Key, this adds a later formal gate not required for baseline validity between the parties.",
+   "lawyer": "Recording and notarization may matter to recordability, proof, or priority; they are not the baseline transfer event between the parties under the tested rule.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "This answer lists the deed elements that match the stem after the Gold Key is applied.",
+   "lawyer": "The writing, intended mark, delivery, and acceptance satisfy the tested minimal deed-formality rule.",
+   "mold": null
+  },
+  "C": {
+   "signal": "After the Gold Key, this adds a printed-form requirement not required by the tested rule.",
+   "lawyer": "A valid deed does not depend on using a formal printed deed form if the required transfer elements are otherwise present.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "After the Gold Key, this imports a contract consideration requirement into deed validity.",
+   "lawyer": "Consideration is not required for an otherwise valid delivered deed between grantor and grantee.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-MINIMAL-DEED-FORMALITIES-01",
+   "statement": "A deed can be valid between grantor and grantee if it is a writing that identifies the grantor, grantee, land, and present transfer, is signed or otherwise authenticated by the grantor, and is delivered and accepted. No printed deed form, consideration, notarization, or recording is required for baseline validity between them.",
+   "trigger": "Who owns land after an informal written transfer with present words, mark, handoff, and acceptance?",
+   "unlocks": "formal-form, consideration, and notarization/recording extra-gate traps",
+   "authority": "Common-law/bar baseline; representative authorities include statutes and cases recognizing writing, subscription, delivery, signature by mark, no consideration requirement, and validity of unrecorded instruments between parties."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-EXTRA-GATE-ARRAY-01",
+   "statement": "When three deed answers add formal extra gates and one answer lists the minimal transfer elements, treat the array as an extra-gate sweep after the deed-formality anchor.",
+   "trigger": "An informal writing plus present transfer words is followed by three formal-sounding objections.",
+   "unlocks": "3-vs-1 array: formal form / consideration / notary-recording versus minimum deed elements",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Minimal Deed Formalities",
+  "signal": "Informal writing, present transfer words, no money, no notarization, no recording.",
+  "studentMove": "Ask whether the writing hits the minimum transfer elements before adding extra gates.",
+  "tinyRule": "Writing + parties + land + present transfer + grantor authentication + delivery + acceptance is enough between the parties.",
+  "trap": "Contract or courthouse instincts add requirements the tested rule does not require."
+ }
+}

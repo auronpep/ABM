@@ -1,0 +1,76 @@
+{
+ "id": "CQ18592",
+ "title": "Shiloh Campground",
+ "subject": "Torts",
+ "topic": "Nuisance",
+ "subtopic": "Private nuisance defenses",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The Timothy family bought a home next to Shiloh Family Bible Camp, a long-running Christian retreat center that has hosted summer youth retreats for more than twenty years. After the family's purchase, the camp doubled its summer retreat schedule, adding evening outdoor worship services, amplified gospel-music performances, and heavy bus traffic, producing noise and vibrations that cracked the home's plaster and made it difficult to occupy the home on summer evenings. The camp argues that the Timothy family \"came to the nuisance.\"\n\nHow should the court treat that argument?",
+ "call": "How should the court treat that argument?",
+ "choices": {
+  "A": "It is a factor in the nuisance and remedy analysis, but it does not automatically defeat the claim.",
+  "B": "It is a complete defense because the camp was there first.",
+  "C": "It converts the claim from nuisance to strict liability only.",
+  "D": "It is irrelevant in every nuisance case."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The court should treat the \"coming to the nuisance\" argument as A — a factor in the reasonableness and remedy analysis, not a complete defense. The camp's expanded summer schedule (more services, amplified music, more buses) is a substantial change in the activity's intensity, and the resulting vibrations and noise present the kind of serious interference that private nuisance doctrine addresses. Gold Key: \"coming to the nuisance\" is a reasonableness factor — it can reduce damages or shape an injunction's scope — but it does not by itself defeat a private nuisance claim, especially when the defendant has materially expanded the activity after the plaintiff arrived. Silver Key: when the defendant's activity has substantially expanded after the plaintiff moved in, the \"coming to the nuisance\" argument is at its weakest as a complete defense.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- D (\"irrelevant in every case\") is cut on the rule: coming to the nuisance is a reasonableness factor, not always irrelevant. The call's middle ground defeats the overclaim.\n- C (\"converts the claim to strict liability only\") is cut on the rule: the timing of the plaintiff's arrival does not convert a private nuisance claim into a strict-liability claim. The tort category is fixed by the nature of the interference and the defendant's intent or negligence."
+  },
+  {
+   "label": "CLASH",
+   "text": "B and A remain. The axis they fight on is: does \"coming to the nuisance\" end the case, or is it just a factor? The splitting fact is that the camp expanded its activity after the family moved in."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. \"Coming to the nuisance\" is a reasonableness factor, not a complete defense; an expansion after the plaintiff's arrival cuts strongly against the \"was there first\" intuition. Residual answer: A."
+  }
+ ],
+ "studentScript": "Step 1 — call focus. The call asks how the court should treat the 'coming to the nuisance' argument. Step 2 — the rule. The doctrine is a reasonableness factor, not a complete defense. Step 3 — splitting fact. The camp expanded its summer schedule after the Timothy family arrived; the expansion cuts strongly against the 'was there first' intuition. Step 4 — distractors. B is the 'was there first' overclaim (rejected by the Gold Key). C is the tort-category misframe (timing does not change the tort's category). D is the irrelevance overclaim (timing can matter to reasonableness and remedy). Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice answers the call's middle ground: coming to the nuisance is a factor, not a complete defense.",
+   "lawyer": "The 'coming to the nuisance' doctrine is a reasonableness factor under Restatement (Second) of Torts §§ 826, 833(1); it can reduce damages or shape an injunction but does not, by itself, defeat a private nuisance claim.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student reaches for the 'was there first' intuition. The Gold Key rejects the overclaim: the doctrine is a reasonableness factor, not a complete defense, and the *expansion* after the move-in cuts against the intuition.",
+   "lawyer": "Coming to the nuisance is not a complete defense; Restatement (Second) of Torts §§ 826, 833(1) treat it as a balancing factor. An *expansion* of the activity after the plaintiff's arrival is treated as a fresh nuisance-causing activity for analytical purposes.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The student reads the 'coming to the nuisance' doctrine as changing the tort's category. The breaker: timing does not convert a private nuisance claim into a strict-liability claim.",
+   "lawyer": "The tort category is fixed by the nature of the interference and the defendant's intent or negligence, not by the plaintiff's timing. The 'coming to the nuisance' doctrine affects reasonableness and remedy, not the tort's category.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The student overclaims the irrelevance frame. The breaker: timing *can* matter to reasonableness and remedy; the doctrine is not always irrelevant.",
+   "lawyer": "The 'coming to the nuisance' doctrine is a reasonableness factor under Restatement (Second) of Torts §§ 826, 833(1); timing can affect the gravity of the harm, the utility of the conduct, and the suitability of particular remedies.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-SHILOH-CAMPGROUND-01",
+   "statement": "Coming to the nuisance is a reasonableness factor, not a complete defense. An *expansion* of the activity after the plaintiff moved in cuts strongly against the 'was there first' intuition.",
+   "trigger": "defendant argues 'coming to the nuisance' after a substantial expansion of the activity following the plaintiff's move-in",
+   "unlocks": "complete-defense overclaim trap (B)",
+   "authority": "Restatement (Second) of Torts §§ 826, 833(1); Spano v. Perini & Sons, 250 N.E.2d 31 (N.Y. 1969)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Coming to the nuisance is a factor, not a defense",
+  "signal": "Defendant argues 'coming to the nuisance' after a substantial expansion of the activity following the plaintiff's move-in.",
+  "studentMove": "Cut the complete-defense overclaim. The doctrine is a reasonableness factor, not a complete defense. An *expansion* after the plaintiff's arrival cuts strongly against the 'was there first' intuition.",
+  "tinyRule": "Coming to the nuisance is a factor, not a complete defense; an expansion of the activity after the plaintiff moved in makes the doctrine weakest.",
+  "trap": "The 'was there first' intuition pulls toward the complete-defense overclaim."
+ }
+}

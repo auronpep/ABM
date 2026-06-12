@@ -1,0 +1,84 @@
+{
+ "id": "CQ20714",
+ "title": "Prayer Robotics Kits",
+ "subject": "Constitutional Law",
+ "topic": "Judicial Review",
+ "subtopic": "Standing",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "BARMATRIX Q#: 20714_prayer_robotics_kits\n\nAfter reports that teenagers at weekend robotics competitions are injuring themselves while soldering circuit boards, Congress enacts a provision distributing free soldering-safety kits to participants in public programs and private youth academies. The kits contain goggles, burn pads, and safety cards; they contain no prayer, worship material, or religious instruction. In many states, most private youth academies are church-affiliated. Lydia, a federal taxpayer, challenges the provision, arguing that it unconstitutionally supports religious entities.\n\nDoes Lydia have standing to make the challenge?\n\nSource row reviewed: BARMATRIX Q# 20714, Constitutional Law, official key B.\n\n---",
+ "call": "Does Lydia have standing to make the challenge?",
+ "choices": {
+  "A": "No, because Lydia has not shown the required nexus between her taxpayer status and the safety-kit expenditures.",
+  "B": "Yes, because any federal taxpayer may challenge a congressional spending authorization.",
+  "C": "No, because there is no proof that any money freed up by the free kits will be used for religious purposes.",
+  "D": "Yes, because the challenge alleges a possible violation of a specific constitutional limit on Congress’s spending power."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Lydia is not relying on a general taxpayer grievance. She is challenging a congressional spending provision and claiming that the spending violates a specific constitutional limit on that spending power.\n\nGold Key: Federal taxpayers generally cannot sue just because tax money is being spent, but the Flast exception allows standing for a challenge to congressional taxing-and-spending action when the claim invokes a specific constitutional limit on that spending power. The Establishment Clause is the classic trigger.\n\nSilver Key: Lock the call as standing, not merits. Do not ask whether the robotics kits are actually unconstitutional; ask whether this taxpayer is allowed into court to make that claim.\n\n---",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B — CUT",
+   "text": "“Any federal taxpayer” is an overclaim. The word any is the visible breaker."
+  },
+  {
+   "label": "C — CUT",
+   "text": "The choice answers a merits/funding-use question. The call asks standing."
+  },
+  {
+   "label": "A vs D — CALL with Gold Key",
+   "text": "Both speak the language of taxpayer standing. The axis is whether the spending-limit nexus is missing or supplied. The Gold Key resolves it: congressional spending + Establishment Clause claim supplies the exception. D survives.\n\n---"
+  }
+ ],
+ "studentScript": "This is a standing call. Cut 'any taxpayer' as too broad. Cut saved-money proof as merits, not standing. Use the Gold Key: congressional spending plus Establishment Clause is the taxpayer-standing exception. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the Gold Key, the required connection is supplied rather than missing.",
+   "lawyer": "Flast uses a nexus/logical-link structure for congressional spending claims under the Establishment Clause; this fact pattern satisfies that exception.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "The word 'any' makes the taxpayer-standing rule too broad.",
+   "lawyer": "Federal taxpayer standing is generally barred; Flast is a narrow exception.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The choice asks how recipients will use saved money; the call asks whether Lydia may sue.",
+   "lawyer": "The Flast standing inquiry does not require proof that freed private funds will be spent for religious purposes.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "Congressional spending plus a specific Establishment Clause limit is the narrow taxpayer-standing exception.",
+   "lawyer": "This matches Flast’s taxpayer-standing exception.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-FLAST_SPENDING-01",
+   "statement": "Federal taxpayers generally lack standing, but they may challenge a congressional taxing-and-spending enactment when the claim alleges violation of a specific constitutional limit on that spending power; the Establishment Clause is the classic trigger.",
+   "trigger": "Federal taxpayer + congressional spending + Establishment Clause claim.",
+   "unlocks": "The narrow federal-taxpayer standing exception.",
+   "authority": "Flast v. Cohen, 392 U.S. 83 (1968)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-PRAYER_ROBOTICS_KITS-01",
+   "statement": "On a taxpayer-standing call, separate entry-to-court from whether the aid is unconstitutional.",
+   "trigger": "The call asks whether the taxpayer has standing.",
+   "unlocks": "Standing-versus-merits confusion.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Taxpayer Standing: Narrow Door, Not Open Gate",
+  "signal": "Federal taxpayer challenges religious spending.",
+  "studentMove": "Cut 'any taxpayer' overclaims, then check the narrow spending-power/Establishment trigger.",
+  "tinyRule": "General no standing; Flast exception for congressional spending plus Establishment Clause.",
+  "trap": "Treating all taxpayer challenges as allowed, or treating merits proof as standing proof."
+ }
+}

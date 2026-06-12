@@ -1,0 +1,100 @@
+{
+ "id": "CQ20730",
+ "title": "Shepherd Sling Fair",
+ "subject": "Torts",
+ "topic": "Torts",
+ "subtopic": "Intentional Torts",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "At a privately run Bible-story craft fair held in a rented community center, Mary brought her seven-year-old son Peter. When Lydia, a volunteer judge, gave the blue ribbon to another child’s model of Noah’s ark instead of Peter’s painted shepherd-sling display, Peter shouted, ran across the aisle, and slammed his shoulder into Lydia. Lydia fell against a table and fractured her elbow.\n\nCall: In Lydia’s battery action against Peter, which argument most strongly supports liability?",
+ "call": "In Lydia's battery action against Peter, which argument most strongly supports liability?",
+ "choices": {
+  "A": "Peter was old enough to appreciate the riskiness of charging across the aisle.",
+  "B": "Peter was old enough to appreciate that knocking Lydia into a table could inflict serious injury.",
+  "C": "Peter's anger over the ribbon decision was not justified.",
+  "D": "Peter intended to slam his shoulder into Lydia."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The strongest liability argument is that Peter intended the bodily contact itself: he meant to slam his shoulder into Lydia. Gold Key: Battery does not require intent to cause injury, appreciation of risk, or bad motive; the key mental-state target is harmful/offensive contact or apprehension of that contact. Silver Key: When the options offer different mental states, map each one to the tort named in the call before choosing. Here, the answer that tracks the deliberate-contact fact is the only one that answers the battery call.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "It answers a neighboring negligence/risk question. Battery call asks for contact-intent support. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT B",
+   "text": "It proves the wrong mental-state target. Injury appreciation is more dramatic than contact intent, but it does not answer the battery call. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT C",
+   "text": "It answers a moral/motive question. Whether Peter’s anger was justified is not the battery element. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "Residual D",
+   "text": "The stem says Peter slammed his shoulder into Lydia. D captures that deliberate contact."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the Gold Key."
+  },
+  {
+   "label": "Deciding mode",
+   "text": "Anchor-assisted CUT."
+  }
+ ],
+ "studentScript": "Battery call. I need the contact-intent fact. Risk, injury, and anger are neighboring targets. D repeats the deliberate shoulder contact. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answer talks like negligence: risk appreciation. The call says battery.",
+   "lawyer": "Battery liability does not require appreciation of risk; it requires intent to cause harmful/offensive contact or apprehension, with contact resulting.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This answer aims at injury appreciation. The stem's best battery fact is deliberate contact.",
+   "lawyer": "Battery does not require intent to injure or knowledge that serious injury may result.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This answer explains why Peter was angry. It does not give the contact element.",
+   "lawyer": "Motive or unjustified anger is not the battery intent element and is not a defense-negating fact needed for liability here.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "This answer repeats the deliberate-contact fact that matches the battery call.",
+   "lawyer": "Intentional harmful/offensive bodily contact supports battery; a child may be liable if the requisite intent is formed.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-BATTERY-CONTACT-INTENT-01",
+   "statement": "Battery intent points at harmful/offensive contact or apprehension of that contact. It does not require intent to injure, appreciation of risk, or bad motive; a child can be liable if the child formed that contact-level intent.",
+   "trigger": "Battery call plus choices that talk about injury, risk, age, or anger.",
+   "unlocks": "injury-intent, risk-appreciation, and motive distractors",
+   "authority": "Restatement (Second) of Torts §§ 13, 18; Garratt v. Dailey."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-BATTERY-ANSWER-ARRAY-01",
+   "statement": "When the answer array gives four mental states, choose the one aimed at the tort named in the call. For battery, the contact-target answer beats injury, risk, and motive answers.",
+   "trigger": "Battery call with choices about contact, injury, risk, and anger.",
+   "unlocks": "mental-state target array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Battery mental-state target",
+  "signal": "Battery answer set offers contact, injury, risk, and motive.",
+  "studentMove": "Lock the call, then pick the answer that targets contact.",
+  "tinyRule": "Contact intent beats injury/risk/motive.",
+  "trap": "Choosing the more serious-sounding injury or risk answer."
+ }
+}

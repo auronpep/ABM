@@ -1,0 +1,88 @@
+{
+ "id": "CQ19434",
+ "title": "Question 19434",
+ "subject": "Torts",
+ "topic": "Products liability",
+ "subtopic": "Failure to warn - learned intermediary",
+ "difficulty": "medium_high_anchor",
+ "tension": null,
+ "stem": "Before Lydia played handbells at a community hymn festival, her physician, Stephen, prescribed a prescription-only wrist nerve stimulator to control hand tremors. The stimulator carried a rare risk of finger numbness that could make fine hand movement difficult. Before Stephen ordered it, Barnabas Biotech sent Stephen an updated professional safety notice that clearly described the risk, symptoms, and alternative treatments. Stephen read the notice, discussed the risk with Lydia, and ordered the stimulator because alternatives were unsuitable. Lydia later suffered finger numbness and sued Barnabas Biotech, arguing that Barnabas did not send the same warning directly to her. The jurisdiction follows the learned-intermediary rule.\n\nCall: Is Lydia likely to prevail on a strict products liability claim for failure to warn against Barnabas Biotech?",
+ "call": "Is Lydia likely to prevail on a strict products liability claim for failure to warn against Barnabas Biotech?",
+ "choices": {
+  "A": "Yes, because Lydia was injured by the exact risk described in the warning.",
+  "B": "No, because prescription medical devices are exempt from all products liability claims.",
+  "C": "Yes, because makers of prescription medical devices must always warn patients directly.",
+  "D": "No, because Barnabas Biotech adequately warned Stephen, the prescribing physician, who served as the learned intermediary."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Barnabas warned the prescribing physician before the device was ordered. Stephen read the warning, discussed the risk with Lydia, and ordered the stimulator only after considering the alternatives. Gold Key: In a learned-intermediary jurisdiction, a prescription-product manufacturer can satisfy its warning duty by giving an adequate warning to the prescribing physician or other appropriate healthcare provider. The claim fails because the proper warning audience was warned.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. It proves injury by a warned-of risk, not breach of the warning duty. Mold: wrong_element."
+  },
+  {
+   "label": "CUT B",
+   "text": "Not true by overclaim. “Exempt from all products liability claims” is an all-or-nothing immunity claim. Mold: tiered_absolute."
+  },
+  {
+   "label": "CUT C",
+   "text": "Not true once the Gold Key is applied. “Must always warn patients directly” ignores the learned-intermediary route. Mold: tiered_absolute."
+  },
+  {
+   "label": "Residual",
+   "text": "D. No CLASH or CALL needed after the anchor-assisted CUT."
+  }
+ ],
+ "studentScript": "Call is failure to warn. A is injury, not warning defect. B says all claims exempt: overclaim. C says always warn patient directly: Gold Key kills it. D matches the learned-intermediary facts.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice proves the warned risk happened. The call asks whether the manufacturer failed to warn.",
+   "lawyer": "A warned-of risk can occur even when the warning duty was satisfied.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The choice says prescription medical devices are exempt from all products liability claims. The word all is the overclaim.",
+   "lawyer": "Prescription products are not categorically immune from all products-liability theories.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The choice says always. The Gold Key gives the exception route: warning the prescribing physician can satisfy the duty.",
+   "lawyer": "Under the learned-intermediary doctrine, adequate warning to the prescribing physician can discharge the manufacturer's warning duty.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "This choice matches the call and the Gold Key: the manufacturer warned the prescribing physician before the product was ordered.",
+   "lawyer": "The facts show an adequate professional warning to the learned intermediary before use.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-LEARNED-INTERMEDIARY-01",
+   "statement": "For prescription products, an adequate warning to the prescribing healthcare provider can satisfy the manufacturer's warning duty; the manufacturer is not automatically required to warn the patient directly.",
+   "trigger": "Prescription-only product + professional warning to prescriber + jurisdiction follows learned-intermediary rule.",
+   "unlocks": "The direct-patient-warning overclaim.",
+   "authority": "Restatement (Third) of Torts: Products Liability § 6(d); learned-intermediary case law."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-WARNED-RISK-01",
+   "statement": "On a failure-to-warn call, an answer saying the warned-of risk happened proves injury, not warning defect.",
+   "trigger": "Choice points to injury by the described risk instead of the adequacy or audience of the warning.",
+   "unlocks": "The exact-risk wrong_element trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Warned risk is not warning defect",
+  "signal": "The answer says the plaintiff suffered the exact risk described.",
+  "studentMove": "Ask whether the call is about injury or about warning duty.",
+  "tinyRule": "Injury completes harm; it does not prove the warning was defective.",
+  "trap": "Wrong-element answer on failure-to-warn claims."
+ }
+}

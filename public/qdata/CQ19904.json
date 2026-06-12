@@ -1,0 +1,88 @@
+{
+ "id": "CQ19904",
+ "title": "Psalm Orchard Foreclosure Notice",
+ "subject": "Real Property",
+ "topic": "Mortgages",
+ "subtopic": "Foreclosure - parties and priorities",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Ruth owned a private orchard cottage where she made Scripture memory cards for sale at weekend markets. To buy a new printing press, Ruth borrowed $74,000 from Barnabas and gave Barnabas a promissory note and a mortgage on the orchard parcel. Barnabas immediately and properly recorded the mortgage.\n\nSix weeks later, Ruth borrowed $41,000 from Lydia and gave Lydia a promissory note and a mortgage on the same parcel. Lydia immediately and properly recorded the mortgage.\n\nRuth died soon afterward. Her will left the orchard parcel to Stephen for life, then to Mary. Stephen moved into the cottage. Neither Barnabas nor Lydia received the payments due on their notes. Without notifying or serving Stephen or Mary, Barnabas asks a court to order a foreclosure sale of the orchard parcel.\n\nThe court should:",
+ "call": "The court should:",
+ "choices": {
+  "A": "order the sale of a remainder only.",
+  "B": "order the sale of a life estate only.",
+  "C": "deny Barnabas's request.",
+  "D": "order the sale of a fee interest."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Barnabas has a senior recorded mortgage, and the later devisees took their property interests subject to that mortgage. But that does not let Barnabas jump straight to a foreclosure sale without bringing the current property-interest holders into the case.\n\nGold Key: In a judicial foreclosure, all holders of present or future property interests that may be cut off by the sale must receive notice and be made parties before the court orders the sale.\n\nSilver Key: The phrase “without notifying or serving Stephen or Mary” turns the question into a process-first item. Do not choose what estate can be sold until the people who hold those estates are in court.\n\nStephen holds the life estate. Mary holds the remainder. Both interests would be affected by a foreclosure sale. Since neither Stephen nor Mary was notified or served, the court should deny Barnabas’s request.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A is a single-interest answer. It focuses on Mary’s remainder, but the process fact says neither Stephen nor Mary was notified or served. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT B",
+   "text": "B is also a single-interest answer. It focuses on Stephen’s life estate, but the court’s first problem is missing service on interest holders. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT D",
+   "text": "D is the best merits answer after proper party joinder. It fails the current call because the stem says the sale is requested without notice/service. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "CALL",
+   "text": "No tie remains. C is the residual answer."
+  }
+ ],
+ "studentScript": "The sale answers are premature. Stephen and Mary hold the interests named in the stem, and the lender did not notify or serve either one. Process first; deny.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The stem flags no notice/service to both interest holders; this answer talks only about Mary's future slice.",
+   "lawyer": "A remainder holder has a property interest that cannot be cut off in judicial foreclosure without notice and party status.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Stephen moved in, but the no-service fact is broader than Stephen's possession.",
+   "lawyer": "A life tenant is a necessary party when the foreclosure may affect that interest.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This is the only answer that responds to the no-notice/no-service fact.",
+   "lawyer": "Due process and foreclosure-party rules require notice to holders of present and future property interests affected by the sale.",
+   "mold": null
+  },
+  "D": {
+   "signal": "This may match the post-notice sale scope, but it skips the process threshold.",
+   "lawyer": "A senior mortgage may support foreclosure of the mortgaged fee, but not by a decree entered without affected interest holders receiving notice.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-FORECLOSURE-NOTICE-01",
+   "statement": "In judicial foreclosure, holders of present or future property interests that may be cut off by the sale must receive notice and be made parties before the court orders the sale.",
+   "trigger": "Foreclosure requested without notice or service on a life tenant or remainderman.",
+   "unlocks": "The fee-interest sale trap.",
+   "authority": "Mullane v. Central Hanover Bank & Trust Co.; Mennonite Board of Missions v. Adams."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-FORECLOSURE-NOTICE-01",
+   "statement": "When a foreclosure stem says the lender did not notify or serve the estate holders, lock the call as process first and sale scope second.",
+   "trigger": "without notifying or serving",
+   "unlocks": "Sale-scope choices versus threshold-denial choice.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Foreclosure: bring interest holders into court",
+  "signal": "Foreclosure request + life estate/remainder + no notice/service",
+  "studentMove": "Cut every sale-scope answer until the service threshold is satisfied.",
+  "tinyRule": "No notice to affected estate holders, no sale order.",
+  "trap": "Choosing the estate that can be sold instead of the process answer."
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "id": "CQ20744",
+ "title": "Bethlehem Loading Lane",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Duty / Foreseeability Target",
+ "difficulty": "hard",
+ "tension": null,
+ "stem": "Source row used: BARMATRIX Q#20744, Torts, official key C, asking which foreseeability target controls the taxi driver’s negligence liability.\n\nChristian variation — final locked version\n\nDuring setup for a private Christmas Bible-pageant at a rented fairground, Timothy was pushing a handcart stacked with manger scenery when he clipped Lydia and hurried away, leaving her sprawled in a marked loading lane. A few minutes later, Stephen, drowsy after knowingly taking a strong sleep aid, drove a small electric forklift down the lane and ran over Lydia’s leg.\n\nIf Lydia brings a negligence action against Stephen for damages resulting from her fractured leg, Stephen’s liability will most probably turn on whether it was foreseeable that",
+ "call": "If Lydia brings a negligence action against Stephen for damages resulting from her fractured leg, Stephen's liability will most probably turn on whether it was foreseeable that",
+ "choices": {
+  "A": "a person clipped by a prop cart would be involved in another collision within a few minutes.",
+  "B": "a person would be in the loading lane.",
+  "C": "Stephen would operate the forklift while drowsy after taking a strong sleep aid.",
+  "D": "Timothy would handle the prop cart carelessly and leave Lydia lying in the loading lane after clipping her."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The clean foreseeability target is not the handcart accident, the precise chain of collisions, or Stephen’s own impaired driving. The target is whether a person might foreseeably be in the lane Stephen chose to drive through.\n\nGold Key: For negligence by an active operator, ask what person or class of persons was foreseeably put at risk by the defendant’s conduct. Do not require foreseeability of the exact prior event that placed the plaintiff there, and do not require foreseeability of the defendant’s own negligent breach.\n\nSilver Key: In a “foreseeable that ___” answer array, compare the noun phrase after “that.” The credited answer usually names the general plaintiff/risk target, while the traps name the old set-stage event, the exact chain, or the defendant’s own wrongdoing.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "wrong target. It asks for foreseeability of the exact second-accident chain."
+  },
+  {
+   "label": "CUT C",
+   "text": "wrong target. It asks for foreseeability of Stephen’s own negligent breach."
+  },
+  {
+   "label": "CUT D",
+   "text": "wrong target. It asks for foreseeability of Timothy’s prior set-stage conduct."
+  },
+  {
+   "label": "Residual",
+   "text": "B. It names the general risk target: a person in the loading lane."
+  },
+  {
+   "label": "CLASH",
+   "text": "not needed after the Gold Key cut."
+  },
+  {
+   "label": "CALL",
+   "text": "not needed."
+  }
+ ],
+ "studentScript": "Call: Stephen's liability turns on what had to be foreseeable. Scan the targets. A is exact chain. C is Stephen's own breach. D is Timothy's old set-stage act. B is the person-in-lane risk. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It asks whether the later collision sequence was foreseeable, not whether a person in the lane was foreseeable.",
+   "lawyer": "Exact manner/chain is not the controlling target once the operator's conduct creates a risk to a person in the path.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "It names the person-in-the-lane risk, the broad target that matches the call.",
+   "lawyer": "Under the Palsgraf-style frame, Lydia is within the class of persons foreseeably exposed if a person might be in the loading lane.",
+   "mold": null
+  },
+  "C": {
+   "signal": "It asks whether Stephen's own careless operation was foreseeable.",
+   "lawyer": "The plaintiff need not prove that the defendant's negligence itself was foreseeable; breach is assessed after the relevant duty/risk frame is identified.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "It asks about Timothy's earlier conduct, which set the scene before Stephen acted.",
+   "lawyer": "The prior event that placed Lydia in the lane is not the controlling foreseeability target for Stephen's own negligence liability.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-FORESEEABILITY-TARGET-01",
+   "statement": "For negligence by an active operator, the foreseeability target is the plaintiff/class/risk created by the defendant's conduct, not the exact prior event that put the plaintiff there and not whether the defendant's own careless act was foreseeable.",
+   "trigger": "answer choices all complete 'foreseeable that ___'",
+   "unlocks": "wrong target choices in a foreseeability array",
+   "authority": "Palsgraf v. Long Island R.R.; Restatement (Third) of Torts §§ 7, 29"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-BETHLEHEM-LANE-01",
+   "statement": "When every choice starts from 'foreseeable that,' compare the object of foreseeability first. Set-stage cause, exact chain, defendant breach, and plaintiff risk are different targets.",
+   "trigger": "same grammatical stem repeated across all choices",
+   "unlocks": "four-way target scan",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Foreseeability target scan",
+  "signal": "All answers ask what had to be foreseeable.",
+  "studentMove": "Name the object after 'foreseeable that' before judging law.",
+  "tinyRule": "Pick the plaintiff/risk target, not the old cause, exact chain, or defendant breach.",
+  "trap": "Students pick the most dramatic fact instead of the legal target."
+ }
+}

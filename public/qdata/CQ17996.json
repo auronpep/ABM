@@ -1,0 +1,80 @@
+{
+ "id": "CQ17996",
+ "title": "Shepherding Call",
+ "subject": "Evidence",
+ "topic": "Character evidence",
+ "subtopic": "Impeachment — opinion or reputation evidence on truthfulness (FRE 608(a))",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a member of a small-town congregation in central Oregon, was on trial for spray-painting a sponsored mural of a local charity's community-outreach program. Mary testified in her own defense that she did not do it. Mary now wants to call her longtime friend and fellow congregant Hannah to testify that Hannah has known Mary for at least 20 years and, in Hannah's opinion, Mary has always been an honest person. Is Hannah's statement admissible?",
+ "call": "Is Hannah's statement admissible?",
+ "choices": {
+  "A": "Yes, because it is admissible to prove Mary's credibility as a witness in her own defense.",
+  "B": "No, because Hannah is merely stating her opinion regarding Mary's truthfulness.",
+  "C": "No, because Mary's character for truthfulness has not been attacked.",
+  "D": "Yes, because Mary testified that she did not spray-paint the mural."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The opinion evidence is not admissible because Mary's character for truthfulness has not been attacked. Under Federal Rule of Evidence 608(a), reputation or opinion evidence about a witness's character for truthfulness is admissible only after that witness's character for truthfulness has been attacked. The mere fact that Mary took the stand and testified \"I did not do it\" does not attack her own character for truthfulness; she is simply denying the charge. Because the trigger condition (character attack) has not been met, FRE 608(a) does not authorize the bolstering testimony. Gold Key: FRE 608(a) is two-way: a witness's truthfulness may be supported by opinion or reputation evidence only if it has first been attacked. Testifying on one's own behalf is not, by itself, an attack on the witness's truthfulness.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (testifying alone opens the door)",
+   "text": "is cut on the missing-trigger test. FRE 608(a)'s trigger is an attack on the witness's character for truthfulness; a simple denial of the charge is not an attack. The choice is NOT_RESPONSIVE for asserting a 608(a) trigger that does not apply to the fact it cites (mere testimony)."
+  },
+  {
+   "label": "D (opinion never admissible)",
+   "text": "is cut on the overclaim test. FRE 608(a) specifically authorizes opinion (and reputation) evidence on truthfulness; the gate is \"after attack,\" not \"no opinion.\" The choice is NOT_TRUE for misstating the rule."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: is the missing-trigger problem the structural defect (A/D) or is the correct answer the missing-attack framing (B/A)?\n\nWait — re-read: the four choices are A, B, C, D post-shuffle. A is the dominant trap (\"always admissible to bolster\"). C is the correct answer. The clash is between A and C."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Bolstering on truthfulness is foreclosed by FRE 608(a) until the character for truthfulness has been attacked. The dominant-trap answer (A) treats bolstering as always permitted, which is the exact opposite of 608(a)'s rule. The correct answer (C) names the missing trigger. Choose C."
+  }
+ ],
+ "studentScript": "Step 1: Is the offered evidence opinion/reputation on truthfulness? Yes — Hannah's testimony is a 20-year opinion that Mary is honest. FRE 608(a) authorizes this form. Step 2: Apply the Gold Key gate: has Mary's character for truthfulness been attacked? No — she only denied the charge. Mere testimony is not an attack. Step 3: Apply discrimination. The always-bolster answer (A) is wrong (608(a) conditions bolstering on attack). The opinion-never-admissible answer (B) is wrong (608(a) authorizes opinion). The testifying-alone answer (D) is wrong (mere testimony is not attack). Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Bolstering on truthfulness is foreclosed by FRE 608(a) until the character for truthfulness has been attacked. The 'always' phrasing is a tiered-absolute tell.",
+   "lawyer": "Fed. R. Evid. 608(a) ('evidence of truthful character is admissible only after the witness's character for truthfulness has been attacked').",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "FRE 608(a) specifically authorizes opinion (and reputation) evidence on truthfulness. The 'merely' framing is a tiered-absolute tell. The gate is 'after attack,' not 'no opinion.'",
+   "lawyer": "Fed. R. Evid. 608(a) (authorizing reputation or opinion testimony on truthfulness, subject to attack trigger).",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The trigger for FRE 608(a) is an attack on the witness's character for truthfulness. A mere denial of the charge is not an attack. Apply the Gold Key.",
+   "lawyer": "Fed. R. Evid. 608(a); see also United States v. Manso-Portes, 838 F.2d 889 (7th Cir. 1988) (mere testimony is not an attack on truthfulness under 608(a)).",
+   "mold": null
+  },
+  "D": {
+   "signal": "Mere testimony is not an attack on truthfulness. The trigger for FRE 608(a) requires a separate assault on the witness's character.",
+   "lawyer": "Fed. R. Evid. 608(a); the trigger requires a showing that the witness's character for truthfulness has been attacked, not mere denial of the charge.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-SHEPHERDING-CALL-01",
+   "statement": "Under FRE 608(a), a witness's character for truthfulness may be supported by reputation or opinion evidence only after that character has been attacked. The defendant's mere testimony in her own defense is not, by itself, an attack on her own character for truthfulness.",
+   "trigger": "criminal defendant testifies in own defense; defense offers a long-acquaintance opinion that the defendant is honest; no prior attack on character is in the record",
+   "unlocks": "dominant-trap discrimination between C (trigger missing) and A (always-bolster overclaim)",
+   "authority": "Fed. R. Evid. 608(a); United States v. Manso-Portes, 838 F.2d 889 (7th Cir. 1988)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "FRE 608(a) — bolstering gated by 'after attack'",
+  "signal": "A party offers reputation or opinion evidence on a witness's character for truthfulness, but no prior attack on that character appears in the record.",
+  "studentMove": "Apply the trigger check: has the witness's character for truthfulness been attacked (e.g., by prior inconsistent statement, bias, conviction of crime, reputation, or contradiction)? If not, the bolstering opinion is not admissible under 608(a).",
+  "tinyRule": "FRE 608(a) authorizes opinion/reputation evidence on truthfulness only after an attack; mere testimony is not an attack.",
+  "trap": "The dominant trap is to assume bolstering is always permitted when the witness has taken the stand. It is not — the trigger must be met first."
+ }
+}

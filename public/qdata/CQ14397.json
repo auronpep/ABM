@@ -1,109 +1,107 @@
 {
  "id": "CQ14397",
- "title": "Lydia Gold Order",
+ "title": "Fish Keychains",
  "subject": "Contracts",
- "topic": "Contracts",
- "subtopic": "Defenses to Enforceability",
- "difficulty": 3,
+ "topic": "Defenses to Enforceability",
+ "subtopic": "Statute of Frauds",
+ "difficulty": null,
  "tension": null,
- "stem": "BARMATRIX Q# 14397 — Christian variation: 14397_lydia_gold_order\n\nIn a telephone conversation, Lydia, a maker of Christian jewelry, offered to buy 100 ounces of gold from Daniel's precious-metals company if delivery could be made within 10 days. Lydia did not specify a price, but the market price for 100 ounces of gold at the time of the conversation was approximately $65,000. Without otherwise responding, the company delivered the gold six days later. In the meantime, the gold-cross pendant line for which Lydia planned to use the gold was canceled by her retail buyer. Lydia therefore refused to accept delivery of the gold or to pay the $65,000 demanded by the company.\n\nIs there an enforceable contract between Lydia and the company?",
- "call": "Is there an enforceable contract between Lydia and the company?",
+ "stem": "Daniel runs a private Jonah-themed escape-room booth for Christian conventions. He called Lydia, a wholesaler of ordinary catalog-stock olivewood fish keychains, and said that he would buy 800 keychains for his booth if Lydia could get them to him within seven days. Daniel did not mention a price. At the time of the call, the market price for 800 of those keychains was about $9,600.\n\nLydia did not say yes or no on the call. Six days later, her driver arrived at Daniel’s storage unit with the 800 keychains and an invoice for $9,600. Before the driver arrived, the convention organizer had canceled Daniel’s booth space. Daniel refused to receive the keychains or pay the invoice.\n\nIs there an enforceable contract between Daniel and Lydia?",
+ "call": "Is there an enforceable contract between Daniel and Lydia?",
  "choices": {
-  "A": "No, because the parties did not agree on a price term.",
-  "B": "No, because the parties did not put their agreement in writing.",
-  "C": "Yes, because the absence of a price term does not defeat the formation of a valid contract for the sale of goods where the parties otherwise intended to form a contract.",
-  "D": "Yes, because the company relied on an implied promise to pay when it delivered the gold."
+  "A": "Yes, because Lydia relied on an implied promise to pay when she brought the keychains to Daniel.",
+  "B": "No, because the parties never agreed on the price of the keychains.",
+  "C": "Yes, because leaving the price open does not prevent a valid sale-of-goods contract when the parties otherwise intended to contract.",
+  "D": "No, because the parties did not put their agreement in writing."
  },
- "key": "B",
+ "key": "D",
  "dominantTrap": null,
- "rightExplanation": "B is correct. Gold Key: A contract for the sale of goods for $500 or more is unenforceable without a writing signed by the party against whom enforcement is sought — a perfectly formed oral deal above the threshold still cannot be enforced. This was a telephone deal for roughly $65,000 of gold, and Lydia never signed anything. Formation is not the problem: her offer invited acceptance by performance, and the company's six-day delivery likely accepted it; the missing price does not matter either, because the UCC supplies a reasonable price. The deal fails at the second gate — enforceability. Silver Key: \"Is there an enforceable contract?\" is a two-gate call — formation AND no defense; a \"Yes\" answer that recites a true formation rule still has to clear every defense, and a five-figure phone deal with nothing signed should send you hunting for one. No exception saves the company: Lydia refused the gold, so the goods were never received and accepted, no payment was made, the gold is ordinary market stock rather than specially manufactured goods, and no written confirmation was ever sent. The oral agreement is unenforceable against Lydia.",
- "wrongExplanations": {
-  "A": "A reaches the right outcome for the wrong reason, and on the MBE the reason is part of the answer. Under the UCC, the parties' failure to agree on a price does not defeat formation: when the parties intend a contract and the price is left open, the price is simply a reasonable price at the time of delivery. The missing price term is a decoy. The real defect in this deal is the absence of a signed writing, not the absence of a number.",
-  "C": "C is the dominant trap — 48% of students picked it, more than picked the key. Everything C says about the law is true: an open price term does not defeat formation of a sale-of-goods contract where the parties otherwise intended to contract. But C answers only the formation gate of a two-gate call. Gold Key: a contract for the sale of goods for $500 or more is unenforceable without a writing signed by the party to be charged — so a true formation rule cannot make this $65,000 oral deal enforceable. Silver Key: when the call asks \"enforceable,\" a Yes-answer must survive every defense, not just formation; the moment you see a big-number phone deal and no signature anywhere in the stem, the defense hunt — not the price term — decides the question.",
-  "D": "D dresses the seller's performance up as equity: the company \"relied\" by delivering, so fairness should bind Lydia. But Lydia refused to accept the gold. Gold Key: part performance saves an oral sale-of-goods contract only as to goods that have been received AND accepted (or paid for) — a delivery the buyer turns away satisfies nothing. Because the gold was never accepted, the company's delivery cannot substitute for the missing writing, and whether there was an implied promise to pay is irrelevant."
- },
+ "rightExplanation": "D is correct. This is a sale of ordinary goods for about $9,600, and no writing exists. Gold Key: a sale-of-goods deal priced at $500 or more must satisfy the UCC writing requirement unless an exception applies. Lydia’s delivery did not solve that problem because Daniel refused to receive and accept the keychains. Silver Key: lock the call word enforceable before rewarding a Yes answer; formation and enforceability are separate gates.",
+ "wrongExplanations": {},
  "c3": [
   {
-   "label": "A vs C",
-   "text": "form a visible contradictory pair: both turn on the same stem fact (no price was specified) and assert opposite consequences — A says the missing price kills the deal, C says it doesn't. At most one can be true, and the pairing itself tells you the test-writer built the price term as a fought-over axis. The pair cannot be resolved at CUT without doctrine, so neither is cut here; the structure only flags them.\n- D is wounded at CUT on a fairness tell plus a fact relation: \"relied on an implied promise to pay when it delivered\" is an equity appeal, and the stem shows Lydia refused the gold — D asks you to bind the buyer because the seller performed, when the stem says the performance was turned away. The full kill (part performance requires received-and-accepted goods) needs the Gold Key, so D is anchor-assisted, not structurally false.\n- B survives: nothing in the stem contradicts it, and it is responsive to the enforceability call."
+   "label": "Frame",
+   "text": "The call asks enforceability, not merely whether a contract could form."
+  },
+  {
+   "label": "CUT A",
+   "text": "A points to Lydia’s delivery/reliance. That is not the dispositive gate. Daniel refused the goods. Filter broken: NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT B",
+   "text": "B says no contract because no price. Gold Key defeats it: open price can be filled under the UCC. Filter broken: NOT_TRUE."
+  },
+  {
+   "label": "CUT C",
+   "text": "C states the open-price rule. It is attractive and true as far as formation goes, but it misses the writing gate. Filter broken: NOT_RESPONSIVE."
+  },
+  {
+   "label": "Residual",
+   "text": "D. No writing, sale of goods over $500, no acceptance/payment exception."
   },
   {
    "label": "CLASH",
-   "text": "B vs. C fight on a single axis: does answering the formation question (the open price term) answer the enforceability question? C wins the formation gate; B says there is a second gate. The splitting facts are \"in a telephone conversation\" plus \"approximately $65,000\" plus the total absence of any signed paper anywhere in the stem."
+   "text": "Not needed after the Cut."
   },
   {
    "label": "CALL",
-   "text": "The axis does not resolve from the stem alone; it takes the taught anchor. Gold Key: a contract for the sale of goods for $500 or more is unenforceable without a writing signed by the party to be charged, and refused goods are never \"received and accepted.\" The $65,000 phone deal fails the writing requirement and no exception saves it. A falls with the same stroke (the open-price rule means A's stated reason is not the law), and D's reliance story cannot substitute for the writing. Residual answer: B."
+   "text": "The anchor decides the item: UCC writing gate before open-price formation."
   }
  ],
- "studentScript": "The call asks 'enforceable,' not 'formed' — two gates. A and C fight over the missing price; park the pair, price is the decoy. D begs fairness for a delivery Lydia turned away. That leaves B: a $65,000 deal made entirely by phone, and nobody signed anything. Gold Key: goods of $500 or more need a signed writing, and refused goods are never received and accepted. Pick B.",
+ "studentScript": "Call is enforceable. Goods are over $500, no writing, and the buyer refused the goods. Open price does not save enforceability. Pick D.",
  "recoveryPaths": [],
  "choiceSignals": {
   "A": {
-   "signal": "A and C contradict each other on the same fact (no price was specified) — at most one is true, and the pair flags price as the decoy axis. Resolving which one falls takes the open-price anchor.",
-   "lawyer": "UCC § 2-305(1): the parties can conclude a contract even though the price is not settled; if they intend a contract, the price is a reasonable price at the time for delivery. A invents a price-agreement requirement that Article 2 does not impose; the 'No' outcome is right but the stated reason is not the law.",
-   "mold": "fabricated_rule"
-  },
-  "B": {
-   "signal": "The only 'No' choice that points to something other than the flagged decoy axis. Once the two-gate Silver Key fires — formation AND no defense — B is the lone choice aimed at the defense gate.",
-   "lawyer": "UCC § 2-201(1): a contract for the sale of goods for $500 or more is not enforceable absent a writing signed by the party to be charged. The deal was entirely oral, worth ~$65,000, and Lydia signed nothing. No § 2-201(3) exception applies: the goods were never received and accepted (she refused delivery), no payment was made, market gold is not specially manufactured, and there is no pleading admission; § 2-201(2)'s merchants' confirmation requires a writing and the company sent none.",
-   "mold": null
-  },
-  "C": {
-   "signal": "The call asks 'enforceable contract?' — a two-gate call. C answers only the formation gate (the open price term) and never speaks to any defense. The Silver Key wounds it; the full kill (the writing requirement) takes the Gold Key.",
-   "lawyer": "C's rule statement is accurate (UCC § 2-305 — open price does not defeat formation), but the dispositive issue is the § 2-201 statute of frauds. Formation likely occurred (§ 2-206(1)(b): an offer to buy goods for prompt shipment invites acceptance by prompt shipment), yet the oral agreement remains unenforceable against Lydia for want of a signed writing.",
+   "signal": "The choice talks about seller reliance, but the call asks enforceability against a buyer who refused the goods.",
+   "lawyer": "UCC § 2-201(3)(c) requires goods received and accepted, or payment made and accepted, for this partial-performance path.",
    "mold": "wrong_element"
   },
+  "B": {
+   "signal": "Gold Key: missing price alone does not defeat a sale-of-goods contract.",
+   "lawyer": "UCC § 2-305 permits a contract for sale even though the price is not settled if the parties intended a contract.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "Silver Key: the choice answers formation, not the enforceability writing gate.",
+   "lawyer": "UCC § 2-305 does not override UCC § 2-201's writing requirement for goods priced at $500 or more.",
+   "mold": "bait_doctrine"
+  },
   "D": {
-   "signal": "D is a fairness appeal — bind the buyer because the seller performed. The stem itself pushes back: Lydia refused the gold, so the 'reliance' D credits is a delivery that was turned away. The conclusive kill (part performance counts only for goods received AND accepted) takes the Gold Key.",
-   "lawyer": "UCC § 2-201(3)(c) makes an oral contract enforceable only 'with respect to goods... which have been received and accepted' or paid for. Lydia accepted nothing and paid nothing, so the company's delivery cannot substitute for the writing; as the official explanation notes, whether there was an implied promise to pay is irrelevant once acceptance is absent.",
-   "mold": "misfit"
+   "signal": "The choice matches the enforceability call and the writing-gate fact.",
+   "lawyer": "UCC § 2-201 makes the unwritten sale-of-goods agreement unenforceable absent an exception.",
+   "mold": null
   }
  },
  "goldKeys": [
   {
-   "id": "GK-CONTRACTS-SOF-GOODS-THRESHOLD-01",
-   "statement": "A contract for the sale of goods for $500 or more is unenforceable without a writing signed by the party against whom enforcement is sought — a perfectly formed oral deal above the threshold still cannot be enforced.",
-   "trigger": "a big-number sale-of-goods deal made entirely by phone or conversation, with no signed paper anywhere in the stem",
-   "unlocks": "B over C — the true open-price formation rule cannot make a $65,000 oral deal enforceable.",
-   "authority": "UCC § 2-201(1)"
+   "id": "GK-CONTRACTS-FISH-KEYCHAINS-01",
+   "statement": "For goods priced at $500 or more, the UCC writing gate must be satisfied before the oral deal can be enforced. Mere shipment does not unlock the partial-performance exception when the buyer refuses to receive and accept the goods.",
+   "trigger": "Oral sale of goods worth thousands, no writing, delivery refused.",
+   "unlocks": "The no-writing answer and the delivery/reliance trap.",
+   "authority": "UCC § 2-201(1), (3)(c)"
   },
   {
-   "id": "GK-CONTRACTS-SOF-ACCEPTANCE-EXC-01",
-   "statement": "Part performance saves an oral sale-of-goods contract only as to goods that have been received AND accepted (or paid for) — a delivery the buyer refuses satisfies nothing.",
-   "trigger": "a seller ships under an oral deal and the buyer turns the goods away",
-   "unlocks": "the D trap — 'the company relied... when it delivered the gold.'",
-   "authority": "UCC § 2-201(3)(c)"
-  },
-  {
-   "id": "GK-CONTRACTS-OPEN-PRICE-01",
-   "statement": "Under the UCC an open price term does not defeat formation: if the parties intended a contract, the price is a reasonable price at the time for delivery.",
-   "trigger": "a sale-of-goods stem that conspicuously never states a price but supplies a market value",
-   "unlocks": "the A trap — and confirms the true half of C — by resolving the A/C contradiction.",
-   "authority": "UCC § 2-305(1)"
+   "id": "GK-CONTRACTS-FISH-KEYCHAINS-02",
+   "statement": "Open price and writing are separate gates. UCC § 2-305 can fill a missing price term, but it does not satisfy the UCC § 2-201 writing requirement.",
+   "trigger": "A Yes answer says the missing price term does not defeat the deal.",
+   "unlocks": "The open-price dominant trap.",
+   "authority": "UCC §§ 2-305(1), 2-201(1)"
   }
  ],
  "silverKeys": [
   {
-   "id": "SK-CONTRACTS-GOLD-ARRAY-01",
-   "statement": "A and C assert opposite consequences of the same fact — the missing price — so the array itself tells you price is the fought-over decoy axis. Park the pair and ask what ELSE could make the answer 'No'; B is the only other exit.",
-   "trigger": "two choices that draw opposite conclusions from one stem fact",
-   "unlocks": "the matched contradictory pair inside the 2×2 array",
-   "authority": null
-  },
-  {
-   "id": "SK-CONTRACTS-TWO-GATE-CALL-01",
-   "statement": "'Is there an enforceable contract?' is a two-gate call — formation AND no defense. A 'Yes' choice that recites a true formation rule still has to clear every defense; a five-figure phone deal with no signature in the stem should send you hunting for one before you credit it.",
-   "trigger": "the call says 'enforceable' (not 'formed') and a Yes-choice argues formation mechanics",
-   "unlocks": "the B-vs-C tension — true formation rule vs unaddressed defense",
+   "id": "SK-CONTRACTS-FISH-KEYCHAINS-01",
+   "statement": "Lock the call word enforceable before grading the Yes choices. A choice can prove formation with an open price and still miss the separate writing gate.",
+   "trigger": "The call asks enforceable contract, while a choice talks only about price-term formation.",
+   "unlocks": "Formation-versus-enforceability drift.",
    "authority": null
   }
  ],
  "remediation": {
-  "title": "Big phone deal, nothing signed",
-  "signal": "A sale of goods at a four- or five-figure price is formed entirely by conversation, and the call asks whether the contract is enforceable.",
-  "studentMove": "Run the two-gate call: park the decoy pair fighting over formation, then hunt the defense — who signed what?",
-  "tinyRule": "Goods deals of $500 or more need a writing signed by the party being sued; refused goods are never 'received and accepted.'",
-  "trap": "Crediting a true open-price formation rule as if formation were the only gate, or letting the seller's refused delivery 'equitably' bind the buyer."
+  "title": "Formation is not enforceability",
+  "signal": "Oral goods deal over $500 with no writing and a missing price term.",
+  "studentMove": "Check the writing gate before rewarding the open-price rule.",
+  "tinyRule": "Open price can be filled, but the UCC writing gate still blocks enforcement unless an exception applies.",
+  "trap": "Yes because open price does not defeat contract formation."
  }
 }

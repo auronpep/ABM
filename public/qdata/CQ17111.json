@@ -1,0 +1,80 @@
+{
+ "id": "CQ17111",
+ "title": "Parish Newsletter Republication",
+ "subject": "Torts",
+ "topic": "Defamation",
+ "subtopic": "Republication and attribution defense",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Naomi is the lead Sunday school teacher at a local church school. Mary runs a Christian parenting newsletter that goes out weekly to several hundred subscribers in the area, most of them parents whose children attend the church school. A parent at the church school emailed Mary alleging that Naomi had been stealing from the classroom supply fund, a charge the parent could not substantiate and that was in fact false. Mary had no independent reason to believe the charge was true but, in her next newsletter, repeated the accusation under the heading, \"A parent in our school community writes: this teacher has been stealing from the classroom supply fund.\" Naomi sues Mary for defamation.\n\nIs Mary liable to Naomi as a publisher of the defamatory statement?",
+ "call": "Is Mary liable to Naomi as a publisher of the defamatory statement?",
+ "choices": {
+  "A": "No, because attributing the accusation to \"a parent in our school community\" insulates the newsletter editor from liability for the underlying charge.",
+  "B": "Yes, but only if the parent who wrote the original email is also joined as a defendant in the suit.",
+  "C": "Yes, because republishing a defamatory accusation to the newsletter's subscribers is publication, even though the editor attributed the charge to the parent.",
+  "D": "No, because a newsletter is not the kind of medium that counts as \"publication\" for defamation purposes."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "Mary is liable to Naomi as a publisher. The defamation tort treats a republisher as a publisher of the defamatory content for purposes of liability, even when the republisher names the original source. The original speaker remains liable on an original-publication theory, and the republisher is liable on a republication theory; the two are independent. Gold Key: attribution is not a defense to republication — repeating a defamatory charge to a new audience is itself a publication, and the republisher is on the hook for the defamatory sting. Silver Key: lock the call to whether the editor is a publisher of the defamatory statement, not to whether the email sender is also a publisher.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (newsletter is not publication)",
+   "text": "is cut on misfit (ISSUE_SENSE). Publication is communication to a third party, regardless of medium. Visible from the answer text: it asserts a medium-based exception that does not exist."
+  },
+  {
+   "label": "B (must also sue the original speaker)",
+   "text": "is cut on misfit (ISSUE_SENSE). Defamation plaintiffs may sue any one publisher they choose. Visible from the answer text: it converts a joint-liability observation into a joinder rule."
+  },
+  {
+   "label": "CLASH",
+   "text": "- A (attribution is a defense) and C (republishing is publication) survive to the deciding axis: does naming the original source insulate the republisher, or is republication a separate publication? The single axis they fight on is attribution as a defense to republication."
+  },
+  {
+   "label": "CALL",
+   "text": "- The Gold Key resolves the axis. Attribution is not a defense to republication. Repeating a defamatory charge to a new audience is itself a publication, and the republisher is on the hook for the defamatory sting even if the republisher names the source. Residual: C."
+  }
+ ],
+ "studentScript": "The call asks whether Mary is a publisher of the defamatory statement. D is the medium-based misframe (publication is communication to a third party, regardless of medium). B is the joinder misframe (a plaintiff can sue any one publisher). A is the dominant trap: attribution is not a defense. Gold Key: attribution is not a defense to republication. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice asserts a fabricated rule: that attribution insulates the republisher. The doctrinal assertion is the overclaim; without the Gold Key, a student may accept attribution as a shield.",
+   "lawyer": "Attribution is not a defense to republication. Restatement (Second) of Torts § 578 treats a republisher as a publisher of the defamatory content. Identifying the source goes to damages mitigation, not liability.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The choice converts a joint-and-several-liability observation into a joinder rule. Defamation plaintiffs may sue any one publisher they choose; they are not required to join all publishers.",
+   "lawyer": "A defamation plaintiff may sue any one publisher (original or republisher) without joining the others. Joinder is a procedural option, not a precondition to liability.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "This is the only choice that treats republication as itself a publication and rejects attribution as a defense. It is true and responsive.",
+   "lawyer": "Mary is a publisher of the defamatory statement. Restatement (Second) of Torts § 578; republication to several hundred subscribers satisfies the publication element; attribution is not a defense.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice asserts a medium-based exception that does not exist. Publication is communication to a third party, regardless of medium. The cut is structural: there is no newsletter/email/podcast exception.",
+   "lawyer": "Publication is communication of the defamatory content to a third party, regardless of medium. Print, broadcast, podcast, email newsletter, social media post, and live announcement all qualify.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-PARISH-NEWSLETTER-REPUBLICATION-01",
+   "statement": "Attribution is not a defense to republication; repeating a defamatory charge to a new audience is itself a publication, and the republisher is liable as a publisher even when the source is named.",
+   "trigger": "republisher names the original source and asks whether attribution insulates the republisher",
+   "unlocks": "attribution-as-defense trap",
+   "authority": "Restatement (Second) of Torts § 578"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Republication and attribution",
+  "signal": "An editor or host republishes a defamatory accusation to a wider audience under attribution to the original source.",
+  "studentMove": "Cut the medium-based and joinder defenses on the answer text. Then use the Gold Key to kill the attribution-as-defense trap.",
+  "tinyRule": "Attribution is not a defense to republication; the republisher is on the hook for the defamatory sting.",
+  "trap": "Saying 'a caller said' or 'a parent said' feels protective; it does not insulate the republisher."
+ }
+}

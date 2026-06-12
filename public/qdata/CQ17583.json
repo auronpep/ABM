@@ -1,0 +1,80 @@
+{
+ "id": "CQ17583",
+ "title": "Bookshop Securities Followup",
+ "subject": "Civil Procedure",
+ "topic": "Claim and Issue Preclusion",
+ "subtopic": "Preclusion Law Source (federal-question judgments)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, the former owner of a chain of Christian bookshops, sold her business to Paul in a stock-for-assets transaction. Mary later sued Paul in federal court alleging violations of the federal securities laws and lost after a final judgment on the merits. She has now filed a second federal action against Paul arising from the same business sale, asserting a different federal statutory claim based on the same underlying transaction. Paul's lawyer has asked the court to decide the preclusive effect of the earlier federal securities judgment.\n\nWhich law generally governs the preclusive effect of the earlier federal securities judgment?",
+ "call": "Which law generally governs the preclusive effect of the earlier federal securities judgment?",
+ "choices": {
+  "A": "Federal common law, because the earlier judgment was a federal-question judgment.",
+  "B": "The law of the forum state automatically, because all preclusion is state law.",
+  "C": "The law of whichever state Mary prefers.",
+  "D": "No law applies until the same judge hears both cases."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The preclusive effect of the earlier federal securities judgment is governed by federal common law. The earlier judgment was a federal-question judgment — it rested on a federal statutory cause of action (the federal securities laws) decided in federal court. The Supreme Court has long held that the preclusive effect of a federal-court judgment on a federal question is determined by federal preclusion principles, not by the preclusion law of the state in which the federal court sits. Gold Key: the preclusion law that governs a federal-court judgment tracks the source of the substantive claim that produced the judgment: federal-question judgments get federal common-law preclusion; state-law judgments get the preclusion law of the rendering state. Silver Key: a federal court sitting in diversity is not automatically the right source — the question is the source of the prior judgment, not the source of the forum.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (plaintiff preference)",
+   "text": "is cut on the wrong-frame. The student invents a plaintiff-control rule that does not exist. Preclusion law is fixed by the source of the prior judgment, not by the plaintiff's choice. The choice is NOT_RESPONSIVE — it answers a question (who picks the preclusion law) that the call does not ask."
+  },
+  {
+   "label": "D (no law until same judge)",
+   "text": "is cut on the same wrong-frame. The student invents a same-judge rule that does not exist. Preclusion applies across judges and courts. The choice is NOT_RESPONSIVE — it answers a question (when does preclusion attach) that the call does not ask."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: federal common law vs. state preclusion law. The single axis they fight on is the Erie-fallacy distinction — does the preclusion of a federal-question judgment follow the Erie rule (look to state law) or the federal common-law rule (federal common law controls)?"
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: federal-question judgments get federal common-law preclusion; the Erie rule governs the federal court's substantive decision in diversity, not the preclusive effect of a federal-question judgment. Apply the Gold Key → A. A student without the Gold Key is in anchor_gap territory on the Erie-fallacy distinction; the answer is settled by Semtek and the federal-question source rule."
+  }
+ ],
+ "studentScript": "The call asks which preclusion law governs the earlier federal judgment. C is wrong-frame (plaintiff preference). D is wrong-frame (no law until same judge). B imports Erie into a federal-question preclusion case. A tracks the source of the prior judgment. Gold Key: federal-question judgments get federal common-law preclusion. Silver Key: the test is the source of the prior judgment, not the Erie posture. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the wrong-frame and Erie-fallacy traps are cut, the residual answer matches the source rule: federal-question judgments get federal common-law preclusion.",
+   "lawyer": "Semtek International Inc. v. Lockheed Martin Corp., 531 U.S. 497 (2001): federal common law governs the preclusive effect of a federal-court judgment on a federal claim.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student imports Erie into a federal-question preclusion question. The Gold Key kills the trap.",
+   "lawyer": "Erie governs the substantive content of a federal court's decision in diversity on a state-law claim. It does not control the preclusive effect of a federal-question judgment.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "Preclusion law is fixed by the source of the prior judgment; the plaintiff's preference has no role.",
+   "lawyer": "The plaintiff does not select the preclusion law by preference; the source of the prior judgment controls.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "Preclusion applies across judges and courts. The prior judgment's preclusive effect does not depend on judge identity.",
+   "lawyer": "Preclusion does not require the same judge; the second federal court must apply the preclusion law fixed by the source of the prior judgment.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-BOOKSHOP-SECURITIES-FOLLOWUP-01",
+   "statement": "The preclusion law that governs a federal-court judgment tracks the source of the substantive claim that produced the judgment: federal-question judgments get federal common-law preclusion; state-law judgments get the preclusion law of the rendering state.",
+   "trigger": "prior judgment was a federal-question judgment; second action is also federal; call asks which preclusion law governs",
+   "unlocks": "Erie-fallacy trap on federal-question preclusion",
+   "authority": "Semtek International Inc. v. Lockheed Martin Corp., 531 U.S. 497 (2001)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Federal-question preclusion source",
+  "signal": "The prior judgment was a federal-question judgment; the second action is also federal; the call asks which preclusion law governs.",
+  "studentMove": "Cut wrong-frame answers (plaintiff preference, same-judge). Apply the Gold Key: federal-question judgments get federal common-law preclusion.",
+  "tinyRule": "Source of the prior judgment controls: federal-question → federal common law; state-law → rendering state preclusion law.",
+  "trap": "The Erie-fallacy answer ('all preclusion is state law') imports Erie into a federal-question case."
+ }
+}

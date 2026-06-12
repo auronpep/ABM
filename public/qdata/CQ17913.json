@@ -1,0 +1,84 @@
+{
+ "id": "CQ17913",
+ "title": "Summit Klaxon",
+ "subject": "Civil Procedure",
+ "topic": "Erie Doctrine and Choice of Law",
+ "subtopic": "Contract Choice Clause in Diversity",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a worship-summit organizer in State A, signed a written speaker agreement with Paul, a Christian conference speaker based in State C, for Paul to deliver the Friday-evening keynote at Mary's summer worship summit in State A. The agreement contains a clause that states:\n\n\"This agreement shall be governed by the laws of State C, without regard to conflict-of-laws principles.\"\n\nState A's choice-of-law rules enforce some contractual choice-of-law clauses but refuse to enforce others when the chosen state has no substantial relationship to the dispute. Paul later cancels the engagement, and Mary sues Paul for breach of contract in federal district court sitting in State A on the basis of diversity jurisdiction.\n\nHow should the federal court decide whether State C law governs Mary's claim?",
+ "call": "How should the federal court decide whether State C law governs Mary's claim?",
+ "choices": {
+  "A": "Use federal common law because speaker agreements are interstate.",
+  "B": "Enforce State C law automatically because the contract names it.",
+  "C": "Use State A's choice-of-law rules to determine the effect of the clause.",
+  "D": "Use the plaintiff's preferred law because the plaintiff chose the forum."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The federal diversity court should apply the choice-of-law rules of the forum state — here, State A — to decide whether the choice-of-law clause in the speaker agreement is enforceable. Gold Key: under Klaxon Co. v. Stentor Electric Mfg. Co., 313 U.S. 487 (1941), a federal court sitting in diversity must apply the forum state's choice-of-law rules as the rule of decision; the contract's own choice-of-law clause is not self-executing. The court therefore looks to State A's choice rules, which (on these facts) test whether State C has a substantial relationship to the dispute, before honoring — or refusing to honor — the State C clause.\n\nSilver Key: when the call asks \"how should the court decide\" a choice-of-law question in diversity, the test is forum-state choice rules, not the contract's choice clause, not federal common law, and not party preference.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (federal common law)",
+   "text": "is cut on Issue-Sense: federal common law is not the rule of decision for a state-law contract claim in a federal diversity court. Erie controls. The cut is visible from the doctrinal frame (diversity + state-law claim) and the call focus (rule of decision)."
+  },
+  {
+   "label": "D (plaintiff preference)",
+   "text": "is cut on the rule-of-decision test: party preference is not the rule of decision for choice of law in diversity. The cut is visible from the call (\"how should the court decide\" → look for the doctrinal rule, not party preference)."
+  },
+  {
+   "label": "B (auto-enforce)",
+   "text": "is not a clean structural cut. The contract clause really does exist and really does say what it says. The defect — that the forum's choice rules apply first — is not visible from the C3 frame alone; it requires the Klaxon tiny anchor."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and D are eliminated on Issue-Sense. B and C remain. The axis is \"the contract clause is self-executing\" vs. \"the forum's choice rules apply first.\" Both are doctrinally defensible framings; the student must name which is correct."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: Klaxon sends the court to the forum's choice rules. The contract clause is not self-executing. Apply the Gold Key → C."
+  }
+ ],
+ "studentScript": "The call asks how the federal court should decide whether State C law governs. Cut A: federal common law is not the rule of decision for state-law claims in diversity (Erie). Cut D: plaintiff's choice of forum is procedural, not a choice-of-law rule. The remaining tension: the contract names State C, so the contract controls (B) vs. Klaxon sends the court to State A's choice rules first (C). Apply the Gold Key: the contract clause is not self-executing. Klaxon applies. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The doctrine named (federal common law) is not the rule of decision for a state-law contract claim in diversity. Erie controls.",
+   "lawyer": "Erie R.R. v. Tompkins, 304 U.S. 64 (1938): there is no federal general common law; state-law claims in diversity are governed by the substantive law of the state that would apply under the forum's choice-of-law rules. Interstate commerce does not, on its own, generate federal common law.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "The contract clause is not self-executing. Klaxon sends the court to the forum's choice rules first.",
+   "lawyer": "Klaxon Co. v. Stentor Electric Mfg. Co., 313 U.S. 487 (1941): a federal court sitting in diversity must apply the choice-of-law rules of the forum state; the contract's choice-of-law clause does not displace those rules.",
+   "mold": "autonomy_appeal"
+  },
+  "C": {
+   "signal": "After the three distractors are cut, the residual is the Klaxon answer: forum's choice rules determine whether the choice clause is enforceable.",
+   "lawyer": "Klaxon Co. v. Stentor Electric Mfg. Co., 313 U.S. 487 (1941); Restatement (Second) of Conflict of Laws § 187(2) (choice clause honored unless chosen state has no substantial relationship and no other reasonable basis for the choice, or unless contrary to a fundamental forum policy).",
+   "mold": null
+  },
+  "D": {
+   "signal": "Plaintiff's choice of forum does not dictate the choice of substantive law. The rule of decision is the forum's choice rules under Klaxon.",
+   "lawyer": "Klaxon, 313 U.S. 487; Erie, 304 U.S. 64. The choice of forum is procedural; the choice of substantive law is governed by the forum's choice-of-law rules, not by the plaintiff's preference.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-SUMMIT-KLAXON-01",
+   "statement": "A federal diversity court must apply the forum state's choice-of-law rules (Klaxon) to determine whether a contractual choice-of-law clause is enforceable, even when the contract names the chosen state's law. The contract clause is not self-executing.",
+   "trigger": "federal diversity case with a contractual choice-of-law clause naming a non-forum state",
+   "unlocks": "dominant trap - 'enforce the choice clause automatically because the contract says so'",
+   "authority": "Klaxon Co. v. Stentor Electric Mfg. Co., 313 U.S. 487 (1941); Erie R.R. v. Tompkins, 304 U.S. 64 (1938); 28 U.S.C. § 1652; Restatement (Second) of Conflict of Laws § 187(2)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Klaxon - forum's choice rules govern the choice-of-law clause",
+  "signal": "A federal diversity contract suit has a choice-of-law clause naming a non-forum state's law. The court must decide whether to honor the clause.",
+  "studentMove": "Cut federal common law (Erie) and plaintiff preference (party preference is not the rule of decision). Then use the Gold Key to defeat the auto-enforce trap: the contract clause is not self-executing - Klaxon sends the court to the forum's choice rules first.",
+  "tinyRule": "In federal diversity, a contractual choice-of-law clause is not self-executing; the forum state's choice-of-law rules apply first.",
+  "trap": "The contract names a state's law, so the contract must control. Wrong - Klaxon is the rule of decision."
+ }
+}

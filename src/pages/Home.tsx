@@ -3,6 +3,7 @@ import { scripture } from "../content/scripture.ts";
 import { tearMethod, fellowship, finalCta } from "../content/home.ts";
 import { pricing } from "../content/pricing.ts";
 import { MiniDiagnostic } from "../components/MiniDiagnostic.tsx";
+import { SectionRule } from "../components/SectionRule.tsx";
 import { ScriptureBand, ScriptureInline } from "../components/ScriptureBand.tsx";
 import type { PageProps } from "../types.ts";
 
@@ -46,9 +47,7 @@ export function Home({ navigate }: PageProps) {
       {/* ============ METHOD EXPLAINER ============ */}
       <section className="section alt">
         <div className="container">
-          <div className="section-rule">
-            <span className="label">▌ {brand.thesis.label} · 01</span>
-          </div>
+          <SectionRule label={brand.thesis.label} index={1} />
           <div className="two-col" style={{ alignItems: "start" }}>
             <h2 className="display display-lg" style={{ margin: 0, maxWidth: "16ch" }}>
               {brand.thesis.headline}
@@ -66,9 +65,7 @@ export function Home({ navigate }: PageProps) {
       {/* ============ TEAR METHOD ============ */}
       <section className="section">
         <div className="container">
-          <div className="section-rule">
-            <span className="label">▌ {tearMethod.eyebrow} · 02</span>
-          </div>
+          <SectionRule label={tearMethod.eyebrow} index={2} />
           <p className="tear-line">
             The wrong answer usually carries just enough truth to survive a quick glance.{" "}
             <b>The TEAR Method teaches you to tear it apart</b> before it takes another point.
@@ -93,9 +90,7 @@ export function Home({ navigate }: PageProps) {
       {/* ============ PROOF BEFORE PRICE ============ */}
       <section className="section alt">
         <div className="container">
-          <div className="section-rule">
-            <span className="label">▌ Proof Before Price · 03</span>
-          </div>
+          <SectionRule label="Proof Before Price" index={3} />
           <div className="two-col" style={{ alignItems: "start" }}>
             <h2 className="display display-md" style={{ margin: 0, maxWidth: "16ch" }}>
               The proof comes before the price.
@@ -117,9 +112,7 @@ export function Home({ navigate }: PageProps) {
       {/* ============ BE STRONG FELLOWSHIP ============ */}
       <section className="section dark">
         <div className="container">
-          <div className="section-rule">
-            <span className="label" style={{ color: "white" }}>▌ {fellowship.eyebrow} · 04</span>
-          </div>
+          <SectionRule label={fellowship.eyebrow} index={4} />
           <div className="two-col" style={{ alignItems: "start" }}>
             <div>
               <p className="fellowship-tagline">{fellowship.name}</p>
@@ -144,9 +137,7 @@ export function Home({ navigate }: PageProps) {
       {/* ============ PRICING TEASER ============ */}
       <section className="section">
         <div className="container">
-          <div className="section-rule">
-            <span className="label">▌ {pricing.eyebrow} · 05</span>
-          </div>
+          <SectionRule label={pricing.eyebrow} index={5} />
           <div className="two-col" style={{ alignItems: "center" }}>
             <div>
               <h2 className="display display-md" style={{ margin: "0 0 20px", maxWidth: "18ch" }}>

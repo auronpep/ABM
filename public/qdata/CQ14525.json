@@ -1,0 +1,96 @@
+{
+ "id": "CQ14525",
+ "title": "Jonah Fish Escape",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "Damages",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia, a well-known Christian cooking-show host, contracted with Shiloh Arcade Productions, Inc., a private company that runs Bible-themed escape rooms, to host a $7,300 opening-night livestream for its new “Jonah’s Fish Escape” puzzle room. Days before the launch, a video spread online accusing Lydia of shouting at and shoving a costumed mascot at a fish-fry festival. Shiloh canceled the contract because it feared families would stay away if Lydia appeared.\n\nLydia sued Shiloh for breach of contract. Her manager, Barnabas, testified without contradiction that the cancellation caused Lydia to lose other new livestream, devotional-box promotion, and endorsement contracts. The trial court instructed the jury, in part:\n\n“If you find for Lydia, you may award damages for losses which at the time of contracting could reasonably have been foreseen by Shiloh as a probable result of its breach. However, the law does not permit recovery for the loss of prospective profits of a new business caused by breach of contract.”\n\nOn Lydia’s appeal from a jury verdict for Lydia, and judgment thereon, awarding damages only of the $7,300 fee promised by Shiloh, the judgment will probably be",
+ "call": "On Lydia's appeal from a fee-only judgment after a jury instruction barring new-business lost profits, what will probably happen?",
+ "choices": {
+  "A": "reversed, because the test for limiting damages is what the breaching party could reasonably have foreseen at the time of the breach.",
+  "B": "reversed, because under the prevailing modern view, lost profits of a new business are recoverable if they are established with reasonable certainty.",
+  "C": "affirmed, because the trial court stated the law correctly.",
+  "D": "affirmed, because the issue of damages for breach of contract was solely a jury question."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The appeal attacks a jury instruction that imposed a categorical bar on lost profits from a new business. Gold Key: new-business lost profits are not automatically barred; they may be recovered if the plaintiff can establish them with reasonable certainty. The uncontradicted testimony from Barnabas gives a possible evidentiary basis for additional lost-profit damages, so the fee-only judgment should be reversed for a proper instruction. Silver Key: do not stop at “reversed”; this answer gives both the correct appellate result and the correct reason.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_RESPONSIVE / `bait_doctrine`",
+   "text": "A gives the right appellate result but attacks the wrong damages limiter. Foreseeability is real, but the instruction’s decisive defect is the categorical new-business-profit sentence."
+  },
+  {
+   "label": "CUT C — NOT_TRUE / `flat_misstatement`",
+   "text": "C says the trial court stated the law correctly. That cannot survive the Gold Key: new-business profits are not categorically barred if reasonably certain."
+  },
+  {
+   "label": "CUT D — NOT_TRUE / `tiered_absolute`",
+   "text": "D says damages are “solely” a jury question. “Solely” overclaims. Legal instructions are reviewable."
+  },
+  {
+   "label": "Residual",
+   "text": "B is the only true-and-responsive answer: reverse because lost profits of a new business may be recovered when established with reasonable certainty."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the anchor-assisted Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "The appeal is about the instruction. Cut the jury-only absolute. Cut the foreseeability answer as the wrong limiter. Use the Gold Key; new-business profits are not automatically barred; reasonable certainty controls. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice reverses but attacks foreseeability at breach, while the quoted defect is the categorical new-business-profit bar.",
+   "lawyer": "Foreseeability remains a contract damages limitation, but the supplied answer is not the reason this instruction is erroneous.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "It attacks the exact instruction sentence and supplies the Gold Key standard.",
+   "lawyer": "This matches the modern rule; lost profits for a new venture are not categorically barred if proved with reasonable certainty.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Gold Key kills it: the instruction's categorical bar is not the modern rule.",
+   "lawyer": "The trial court's instruction misstated the modern new-business lost-profits rule.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "The word 'solely' is the tell; damages can have jury fact issues, but legal instructions are reviewable.",
+   "lawyer": "An appellate court may reverse for prejudicial legal error in a damages instruction.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-NEW-BIZ-LOST-PROFITS-01",
+   "statement": "New-business lost profits are not automatically barred. The modern rule allows them if the loss can be established with reasonable certainty; newness makes proof harder, not impossible.",
+   "trigger": "jury instruction says the law does not permit prospective profits of a new business",
+   "unlocks": "dominant trap that treats the judge's per se new-business-profit ban as correct",
+   "authority": "Restatement (Second) of Contracts § 352 and modern majority cases rejecting a per se new-business bar"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-OUTCOME-REASON-01",
+   "statement": "In an appeal answer array, do not stop at affirmed or reversed. The credited answer must pair the right appellate result with the right reason.",
+   "trigger": "choices split by appellate result plus because-clause",
+   "unlocks": "two reversed answers and two affirmed answers that differ by reason",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "New business is not automatic no",
+  "signal": null,
+  "studentMove": "When an answer or instruction says new-business profits are never recoverable, replace never with proved with reasonable certainty.",
+  "tinyRule": null,
+  "trap": "dominant trap C"
+ }
+}

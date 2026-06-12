@@ -1,0 +1,96 @@
+{
+ "id": "CQ14409",
+ "title": "Sunken Ark Hall",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Assumption of risk for unknown subsurface conditions",
+ "difficulty": "source_not_supplied",
+ "tension": null,
+ "stem": "Lydia owned a private, for-profit Christian family camp called Mustard Seed Adventures. For an agreed price of $8 million, Barnabas Construction, a company specializing in large themed projects and excavation, contracted to design and build on Lydia’s lakeside parcel a Noah’s-Ark-shaped indoor climbing hall. Because sinkholes were common in the area, a local safety ordinance required the hall’s foundation and underground utilities to be excavated at least 18 feet.\n\nBarnabas began digging and, at 11 feet, encountered a continuous shelf of limestone. When the contract was made, neither Lydia nor Barnabas knew of the limestone, and neither had hired a geotechnical expert to test for subsurface rock. Barnabas accurately claimed that removing enough limestone to build as planned would cost an additional $1.2 million and would probably leave it with a net loss of $800,000 on the job. Barnabas refused to continue unless Lydia promised to pay an additional $1 million for the completed hall.\n\nIf Lydia refuses and sues Barnabas for breach of contract, which of the following will the court probably decide?",
+ "call": "If Lydia refuses and sues Barnabas for breach of contract, which of the following will the court probably decide?",
+ "choices": {
+  "A": "Barnabas is excused, because the contract is voidable on account of the parties’ mutual mistake concerning an essential underlying fact.",
+  "B": "Lydia prevails, because Barnabas assumed the risk of encountering subsurface limestone that was unknown to Lydia.",
+  "C": "Lydia prevails, because Barnabas did not know that subsurface limestone was present in the area.",
+  "D": "Barnabas is excused under the modern doctrine of supervening impossibility, which includes severe impracticability."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Lydia should prevail because Barnabas was the specialist, accepted a fixed price, knew deep excavation was required, and skipped available subsurface testing. Gold Key: risk beats surprise. A contractor who takes a fixed-price excavation job while treating limited site knowledge as enough usually carries the unknown-site-condition risk. Silver Key: read the answer array as outcome plus reason. Do not stop at “owner wins”; the because-clause must put the risk bucket on the right party.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "This is anchor-assisted. The choice gives the attractive mutual-mistake label but omits the risk condition. A student cannot kill it as hard structure alone; the Gold Key supplies the missing tiny anchor."
+  },
+  {
+   "label": "CUT C",
+   "text": "This is student-accessible Issue-Sense. The fact is true, but it is not responsive. “Barnabas did not know” does not explain why Lydia wins. The answer fails the because-clause test."
+  },
+  {
+   "label": "CUT D",
+   "text": "This is anchor-assisted. The choice stretches impracticability too far. The stem gives a cost increase and probable loss, but the Gold Key keeps fixed-price construction risk in the contractor’s bucket."
+  },
+  {
+   "label": "Residual",
+   "text": "B remains. It is true and responsive: it names the party who carried the subsurface-risk bucket."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the anchor-assisted Cut."
+  }
+ ],
+ "studentScript": "Fixed price. Specialist excavator. Deep digging required. No testing. Surprise rock and more cost do not automatically excuse. Pick the answer that names risk assumed: B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Both parties' ignorance is attractive, but the answer omits who carried the risk.",
+   "lawyer": "Restatement (Second) of Contracts §§ 152 and 154 make risk allocation fatal to mutual mistake avoidance.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "The because-clause names the risk bucket.",
+   "lawyer": "The contractor's specialization, required excavation, opportunity to test, and fixed-price undertaking support allocating the unknown-site-condition risk to the contractor.",
+   "mold": null
+  },
+  "C": {
+   "signal": "No actual knowledge is not the reason Lydia wins.",
+   "lawyer": "Actual ignorance does not prevent risk allocation to the contractor under the mistake-risk rule.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The added cost is real, but the answer over-extends the excuse.",
+   "lawyer": "Restatement (Second) of Contracts § 261 does not treat ordinary fixed-price construction cost increases as enough for impracticability.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-SUNKEN-ARK-01",
+   "statement": "Risk beats surprise: a specialist who takes a fixed-price excavation job, knows digging is required, and skips available testing usually carries the unknown-site-condition risk.",
+   "trigger": "Specialized contractor + fixed price + required excavation + no subsurface test + moderate added cost.",
+   "unlocks": "The mutual-mistake and impracticability traps by separating unknown facts from assumed risk.",
+   "authority": "Restatement (Second) of Contracts §§ 152, 154, 261."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-SUNKEN-ARK-01",
+   "statement": "Read the array as outcome plus reason. Do not stop at 'excused' or 'owner prevails'; keep the answer whose because-clause puts the subsurface-risk bucket on the right party.",
+   "trigger": "Two answers excuse the contractor and two answers favor the owner.",
+   "unlocks": "The 2x2 outcome/reason array: excuse theories versus owner-prevails reasons.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Risk bucket beats surprise",
+  "signal": "Specialist contractor, fixed price, required excavation, no testing, and moderate cost increase.",
+  "studentMove": "Ask who carried the risk before asking whether the surprise was mutual or expensive.",
+  "tinyRule": "Unknown subsurface conditions usually stay with the specialist contractor when the contractor had the chance to test and priced the job anyway.",
+  "trap": "Mutual-mistake and impracticability answers that omit assumption of risk."
+ }
+}

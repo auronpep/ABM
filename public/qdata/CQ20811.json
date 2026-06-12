@@ -1,0 +1,88 @@
+{
+ "id": "CQ20811",
+ "title": "Illuminated Psalms Solvent",
+ "subject": "Civil Procedure",
+ "topic": "Personal Jurisdiction",
+ "subtopic": "Specific jurisdiction - contacts before fairness",
+ "difficulty": "hard",
+ "tension": null,
+ "stem": "Lydia, a Maine resident, paid to attend Barnabas’s private “Illuminated Psalms” calligraphy workshop in New Mexico. During the workshop, Barnabas handed students a solvent that he had prepared for the class. All instruction, materials use, and alleged negligent conduct occurred in New Mexico. After Lydia returned to Maine, her hands became inflamed and she missed several weeks of work on paid Advent-card commissions.\n\nLydia sued Barnabas in Maine. She argues that Maine is the fairest forum because she is recovering there, her family can help her there, and traveling back to New Mexico would be difficult. Barnabas has never taught workshops, advertised, shipped supplies, or taken commissions in Maine.\n\nCan fairness considerations alone create specific jurisdiction in Maine?",
+ "call": "Can fairness considerations alone create specific jurisdiction in Maine?",
+ "choices": {
+  "A": "Yes, because Lydia's injury was felt in Maine.",
+  "B": "No, because private workshop injury claims are excluded from federal courts.",
+  "C": "Yes, because Lydia's hardship is enough to create minimum contacts.",
+  "D": "No, because fairness cannot create minimum contacts absent purposeful Maine-directed conduct by Barnabas."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The item is not asking whether Maine would be convenient for Lydia. It asks whether fairness alone can create specific jurisdiction. Gold Key: Specific jurisdiction starts with defendant-created forum contacts; fairness may be considered only after that threshold is met. Silver Key: Sort personal-jurisdiction answers by layer: contacts first, fairness second. Here, Barnabas’s work, instruction, and alleged negligent conduct all occurred in New Mexico, and the stem gives no Maine-directed teaching, advertising, shipping, or commissions. The contact layer fails, so fairness cannot rescue the forum.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Lydia’s injury location is a forum-side fact. The call requires defendant-side contacts. Cut as NOT_RESPONSIVE / wrong_element."
+  },
+  {
+   "label": "CUT B",
+   "text": "Federal-court exclusion is a different gate. The call asks personal jurisdiction in Maine. Cut as NOT_RESPONSIVE / misfit."
+  },
+  {
+   "label": "CUT C",
+   "text": "Hardship is fairness. The answer treats fairness as if it creates contacts. Cut as NOT_TRUE / backwards, anchor-assisted by the Gold Key."
+  },
+  {
+   "label": "CALL / Residual",
+   "text": "D remains true and responsive. No unresolved clash remains."
+  }
+ ],
+ "studentScript": "Contacts first. Injury felt in Maine is Lydia-side. Hardship is fairness-side. Barnabas has no Maine-directed conduct. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer points to where Lydia felt harm. The call needs Barnabas's Maine contacts.",
+   "lawyer": "Walden requires defendant-focused, suit-related forum conduct; plaintiff forum injury alone is not enough.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The answer talks about federal-court claim category. The call asks Maine personal jurisdiction.",
+   "lawyer": "State-law claims are not categorically excluded from federal court; diversity jurisdiction may support federal subject-matter jurisdiction if statutory requirements are met.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The answer puts the second-layer fairness idea in the first-layer contacts slot.",
+   "lawyer": "Minimum contacts must come from defendant-created forum conduct before fairness factors matter.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "It answers the call directly and tracks the missing forum-directed conduct.",
+   "lawyer": "Specific jurisdiction requires defendant contacts with the forum connected to the suit; fairness alone does not supply them.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-CONTACTS_BEFORE_FAIRNESS-01",
+   "statement": "Specific jurisdiction starts with defendant-created forum contacts. Fairness or convenience can defeat jurisdiction after contacts exist, but it cannot create contacts by itself.",
+   "trigger": "The plaintiff felt harm at home or argues the home forum is fair, while the defendant's conduct all occurred elsewhere.",
+   "unlocks": "fairness-alone and forum-injury traps",
+   "authority": "International Shoe; World-Wide Volkswagen; Walden; Ford."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-ILLUMINATED_PSALMS_SOLVENT-01",
+   "statement": "In a specific-jurisdiction array, sort contacts first and fairness second. A plaintiff-side hardship fact cannot do the work of a defendant-side contact fact.",
+   "trigger": "Choices mention hardship, injury felt in the forum, and no forum-directed defendant conduct.",
+   "unlocks": "contacts-before-fairness answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Contacts First, Fairness Second",
+  "signal": "Plaintiff argues home forum is fairest, but defendant did all conduct elsewhere.",
+  "studentMove": "Ask for defendant-created forum contacts before weighing fairness.",
+  "tinyRule": "Fairness can defeat jurisdiction; it cannot create minimum contacts.",
+  "trap": "Letting sympathy for plaintiff hardship substitute for purposeful availment."
+ }
+}

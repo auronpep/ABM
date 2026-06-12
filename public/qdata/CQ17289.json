@@ -1,0 +1,84 @@
+{
+ "id": "CQ17289",
+ "title": "Foundation Paneling",
+ "subject": "Torts",
+ "topic": "Economic torts",
+ "subtopic": "Fraud",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Paul listed his small house in a Texas suburb for sale. Before any showings, an engineer, Daniel, had inspected the foundation and told Paul there were serious termite damage in the floor joists. Paul covered the damaged joists with fresh oak flooring and refinished the surface. When Hannah, a local teacher at a Christian school, came to look at the house, Paul told her, \"There are no known structural problems.\" Hannah relied on the statement, paid full price, and discovered the damage after moving in.\n\nIs Hannah likely to establish fraud?",
+ "call": "Is Hannah likely to establish fraud?",
+ "choices": {
+  "A": "No, because the buyer's damages are economic.",
+  "B": "Yes, because the seller concealed and misstated a known material fact to induce reliance.",
+  "C": "Yes, because every defect in sold property is fraud.",
+  "D": "No, because fraud can never be based on concealment."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "Hannah is likely to establish fraud. The elements of common-law fraud are (1) a false representation of a material fact, (2) knowledge of falsity (scienter), (3) intent to induce reliance, (4) reasonable reliance, and (5) damages. The facts support each: Paul falsely told Hannah there were \"no known structural problems\" when he knew about the termite damage in the joists; he covered the joists to induce reliance; Hannah reasonably relied on the seller's affirmative statement; and she suffered damages by paying full price. Gold Key: active concealment of a known material defect, combined with an affirmative misstatement, is actionable fraud; it is not the case that fraud can never be based on concealment, nor that every property defect is fraud, nor that economic damages are unrecoverable in fraud.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (every defect is fraud)",
+   "text": "is cut on the overclaim. Fraud requires the specific elements; a latent defect the seller did not know about is not fraud. Visible from the stem: the seller knew about the damage and covered it. The choice is NOT_TRUE for misstating the scope of fraud. Gold Key confirms."
+  },
+  {
+   "label": "A (economic damages bar)",
+   "text": "is cut on the wrong element. Fraud is a recognized business tort and economic damages are exactly what it compensates. Visible from the stem: the buyer paid full price in reliance. The choice is NOT_RESPONSIVE for asserting a negligence-bar rule that does not apply to fraud."
+  },
+  {
+   "label": "D (fraud can never be based on concealment)",
+   "text": "is cut on the mislabel. The seller both concealed AND made an affirmative misstatement; the misstatement alone satisfies falsity. Visible from the stem: Paul \"told her there are no known structural problems.\" The choice is NOT_TRUE for misstating the rule on active concealment."
+  },
+  {
+   "label": "CLASH",
+   "text": "No choices survive to clash. After three clean CUTs, only the correct answer B remains."
+  },
+  {
+   "label": "CALL",
+   "text": "B — concealment plus misstatement is fraud. Residual answer: B. No Gold Key escalation is needed for the credited answer; the Gold Key is referenced in the explanation to confirm the overclaim breaker for C."
+  }
+ ],
+ "studentScript": "The call asks whether the buyer is likely to establish fraud. C is the overclaim: not every property defect is fraud. A is the wrong element: fraud compensates economic damages. D is the mislabel: the seller made an affirmative misstatement. All five fraud elements are satisfied: falsity, scienter, intent, reliance, damages. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Fraud is a recognized business tort; economic damages are exactly what it compensates.",
+   "lawyer": "Restatement (Second) of Torts § 549: fraudulent misrepresentation is a recognized business tort and economic damages are recoverable.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "All five fraud elements are satisfied on the facts: falsity, scienter, intent, reliance, damages.",
+   "lawyer": "Restatement (Second) of Torts §§ 525, 527, 549: concealment plus misstatement is actionable fraud.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Fraud requires the specific elements; not every property defect satisfies all of them.",
+   "lawyer": "Fraud requires falsity, scienter, intent, reliance, and damages. A latent defect the seller did not know about is not fraud. Restatement (Second) of Torts § 525.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "Active concealment of a known material defect, plus an affirmative misstatement, is actionable. The misstatement alone satisfies falsity.",
+   "lawyer": "Restatement (Second) of Torts § 527: active concealment with intent to induce reliance is subject to the same liability as a stated misstatement.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-FOUNDATION-PANELING-01",
+   "statement": "Active concealment of a known material defect, combined with an affirmative misstatement, is actionable fraud; it is not the case that fraud can never be based on concealment, nor that every property defect is fraud.",
+   "trigger": "seller's known material defect + active concealment + affirmative misstatement + buyer's reliance",
+   "unlocks": "tiered-absolute overclaim that every property defect is fraud; mislabel that fraud can never be based on concealment",
+   "authority": "Restatement (Second) of Torts §§ 525, 527, 549"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Concealment plus misstatement is fraud",
+  "signal": "A seller knew of a material defect, covered it up, and made an affirmative misstatement to a buyer who relied and suffered damages.",
+  "studentMove": "Cut the overclaim (every defect is fraud), the wrong-element economic-loss bar, and the mislabel that fraud can never be concealment. The fraud elements are satisfied.",
+  "tinyRule": "Active concealment plus an affirmative misstatement is actionable fraud.",
+  "trap": "The overclaim that every property defect is fraud is the dominant trap; the mislabel that fraud can never be concealment is the second trap."
+ }
+}

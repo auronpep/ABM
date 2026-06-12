@@ -1,0 +1,88 @@
+{
+ "id": "CQ20523",
+ "title": "Easter Stage Guaranty",
+ "subject": "Contracts",
+ "topic": "Statute of Frauds",
+ "subtopic": "D",
+ "difficulty": "Trap Repair",
+ "tension": null,
+ "stem": "After Peter failed to pay a private event-supply company for the portable stage and speakers used at a ticketed Easter concert at his bookstore café, the company sued Ruth. Before the rental, Ruth had orally told the company that she would pay Peter’s $18,400 rental bill if Peter did not. That evening, Ruth signed a note to Lydia, Peter’s concert scheduler, stating: “I told Galilee Gear Rentals I would cover Peter’s $18,400 stage-and-speaker rental if Peter does not pay it.” Ruth argues that the signed note cannot satisfy the Statute of Frauds because it was sent to Lydia, not to Galilee Gear Rentals.\n\nCan Ruth’s signed note potentially satisfy the suretyship writing requirement?",
+ "call": "Can Ruth’s signed note potentially satisfy the suretyship writing requirement?",
+ "choices": {
+  "A": "No, because a guaranty memorandum must always be signed by both Peter and Ruth.",
+  "B": "Yes, because a signed memorandum by Ruth, the party to be charged, can satisfy the writing requirement even when sent to someone other than the supplier, if it sufficiently identifies the promise and parties.",
+  "C": "No, because a suretyship memorandum must be sent or addressed to the creditor seeking to enforce it.",
+  "D": "Yes, but only if Peter also signed Ruth’s note."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Ruth is the person being sued on the suretyship promise. The note is signed by Ruth, identifies the supplier, identifies Peter’s debt, states the amount, and states Ruth’s promise to cover the debt if Peter fails to pay. Gold Key: for a common-law Statute of Frauds memorandum, the key question is whether the writing is signed by the party to be charged and sufficiently identifies the promise and parties; it need not be addressed to the enforcing creditor. Silver Key: three choices add extra formalities; the answer array is asking whether the addressee and extra signatures are required.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Must always be signed by both” adds an absolute extra formality. With the Gold Key in hand, cut as NOT_TRUE / tiered_absolute."
+  },
+  {
+   "label": "CUT C",
+   "text": "“Must be sent or addressed to the creditor” adds the exact audience requirement the tested rule rejects. With the Gold Key in hand, cut as NOT_TRUE / fabricated_rule."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Only if Peter also signed” adds a debtor-signature condition. With the Gold Key in hand, cut as NOT_TRUE / fabricated_rule."
+  },
+  {
+   "label": "Residual",
+   "text": "B remains true and responsive. No CLASH or CALL is needed after the Gold-Key CUT."
+  }
+ ],
+ "studentScript": "Call: can the note satisfy the suretyship writing requirement? Ruth is the party being sued, Ruth signed it, and it names the supplier, Peter, the bill, and Ruth’s promise. Cut the choices adding extra formalities. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'always' plus 'both Peter and Ruth' adds a formality beyond the call’s party-to-be-charged fact.",
+   "lawyer": "A common-law Statute of Frauds memorandum must be signed by the party to be charged; Peter’s signature is not required to enforce Ruth’s promise against Ruth.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This choice answers the exact call: Ruth signed a memorandum that identifies the promise and parties; it does not add an addressee or debtor-signature requirement.",
+   "lawyer": "This matches Restatement (Second) of Contracts § 131 and the official key substance.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This is the stem’s bait objection: it treats the recipient of the note as a required formality.",
+   "lawyer": "The writing need not be addressed to the enforcing creditor if it is signed by the party to be charged and sufficiently identifies the promise and parties.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "This choice keeps the yes outcome but adds Peter’s signature as a condition.",
+   "lawyer": "Peter is not the party being charged on Ruth’s suretyship promise; his signature is not required for the memorandum to charge Ruth.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-SURETY-MEMO-THIRD-PERSON-01",
+   "statement": "For a common-law Statute of Frauds memorandum, the writing need not be addressed or delivered to the enforcing party. Ask whether it is signed by the party to be charged and whether it identifies the promise, parties, and essential terms.",
+   "trigger": "signed note admits a guaranty but was sent to someone other than the creditor",
+   "unlocks": "creditor-addressee trap and extra-signature traps",
+   "authority": "Restatement (Second) of Contracts §§ 131, 133; lawyer-confirmation only"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-SURETY-MEMO-ARRAY-01",
+   "statement": "When three answers add formalities and one answer tracks the signer-plus-content path, group the formalities first. Then cut the addressee and extra-signature conditions as the same trap family.",
+   "trigger": "choices say must be addressed, must always be signed by both, or only if debtor signed",
+   "unlocks": "3-vs-1 extra-formality answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "SOF memorandum: signer beats addressee",
+  "signal": "A signed writing admits a guaranty but was sent to someone other than the enforcing creditor.",
+  "studentMove": "Map who is being sued; then ask whether that person signed a writing identifying the promise.",
+  "tinyRule": "The memorandum need not be addressed to the enforcing party.",
+  "trap": "extra formality"
+ }
+}

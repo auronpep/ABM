@@ -1,0 +1,96 @@
+{
+ "id": "CQ20247",
+ "title": "Bible Memory Kit",
+ "subject": "Civil Procedure",
+ "topic": "Appeals and Finality",
+ "subtopic": "Rule 54(b)",
+ "difficulty": "medium-high",
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q# 20247, Civil Procedure, Appeals and Finality, Rule 54(b), with original credited answer C.\n\nFinal variation: “Ruth’s Bible-Memory Tournament Kit Case.”\n\nRuth filed a federal civil action after a private Bible-memory tournament kit launch fell apart. Her complaint asserted four unrelated claims against Timothy, Lydia, and Stephen. The district court dismissed every claim against Timothy and wrote, “Timothy is no longer part of this case.” The order did not direct entry of judgment, and it did not state that there was no just reason for delay. Several claims against Lydia and Stephen remain.\n\nCall: May Ruth immediately appeal the dismissal under Rule 54(b)?",
+ "call": "May Ruth immediately appeal the dismissal under Rule 54(b)?",
+ "choices": {
+  "A": "Yes, because Rule 54(b) applies automatically in every multi-party civil case.",
+  "B": "No, because the court did not expressly direct entry of judgment or determine that there is no just reason for delay.",
+  "C": "No, because Rule 54(b) applies only to criminal cases.",
+  "D": "Yes, because one defendant is fully dismissed."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The order resolved Timothy out of the case, but it did not contain the two formal Rule 54(b) signals that convert a partial resolution into an immediately appealable judgment. Gold Key: Rule 54(b) is not automatic; for fewer-than-all claims or parties, the district court must direct entry of judgment and expressly determine that there is no just reason for delay. Silver Key: When the stem lists the missing formal signals, match the answer that accounts for both omissions.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Automatically in every” is a visible overclaim. Rule 54(b) is not triggered merely by multi-party status."
+  },
+  {
+   "label": "CUT C",
+   "text": "“Only to criminal cases” is a wrong-frame flat misstatement in a civil-procedure item."
+  },
+  {
+   "label": "CUT D",
+   "text": "“One defendant is fully dismissed” is a true fact, but it is not the whole Rule 54(b) gate. It answers a partial element, not immediate appealability."
+  },
+  {
+   "label": "Residual",
+   "text": "B."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Anchor confirmation only: Rule 54(b) requires the missing formal certification."
+  }
+ ],
+ "studentScript": "Rule 54(b) call. Fewer than all claims and parties are resolved. The stem says no judgment direction and no no-just-reason finding. Cut automatic, criminal-only, and full-dismissal-only. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The words 'automatically' and 'every' turn a procedural exception into an all-case shortcut.",
+   "lawyer": "Rule 54(b) does not operate automatically; it requires court action.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The stem names two missing formal steps; this answer accounts for both.",
+   "lawyer": "This matches Rule 54(b)'s certification gate.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The stem is a federal civil action; saying the civil rule is only criminal is a frame crash.",
+   "lawyer": "Rule 54(b) is part of the Federal Rules of Civil Procedure.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "One defendant is fully dismissed, but the call asks immediate appealability under Rule 54(b).",
+   "lawyer": "Dismissing one party can be eligible for Rule 54(b), but eligibility is not certification.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-RULE54B-CERT-01",
+   "statement": "Rule 54(b) is not automatic. A partial judgment in a multi-claim or multi-party civil action is immediately appealable only if the district court directs entry of judgment and determines that there is no just reason for delay.",
+   "trigger": "Fewer than all claims or parties resolved; claims remain; order lacks certification language.",
+   "unlocks": "The trap that a fully dismissed defendant is automatically appealable.",
+   "authority": "Fed. R. Civ. P. 54(b)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-RULE54B-CERT-01",
+   "statement": "When the stem goes out of its way to say the order lacks formal Rule 54(b) language, do not let a partial-dismissal fact do the work by itself.",
+   "trigger": "One party is out, but other claims remain and formal certification is missing.",
+   "unlocks": "Partial finality bait.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Rule 54(b): partial dismissal is not automatic finality",
+  "signal": "Fewer than all claims or parties resolved.",
+  "studentMove": "Ask whether the court both directed entry of judgment and found no just reason for delay.",
+  "tinyRule": "No certification, no immediate Rule 54(b) appeal.",
+  "trap": "Full dismissal of one defendant feels final."
+ }
+}

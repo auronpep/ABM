@@ -1,0 +1,88 @@
+{
+ "id": "CQ20760",
+ "title": "Rubber Stamp Mail Fraud",
+ "subject": "Evidence",
+ "topic": "Types of Evidence",
+ "subtopic": "C1",
+ "difficulty": "Trap",
+ "tension": null,
+ "stem": "At Daniel’s federal mail-fraud trial over forged Bible-study supply invoices, the prosecutor offers a rubber stamp marked “PAID” that was found in a clearance bin at Lydia’s Christian Bookshop twenty miles from the post office used in the alleged scheme. No witness connects the stamp to Daniel, any invoice, or the charged mailing. Daniel objects.\n\nHow should the court rule?",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Admit the stamp only as demonstrative evidence of what rubber stamps generally look like.",
+  "B": "Exclude the stamp only because it is unfairly prejudicial as a matter of law.",
+  "C": "Admit the stamp because all office stamps are relevant in a mail-fraud trial.",
+  "D": "Exclude the stamp because, without a connection to the charged mailing or another relevant issue, the object lacks probative value."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The stamp is a physical object, but the stem gives no link between the stamp and Daniel, any invoice, or the charged mailing. That means the object has no fact-path into the case. It is not enough that mail-fraud schemes can involve office supplies. The object must help prove something that matters.\n\nSilver Key: Start with connection and purpose before object-category or prejudice. If the stem gives no bridge between the thing and the charged event, the “this kind of object fits this kind of crime” answer is bait.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "“All office stamps” is an all-category overclaim. It treats a kind of object as automatically relevant."
+  },
+  {
+   "label": "CUT A",
+   "text": "The answer invents a demonstrative purpose not supplied by the stem. It answers a different evidence question."
+  },
+  {
+   "label": "CUT B",
+   "text": "The answer jumps to a prejudice-only frame and makes it categorical. The visible layer is earlier: connection / probative value."
+  },
+  {
+   "label": "Residual D",
+   "text": "D directly matches the call and the trigger fact: no connection to the charged mailing or relevant issue."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "This is Evidence. Purpose and layer first. The stamp has no link to Daniel, the invoices, or the mailing. A and C admit for invented or overbroad reasons. B excludes for the wrong exclusive layer. D is the residual.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer supplies a demonstrative use the stem never gave.",
+   "lawyer": "Demonstrative evidence can be admissible for illustration, but this item was offered as an exhibit with no connected issue requiring a generic stamp demonstration.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The words 'only' and 'as a matter of law' overstate the prejudice frame and skip the visible connection layer.",
+   "lawyer": "The primary admissibility failure is relevance/connection. FRE 403 prejudice analysis is not the exclusive ground on these facts.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The word 'all' makes the object category do too much work.",
+   "lawyer": "A physical object is not relevant merely because it is the kind of object that can appear in a fraud case.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "It directly matches the missing bridge in the stem.",
+   "lawyer": "FRE 401 and FRE 402 support exclusion of evidence that lacks a connection to a fact of consequence; FRE 901 confirms the need to support what the proponent claims the item is.",
+   "mold": null
+  }
+ },
+ "goldKeys": [],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-RUBBER-STAMP-01",
+   "statement": "In Evidence, start with the bridge: what fact does this item help prove in this case? If the stem gives no bridge, do not jump to object category, demonstrative use, or prejudice.",
+   "trigger": "A physical object is offered, but the stem says no witness connects it to the defendant, document, event, or issue.",
+   "unlocks": "The relevance/connection layer before category and 403 traps.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Real object needs a bridge",
+  "signal": "Physical object offered, but no fact connects it to the charged event or issue.",
+  "studentMove": "Ask: what fact does this object make more likely?",
+  "tinyRule": "Object category is not a bridge.",
+  "trap": "The crime label makes the object feel relevant."
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "CQ18077",
+ "title": "Maranatha Meadow",
+ "subject": "Real Property",
+ "topic": "Estates and conveyancing",
+ "subtopic": "Future interests — shifting executory interest (third-party condition cutting short another grantee)",
+ "difficulty": "Calibration",
+ "tension": null,
+ "stem": "Daniel, a retired organic-wheat farmer in central Washington, conveyed a 60-acre parcel he called Maranatha Meadow \"to Barnabas and his heirs, but if Timothy graduates from college before Timothy turns 25, then to Timothy and his heirs.\" Timothy is Daniel's 22-year-old grandson; he has not yet graduated. Barnabas is Daniel's nephew, who has been working the farm for several years and is now in possession. What interest does Timothy have?",
+ "call": "What interest does Timothy have?",
+ "choices": {
+  "A": "A vested remainder subject to open.",
+  "B": "A possibility of reverter.",
+  "C": "A shifting executory interest.",
+  "D": "No interest unless Barnabas later signs another deed."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "Timothy has a shifting executory interest. A conveyance \"to A and his heirs, but if [a third person meets a condition], then to [the third person] and his heirs\" creates a fee simple subject to an executory limitation in A, with a future interest in the third person that will divest A's estate if the condition occurs. The future interest is executorily rather than a remainder because it cuts short a prior grantee's estate (rather than waiting for a natural termination); it is shifting because it is created in a third party (rather than the grantor) and operates between the grantees. Because Timothy's interest is created in Daniel's original deed, no subsequent conveyance from Barnabas is required for the interest to exist. The condition has not yet occurred (Timothy has not yet graduated and is still 22), so the interest is contingent — it will become possessory only if Timothy graduates before turning 25. Gold Key: the cutting-short axis is what makes it executory; the third-party axis is what makes it shifting. A future interest in a third party that cuts short a prior grantee's estate is a shifting executory interest.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (no interest unless later deed)",
+   "text": "is cut on the source-of-interest test. Timothy's interest was created in Daniel's original deed; no subsequent deed is required. The choice is NOT_TRUE for asserting a requirement that the original conveyance does not impose."
+  },
+  {
+   "label": "B (possibility of reverter)",
+   "text": "is cut on the wrong-holder test. A possibility of reverter is the grantor's retained interest. The future interest here is in a third party, not the grantor. The choice is NOT_RESPONSIVE for naming a future-interest category whose holder is not in play."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: is Timothy's interest a vested remainder (A) or an executory interest (C)?"
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. A remainder must wait for the natural termination of a prior possessory estate (typically a life estate). Barnabas received a fee simple, not a life estate. The future interest therefore must be executory, not a remainder. The \"subject to open\" sub-class adds a further mismatch (Timothy is a single named individual, not an open class). Apply the Gold Key: future interest in a third party that cuts short a prior grantee's estate is a shifting executory interest. Choose C."
+  }
+ ],
+ "studentScript": "Step 1: Does the future interest cut short a prior estate? Yes — it will divest Barnabas's fee simple if the condition occurs. The future interest is executory, not a remainder (no life estate to support a remainder). Step 2: Is the future interest in the grantor or a third party? In a third party (Timothy, not Daniel). The third-party axis makes it shifting, not springing. Step 3: Apply the Gold Key: cutting-short + third party = shifting executory interest. Step 4: Discriminate. A is wrong (no life estate). B is wrong (Timothy is third party, not grantor). D is wrong (interest was created in the original deed). Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A remainder must wait for the natural termination of a prior possessory estate (typically a life estate). Barnabas received a fee simple, not a life estate. There is no life estate to support a remainder; the future interest must be executory, not a remainder.",
+   "lawyer": "Restatement (Third) of Property: future-interest classification; a remainder follows a life estate; an executory interest follows a fee simple and cuts short the prior estate.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "A possibility of reverter is the grantor's retained interest in a fee simple determinable. The future interest here is in a third party (Timothy), not the grantor (Daniel).",
+   "lawyer": "Restatement (Third) of Property: a possibility of reverter is the grantor's retained interest; a right of entry is the grantor's interest in a fee simple subject to condition subsequent. When the future interest is in a third party that cuts short a prior grantee, it is a shifting executory interest.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The future interest cuts short a prior grantee's estate (executory) and is in a third party (shifting). The Gold Key tells the student to combine the cutting-short and third-party axes.",
+   "lawyer": "Restatement (Third) of Property: a future interest in a transferee that cuts short a prior estate is an executory interest; an executory interest in a third party is shifting.",
+   "mold": null
+  },
+  "D": {
+   "signal": "Timothy's interest was created in Daniel's original deed; no subsequent deed from Barnabas is required. The Silver Key tells the student to read the original deed for the source of the future interest.",
+   "lawyer": "The dispositive instrument is the original deed; the executory interest is created by the original deed and becomes possessory if the condition occurs, with no later deed required.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL-PROPERTY-MARANATHA-MEADOW-01",
+   "statement": "A remainder follows a life estate (or other estate of years); an executory interest follows a fee simple and cuts short the prior estate. A future interest in a third party that cuts short a prior grantee's estate is a shifting executory interest.",
+   "trigger": "fee simple subject to an executory limitation in the first grantee; cutting-shifting condition in favor of a third party who has not yet satisfied the condition",
+   "unlocks": "dominant-trap discrimination between C (shifting executory interest) and A (vested remainder subject to open)",
+   "authority": "Restatement (Third) of Property: future-interest classification"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Shifting executory interest — cutting-short axis in a third party",
+  "signal": "A conveyance 'to A and his heirs, but if [third person] meets a condition, then to [third person] and his heirs' — fee simple subject to an executory limitation with a contingent shifting executory interest in a third party.",
+  "studentMove": "Run the axis check: (1) does the future interest cut short a prior estate? (yes -> executory, not remainder). (2) is the future interest in the grantor or a third party? (third party -> shifting, not springing). Combine: shifting executory interest.",
+  "tinyRule": "Cutting-short + third party = shifting executory interest. Cutting-short + grantor = springing executory interest. No cutting-short + life estate = remainder.",
+  "trap": "The dominant trap is to call it a 'vested remainder subject to open' because there is no life estate to support a remainder. The threshold defect is that the future interest is executory, not a remainder."
+ }
+}

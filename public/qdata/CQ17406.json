@@ -1,0 +1,84 @@
+{
+ "id": "CQ17406",
+ "title": "Oak Choir Stall",
+ "subject": "Civil Procedure",
+ "topic": "Pleadings, Rule 12 Motions, and Amendments",
+ "subtopic": "Rule 12(h)(2) preservation of failure-to-state-a-claim defense",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary contracted in writing with Daniel, a custom woodworker, to fabricate and deliver fifteen hand-carved oak choir stalls for the sanctuary of a small church her family attends. The contract fixed the price at $11,800, with half due on signing and half on delivery. Mary paid the deposit; Daniel delivered the stalls; Mary now sues Daniel in federal court for breach of contract, alleging the stalls fail to match the contract's specifications. Daniel files a timely answer that admits the contract's existence and Mary's payment of the deposit, asserts several affirmative defenses, and nowhere asserts a Rule 12(b)(6) failure-to-state-a-claim defense. After the pleadings close, Daniel moves for judgment on the pleadings under Rule 12(c), arguing that Mary's complaint still fails to state a claim upon which relief can be granted.\n\nIs Daniel's failure-to-state-a-claim defense automatically waived by his omission from the answer?",
+ "call": "Is Daniel's failure-to-state-a-claim defense automatically waived by his omission from the answer?",
+ "choices": {
+  "A": "No, failure to state a claim can be raised by Rule 12(c) after the pleadings close.",
+  "B": "Yes, all Rule 12 defenses are waived if omitted from the first response.",
+  "C": "No, because subject-matter jurisdiction and failure to state a claim are the same.",
+  "D": "Yes, failure to state a claim must be raised before answering or never."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Daniel's failure-to-state-a-claim defense is not waived. Gold Key: Rule 12(h)(2) preserves the Rule 12(b)(6) defense for any later stage — including a Rule 12(c) motion for judgment on the pleadings after the pleadings close — even when the defense was never raised in the answer. The answer broke neither filter. Silver Key: when the call is \"is the defense waived by omission,\" map the precise defense to the precise Rule 12(h) subsection before saying \"waived.\" Rule 12(h)(1) waives 12(b)(2)–(5) and 12(b)(7) if not in the answer or in a pre-answer amendment; Rule 12(h)(2) preserves 12(b)(6) (and a few related defenses) for any later pleading, motion, or at trial. Read the subsection before answering.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (all 12 defenses waived)",
+   "text": "is cut on a Silver Key mapping. The student cannot see a single textual rule that treats 12(b)(2) and 12(b)(6) identically. Rule 12(h)(1) and Rule 12(h)(2) are different subsections, and the (h)(2) carve-out names 12(b)(6) by category. Visible from the question stem: the call is specifically about \"failure to state a claim,\" not \"all Rule 12 defenses.\" The choice is NOT_TRUE for overclaiming the rule's reach (every 12 defense is a different category; the choice proves a non-dispositive element for the actual 12(b)(6) question)."
+  },
+  {
+   "label": "C (SMJ = 12(b)(6))",
+   "text": "is cut on a basic conflation test. The student cannot find a textual rule equating 12(b)(1) (subject-matter jurisdiction, never waived) and 12(b)(6) (failure to state a claim, preserved at later stages). The two are separately treated by Rule 12(h). The choice is NOT_TRUE for misstating the rule (the two defenses are distinct even though both can be raised late)."
+  },
+  {
+   "label": "D (must be raised before answering or never)",
+   "text": "is the dominant trap and is not student-accessibly cut without the Gold Key. The student half-remembers \"include it or lose it\" and reads 12(b)(6) as if it were 12(b)(2). Visible only by reading Rule 12(h)(2) literally. The choice is NOT_TRUE under the Gold Key, but the defect is doctrinal, not structural."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and D survive to the final axis. They fight on whether Rule 12(h)(2)'s \"any later stage\" language preserves the 12(b)(6) defense for the 12(c) motion."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves: Rule 12(h)(2) preserves 12(b)(6) for any later stage, including a Rule 12(c) motion. Residual answer: A."
+  }
+ ],
+ "studentScript": "Step 1: Identify the precise defense. The motion argues the complaint still fails to state a claim — that is Rule 12(b)(6). Step 2: Map the defense to the precise waiver subsection. Rule 12(h)(2) preserves 12(b)(6) for any later stage. Rule 12(h)(1) waives 12(b)(2)–(5) and 12(b)(7); Rule 12(h)(3) addresses 12(b)(1) (subject-matter jurisdiction), which is never waived. Step 3: Test the procedural vehicle. A Rule 12(c) motion for judgment on the pleadings after the pleadings close is a 'later motion' under Rule 12(h)(2). Silver Key: map the precise defense to the precise Rule 12(h) subsection before saying 'waived.' Gold Key: Rule 12(h)(2) preserves 12(b)(6) for any later stage. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the broad and specific waiver distractors are cut on the Silver Key and the conflation distractor is cut on the rule text, the Gold Key resolves the residue to Rule 12(h)(2)'s preservation language.",
+   "lawyer": "Federal Rule of Civil Procedure 12(h)(2) preserves the failure-to-state-a-claim defense for any later stage, including a Rule 12(c) motion for judgment on the pleadings after the pleadings close.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The choice overclaims the waiver rule. The Silver Key forces the student to read Rule 12(h)(1) and (h)(2) as separate subsections with different treatment for different defenses.",
+   "lawyer": "Rule 12(h)(1) waives the 12(b)(2)–(5) and 12(b)(7) defenses if not raised in the answer or a pre-answer amendment; Rule 12(h)(2) separately preserves the 12(b)(6) and a small list of other defenses for any later stage.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The choice conflates two distinct defenses. Both can be raised late, but 12(b)(1) (subject-matter jurisdiction) is never waived, while 12(b)(6) is preserved for later stages but is not the same rule.",
+   "lawyer": "Subject-matter jurisdiction (Rule 12(b)(1)) is a non-waivable constitutional limit on the court's power; failure to state a claim (Rule 12(b)(6)) is a merits-based pleading challenge. Rule 12(h)(3) separately addresses 12(b)(1); Rule 12(h)(2) separately addresses 12(b)(6).",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "This is the dominant trap. The student treats 12(b)(6) as if it were 12(b)(2) (personal jurisdiction, which is waived). The Gold Key tells the student Rule 12(h)(2) is the explicit textual carve-out that preserves 12(b)(6) for any later stage.",
+   "lawyer": "Federal Rule of Civil Procedure 12(h)(2) preserves the 12(b)(6) defense for 'any later pleading, motion, or at trial.' A Rule 12(c) motion for judgment on the pleadings after the pleadings close is a later motion.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-OAK-CHOIR-STALL-01",
+   "statement": "Rule 12(h)(2) preserves the Rule 12(b)(6) failure-to-state-a-claim defense for any later pleading, motion, or at trial — including a Rule 12(c) motion for judgment on the pleadings after the pleadings close.",
+   "trigger": "defendant answers without 12(b)(6) and later moves for judgment on the pleadings under Rule 12(c)",
+   "unlocks": "12(b)(6)-is-waived-if-not-in-answer dominant trap (D)",
+   "authority": "Federal Rule of Civil Procedure 12(h)(2)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Rule 12(h) — the (h)(1) vs (h)(2) waiver split",
+  "signal": "A defendant omits a Rule 12 defense from the answer and later tries to raise it; the call is whether the defense is preserved.",
+  "studentMove": "Map the precise defense to the precise Rule 12(h) subsection. 12(b)(2)–(5) and 12(b)(7) are waived under (h)(1); 12(b)(6) and the related defenses are preserved under (h)(2). Subject-matter jurisdiction is a separate non-waivable category under (h)(3).",
+  "tinyRule": "Rule 12(h)(2) preserves 12(b)(6) for any later stage, including a Rule 12(c) motion after the pleadings close.",
+  "trap": "The dominant trap treats 12(b)(6) like 12(b)(2) and reads the rule as 'include it or lose it.'"
+ }
+}

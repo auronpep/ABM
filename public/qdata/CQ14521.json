@@ -1,0 +1,96 @@
+{
+ "id": "CQ14521",
+ "title": "Sea Of Galilee Lantern Walk",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "Expectation damages",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Daniel contracted to create a privately owned walk-through Bible-story lantern garden for Peter’s family Easter festival. Daniel hired Lydia to build the “Sea of Galilee” stone walkway and hidden lighting bed for $260,000. Under the subcontract, Lydia completed work with a reasonable value of $190,000, and Daniel made required progress payments totaling $130,000 for that stage. Lydia then unjustifiably refused to perform further. Daniel reasonably paid Barnabas $155,000 to finish the same work. Lydia sues Daniel for the reasonable value of the benefits conferred, and Daniel counterclaims for breach of contract.\n\nWhich of the following should be the court’s decision?",
+ "call": "Which of the following should be the court's decision?",
+ "choices": {
+  "A": "Lydia recovers $35,000, the benefit Lydia conferred on Daniel minus the $25,000 in damages incurred by Daniel.",
+  "B": "Daniel recovers $25,000, the excess over the subcontract price that Daniel paid for the performance he had bargained to receive from Lydia.",
+  "C": "Neither party recovers anything, because Lydia committed a material, unexcused breach and Daniel received a $60,000 benefit from Lydia for which Lydia has not been paid.",
+  "D": "Lydia recovers $60,000, the benefit conferred on Daniel for which Lydia has not been paid."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the correct answer. Daniel bargained to receive the completed walkway-and-lighting work for $260,000. Because Lydia unjustifiably stopped, Daniel had to pay a replacement $155,000 after already paying Lydia $130,000. That means Daniel’s total outlay for the promised completed performance is $285,000. The overrun is $25,000.\n\nGold Key: A breaching performer cannot use restitution to collect more than the contract allocation for the performance retained; the nonbreaching party is protected against paying more than the bargain price. Silver Key: In a dollar-outcome array, label who gets paid before trusting arithmetic. Here, the survivor pays Daniel, not Lydia.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A pays Lydia after netting reasonable value against Daniel’s overrun. The structure is attractive but points to the wrong remedy frame. It uses a neighboring restitution idea while the key call is the court’s full decision after a breaching performer and a completion overrun. Cut with the Gold Key."
+  },
+  {
+   "label": "CUT C",
+   "text": "C turns opposing facts into a compromise. That is the even-split mold. It does not explain why Daniel loses the $25,000 overrun. Cut as a no-rule wash."
+  },
+  {
+   "label": "CUT D",
+   "text": "D counts only the unpaid reasonable-value number. It answers one element of Lydia’s restitution claim and skips the contract-price allocation plus Daniel’s counterclaim. Cut with the Gold Key."
+  },
+  {
+   "label": "Residual",
+   "text": "B is the only answer that identifies Daniel’s $25,000 completion overrun."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the anchor-assisted cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the residual."
+  }
+ ],
+ "studentScript": "Breacher wants reasonable value. Contractor paid the contract-stage amount and then paid extra to finish. Do not pay the breacher. Contractor gets the $25,000 overrun. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer pays the breaching performer after doing precise arithmetic.",
+   "lawyer": "The breaching performer cannot use restitution to exceed the contract allocation; Daniel's total outlay exceeds the subcontract price by $25,000.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This answer pays the nonbreaching contractor the completion overrun.",
+   "lawyer": "Daniel's $130,000 payments plus $155,000 completion cost equal $285,000, which is $25,000 above the $260,000 subcontract price.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer treats opposing facts as canceling each other without applying a remedy rule.",
+   "lawyer": "Daniel still has a $25,000 completion-overrun claim.",
+   "mold": "even_split"
+  },
+  "D": {
+   "signal": "The answer stops at Lydia's unpaid reasonable-value number and misses the contractor's counterclaim.",
+   "lawyer": "Lydia has already received the contract amount due for the stage completed and cannot recover the extra reasonable value above that allocation.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-BREACHER-RESTITUTION-CAP-01",
+   "statement": "A party who materially breaches after part performance cannot turn restitution into a better deal than the contract gave; the recipient's total required outlay is capped by the contract price, and any reasonable completion overrun is recoverable from the breacher.",
+   "trigger": "a breaching performer sues for reasonable value while the nonbreaching party paid another to finish",
+   "unlocks": "the net-restitution trap that pays the breaching performer despite the nonbreaching party's completed outlay exceeding the subcontract price",
+   "authority": "Restatement (Third) of Restitution and Unjust Enrichment §36; Restatement (Second) of Contracts §347; United States ex rel. Palmer Construction, Inc. v. Cal State Electric, Inc., 940 F.2d 1260 (9th Cir. 1991)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-DOLLAR-OUTCOME-ARRAY-01",
+   "statement": "In a dollar-outcome array, label who gets paid before trusting arithmetic. A breacher-recovery answer can look precise while pointing the money to the wrong side.",
+   "trigger": "choices pay Lydia gross, Lydia net, Daniel overrun, or no one",
+   "unlocks": "the four-outcome remedy array: breacher gross recovery, breacher net recovery, nonbreacher overrun, or no recovery",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Breacher restitution cap versus completion overrun",
+  "signal": "Breaching performer sues for reasonable value and the nonbreaching party paid a replacement to finish.",
+  "studentMove": "Anchor the contract price first, then subtract amounts already paid and reasonable completion cost.",
+  "tinyRule": "The nonbreaching party should not pay more than the contract price for the promised completed performance.",
+  "trap": "Netting unpaid reasonable value to the breacher."
+ }
+}

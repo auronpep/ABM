@@ -1,0 +1,80 @@
+{
+ "id": "CQ17225",
+ "title": "Midnight Utility Fraud",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Property Crimes",
+ "subtopic": "Burglary — breaking element (constructive breaking by fraud)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At midnight, Paul knocked on Mary's door and falsely said he was from the electric company and needed to check the meter for a wiring fault. Mary, a private piano teacher who lives alone, let him in. Paul entered intending to steal a pearl necklace and a small wooden Nativity set from Mary's bedroom.\n\nCan the breaking element of common-law burglary be satisfied?",
+ "call": "Can the breaking element of common-law burglary be satisfied?",
+ "choices": {
+  "A": "No, because breaking always requires physical damage.",
+  "B": "No, because the homeowner opened the door voluntarily.",
+  "C": "No, because burglary requires theft after entry, not intent at entry.",
+  "D": "Yes, because entry obtained by fraud can be constructive breaking."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "The breaking element can be satisfied. Common-law burglary requires breaking and entering, at night, the dwelling of another, with intent to commit a felony at the time of entry. The breaking element is satisfied by constructive breaking — including gaining entry by fraud, threat, or trick — even without physical damage to the dwelling. Paul's lie about being an electric-company employee induced Mary to open the door; that consent was procured by fraud and is not a defense to the breaking element. Paul also had the requisite felonious intent at the moment of entry (he walked in intending to steal). Gold Key: at common law, \"breaking\" is broader than physical force; fraud-induced consent is constructive breaking. Silver Key: on a burglary question, the entry need not be by force — fraud, threat, or trick all count.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (physical damage required)",
+   "text": "is cut on the constructive-breaking doctrine. At common law, \"breaking\" is not limited to physical force; fraud-induced entry is constructive breaking. The choice states a flat misstatement of the law. The breaker is the Gold Key: constructive breaking is the majority rule."
+  },
+  {
+   "label": "B (voluntary opening)",
+   "text": "is cut on the consent-vitiated-by-fraud doctrine. A consent procured by deception is not effective consent for the breaking element. The breaker is the Gold Key: fraud-induced consent is treated as no consent at all for the constructive-breaking analysis."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and D survive to the final axis: does common-law burglary require a completed theft after entry, or is intent at the moment of entry enough? The single axis they fight on is the timing of the felonious intent."
+  },
+  {
+   "label": "CALL",
+   "text": "The common-law rule resolves the axis. Burglary is complete upon entry with felonious intent; the intended felony need not actually occur. Paul had the intent to steal at the moment of entry. The intended felony is not a required element of the completed burglary offense. Residual answer: D. A student who picks A or B is in anchor_gap territory on the constructive-breaking doctrine; the answer is settled by the Gold Key."
+  }
+ ],
+ "studentScript": "The call asks whether the breaking element is satisfied. Burglary requires breaking, entering, dwelling, of another, at night, with intent to commit a felony at entry. Paul entered by fraud, not force — fraud is constructive breaking. The homeowner opened the door because of the lie, so consent was procured by fraud and is not effective consent. Paul had the intent to steal at the moment of entry. All elements satisfied; burglary is established. Gold Key: constructive breaking includes fraud. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Common-law breaking includes constructive breaking; physical damage is not required.",
+   "lawyer": "Constructive breaking (fraud, threat, trick) satisfies the breaking element at common law; the no-physical-damage formulation misstates the rule.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "Consent procured by fraud is not effective consent for the breaking element.",
+   "lawyer": "Consent induced by deception is treated as no consent at all for the constructive-breaking analysis; Mary opened the door because of Paul's lie.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "Common-law burglary is complete on entry with felonious intent; the intended felony need not occur.",
+   "lawyer": "Burglary is complete upon entry with the requisite intent; the actual completion of the intended felony is not an element of the burglary offense.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "Fraud-induced entry is constructive breaking at common law; all four burglary elements are present.",
+   "lawyer": "Paul's false-pretenses pretext satisfies the breaking element by constructive breaking; the dwelling, nighttime, and felonious-intent elements are also satisfied.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-MIDNIGHT-UTILITY-01",
+   "statement": "At common law, the breaking element of burglary is satisfied by constructive breaking — entry obtained by fraud, threat, or trick — even without physical damage to the dwelling.",
+   "trigger": "false-pretenses entry with intent to commit a felony at the moment of entry",
+   "unlocks": "physical-damage-only and voluntary-opening traps",
+   "authority": "Common-law burglary doctrine; see LaFave, Substantive Criminal Law § 21.1(c); Model Penal Code § 221.1"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Breaking element — constructive breaking by fraud",
+  "signal": "Entry obtained by a false-pretenses pretext (utility worker, repair person, fellow church member) at night, with intent to commit a felony at the moment of entry.",
+  "studentMove": "Cut physical-damage and voluntary-opening rationales with the Gold Key; cut intent-after-entry with the timing rule.",
+  "tinyRule": "Constructive breaking includes fraud-induced entry; consent procured by fraud is not effective consent.",
+  "trap": "The everyday conception of 'breaking' fuses it with physical force; the common-law rule is broader."
+ }
+}

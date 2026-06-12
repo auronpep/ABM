@@ -1,0 +1,88 @@
+{
+ "id": "CQ20586",
+ "title": "Psalms Hormone Use",
+ "subject": "Constitutional Law",
+ "topic": "Equal Protection",
+ "subtopic": "Medical-use classifications",
+ "difficulty": "medium_high",
+ "tension": null,
+ "stem": "At a private “Psalms-and-Paintbrushes” youth retreat, Hannah brings her 16-year-old son Timothy to Dr. Luke after Timothy’s endocrinologist recommends a particular hormone medication for a diagnosis listed in the state medical code. A state statute prohibits physicians from prescribing that hormone medication to minors for that listed diagnosis, but it permits physicians to prescribe the same medication to minors for other diagnoses. The prohibition applies to every minor seeking the barred use. The text of the statute does not divide patients into male and female categories.\n\nTimothy challenges the statute under the Equal Protection Clause.\n\nWhat is the key Equal Protection threshold question?",
+ "call": "What is the key Equal Protection threshold question?",
+ "choices": {
+  "A": "Whether the statute is medically unwise, because bad medical policy automatically triggers strict scrutiny.",
+  "B": "Whether minors must be treated the same as adults in every medical setting.",
+  "C": "Whether the statute classifies by medical use and age, rather than by sex as such.",
+  "D": "Whether the hormone medication is prescribed for other diagnoses, because that fact alone automatically proves sex discrimination."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Silver Key: On an Equal Protection threshold call, do not start with whether the policy is good or bad. Start with the line the law actually draws. Gold Key: A medical-use-and-age line does not become a sex classification merely because the same medication is allowed for other diagnoses; the threshold question is what classification the statute itself draws.\n\nThe answer tracks the threshold task: classify the statute before choosing a scrutiny tier.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Automatically triggers strict scrutiny” is a visible overclaim. Cut."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Every medical setting” is a visible overclaim and answers an adjacent rights question. Cut."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Fact alone automatically proves” is a visible overclaim. Cut."
+  },
+  {
+   "label": "Residual C",
+   "text": "The only answer left asks what line the statute actually draws. No CLASH or CALL needed."
+  }
+ ],
+ "studentScript": "Threshold call. Cut automatic strict scrutiny. Cut every medical setting. Cut fact-alone automatically proves. The survivor asks what classification the statute draws: medical use and age versus sex as such. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer says bad policy automatically changes scrutiny. The automatic trigger is the visible defect.",
+   "lawyer": "Policy disagreement alone does not trigger strict scrutiny; Equal Protection analysis begins with the classification drawn.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The word every makes the answer too broad, and it answers a generalized minors-rights question instead of the classification threshold.",
+   "lawyer": "The Equal Protection threshold is the classification actually drawn, not an across-the-board rule equating minors and adults in every medical context.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "This answer matches the call. It asks what line the statute draws before jumping to scrutiny.",
+   "lawyer": "Medical-use and age classifications generally receive rational-basis review absent a sex classification or suspect status.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer says one fact alone automatically proves sex discrimination. Fact-alone automatic proof is the visible overclaim.",
+   "lawyer": "A law may classify by medical use even when the same medication is permitted for other diagnoses; same medication elsewhere does not automatically establish sex classification.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-MEDICAL-USE-01",
+   "statement": "A statute that bars the same medication only for a specified medical use and age group is not automatically a sex classification. Start with the classification the law actually draws.",
+   "trigger": "same medication allowed for some diagnoses but barred for minors for one diagnosis",
+   "unlocks": "medical-use and age versus sex-as-such classification",
+   "authority": "United States v. Skrmetti, 605 U.S. 495 (2025); Massachusetts Board of Retirement v. Murgia; Vacco v. Quill"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-PSALMS-HORMONE-01",
+   "statement": "On an Equal Protection threshold call, cut answers that jump straight to automatic scrutiny. The answer that names the classification actually drawn is the responsive lane.",
+   "trigger": "call asks key Equal Protection threshold question",
+   "unlocks": "three automatic-trigger distractors versus one classification-threshold answer",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Classification First, Scrutiny Second",
+  "signal": "Answer choices jump to strict scrutiny, rights in every context, or automatic discrimination.",
+  "studentMove": "Name the line the law draws before choosing a tier.",
+  "tinyRule": "Equal Protection starts with classification.",
+  "trap": "Policy-disagreement and same-medication facts are not automatic scrutiny triggers."
+ }
+}

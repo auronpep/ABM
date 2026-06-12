@@ -1,0 +1,96 @@
+{
+ "id": "CQ19840",
+ "title": "Red Sea Bridge Bolts",
+ "subject": "Civil Procedure",
+ "topic": "Discovery",
+ "subtopic": "Attorney-Client Privilege",
+ "difficulty": "medium",
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q#19840 is a Civil Procedure discovery / attorney-client privilege item. It tests whether an underlying factual identity is discoverable even though the fact was communicated to counsel; the supplied official key is C.\n\nBlack-letter rule preserved: Attorney-client privilege protects confidential legal-advice communications. It does not protect the underlying facts merely because those facts were communicated to counsel.\n\nInvariant layer preserved:\n\n* Issue: discovery of an underlying fact versus a privileged communication.\n* Credited legal substance: the underlying fact is discoverable if otherwise within discovery scope.\n* Call function: asks whether the fact is protected from discovery on the asserted privilege ground.\n* Array geometry: 2×2 outcome/reason grid: two “Yes” answers, two “No” answers; one “No” is correct, one “No” is an absolute false rule.\n* Distractor mechanics preserved:\n\n* Overbroad “everything told to lawyer becomes privileged.”\n  * Wrong-frame waiver / later courtroom disclosure.\n  * Absolute false “privilege never applies in civil cases.”\n\nLocked Christian variation — Red Sea Bridge Bolts\n\nAt Lydia’s privately owned Christian bookstore, Ruth was injured when a portable wooden “Red Sea crossing” bridge used for a paid Bible-story craft night shifted under her. Ruth sues Lydia in federal court for negligence. In an interrogatory, Ruth asks Lydia to identify who tightened the bridge’s bolts earlier that day. Lydia refuses, saying the answer is privileged because she gave that name to her lawyer during a confidential meeting seeking legal advice.\n\nCall: Is the identity of the person who tightened the bolts protected from discovery on that ground?",
+ "call": "Is the identity of the person who tightened the bolts protected from discovery on that ground?",
+ "choices": {
+  "A": "Yes, unless Lydia's lawyer later states the name in open court.",
+  "B": "No, because attorney-client privilege never applies in civil cases.",
+  "C": "Yes, because every fact a client discusses with a lawyer while seeking legal advice becomes privileged.",
+  "D": "No, because an opposing party may discover relevant underlying facts even if those facts were communicated to counsel."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The interrogatory asks for a fact: the identity of the person who tightened the bridge bolts. Lydia’s private legal-advice meeting may protect the communication between Lydia and her lawyer, but it does not hide the fact itself. Gold Key: privilege protects legal-advice communications, not underlying facts. Silver Key: lock the object of discovery before reading the choices: Ruth asked for the name, not for “what Lydia said to her lawyer.”",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. It answers a waiver-by-later-disclosure scenario. The stem asks whether the identity is protected on the ground that Lydia told it to counsel."
+  },
+  {
+   "label": "CUT B",
+   "text": "Not true. “Never applies in civil cases” is an absolute. The question’s privilege frame itself makes that absolute suspect."
+  },
+  {
+   "label": "CUT C",
+   "text": "Not true. “Every fact” is the overclaim. It converts all facts discussed with a lawyer into privileged material."
+  },
+  {
+   "label": "Residual",
+   "text": "D. It directly answers the call: underlying facts remain discoverable even if communicated to counsel."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "They asked for the name, not the lawyer conversation. Cut every-fact, cut never-civil, cut the later-waiver frame. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice introduces later courtroom repetition, a fact not in the stem and not the ground asserted.",
+   "lawyer": "Waiver is not the issue; the requested identity is an underlying fact.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The word never tries to erase the whole civil attorney-client privilege category.",
+   "lawyer": "Attorney-client privilege can apply in civil cases; it does not protect underlying facts.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The word every overextends privilege from communications to all facts discussed.",
+   "lawyer": "Privilege protects confidential communications, not the underlying fact.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "This directly answers the call and separates the fact from the lawyer conversation.",
+   "lawyer": "Underlying facts remain discoverable if otherwise within Rule 26(b) scope.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-UNDERLYING-FACTS-01",
+   "statement": "Attorney-client privilege protects confidential legal-advice communications, not the underlying facts. A fact does not become privileged just because the client told it to a lawyer.",
+   "trigger": "The discovery request asks for a fact, but the refusal says the fact was told to counsel.",
+   "unlocks": "The every-fact privilege trap.",
+   "authority": "Upjohn Co. v. United States, 449 U.S. 383 (1981); Fed. R. Civ. P. 26(b)(1); Fed. R. Civ. P. 33(a)(2)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-FACT-NOT-CHAT-01",
+   "statement": "Before reading privilege choices, name the object of discovery. If the other side asks for the fact itself, do not let an answer switch you to the lawyer conversation.",
+   "trigger": "Interrogatory asks for an identity or event fact; objection says the fact was told to counsel.",
+   "unlocks": "fact-versus-communication frame.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Fact, not chat",
+  "signal": "Discovery asks for a fact; privilege objection points to a lawyer conversation.",
+  "studentMove": "Separate the underlying fact from the communication that reported it.",
+  "tinyRule": "Facts do not become privileged by being told to counsel.",
+  "trap": "Every fact discussed with a lawyer becomes privileged."
+ }
+}

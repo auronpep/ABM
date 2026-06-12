@@ -1,0 +1,103 @@
+{
+ "id": "CQ20649",
+ "title": "Christmas Pageant Platform",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Standard of Due Care / Contributory Negligence / Causation",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Original row used: BARMATRIX Q# 20649, Torts, official key A. The source row asks which added fact would most likely produce judgment for an independent contractor in an all-or-nothing contributory-negligence jurisdiction.\n\nChosen variation title: The Christmas Pageant Platform\n\nNaomi worked for Lydia’s private pageant-production company, which was staging a Christian Christmas pageant. The company hired Barnabas, an independent contractor, to adjust the idle setting on a motorized rolling platform that carried a large manger prop. Barnabas adjusted the idle setting too high. Later, Naomi stood beside the platform and pressed the start switch to move it; because the platform lacked a roll-stop interlock, it lurched and injured her.\n\nNaomi asserted a negligence claim against Barnabas. Which one of the following additional facts or inferences, if it were the only one true, would be most likely to result in a judgment for Barnabas in a jurisdiction that applies the all-or-nothing rule of contributory negligence?",
+ "call": "Which one of the following additional facts or inferences, if it were the only one true, would be most likely to result in a judgment for Barnabas in a jurisdiction that applies the all-or-nothing rule of contributory negligence?",
+ "choices": {
+  "A": "The company that previously rented the platform failed to notify Lydia's company that the platform needed a roll-stop interlock.",
+  "B": "If Naomi had been standing on the operator step when she started the platform, she would not have been injured.",
+  "C": "Rolling pageant platforms of this type are usually equipped with roll-stop interlocks.",
+  "D": "The absence of a roll-stop interlock was a manufacturing defect in the platform."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The call asks for the added fact most likely to produce judgment for Barnabas. If platforms of this type usually have roll-stop interlocks, then Barnabas may reasonably have expected the interlock to prevent the platform from lurching even after an idle adjustment. That fact attacks Barnabas’s own negligence: it weakens foreseeability of the risk created by the idle adjustment.\n\nGold Key: Negligence turns on unreasonable conduct in light of foreseeable risk. A fact that makes the particular risk not foreseeable can defeat breach.\n\nSilver Key: In a “which added fact helps the defendant win” array, prefer the fact that breaks an element of the plaintiff’s claim over facts that merely blame someone else or describe a safer hypothetical.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "wrong-party / other-actor bait. It answers “who else failed?” not “what fact defeats Barnabas’s negligence.”"
+  },
+  {
+   "label": "CUT B",
+   "text": "wrong-element contributory-negligence bait. It proves avoidability, not Naomi’s negligence."
+  },
+  {
+   "label": "CUT D",
+   "text": "wrong-frame / other-cause bait. It identifies a product-defect cause, not a contractor-liability defense."
+  },
+  {
+   "label": "Residual",
+   "text": "C. It is the only fact that attacks Barnabas’s own breach by making the lurching risk less foreseeable."
+  },
+  {
+   "label": "CLASH",
+   "text": "If B and C survive, the axis is “plaintiff fault vs defendant no-breach.” The splitting fact is that B never says Naomi acted negligently, while C speaks directly to foreseeability of Barnabas’s risk."
+  },
+  {
+   "label": "CALL",
+   "text": "Element-breaking fact beats alternative-blame fact."
+  }
+ ],
+ "studentScript": "Call: which added fact helps Barnabas win. Cut other-party blame and other-cause blame. Cut the plaintiff-position answer because it shows avoidability, not negligence. Pick C because usual interlocks make the lurching risk less foreseeable.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice blames the previous rental company, but the call asks what helps Barnabas win Naomi's negligence claim against him.",
+   "lawyer": "A third party's failure to warn Lydia's company does not itself defeat Barnabas's liability if Barnabas's own negligent adjustment foreseeably caused the injury.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The choice says Naomi would have avoided injury in another position. It does not say her actual position was careless.",
+   "lawyer": "Contributory negligence requires negligent plaintiff conduct contributing to the accident. Mere but-for avoidability does not establish that element.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This choice is the only one aimed at Barnabas's own negligence. It says the missing safety feature is usually present.",
+   "lawyer": "If platforms of this type usually have roll-stop interlocks, Barnabas may not reasonably foresee that the idle adjustment would cause the platform to lurch; that can defeat breach.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice identifies a defect in the platform, not a reason Barnabas's own adjustment was non-negligent.",
+   "lawyer": "A manufacturing defect may make a manufacturer liable, but another contributing cause does not automatically relieve a negligent contractor.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-FORESEEABLE-RISK-01",
+   "statement": "Negligence turns on unreasonable conduct in light of a foreseeable risk. A fact that makes the specific risk not foreseeable can defeat breach.",
+   "trigger": "The added fact says the missing safety device is usually present.",
+   "unlocks": "Why the normal presence of a roll-stop interlock helps the contractor.",
+   "authority": "Restatement (Third) of Torts: Liability for Physical and Emotional Harm § 3; negligence factors include foreseeable likelihood/severity and burden of precautions."
+  },
+  {
+   "id": "GK-TORTS-CONTRIB-AVOIDABILITY-01",
+   "statement": "Contributory negligence requires negligent plaintiff conduct that contributed to the harm. A fact that the plaintiff would have avoided injury by doing something else is not enough by itself.",
+   "trigger": "The answer says the plaintiff would not have been hurt from another position.",
+   "unlocks": "Why the plaintiff-position answer is a trap.",
+   "authority": "Common-law contributory negligence rule; see Cornell Wex summary."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-PAGEANT-ARRAY-01",
+   "statement": "In an added-fact defense question, sort each option by what it attacks: defendant breach, plaintiff negligence, other cause, or other party. The best defense fact usually attacks an element of the plaintiff's claim against this defendant.",
+   "trigger": "Choices point in four different blame directions.",
+   "unlocks": "The 3-vs-1 answer array.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Avoidability is not contributory negligence",
+  "signal": "Choice says plaintiff would have avoided injury if she had acted differently.",
+  "studentMove": "Ask whether the choice says the actual conduct was negligent.",
+  "tinyRule": "No plaintiff negligence, no contributory-negligence bar.",
+  "trap": "Confusing safer hypothetical with legal fault."
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "id": "CQ14458",
+ "title": "Verse Wristbands",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Requirement and output contracts / exclusive dealing best efforts",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Under a written agreement, Lydia, an artisan who made glow-in-the-dark Scripture-memory wristbands, promised to sell her entire output of the wristbands at a specified unit price to Daniel, who operated a private Christian gift booth at youth festivals, for one year. Daniel promised that his booth would not sell any other supplier’s Scripture-memory wristbands. Before Lydia tendered any wristbands, Daniel learned that youth groups had abruptly shifted from wristbands to phone lock-screen cards, sharply reducing customer demand for the wristbands. Daniel renounced the agreement, and Lydia sues for breach of contract.\n\nWhich of the following will the court probably decide?",
+ "call": "Which of the following will the court probably decide?",
+ "choices": {
+  "A": "Daniel wins, because the agreement was void for indefiniteness of quantity and total price for the year.",
+  "B": "Lydia wins, because both parties to a sale-of-goods contract impliedly assume the risk of changes in price and customer demand.",
+  "C": "Daniel wins, because there was no mutuality of obligation since Daniel made no express promise to buy any of Lydia's Scripture-memory wristbands.",
+  "D": "Lydia wins, because Daniel's promise to retail Lydia's Scripture-memory wristbands exclusively, if he sold such wristbands at all, implied a promise to use his best efforts to sell Lydia's one-year output of wristbands."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Lydia wins because the written deal did more than leave Daniel free to buy nothing. The agreement gave Daniel an exclusive retail position for Lydia’s wristbands. Gold Key: in an exclusive-dealing sale-of-goods contract, the law supplies a best-efforts duty. Daniel’s exclusivity promise implied that he would use best efforts to promote the sale of Lydia’s one-year output.\n\nSilver Key: when two answers give Lydia the win, choose the reason that uses the special fact in the stem. The special fact is Daniel’s promise not to sell any other supplier’s Scripture-memory wristbands. D uses that fact. B gives the right winner but not the right legal hook.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks what the court will probably decide in Lydia’s breach suit. The stem’s special fact is not the demand drop. The special fact is Daniel’s exclusivity promise."
+  },
+  {
+   "label": "CUT A",
+   "text": "A says the deal is void because quantity and total yearly price are indefinite. That is a rule-anchor defect. In an output/exclusive-dealing goods deal, the quantity is supplied by output and the obligation is supplied by best efforts. Filter: NOT_TRUE. Mold: fabricated_rule."
+  },
+  {
+   "label": "CUT C",
+   "text": "C says the deal lacks mutuality because Daniel made no express promise to buy. That imports an express-promise requirement the anchor rejects. Filter: NOT_TRUE. Mold: fabricated_rule."
+  },
+  {
+   "label": "CUT / same-result screen B",
+   "text": "B gives Lydia the win, so it survives a result-only read. It then fails the reason check. The question is not “who generally bears market demand risk?” The call is answered by the legal effect of Daniel’s exclusive retail promise. Filter: NOT_RESPONSIVE. Mold: bait_doctrine."
+  },
+  {
+   "label": "Residual",
+   "text": "D is true and responsive. It uses the exclusive-dealing fact and states the implied best-efforts duty."
+  },
+  {
+   "label": "CALL",
+   "text": "No unresolved residue. The Silver Key only prevents the same-result trap."
+  }
+ ],
+ "studentScript": "This is an output-plus-exclusivity goods deal. Cut no-mutuality and indefiniteness with the Gold Key. Between the two seller-win answers, pick the one tied to exclusivity and best efforts. D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer attacks the missing annual quantity and total price; that is not enough once the output/exclusive-dealing anchor is supplied.",
+   "lawyer": "UCC 2-306 validates output terms and supplies guardrails; the agreement is not void merely because the annual quantity and total price are not fixed.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "It gives Lydia the win but answers through market-risk language, not the exclusivity fact.",
+   "lawyer": "The credited rule is exclusive-dealing best efforts, not a generic statement about assuming demand fluctuations.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The answer demands magic words; the Gold Key supplies the missing obligation from exclusivity.",
+   "lawyer": "Under UCC 2-306(2), exclusive dealing imposes best-efforts obligations unless otherwise agreed.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "This answer uses the exclusivity fact and states the best-efforts duty.",
+   "lawyer": "This is the rule of UCC 2-306(2) applied to the buyer's exclusive retail promise.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-VERSE-WRISTBANDS-01",
+   "statement": "In an exclusive-dealing contract for goods, the law supplies the missing action promise: the seller must use best efforts to supply the goods and the buyer must use best efforts to promote their sale.",
+   "trigger": "The seller commits its output and the buyer promises to carry no competing supplier's goods.",
+   "unlocks": "The trap that treats the buyer's exclusivity promise as empty, indefinite, or replaceable by a generic market-risk rationale.",
+   "authority": "UCC § 2-306(2)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-VERSE-WRISTBANDS-01",
+   "statement": "When two choices give the seller the win, choose the one whose reason uses the special fact in the stem, not the generic commercial-risk sentence.",
+   "trigger": "Two plaintiff-win answers, one tied to exclusivity and one tied only to demand or price swings.",
+   "unlocks": "Same-outcome pair: credited best-efforts reason versus dominant same-result market-risk bait.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Exclusive output deal supplies best efforts",
+  "signal": "Seller output plus buyer exclusivity in goods.",
+  "studentMove": "Do not demand an express buy-all sentence; ask whether exclusivity supplies the action promise.",
+  "tinyRule": "Exclusive dealing imposes best efforts to supply and promote unless otherwise agreed.",
+  "trap": "Same-result market-risk answer and no-mutuality answer."
+ }
+}

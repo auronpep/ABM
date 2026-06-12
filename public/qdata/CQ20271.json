@@ -1,0 +1,88 @@
+{
+ "id": "CQ20271",
+ "title": "Lantern Handbell Evening",
+ "subject": "Contracts",
+ "topic": "Expectation damages",
+ "subtopic": "A1",
+ "difficulty": "Calibration",
+ "tension": null,
+ "stem": "Daniel agreed to create and lead a private Scripture-themed lantern-and-handbell evening for Lydia’s family Easter celebration for $48,000. Daniel reasonably expected to spend $31,000 on lantern rentals, music assistants, and supplies. Before Daniel rented anything or began preparing, Lydia repudiated the contract without excuse. Daniel had no other losses and avoided all performance costs.\n\nWhat is Daniel’s proper expectation recovery?",
+ "call": "What is Daniel’s proper expectation recovery?",
+ "choices": {
+  "A": "$17,000, because Daniel recovers the profit he would have earned after subtracting costs saved.",
+  "B": "$48,000, because Lydia repudiated the contract before Daniel began preparing.",
+  "C": "Nothing, because Daniel had not yet begun preparing when Lydia repudiated.",
+  "D": "$31,000, because Daniel expected to spend that amount performing."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Daniel’s expectation recovery is the benefit of the bargain, not the gross contract price and not the costs he never had to spend. The contract price was $48,000. The performance costs Daniel avoided were $31,000. His expected net profit was therefore $17,000.\n\nGold Key: In a service contract repudiated before performance, expectation damages are the contractor’s lost profit when all performance costs are avoided: contract price minus costs saved, plus any other proven loss.\n\nSilver Key: Read the answer array as a damages-measure array: gross price, expected cost, net profit, and zero. The only answer that both uses the contract price and subtracts the avoided costs survives.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "It grabs the gross price but ignores the cost-saved fact. Label: wrong_element."
+  },
+  {
+   "label": "CUT C",
+   "text": "It invents a no-work prerequisite for lost-profit recovery. Label: fabricated_rule."
+  },
+  {
+   "label": "CUT D",
+   "text": "It treats avoided expected cost as the recovery. Label: wrong_element."
+  },
+  {
+   "label": "Residual",
+   "text": "A. No CLASH or CALL is needed after the CUT."
+  }
+ ],
+ "studentScript": "Price was $48,000. Costs saved were $31,000. No other losses. Expectation is net profit: $17,000. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice uses both numbers that matter: price and avoided cost.",
+   "lawyer": "Under expectation damages, the injured contractor receives the net benefit of the bargain: $48,000 minus $31,000 saved costs.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It answers the breach fact but not the recovery amount after saved costs.",
+   "lawyer": "Full price would overcompensate because Daniel avoided $31,000 in costs.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "It invents a start-work prerequisite.",
+   "lawyer": "A contractor can recover lost profit after a pre-performance repudiation if the profit is proved and costs are avoided.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "It grabs a real number but the wrong component.",
+   "lawyer": "The $31,000 was an avoided cost, not Daniel’s recoverable loss.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-COSTS-SAVED-01",
+   "statement": "When a service contract is repudiated before the contractor spends money, expectation recovery is the profit the contractor lost: contract price minus costs avoided, plus any other proven loss.",
+   "trigger": "fixed service price + expected costs + repudiation before performance + avoided all costs",
+   "unlocks": "gross-price, expected-cost, and no-work traps",
+   "authority": "Restatement (Second) of Contracts § 347"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PROFIT-MATH-01",
+   "statement": "When the choices are gross price, expected cost, net profit, and zero, treat the array as a formula test: keep the answer that uses price and subtracts saved costs.",
+   "trigger": "one choice equals price, one equals cost, one equals price-minus-cost, one equals zero",
+   "unlocks": "damages-number array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not pay avoided costs.",
+  "signal": "The stem gives contract price and expected cost, then says the contractor avoided all costs.",
+  "studentMove": "Subtract the avoided cost from the price.",
+  "tinyRule": "Expectation protects the net bargain, not the gross price.",
+  "trap": "price/cost/zero answer array"
+ }
+}

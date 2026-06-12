@@ -1,0 +1,88 @@
+{
+ "id": "CQ19448",
+ "title": "Praise Night Tshirt Cannon",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Duty - negligent entrustment",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "At a rented civic auditorium, Lydia organized a private Christian music night. A vendor left a compressed-air T-shirt cannon for authorized staff to use between songs. Lydia was not the cannon’s owner, but under the event agreement she had the key and authority to decide who could handle it during the event. During setup, Lydia handed the cannon to Barnabas, a visibly intoxicated friend who had never used one, so he could “make the praise-team singers laugh.” Barnabas fired wildly, knocked over two music stands, and then struck Ruth, a visiting photographer, in the face. Ruth sues Lydia for negligence.\n\nCall: Is Ruth likely to establish a negligent entrustment duty against Lydia?\n\nSource row used: BARMATRIX Q# 19448, Torts, Negligence, Duty — negligent entrustment. The source row provides the original stem, official key, official explanations, and rule reference.",
+ "call": "Is Ruth likely to establish a negligent entrustment duty against Lydia?",
+ "choices": {
+  "A": "Yes, because negligent entrustment makes Lydia strictly liable for any injury caused by the T-shirt cannon.",
+  "B": "No, because only the legal owner of a chattel can be liable for negligent entrustment.",
+  "C": "No, because Barnabas alone fired the cannon and third-party conduct always cuts off Lydia's duty.",
+  "D": "Yes, because Lydia supplied the T-shirt cannon to a visibly intoxicated and inexperienced person."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Lydia had authority to decide who could use the cannon during the event and handed it to Barnabas despite facts showing obvious unsafe use: visible intoxication and no experience. Gold Key: negligent entrustment looks to control/supply plus known or reasonably knowable risk of misuse, not formal legal title. Silver Key: lock the target defendant first; the call asks about Lydia’s duty, not Barnabas’s separate negligence.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“strictly liable” and “any injury” are overclaims. Negligent entrustment is framed as a negligence duty question, not automatic strict liability."
+  },
+  {
+   "label": "CUT B",
+   "text": "owner-only is an invented gate. This needs the Gold Key: control/supply can matter even without title."
+  },
+  {
+   "label": "CUT C",
+   "text": "“third-party conduct always cuts off duty” is an absolute. The answer tries to make Barnabas’s conduct end the analysis, but the call targets Lydia’s duty for foreseeable misuse."
+  },
+  {
+   "label": "CALL",
+   "text": "no residue remains. D is the only true-and-responsive answer."
+  }
+ ],
+ "studentScript": "Negligence duty call. Lydia is the target, not Barnabas. Cut strict liability and any injury. Cut third-party always-cutoff. Use the Gold Key on owner-only: control/supply beats title. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call says negligence duty, but the choice says strict liability and any injury.",
+   "lawyer": "Negligent entrustment is a negligence theory, not automatic strict liability for every injury involving the chattel.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This needs the Gold Key: control/supply, not title, is the gate.",
+   "lawyer": "Restatement § 390 uses supplier language, and the doctrine is not limited to the formal title owner.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "The word 'always' is the tell, and the call is Lydia's duty.",
+   "lawyer": "Foreseeable misuse by the entrusted person is the risk negligent entrustment addresses.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "It matches the call and the trigger facts: control, handoff, intoxication, inexperience.",
+   "lawyer": "The facts satisfy the negligent entrustment theory because Lydia supplied or permitted use by someone known or reasonably knowable to be likely to misuse the chattel.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-NEGLIGENT-ENTRUSTMENT-01",
+   "statement": "Negligent entrustment looks to control or supply of the chattel plus known unsafe use; formal legal title is not the gate.",
+   "trigger": "Defendant is not owner but has key, permission authority, or control and hands the chattel to an impaired or inexperienced user.",
+   "unlocks": "Owner-only negligent entrustment trap.",
+   "authority": "Restatement (Second) of Torts §§ 308, 390; Delana v. CED Sales, Inc."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-NEGLIGENT-ENTRUSTMENT-01",
+   "statement": "Lock the target defendant first: the call asks about Lydia's duty, so an answer focused only on Barnabas's operation is adjacent-call bait.",
+   "trigger": "The injured plaintiff sues the person who handed over the chattel, not the person who physically used it.",
+   "unlocks": "Physical-operator distraction.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Control Beats Title",
+  "signal": "Non-owner had authority over who could use the chattel.",
+  "studentMove": "Ask who supplied or permitted use, then ask whether the user was visibly unsafe.",
+  "tinyRule": "For negligent entrustment, supplier/control can be enough; title is not the gate.",
+  "trap": "Owner-only answer."
+ }
+}

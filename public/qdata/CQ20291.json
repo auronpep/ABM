@@ -1,0 +1,88 @@
+{
+ "id": "CQ20291",
+ "title": "Nativity Prop Rental Freeze",
+ "subject": "Civil Procedure",
+ "topic": "Appeals and Finality",
+ "subtopic": "Injunction Appeals",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "In a federal contract dispute between two private owners of a Nativity-prop rental business, the district court enters an order captioned “trial-preparation protocol.” The order directs Ruth not to rent out the disputed angel wings, shepherd cloaks, or manger displays to any Christmas pageant customers until trial. Ruth immediately appeals, arguing that the order operates as an injunction despite its caption.\n\nIs Ruth’s characterization likely right?",
+ "call": "Is Ruth’s characterization likely right?",
+ "choices": {
+  "A": "No, because orders that operate as injunctions can never be appealed before final judgment.",
+  "B": "No, because an order is immediately appealable only if it is labeled “injunction.”",
+  "C": "Yes, because the order commands Ruth to stop doing something before trial and operates as an injunction.",
+  "D": "Yes, because every trial-preparation protocol is immediately appealable."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The order does more than manage deadlines or organize discovery. It tells Ruth to stop renting specific property until trial. Gold Key: for injunction appealability, the legal name of the order is not controlling; the order’s practical effect is. Silver Key: do not read the caption first; read the verb. “Do not rent” is a stop-command, so the order operates like an injunction.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A — CUT",
+   "text": "The word never makes the choice too big. It turns the final-judgment rule into a no-exceptions rule. The Gold Key confirms that injunction-effect orders are a known exception."
+  },
+  {
+   "label": "B — CUT",
+   "text": "The word only makes the choice a magic-word trap. The order’s caption is not the C3 signal. The command is."
+  },
+  {
+   "label": "D — CUT",
+   "text": "The word every is an overclaim. A routine protocol is not automatically appealable. This protocol is different only because it tells Ruth to stop doing something."
+  },
+  {
+   "label": "C — residual",
+   "text": "C answers the exact call and uses the exact trigger fact: the order commands Ruth not to rent the props until trial."
+  }
+ ],
+ "studentScript": "Call: is this really an injunction? Caption says protocol, but the command says do not rent until trial. Cut every, only, and never. C survives.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word “never” turns a normal final-judgment habit into an absolute.",
+   "lawyer": "Injunction-effect orders fall within the statutory immediate-appeal lane; final judgment is not the only path.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The word “only” makes the caption do all the work and ignores the stop-command.",
+   "lawyer": "Courts assess practical effect; the word “injunction” is not required.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The choice answers the call with the stem’s command: do not rent until trial.",
+   "lawyer": "The order has the practical effect of injunctive relief and is treated as such for appealability.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The word “every” is broader than the call. The call asks about this stop-command order.",
+   "lawyer": "Routine case-management or trial-preparation orders are not automatically appealable.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-FUNCTIONAL-INJUNCTION-01",
+   "statement": "For immediate appeal, an order can count as an injunction by practical effect. A command to do or stop doing something may be injunctive even when the caption uses another label.",
+   "trigger": "Non-injunction caption plus a command to stop conduct until trial.",
+   "unlocks": "Label-only and final-judgment traps in injunction appealability.",
+   "authority": "28 U.S.C. §1292(a)(1); Carson v. American Brands; Abbott v. Perez."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-FUNCTIONAL-INJUNCTION-01",
+   "statement": "In a label-vs-function appealability question, read the verb in the order before reading the caption. A stop-command is the navigation signal.",
+   "trigger": "Order caption says one thing; operative sentence commands a party not to act.",
+   "unlocks": "Caption bait and protocol-label overreading.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Caption vs command",
+  "signal": "A district-court order has a neutral label but tells someone to do or stop doing something.",
+  "studentMove": "Ignore the caption first; identify the operative command.",
+  "tinyRule": "Function beats label for injunction appealability.",
+  "trap": "Magic-word caption rule; every-management-order overclaim."
+ }
+}

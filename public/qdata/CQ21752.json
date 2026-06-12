@@ -1,0 +1,88 @@
+{
+ "id": "CQ21752",
+ "title": "Olive Oil Ramp",
+ "subject": "Torts",
+ "topic": "Vicarious liability",
+ "subtopic": "Independent contractors - nondelegable duty",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Lydia operates a private, for-profit Bible-themed candle-dipping studio called Lampstand Studio. A statute requires businesses that invite the public into hands-on workshops to keep their customer walkway reasonably safe. Before opening for a paid “Psalms and Candles” class, Lydia hires Barnabas, an outside floor-care contractor, to cover and clean a slick olive-oil spill on the only ramp customers use to enter the studio. Barnabas negligently leaves the slick oil on the ramp, and Peter slips and falls while entering.\n\nCall: What is Peter’s best argument against Lampstand Studio?",
+ "call": "What is Peter's best argument against Lampstand Studio?",
+ "choices": {
+  "A": "Lampstand Studio is liable only if Lydia or one of her employees personally poured the oil on the ramp.",
+  "B": "Lampstand Studio has no possible liability because it hired an outside company to make the ramp safe.",
+  "C": "Lampstand Studio may be liable because the public-walkway safety duty is nondelegable.",
+  "D": "Lampstand Studio is liable because every outside company that works at a public business is treated as the business's employee."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is the best answer. It ties the claim to the fact that the business had the walkway-safety duty in the first place. Gold Key: when the law imposes a nondelegable safety duty on a hirer, the hirer may remain responsible even though an independent contractor performed the negligent work. Silver Key: do not turn this array into “contractor equals employee” or “contractor means no liability.” Look for the middle route: the duty stays with the business.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "“every outside company” is an absolute. That answer overconverts contractors into employees."
+  },
+  {
+   "label": "CUT B",
+   "text": "“no possible liability” pushes the independent-contractor default too far. The Gold Key blocks the contractor-shield trap."
+  },
+  {
+   "label": "CUT A",
+   "text": "“only if personally poured the oil” invents a personal-creation prerequisite. The Gold Key blocks the personal-act-only trap."
+  },
+  {
+   "label": "Residual",
+   "text": "C remains. No CLASH or CALL is needed after the anchor-assisted CUT."
+  }
+ ],
+ "studentScript": "Statutory safety duty. Outside contractor. Customer falls. Cut 'every contractor is employee.' Cut 'no possible liability.' Cut 'only if personally made the hazard.' Gold Key: nondelegable duty stays with the hirer. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer invents an 'only if the business personally made the hazard' route.",
+   "lawyer": "A nondelegable duty may keep liability with the hirer even when the independent contractor created or failed to remove the hazard.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The answer says 'no possible liability,' which pushes the independent-contractor default too far.",
+   "lawyer": "Independent-contractor status is a default shield, not a complete shield when a nondelegable duty applies.",
+   "mold": "extreme_of_range"
+  },
+  "C": {
+   "signal": "The answer matches the statutory safety-duty trigger and uses the cautious 'may be liable' wording.",
+   "lawyer": "Restatement (Second) of Torts § 424 supports liability where a statutory safety duty is breached by a contractor's failure to provide required precautions.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The word 'every' is too broad; it converts all outside companies into employees.",
+   "lawyer": "Nondelegable duty is not the same as employee status or respondeat superior.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-NONDELEGABLE-01",
+   "statement": "A statutory or otherwise nondelegable safety duty stays with the hirer even when the negligent work is done by an independent contractor.",
+   "trigger": "statutory/public safety duty plus outside contractor",
+   "unlocks": "independent-contractor shield trap",
+   "authority": "Restatement (Second) of Torts §§ 409, 424"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-NONDELEGABLE-01",
+   "statement": "When the stem gives a legal safety duty and an outside contractor, do not choose the all-or-nothing contractor answers; look for the duty-stays-with-the-hirer route.",
+   "trigger": "statutory duty + hired contractor + injured public entrant",
+   "unlocks": "contractor default vs nondelegable-duty exception",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Independent contractor is not the end of the story",
+  "signal": "Hirer has a statutory/public safety duty and hires someone else to perform it.",
+  "studentMove": "Ask whether the duty itself can be delegated.",
+  "tinyRule": "Nondelegable duty can keep liability with the hirer.",
+  "trap": "Contractor status as total shield."
+ }
+}

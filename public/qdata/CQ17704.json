@@ -1,0 +1,80 @@
+{
+ "id": "CQ17704",
+ "title": "Fender Shepherd",
+ "subject": "Civil Procedure",
+ "topic": "Claim and Issue Preclusion",
+ "subtopic": "Source of Preclusion Law",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a citizen of State A, and Paul, a citizen of State B, were involved in a multi-vehicle collision on a State A highway. Mary sued Paul in a State A state court for negligence. After a full trial, the State A court entered judgment for Paul. Later, Mary sued Paul in federal court in State B (sitting in diversity), and Paul raised the State A judgment as preclusive. The parties dispute which preclusion law governs the State A judgment's effect.\n\nWhich law should the federal court generally consult?",
+ "call": "Which law should the federal court generally consult?",
+ "choices": {
+  "A": "State B preclusion law, because the second case is pending there.",
+  "B": "No preclusion law applies unless both cases are in the same court.",
+  "C": "State A preclusion law, because State A rendered the judgment.",
+  "D": "Federal preclusion law always, because the second court is federal."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The federal court should consult State A's preclusion law. Under 28 U.S.C. § 1738 (the federal full-faith-and-credit statute), federal courts must give a state-court judgment the same preclusive effect that the rendering state would give it. Semtek International Inc. v. Lockheed Martin Corp., 531 U.S. 497 (2001), confirms that for a state-court judgment the source of preclusion law is the rendering state — not the forum state and not a uniform federal common law of preclusion. The fact that the second court happens to be federal (sitting in diversity) does not change that. Gold Key: for any state-court judgment, look to the preclusion law of the state that rendered the judgment — full faith and credit (§ 1738) makes the rendering state's rule binding, even on a federal court.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (State B law, because pending there)",
+   "text": "is cut on the tiered_absolute mold. \"Always\" + \"because the second case is pending there\" is a visible overclaim: the full-faith-and-credit statute makes the rendering state's preclusion law binding, not the forum's. Filter broken: NOT_TRUE."
+  },
+  {
+   "label": "B (no preclusion law applies unless same court)",
+   "text": "is cut on the fabricated_rule mold. The \"unless both cases are in the same court\" condition is not the law: § 1738 expressly operates across court systems and gives state-court judgments preclusive effect in federal court. Filter broken: NOT_TRUE."
+  },
+  {
+   "label": "CLASH",
+   "text": "- D (federal preclusion law always, because the second court is federal) survives the CUT pass. The mechanic is the same family as A (tiered_absolute overclaim), but the choice phrases the wrong direction more subtly — \"the second court is federal\" feels like a coherent legal hook, even though the rule is that the second court's federal character is irrelevant when the prior judgment is state-court. The CLASH axis is: \"rendering-state law (§ 1738) vs. federal-common-law-of-preclusion.\" The splitting fact is whether the prior judgment was state-court (→ § 1738) or federal-court (→ federal common law). On the present facts the prior judgment is state-court, so § 1738 controls."
+  },
+  {
+   "label": "CALL",
+   "text": "- The Gold Key resolves the axis: § 1738 controls state-court judgments; federal common law of preclusion controls federal-court judgments. Apply § 1738 → C. A student without the Gold Key is in anchor_assisted territory; the trap is the dominant-trap attractiveness of D, not a structural cut."
+  }
+ ],
+ "studentScript": "Step 1: What type of prior judgment? The State A court entered judgment for Paul in the negligence action. That is a state-court judgment. Step 2: Which law governs? 28 U.S.C. § 1738 (full faith and credit) and Semtek direct the federal court to use the rendering state's preclusion law. The second court's federal character is irrelevant when the prior judgment is state-court. Step 3: Cut the distractors. A is a forum-state overclaim. B is a fabricated same-court requirement. D is a federal-always overclaim. Gold Key: § 1738 controls state-court judgments; federal common law of preclusion controls federal-court judgments. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The 'always' + 'because the second case is pending there' is a tiered_absolute overclaim. Preclusion law does not follow the forum; it follows the rendering court.",
+   "lawyer": "28 U.S.C. § 1738 / Semtek: for a state-court judgment, the rendering state's preclusion law applies, not the forum's.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The 'unless both cases are in the same court' condition is a fabricated rule. § 1738 expressly operates across courts and gives state-court judgments preclusive effect in federal court.",
+   "lawyer": "28 U.S.C. § 1738: the full-faith-and-credit statute is, by its terms, addressed to 'every court within the United States' and is not limited to the rendering court.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "The Gold Key resolves: for a state-court judgment, the source of preclusion law is the rendering state under § 1738 / Semtek.",
+   "lawyer": "28 U.S.C. § 1738; Semtek International Inc. v. Lockheed Martin Corp., 531 U.S. 497 (2001).",
+   "mold": null
+  },
+  "D": {
+   "signal": "The 'always' is a tiered_absolute overclaim. The second court's federal character is irrelevant when the prior judgment is state-court; § 1738 / Semtek directs the federal court to use the rendering state's preclusion law. Federal common law of preclusion is the residual rule only for federal-court judgments.",
+   "lawyer": "28 U.S.C. § 1738; Semtek International Inc. v. Lockheed Martin Corp., 531 U.S. 497, 508 (2001). Federal common law of preclusion applies when the prior judgment was a federal-court judgment, which is not the present case.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-FENDER-SHEPHERD-01",
+   "statement": "For a state-court judgment, the source of preclusion law is the rendering state under 28 U.S.C. § 1738 and Semtek; federal common law of preclusion controls only federal-court judgments.",
+   "trigger": "prior judgment is state-court; second court is federal (or vice versa)",
+   "unlocks": "dominant-trap discrimination between C (rendering-state) and D (federal-always) when the second court is federal but the prior judgment is state-court",
+   "authority": "28 U.S.C. § 1738; Semtek International Inc. v. Lockheed Martin Corp., 531 U.S. 497 (2001)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Source of preclusion law — state-court vs federal-court judgment",
+  "signal": "A prior judgment is invoked for preclusion in a different court system. Ask: was the prior judgment state-court or federal-court?",
+  "studentMove": "State-court judgment → § 1738 / Semtek → rendering state's preclusion law. Federal-court judgment → federal common law of preclusion. The second court's character is irrelevant; only the prior judgment's character matters.",
+  "tinyRule": "For a state-court judgment, the rendering state's preclusion law applies (28 U.S.C. § 1738). For a federal-court judgment, federal common law of preclusion applies.",
+  "trap": "The dominant trap is the federal-court-second-suit → federal-law-always assumption. The 'second court is federal' hook is a red herring when the prior judgment is state-court."
+ }
+}

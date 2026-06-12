@@ -1,32 +1,101 @@
 {
  "id": "CQ21872",
- "title": "Title Subscription Price Affirmation",
+ "title": "Scripturequest Price Gate",
  "subject": "Constitutional Law",
- "topic": null,
- "subtopic": "Dormant Commerce Clause - extraterritorial regulation",
- "difficulty": null,
+ "topic": "Dormant Commerce Clause",
+ "subtopic": "Extraterritorial regulation",
+ "difficulty": "medium-hard",
  "tension": null,
- "stem": "Naomi sent the state revenue agency a demand letter after it rejected her company's permit renewal. The state licenses companies to sell title-search subscriptions to brokers in the state only if the company certifies that the fee it charges subscribers in every other state during the same quarter is no lower than the in-state subscription fee. The state says it is regulating only subscriptions sold inside the state. Naomi's company sells such subscriptions in several states.",
- "call": "What is the strongest Dormant Commerce Clause objection?",
+ "stem": "Ruth’s Workshop, Inc., a private company founded by Ruth, makes ScriptureQuest, a Bible-trivia board game sold through ordinary retail stores around the country. A state allows board-game makers to sell games in the state only if each month they certify that the price charged for the same game in every other state during that month is not lower than the in-state price. The state insists that it is regulating only sales inside its borders.\n\nWhat is the company’s strongest dormant Commerce Clause objection?",
+ "call": "What is the company's strongest dormant Commerce Clause objection?",
  "choices": {
-  "A": "The law is valid because a state may set a seller's nationwide prices once the seller chooses to serve that state's market.",
-  "B": "Article IV's Privileges and Immunities Clause is the exclusive doctrine for challenging the law.",
-  "C": "The law directly controls prices charged for out-of-state transactions and risks impermissible extraterritorial regulation.",
-  "D": "The law is valid because subscription-price rules do not affect commerce."
+  "A": "The law is valid because price rules never affect commerce.",
+  "B": "Article IV privileges and immunities is the only relevant doctrine.",
+  "C": "The law directly controls prices charged in other states and risks impermissible extraterritorial regulation.",
+  "D": "The law is valid because a state may control all nationwide prices once a seller enters its market."
  },
  "key": "C",
- "dominantTrap": "A",
- "rightExplanation": "C is correct. A state may regulate transactions within its borders, but it may not condition access to its market on the seller's prices in other states. The certification requirement ties the in-state license to fees charged elsewhere during the same quarter. That is the classic price-affirmation problem: the state is projecting its pricing rule beyond its borders while calling the regulated sale local.",
- "wrongExplanations": {
-  "A": "This is attractive because the seller is seeking an in-state license. The breaker is the nationwide price condition; market entry does not let one state dictate prices charged in other states.",
-  "B": "The choice points to another constitutional limit on state discrimination against citizens. The breaker is that a Dormant Commerce Clause objection remains available when the state burdens or directly regulates interstate commerce.",
-  "D": "The rule sounds narrow because the product is a subscription rather than goods. The breaker is that selling paid title-search subscriptions across state lines is commerce, and price conditions are commercial regulation."
- },
- "c3": [],
- "studentScript": null,
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The statute does not merely set the price for sales inside the state. It makes access to the in-state market depend on what the seller charges in every other state during the same month.\n\nGold Key: A state may not condition in-state sales on a seller’s out-of-state prices. When the in-state sales gate is tied to prices charged elsewhere, the strongest dormant Commerce Clause objection is extraterritorial price control.\n\nSilver Key: Follow the pricing lever, not the state’s label. The state says “inside our borders,” but the certification forces the seller to account for prices outside the state.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Price rules never affect commerce” is a tiered absolute. Prices are the commercial object in the stem."
+  },
+  {
+   "label": "CUT B",
+   "text": "Article IV privileges and immunities is a doctrine-home misfit. The call asks for a DCC objection."
+  },
+  {
+   "label": "CUT D",
+   "text": "The answer stretches a true-sounding in-state-market rule into power over all nationwide prices. That is an extreme-of-range overclaim."
+  },
+  {
+   "label": "RESIDUAL C",
+   "text": "It matches the price lever in the stem: in-state access depends on out-of-state prices."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two-answer clash remains after the cuts."
+  },
+  {
+   "label": "CALL",
+   "text": "The residual is confirmed by the Gold Key."
+  }
+ ],
+ "studentScript": "Call says DCC. Cut Article IV. Cut price-rules-never. Cut all-nationwide-prices as overreach. The only answer that follows the price lever across state lines is C.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
- "silverKeys": [],
- "remediation": null
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'never' overclaims; the stem is about prices, which are commercial.",
+   "lawyer": "Price regulation is regulation of commerce; this answer cannot support validity.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The call says dormant Commerce Clause; this answer exits into a different doctrine.",
+   "lawyer": "Article IV privileges and immunities is not the only relevant doctrine; the operative objection is DCC price control.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "This answer tracks the stem's lever: sell here only if prices elsewhere meet the state's condition.",
+   "lawyer": "Price-affirmation statutes tying in-state sales to out-of-state prices fall within the Baldwin / Brown-Forman / Healy line.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The true kernel is local sales power; the bad move is stretching it to all nationwide prices.",
+   "lawyer": "A state may regulate in-state sales but may not control prices charged wholly outside the state.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-PRICE-AFFIRMATION-01",
+   "statement": "A state may not condition in-state sales on a seller’s prices charged wholly outside the state. Price-affirmation laws tying in-state access to out-of-state prices are classic dormant Commerce Clause danger zones.",
+   "trigger": "in-state sales permission depends on prices in other states",
+   "unlocks": "extraterritorial price-control trap",
+   "authority": [
+    "Baldwin v. G.A.F. Seelig",
+    "Brown-Forman Distillers Corp. v. New York State Liquor Authority",
+    "Healy v. Beer Institute",
+    "National Pork Producers Council v. Ross"
+   ]
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-PRICE-LEVER-01",
+   "statement": "Ignore the state’s label and follow the lever. If the in-state sales gate moves when out-of-state prices move, the DCC objection is extraterritorial control.",
+   "trigger": "certify prices in every other state",
+   "unlocks": "state says it regulates only inside its borders",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Price Gate Across State Lines",
+  "signal": "Sell here only if prices elsewhere satisfy this state’s rule.",
+  "studentMove": "Follow the price lever across the border.",
+  "tinyRule": "In-state access tied to out-of-state prices points to DCC extraterritorial price control.",
+  "trap": "Accepting the state’s in-state label."
+ }
 }

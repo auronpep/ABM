@@ -1,0 +1,95 @@
+{
+ "id": "CQ20597",
+ "title": "Olivewood Nativity Craft Swap",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Defenses",
+ "subtopic": "General Principles",
+ "difficulty": "medium-high anchor-dependent",
+ "tension": null,
+ "stem": "At a community Advent craft swap, Stephen sees a hand-carved olivewood nativity figurine on a table beside small giveaway cards printed with Bible verses. A sign on the table says, “Free verse cards—take one.” Stephen honestly believes the figurine itself has been left as part of the giveaway and takes it home intending to keep it. The figurine actually belongs to Ruth, who had set it down briefly while stacking programs. Stephen is charged with larceny, a specific intent crime requiring intent to permanently deprive another of property.\n\nLater, at the same event, Mary sees Paul set down a similar olivewood figurine while he helps lead the closing song. Mary knows the figurine belongs to someone at the event, but she mistakenly believes state law permits a person to keep any item left unattended on a public craft-swap table after the closing song. Mary takes it intending to keep it. Mary is also charged with larceny; her belief about the law was wrong.\n\nWhich of the following correctly analyzes both prosecutions?",
+ "call": "Which of the following correctly analyzes both prosecutions?",
+ "choices": {
+  "A": "Both Stephen and Mary are not guilty because both acted from genuine beliefs that excused the taking.",
+  "B": "Both Stephen and Mary are guilty because only reasonable mistakes can provide a defense.",
+  "C": "Stephen is not guilty because his honest mistake of fact negates the specific intent for larceny; Mary is guilty because mistake of law is generally no defense.",
+  "D": "Stephen is guilty; Mary is not guilty—his mistake was unreasonable, and her mistake concerned the law and is a valid defense."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Silver Key: read the array as two switches: Stephen’s mistake is about a fact; Mary’s mistake is about the law. The credited answer must split them.\n\nGold Key: for a specific intent crime, an honest mistake of fact can negate the required specific intent even if the mistake is unreasonable. Stephen honestly thought the figurine was part of the giveaway, so he did not intend to take property he knew belonged to another. Mary’s mistake is different. She knew the property belonged to someone at the event, but misunderstood whether the law allowed her to keep it. That is a mistake of law. Mistake of law is generally no defense.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "overextends “genuine belief” into “both are excused.” That fails after the Gold Key distinction between fact mistake and law mistake."
+  },
+  {
+   "label": "CUT B",
+   "text": "imports the wrong mistake standard. “Only reasonable mistakes” is bait from the general-intent context, but this stem labels larceny as specific intent."
+  },
+  {
+   "label": "CUT D",
+   "text": "reverses the two outcomes. Stephen’s fact mistake helps him; Mary’s law mistake does not."
+  },
+  {
+   "label": "Residual",
+   "text": "C. No Clash or Call is needed after the anchor-assisted Cut."
+  }
+ ],
+ "studentScript": "Two scenarios. Stephen is fact mistake plus specific intent, so not guilty. Mary is law mistake, so guilty. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This treats both genuine beliefs the same even though the stem separates factual belief from legal belief.",
+   "lawyer": "The fact/law distinction matters: a mistake of fact may negate specific intent, while mistake of law generally does not excuse.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "The stem says larceny is specific intent; this answer imports the wrong frame by requiring reasonableness for Stephen's fact mistake.",
+   "lawyer": "Reasonableness is associated with general-intent mistake-of-fact analysis, not the specific-intent negation point tested here.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This splits the two scenarios on the fact/law axis and matches both stem facts.",
+   "lawyer": "Stephen lacks the specific intent if his honest factual mistake negates intent; Mary's legal mistake is generally no defense.",
+   "mold": null
+  },
+  "D": {
+   "signal": "This points the two mistake rules in the wrong direction.",
+   "lawyer": "Stephen's factual mistake can help; Mary's legal mistake generally cannot.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-MISTAKE-FACT-LAW-01",
+   "statement": "For a specific intent crime, an honest mistake of fact can negate the required specific intent even if the mistake is unreasonable.",
+   "trigger": "The stem says specific intent and the defendant honestly thinks the property is abandoned or free.",
+   "unlocks": "Reasonableness trap and fact/law split in larceny.",
+   "authority": "Morissette v. United States; DOJ Justice Manual larceny formulation; Cornell Wex mistake-of-fact summary."
+  },
+  {
+   "id": "GK-CRIMINAL-MISTAKE-FACT-LAW-02",
+   "statement": "Mistake of law generally does not excuse criminal conduct; sincerity alone is not enough.",
+   "trigger": "The defendant knows the object belongs to someone but misunderstands whether taking it is legal.",
+   "unlocks": "Mistake-of-law sincerity trap.",
+   "authority": "Cheek v. United States; Justia mistake-of-law summary."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-FACT-LAW-MATRIX-01",
+   "statement": "Read the answer array as two switches: Stephen's mistake is about a fact; Mary's mistake is about the law. The credited answer must split them, not treat both defendants the same.",
+   "trigger": "Two scenarios plus choices that say both guilty, both not guilty, and two split answers.",
+   "unlocks": "2x2 matrix: fact mistake versus law mistake.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Fact mistake / law mistake split",
+  "signal": "One actor misunderstands ownership facts; another understands facts but misunderstands legality.",
+  "studentMove": "First label each mistake as fact or law, then apply the specific-intent Gold Key.",
+  "tinyRule": "Specific-intent fact mistake can negate intent; law mistake generally cannot.",
+  "trap": "Treating all sincere mistakes the same or requiring reasonableness for every mistake."
+ }
+}

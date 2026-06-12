@@ -1,0 +1,80 @@
+{
+ "id": "CQ17956",
+ "title": "Stewards Heavyheart",
+ "subject": "Torts",
+ "topic": "Economic torts",
+ "subtopic": "Malicious prosecution — favorable termination element",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia, who runs a small heritage-seed business in Sonoma County, contracted to sell a one-year exclusive on her prized Brandywine tomato seed stock to a wholesale produce distributor run by Paul. When a hard late-spring frost wiped out half the stock, Lydia could not deliver the full exclusive order. Paul promptly sued Lydia for breach of contract in state court. While Paul's breach suit was still pending, Lydia — believing Paul filed the suit out of spite because she had refused his earlier offer to merge her business into his — filed a separate tort claim against Paul for malicious prosecution, alleging he filed the contract suit without probable cause and with malice. What is Lydia's strongest problem with her malicious prosecution claim?",
+ "call": "What is Lydia's strongest problem with her malicious-prosecution claim?",
+ "choices": {
+  "A": "The prior contract proceeding has not yet terminated favorably for Lydia.",
+  "B": "Malicious prosecution never applies to a civil suit, regardless of jurisdiction.",
+  "C": "Paul's alleged spite by itself automatically proves the malicious-prosecution claim.",
+  "D": "Lydia should relabel the claim as a private nuisance action against Paul."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Lydia's strongest problem is the favorable-termination element. A malicious-prosecution claim requires the plaintiff to show, among other things, that the prior proceeding terminated in a way that affirms the innocence of (or at least does not affirm the guilt / liability of) the malicious-prosecution plaintiff. Paul's breach suit is still pending — no judgment, no voluntary dismissal, no settlement that could be characterized as a favorable termination for Lydia. Without a favorable termination, the claim is premature at best, and the other elements (no probable cause, malice) cannot cure that defect. Gold Key: the favorable-termination requirement is a threshold element of malicious prosecution. A pending underlying suit is fatal to the malicious-prosecution claim regardless of how strong the malice or lack-of-probable-cause showing would otherwise be.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (relabel as nuisance)",
+   "text": "is cut on wrong_tort_frame. Nuisance is a land-use tort; the stem describes litigation conduct, not interference with land. The choice is NOT_RESPONSIVE because it points to a different tort whose elements are not in play."
+  },
+  {
+   "label": "C (spite proves the claim)",
+   "text": "is the dominant trap. The breaker is the Gold Key: a strong showing on one element (malice) cannot substitute for a missing element (favorable termination). The choice is a NOT_TRUE overclaim — \"automatically proves\" is the tiered-absolute tell."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: is the strongest problem the missing element (A) or the categorical civil/criminal bar (B)? The single axis they fight on is which defect the call rewards as \"strongest\"."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. The favorable-termination element is a threshold requirement; a pending underlying suit is fatal. The civil/criminal distinction, while doctrinally nuanced, is not the \"strongest\" problem here. Choose A."
+  }
+ ],
+ "studentScript": "Step 1: Has the prior proceeding terminated favorably for the malicious-prosecution plaintiff? No — the contract suit is still pending. Step 2: Apply the Gold Key: favorable termination is a threshold element. Step 3: Do the other elements cure the missing element? No — spite is one input to malice, not the whole tort; the civil/criminal distinction is jurisdictional, not categorical; nuisance is a wrong tort frame. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The favorable-termination element is a threshold requirement; a pending underlying suit is fatal regardless of malice or lack of probable cause.",
+   "lawyer": "Restatement (Second) of Torts §§ 674, 681; the favorable-termination element is grounded in the policy that every prior proceeding should be allowed to run to a final judgment in the regular course.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student treats a jurisdictional nuance as a categorical bar. The modern Restatement permits civil malicious-prosecution claims; the missing element is favorable termination, not the civil/criminal distinction.",
+   "lawyer": "Restatement (Second) of Torts § 674; many U.S. jurisdictions permit malicious-prosecution claims based on prior civil proceedings, subject to favorable-termination and other element requirements.",
+   "mold": "extreme_of_range"
+  },
+  "C": {
+   "signal": "Spite is one input to malice, not the whole tort. The Gold Key tells the student that a strong showing on one element cannot substitute for a missing element on another.",
+   "lawyer": "Malice is one element of malicious prosecution; favorable termination, lack of probable cause, and institution of the prior proceeding by the defendant are independent elements that each must be satisfied.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "Nuisance concerns interference with the use and enjoyment of land. A pending contract suit is litigation conduct, not land-use interference.",
+   "lawyer": "Nuisance requires a substantial and unreasonable interference with the use and enjoyment of land; the stem describes litigation conduct, not land-use interference. Relabeling the claim does not cure the favorable-termination defect.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-STEWARDS-HEAVYHEART-01",
+   "statement": "Favorable termination of the prior proceeding is a threshold element of malicious prosecution. A pending underlying suit is fatal to the claim, regardless of how strong the malice or lack-of-probable-cause showing would otherwise be.",
+   "trigger": "underlying suit is still pending; the plaintiff sues for malicious prosecution alleging malice and lack of probable cause",
+   "unlocks": "dominant-trap discrimination between A (threshold element missing) and C (spite overclaim)",
+   "authority": "Restatement (Second) of Torts §§ 674, 681"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Malicious prosecution — favorable-termination threshold",
+  "signal": "A plaintiff sues for malicious prosecution while the underlying proceeding is still pending, even though malice and lack of probable cause are alleged.",
+  "studentMove": "Apply the threshold check: has the prior proceeding terminated in a manner affirming the plaintiff's innocence of the charge or wrong? If not, the claim is not available.",
+  "tinyRule": "Favorable termination is a threshold element; a pending underlying suit is fatal to malicious prosecution.",
+  "trap": "Spite or lack of probable cause is a strong showing on one element, but it cannot substitute for a missing element on another."
+ }
+}

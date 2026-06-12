@@ -1,0 +1,99 @@
+{
+ "id": "CQ14546",
+ "title": "Koine Tutor",
+ "subject": "Contracts",
+ "topic": "Third-Party Rights",
+ "subtopic": "Third-Party Beneficiary Contracts",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "Ruth made an oral promise to Timothy, supported by valid and sufficient consideration, that if Timothy arranged private Koine Greek lessons during the next four months, Ruth would pay the full tutoring fee to whoever taught him. Six weeks later, Timothy hired Lydia, a private tutor, on credit for $4,200. Lydia did not know of Ruth’s promise when she agreed to teach Timothy but learned of it shortly after the tutoring agreement was made.\n\nCan Lydia enforce Ruth’s promise to Timothy?",
+ "call": "Can Lydia enforce Ruth's promise to Timothy?",
+ "choices": {
+  "A": "No, because Lydia was neither identified when Ruth's promise was made nor aware of it when the tutoring agreement was made.",
+  "B": "No, because Ruth's promise to Timothy is unenforceable under the suretyship clause of the Statute of Frauds.",
+  "C": "Yes, because Lydia is an intended beneficiary of the Ruth-Timothy contract.",
+  "D": "Yes, under the doctrine of promissory estoppel."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Ruth’s promise was not merely to reimburse Timothy later. It was to pay the tutoring fee directly to whoever taught him. Lydia fits that described provider class once Timothy hired her. Gold Key: intended-beneficiary status turns on the contracting parties’ intent to benefit the provider, not on whether the provider was named or knew about the promise at the start. Silver Key: read the array by outcome plus rationale; the correct “yes” answer uses the provider-benefit rationale, while the other “yes” answer uses reliance.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "“Promissory estoppel” is a neighboring enforcement route. The stem’s awareness fact cuts it: Lydia did not know of Ruth’s promise when she agreed to teach, so reliance is missing. Filter: NOT_RESPONSIVE. Mold: bait_doctrine."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Suretyship Statute of Frauds” is a neighboring writing-requirement frame. The promise was made to Timothy, not to Lydia as creditor. Filter: NOT_RESPONSIVE. Mold: bait_doctrine."
+  },
+  {
+   "label": "CUT A",
+   "text": "“Unnamed and unaware” repeats the most tempting facts. Those facts do not answer the exact call about intended-beneficiary status; they point to a neighboring vesting/modification concern. Filter: NOT_RESPONSIVE. Mold: wrong_element."
+  },
+  {
+   "label": "Residual",
+   "text": "C survives. It answers the call and matches the promise’s payment-to-provider structure."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the anchor-assisted Cut."
+  }
+ ],
+ "studentScript": "Cut D because no reliance; cut B because suretyship is the wrong frame; cut A because unnamed/unaware answers a neighboring issue. Choose C because the promise points payment to whoever taught Timothy.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice repeats unnamed and unaware facts, but the call asks whether Lydia can enforce after Timothy hired her.",
+   "lawyer": "Identification and awareness are not prerequisites to intended-beneficiary status; they matter to vesting and modification.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The choice imports a writing doctrine instead of answering the provider-beneficiary route.",
+   "lawyer": "The suretyship clause does not apply to this promise-to-the-debtor structure.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This choice matches the promise's direct payment to whoever taught Timothy.",
+   "lawyer": "Lydia is an intended beneficiary and may enforce Ruth's promise.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice needs reliance, but the stem says Lydia did not know of the promise when she agreed.",
+   "lawyer": "Promissory estoppel is unavailable because Lydia did not rely on Ruth's promise at contracting.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-KOINE-TUTOR-01",
+   "statement": "A future provider can be an intended beneficiary even if unnamed and unaware at formation when the promise directs payment to whoever provides the goods or services.",
+   "trigger": "promise says to pay whoever provides the thing or service",
+   "unlocks": "dominant unnamed/unaware trap",
+   "authority": "Restatement (Second) of Contracts §§302, 304"
+  },
+  {
+   "id": "GK-CONTRACTS-KOINE-TUTOR-02",
+   "statement": "The suretyship Statute of Frauds frame requires a promise to the creditor or obligee to answer for another's duty; a promise made to the debtor to discharge that debtor's bill is a different frame.",
+   "trigger": "promise made to the person who will incur the bill, not to the provider",
+   "unlocks": "suretyship writing trap",
+   "authority": "Restatement (Second) of Contracts §§112, 123"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-KOINE-TUTOR-01",
+   "statement": "When the answer array gives two yes answers and two no answers, sort by rationale before outcome; a highlighted negative fact may answer only a neighboring issue.",
+   "trigger": "one no answer repeats unnamed/unaware facts",
+   "unlocks": "2x2 outcome-by-rationale array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Future provider beneficiary",
+  "signal": "pay whoever provides the item or service",
+  "studentMove": "Separate provider-intent from provider-knowledge.",
+  "tinyRule": "Intent creates beneficiary status; knowledge/reliance affects other issues.",
+  "trap": "unnamed/unaware provider"
+ }
+}

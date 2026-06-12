@@ -1,0 +1,96 @@
+{
+ "id": "CQ20123",
+ "title": "Prayer Card Threat Writers",
+ "subject": "Torts",
+ "topic": "Privacy",
+ "subtopic": "False light and constitutional limits",
+ "difficulty": "medium-high",
+ "tension": null,
+ "stem": "A Christian streaming channel released a public-concern episode about anonymous threat letters sent to several disaster-relief centers. In the episode’s opening graphic, the channel showed a close-up of a handwritten prayer card signed by Hannah under the words, “Threat writers from the mercy team.” Before release, the producers had received the graphic designer’s note stating that Hannah’s card was only a thank-you note from a volunteer lunch and that Hannah had not written any threat letter. The producers used the graphic anyway. Hannah sues for false light.\n\nCall: What mental-state showing most directly supports the claim?",
+ "call": "What mental-state showing most directly supports the claim?",
+ "choices": {
+  "A": "Humiliation from seeing her prayer card in the episode.",
+  "B": "Special damages, because false light is a trade-libel tort.",
+  "C": "Actual malice, shown by using the graphic despite knowing the threat-writer implication was false or seriously doubting it.",
+  "D": "Strict liability, because the episode graphic was misleading."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The call asks for the mental-state showing that supports the false-light claim. The producers had a note saying Hannah’s prayer card was not connected to the threat letters, but they used the graphic anyway. Gold Key: In a public-concern false-light claim, the constitutional fault unlock is actual malice: knowledge of falsity or reckless disregard for truth. Silver Key: On a mental-state call, first cut choices about harm, damages, tort category, or no-fault liability; the answer must point to the publisher’s state of mind.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. It gives a reaction/harm fact, not a mental state."
+  },
+  {
+   "label": "CUT B",
+   "text": "Not responsive. It answers a different tort/remedy frame, not the false-light mental-state call."
+  },
+  {
+   "label": "CUT D",
+   "text": "Not true once the Gold Key is in play. Strict liability is the no-fault shortcut; public-concern false light requires constitutional fault."
+  },
+  {
+   "label": "Residual",
+   "text": "C. It is the only answer that names the publisher’s mental state and ties it to the contradiction in the stem."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two-answer clash remains."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "Mental-state call. A is feelings. B is damages/category. D is strict liability. C gives publisher knowledge or serious doubt from the note. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call asks for a mental-state showing; humiliation describes Hannah's reaction.",
+   "lawyer": "Embarrassment may relate to harm/offensiveness, but it does not supply actual malice.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Special damages and trade libel answer a category/remedy question, not a mental-state call.",
+   "lawyer": "False light is an invasion-of-privacy tort; this item turns on misleading publicity plus constitutional fault, not trade-libel special damages.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "This is the only choice that gives a publisher mental state and matches the contradiction in the stem.",
+   "lawyer": "Public-concern false light can require actual malice: knowledge of falsity or reckless disregard.",
+   "mold": null
+  },
+  "D": {
+   "signal": "With the Gold Key, strict liability points the rule the wrong way for public-concern false light.",
+   "lawyer": "Strict liability is not enough when the public-concern constitutional fault limit applies.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-PUBLIC-FALSE-LIGHT-01",
+   "statement": "Public-concern false light points to actual malice: the publisher knew the false implication was false or recklessly disregarded that risk. Strict liability is the trap.",
+   "trigger": "false-light claim + public-concern publication + pre-publication contradiction",
+   "unlocks": "strict-liability and mere-embarrassment traps",
+   "authority": "Time, Inc. v. Hill, 385 U.S. 374 (1967); New York Times Co. v. Sullivan, 376 U.S. 254 (1964)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-PRAYER-CARD-01",
+   "statement": "On a mental-state call, cut choices that describe harm, remedy, tort category, or no-fault liability before judging doctrine.",
+   "trigger": "call asks 'what mental-state showing'",
+   "unlocks": "harm/remedy/no-fault distractor cluster",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "False-light public concern: fault before feelings",
+  "signal": "False-light claim plus public-concern publication.",
+  "studentMove": "Lock the call. If it asks mental state, find the publisher's knowledge or serious doubt.",
+  "tinyRule": "Actual malice is knowledge of falsity or reckless disregard.",
+  "trap": "Mistaking embarrassment, special damages, or misleading graphics for the required mental-state showing."
+ }
+}

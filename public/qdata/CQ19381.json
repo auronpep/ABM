@@ -1,0 +1,92 @@
+{
+ "id": "CQ19381",
+ "title": "Shepherd Olive Press Deed",
+ "subject": "Real Property",
+ "topic": "Conveyance by Deed — Requirements for Valid Deed",
+ "subtopic": "B1",
+ "difficulty": "Calibration",
+ "tension": null,
+ "stem": "Naomi owned a small olive-press parcel behind her bakery. After Lydia completed a private hymn-calligraphy commission for Naomi, Naomi signed and handed Lydia a deed conveying the parcel to Lydia. The deed contained all required deed terms, and Lydia accepted it. Lydia tucked the deed inside a Psalms hymnal and never recorded it. No later buyer, lender, creditor, or other third party claims the parcel. Naomi later says the deed did not work because no recorder’s stamp was ever placed on it.\n\nWho owns the olive-press parcel?",
+ "call": "Who owns the olive-press parcel?",
+ "choices": {
+  "A": "Naomi, because a deed that is not recorded is void.",
+  "B": "Naomi, because the county recorder’s stamp is a deed-validity formality.",
+  "C": "Lydia, because recording is not required for a valid deed to pass title between grantor and grantee.",
+  "D": "Naomi, until Lydia records the deed."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The stem gives the title-transfer facts: Naomi signed the deed, delivered it, Lydia accepted it, and the deed contained the required deed terms. No outsider claims the parcel. That makes the question a validity-between-the-parties question, not a recording-priority question.\n\nGold Key: A valid deed passes title between grantor and grantee when delivered and accepted; recording protects notice and priority against outsiders, not validity between the original parties.\n\nSilver Key: Read the answer array as a 3-vs-1 recording trap. Three choices give the property back to Naomi because of recording; one choice answers the actual call: title between the original parties.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "This is the strongest trap. It makes nonrecording equal voidness. Gold Key cut: recording is not deed validity between original parties."
+  },
+  {
+   "label": "CUT B",
+   "text": "This invents an extra deed formality. Gold Key cut: the recorder’s stamp is not part of the valid-deed gate in this call."
+  },
+  {
+   "label": "CUT D",
+   "text": "This reverses timing. Gold Key cut: Lydia does not wait for recording to receive title as against Naomi."
+  },
+  {
+   "label": "Residual",
+   "text": "C. No CLASH or CALL needed after the Gold Key cut."
+  }
+ ],
+ "studentScript": "Valid deed. Delivered. Accepted. No outsider. Recording is a priority/notice move, not the validity move. Lydia owns.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice makes nonrecording destroy the deed even though the stem supplies deed terms, delivery, acceptance, and no outsider.",
+   "lawyer": "Recording is not required for validity between grantor and grantee; authority in legal verification.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "The choice invents a missing formality even though the stem says all required deed terms were present.",
+   "lawyer": "Recorder stamp is not a deed-validity formality for title passage between these parties.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "It answers the exact call: ownership between grantor and grantee where no outsider appears.",
+   "lawyer": "A valid deed delivered and accepted passes title between grantor and grantee even if unrecorded.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice treats recording as the event that makes Lydia owner, reversing the title-passing sequence.",
+   "lawyer": "Title passed on valid delivery and acceptance, not on later recording, as between these parties.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-RECORDING-VALIDITY-01",
+   "statement": "A valid deed delivered and accepted passes title between grantor and grantee even if unrecorded; recording protects notice and priority against outsiders.",
+   "trigger": "Valid deed + delivery + acceptance + no recording + no third-party claimant.",
+   "unlocks": "Recording-vs-validity trap.",
+   "authority": [
+    "Cornell Wex deed page.",
+    "Muzzy v. Uttamchandani summary under ORS 93.640.",
+    "California Civil Code § 1217 discussion."
+   ]
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-RECORDING-VALIDITY-01",
+   "statement": "When three choices make missing recording decide ownership, first ask whether the stem has an outsider. No outsider means the array is testing validity between the original parties.",
+   "trigger": "All distractors point to nonrecording.",
+   "unlocks": "3-vs-1 recording trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Recording vs Validity",
+  "signal": "Valid deed delivered and accepted, but not recorded.",
+  "studentMove": "Ask: original parties or outsider priority?",
+  "tinyRule": "No outsider: recording is not required for title to pass between grantor and grantee.",
+  "trap": "Treating the recorder’s office as the title-transfer event."
+ }
+}

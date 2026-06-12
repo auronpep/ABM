@@ -1,0 +1,84 @@
+{
+ "id": "CQ14451",
+ "title": "Psalm Trail Quitclaim",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Sufficiency of consideration",
+ "difficulty": null,
+ "tension": null,
+ "stem": "While designing a private Scripture-calligraphy retreat on her ranch, Lydia already owned the main meadow but wanted a recorded trail easement across a neighboring canyon so guests could reach the Psalm Path overlook. The trail claim was being litigated between Barnabas and Naomi under an old survey. Barnabas's lawyer had told him his trail claim was doubtful. Lydia knew only that the dispute was unresolved. Lydia signed a writing promising to pay Barnabas $9,000 in six semiannual installments for a quitclaim deed of whatever interest Barnabas had in the trail easement. Barnabas immediately executed and delivered the quitclaim deed, and Lydia paid the first $1,500 installment. A month later, a court entered a final judgment for Naomi, ruling that Barnabas had no interest in the trail easement. When the second installment came due, Lydia refused to pay. In Barnabas's action against Lydia for breach of contract, Barnabas will probably",
+ "call": "In Barnabas's action against Lydia for breach of contract, Barnabas will probably",
+ "choices": {
+  "A": "lose, because Barnabas suffered no legal detriment in executing the quitclaim deed.",
+  "B": "lose, because Barnabas knew before the agreement with Lydia that his claimed access right was doubtful.",
+  "C": "win, because Lydia, by paying the first $1,500 installment, is estopped to deny that her agreement with Barnabas is an enforceable contract.",
+  "D": "win, because Lydia bargained for, and received in exchange, a quitclaim deed from Barnabas."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Lydia promised to pay for Barnabas's quitclaim deed. Barnabas delivered exactly that deed. Gold Key: a bargained-for quitclaim, release, or written surrender of a doubtful claim can supply consideration even if the claim later proves worthless. Silver Key: keep the reason attached to the result; the winning answer must say why Barnabas wins through the bargain itself, not through a substitute theory.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "C uses a correct-looking contracts substitute theory. But the call is resolved by the bargain itself. C is a wrong-frame answer: correct result, wrong reason."
+  },
+  {
+   "label": "CLASH residue",
+   "text": "A, B, and D fight on one axis: whether the quitclaim deed supplies consideration despite doubt and later worthlessness."
+  },
+  {
+   "label": "CALL with Gold Key",
+   "text": "Apply the Gold Key. A falls because the deed execution is the legal detriment. B falls because doubt does not kill consideration. D remains: Lydia bargained for the quitclaim and received it."
+  }
+ ],
+ "studentScript": "Cut the estoppel shortcut. Use the Gold Key: a bargained-for quitclaim of a doubtful claim can be consideration. Lydia got the quitclaim, so Barnabas wins.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice denies value to the exact act Lydia requested.",
+   "lawyer": "Under Restatement (Second) of Contracts §§ 71 and 74, the execution of a bargained-for written surrender or quitclaim of a doubtful claim can be consideration.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "The choice points the Gold Key backward: doubt is treated as the reason the bargain fails.",
+   "lawyer": "Restatement (Second) of Contracts § 74 validates a bargained-for surrender of a claim that is doubtful or believed fairly valid; § 79 rejects a separate equivalence-in-value requirement.",
+   "mold": "backwards"
+  },
+  "C": {
+   "signal": "This choice reaches for a substitute theory after the bargain itself supplies the answer.",
+   "lawyer": "Promissory estoppel is unnecessary and unsupported because valid consideration exists.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "This choice matches the bargain fact: Lydia asked for the quitclaim and received it.",
+   "lawyer": "The deed was the bargained-for performance, so Lydia's promise is enforceable despite the later judgment.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PSALM-01",
+   "statement": "A bargained-for quitclaim, release, or written surrender of a doubtful claim can supply consideration even if the claim later proves worthless.",
+   "trigger": "the promisor asked for a no-warranty deed or release of whatever interest the claimant had",
+   "unlocks": "doubtful-claim and no-detriment traps",
+   "authority": "Restatement (Second) of Contracts §§ 71, 74, 79"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PSALM-01",
+   "statement": "In a two-win/two-lose array, keep the because clause attached to the result; a correct outcome with an unnecessary substitute theory is not the residual.",
+   "trigger": "one win answer uses the bargain itself and another win answer reaches for estoppel",
+   "unlocks": "correct-result/wrong-reason estoppel bait",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": null,
+  "signal": null,
+  "studentMove": null,
+  "tinyRule": null,
+  "trap": null
+ }
+}

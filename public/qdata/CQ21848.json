@@ -1,32 +1,96 @@
 {
  "id": "CQ21848",
- "title": "Family Zoning Aunt Household",
+ "title": "Manna House Family Integrity",
  "subject": "Constitutional Law",
- "topic": null,
- "subtopic": "Due Process - Family Liberty",
- "difficulty": null,
+ "topic": "Due Process",
+ "subtopic": "Family Liberty",
+ "difficulty": "hard",
  "tension": null,
- "stem": "A narrow rowhouse in a city residential district is owned by Ruth, who lets her teenage nephews, Stephen and Mark, live with her while their parent works long out-of-town nursing shifts. The city's single-family zoning ordinance defines a household as one or two parents and their children, and it bars an aunt from residing with nephews in that district. After the city orders Ruth to remove the boys from the home or move, the household challenges the ordinance as a direct interference with their family living arrangement.",
+ "stem": "In the city of New Capernaum, the “One Hearth” residential code permits a one-unit rowhouse to be occupied by a parent and that parent’s children, but it does not allow an adult aunt to live in that same rowhouse with her niece and the niece’s children. Naomi, Lydia, Timothy, and Ruth share a privately owned rowhouse they call Manna House. The city orders Naomi to move out under the code. The household challenges the code as a direct interference with their family living arrangement.\n\nWhat is the best constitutional route?",
  "call": "What is the best constitutional route?",
  "choices": {
-  "A": "Uphold it automatically because aunts and nephews can never form a protected family household.",
-  "B": "Resolve it only under the Dormant Commerce Clause.",
-  "C": "Analyze it as a substantive due process burden on family integrity.",
-  "D": "Treat it as ordinary land-use regulation subject only to rational basis, with no family-liberty issue."
+  "A": "Resolve the case only under the Dormant Commerce Clause.",
+  "B": "Uphold the code automatically because aunts are never family for constitutional purposes.",
+  "C": "Analyze the code as a substantive due process burden on family integrity.",
+  "D": "Treat the code as ordinary residential zoning subject only to rational basis, with no family-liberty concern."
  },
  "key": "C",
- "dominantTrap": "D",
- "rightExplanation": "The best route is substantive due process. The ordinance directly regulates who may live together as a family in a home and excludes close relatives from a household. That kind of direct interference with family living arrangements is not treated as merely ordinary economic zoning. The family should frame the challenge as a burden on protected family integrity under the Due Process Clause.",
- "wrongExplanations": {
-  "A": "The categorical statement is too broad. Substantive due process can protect close family living arrangements beyond parents and their minor children.",
-  "B": "Dormant Commerce Clause doctrine concerns state burdens on interstate commerce. This dispute concerns a city's direct regulation of family household composition.",
-  "D": "Zoning is often reviewed deferentially, which makes this attractive. The breaker is that the ordinance directly intrudes on protected family living arrangements."
- },
- "c3": [],
- "studentScript": null,
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: when a residential law directly slices into a close-family household, the route is substantive due process family integrity, not ordinary economic zoning. Silver Key: on a “best constitutional route” call, pick the doctrine home first; do not start by debating the strength of the city’s policy.\n\nThe code is not merely deciding how many unrelated roommates may occupy a dwelling. It is selecting which close relatives may live together and excluding another close relative from the household. That makes family living arrangement the trigger and due process the route.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "no commerce signal. Wrong constitutional home."
+  },
+  {
+   "label": "CUT B",
+   "text": "“never family” is an absolute; the Gold Key defeats it."
+  },
+  {
+   "label": "CUT D",
+   "text": "ordinary zoning is a neighboring frame; the Gold Key routes direct family-household exclusions to substantive due process."
+  },
+  {
+   "label": "Residual",
+   "text": "C."
+  },
+  {
+   "label": "CLASH",
+   "text": "not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "not needed after the Gold Key-assisted cut."
+  }
+ ],
+ "studentScript": "Route call. Cut Commerce: no commerce facts. Cut 'never family': absolute killed by the Gold Key. Cut ordinary zoning: neighboring frame. Residual C.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
- "silverKeys": [],
- "remediation": null
+ "choiceSignals": {
+  "A": {
+   "signal": "No commerce fact appears. The call is family living arrangement, not interstate commerce.",
+   "lawyer": "Dormant Commerce Clause analysis concerns burdens or discrimination affecting interstate commerce. The rowhouse occupancy rule targets family composition, not commerce.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "The word 'never' is the tell. The Gold Key says close-family households can trigger family-integrity protection.",
+   "lawyer": "Moore rejected a narrow nuclear-family boundary for constitutional family protection.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "It answers the route call and uses the family-household trigger.",
+   "lawyer": "A direct ordinance excluding close relatives from living together is analyzed as a substantive due process family-integrity burden.",
+   "mold": null
+  },
+  "D": {
+   "signal": "Generic zoning is a real frame, but the Gold Key says this family-household fact changes the route.",
+   "lawyer": "Belle Terre supports rational-basis treatment for unrelated occupants; Moore distinguishes direct regulation of related-family households.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL_LAW-FAMILY-INTEGRITY-01",
+   "statement": "When a government housing rule directly excludes close relatives from living together as a household, route the claim to substantive due process family integrity, not ordinary zoning.",
+   "trigger": "A residential rule slices a close relative out of a family household.",
+   "unlocks": "Ordinary zoning / rational-basis trap and categorical nonfamily trap.",
+   "authority": "Moore v. City of East Cleveland, 431 U.S. 494 (1977)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONSTITUTIONAL_LAW-ROUTE-CALL-01",
+   "statement": "On a route call, pick the constitutional home before grading policy strength. First cut homes that have no facts in the stem.",
+   "trigger": "The call asks for the best constitutional route and the choices name different constitutional homes.",
+   "unlocks": "Doctrine-home array with Commerce, zoning, and due process routes.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Close-family household ≠ ordinary zoning",
+  "signal": "A city rule excludes one close relative from a shared household.",
+  "studentMove": "Treat it as family-integrity due process after cutting wrong constitutional homes.",
+  "tinyRule": "Family household first; zoning only after the family trigger is absent.",
+  "trap": "Treating every occupancy ordinance as ordinary rational-basis zoning."
+ }
 }

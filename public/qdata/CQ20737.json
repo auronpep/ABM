@@ -1,0 +1,88 @@
+{
+ "id": "CQ20737",
+ "title": "Jonahs Whale Lyre",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "Specific performance for unique or highly unusual goods",
+ "difficulty": "medium-high",
+ "tension": null,
+ "stem": "At a Bible-camp art fair, Lydia arrived on March 5 with $3,700 to collect a hand-carved olive-wood lyre shaped like Jonah’s whale. Two days earlier, Paul, who operated a booth selling Christian folk art, had agreed to sell that lyre to Lydia for that price. Paul refused to hand it over.\n\nIf Lydia sues Paul, is Lydia entitled to specific performance of the sale?",
+ "call": "If Lydia sues Paul, is Lydia entitled to specific performance of the sale?",
+ "choices": {
+  "A": "Yes, because Paul is a merchant with respect to the sale of Christian folk art.",
+  "B": "Yes, because the lyre is highly unusual.",
+  "C": "Yes, because Paul could have obtained specific performance if Lydia had breached.",
+  "D": "No, because specific performance is not available as a remedy for breach of a contract for the sale of personalty."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The stem gives the only remedy-trigger fact: the lyre is a hand-carved olive-wood instrument shaped like Jonah’s whale. That makes the object highly unusual. Gold Key: In a sale-of-goods case, a buyer may get specific performance when the goods are unique or highly unusual. Silver Key: In this answer array, do not pick a “Yes” answer merely because it sounds contract-like; pick the “Yes” answer tied to the unusual-object fact.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Merchant status is a wrong trigger. It answers a neighboring UCC-looking question, not the specific-performance call."
+  },
+  {
+   "label": "CUT C",
+   "text": "Seller’s hypothetical remedy is the wrong party/remedy. The call asks Lydia’s remedy."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Not available for personalty” is too absolute once the Gold Key is known."
+  },
+  {
+   "label": "Residual",
+   "text": "B. The answer tracks the stem’s unusual-object fact.\n\nNo CLASH needed. No CALL needed."
+  }
+ ],
+ "studentScript": "This is a buyer remedy question. The lyre is the trigger because it is highly unusual. Merchant status and seller reciprocity do not answer the call. The personalty-never answer overclaims once I know the Gold Key. Answer B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice points to Paul’s seller status, not to the unusual-object fact.",
+   "lawyer": "Specific performance under UCC 2-716 turns on unique goods or other proper circumstances, not merchant status.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This is the only answer that uses the stem’s unusual-object fact.",
+   "lawyer": "UCC 2-716(1) permits specific performance where goods are unique or in other proper circumstances.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice answers a hypothetical question about Paul, not Lydia’s actual remedy.",
+   "lawyer": "Seller remedies ordinarily sound in resale, damages, or price in limited circumstances; the buyer’s specific-performance right does not depend on seller reciprocity.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The choice says personalty never gets this remedy; the Gold Key supplies the exception.",
+   "lawyer": "Specific performance is not categorically barred for personalty; UCC 2-716 permits it for unique goods or other proper circumstances.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-UNIQUE-GOODS-SP-01",
+   "statement": "For goods, specific performance is exceptional but available to a buyer when the goods are unique or highly unusual.",
+   "trigger": "The stem describes an unusual object and asks for specific performance.",
+   "unlocks": "personalty-never overclaim and merchant-status distraction",
+   "authority": "UCC 2-716(1)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-JONAH-LYRE-01",
+   "statement": "In a 3-Yes/1-No remedies array, do not accept the first Yes. Pick the answer tied to the stem’s remedy-trigger fact.",
+   "trigger": "Multiple Yes answers give different reasons for specific performance.",
+   "unlocks": "merchant-status and seller-reciprocity Yes traps",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Specific performance for goods: find the uniqueness trigger",
+  "signal": "Buyer asks for specific performance of a chattel.",
+  "studentMove": "Ask whether the object is unique or highly unusual; ignore merchant status and reciprocity.",
+  "tinyRule": "Unique/highly unusual goods can support buyer specific performance.",
+  "trap": "Ordinary personalty damages default overstated into a never rule."
+ }
+}

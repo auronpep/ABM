@@ -1,0 +1,96 @@
+{
+ "id": "CQ14438",
+ "title": "Nativity Ornament Kits",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Illusory promises",
+ "difficulty": null,
+ "tension": null,
+ "stem": "For a fall Bible-story festival, Lydia, who operated a private Christian gift shop, sent Martha, an artisan who made olive-wood nativity ornament kits, a signed order for 720 kits. Martha received the order on March 3; Lydia had sent it by courier on March 1. The order required shipment no earlier than May 12 and no later than June 12. Printed in bold type across the front of the order form was this statement: “Lydia reserves the right to cancel this order at any time before May 1.”\n\nMartha’s mailed acknowledgment, stating “I accept your order,” reached Lydia on March 9. Lydia did not cancel the order. Martha shipped the kits to Lydia on May 12. The kits conformed to the order in all respects. When they arrived on June 6, Lydia refused to accept them.\n\nWhich of the following is an accurate statement as of June 6 after Lydia rejected the kits?",
+ "call": "Which of the following is an accurate statement as of June 6 after Lydia rejected the kits?",
+ "choices": {
+  "A": "Because Lydia reserved the right to cancel the order before May 1, Martha’s May 12 shipment was only an offer.",
+  "B": "Lydia’s cancellation right was a condition subsequent, and its failure made the contract enforceable.",
+  "C": "Lydia’s order for the ornament kits, even if initially illusory, became a binding promise to accept and pay for them.",
+  "D": "Lydia’s order was an offer that became an option after Martha shipped the kits."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: A promise that is freely cancelable until a stated deadline can be illusory during that window, but once the deadline passes unused, the promise can become binding if the other side has accepted.\n\nHere, Lydia reserved only a temporary cancellation right: before May 1. She did not cancel before May 1. Martha had already accepted and later shipped conforming goods on May 12. As of June 6, after Lydia refused the conforming kits, the best statement is that Lydia’s order, even if initially illusory, had become a binding promise to accept and pay.\n\nSilver Key: Sort the answer choices by time. The cancellation right mattered before May 1; the call asks for the legal status on June 6.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — contradiction / wrong timing",
+   "text": "The answer uses a cancellation right that ended before the shipment. A student can catch the date clash: May 1 is before May 12 and June 6."
+  },
+  {
+   "label": "CUT B — anchor-assisted backwards label",
+   "text": "The answer labels the deadline as a condition subsequent and gives the wrong consequence. This needs the Gold Key, so it is not hard structural."
+  },
+  {
+   "label": "KEEP C — anchor residual",
+   "text": "It tracks the cutoff: initially weak promise, no cancellation, binding promise after the deadline."
+  },
+  {
+   "label": "CUT D — bait-doctrine",
+   "text": "Option is a real legal label, but it answers the wrong formation status. The call asks what is accurate after rejection of conforming goods."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two true-and-responsive answers remain after the anchor-assisted CUT."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tiebreaker is needed."
+  }
+ ],
+ "studentScript": "The call is as of June 6. May 1 already passed. Lydia did not cancel. Cut the answers that keep the deal in pre-cutoff status. The survivor is C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer relies on a right that ended before the shipment date.",
+   "lawyer": "The cancellation right expired before May 12, so the later conforming shipment was not only an offer.",
+   "mold": "contradiction"
+  },
+  "B": {
+   "signal": "The answer gives the missed cancellation deadline the wrong legal label.",
+   "lawyer": "No condition-subsequent language appears, and the failure of a condition subsequent would not itself create a contract.",
+   "mold": "backwards"
+  },
+  "C": {
+   "signal": "It matches the deadline sequence: cancelable window, no cancellation, later binding status.",
+   "lawyer": "The temporary cancellation right did not prevent binding status after it expired unused and the seller had accepted.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The option label answers a neighboring formation question, not the status after rejection.",
+   "lawyer": "Shipment did not turn Lydia’s order into an option; the contract became binding after the cancellation period expired unused.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-ILLUSORY-CUTOFF-01",
+   "statement": "A promise that can be canceled freely until a stated deadline is weak during the cancellation window, but the missed deadline can leave a binding promise once the cancellation right expires and the other side has accepted.",
+   "trigger": "buyer reserves a right to cancel only before a named date and then lets that date pass",
+   "unlocks": "temporary cancellation right versus binding promise after the cutoff",
+   "authority": "Restatement (Second) of Contracts § 77; UCC §§ 2-204 and 2-206"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-ILLUSORY-CUTOFF-01",
+   "statement": "On an as-of-date call, sort the choices by time. A choice that uses an expired cancellation right to describe a later shipment is a timing trap.",
+   "trigger": "a cancellation deadline appears before the shipment and rejection dates",
+   "unlocks": "expired-cancellation-right timing trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Cancellation-window cutoff",
+  "signal": "The buyer can cancel only before a named date and then does not cancel.",
+  "studentMove": "Mark the cancellation deadline, then ask what legal status exists after that date.",
+  "tinyRule": "A freely cancelable promise may stop being illusory when the cancellation window closes unused.",
+  "trap": "Calling the missed deadline an option or a condition subsequent."
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "id": "CQ20353",
+ "title": "Baptism Tank Burst",
+ "subject": "Civil Procedure",
+ "topic": "Subject Matter Jurisdiction",
+ "subtopic": "Supplemental Jurisdiction - Defendant Claims",
+ "difficulty": "medium_hard",
+ "tension": null,
+ "stem": "Source row used: BARMATRIX Q# 20353, Civil Procedure, supplemental jurisdiction, defendant counterclaim, official key C.\n\nFinal variation — “The Baptism-Tank Burst at the Handbell Expo”\n\nIn a federal diversity action, Lydia, a citizen of State A, sues Barnabas, a citizen of State B, for $120,000 after Barnabas’s privately owned portable baptism-tank display burst at a Christian handbell expo and ruined Lydia’s sound equipment. Barnabas counterclaims against Lydia for $18,000 for damage to the tank display from the same burst. The counterclaim has no independent amount in controversy.\n\nMay the federal court hear the counterclaim?",
+ "call": "May the federal court hear the counterclaim?",
+ "choices": {
+  "A": "No, because Section 1367(b) bars all low-value or nondiverse counterclaims by defendants in diversity cases.",
+  "B": "Yes, but only because the counterclaim presents a federal question.",
+  "C": "No, because each claim in a diversity case must independently exceed $75,000.",
+  "D": "Yes, because the counterclaim arises from the same burst and forms part of the same Article III case."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The counterclaim is by the defendant against the existing plaintiff, and it comes from the same burst that supports the anchor diversity claim. Gold Key: a same-transaction defendant counterclaim can ride supplemental jurisdiction even if it is below $75,000, unless a specific §1367(b) plaintiff-side bar applies. Silver Key: match the “yes” answer to the correct jurisdictional hook; here, the hook is same-event supplemental jurisdiction, not federal-question jurisdiction.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A — CUT",
+   "text": "It says §1367(b) bars all low-value or nondiverse defendant counterclaims. The word “all” is the trap. With the Gold Key, the statute’s plaintiff-side limit cannot be expanded into a defendant-side blanket bar."
+  },
+  {
+   "label": "B — CUT",
+   "text": "It answers with the wrong jurisdictional frame. The call is whether the court may hear this related counterclaim; the stem gives a same-burst relation, not a federal-law issue."
+  },
+  {
+   "label": "C — CUT",
+   "text": "It turns the $75,000 diversity threshold into “each claim must independently exceed $75,000.” That is an overclaim once supplemental jurisdiction is in play."
+  },
+  {
+   "label": "D — RESIDUAL",
+   "text": "Same burst + defendant counterclaim + valid anchor case. D is true and responsive."
+  },
+  {
+   "label": "CLASH",
+   "text": "not needed after the CUT."
+  },
+  {
+   "label": "CALL",
+   "text": "not needed after the CUT."
+  }
+ ],
+ "studentScript": "This is a Civ Pro gate question. The anchor claim is good. The counterclaim is by the defendant and comes from the same burst. Cut the 'every claim' amount answer, cut the blanket §1367(b) defendant-bar answer, cut federal question because no federal law appears. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer says 'all' defendant counterclaims; the Gold Key blocks that expansion.",
+   "lawyer": "Section 1367(b) limits specified claims by plaintiffs in diversity-only cases; it does not categorically bar defendant counterclaims that satisfy §1367(a).",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The stem gives no federal-law counterclaim; same-burst relation is the visible hook.",
+   "lawyer": "The correct basis is supplemental jurisdiction, not federal-question jurisdiction.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The answer says each claim must independently exceed $75,000; the Gold Key supplies the exception.",
+   "lawyer": "A claim that lacks an independent amount may fall within supplemental jurisdiction if it forms part of the same Article III case and is not barred by §1367(b).",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "It matches the call, the same-burst fact, and the Gold Key.",
+   "lawyer": "Under §1367(a), the same-burst counterclaim is part of the same case or controversy; §1367(b)'s plaintiff-side limits do not bar it.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-DEFENDANT_COUNTERCLAIM-01",
+   "statement": "In a diversity case, a defendant's same-transaction counterclaim can use supplemental jurisdiction even below $75,000 unless a specific plaintiff-side §1367(b) bar applies.",
+   "trigger": "Defendant counterclaim + same incident + no independent amount in controversy.",
+   "unlocks": "Amount-in-controversy and §1367(b) blanket-bar traps.",
+   "authority": "28 U.S.C. §1367(a)-(b); Fed. R. Civ. P. 13(a)(1)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-SUPP_COUNTERCLAIM_ARRAY-01",
+   "statement": "Read the array as result plus jurisdictional reason. A 'yes' answer is not enough; the reason must be same-event supplemental jurisdiction, not federal question.",
+   "trigger": "A counterclaim in a diversity case with no independent amount.",
+   "unlocks": "Two yes/two no answer array with competing jurisdictional hooks.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Defendant counterclaim under supplemental jurisdiction",
+  "signal": "Diversity anchor claim plus low-value defendant counterclaim from the same incident.",
+  "studentMove": "Check whether the low-value claim is defendant-side and same occurrence before applying §1367(b).",
+  "tinyRule": "Same-event defendant counterclaims may ride §1367(a); §1367(b) is plaintiff-side.",
+  "trap": "Treating every low-value diversity claim as independently barred."
+ }
+}

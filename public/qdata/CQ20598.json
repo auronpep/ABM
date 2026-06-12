@@ -1,0 +1,96 @@
+{
+ "id": "CQ20598",
+ "title": "Write It On Your Heart",
+ "subject": "Torts",
+ "topic": "Privacy",
+ "subtopic": "Appropriation of identity",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q# 20598, Torts, Privacy, appropriation of identity. The source row tests whether unauthorized commercial use of a clearly recognizable identity can support appropriation even without exact name or photograph.\n\nFinal Christian variation — 20598_write_it_on_your_heart\n\nRuth is a nationally known Christian calligraphy teacher whose short devotional videos are instantly recognized by her turquoise headscarf, sand-timer necklace, whispery cadence, spiral hand-lettering flourish, and catchphrase, “write it on your heart.” Peter’s private Bible-memory app company hired Lydia, an actress and animator, to recreate those traits in a paid social-media ad for the app. The ad never used Ruth’s legal name or photograph, and Ruth did not consent. Commenters overwhelmingly understood the ad’s guide character to be Ruth. Ruth sues Peter’s company for appropriation.\n\nCall: Should a court rule for Ruth?\n\n---",
+ "call": "Should a court rule for Ruth?",
+ "choices": {
+  "A": "No, because the ad portrayed the guide character in a respectful and admiring way.",
+  "B": "Yes, because the company used Ruth’s distinctive identity for commercial advantage without consent.",
+  "C": "Yes, but only if the ad stated a false fact about Ruth.",
+  "D": "No, because the ad did not use Ruth’s exact name or photograph."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Peter’s company did not merely make a respectful reference to Ruth. It used an actress and animated guide character to copy Ruth’s recognizable devotional-calligraphy persona in a paid ad for a private product. The commercial point was to borrow Ruth’s identity value to sell the app.\n\nGold Key: Appropriation is not limited to exact name or photograph. A recognizable, unauthorized commercial evocation of the plaintiff’s identity can be enough.\n\nSilver Key: When the call says appropriation, keep the answer that tracks identity use, commercial advantage, and lack of consent. Treat name/photo, flattery, and false-statement requirements as extra-condition traps.\n\n---",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "The answer uses a nonlegal tone signal: respectful or flattering. That breaks the truth filter as a colloquialism. The ad’s emotional tone does not answer the identity-use call."
+  },
+  {
+   "label": "CUT C",
+   "text": "The answer imports a neighboring false-statement frame. That breaks responsiveness. The question asks appropriation, not defamation or false light."
+  },
+  {
+   "label": "CUT D",
+   "text": "The answer invents an exact-name/photo requirement. That breaks truth once the Gold Key is applied."
+  },
+  {
+   "label": "Residual",
+   "text": "B. It matches the call and the trigger facts: distinctive identity, commercial advantage, no consent."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the Gold Key-assisted cut.\n\n---"
+  }
+ ],
+ "studentScript": "Call is appropriation. I need identity use, commercial advantage, and no consent. Flattery is not the call. False fact is a neighbor frame. Exact name/photo is the Gold Key trap. B is the only answer that matches the facts.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer rests on respectful tone instead of the identity-use facts.",
+   "lawyer": "Appropriation does not require reputational harm, insult, or unflattering portrayal.",
+   "mold": "colloquialism"
+  },
+  "B": {
+   "signal": "This choice matches the trigger facts: distinctive identity, commercial advantage, and no consent.",
+   "lawyer": "Commercial use of recognizable identity without consent can support appropriation.",
+   "mold": null
+  },
+  "C": {
+   "signal": "False fact language points to a different tort frame from the identity-use call.",
+   "lawyer": "Appropriation does not require a false factual assertion.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The answer adds an exact-name-or-photo requirement.",
+   "lawyer": "A distinctive imitation or identity evocation can suffice even without exact name or photograph.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-APPROPRIATION-IDENTITY-01",
+   "statement": "Appropriation is not limited to exact name or photograph. A clearly recognizable, unauthorized commercial evocation of the plaintiff’s identity can be enough.",
+   "trigger": "Ad uses a lookalike, soundalike, persona, or identity cues to sell a product.",
+   "unlocks": "Exact-name/photo trap and false-fact trap.",
+   "authority": "Restatement (Second) of Torts § 652C; Midler v. Ford Motor Co., 849 F.2d 460 (9th Cir. 1988)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-APPROPRIATION-IDENTITY-01",
+   "statement": "For appropriation calls, sort the array by the three trigger facts: identity use, commercial advantage, and no consent. Extra requirements like exact name/photo, insult, or false fact are trap add-ons.",
+   "trigger": "One answer mirrors identity-use facts while others add conditions.",
+   "unlocks": "Extra-condition answer array.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Name/photo trap in appropriation",
+  "signal": "The stem says no exact name or photograph, but many identity cues are copied.",
+  "studentMove": "Do not require exact name/photo. Ask whether the ad clearly uses the plaintiff’s identity for commercial advantage without consent.",
+  "tinyRule": "Recognizable commercial evocation can be enough.",
+  "trap": "Exact-name/photo-only answer."
+ }
+}

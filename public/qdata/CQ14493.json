@@ -1,0 +1,88 @@
+{
+ "id": "CQ14493",
+ "title": "Ark Stage",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Anticipatory repudiation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Two days before a Thursday evening handoff, Stephen accepted $12,400 from Hannah and let Hannah haul away his hand-painted Jonah puppet stage.\n\nEarlier, Ruth and Stephen had signed a written agreement under which Ruth would buy that stage from Stephen for $9,800, with the price due at 7 p.m. Thursday at Stephen’s storage workshop. The agreement provided, and both intended, that time was of the essence.\n\nAt 7 p.m. Thursday, Ruth arrived at the workshop with a cashier’s check ready to pay. Stephen was away, so Ruth called to ask where he was. Stephen said that the stage had been sold to Hannah.\n\nIf Ruth sues Stephen for breach of contract, is Ruth likely to prevail?",
+ "call": "If Ruth sues Stephen for breach of contract, is Ruth likely to prevail?",
+ "choices": {
+  "A": "No, because Ruth did not tender her performance at 7 p.m. Thursday.",
+  "B": "Yes, because Stephen anticipatorily repudiated the contract when he sold the puppet stage to Hannah.",
+  "C": "No, because the contractual obligations were discharged on the ground of impossibility.",
+  "D": "Yes, because Stephen did not inform Ruth of his repudiation before 7 p.m. Thursday."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Stephen’s sale of the promised puppet stage to Hannah before Ruth’s payment time was the operative breach trigger. Gold Key: a party can anticipatorily repudiate not only by words, but also by a voluntary act that makes the promised performance impossible or apparently impossible. Silver Key: do not stop at “Yes.” The because-clause must point to the breach trigger. B does that: Stephen sold the promised item before performance was due.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "“Impossibility” is the wrong frame. The event was not an outside event; Stephen created it by selling the promised stage. This is anchor-assisted because the self-created-impossibility distinction is a Gold Key."
+  },
+  {
+   "label": "CUT A",
+   "text": "Ruth’s tender is not the live issue after Stephen’s prior repudiating act. This is the buyer-performance trap. It fails responsiveness."
+  },
+  {
+   "label": "CUT D",
+   "text": "D has the right outcome, but the reason clause points to notice rather than the sale. This is the same-outcome / wrong-reason trap."
+  },
+  {
+   "label": "Residual",
+   "text": "B. No CLASH is needed. No CALL is needed."
+  }
+ ],
+ "studentScript": "The seller sold the promised stage before the due time. That is the breach trigger. Cut impossibility, cut tender, cut notice. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice talks about Ruth's tender after Stephen's earlier sale already gave the breach trigger.",
+   "lawyer": "Under U.C.C. §2-610, the aggrieved party may resort to breach remedies and suspend its own performance after repudiation.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This choice names the fact that changes the case: Stephen sold the promised stage before performance was due.",
+   "lawyer": "Restatement §250(b) treats a voluntary act that makes performance impossible or apparently impossible as repudiation; U.C.C. §2-610 allows breach remedies for repudiation of not-yet-due performance.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This choice treats Stephen's own transfer as an excuse.",
+   "lawyer": "Impracticability/impossibility requires no-fault supervening difficulty; Stephen's own sale is not an excuse.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "The yes outcome is tempting, but the reason is notice rather than the sale.",
+   "lawyer": "The repudiating act is the voluntary transfer; prior notice is not the ground for Ruth's claim.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-ARK-STAGE-01",
+   "statement": "A party can anticipatorily repudiate by a voluntary act before performance is due that makes the promised performance impossible or apparently impossible. Self-created impossibility is not an excuse; it is the breach trigger.",
+   "trigger": "The promisor sells or transfers the promised specific item to a third party before performance is due.",
+   "unlocks": "The difference between no-fault impossibility and repudiation by the seller's own transfer.",
+   "authority": "Restatement (Second) of Contracts §250(b); U.C.C. §2-610; Restatement (Second) of Contracts §261."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-ARK-STAGE-01",
+   "statement": "For a because-choice, do not stop at the yes/no word. The reason clause must name the operative breach trigger, not a neighboring fact like notice or tender.",
+   "trigger": "An answer begins with the correct outcome but says 'because' and points to a different fact than the stem's strongest breach fact.",
+   "unlocks": "Two yes answers and two no answers, where one yes choice has the right outcome but the wrong reason.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Act-as-repudiation vs self-created impossibility",
+  "signal": "Promisor transfers the promised specific item before the date for performance.",
+  "studentMove": "Treat the transfer as the breach trigger, then cut excuses and tender-blame answers.",
+  "tinyRule": "Own-act inability is repudiation, not impossibility excuse.",
+  "trap": "Impossibility language and tender language both distract from the seller's prior transfer."
+ }
+}

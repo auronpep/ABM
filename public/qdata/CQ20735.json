@@ -1,0 +1,88 @@
+{
+ "id": "CQ20735",
+ "title": "Bethlehem Donkey Blower",
+ "subject": "Torts",
+ "topic": "Nuisance",
+ "subtopic": "Injunction, damages, and avoidable consequences",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Barnabas ran a private Christmas-nativity petting-zoo business on land next to Ruth’s small prayer-retreat cottages. To dry animal bedding overnight, Barnabas installed a compost-air blower behind the donkey shed. The blower pushed a sour odor and low rumble across Ruth’s cottages, and several guests lost sleep. Ruth sued for private nuisance and requested a permanent injunction closing the petting-zoo business entirely. Before the hearing, Barnabas proved that, for a moderate cost, he could move the blower into a sealed feed room and add a scrubber, which would end nearly all odor and vibration without closing the business. Ruth refused to discuss that change and demanded closure because the guests had been miserable for months.\n\nWhat is the most likely remedy in Ruth’s private nuisance claim against Barnabas?",
+ "call": "What is the most likely remedy in Ruth’s private nuisance claim against Barnabas?",
+ "choices": {
+  "A": "No remedy, because Ruth refused to mitigate by accepting Barnabas’s proposed relocation.",
+  "B": "Only punitive damages, because Barnabas kept operating after complaints.",
+  "C": "A permanent shutdown injunction, because any substantial nuisance requires the defendant to stop the activity.",
+  "D": "A tailored injunction requiring reasonable abatement, with damages limited to nonavoidable loss-of-use harms."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The facts point to a nuisance remedy that fixes the interference without overcorrecting. The blower’s odor and rumble substantially interfere with the cottages, so “no remedy” is too severe. But Barnabas has shown a moderate-cost fix that will end nearly all of the problem without shutting down the business, so total closure is too severe too.\n\nGold Key: In nuisance remedies, avoidable-consequences principles limit damages; they do not erase the nuisance or force an all-or-nothing remedy. Equity can tailor abatement to the reasonable fix.\n\nSilver Key: When the answer array offers shutdown, no remedy, punitive-only, and tailored abatement, read the array as an oversteer screen. The credited answer is the one that tracks the stem’s moderate-cost abatement fact.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "“Any substantial nuisance requires the defendant to stop the activity” is an overclaim. The word any is the visible crack. The stem gives a moderate-cost abatement option, so automatic shutdown oversteers the remedy."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Only punitive damages” answers a punishment frame, not the most likely nuisance remedy. Continued operation after complaints is a fact, but it does not match the remedy fact the stem emphasizes: relocation and abatement."
+  },
+  {
+   "label": "CLASH A vs D",
+   "text": "Axis: does Ruth’s refusal erase the remedy, or only limit avoidable damages? The resolving fact is that the nuisance exists and a reasonable abatement option is available."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "Mitigation limits avoidable damages; it does not erase nuisance relief. D remains."
+  }
+ ],
+ "studentScript": "Remedy call. Nuisance plus a moderate-cost fix. Cut automatic shutdown, punitive-only, and no-remedy oversteers. Pick tailored abatement with nonavoidable damages.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer jumps from Ruth’s refusal to discuss a fix to no remedy at all.",
+   "lawyer": "Avoidable consequences may limit damages, but they do not extinguish nuisance relief when an interference exists and abatement is available.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "The choice focuses on Barnabas keeping the business open after complaints, but the stem’s remedy fact is the feasible abatement.",
+   "lawyer": "The facts support equitable abatement and compensatory limits. They do not establish punitive-only relief.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The word 'any' makes remedy automatic even though the stem gives a narrower fix.",
+   "lawyer": "Injunctions are equitable and tailored; nuisance does not automatically require complete cessation when reasonable abatement will substantially fix the problem.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "This is the only answer that uses the moderate-cost abatement fact and preserves nonavoidable damages.",
+   "lawyer": "This matches nuisance-remedy balancing and avoidable-consequences principles.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-NUISANCE-ABATEMENT-01",
+   "statement": "In nuisance remedies, a court can tailor abatement to a reasonable fix. Avoidable-consequences principles can limit damages, but they do not erase the nuisance or require total closure.",
+   "trigger": "The stem gives both a substantial interference and a moderate-cost abatement option.",
+   "unlocks": "mitigation-as-total-bar and automatic-shutdown traps",
+   "authority": "Restatement (Second) of Torts §§ 822, 826; Boomer v. Atlantic Cement Co., 26 N.Y.2d 219 (1970)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-BETHLEHEM-01",
+   "statement": "When the choices are shutdown, no remedy, punitive-only, and tailored abatement, treat the first three as remedy oversteers. Match the remedy to the stem’s reasonable-fix fact.",
+   "trigger": "The stem says a moderate-cost change would end nearly all interference.",
+   "unlocks": "3-vs-1 remedy-oversteer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Nuisance Remedy Oversteer",
+  "signal": "The answer says total shutdown, no remedy, or punitive-only.",
+  "studentMove": "Ask which remedy fits the abatement fact.",
+  "tinyRule": "Tailor the fix; limit avoidable damages.",
+  "trap": "All-or-nothing remedy language."
+ }
+}

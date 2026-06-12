@@ -1,0 +1,88 @@
+{
+ "id": "CQ20004",
+ "title": "Dove Tokens Manna Game",
+ "subject": "Contracts",
+ "topic": "Gap-Fillers, Interpretation, and the Parol Evidence Rule",
+ "subtopic": "IV",
+ "difficulty": "Trap Repair",
+ "tension": null,
+ "stem": "Stephen sued Ruth for the profit he expected from 72,000 wooden dove tokens. The written twelve-month deal had said that Ruth’s private Christian board-game company would buy from Stephen’s woodworking shop “all wooden dove tokens required for the Manna Trail game line” and listed 72,000 tokens as an estimate. Five months into the deal, a new child-safety rule made that small-token board-game line unprofitable. Ruth permanently canceled the line and bought no wooden dove tokens from any other source for it.\n\nWhich statement best states the parties’ rights?",
+ "call": "Which statement best states the parties' rights?",
+ "choices": {
+  "A": "Stephen wins unless Ruth proves impossibility or frustration of purpose.",
+  "B": "Stephen wins because the estimate is treated as a minimum quantity promise.",
+  "C": "The court may not consider Ruth's cancellation evidence because it varies the written estimate under the parol evidence rule.",
+  "D": "Ruth may have zero requirements if she canceled the covered game line in good faith and did not shift the same token requirements elsewhere."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The contract measures quantity by Ruth’s actual requirements for one covered line: the Manna Trail game line. Ruth did not merely buy from someone else or keep the line alive while avoiding Stephen. The facts say she canceled the line and did not shift the same token needs elsewhere.\n\nGold Key: A requirements-contract estimate is not a fixed minimum. Actual good-faith requirements control, and a good-faith shutdown of the covered operation can reduce requirements to zero.\n\nSilver Key: Stay in the quantity/good-faith lane. Do not let the estimate, excuse doctrines, or parol-evidence language move you away from the covered requirements term.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_RESPONSIVE / `bait_doctrine`",
+   "text": "It answers the wrong Contracts lane. Impossibility and frustration are excuse doctrines. The call asks what quantity the requirements term produces."
+  },
+  {
+   "label": "CUT B — NOT_TRUE / `extreme_of_range`",
+   "text": "It turns an estimate into a minimum promise. The answer pushes the estimate beyond its role."
+  },
+  {
+   "label": "CUT C — NOT_TRUE / `backwards`",
+   "text": "It points the parol-evidence rule at later performance facts. That timing direction is wrong."
+  },
+  {
+   "label": "Residual after CUT: D",
+   "text": "No CLASH or CALL needed. D is true and responsive once the requirements-contract Gold Key is applied."
+  }
+ ],
+ "studentScript": "This is requirements quantity, not excuse and not parol evidence. The estimate is not a floor. Ruth shut down the covered line and did not buy elsewhere, so D survives.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice jumps from requirements quantity to excuse doctrines.",
+   "lawyer": "The seller's claim turns on the requirements term and actual good-faith requirements, not on whether the buyer proves impossibility or frustration.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The answer inflates 'estimate' into 'minimum quantity promise.'",
+   "lawyer": "A stated estimate polices disproportionate demands but is not automatically a minimum purchase obligation under UCC 2-306(1).",
+   "mold": "extreme_of_range"
+  },
+  "C": {
+   "signal": "The choice uses a writing/evidence rule against later shutdown evidence.",
+   "lawyer": "The parol evidence rule does not bar later performance evidence used to measure actual requirements under the requirements term.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "The answer stays in the covered-requirements lane and uses the no-shift fact.",
+   "lawyer": "Under UCC 2-306(1), actual good-faith requirements control; official-comment material recognizes that good-faith variation can result in discontinuance.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-REQUIREMENTS-SHUTDOWN-01",
+   "statement": "In a requirements contract, a stated estimate is not a fixed minimum. Actual good-faith requirements can be zero if the buyer truly shuts down the covered operation and does not shift the same requirements elsewhere.",
+   "trigger": "all requirements + stated estimate + covered line shuts down + no substitute purchases",
+   "unlocks": "estimate-as-minimum trap and zero-requirements trap",
+   "authority": "UCC 2-306(1); official-comment material on good-faith discontinuance."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-REQUIREMENTS-LANE-01",
+   "statement": "When the stem says 'all requirements' plus an estimate, first ask whether the buyer still had covered requirements. Cut answers that jump to fixed quantity, excuse, or parol-evidence frames.",
+   "trigger": "requirements term with estimate and later shutdown",
+   "unlocks": "3-vs-1 answer array around the quantity/good-faith lane",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Requirements estimate is not a floor",
+  "signal": "all requirements + estimate + shutdown",
+  "studentMove": "Stay in the quantity/good-faith lane before considering excuse or writing rules.",
+  "tinyRule": "Estimate guides policing; it is not automatically a minimum.",
+  "trap": "Treating the estimate as the quantity promised."
+ }
+}

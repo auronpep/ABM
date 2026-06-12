@@ -1,0 +1,88 @@
+{
+ "id": "CQ19499",
+ "title": "Jericho Chariot Night",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Inchoate Crimes and Parties",
+ "subtopic": "Inchoate Crimes",
+ "difficulty": "medium-high",
+ "tension": null,
+ "stem": "A state criminalizes an unlicensed paid chariot race between two racers. Peter and John agree to drive such a race at a private Bible-themed harvest fair. Lydia, Ruth, and Barnabas agree to rent a fairground track, sell admission wristbands, and handle the cashbox and livestream fees. Prosecutors charge all five with conspiracy to conduct the illegal chariot race. The defendants invoke Wharton’s Rule.\n\nWhat is the best response?",
+ "call": "What is the best response?",
+ "choices": {
+  "A": "Wharton’s Rule always bars a conspiracy charge whenever the target offense involves any agreement.",
+  "B": "Wharton’s Rule bars the conspiracy charge only because the organizers hoped to make money from the event.",
+  "C": "Wharton’s Rule does not bar the charge because the agreement includes extra participants beyond the two racers needed for the offense.",
+  "D": "Wharton’s Rule bars the conspiracy charge because the illegal chariot race requires two racers."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: Wharton’s Rule is narrow; the extra-participant exception takes the case outside the merger idea when people beyond those necessary for the target offense join the agreement. Silver Key: count the people the target offense needs, then count the people who joined the plan. Here, the chariot-race offense needs two racers, but five people joined the plan. The three organizers are extra participants, so Wharton’s Rule does not bar the conspiracy charge.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "tiered_absolute. “Always” + “whenever any agreement” is too broad. Cut as overclaim."
+  },
+  {
+   "label": "CUT B",
+   "text": "wrong_element. It focuses on money/profit. The call turns on participant count."
+  },
+  {
+   "label": "CLASH D vs C",
+   "text": "axis = required participants vs extra participants. The offense needs two racers; the agreement has five people."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "extra participants defeat Wharton’s Rule. Residual = C."
+  }
+ ],
+ "studentScript": "Wharton’s Rule is in play. Count needed people: two racers. Count agreement people: five. Extra participants defeat the bar. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer uses absolute language to expand a narrow doctrine.",
+   "lawyer": "Wharton’s Rule is narrow and subject to an extra-participant exception.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The choice points to payment, but the array fight is about participant count.",
+   "lawyer": "Profit motive is not the extra-party exception trigger.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "It names the extra participants and answers the Wharton’s Rule call.",
+   "lawyer": "The extra organizers take the conspiracy outside Wharton’s Rule.",
+   "mold": null
+  },
+  "D": {
+   "signal": "It stops at the two-person requirement and ignores the extra participants.",
+   "lawyer": "The extra-party exception defeats this base-rule answer.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-WHARTON-EXTRA-PARTY-01",
+   "statement": "Wharton’s Rule can bar conspiracy only when the target offense already requires the same minimum parties. If extra people beyond that minimum join the agreement, the conspiracy charge survives.",
+   "trigger": "two-person target offense plus organizers or other extra participants",
+   "unlocks": "base Wharton’s Rule trap",
+   "authority": "Iannelli v. United States, 420 U.S. 770 (1975)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-WHARTON-COUNT-01",
+   "statement": "When Wharton’s Rule appears, count twice: how many people the target offense needs, then how many people joined the plan.",
+   "trigger": "a two-party offense with extra planners, sellers, organizers, or facilitators",
+   "unlocks": "minimum-participant vs extra-participant axis",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Wharton Count Check",
+  "signal": "Wharton’s Rule plus extra people in the agreement",
+  "studentMove": "Count required participants first; count actual agreement participants second.",
+  "tinyRule": "Extra participants defeat Wharton’s Rule.",
+  "trap": "Stopping at the two-party offense and missing the extra-party exception."
+ }
+}

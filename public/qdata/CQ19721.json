@@ -1,0 +1,103 @@
+{
+ "id": "CQ19721",
+ "title": "Jonah Whale Float",
+ "subject": "Civil Procedure",
+ "topic": "Motions",
+ "subtopic": "Motions to dismiss",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Mary, a freelance scenic painter and citizen of State F, sued MannaJoy Props, Inc., a company incorporated in State G with its principal place of business in State H, in federal district court. Mary demanded $130,000 for false imprisonment. Her complaint stated that “Mary was shut inside the whale-belly compartment of a Jonah parade float from late cleanup until sunrise when a MannaJoy technician negligently latched the service hatch without realizing Mary was still painting inside.” Mary suffered no physical harm from being in the float.\n\nMannaJoy filed a motion to dismiss. How should the court rule?",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Grant the motion, because a court would be unlikely to award more than $75,000 in damages on these facts.",
+  "B": "Deny the motion, because there is no indication that it is impossible for recovery to exceed $75,000.",
+  "C": "Grant the motion, because the complaint fails to state a claim.",
+  "D": "Deny the motion, because the complaint gives MannaJoy notice of the claim being asserted."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The motion should be granted because the complaint’s own facts defeat the claim it chose. The complaint says the technician negligently latched the hatch without realizing Mary was inside. That pleaded fact does not support false imprisonment as an intentional confinement claim.\n\nGold Key: False imprisonment is an intentional-confinement claim. If the complaint pleads only negligent confinement, the complaint itself knocks out the claim.\n\nSilver Key: Do not pick by outcome alone. A “grant” answer with the wrong jurisdictional reason is still a trap; the credited answer must match the ground that defeats the complaint.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Same grant result, wrong reason. “Unlikely over $75,000” invents the wrong amount-in-controversy standard and answers the wrong procedural frame."
+  },
+  {
+   "label": "CUT B",
+   "text": "True-ish jurisdictional reason, wrong call. It answers whether diversity amount is satisfied, not whether the complaint states the selected tort claim."
+  },
+  {
+   "label": "KEEP C",
+   "text": "Directly answers the motion. The complaint fails because its own facts plead negligence, not intentional confinement."
+  },
+  {
+   "label": "CUT D",
+   "text": "Notice is not the deciding sufficiency issue. The complaint may identify the claim, but it still pleads facts that defeat that claim."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed. One answer remains after the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "This is a motion-to-dismiss question. The amount choices are side paths. The complaint picked false imprisonment but pleaded negligent confinement. Gold Key: false imprisonment needs intentional confinement. Grant for failure to state a claim.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Same outcome as the credited answer, but the reason answers the amount-in-controversy side path.",
+   "lawyer": "The legal-certainty / good-faith amount rule, not likely recovery, governs the amount-in-controversy issue.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "This may answer the amount-in-controversy challenge, but the complaint loses on claim sufficiency.",
+   "lawyer": "The amount-in-controversy record does not save a complaint that fails to state the chosen claim.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This choice matches the motion and the defect: complaint facts defeat the claim.",
+   "lawyer": "False imprisonment requires intentional confinement; the pleaded negligence defeats the false-imprisonment claim.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer supplies notice, but not a claim that survives its own pleaded facts.",
+   "lawyer": "Rule 8 notice does not cure pleaded facts that fail to state an intentional confinement claim.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-JONAH-WHALE-FLOAT-01",
+   "statement": "False imprisonment requires intentional confinement. A complaint that pleads only negligent confinement defeats that claim at the motion-to-dismiss stage.",
+   "trigger": "Complaint labels false imprisonment but says the confinement happened negligently.",
+   "unlocks": "intentional tort vs negligence mismatch",
+   "authority": "Restatement (Second) of Torts §35; Fed. R. Civ. P. 12(b)(6); Ashcroft v. Iqbal."
+  },
+  {
+   "id": "GK-CIVIL_PROCEDURE-JONAH-WHALE-FLOAT-02",
+   "statement": "Amount in controversy is not a likely-verdict test. The pleaded amount controls unless it is legally certain the claim is below the jurisdictional threshold.",
+   "trigger": "Answer choice talks about unlikely recovery above $75,000.",
+   "unlocks": "amount-in-controversy damages-probability trap",
+   "authority": "28 U.S.C. §1332; St. Paul Mercury Indem. Co. v. Red Cab Co."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-JONAH-WHALE-FLOAT-01",
+   "statement": "On a motion-to-dismiss array, match the reason to the motion. Same outcome plus wrong procedural reason is a trap.",
+   "trigger": "Two choices talk about amount in controversy while one choice talks about failure to state a claim.",
+   "unlocks": "grant/deny result vs correct procedural ground",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Complaint label vs complaint facts",
+  "signal": "Claim label says an intentional tort, but the pleaded facts say negligence.",
+  "studentMove": "Use the claim label and the pleaded fact together; do not stop at notice.",
+  "tinyRule": "A complaint can defeat itself by pleading facts inconsistent with an element of the selected claim.",
+  "trap": "Notice pleading or amount-in-controversy distractors."
+ }
+}

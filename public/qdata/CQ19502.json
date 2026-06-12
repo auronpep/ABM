@@ -1,0 +1,95 @@
+{
+ "id": "CQ19502",
+ "title": "Manna Festival Finals Tax",
+ "subject": "Constitutional Law",
+ "topic": "Constitutional Law",
+ "subtopic": "Separation of Powers",
+ "difficulty": 2,
+ "tension": null,
+ "stem": "After several costly nationwide flood-control projects, Congress enacted the Manna Festival Finals Revenue Act as part of a broader plan to retire federal disaster-recovery debt. For six years, the Act imposed a 40% excise tax on the price of paid admission wristbands to final-round artisan food competitions. Covered events included the Manna Bread Cup, the Loaves-and-Fishes Fish-Fry Crown, the Ruth Harvest Pie Finals, and similar paid championship food contests.\n\nThis federal tax is probably",
+ "call": "This federal tax is probably",
+ "choices": {
+  "A": "unconstitutional, because Congress violates the equal protection component of the Fifth Amendment by taxing final-round artisan food competitions while failing to tax other large paid food festivals.",
+  "B": "unconstitutional, because a 40% admission tax is likely to reduce attendance at these final-round competitions and, therefore, is not rationally related to Congress’s legitimate interest in retiring disaster-recovery debt.",
+  "C": "constitutional, because an act of Congress that appears to be a revenue-raising measure on its face is not rendered invalid because it may have adverse economic consequences for the activity taxed.",
+  "D": "constitutional, because the compelling national interest in retiring federal disaster-recovery debt justifies this tax as a temporary emergency measure."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The Act is framed as a revenue measure: it imposes an excise tax on paid admissions and is tied to retiring federal debt. Gold Key: A federal tax that is facially revenue-raising is not invalid merely because it burdens, discourages, or economically harms the taxed activity. Silver Key: In this array, first lock the call as a federal taxing-power question; then distrust the answers that import strict scrutiny, equal protection, or attendance-impact framing without a trigger.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "The answer invents an all-or-nothing tax rule: if Congress taxes this event category, it must tax neighboring paid events. That rule is not in the stem. Gold Key confirms the tax-classification deference."
+  },
+  {
+   "label": "CUT B",
+   "text": "The answer’s reason does not carry its conclusion. Reduced attendance does not prove the tax lacks a revenue relationship."
+  },
+  {
+   "label": "CUT D",
+   "text": "The answer imports strict-scrutiny language. The stem gives no suspect class, fundamental right, or protected constitutional trigger."
+  },
+  {
+   "label": "Residual",
+   "text": "C remains. No CLASH or CALL is needed after the anchor-assisted cuts."
+  }
+ ],
+ "studentScript": "Tax frame. No protected trigger. Cut strict scrutiny. Cut attendance non sequitur. Cut all-or-nothing equal protection. Pick the revenue-tax answer.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer claims Congress violates equal protection just by taxing one event category and not similar categories.",
+   "lawyer": "Economic and tax classifications receive rational-basis deference absent a suspect class or fundamental-right trigger.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The reason does not support the conclusion: lower attendance does not erase the revenue relationship.",
+   "lawyer": "A tax is not invalid merely because it burdens or discourages the taxed activity.",
+   "mold": "contradiction"
+  },
+  "C": {
+   "signal": "This answer matches the call and stays in the tax/revenue frame.",
+   "lawyer": "Congress has Article I taxing power; a facial revenue tax is not invalid merely because of adverse economic consequences.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer imports compelling-interest language without a trigger.",
+   "lawyer": "Tax measures of this kind do not need strict scrutiny absent a separate protected-right or suspect-class trigger.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONLAW-TAX-REVENUE-01",
+   "statement": "A federal excise tax that is facially revenue-raising is usually valid even if it burdens, discourages, or economically harms the taxed activity.",
+   "trigger": "federal excise tax + revenue/debt purpose + argument that the tax hurts the taxed activity",
+   "unlocks": "adverse-economic-effect trap",
+   "authority": "U.S. Const. art. I, §8; Sonzinsky v. United States; Fernandez v. Wiener"
+  },
+  {
+   "id": "GK-CONLAW-TAX-CLASS-02",
+   "statement": "Ordinary economic and tax classifications do not get strict scrutiny unless the stem gives a suspect class, fundamental right, or other protected trigger.",
+   "trigger": "tax classification + compelling-interest or equal-protection answer with no protected trigger",
+   "unlocks": "strict-scrutiny and equal-protection traps",
+   "authority": "Regan v. Taxation With Representation; FCC v. Beach Communications"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONLAW-TAX-ARRAY-01",
+   "statement": "When a Con Law tax array mixes compelling interest, rational relation, equal protection, and economic-impact language, first lock the question as taxing power before liking the strongest-sounding constitutional phrase.",
+   "trigger": "revenue tax stem with multiple constitutional standards in the answer set",
+   "unlocks": "taxing-power frame vs imported scrutiny frames",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Tax-power frame before scrutiny frame",
+  "signal": "Federal excise tax + revenue purpose + answer choices invoking strict scrutiny or equal protection.",
+  "studentMove": "Ask whether the stem gives a protected trigger. If not, stay in the revenue-tax frame.",
+  "tinyRule": "Bad economic effects do not by themselves invalidate a facial revenue tax.",
+  "trap": "Picking the dramatic constitutional standard instead of the tax-power answer."
+ }
+}

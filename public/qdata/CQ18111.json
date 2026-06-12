@@ -1,0 +1,84 @@
+{
+ "id": "CQ18111",
+ "title": "Camp Stipend Forgery",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Property Crimes",
+ "subtopic": "Other Crimes",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Daniel, a former volunteer at a Christian summer-camp, found Stephen's checkbook in the parking lot during a Saturday clean-up day at the camp. The checkbook contained unused (blank) personal checks. Daniel wrote a check on one of those checks payable to \"cash\" for $750, signed Stephen's name without Stephen's authority, and planned to cash it at a check-cashing store before the camp week ended.\n\nHas Daniel committed forgery?",
+ "call": "Has Daniel committed forgery?",
+ "choices": {
+  "A": "Yes, because Daniel falsely made a check with apparent legal efficacy intending to defraud.",
+  "B": "No, because Stephen did not actually lose money yet.",
+  "C": "Yes, but only if Daniel successfully cashes the check.",
+  "D": "No, because checks are not writings with legal significance."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Daniel has committed forgery. He falsely made a check payable to \"cash\" for $750, signed Stephen's name without authority, and intended to use the check to obtain money he was not owed. A completed check purporting to draw funds on a depositor's account has apparent legal efficacy because, if presented and honored, it would operate to transfer funds from the named account to the holder. Gold Key: forgery is complete when the defendant falsely makes a writing with apparent legal efficacy with intent to defraud; the victim need not actually lose money, and the forger need not successfully utter the document. The \"false making\" is the actus reus.\n\nSilver Key: when the call asks \"has the defendant committed forgery,\" ask whether the false making has occurred. Loss and successful uttering are not elements of forgery.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (no legal significance)",
+   "text": "is a tiered_absolute overclaim. The defect is detectable from the answer text: \"checks are not writings with legal significance\" is a flat absolute. A C3 student trained on overclaim detection can flag it; the Gold Key (apparent legal efficacy) supplies the resolution."
+  },
+  {
+   "label": "C (needs successful uttering)",
+   "text": "is a wrong-element cut. The element \"successful uttering\" is not the actus reus of forgery; the false making is. A C3 student trained on actus reus / wrong-element detection can flag it; the Silver Key supplies the resolution."
+  },
+  {
+   "label": "B (no actual loss)",
+   "text": "is the dominant trap. The defect is intuitive (\"no harm, no foul\") but the resolution requires the Gold Key: loss is not an element of forgery. The cut is not visible from the C3 frame alone."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and D are eliminated on overclaim and wrong-element cuts. B and A remain. The axis is \"the forgery is not yet complete\" (B) vs. \"the false making is complete\" (A). Both are intuitable framings; the student must name which is correct."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: false making is the actus reus of forgery. Loss and successful uttering are not elements. Apply the Gold Key → A."
+  }
+ ],
+ "studentScript": "The call asks whether Daniel committed forgery. Cut D: 'checks are not writings with legal significance' is a tiered-absolute overclaim; checks have apparent legal efficacy. Cut C: 'only if Daniel successfully cashes the check' is a wrong-element trap; forgery is complete at the false making, not at the uttering. The remaining tension: 'no actual loss = no forgery' (B) vs. 'false making with intent' (A). Apply the Gold Key: the victim's actual loss is not an element of forgery; the false making is the actus reus. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the three distractors are cut, the residual is the false-making answer.",
+   "lawyer": "Forgery is complete at the false making of a writing with apparent legal efficacy with intent to defraud. Model Penal Code § 241.1; common-law forgery rule.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student reaches for 'no harm, no foul.' The defect is the Gold Key: actual loss is not an element of forgery.",
+   "lawyer": "The actus reus of forgery is the false making with intent; the victim's actual loss is not an element. Model Penal Code § 241.1 (purpose to defraud or knowledge of facilitating a fraud); common-law 'apparent legal efficacy' test.",
+   "mold": "autonomy_appeal"
+  },
+  "C": {
+   "signal": "The student reads 'plans to cash' as a half-step. The defect is the Silver Key: false making is the actus reus; uttering is a separate crime.",
+   "lawyer": "Forgery is complete at the false making. Uttering a forged instrument is a separate crime, but it is not a required element of forgery itself.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The student flags the absolute. The defect is the Gold Key: a check is precisely the writing the forgery rule covers because a check has apparent legal efficacy.",
+   "lawyer": "A check payable to 'cash' that purports to draw on a depositor's account has apparent legal efficacy because, if presented and honored, it would operate to transfer funds. The 'apparent legal efficacy' requirement is the modern common-law test for forgery.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-CAMP-STIPEND-01",
+   "statement": "Forgery is complete when the defendant falsely makes a writing with apparent legal efficacy with intent to defraud; the victim need not actually lose money, and the forger need not successfully utter the document. The 'false making' is the actus reus.",
+   "trigger": "writing falsely made and signed without authority with intent to defraud",
+   "unlocks": "dominant trap - 'no actual loss = no forgery'",
+   "authority": "Model Penal Code Section 241.1; common-law forgery (apparent legal efficacy test); state forgery statutes tracking the same elements"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Forgery - false making is the actus reus",
+  "signal": "A finder of unused checks fills in a check, signs the owner's name without authority, and plans to cash it. The owner has not actually lost money, and the check has not been cashed.",
+  "studentMove": "Cut tiered-absolute overclaims (checks have apparent legal efficacy) and wrong-element traps (uttering is not the actus reus of forgery). Then apply the Gold Key: the victim's actual loss is not an element of forgery; the false making is the actus reus.",
+  "tinyRule": "Forgery is complete at the false making of a writing with apparent legal efficacy and intent to defraud; loss and successful uttering are not elements.",
+  "trap": "The lay intuition 'no harm, no foul' is wrong. The victim need not actually lose money, and the forger need not successfully utter the document."
+ }
+}

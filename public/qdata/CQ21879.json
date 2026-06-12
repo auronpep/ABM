@@ -1,32 +1,88 @@
 {
  "id": "CQ21879",
- "title": "Freight Scales Offer",
+ "title": "Noahs Ark Puppet Set",
  "subject": "Contracts",
- "topic": null,
- "subtopic": "Contract formation - offer and acceptance",
- "difficulty": null,
+ "topic": "Formation of Contracts",
+ "subtopic": "Mutual Assent / Offer and Acceptance",
+ "difficulty": "medium-hard",
  "tension": null,
- "stem": "On May 3, after learning that Naomi was expanding her courier business, Timothy emailed Naomi offering to sell several used parcel scales. Naomi replied on May 10 that she would buy the scales for $725 if Timothy delivered them to her loading dock on July 2. On June 4, Naomi decided to rent scales instead and wrote Timothy a message saying that she was no longer interested. Before she sent it, Timothy arrived at her dispatch office. As Naomi opened the door, Timothy said, \"I can bring those parcel scales tomorrow. I only need to borrow James's box truck.\" Naomi said, \"No, I do not want them,\" and handed Timothy the unsent message.",
- "call": "How should Timothy's June 4 statement most likely be characterized?",
+ "stem": "Source row used: BARMATRIX Q# 21879 supplies the original Contract Law stem, four answer choices, official key A, and official explanation identifying the seller’s statement as “an offer.”\n\nFinal Christian variation — QID 21879_noahs_ark_puppet_set\n\nOn April 3, after hearing that Lydia was organizing a neighborhood Bible-story night, Peter sent Lydia a note offering to sell his handmade Noah’s Ark puppet set. Lydia wrote back on April 10 and told Peter that she would buy the puppet set for $175 if Peter delivered it to her courtyard studio on May 6. On May 5, Lydia decided that she would borrow puppets from Naomi instead and wrote Peter a note telling him that she was no longer interested in buying the puppet set. She was about to take the note to the mail drop when Peter knocked at her door. As soon as Lydia opened the door, Peter said, “I’ll bring you that puppet set tomorrow. I’ll just have to borrow Barnabas’s cargo tricycle to carry it.” Lydia said, “Never mind. I don’t want it,” and handed Peter the note she had written but not mailed.\n\nPeter’s statement on May 5 that “I’ll bring you that puppet set tomorrow” was probably:",
+ "call": "Peter’s statement on May 5 that “I’ll bring you that puppet set tomorrow” was probably",
  "choices": {
-  "A": "A ratification of Naomi's May 10 acceptance of Timothy's earlier offer.",
-  "B": "Commencement of performance.",
-  "C": "An offer.",
-  "D": "An acceptance."
+  "A": "a ratification of Lydia’s earlier acceptance of Peter’s sale offer.",
+  "B": "commencement of performance.",
+  "C": "an offer.",
+  "D": "an acceptance."
  },
  "key": "C",
- "dominantTrap": "D",
- "rightExplanation": "Timothy's statement is best characterized as an offer. Naomi's May 10 reply did not accept Timothy's earlier offer on its own terms. It proposed a purchase only if Timothy delivered the scales to her loading dock on a specified date. Because that proposal called for delivery as the operative acceptance, Timothy's June 4 promise to bring the scales later was not itself an acceptance. It did, however, show willingness to sell the scales on the stated price-and-delivery terms, so it could be treated as a new offer.",
- "wrongExplanations": {
-  "A": "The ratification label is tempting because Naomi had answered Timothy's original email. Her reply changed the legal posture by making delivery the condition for being bound; there was no prior acceptance for Timothy to ratify.",
-  "B": "Borrowing a truck sounds like logistics have started. But Timothy only said what he intended to do later; he had not begun the requested delivery performance.",
-  "D": "The statement tracks Naomi's proposed deal closely. But where the proposed deal made delivery the act that would bind the parties, a promise to deliver later does not complete acceptance."
- },
- "c3": [],
- "studentScript": null,
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Peter’s statement shows willingness to go forward with a sale on the known price-and-delivery terms. Gold Key: When the earlier buyer letter makes delivery the required way to accept, a later statement that “I’ll bring it tomorrow” is not itself the invited delivery; it is best treated as a new offer to complete the deal. Silver Key: Read the answer array as four legal labels for the same sentence. Cut the labels that require an act already completed, then keep the label that fits a future-tense commitment.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Cut as anchor-assisted falsity. It assumes an earlier acceptance existed. The buyer’s earlier response was conditional on delivery, so there is no earlier acceptance to ratify."
+  },
+  {
+   "label": "CUT B",
+   "text": "Cut structurally. The words are future tense. Talking about bringing something tomorrow is not the act of delivery now."
+  },
+  {
+   "label": "CUT D",
+   "text": "Cut as anchor-assisted falsity. It calls Peter’s words an acceptance, but the invited acceptance was the delivery itself."
+  },
+  {
+   "label": "CALL C",
+   "text": "The remaining label is “offer.” Peter’s words express willingness to sell on the known terms and invite Lydia’s assent."
+  }
+ ],
+ "studentScript": "Label the call. Peter’s sentence is the thing being classified. Cut B because future words are not doing. Use the Gold Key to cut A and D: no delivery means no invited acceptance. C remains.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
- "silverKeys": [],
- "remediation": null
+ "choiceSignals": {
+  "A": {
+   "signal": "The label depends on an earlier acceptance; the stem’s earlier letter is delivery-conditioned.",
+   "lawyer": "The buyer’s conditional response did not create an acceptance for the seller to ratify.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "“I’ll bring it tomorrow” is not bringing it now.",
+   "lawyer": "No delivery, tender, or beginning of delivery occurred.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "After the non-offer labels are cut, this label fits the sentence’s legal function.",
+   "lawyer": "The statement manifests willingness to sell on known terms and invites assent.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer treats words of future delivery as the invited delivery itself.",
+   "lawyer": "Where delivery is the invited acceptance, a promise to deliver later is not the completed invited acceptance.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-MODE-ACCEPTANCE-01",
+   "statement": "If an offer requires acceptance by a specified performance or tender, a later promise to perform is not the invited acceptance; it is at most a new offer or counteroffer.",
+   "trigger": "A buyer says “I will buy if you deliver,” and the seller later says “I will deliver.”",
+   "unlocks": "offer-vs-acceptance trap",
+   "authority": "Restatement (Second) of Contracts §§30, 45, 50; UCC §2-206 language/circumstances caveat."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-NOAHS-ARK-01",
+   "statement": "Classify the sentence before debating doctrine: future-tense words are not performance already begun.",
+   "trigger": "Choice labels a promise to bring later as performance now.",
+   "unlocks": "commencement-of-performance trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Mode-of-Acceptance Label Drill",
+  "signal": "One party says “I will buy if you deliver,” and the other says “I will deliver.”",
+  "studentMove": "Ask what act the first statement required and whether that act has happened.",
+  "tinyRule": "Words promising future delivery are not the delivery itself.",
+  "trap": "Calling the future promise an acceptance or commencement."
+ }
 }

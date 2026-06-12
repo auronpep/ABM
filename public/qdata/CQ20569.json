@@ -1,0 +1,80 @@
+{
+ "id": "CQ20569",
+ "title": "Ark Float",
+ "subject": "Contracts",
+ "topic": "Conditions — Express conditions",
+ "subtopic": "V-A2",
+ "difficulty": "Core Diagnostic",
+ "tension": null,
+ "stem": "Source row: BARMATRIX Q#20569, Contracts, Conditions — Express conditions, official key D. The original tested a contract clause stating that an existing license would remain effective unless a specified official action occurred before the event date.\n\nFinal Christian variation:\n\nLydia rented her hand-painted Noah’s Ark parade float to Ruth for a private neighborhood Bible-verse parade. The rental agreement stated, “The float rental remains effective unless the city engineer limits the float’s permitted load below 1,200 pounds before parade day.” The day before the parade, the city engineer issued an order limiting the float’s permitted load to 700 pounds. Lydia refused to provide the float.\n\nWhich statement is most accurate?",
+ "call": null,
+ "choices": {
+  "A": "Lydia breached unless the city engineer’s order made use of the float impossible.",
+  "B": "Lydia’s duty to provide the float was discharged by the condition subsequent stated in the rental agreement.",
+  "C": "Ruth may compel delivery of the float because substantial performance of the parade plan is enough.",
+  "D": "Lydia breached because the float rental was already effective when signed."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The rental agreement was already effective, but it contained an “unless” event that would end Lydia’s duty if it occurred before parade day. That event occurred: the city engineer lowered the permitted load below the contract’s threshold before the parade.\n\nGold Key: A condition subsequent is a later event that cuts off an existing duty.\n\nSilver Key: Do not replace the contract’s stated “unless” trigger with a different doctrine. If the trigger happened, the contract clause does the work.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "This answer changes the stated contract trigger into an impossibility trigger. Cut as wrong frame."
+  },
+  {
+   "label": "CUT C",
+   "text": "This answer talks about substantial performance of the plan. The call is about Lydia’s duty after the stated “unless” event. Cut as wrong frame."
+  },
+  {
+   "label": "CUT D",
+   "text": "This answer stops at initial effectiveness. The stem gives a later terminating event. Cut as wrong element / wrong timing."
+  },
+  {
+   "label": "Residual",
+   "text": "B. No CLASH or CALL remains after the cuts, but accepting B’s legal label is anchor-assisted by the Gold Key."
+  }
+ ],
+ "studentScript": "The contract says effective unless a city-engineer load order drops below 1,200 before parade day. That exact thing happened before parade day. Cut impossibility, substantial performance, and initial-effectiveness answers. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The contract trigger is below-1,200 load before parade day; this answer asks whether use was impossible.",
+   "lawyer": "The condition subsequent controls without a separate impossibility showing.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "It tracks the contract language: existing rental plus later trigger plus duty discharged.",
+   "lawyer": "The stated terminating event occurred, so Lydia’s duty was discharged.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer talks about the parade plan, not the city engineer’s order and the 'unless' clause.",
+   "lawyer": "Substantial performance does not override an express condition subsequent.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The stem gives a later event after signing; this choice stops at signing.",
+   "lawyer": "An existing duty can later be discharged by a condition subsequent.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-ARK-FLOAT-01",
+   "statement": "A condition subsequent is a later event that cuts off an existing contractual duty when the contract says that event will end the duty.",
+   "trigger": "contract says remains effective unless a later event occurs",
+   "unlocks": "existing-effective-contract trap and impossibility/substantial-performance neighbor traps",
+   "authority": "Restatement (Second) of Contracts §230; condition subsequent / event that terminates a duty"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Unless-trigger cuts off duty",
+  "signal": "Contract says 'remains effective unless' or similar.",
+  "studentMove": "Track the exact trigger and timing before defaulting to breach, impossibility, or substantial performance.",
+  "tinyRule": "If the terminating event happened, the duty is cut off.",
+  "trap": "treating initial effectiveness as permanent"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "CQ18287",
+ "title": "Manger Cradle Collapse",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Breach — Res ipsa loquitur (rented equipment; plaintiff alteration as competing cause)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, the drama-ministry director at a small church, rented a hand-carved olive-wood manger cradle from Daniel, a Christian craftsman who runs a small home-based Nativity-prop rental business, to use as the centerpiece of the church's outdoor Living Nativity display. The rental agreement was a standard weekly rental at a normal fee. Mary took the cradle home a week before Christmas Eve. To thread a hidden low-voltage LED light cord through the base so the display would not show wires, Mary drilled four small pilot holes in the cradle's bottom plate. On Christmas Eve, while Mary was setting the carved baby-Jesus figurine on the cradle, the cradle's right side rail snapped away from the base and the figurine fell. Mary cannot show whether the failure came from a hidden joint defect in Daniel's carving or from Mary's drilled pilot holes.\n\nWhat is the best res ipsa loquitur analysis of Mary's res ipsa claim against Daniel?",
+ "call": "What is the best res ipsa loquitur analysis of Mary's res ipsa claim against Daniel?",
+ "choices": {
+  "A": "Res ipsa is likely unavailable because the accident may have resulted from Mary's own alterations after rental.",
+  "B": "Res ipsa makes Daniel strictly liable for all damage to rented hand-carved items.",
+  "C": "Res ipsa clearly applies because hand-carved manger cradles never collapse unless the maker was negligent.",
+  "D": "Res ipsa applies only if a state statute required Daniel to inspect every cradle before each rental."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The best res ipsa analysis is that res ipsa is likely unavailable on these facts. Res ipsa loquitur permits a permissive inference of negligence when (1) the event ordinarily does not occur in the absence of negligence, (2) the instrumentality was within the exclusive control of the defendant, and (3) the injury was not due to any voluntary action or contribution by the plaintiff. The third prong is the killer here: Mary's own post-rental drilling of pilot holes in the base plate is a plausible competing cause of the failure that is attributable to the plaintiff's own handling, not to Daniel's carving. Because the causation is shared between Daniel's hand-crafted cradle and Mary's alterations, the inference that \"this would not have happened absent Daniel's negligence\" cannot be drawn with the required probability — both Daniel's joint and Mary's drilled holes are independently sufficient to break the rail. Gold Key: res ipsa is an inference from circumstances, not a strict-liability backstop; it collapses when the plaintiff's own conduct is a plausible alternative cause.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (statutory inspection)",
+   "text": "is cut on call focus. The call asks for a res ipsa analysis, and res ipsa is a common-law evidentiary inference, not a statutory-violation theory. The premise of the choice (a state inspection statute) is not in the stem and the choice's \"only if\" wording is a false premise. The choice is NOT_RESPONSIVE for asserting a statutory-violation frame rather than a res ipsa frame."
+  },
+  {
+   "label": "B (strict liability)",
+   "text": "is cut on issue-sense. The call asks for a res ipsa analysis, and res ipsa is not a strict-liability theory. The choice mischaracterizes the doctrine of res ipsa as a strict-liability backstop. The choice is NOT_RESPONSIVE for answering a different liability question (who pays for damage) rather than a res ipsa inference question."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: does the res ipsa inference survive the plaintiff's own post-rental alterations, or does the \"never unless the maker was negligent\" overclaim still pull the answer? The axis they fight on is whether Mary's own drilling of pilot holes is a plausible alternative cause that defeats the res ipsa inference."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Res ipsa is an evidentiary inference that requires the absence of voluntary action or contribution by the plaintiff; a post-rental drilling of pilot holes in the base plate is a plausible alternative cause wholly attributable to the plaintiff. The \"never unless the maker was negligent\" wording in C is an absolute-overclaim that the facts of the case do not support — carved wooden cradles can and do fail when a renter drills into the structural base. Apply the third prong of the res ipsa test → A. A student without the Gold Key is in anchor_gap territory on the third-prong question, but the answer is settled by the doctrine of res ipsa's plaintiff-contribution element."
+  }
+ ],
+ "studentScript": "Step 1: Does res ipsa apply? Run the three-prong test. The third prong (absence of voluntary action or contribution by the plaintiff) is the deciding axis. Step 2: Did Mary contribute to the failure? Yes — she drilled four small pilot holes in the base plate. Step 3: Is the cause undetermined between Daniel's joint and Mary's holes? Yes — Mary cannot show which caused the collapse. The third prong is not satisfied. Gold Key: res ipsa is an evidentiary inference that fails when the plaintiff's own conduct is a plausible alternative cause. Silver Key: the call asks for a res ipsa analysis, so the third-prong test is the deciding axis. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the strict-liability and statutory-false-premise distractors are cut and the overclaim-vs-weakness axis is named, the Gold Key resolves to the third-prong plaintiff-contribution defeat.",
+   "lawyer": "Res ipsa is unavailable when the plaintiff's own post-receipt conduct is a plausible alternative cause. Restatement (Second) of Torts § 328D (the third element requires that the injury was not due to any voluntary action or contribution by the plaintiff).",
+   "mold": null
+  },
+  "B": {
+   "signal": "The choice answers a different liability question (who pays for damage) rather than a res ipsa inference question.",
+   "lawyer": "Res ipsa is an evidentiary inference of negligence, not a strict-liability backstop. The doctrine does not make the renter an insurer of the item; it is a way to prove negligence circumstantially.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The 'never unless the maker was negligent' wording is an absolute-overclaim. The collapse can readily be explained by Mary's own post-rental drilling of pilot holes — a competing cause wholly attributable to the plaintiff.",
+   "lawyer": "Res ipsa fails when the plaintiff's own post-receipt conduct is a plausible alternative cause. Restatement (Second) of Torts § 328D cmt. e (the inference collapses when the plaintiff has materially altered the instrumentality).",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "Res ipsa is a common-law evidentiary inference that does not require a statutory inspection regime. The 'only if' wording is a false premise.",
+   "lawyer": "Res ipsa is drawn from the circumstances of the event itself (type of accident, instrumentality, control), not from any statutory duty. The presence or absence of a state inspection statute is irrelevant to whether res ipsa can be inferred on these facts.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-MANGER-CRADLE-COLLAPSE-01",
+   "statement": "Res ipsa is an evidentiary inference of negligence that requires the absence of voluntary action or contribution by the plaintiff; a post-rental plaintiff alteration is a plausible alternative cause that defeats the inference.",
+   "trigger": "rental of a physical item + post-rental plaintiff alteration + undetermined-cause collapse",
+   "unlocks": "absolute-when-uncertain overclaim dominant trap (C)",
+   "authority": "Restatement (Second) of Torts § 328D (third element and cmt. e)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Res ipsa and the third-prong plaintiff-contribution test",
+  "signal": "The plaintiff has materially altered the instrumentality after leaving the defendant's control, and the cause of the accident is undetermined between the defendant's defect and the plaintiff's alteration.",
+  "studentMove": "Apply the third prong of the res ipsa test: a post-rental plaintiff alteration is a plausible alternative cause wholly attributable to the plaintiff, and the inference collapses.",
+  "tinyRule": "Res ipsa is unavailable when the plaintiff's own post-receipt conduct is a plausible alternative cause.",
+  "trap": "The 'never unless the maker was negligent' wording is the dominant trap; carved wooden items can and do fail when a renter drills into the structural base."
+ }
+}

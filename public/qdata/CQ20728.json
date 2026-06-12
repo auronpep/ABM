@@ -1,0 +1,96 @@
+{
+ "id": "CQ20728",
+ "title": "Star Stable Stall",
+ "subject": "Real Property",
+ "topic": "Ownership",
+ "subtopic": "Landlord and Tenant - Assignments and subletting",
+ "difficulty": "medium-high",
+ "tension": null,
+ "stem": "Lydia owns a privately run Christmas craft hall called Star & Stable Market. For the season, she leased Stall 7 to Timothy to sell handmade Nativity candles. After Peter mailed a rent check for Stall 7 in his own name, Lydia deposited the check and said nothing. Timothy had assigned the remaining stall lease to Peter the week before. The lease said Timothy could not assign or sublease the stall without Lydia’s consent. When Lydia later decided she did not want Peter operating the booth, she declared the stall lease terminated.\n\nMay Lydia do so?",
+ "call": "May Lydia do so?",
+ "choices": {
+  "A": "Yes, because Lydia’s ownership interest in the market hall was superior to Timothy’s and Peter’s leasehold interests.",
+  "B": "No, because Lydia waived her right to terminate the lease.",
+  "C": "Yes, because Lydia objected within a reasonable time.",
+  "D": "Yes, because the lease prohibited assignments without Lydia’s consent."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Lydia accepted Peter’s rent check in his own name and made no objection before later trying to terminate the lease. Gold Key: A landlord who knows of an unauthorized assignment or sublease and accepts rent without promptly reserving rights generally waives the right to terminate for that transfer. Silver Key: When the answer set pits the original lease clause against later landlord conduct, do not stop at the clause; lock the later acceptance-with-no-protest fact.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. Ownership superiority does not answer the assigned call about waiver by conduct."
+  },
+  {
+   "label": "CUT C",
+   "text": "Not true on the visible facts. Lydia did not object when she deposited Peter’s rent check; the answer recasts silence as timely protest."
+  },
+  {
+   "label": "CUT D",
+   "text": "Not responsive after the Gold Key. The no-assignment clause explains the initial breach, not whether Lydia lost the termination right by accepting rent."
+  },
+  {
+   "label": "Residual",
+   "text": "B. It is true and responsive once the waiver anchor is applied."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the CUT."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "Clause says no assignment. But Lydia took Peter's rent and stayed silent. Gold Key: known assignment plus rent accepted without objection can waive termination. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about who owns more, but the call turns on what Lydia did after the assignment.",
+   "lawyer": "The legal question is waiver of forfeiture after accepting rent with knowledge, not abstract priority of property interests.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "This is the only choice that uses the later acceptance-with-no-protest fact.",
+   "lawyer": "A landlord who accepts rent after knowledge of a lease violation generally waives the right to declare forfeiture for that violation unless rights are preserved.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer says timely objection; the stem says Lydia deposited the check and said nothing.",
+   "lawyer": "The official theory requires prompt action; accepting rent without protest points away from a timely objection.",
+   "mold": "contradiction"
+  },
+  "D": {
+   "signal": "The clause explains the initial breach, but it does not answer what happens after Lydia accepts rent without protest.",
+   "lawyer": "The no-assignment clause creates the right to object; the landlord's later conduct can waive the right to terminate for that transfer.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-STALL-WAIVER-01",
+   "statement": "A landlord who knows of an unauthorized assignment or sublease and accepts rent without promptly reserving rights generally waives the right to terminate for that transfer.",
+   "trigger": "The landlord accepts rent from the assignee and says nothing.",
+   "unlocks": "The original no-assignment-clause trap.",
+   "authority": "Judicial Council of California CACI No. 4324; Kern Sunset Oil Co. v. Good Roads Oil Co.; Weisman v. Clark."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-STALL-WAIVER-01",
+   "statement": "When one answer uses the original lease clause and another uses later landlord conduct, mark the later conduct fact before choosing.",
+   "trigger": "The stem gives both a no-assignment clause and later acceptance of rent without protest.",
+   "unlocks": "Original-clause answer versus waiver-by-conduct answer.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Original Clause vs Later Conduct",
+  "signal": "Lease restricts assignment, but landlord accepts rent from assignee.",
+  "studentMove": "Do not stop at the restriction. Check whether the landlord later acted like the transfer was accepted.",
+  "tinyRule": "Known breach + rent accepted without objection can waive forfeiture.",
+  "trap": "Choosing the original clause after the landlord's later conduct changes the result."
+ }
+}

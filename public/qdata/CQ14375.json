@@ -1,0 +1,76 @@
+{
+ "id": "CQ14375",
+ "title": "Nativity Star Rig",
+ "subject": "Contracts",
+ "topic": "Contract Content and Meaning",
+ "subtopic": "Modifications / no-oral-modification clause / reliance",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary hired Timothy, a scenic designer, under a written agreement to design and install a traveling Nativity play set for Mary’s private Advent festival at a fixed price of $18,400. The agreement attached detailed plans and provided:\n\nBefore or during installation, this agreement may be modified by mutual agreement of the parties as to “extras” or other departures from the attached plans. Such modifications, however, may be authorized only in a writing signed by both parties.\n\nDuring the work, Timothy added a Bethlehem-star pulley, painted sheep stalls, hand-lettered Scripture banners, and other extras that Mary orally requested for orally agreed prices in addition to the contract price. Timothy installed the extras. Mary later refused to pay anything for the extras, totaling $4,700 at the agreed prices, solely because no written, signed authorization was ever made.\n\nIf Timothy sues Mary for the extras, which, if any, of the following will effectively support Mary’s defense?",
+ "call": "If Timothy sues Mary for the extras, which, if any, of the following will effectively support Mary’s defense?",
+ "choices": {
+  "A": "Failure of an express condition.",
+  "B": "Mary does not have a valid defense.",
+  "C": "The parol evidence rule.",
+  "D": "The preexisting duty rule."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "Mary’s best answer is B. The clause required signed written authorization for extras, but Mary orally requested the extras, Timothy installed them, and Mary refused payment only after receiving the benefit. Gold Key: a no-oral-modification clause is not an automatic shield when the requesting party’s later words and conduct induce the other party to perform the extra work. Silver Key: lock the call to Mary’s stated defense: she is relying only on missing signed authorization, not on price, quality, or nonperformance.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A gets held, not immediately cut, because it tracks the exact signed-writing language. It is cut only with the Gold Key: requested-and-performed extras create the reliance/waiver answer to the missing-condition defense.\n\nC is cut on timing. The parol-evidence rule protects the final writing from earlier or same-time side agreements. The extras agreement came later.\n\nD is cut on call focus. The preexisting duty rule is a modification/consideration idea, but Mary’s only defense is the missing signed writing, and the extras are outside the base specifications."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B create the real tension: “the writing condition failed” versus “no valid defense.” The splitting fact is that Mary orally requested the extras and Timothy installed them."
+  },
+  {
+   "label": "CALL",
+   "text": "Gold Key resolves the residue. Requested extra work plus performance defeats Mary’s signed-writing-only defense. Residual answer: B."
+  }
+ ],
+ "studentScript": "The call asks whether Mary has a defense, not whether a writing clause exists. Parol evidence is wrong timing. Preexisting duty is the wrong modification problem. Express condition is the trap, but Mary requested and received the extras, so the condition defense fails. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice points to the missing signed writing but does not account for Mary’s request and Timothy’s performance.",
+   "lawyer": "Failure of the signed-writing condition is not an effective defense where waiver, estoppel, or reliance defeats reinstating the original condition.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "After the three doctrine labels fail, the residual answer matches the stated-defense problem.",
+   "lawyer": "Mary lacks an effective signed-writing-only defense because she orally requested the extras and Timothy materially performed them.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The stem is about a later extra-work agreement, not an earlier side agreement.",
+   "lawyer": "The parol evidence rule does not bar proof of subsequent modifications.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The issue is not whether Timothy had fresh consideration for base work; the issue is Mary’s signed-writing defense.",
+   "lawyer": "The preexisting duty rule does not support Mary’s stated no-writing defense, and the requested extras were departures from the base specifications.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-NATIVITY-STAR-RIG-01",
+   "statement": "A no-oral-modification clause is not an automatic defense when the party invoking it orally requested the change and the other party materially relied by performing the extra work.",
+   "trigger": "signed-writing-only defense after orally requested and performed extras",
+   "unlocks": "express-condition/no-signed-writing trap",
+   "authority": "Restatement (Second) of Contracts Sections 89(c) and 150"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Signed-writing clause vs requested extras",
+  "signal": "The buyer orally asks for extras, gets them, then refuses to pay only because no signed writing exists.",
+  "studentMove": "Cut timing and consideration doctrines; then use the Gold Key to kill the condition defense.",
+  "tinyRule": "Requested-and-performed extras can defeat a signed-writing-only defense.",
+  "trap": "The condition label feels exact because the writing clause really exists."
+ }
+}

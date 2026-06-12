@@ -1,0 +1,76 @@
+{
+ "id": "CQ18676",
+ "title": "Mary Wellness Appropriation",
+ "subject": "Torts",
+ "topic": "Privacy",
+ "subtopic": "Appropriation and consent scope",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a Christian fitness instructor, licensed her photo to Antioch Wellness Co. for one printed brochure distributed in January. In March, Antioch used the same photo in online ads for a new line of supplements. Mary did not consent to online ads or to the later use.\n\nCan Antioch rely on the January license?",
+ "call": "Can Antioch rely on the January license?",
+ "choices": {
+  "A": "Yes, because any consent to use a photo is permanent and unlimited.",
+  "B": "No, because the later online advertising exceeded the license's time and medium scope.",
+  "C": "Yes, because the photo was flattering.",
+  "D": "No, but only because the company stated a false fact about the instructor."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "Antioch cannot rely on the January license. The answer is B — the later online advertising exceeded the license's time and medium scope. Appropriation of likeness is governed by the scope of the plaintiff's consent: a license to use a photo for one printed brochure in January does not authorize a different medium (online ads) in a later time period (March) for a different product line (new supplements). Gold Key: a license to use a likeness is limited by its scope — time, medium, and purpose — and use outside the agreed scope can support an appropriation claim. Silver Key: the call asks \"Can Antioch rely on the January license?\" — to answer, you compare the January license's scope (printed brochure, January) to the March use (online ads, new product line); the comparison shows the scope was exceeded.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- C (\"Yes, because the photo was flattering\") is cut on issue mismatch: the attractiveness or flattering nature of the photo is irrelevant to the appropriation analysis. The right question is whether the licensee stayed within the scope of the consent.\n- D (\"No, but only because the company stated a false fact about the instructor\") is cut on tort-category misfit: the \"false fact\" theory belongs to defamation or false light invasion of privacy, not to appropriation of likeness. The facts do not require a false statement."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B remain. The axis they fight on is: is the original license permanent and unlimited, or is it limited by its scope? The splitting fact is that the March use (online ads, new product line) differs from the January license (printed brochure) on three scope dimensions (medium, time, purpose)."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. A license to use a likeness is limited by its scope — time, medium, and purpose — and use outside the agreed scope can support an appropriation claim. The March use exceeded the January license on all three scope dimensions. Residual answer: B."
+  }
+ ],
+ "studentScript": "Step 1 — call focus. The call asks whether Antioch can rely on the January license. Step 2 — the rule. A license to use a likeness is limited by its scope (time, medium, purpose); use outside the agreed scope can support an appropriation claim. Step 3 — scope comparison. The January license covers a printed brochure in January; the March use is online ads for a new product line. Three scope dimensions exceeded: medium, time, purpose. Step 4 — distractors. A is the 'permanent and unlimited' overclaim (rejected by the Gold Key). C is the 'flattering photo' misfit (irrelevant to scope). D is the 'false fact' tort-category misfit (belongs to defamation or false light, not appropriation). Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student reaches for the 'once-consented-always-consented' intuition. The Gold Key rejects the overclaim: a license to use a likeness is limited by its scope, and use outside the agreed scope can support an appropriation claim.",
+   "lawyer": "A license to use a likeness is limited by its scope — time, medium, and purpose — and use outside the agreed scope can support an appropriation claim. Restatement (Second) of Torts §§ 652C, 652E, 652F.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This choice answers the scope-comparison analysis: the later online advertising exceeded the license's time and medium scope.",
+   "lawyer": "The Restatement (Second) of Torts § 652F and the reporter notes observe that a consent to use a likeness is limited by its scope, and a license for one printed brochure in January does not authorize online ads in March for a new product line.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The student imports a 'flattering photo' analysis. The breaker: the photo's aesthetic quality is irrelevant to the appropriation analysis; the right question is whether the licensee stayed within the scope of the consent.",
+   "lawyer": "Appropriation of likeness is governed by the scope of the plaintiff's consent, not by the photo's aesthetic quality. A flattering photo does not authorize a scope-exceeding use.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The student imports a 'false fact' analysis from defamation or false light. The breaker: the 'false fact' theory belongs to a different privacy tort; the right theory here is appropriation, and the facts do not require a false statement.",
+   "lawyer": "The 'false fact' theory belongs to defamation or false light invasion of privacy, not to appropriation of likeness. The facts do not require a false statement; the wrong is the unauthorized commercial use of the likeness.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-MARY-WELLNESS-APPROPRIATION-01",
+   "statement": "A license to use a likeness is limited by its scope — time, medium, and purpose — and use outside the agreed scope can support an appropriation claim.",
+   "trigger": "licensee uses a photo for a different medium or later time period than the original license authorized",
+   "unlocks": "permanent-and-unlimited overclaim trap (A)",
+   "authority": "Restatement (Second) of Torts §§ 652C, 652E, 652F"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Appropriation and scope of consent",
+  "signal": "A person licenses a photo for a limited use, and the licensee later uses the photo for a different medium and a later time period.",
+  "studentMove": "Compare the original license's scope to the later use on each scope dimension (time, medium, purpose). If any dimension is exceeded, the use is unauthorized and the appropriation claim survives.",
+  "tinyRule": "A license to use a likeness is limited by its scope; use outside the agreed scope can support an appropriation claim.",
+  "trap": "The 'once-consented-always-consented' intuition pulls toward 'permanent and unlimited.' The 'flattering photo' intuition is irrelevant. The 'false fact' theory belongs to a different privacy tort."
+ }
+}

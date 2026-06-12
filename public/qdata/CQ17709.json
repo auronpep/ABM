@@ -1,0 +1,72 @@
+{
+ "id": "CQ17709",
+ "title": "Tutoring Tithe",
+ "subject": "Civil Procedure",
+ "topic": "Subject Matter Jurisdiction",
+ "subtopic": "Diversity - Amount in Controversy Aggregation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a citizen of State A, hired Paul, a citizen of State B, to repair her car after a collision. The repair was botched, causing an additional $50,000 in damage to the car. Separately and wholly unrelated, Mary hired Paul to provide private Latin and math tutoring to her children for the school year; Paul failed to perform, causing $35,000 in damages. Mary sues Paul in federal court on both claims, relying on diversity jurisdiction.\n\nIs the amount in controversy satisfied?",
+ "call": "Is the amount in controversy satisfied?",
+ "choices": {
+  "A": "No, because unrelated claims can never be aggregated.",
+  "B": "No, because each individual claim must exceed $75,000.",
+  "C": "Yes, but only because the claims arise under federal law.",
+  "D": "Yes, because one plaintiff may aggregate multiple claims against one defendant to exceed $75,000."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "The amount in controversy is satisfied. Under 28 U.S.C. § 1332(a), the amount in controversy must exceed $75,000. A single plaintiff may aggregate all claims — related or unrelated — against a single defendant to meet the threshold. Mary has two claims against Paul totaling $85,000 ($50,000 for the botched car repair and $35,000 for the unpaid tutoring); aggregated, the amount exceeds $75,000. Diversity is satisfied because the parties are citizens of different states. Silver Key: the aggregation rule is a single-plaintiff-vs-single-defendant rule; relatedness is irrelevant when one plaintiff is suing one defendant. The \"unrelated\" qualifier is a red herring.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (each individual claim must exceed $75,000)",
+   "text": "is cut on the fabricated_rule mold. The aggregation rule is the opposite: a single plaintiff may aggregate to meet the threshold. The \"each individual claim must exceed\" condition is a fabricated rule; it confuses the aggregation rule with the supplemental-jurisdiction rule. Filter broken: NOT_TRUE."
+  },
+  {
+   "label": "C (yes, but only because the claims arise under federal law)",
+   "text": "is cut on the wrong_element mold. The student gets the answer right (yes) but for the wrong reason (federal question). The basis here is diversity, not federal question, and the \"but only because\" condition makes the federal-question basis dispositive when it is not. Filter broken: NOT_RESPONSIVE."
+  },
+  {
+   "label": "A (no, because unrelated claims can never be aggregated)",
+   "text": "and D (yes, single-plaintiff aggregation) survive to the final axis. Both name a rule about aggregation. The single axis they fight on is: does the relatedness of the claims matter when one plaintiff sues one defendant on multiple claims? The splitting fact is the relatedness of the claims: under the rule, relatedness is irrelevant when one plaintiff sues one defendant."
+  },
+  {
+   "label": "CALL",
+   "text": "- The Silver Key resolves the axis: a single plaintiff can aggregate all claims against a single defendant, related or unrelated. The \"unrelated\" qualifier in A is a red herring. Apply the rule → D. A student without the Silver Key is in anchor_assisted territory; the trap is the dominant-trap attractiveness of A, not a structural cut."
+  }
+ ],
+ "studentScript": "Step 1: Is there one plaintiff and one defendant? Yes — Mary sues Paul. Step 2: Aggregate all claims against the single defendant. Mary has two claims totaling $85,000 ($50,000 + $35,000). Step 3: Does the aggregated sum exceed $75,000? Yes. Step 4: Is diversity satisfied? Yes — Mary (State A) and Paul (State B) are citizens of different states. Step 5: Cut the distractors. A is a 'never' overclaim (relatedness is irrelevant when one plaintiff sues one defendant). B is a fabricated rule (the 'each claim must exceed' rule is for multiple plaintiffs). C is a wrong-element cut (basis is diversity, not federal question). Silver Key: single-plaintiff-vs-single-defendant rule makes relatedness irrelevant. Choose D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The 'never' is a tiered_absolute overclaim. The aggregation rule does NOT require relatedness when one plaintiff sues one defendant. The 'relatedness required' rule applies to multiple plaintiffs, not to one plaintiff.",
+   "lawyer": "Single-plaintiff aggregation rule under 28 U.S.C. § 1332. A single plaintiff can aggregate all claims, related or unrelated, against a single defendant. See Wright & Miller §§ 3701-3704.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The 'each individual claim must exceed $75,000' condition is a fabricated rule. A single plaintiff can aggregate to meet the threshold; the rule that each claim must independently exceed $75,000 is the multi-plaintiff rule, not the single-plaintiff rule.",
+   "lawyer": "Single-plaintiff aggregation rule under 28 U.S.C. § 1332. The 'each claim must independently satisfy' rule applies to multiple plaintiffs aggregating unrelated claims, not to a single plaintiff.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "The student gets the answer right (yes) but for the wrong reason (federal question). The basis here is diversity, not federal question. The 'but only because' condition makes the federal-question basis dispositive when it is not.",
+   "lawyer": "28 U.S.C. § 1332(a) (diversity jurisdiction) is the basis. The aggregation rule applies to both diversity and federal-question cases, but the present case is diversity.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "A single plaintiff can aggregate all claims against a single defendant, related or unrelated, to meet the amount-in-controversy requirement. The aggregated amount here is $85,000, which exceeds $75,000.",
+   "lawyer": "28 U.S.C. § 1332(a); single-plaintiff aggregation rule. See Wright & Miller, Federal Practice and Procedure §§ 3701-3704.",
+   "mold": null
+  }
+ },
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Aggregation for the amount in controversy",
+  "signal": "A single plaintiff sues a single defendant in federal court on multiple claims. Question asks whether the amount in controversy is satisfied.",
+  "studentMove": "Run the 'one plaintiff vs one defendant' check. If yes, aggregate all claims, related or unrelated, against the single defendant. The 'unrelated' qualifier is a red herring when one plaintiff sues one defendant. Confirm diversity and that the aggregated sum exceeds $75,000.",
+  "tinyRule": "A single plaintiff may aggregate all claims — related or unrelated — against a single defendant to meet the amount-in-controversy requirement under 28 U.S.C. § 1332.",
+  "trap": "The dominant trap is the 'unrelated claims can never be aggregated' rule. Relatedness IS required for multiple plaintiffs aggregating against a single defendant, but NOT for a single plaintiff aggregating against a single defendant."
+ }
+}

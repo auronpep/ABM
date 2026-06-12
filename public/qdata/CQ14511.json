@@ -1,0 +1,84 @@
+{
+ "id": "CQ14511",
+ "title": "Worship Studio Delay",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "Consequential damages / foreseeability / delay in real-property possession",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Peter contracted in a signed writing to sell to Paul a converted barn that Peter had been using as a sound-recording studio, together with the surrounding three-acre lot, for $150,000 in cash. The contract provided for exchange of the deed and purchase price on April 15. Possession was to be given to Paul on the same date.\n\nOn April 15, Peter notified Paul that because the tenant who leased the studio space wrongfully refused to quit the premises until April 30, Peter would be unable to deliver possession of the barn until then, but he assured Paul that he would tender the deed and possession on that date. Throughout April, the market value of the property was $155,000, and its fair monthly rental value was $2,000.\n\nOn April 30, Paul accepted a conveyance and possession of the barn and paid the $150,000 purchase price, but notified Peter that he was reserving any rights he might have to damages caused by Peter's breach. Paul intended to use the studio to record a worship album and had scheduled a 15-day tracking block with musicians beginning April 15. Because he did not have possession of the barn on that date, he had to rent a mobile sound-recording trailer at a cost of $1,000 for the 15 days. Peter had no reason to know that Paul intended to use the barn as a worship-recording studio or that he had rented the mobile trailer.\n\nIn an action by Paul against Peter for damages, Paul is entitled to recover",
+ "call": "In an action by Paul against Peter for damages, Paul is entitled to recover",
+ "choices": {
+  "A": "Nominal damages only, because the market value of the property exceeded the contract price.",
+  "B": "$1,000 only (the fair rental value of the barn for 15 days).",
+  "C": "$1,000 (the fair rental value of the barn for 15 days), plus $1,000 (the cost of the mobile recording trailer for 15 days).",
+  "D": "Nothing, because by paying the purchase price on April 30, Paul waived whatever cause of action he may have had."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "Paul's best recovery is B. Peter's 15-day delay in delivering possession was a partial breach. Paul remained obligated to close, but he could recover damages for the loss caused by the delay. The ordinary measure of that loss is the fair rental value of the property for the 15-day period — here, $1,000. Gold Key: consequential damages are limited to losses the breaching party had reason to foresee as a probable result of the breach at the time of contracting; Peter had no reason to know about the worship-album tracking block or the trailer rental, so the $1,000 trailer cost is not recoverable.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A is cut on wrong frame. The call asks for damages for the 15-day delay. \"Market value exceeded contract price\" answers a different damages question — whether the buyer lost the bargain as a whole.\n\nD is cut on direct contradiction. The stem says Paul \"notified Peter that he was reserving any rights he might have to damages.\" A choice that says he waived by paying contradicts that visible fact.\n\nC is held, not immediately cut, because it includes the correct $1,000 rental-value figure. It is cut only with the Gold Key: the second $1,000 trailer cost fails the foreseeability test."
+  },
+  {
+   "label": "CLASH",
+   "text": "B and C create the real tension: \"rental value only\" versus \"rental value plus the trailer cost.\" The splitting fact is that Peter had no reason to know of Paul's worship-album tracking block or the trailer rental."
+  },
+  {
+   "label": "CALL",
+   "text": "Gold Key resolves the residue. Consequential damages must be foreseeable at the time of contracting; the trailer cost was not. Residual answer: B."
+  }
+ ],
+ "studentScript": "Peter delayed possession 15 days. The question is damages for that delay. A talks about market value — wrong frame. D says Paul waived by paying, but the stem says he reserved rights — contradiction. C adds the trailer cost to the rental value; the Gold Key says special costs are recoverable only if foreseeable, and Peter had no reason to know. Choose B: $1,000 fair rental value only.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call is about damages for the 15-day delay, not about whether the buyer lost the bargain as a whole.",
+   "lawyer": "Market value above contract price is irrelevant to the measure of damages for delayed possession; fair rental value is the proper measure.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "After cutting the wrong-frame and waiver choices and applying the Gold Key to the additive choice, the fair rental value for the 15-day delay remains.",
+   "lawyer": "The buyer may recover fair rental value for the period of delay; consequential trailer costs are not recoverable because they were not foreseeable.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This choice gets the rental-value figure right but then adds a second cost that the stem explicitly says Peter had no reason to know about.",
+   "lawyer": "The trailer rental is a consequential damage. Under Hadley v. Baxendale and Restatement (Second) of Contracts § 351, consequential damages are recoverable only if foreseeable to the breaching party at the time of contracting; here they were not.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The stem says Paul reserved his rights when he paid. A choice that says he waived by paying contradicts that visible fact.",
+   "lawyer": "Accepting performance and paying the contract price does not waive a claim for damages when the non-breaching party expressly reserves rights.",
+   "mold": "contradiction"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-WORSHIP-STUDIO-01",
+   "statement": "Consequential damages are limited to losses the breaching party had reason to foresee as a probable result of the breach at the time the contract was made.",
+   "trigger": "buyer seeks special costs the seller did not know about at contracting",
+   "unlocks": "additive overclaim / unforeseeable special-cost trap",
+   "authority": "Hadley v. Baxendale (1854) and Restatement (Second) of Contracts § 351"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-WORSHIP-STUDIO-01",
+   "statement": "When a damages choice adds a second cost to the correct base amount, test whether that second cost was foreseeable before selecting it.",
+   "trigger": "one choice states the right base amount plus an extra sympathetic cost",
+   "unlocks": "additive overclaim in a damages answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Delay in real-property possession — foreseeability of special costs",
+  "signal": "Seller delays delivering possession; buyer wants both fair rental value and a special cost the seller did not know about.",
+  "studentMove": "Cut the wrong-frame and contradiction choices first; then use the Gold Key to strip any unforeseeable special cost from the additive choice.",
+  "tinyRule": "Fair rental value for the delay is recoverable; special costs are recoverable only if the seller knew of the buyer's particular needs at contracting.",
+  "trap": "The additive choice packages the right base amount with a sympathetic extra cost."
+ }
+}

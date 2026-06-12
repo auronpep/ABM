@@ -1,0 +1,76 @@
+{
+ "id": "CQ18135",
+ "title": "Mountain Lodge Looseboard",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Duty — land possessor and invitee",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A Christian retreat center in the foothills charged $40 admission to a Saturday women's ministry day-retreat. For several days, a wooden floorboard on the lodge's front porch had been rocking loose whenever anyone stepped on it. The retreat center had no inspection schedule for the entrance area. Mary, an attendee, walked onto the porch to enter the lodge and tripped on the loose board, injuring her ankle. What duty did the retreat center owe Mary?",
+ "call": "What duty did the retreat center owe Mary?",
+ "choices": {
+  "A": "Strict liability for any injury on the premises.",
+  "B": "Reasonable care, including reasonable inspection for hazards it should discover.",
+  "C": "Only a duty to warn about hazards it actually knew about.",
+  "D": "No duty because the retreat center did not create the loose board."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "The retreat center owed Mary reasonable care, including reasonable inspection for hazards it should discover. Mary is an invitee: she paid admission to enter the lodge for a purpose that benefits the retreat center (a ticketed event the center runs for a fee). A landowner who invites the public onto the premises for a paid event owes the invitee the broader reasonable-inspection duty, not the narrower \"warn only of known hazards\" rule that applies to licensees. The loose floorboard had been rocking for several days, no inspection schedule existed, and reasonable care would have discovered and corrected the condition. Gold Key: invitees get the inspection duty; the \"warn only of known\" rule is the licensee standard. Silver Key: when the call asks \"what duty did the possessor owe,\" first classify the entrant (invitee / licensee / trespasser), then match the duty to the entrant's status.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (strict liability)",
+   "text": "is cut on overclaim. The choice asserts liability for any injury on the premises, which is a strict-liability / no-fault standard. That is not the invitee standard; invitee status creates a duty of reasonable care, not automatic liability. Visible from the choice text itself (\"strict liability for any injury on the premises\"). The choice is NOT_TRUE for overclaiming the duty.\n- D (no duty because the retreat center did not create the loose board) is cut on misfit. The stem supplies a paying invitee, but the choice asserts a no-duty rule that ignores the entrant's status. Visible from the stem (\"charged $40 admission\"; \"What duty did the retreat center owe Mary?\"). The choice is NOT_RESPONSIVE for failing to address the invitee duty the call is asking about."
+  },
+  {
+   "label": "CLASH",
+   "text": "B and C survive to the final axis: does the retreat center owe reasonable care including inspection, or only a duty to warn about hazards it actually knew? The single axis they fight on is the invitee-vs-licensee classification of a paying attendee."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Mary paid admission to enter the lodge for a purpose that benefits the retreat center — that is the textbook definition of an invitee. The licensee standard (\"warn only of known hazards\") does not apply. A student without the Gold Key is in anchor_gap territory on the invitee-vs-licensee distinction, but the answer is settled by the duty that attaches to invitee status. B."
+  }
+ ],
+ "studentScript": "Step 1: Classify the entrant. Mary paid $40 admission to enter the lodge for a purpose that benefits the retreat center. She is an invitee. Step 2: Match the duty. The duty owed to invitees is reasonable care, including reasonable inspection for discoverable hazards. Step 3: Apply the facts. The floorboard had been rocking for several days; no inspection schedule existed. The reasonable-care-including-inspection duty is satisfied by inspecting and fixing the condition. Step 4: Defeat the traps. A overclaims (strict liability for any injury is not the invitee standard). D is a misfit (the duty is keyed to discoverable hazards, not to possessor-created hazards). C is the dominant invitee-vs-licensee trap. Gold Key: invitees get the inspection duty; the 'warn only of known' rule is the licensee standard, not the invitee standard. Silver Key: when the call asks 'what duty did the possessor owe,' first classify the entrant, then match the duty to the entrant's status. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice asserts strict liability for any injury on the premises. That is an overclaim — invitee status creates a duty of reasonable care, not automatic liability. Strict liability is a separate doctrine (abnormally dangerous activities, products liability) and is not the default rule for ordinary premises.",
+   "lawyer": "An invitee is owed a duty of reasonable care, not strict liability. Restatement (Second) of Torts § 343; the strict-liability answer is a separate doctrine under Restatement (Second) of Torts § 519 (abnormally dangerous activities) or products liability and is not the default rule for ordinary premises.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "After A and D are cut on overclaim and misfit, B and C survive to the invitee-vs-licensee clash. The Gold Key resolves the axis: Mary is a paying attendee (invitee), and the duty that follows is the broader reasonable-inspection duty.",
+   "lawyer": "Mary is an invitee: she paid admission to enter the lodge for a purpose that benefits the retreat center. The duty owed to invitees is reasonable care, including reasonable inspection for discoverable hazards. Restatement (Second) of Torts §§ 332, 343.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The student half-remembers that 'landowners only have to warn' and picks the narrower licensee rule. The Gold Key tells them the warn-only-of-known rule is the licensee standard, not the invitee standard. Mary is a paying attendee (invitee), so the broader inspection duty applies.",
+   "lawyer": "The 'warn only of known hazards' rule is the licensee standard, not the invitee standard. Restatement (Second) of Torts §§ 330, 341 (licensees). For invitees, the duty is the broader reasonable-care-including-inspection rule. Restatement (Second) of Torts §§ 332, 343 (invitees).",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The student assumes the duty runs only to hazards the possessor itself caused. Visible from the stem: the floorboard loosened over several days with no inspection schedule — a discoverable hazard, not a possessor-created one. The invitee duty is keyed to discoverable hazards regardless of who caused them.",
+   "lawyer": "The invitee duty is keyed to discoverable hazards, not to hazards the possessor created. Restatement (Second) of Torts § 343. Natural deterioration of a porch floorboard over several days, with no inspection schedule, is exactly the kind of hazard the invitee duty obliges the possessor to find and fix.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-MOUNTAIN-LODGE-LOOSEBOARD-01",
+   "statement": "Invitees get the inspection duty; the 'warn only of known' rule is the licensee standard, not the invitee standard. A paying attendee at a ticketed event is an invitee, and the duty that follows is the broader reasonable-care-including-inspection rule.",
+   "trigger": "possessor invites the public onto the premises for a paid event; entrant is injured; call asks what duty the possessor owed",
+   "unlocks": "invitee-vs-licensee conflation dominant trap (C)",
+   "authority": "Restatement (Second) of Torts §§ 332 (invitee), 343 (duty to invitees); §§ 330, 341 (licensees — narrower rule)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Invitee vs licensee duty — invitees get the inspection duty",
+  "signal": "Possessor invites the public onto the premises for a paid event; entrant is injured; call asks what duty the possessor owed.",
+  "studentMove": "Classify the entrant first. If the entrant paid admission (or otherwise entered for a purpose that benefits the possessor) → invitee → reasonable care including inspection. If the entrant entered for the entrant's own purpose with permission → licensee → warn only of known hazards.",
+  "tinyRule": "Invitees get the inspection duty; the 'warn only of known' rule is the licensee standard.",
+  "trap": "The dominant trap is the invitee-vs-licensee conflation. Many students half-remember that 'landowners only have to warn' and pick the narrower licensee rule for paying invitees."
+ }
+}

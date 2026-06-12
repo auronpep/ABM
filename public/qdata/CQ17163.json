@@ -1,0 +1,80 @@
+{
+ "id": "CQ17163",
+ "title": "Permit Fee Ledger",
+ "subject": "Constitutional Law",
+ "topic": "Due Process",
+ "subtopic": "State Deprivation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Paul, a pastor at a small church, applied in person for a state concealed-carry permit at a county clerk's office. He paid the $75 application fee in cash to the clerk, Daniel, who placed the cash envelope in an interoffice pouch to be delivered to the finance office for deposit. While moving the pouch between offices, Daniel accidentally dropped the envelope behind a filing cabinet and never recovered it. Paul's permit was not issued, and the $75 was never refunded. Paul sued Daniel and the county in federal court under 42 U.S.C. § 1983, alleging a Due Process Clause violation based only on Daniel's negligence and the loss of the $75 fee.\n\nWhat is the best due process answer?",
+ "call": "What is the best due process answer?",
+ "choices": {
+  "A": "Strict scrutiny applies, because permit fees burden travel within the state.",
+  "B": "The clerk must receive a hearing before the applicant can sue.",
+  "C": "The Due Process Clause is not ordinarily violated by mere negligence.",
+  "D": "Every property loss by a state employee is a due process violation."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "Paul's claim fails. The Due Process Clause targets deprivations accomplished without constitutionally adequate process or by deliberate or reckless state action; it is not a font of tort law for run-of-the-mill negligence. The fact pattern alleges only an accidental loss of a $75 fee by a single clerk — a paradigm of carelessness, not an abuse of state power. Gold Key: negligent loss by a state official is not a substantive due process violation. The proper remedy for a misplaced fee is a state-law claim against the clerk or the county, not a federal § 1983 suit.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (every property loss = due process violation)",
+   "text": "is cut on the overclaim. The Due Process Clause targets deprivations by wrongful state action, not every careless loss. Visible from the stem: \"accidentally dropped the envelope\" is paradigmatic negligence. The choice is NOT_TRUE for misstating the scope of constitutional protection. Gold Key confirms."
+  },
+  {
+   "label": "A (strict scrutiny applies)",
+   "text": "is cut on wrong frame. Strict scrutiny is for suspect classifications and fundamental rights; a $75 permit fee is not the kind of burden that triggers it. Visible from the stem: the only injury alleged is loss of the fee, not denial of a fundamental right. The choice is NOT_RESPONSIVE for asserting a level of review the call does not call for.\n- B (clerk must receive a hearing before the applicant can sue) is cut on the wrong party. The call asks about the applicant's due process rights, not the clerk's employment process. Visible from the stem: the question is \"what is the best due process answer\" for the applicant's claim. The choice is NOT_RESPONSIVE for misframing whose process is at issue."
+  },
+  {
+   "label": "CLASH",
+   "text": "No choices survive to clash. After three clean CUTs, only the correct answer C remains."
+  },
+  {
+   "label": "CALL",
+   "text": "C — the Due Process Clause is not ordinarily violated by mere negligence. Residual answer: C. No Gold Key escalation is needed for the credited answer; the Gold Key is referenced in the explanation to confirm the negligence-rule breaker for D."
+  }
+ ],
+ "studentScript": "The call asks for the best due process answer on a claim of negligence by a state clerk. D is the overclaim: every property loss is not a due process violation. A is the wrong frame: a $75 permit fee does not trigger strict scrutiny. B is the wrong party: the applicant's claim is at issue, not the clerk's employment process. The negligence rule controls: the Due Process Clause targets wrongful state action, not carelessness. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Strict scrutiny is reserved for fundamental rights and suspect classifications; a $75 permit fee is neither.",
+   "lawyer": "Strict scrutiny applies to fundamental rights and suspect classifications; a $75 application fee for a permit is not the kind of burden that triggers it. The correct level of review on a negligent-loss claim is rational basis at most, and the claim still fails on the merits.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "The call asks about the applicant's due process rights, not the clerk's employment process.",
+   "lawyer": "The applicant's claim fails on the merits because negligence is not a due process violation. Whether the clerk gets a hearing on any employment matter is irrelevant to whether Paul's claim states a constitutional violation.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The Due Process Clause is not a make-tort-whole theory; negligence by a state official is not a constitutional deprivation.",
+   "lawyer": "Negligent loss of property by a state official does not state a substantive due process claim; only deliberate or reckless deprivations, or deprivations by constitutionally inadequate procedure, are actionable under § 1983.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The Due Process Clause targets wrongful state action, not every careless loss. Visible from the stem: 'accidentally dropped' is paradigmatic negligence.",
+   "lawyer": "Substantive due process protects against arbitrary or wrongful government action, not negligent mistakes; the Supreme Court has consistently held that mere negligence is not a constitutional deprivation under the Due Process Clause.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONSTITUTIONAL-LAW-PERMIT-FEE-LEDGER-01",
+   "statement": "Mere negligent loss of property by a state official is not a substantive due process violation; the clause targets deliberate or reckless deprivations, not carelessness.",
+   "trigger": "due process claim against a state actor, sole allegation is negligence",
+   "unlocks": "tiered-absolute overclaim that every property loss is a due process violation",
+   "authority": "County of Sacramento v. Lewis, 523 U.S. 833 (1998); Parratt v. Taylor, 451 U.S. 527 (1981); Hudson v. Palmer, 468 U.S. 517 (1984)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Negligent loss by a state actor is not a due process violation",
+  "signal": "A due process claim under § 1983, sole allegation is a state employee's negligence, the loss is small property.",
+  "studentMove": "Cut the overclaim (every loss is a violation), the wrong-frame level of review (strict scrutiny), and the wrong-party trap (clerk's hearing). The negligence rule is the residual answer.",
+  "tinyRule": "Negligence is not a constitutional deprivation; the Due Process Clause targets deliberate or reckless state action.",
+  "trap": "The overclaim that every property loss is a due process violation is the dominant trap; the proper remedy is a state tort claim, not § 1983."
+ }
+}

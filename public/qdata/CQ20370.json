@@ -1,0 +1,96 @@
+{
+ "id": "CQ20370",
+ "title": "Dove Mug Notice",
+ "subject": "Contracts",
+ "topic": "UCC sale of goods",
+ "subtopic": "Acceptance, rejection, notice of breach, and seller action for price",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Paul, a devotional-merchandise wholesaler, sued Lydia on August 9 for the price of 360 ceramic “Faith, Hope, Love” mugs. The sale began on March 7, when Lydia, who operates a Christian gift shop, ordered mugs finished with a gold dove decal, for delivery by March 18. On March 18, the mugs reached Lydia’s shop. Timothy, Lydia’s stockroom manager, opened the cartons and told Lydia both that the order had arrived and that the mugs were missing the gold dove decals. Lydia meant to text Paul that afternoon, but while preparing a children’s choir sale she forgot. On April 27, Lydia received Paul’s invoice but neither paid nor contacted him. In defense to Paul’s action, Lydia asserted that the mugs did not conform to the contract of sale.\n\nThe court should rule for",
+ "call": "The court should rule for",
+ "choices": {
+  "A": "Paul, because a merchant buyer that accepts delivery of nonconforming goods is bound to pay for them at the contract price.",
+  "B": "Lydia, because a merchant seller is not entitled to the price of nonconforming goods if a reasonable inspection before shipment would have disclosed the nonconformity.",
+  "C": "Paul, because Lydia failed to notify him that the mugs were missing the gold dove decals.",
+  "D": "Lydia, because the mugs did not conform to the contract of sale."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Lydia knew the mugs were missing the gold dove decals when Timothy reported the defect on delivery day. She did not notify Paul then. She also did not notify him when the invoice arrived more than a month later. She raised the defect only after Paul sued for the price.\n\nGold Key: When a buyer accepts goods and discovers a defect, the buyer must notify the seller of the breach within a reasonable time or lose the defect remedy. Silver Key: Do not pick the seller-wins choice just because it reaches the right side; in this array, the winning seller choice must use the notice fact, not acceptance alone.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_TRUE / half_truth",
+   "text": "Same winner, incomplete reason. Acceptance matters, but acceptance alone does not erase all defect remedies if notice is timely. Cut after the Gold Key."
+  },
+  {
+   "label": "CUT B — NOT_TRUE / fabricated_rule",
+   "text": "The answer invents a seller-inspection bar to the price. Nothing in the stem or taught key makes seller inspection the controlling route. Cut."
+  },
+  {
+   "label": "CUT D — NOT_RESPONSIVE / wrong_element",
+   "text": "The mugs were nonconforming, but that answers the earlier breach question. The live call is the price action after Lydia’s long silence. Cut."
+  },
+  {
+   "label": "Residual — C",
+   "text": "It names the exact fact the rule turns on: Lydia failed to notify Paul."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not reached after the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not reached."
+  }
+ ],
+ "studentScript": "Goods sale. Defect known on delivery. Months of no notice. The defect answer is too early; the seller wins on notice.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice says acceptance alone binds the buyer, but the Gold Key adds the missing notice-remedy condition.",
+   "lawyer": "UCC §2-607 requires payment at the contract rate for accepted goods but preserves nonconformity remedies when notice is timely; failure of notice is the decisive reason.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "The choice points to seller inspection, but the stem's loaded axis is buyer notice after delivery.",
+   "lawyer": "No Article 2 price-action rule denies the price merely because a seller inspection could have found the defect; accepted goods support an action for the price.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "This choice matches the call and the loaded fact: Lydia knew the defect and did not notify Paul.",
+   "lawyer": "Under UCC §§2-602, 2-606, 2-607, and 2-709, failure to seasonably notify after accepting bars the buyer's defect remedy and permits the seller to recover the price.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The mugs were defective, but the live question is whether Lydia preserved that defense after silence.",
+   "lawyer": "Nonconformity alone would support rejection or remedies if properly preserved; the notice failure bars the remedy.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-DOVE-NOTICE-01",
+   "statement": "After accepting goods, a buyer who discovers a defect must notify the seller within a reasonable time or lose the defect remedy.",
+   "trigger": "Known nonconformity on delivery plus months of silence before a price suit.",
+   "unlocks": "The notice-after-acceptance trap in a seller price action.",
+   "authority": "UCC §§2-602, 2-606, 2-607, 2-709"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-DOVE-ARRAY-01",
+   "statement": "Read the 2x2 by reason, not outcome: the seller-wins choice with the notice fact beats the seller-wins choice with acceptance alone.",
+   "trigger": "Two choices name the seller and two name the buyer.",
+   "unlocks": "Same-outcome wrong-reason trap.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Accepted goods: notice keeps the remedy alive",
+  "signal": "Buyer knows goods are defective, keeps silent, then raises defect after being sued.",
+  "studentMove": "Ask whether the buyer notified the seller within a reasonable time.",
+  "tinyRule": "Known defect plus no seasonable notice means no defect remedy after acceptance.",
+  "trap": "Picking the nonconformity answer because the goods were genuinely defective."
+ }
+}

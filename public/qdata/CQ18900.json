@@ -1,0 +1,80 @@
+{
+ "id": "CQ18900",
+ "title": "Wedding Garden Spill",
+ "subject": "Torts",
+ "topic": "Negligence damages",
+ "subtopic": "Economic loss parasitic to physical injury",
+ "difficulty": "Core",
+ "tension": null,
+ "stem": "Boaz and Ruth run \"Boaz & Ruth's Wedding Garden,\" a Christian-owned wedding venue on a converted farm outside a small Texas town. Esther, a self-employed wedding photographer, was working a Saturday reception in the venue's main barn. While Esther was setting up a second camera near the open bar, an empty cocktail glass slipped out of a guest's hand and shattered on the wood floor, leaving a wet, slick patch. A venue employee had just mopped the same area minutes earlier and had not placed any warning cones. Esther stepped on the wet patch, fell, and broke her right ankle. She missed three weeks of wedding-season bookings during recovery — one engagement shoot and two paid wedding-day shoots she had already contracted to photograph. The venue argues that the missed-booking income is pure economic loss and therefore cannot be recovered in negligence.\n\nHow should the court treat Esther's lost-booking claim?",
+ "call": "How should the court treat Esther's lost-booking claim?",
+ "choices": {
+  "A": "Allow it if the missed bookings were caused by the ankle injury.",
+  "B": "Bar it, because missed-booking income in a negligence case is always pure economic loss.",
+  "C": "Allow it only as nominal damages, because the receipts are contingent on future events.",
+  "D": "Bar it unless Esther also proves a separate contract with the venue for the lost income."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The court should allow Esther's lost-booking claim if the missed bookings were caused by the ankle injury. Lost wages (and the self-employed equivalent of lost contract income) tied to a physical injury are recoverable economic consequences of the tortfeasor's negligence; they are not standalone pure economic loss barred by the no-economic-loss-without-physical-injury rule that the venue is trying to invoke. The anchor is straightforward: the venue owed a duty of reasonable care on its premises; the employee created a wet patch by mopping without warning cones; Esther slipped, broke an ankle, and the broken ankle is what kept her from shooting the booked weddings. The chain of causation runs from the venue's negligence to the physical injury to the lost income, so the lost income is parasitic on (and recoverable alongside) the personal-injury damages.\n\nGold Key: economic damages that flow from a tort-caused physical injury are recoverable; they are not pure economic loss. The classic case is McDougald v. Perry, 146 So. 2d 408 (Fla. Dist. Ct. App. 1962) (and the broader Prosser & Keeton treatment): a tort victim who misses work because of the injury can recover the lost wages as part of the compensatory damages, even though the wages themselves are an economic interest. Silver Key: watch the venue's argument structure — the \"pure economic loss\" rule is the rule for plaintiffs who suffer ONLY financial harm with no physical impact; the rule does not bar recovery of financial harm that is a CONSEQUENCE of a physical injury.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (bar it unless contract)",
+   "text": "is cut on wrong frame. Esther is suing in tort for a premises-injury negligence claim, not on a contract for the missed bookings. The lost income is recoverable as a parasitic economic consequence of the tort-caused physical injury. Visible from the stem: the suit is for \"negligence\" caused by the venue's failure to warn of the wet floor, not for breach of any photography contract. The choice is NOT_RESPONSIVE for imposing a contract-theory frame on a tort claim."
+  },
+  {
+   "label": "C (nominal only)",
+   "text": "is cut on wrong remedy. Lost earnings caused by a tort-caused physical injury are compensatory damages, not nominal damages; nominal damages are reserved for cases with no compensable injury. Visible from the stem: Esther has a broken ankle and provable lost bookings. The choice is NOT_TRUE for misstating the remedy category."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: is the missed-booking income recoverable as a parasitic consequence of the broken ankle (A), or is it barred as standalone pure economic loss (B)? The single axis they fight on is whether the \"pure economic loss\" bar applies to a plaintiff who also has a physical injury."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: the standalone pure economic loss bar applies only to plaintiffs whose only harm is financial; when the plaintiff has a physical injury caused by the defendant's negligence, the financial harm that flows from that injury is recoverable parasitic damages → A. A student without the Gold Key is in anchor_assisted territory on the parasitic-damages question; the trap is the dominant-trap attractiveness of B's \"always pure economic loss\" framing, not a structural cut."
+  }
+ ],
+ "studentScript": "The call asks how the court should treat Esther's lost-booking claim. D is a wrong-frame contract-theory cut. C is a wrong-remedy cut (nominal damages are for cases with no compensable injury). B is the overclaim — the 'always pure economic loss' framing fails because Esther has a physical injury. The Gold Key controls: financial harm that flows from a tort-caused physical injury is recoverable parasitic damages. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The broken ankle is the physical injury that opens the door to parasitic economic damages; the missed bookings flow from that injury.",
+   "lawyer": "Lost earnings (and self-employed lost contract income) caused by a tort-caused physical injury are recoverable compensatory damages under Restatement (Second) of Torts § 924. The pure-economic-loss bar does not apply because the plaintiff has a physical injury.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The 'always' framing is the tell. The standalone pure economic loss bar is the rule for plaintiffs with NO physical injury; it is not the rule for financial harm that flows from a tort-caused physical injury.",
+   "lawyer": "Robins Dry Dock & Repair Co. v. Flint, 275 U.S. 303 (1927), and the broader Prosser & Keeton treatment establish the standalone-pure-economic-loss bar. The bar applies only to plaintiffs whose only harm is financial. Once the plaintiff has a physical injury caused by the defendant's negligence, financial harm that flows from that injury is recoverable.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "Contingent future bookings are a damages-quantification issue (certainty, mitigation), not a remedy-category issue. Nominal damages are reserved for cases with no compensable injury; here, there is a broken ankle and provable lost bookings.",
+   "lawyer": "Once causation and a reasonable degree of certainty are established, lost future earnings are recoverable as compensatory damages; they are not capped at a nominal sum. Restatement (Second) of Torts § 924; Prosser & Keeton § 54.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "Esther's suit against the venue is in tort (premises-injury negligence). The relevant contracts are the photography contracts she had with the bride-and-groom clients; those contracts measure the loss but are not the cause of action against the venue.",
+   "lawyer": "The lost income is recoverable as a parasitic economic consequence of the tort claim, not as a stand-alone contract claim against the venue. Imposing a contract-theory requirement would convert every tort lost-wage case into a contract case, which is not the law.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-WEDDING-GARDEN-SPILL-01",
+   "statement": "Economic damages that flow from a tort-caused physical injury are recoverable; they are not standalone pure economic loss.",
+   "trigger": "negligence suit with a physical injury and a request for lost wages or lost self-employed contract income",
+   "unlocks": "the 'all economic loss is barred in negligence' overclaim",
+   "authority": "Restatement (Second) of Torts § 924; McDougald v. Perry, 146 So. 2d 408 (Fla. Dist. Ct. App. 1962); Robins Dry Dock & Repair Co. v. Flint, 275 U.S. 303 (1927)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Lost wages are parasitic damages when they flow from a tort-caused physical injury",
+  "signal": "Negligence claim, plaintiff has a physical injury, plaintiff seeks lost wages or lost self-employed contract income, defendant invokes 'pure economic loss.'",
+  "studentMove": "Cut the 'all financial loss is pure economic loss' overclaim, the nominal-only remedy, and the contract-theory frame. Apply the Gold Key: financial harm that flows from a tort-caused physical injury is recoverable parasitic damages.",
+  "tinyRule": "Lost wages are parasitic on a tort-caused physical injury; the standalone pure economic loss bar does not apply when the plaintiff has a physical injury.",
+  "trap": "The dominant trap is treating 'pure economic loss' as an absolute bar to financial recovery in negligence. The bar is a no-physical-injury bar; once a physical injury is present, the financial harm rides in on the personal-injury claim."
+ }
+}

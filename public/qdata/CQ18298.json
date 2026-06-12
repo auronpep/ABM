@@ -1,0 +1,80 @@
+{
+ "id": "CQ18298",
+ "title": "Fellowship Hall Grab",
+ "subject": "Torts",
+ "topic": "Intentional Torts",
+ "subtopic": "Assault — plaintiff must apprehend imminent contact with herself (not with a third party)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Daniel is a deacon at a small Christian church. On a Sunday morning, an angry stranger walked into the fellowship hall and grabbed Mary, another church member, by the arm and tried to drag her out of the building. Daniel, standing across the room, saw the entire episode. The stranger never looked at Daniel, never made any threatening gesture toward Daniel, and never approached him. Daniel sues the stranger for assault, claiming he was put in apprehension by what he saw. The court should find for",
+ "call": "Daniel sues the stranger for assault, claiming he was put in apprehension by what he saw. The court should find for",
+ "choices": {
+  "A": "the stranger, because Daniel had no reason to expect to be touched by the stranger.",
+  "B": "the stranger, because Daniel did not perceive an injury being inflicted on Mary.",
+  "C": "Daniel, because the court will transfer the stranger's intent to grab Mary to Daniel's assault claim.",
+  "D": "Daniel, because the stranger was aware that his conduct would frighten Daniel."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The court should find for the stranger. The tort of assault requires the defendant to act intending to cause, and thereby cause, the plaintiff to apprehend imminent harmful or offensive contact with the plaintiff herself. Restatement (Second) of Torts § 21 (assault — intent to cause apprehension of imminent harmful or offensive contact, and causation of such apprehension). On these facts, the stranger's conduct was directed entirely at Mary; the stranger never made any threatening gesture toward Daniel, never approached him, and never looked at him. Daniel could not have apprehended imminent contact with himself. Because the contact feared (if any) was with Mary, not with Daniel, the elements of assault are not met as to Daniel. Gold Key: the transferred-intent doctrine applies to battery (and to certain other intentional torts against the person), not to assault — the assault plaintiff must be the person put in apprehension of contact with herself.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (perception of injury)",
+   "text": "is cut on call focus. The \"perception of injury\" framing is off: the assault test is whether the plaintiff apprehended contact with herself, not whether the plaintiff perceived an injury to a third party. Visible from the stem: Daniel's claim of apprehension, not perception of injury, is the disputed element. The choice is NOT_RESPONSIVE for asserting a perception-of-injury frame rather than an apprehension-of-contact frame."
+  },
+  {
+   "label": "D (awareness of fright)",
+   "text": "is cut on the call focus. The \"awareness of fright\" framing is off: even if the stranger was aware that his conduct would frighten Daniel, the assault elements require plaintiff-side apprehension of contact with the plaintiff, not defendant-side awareness that the conduct would frighten the plaintiff. The choice is NOT_TRUE for misstating the assault elements — the elements are about plaintiff-side apprehension, not defendant-side awareness."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: does the bystander have an assault claim because the attacker intended to harm the third party (and that intent transfers), or does the bystander have no claim because the bystander did not apprehend contact with herself? The axis they fight on is whether the transferred-intent doctrine can supply a missing plaintiff-side apprehension."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Transferred intent applies to battery (and certain other intentional torts against the person) when the defendant intends to commit a tort against one person but commits a different tort against a different person; it does not apply to assault. The assault plaintiff must be the person put in apprehension of contact with herself. On these facts, Daniel never apprehended contact with himself, and the stranger's intent to grab Mary cannot be transferred to make Daniel an assault plaintiff. Apply the assault elements → A. A student without the Gold Key is in anchor_gap territory on the transferred-intent scope question, but the answer is settled by the doctrine of assault's plaintiff-side apprehension requirement."
+  }
+ ],
+ "studentScript": "Step 1: Did the assault elements hit? The assault plaintiff must apprehend imminent contact with HERSELF. The stranger never made any threatening gesture toward Daniel, never approached him, and never looked at him. Daniel could not have apprehended contact with himself. Step 2: Does transferred intent save the claim? No. Transferred intent applies to battery, not to assault. The stranger's intent to grab Mary cannot be transferred to make Daniel an assault plaintiff. Step 3: Do the awareness-of-fright or perception-of-injury framings save the claim? No. The assault elements are about plaintiff-side apprehension of contact with self, not defendant-side awareness of fright or plaintiff-side perception of injury to a third party. Gold Key: transferred intent does not apply to assault. Silver Key: when a bystander claims assault over harm to a third party, the deciding axis is whether the bystander apprehended contact with HERSELF. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the perception-of-injury and awareness-of-fright distractors are cut and the transferred-intent-vs-apprehension axis is named, the Gold Key resolves to the no-apprehension-with-self answer.",
+   "lawyer": "Assault requires the plaintiff to apprehend imminent harmful or offensive contact with herself. Restatement (Second) of Torts § 21. The stranger never made any threatening gesture toward Daniel, never approached him, and never looked at him; Daniel could not have apprehended contact with himself.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The choice picks the right party for the wrong reason. The assault test is whether the plaintiff apprehended contact with HERSELF, not whether she perceived injury to a third party.",
+   "lawyer": "Restatement (Second) of Torts § 21. The elements of assault are intent to cause and causation of apprehension of contact with the plaintiff. Perception of injury to a third party is not the test.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The student reaches for the transferred-intent doctrine because the attacker did intend to harm a person (Mary) but the conduct did not put Daniel in apprehension. The Gold Key tells the student that transferred intent does not apply to assault.",
+   "lawyer": "Transferred intent applies to battery (and certain other intentional torts against the person) when the defendant intends to commit a tort against one person but commits a different tort against a different person. Restatement (Second) of Torts § 16. It does not supply a missing plaintiff-side apprehension for an assault claim.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The student hears 'aware that his conduct would frighten' and assumes that satisfies the assault elements. It does not — the elements are about plaintiff-side apprehension, not defendant-side awareness.",
+   "lawyer": "Restatement (Second) of Torts § 21 cmt. d, e. The assault elements are about the plaintiff's apprehension of contact with herself; the defendant's awareness that his conduct would frighten the plaintiff is not a substitute.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-FELLOWSHIP-HALL-GRAB-01",
+   "statement": "The transferred-intent doctrine applies to battery (and certain other intentional torts against the person) when the defendant intends to commit a tort against one person but commits a different tort against a different person; it does not apply to assault — the assault plaintiff must be the person put in apprehension of contact with herself.",
+   "trigger": "bystander claims assault over harm to a third party and the defendant never threatened the bystander",
+   "unlocks": "transferred-intent dominant trap (C)",
+   "authority": "Restatement (Second) of Torts §§ 16, 21"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Assault — plaintiff-side apprehension and the transferred-intent scope",
+  "signal": "A bystander (the plaintiff) sues an attacker for assault over harm the attacker directed at a third party; the attacker never threatened the bystander.",
+  "studentMove": "Apply the assault elements: the plaintiff must apprehend imminent contact with HERSELF. The transferred-intent doctrine does not supply a missing plaintiff-side apprehension.",
+  "tinyRule": "Transferred intent does not apply to assault.",
+  "trap": "The transferred-intent doctrine is a real doctrine; the trap is the doctrinal misapplication, not the doctrine's existence. Also: 'awareness of fright' is not 'apprehension of contact with self.'"
+ }
+}

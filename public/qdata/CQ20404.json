@@ -1,0 +1,88 @@
+{
+ "id": "CQ20404",
+ "title": "Acts Axes Cash Loads",
+ "subject": "Evidence",
+ "topic": "Materiality and probative value",
+ "subtopic": "A4",
+ "difficulty": "Trap Repair",
+ "tension": null,
+ "stem": "Mary operates a private “Acts & Axes” booth that sells scripture-engraved toy arks at summer fairs. She sues Stephen, her weekend cash-box clerk, for taking booth receipts. Before the records evidence is offered, Stephen testifies that Mary paid him $3,200 for the season and that he never took any receipts. Mary calls a prepaid-card records custodian, who will testify that during that same season Stephen made $18,600 in cash loads onto his personal prepaid card. Stephen objects that the cash loads could have come from birthday gifts or family loans. The custodian’s testimony is:",
+ "call": "The custodian’s testimony is:",
+ "choices": {
+  "A": "inadmissible, because financial records are always unfairly prejudicial in a civil theft case.",
+  "B": "admissible as circumstantial evidence that Stephen received funds from a source beyond his stated pay.",
+  "C": "inadmissible, because the cash loads do not conclusively prove Stephen took Mary’s receipts.",
+  "D": "admissible only to impeach Stephen, but not as circumstantial proof that he took the receipts."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The cash-load records are admissible because they make Mary’s claim more probable: Stephen said he received only $3,200 for the season, while the records show $18,600 in same-season cash loads. Gold Key: relevance is an “any tendency” threshold, not a conclusive-proof requirement. Silver Key: in a relevance array, cut answers that demand “conclusive,” “always,” or “only”; the surviving answer states what the evidence tends to show. Stephen may argue gifts or family loans, but that attacks weight, not admissibility.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Always unfairly prejudicial” is an absolute. Evidence prejudice is not automatic. Cut."
+  },
+  {
+   "label": "CUT C",
+   "text": "“Conclusive proof” invents a threshold. The call is admissibility, not certainty. Cut."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Only to impeach” is too narrow. The records also tend to show funds beyond stated pay. Cut."
+  },
+  {
+   "label": "Residual B",
+   "text": "B answers the call and states the evidence’s proper circumstantial use. No CLASH or CALL needed after the CUT."
+  }
+ ],
+ "studentScript": "Pay $3,200, cash loads $18,600, denial. A says always, C says conclusive, D says only. B is the only answer that says what the records tend to show.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'always' turns a balancing idea into automatic exclusion.",
+   "lawyer": "Rule 403 uses a substantial-outweighing balance; it is not an automatic exclusion for financial records.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This answer matches the call and the fact gap: stated pay versus larger cash loads.",
+   "lawyer": "The records satisfy the relevance threshold and are admissible absent a Rule 403 exclusion.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word 'conclusively' invents a higher admissibility threshold.",
+   "lawyer": "Relevant evidence need not prove the fact by itself; weaknesses are for the factfinder.",
+   "mold": "fabricated_rule"
+  },
+  "D": {
+   "signal": "The word 'only' underclaims the evidence's purpose.",
+   "lawyer": "The evidence can both contradict Stephen and serve as substantive circumstantial proof.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-ANY-TENDENCY-01",
+   "statement": "Relevant evidence does not need to prove the whole case by itself. If it has any tendency to make a consequential fact more probable, it clears the relevance threshold.",
+   "trigger": "The opponent says the evidence could have another explanation.",
+   "unlocks": "conclusive-proof and innocent-explanation traps",
+   "authority": "Fed. R. Evid. 401, 402, 403; see pass-1 legal verification."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-RELEVANCE-ARRAY-01",
+   "statement": "In a relevance array, cut 'conclusive,' 'always,' and 'only' before weighing the story. The survivor usually states what the evidence tends to show.",
+   "trigger": "Three choices narrow admissibility; one states the fact relation.",
+   "unlocks": "3-vs-1 array of admissibility-limiting traps",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Relevance is a clue threshold",
+  "signal": "Opponent says the evidence has innocent explanations or is not conclusive.",
+  "studentMove": "Ask what fact the evidence tends to make more likely.",
+  "tinyRule": "A clue need not be a confession.",
+  "trap": "demanding certainty before admissibility"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "CQ18179",
+ "title": "Campfire Rim Warning",
+ "subject": "Torts",
+ "topic": "Products Liability",
+ "subtopic": "Failure to warn - obvious danger",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A steel campfire ring is sold for outdoor use by a small firepit manufacturer in Tennessee. The ring is not defective, and its rim getting hot during use is a property that is visible and ordinary for a steel campfire ring. Stephen, a youth volunteer at a church summer retreat, was roasting marshmallows over the campfire ring and severely burned his hand when it touched the rim. Stephen sues the manufacturer for failure to warn that the rim can burn skin. Is the failure-to-warn claim likely strong?",
+ "call": "Is the failure-to-warn claim likely strong?",
+ "choices": {
+  "A": "Yes, because the user suffered physical injury.",
+  "B": "No, because fire rings are never products for products-liability purposes.",
+  "C": "Yes, because every dangerous product needs a warning for every possible injury.",
+  "D": "No, because the burning risk of an ordinary steel fire ring rim is obvious."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "Stephen's claim is weak. The choice is D. The rim of a steel campfire ring getting hot during use is exactly the kind of danger that an ordinary user of an ordinary product already understands and contemplates. Gold Key: a manufacturer has no duty to warn of dangers that are open, obvious, and commonly understood by ordinary users. The doctrine operates as a non-duty rule, not as an affirmative defense: the duty to warn never arises for risks a reasonable user can plainly perceive. Silver Key: run the \"open and obvious\" check on the specific risk the plaintiff claims was undisclosed; the specific risk here (\"the rim can burn skin\") is the very risk any user of a hot campfire ring would plainly perceive.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (injury alone)",
+   "text": "is cut on missing-element. The choice supplies the consequence (physical injury) but skips the antecedent duty question. Visible from the stem: \"sues the manufacturer for failure to warn\" is the call, not \"sues for the burn.\" The choice is NOT_RESPONSIVE for asserting a duty where the stem frames the issue as a warning-defect question."
+  },
+  {
+   "label": "B (fire rings are never products)",
+   "text": "is cut on misstated-rule. A steel campfire ring is a manufactured item sold in the commercial chain; it is a \"product\" for § 402A / Restatement (Third) purposes. Visible from the stem: \"a small firepit manufacturer in Tennessee\" implies commercial sale. The choice is NOT_TRUE for inventing a categorical exclusion that the doctrine does not contain."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and D survive to the final axis: does the obvious-danger rule eliminate the duty to warn, or does the categorical \"every dangerous product needs a warning\" claim defeat the obvious-danger rule? The single axis they fight on is whether the open-and-obvious exception survives the \"always warn\" intuition."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: the obvious-danger doctrine operates as a non-duty rule. The duty to warn never arises for risks that are open, obvious, and commonly understood. The rim of a steel campfire ring getting hot during a campfire burn is exactly such a risk. Residual answer: D. A student without the Gold Key is in anchor_gap territory on the C/D axis; the trap is the dominant-trap attractiveness of C, not a structural cut on C."
+  }
+ ],
+ "studentScript": "Step 1: Is the product a product? Yes — a steel campfire ring sold by a manufacturer is a product. Cut B. Step 2: Does injury alone create a warning defect? No — injury is the consequence; the duty question is antecedent. Cut A. Step 3: Does the obvious-danger rule eliminate the duty? Gold Key: open and obvious = no duty to warn. The rim getting hot during a campfire burn is open and obvious to any ordinary user. Silver Key: run the open-and-obvious check on the SPECIFIC risk the plaintiff claims was undisclosed. The specific risk here ('the rim can burn skin') is the very risk any user of a hot campfire ring would plainly perceive. Choose D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice supplies the consequence (physical injury) but skips the antecedent duty question. The call is the warning-defect issue, not the burn.",
+   "lawyer": "Physical injury does not create a warning defect. The duty to warn must be grounded in a non-obvious product risk; the user's injury is the consequence of the risk, not the trigger for the duty.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "A campfire ring is a manufactured item sold in the commercial chain; it is a 'product' for § 402A and Restatement (Third) purposes.",
+   "lawyer": "Restatement (Second) of Torts § 402A and Restatement (Third) of Torts: Products Liability § 2 apply to all sellers in the commercial chain of a manufactured good. A steel campfire ring is a product; the 'never a product' claim is a categorical exclusion the doctrine does not contain.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "The 'every dangerous product needs a warning' claim is a tiered absolute that asserts an always/only rule with a doctrinal exception. The Gold Key handles the obvious-danger carve-out.",
+   "lawyer": "The open-and-obvious non-duty rule operates as a doctrinal exception to the duty to warn. A manufacturer has no duty to warn of risks that are open, obvious, and commonly understood by ordinary users. Restatement (Second) of Torts § 402A cmt. j; Restatement (Third) of Torts: Products Liability § 2, cmt. f.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "After the misframed injury-claim and the misstated no-product claims are cut, and the tiered-absolute trap is killed by the Gold Key, the residual is the obvious-danger non-duty rule.",
+   "lawyer": "A steel campfire ring whose rim gets hot during use is exactly the kind of product whose ordinary-use risk is open, obvious, and commonly understood. The manufacturer has no duty to warn of that risk; the claim is weak.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-CAMPFIRE-RIM-WARNING-01",
+   "statement": "A manufacturer has no duty to warn of dangers that are open, obvious, and commonly understood by ordinary users of an ordinary product. The doctrine operates as a non-duty rule, not as an affirmative defense: the duty never arises for risks a reasonable user can plainly perceive.",
+   "trigger": "ordinary product, ordinary-use risk, plaintiff sues for failure to warn",
+   "unlocks": "tiered-absolute dominant trap (C)",
+   "authority": "Restatement (Second) of Torts § 402A, cmt. j; Restatement (Third) of Torts: Products Liability § 2, cmt. f"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Open and obvious danger — failure to warn does not arise",
+  "signal": "An ordinary product, an ordinary-use risk, and a plaintiff sues for failure to warn of that exact risk.",
+  "studentMove": "Cut the consequence-instead-of-cause and the categorical-exclusion distractors first. Then apply the Gold Key: open-and-obvious risks never trigger the duty to warn.",
+  "tinyRule": "Open and obvious = no duty to warn.",
+  "trap": "The dominant trap is the 'every dangerous product needs a warning' claim (tiered absolute). It is engineered to look like the safe default; the doctrine carves out the obvious risks."
+ }
+}

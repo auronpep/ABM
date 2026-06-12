@@ -1,0 +1,88 @@
+{
+ "id": "CQ14463",
+ "title": "Calligraphy Supplies",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Performance, Breach, and Discharge",
+ "difficulty": "not_supplied; source_percent_correct=39",
+ "tension": null,
+ "stem": "Ruth, an independent calligrapher who made banners and Scripture-card inserts, turned down a year-long Easter-pageant account after learning that Lydia would send her all of Lydia’s booth-display work for a year. Lydia had promised to do that in a broader deal with Barnabas, Ruth’s brother, who operated a traveling set of Bible-verse projection booths at Christian youth conventions. In that deal, Barnabas promised to buy from Lydia, a merchant seller, all the projector bulbs and portable battery packs his booths required during the year. In the first month, however, Barnabas obtained substantial quantities of those supplies from another supplier. Lydia then told Ruth that Lydia would place no booth-display orders with Ruth.\n\nIn Ruth’s action against Lydia for breach of contract, Ruth probably will:",
+ "call": "In Ruth’s action against Lydia for breach of contract, Ruth probably will",
+ "choices": {
+  "A": "not succeed, because Ruth did not give any consideration for Lydia’s promise to order the banners and inserts.",
+  "B": "not succeed, because Barnabas’s failure to satisfy a constructive condition precedent excused Lydia’s duty to order the banners and inserts from Ruth.",
+  "C": "succeed, because Ruth is a third-party beneficiary of the Barnabas-Lydia contract.",
+  "D": "succeed, because Barnabas was acting as Ruth’s agent when he made the contract with Lydia."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Ruth’s claim depends on Lydia’s promised performance under the Barnabas-Lydia contract. Barnabas’s promise to buy all required bulbs and battery packs from Lydia was part of the exchange supporting Lydia’s promise to send booth-display work to Ruth. When Barnabas bought substantial required supplies from another supplier in the first month, that failed the exchange on which Lydia’s related duty rested.\n\nGold Key: A third-party beneficiary’s claim rises no higher than the underlying contract. If the promisee’s uncured material breach or failed condition prevents the promisor’s related duty from coming due, the beneficiary cannot enforce that duty.\n\nSilver Key: Do not stop at the beneficiary label. When one choice names third-party status and another choice names the contracting party’s failed performance, use the status-vs-defense axis and let the earlier performance fact decide.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "Agency is a wrong-frame answer. The stem gives no agency facts. It says Barnabas made a deal that benefits Ruth; it does not say Barnabas contracted as Ruth’s authorized representative."
+  },
+  {
+   "label": "CUT A",
+   "text": "Ruth’s personal consideration is the wrong element. The answer attacks the beneficiary’s direct exchange, but the promise was supported by Barnabas’s exchange with Lydia."
+  },
+  {
+   "label": "CLASH B vs. C",
+   "text": "C says Ruth’s beneficiary status wins. B says Barnabas’s failed performance blocks Lydia’s duty. The axis is beneficiary status versus contract-level failed-condition defense. The resolving fact is Barnabas’s first-month substantial purchase from another supplier."
+  },
+  {
+   "label": "CALL",
+   "text": "No pure CALL is needed. The CLASH resolves through the Gold Key."
+  }
+ ],
+ "studentScript": "Cut agency. Cut Ruth’s own-consideration answer. Clash beneficiary status against failed condition. Barnabas bought substantial required supplies elsewhere first, so Lydia’s duty to Ruth is excused. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about Ruth’s exchange, but the stem’s exchange is Barnabas-Lydia.",
+   "lawyer": "A third-party beneficiary need not personally furnish consideration; the promisee’s exchange can support the promisor’s promise.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This answer uses the splitting fact: Barnabas failed the exchange first.",
+   "lawyer": "Restatement §§ 237 and 309(2) support the outcome.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer stops at Ruth’s status and ignores the first-month breach fact.",
+   "lawyer": "Even if Ruth is an intended beneficiary, her rights are subject to the underlying failed condition.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The stem never says Barnabas was authorized to contract for Ruth.",
+   "lawyer": "Agency would require authorization/control facts not supplied.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-CALLIGRAPHY-SUPPLIES-01",
+   "statement": "A third-party beneficiary’s claim rises no higher than the underlying contract. If the promisee’s uncured material breach or failed condition prevents the promisor’s related duty from coming due, the beneficiary cannot enforce that duty.",
+   "trigger": "a beneficiary sues the promisor after the promisee failed to perform the exchange that supported the promised benefit",
+   "unlocks": "the status-only third-party-beneficiary trap",
+   "authority": "Restatement (Second) of Contracts §§ 237 and 309(2); UCC § 2-306 for requirements/exclusive-dealing obligations"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-CALLIGRAPHY-SUPPLIES-01",
+   "statement": "Do not stop at the beneficiary label. When one choice names third-party status and another choice names the contracting party’s failed performance, use the status-vs-defense axis and let the earlier performance fact decide.",
+   "trigger": "a third person sues, but the stem spends major space on what the contracting buyer did first",
+   "unlocks": "third-party status answer versus contract-defense answer",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Beneficiary status does not beat a failed condition",
+  "signal": "A nonparty sues on a promised benefit, but the stem emphasizes the promisee’s earlier failed performance.",
+  "studentMove": "Name the status-vs-defense axis before choosing the status answer.",
+  "tinyRule": "Third-party beneficiary rights remain subject to contract-level failed conditions and uncured material breaches.",
+  "trap": "Picking the beneficiary label as if it ends the case."
+ }
+}

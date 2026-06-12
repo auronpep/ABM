@@ -1,0 +1,107 @@
+{
+ "id": "CQ14510",
+ "title": "Ark Puppet Stage",
+ "subject": "Contracts",
+ "topic": "Remedies",
+ "subtopic": "UCC seller remedies",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Timothy ran a for-profit storytelling booth that used Bible-themed puppet sets at county fairs. He ordered from Lydia’s Workshop a new fold-up Noah’s Ark puppet-stage kit. Before the kit arrived, Timothy canceled that part of his business. The kit arrived on the promised date and matched the order exactly. Timothy rejected it and sent it back to Lydia’s Workshop. Lydia’s Workshop sells many such ark kits each year, and its production shop was not operating at full capacity.\n\nIn an action by Lydia’s Workshop against Timothy for breach of contract, which of the following is NOT a proper measure of Lydia’s Workshop’s damages?",
+ "call": "In an action by Lydia’s Workshop against Timothy for breach of contract, which of the following is NOT a proper measure of Lydia’s Workshop’s damages?",
+ "choices": {
+  "A": "The profit Lydia’s Workshop would have made on Timothy’s purchase.",
+  "B": "The contract price of the puppet-stage kit.",
+  "C": "The difference between the contract price and the market price of the puppet-stage kit.",
+  "D": "The difference between the contract price and the price obtained from a proper resale of the puppet-stage kit."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the answer. The call asks for the measure that is NOT proper. The contract price is not an ordinary damages measure here because Timothy rejected the kit and returned it. Lydia’s Workshop is not stuck with goods it cannot resell, and the facts do not say Timothy accepted the goods or that they were lost or damaged after risk shifted.\n\nGold Key: An action for the price is narrow. It needs accepted goods, goods lost or damaged after risk shifted, or identified goods that the seller cannot reasonably resell.\n\nSilver Key: Because the call says NOT, cross out the measures that are proper seller remedies. The remaining measure is the answer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Call lock",
+   "text": "The question asks for the measure that is NOT proper."
+  },
+  {
+   "label": "CUT A",
+   "text": "Lost profit is a proper measure once the unused-capacity/lost-volume fact is recognized. A answers the positive call."
+  },
+  {
+   "label": "CUT C",
+   "text": "Contract-market damages are proper seller damages. C answers the positive call. This is the dominant trap."
+  },
+  {
+   "label": "CUT D",
+   "text": "Proper resale damages are proper seller damages. D answers the positive call."
+  },
+  {
+   "label": "Residual B",
+   "text": "Contract price is the full-price action. The trigger facts for that action are missing. B is the NOT-proper measure."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the anchor-assisted cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Negative-stem inversion plus seller-remedy Gold Keys resolve the item."
+  }
+ ],
+ "studentScript": "NOT proper. Cross out proper seller remedies. Lost profit, market damages, and resale damages are proper. Contract price is the odd one out because the price-action trigger is missing. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Unused capacity points to lost-volume profit; that makes the choice proper, not the answer.",
+   "lawyer": "UCC § 2-708(2) supports lost profit when the ordinary measure is inadequate.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Full contract price is the odd measure after rejected goods are returned.",
+   "lawyer": "UCC § 2-709 does not allow the price on these facts.",
+   "mold": null
+  },
+  "C": {
+   "signal": "A familiar formula is dangerous because the call asks for NOT proper.",
+   "lawyer": "UCC § 2-708(1) supports contract-market damages.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "Returned goods point to resale damages, which makes the choice proper.",
+   "lawyer": "UCC § 2-706 supports proper resale damages.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PRICE-ACTION-01",
+   "statement": "A seller’s action for the price is narrow: accepted goods, goods lost or damaged after risk shifted, or identified goods the seller cannot reasonably resell. Returned, resellable goods usually point away from the contract price.",
+   "trigger": "buyer rejects and returns conforming goods and the seller sues for a full-price remedy",
+   "unlocks": "the contract-price trap",
+   "authority": "UCC § 2-709"
+  },
+  {
+   "id": "GK-CONTRACTS-LOST-VOLUME-02",
+   "statement": "A seller with unused capacity can be a lost-volume seller: resale does not necessarily replace the breached sale, so lost profit can be a proper measure when market damages undercompensate.",
+   "trigger": "seller sells many such goods and was not operating at full capacity",
+   "unlocks": "the lost-profit-is-not-a-damages-measure trap",
+   "authority": "UCC § 2-708(2)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-NEGATIVE-REMEDY-01",
+   "statement": "When the call asks which measure is NOT proper, cross out the measures that are valid seller remedies. The survivor is the remedy whose required trigger is missing.",
+   "trigger": "call asks for a measure that is NOT proper",
+   "unlocks": "negative-stem damages array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Seller remedies: price is the exception",
+  "signal": "Buyer rejects and returns conforming goods.",
+  "studentMove": "On a NOT-proper-measure call, separate price actions from damages formulas.",
+  "tinyRule": "Price requires acceptance, loss/damage after risk passed, or inability to resell.",
+  "trap": "Treating contract price as ordinary expectation damages."
+ }
+}

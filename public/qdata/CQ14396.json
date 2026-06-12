@@ -1,0 +1,88 @@
+{
+ "id": "CQ14396",
+ "title": "Easter Handbell Plan",
+ "subject": "Contracts",
+ "topic": "Defenses to Enforceability",
+ "subtopic": "Public Policy",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia owned an antique set of handbells that she used for neighborhood Easter concerts. She paid Barnabas Protection Plans for a written equipment-protection agreement covering accidental damage to the handbells. The agreement omitted coverage disclosures that a state service-plan statute requires for agreements of that kind. During a Good Friday rehearsal, a riser collapsed and damaged the handbells, a loss covered by the agreement’s stated terms. Barnabas refused payment, arguing that its omission made the agreement unenforceable because the agreement violated the statute.\n\nIs Lydia likely to recover for the loss?",
+ "call": "Is Lydia likely to recover for the loss?",
+ "choices": {
+  "A": "Yes, because the written protection agreement will be strictly construed against Barnabas as the drafter.",
+  "B": "Yes, because Lydia belongs to the class of persons the statute was intended to protect.",
+  "C": "No, because the protection agreement is not a divisible contract.",
+  "D": "No, because the protection agreement violated the statute."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the best answer. The agreement violated a regulatory statute, but the party seeking enforcement is the party the statute was designed to protect. Gold Key: a statutory violation does not automatically let the violating drafter escape the deal; if nonenforcement would injure the protected class, enforcement may serve the statute’s purpose. Silver Key: do not stop at “yes.” In this array, one yes answer gives the right outcome for the wrong reason; the correct answer ties the yes result to enforceability, not interpretation.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A is a yes answer, but it answers a different frame. Strict construction is for interpretation of uncertain language. This call is about enforceability after a statutory defect. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT C",
+   "text": "C invokes divisibility. There is no partial-performance or severability question in the stem. Cut as NOT_RESPONSIVE."
+  },
+  {
+   "label": "CLASH D vs B",
+   "text": "D and B fight on one axis: does the statutory violation itself defeat enforcement, or does the protected-class exception allow enforcement?"
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "Apply the protected-class Gold Key. Lydia is the purchaser whose protection the service-plan statute serves. Barnabas is invoking its own omission. B survives."
+  }
+ ],
+ "studentScript": "Cut A and C as wrong-frame answers. Clash D against B: violation-alone forfeiture versus protected-class enforcement. Use the Gold Key and pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about construing drafted language, but the call asks enforceability after statutory violation.",
+   "lawyer": "Contra proferentem may matter when language is ambiguous; no ambiguity issue is presented.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This answer ties the yes result to the protected party, which is the enforceability axis.",
+   "lawyer": "Public policy does not bar enforcement by the class the statute was designed to protect.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Divisibility has no matching fact in the stem.",
+   "lawyer": "Divisibility is not the enforceability rule for statutory violation/public policy.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The statutory violation is real, but the answer omits the protected-class exception.",
+   "lawyer": "A statutory violation can support unenforceability, but the protected-class exception defeats the no result here.",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PROTECTED-STATUTE-01",
+   "statement": "A statutory violation does not automatically let the violating drafter escape the deal. If the statute was meant to protect the party seeking enforcement, enforcement may serve the statute instead of frustrate it.",
+   "trigger": "one party invokes a contract’s statutory defect against the party the statute protects",
+   "unlocks": "the violation-alone no answer",
+   "authority": "Restatement (Second) of Contracts §§ 178, 198 cmt. b; protected-class public-policy principle"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PROTECTED-STATUTE-01",
+   "statement": "Do not stop at the yes/no outcome. On a right-outcome/wrong-reason pair, ask whether the reason answers enforceability or drifts into interpretation.",
+   "trigger": "two yes answers, one based on protected class and one based on drafter construction",
+   "unlocks": "the dominant right-outcome/wrong-reason trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Protected-class statute beats violation-alone forfeiture",
+  "signal": "The drafter invokes its own statutory omission against the protected buyer.",
+  "studentMove": "Cut wrong-frame answers first, then use the Gold Key on the violation-alone answer.",
+  "tinyRule": "The protected party may enforce when nonenforcement would frustrate the protective statute.",
+  "trap": "Every statutory violation voids the deal."
+ }
+}

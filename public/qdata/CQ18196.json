@@ -1,0 +1,80 @@
+{
+ "id": "CQ18196",
+ "title": "Riverstone Citizenship",
+ "subject": "Civil Procedure",
+ "topic": "Subject Matter Jurisdiction",
+ "subtopic": "Diversity - Corporate Citizenship",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a citizen of Tennessee, sues RiverStone Logistics, Inc., in federal court for $100,000 under state law for breach of a freight-services contract. RiverStone is incorporated in Nevada, but its headquarters and nerve center are in Tennessee. Is complete diversity present?",
+ "call": "Is complete diversity present?",
+ "choices": {
+  "A": "No, because Mary and RiverStone are both Tennessee citizens through RiverStone's principal place of business.",
+  "B": "Yes, because RiverStone is incorporated in Nevada.",
+  "C": "No, but only because the claim is based on state law.",
+  "D": "Yes, because a corporation can have only one citizenship."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Complete diversity is destroyed. The choice is A. Under 28 U.S.C. § 1332(c)(1), a corporation is a citizen of (i) every state by which it has been incorporated and (ii) the state where it has its principal place of business. The Supreme Court has interpreted \"principal place of business\" as the place where the corporation's high-level officers direct, control, and coordinate the corporation's activities — the \"nerve center.\" Hertz Corp. v. Friend, 559 U.S. 77 (2010). Here, RiverStone is incorporated in Nevada and has its nerve center in Tennessee. Mary is a citizen of Tennessee. Mary and RiverStone share Tennessee citizenship through the corporation's principal place of business, destroying complete diversity. Gold Key: a corporation has DUAL citizenship for § 1332 — both the state of incorporation and the state of the nerve center count. The amount in controversy ($100,000) exceeds the $75,000 threshold, and a state-law claim is proper in diversity when § 1332 is otherwise satisfied. Silver Key: when the call asks whether complete diversity is present, run the dual-citizenship check on the corporate defendant first; if the corporation's nerve center is in the plaintiff's home state, diversity is destroyed.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (state-law-claim framing)",
+   "text": "is cut on misframing. A state-law claim is exactly the kind of claim that § 1332 diversity jurisdiction exists to hear, provided the diversity and amount requirements are met. Visible from the stem: \"Mary ... sues RiverStone Logistics, Inc., in federal court for $100,000 under state law\" — the state-law nature of the claim is not a defect; the only defect is the destroyed diversity. The choice is NOT_RESPONSIVE for asserting a no-diversity basis (state-law nature) that is not a defect."
+  },
+  {
+   "label": "D (corporations have only one citizenship)",
+   "text": "is cut on misstated-rule. A corporation has DUAL citizenship under § 1332(c)(1): both its state of incorporation and the state of its principal place of business. Visible from the stem: \"RiverStone is incorporated in Nevada, but its headquarters and nerve center are in Tennessee\" — the stem supplies the dual-citizenship structure. The choice is NOT_TRUE for asserting a categorical exclusion the doctrine does not contain."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: is the destroyed diversity outcome correct (A) or is the incorporation-only citizenship intuition correct (B)? The single axis they fight on is whether the dual-citizenship rule destroys diversity on these facts."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: corporate citizenship is DUAL under § 1332(c)(1), and the principal place of business (nerve center) is also a citizenship. RiverStone is a Nevada citizen AND a Tennessee citizen; Mary is a Tennessee citizen; complete diversity is destroyed. Residual answer: A. A student without the Gold Key is in anchor_gap territory on the A/B axis; the trap is the dominant-trap attractiveness of B, not a structural cut on B."
+  }
+ ],
+ "studentScript": "Step 1: Is the state-law nature of the claim a defect? No — a state-law claim is exactly what § 1332 diversity jurisdiction exists to hear, provided the diversity and amount requirements are met. Cut C. Step 2: Do corporations have only one citizenship? No — § 1332(c)(1) gives corporations DUAL citizenship: state of incorporation AND state of principal place of business. Cut D. Step 3: Is the destroyed diversity outcome correct? Gold Key: corporate citizenship is dual; the principal place of business (nerve center) is also a citizenship. RiverStone is a Nevada citizen AND a Tennessee citizen; Mary is a Tennessee citizen; complete diversity is destroyed. Silver Key: when the call asks whether complete diversity is present, run the dual-citizenship check on the corporate defendant first. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the misframed state-law-claim and the misstated one-citizenship claims are cut, and the half-truth trap is killed by the Gold Key, the residual is the dual-citizenship rule that destroys complete diversity.",
+   "lawyer": "A corporation is a citizen of both its state of incorporation and the state of its principal place of business. 28 U.S.C. § 1332(c)(1); Hertz Corp. v. Friend, 559 U.S. 77 (2010). The plaintiff and the corporation share Tennessee citizenship; complete diversity is destroyed.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The 'incorporation is the citizenship' claim is a half-truth: it correctly notes the incorporation state but skips the principal place of business. The Gold Key handles the dual-citizenship carve-out.",
+   "lawyer": "A corporation has DUAL citizenship under § 1332(c)(1). The state of incorporation is one citizenship; the state of the principal place of business (nerve center) is the other. The half-truth skips the second citizenship and so reaches the wrong answer.",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "A state-law claim is exactly the kind of claim that § 1332 diversity jurisdiction exists to hear, provided the diversity and amount requirements are met. The state-law nature of the claim is not a defect.",
+   "lawyer": "A state-law claim is proper in diversity when § 1332 is otherwise satisfied. The amount in controversy is $100,000 (above $75,000), and the only defect is the destroyed diversity — not the state-law nature of the claim.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "A corporation has DUAL citizenship under § 1332(c)(1): both its state of incorporation and the state of its principal place of business.",
+   "lawyer": "28 U.S.C. § 1332(c)(1) provides that a corporation is a citizen of every state by which it has been incorporated AND of the state where it has its principal place of business. The 'only one citizenship' claim is a categorical exclusion the doctrine does not contain.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-RIVERSTONE-CITIZENSHIP-01",
+   "statement": "A corporation is a citizen of BOTH its state of incorporation AND the state of its principal place of business (nerve center) for purposes of 28 U.S.C. § 1332. The plaintiff and the corporation cannot both be citizens of the same state for complete diversity to be present.",
+   "trigger": "corporate defendant with dual-citizenship structure; plaintiff shares one of the corporate citizenships",
+   "unlocks": "half-truth dominant trap (B)",
+   "authority": "28 U.S.C. § 1332(c)(1); Hertz Corp. v. Friend, 559 U.S. 77 (2010)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Corporate citizenship — dual citizenship for § 1332",
+  "signal": "A corporate defendant is incorporated in one state and has its nerve center in the plaintiff's home state; amount in controversy exceeds $75,000; claim is state-law.",
+  "studentMove": "Cut the state-law-claim framing and the one-citizenship misstatement first. Then apply the Gold Key: corporate citizenship is dual, and the principal place of business is also a citizenship.",
+  "tinyRule": "Corporation = state of incorporation + state of nerve center (PPB). Both must differ from every plaintiff's citizenship for complete diversity.",
+  "trap": "The dominant trap is the 'incorporation is the only citizenship' half-truth. It sounds correct on its face and is the most attractive wrong answer for students who half-remember the incorporation rule."
+ }
+}

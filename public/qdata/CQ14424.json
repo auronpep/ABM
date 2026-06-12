@@ -1,0 +1,84 @@
+{
+ "id": "CQ14424",
+ "title": "Christmas Pageant Lantern Bid",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Promissory Estoppel",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Esther, a general event contractor, was preparing a sealed bid for Lydia’s private Christmas Pageant Pavilion. Paul, a lighting installer, sent Esther this signed email:\n\nWill install all overhead lantern trusses and speaker wiring for the pavilion, per Lydia’s specifications, for $32,000 if you accept within a reasonable time after the prime contract is awarded.\n/s/ Paul\n\nRuth, Stephen, and Barnabas sent similar sub-bids of $40,000, $42,000, and $44,000. Esther used Paul’s $32,000 figure in preparing and submitting her own sealed bid to Lydia. Before the bids were opened, Paul truthfully told Esther that his sub-bid had been based on an $8,000 computational error and was therefore revoked. Shortly afterward, Lydia awarded Esther the pavilion contract. Esther then contracted with Ruth to do the lighting work for $40,000. Esther sues Paul to recover $8,000.\n\nWhich of the following, if proved, would most strengthen Esther’s prospect of recovery?",
+ "call": "Which of the following, if proved, would most strengthen Esther's prospect of recovery?",
+ "choices": {
+  "A": "Paul was negligent in erroneously calculating the amount of his sub-bid.",
+  "B": "After Paul's notice of revocation, Esther made a reasonable effort to subcontract with another lighting installer at the lowest possible price.",
+  "C": "Lydia had required Esther to submit a bid bond, and Esther could not have withdrawn or amended her prime bid without forfeiting that bond.",
+  "D": "Esther dealt with all of her subcontractors in good faith and without seeking to renegotiate lower prices they had bid."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C most strengthens Esther’s recovery.\n\nGold Key: A subcontractor’s bid can become temporarily irrevocable when the subcontractor should expect the general contractor to rely on it in a prime bid and the contractor is locked into that reliance before acceptance.\n\nSilver Key: In a “most strengthens recovery” array, pick the fact that supplies the missing legal link. C supplies that link. The bid bond means Esther could not withdraw or amend her own prime bid without a real forfeiture. That makes her use of Paul’s bid a locked-in reliance fact, not just a business inconvenience.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "Use the Gold Key first. The needed fact is not “who behaved well later” or “who made the mistake.” The needed fact is “why the sub-bid was temporarily irrevocable.”\n\n* A cuts as NOT_RESPONSIVE / wrong_element. It proves fault, not lock-in reliance.\n* B cuts as NOT_RESPONSIVE / wrong_element. It proves mitigation, not temporary irrevocability.\n* D cuts as NOT_RESPONSIVE / wrong_element. It proves general fair dealing, not the legal lock-in fact."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two true-and-responsive choices remain after the anchor-assisted cut. The apparent tension is “collateral helpful fact” versus “missing legal link.”"
+  },
+  {
+   "label": "CALL",
+   "text": "C is the residual. It gives the bid bond and no-withdrawal fact."
+  }
+ ],
+ "studentScript": "C. I need the fact that makes the sub-bid stay open. Bid bond plus no withdrawal is the lock-in fact; mitigation, negligence, and general good faith do not create the recovery right.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A talks about Paul's math fault; it does not show Esther was trapped in her own bid before acceptance.",
+   "lawyer": "Negligent calculation does not by itself establish the temporary irrevocability of the sub-bid under reliance doctrine.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "B happens after revocation and helps the substitute-price story; it does not explain why Paul's offer stayed open.",
+   "lawyer": "Mitigation can bear on damages amount, but the key liability issue is whether reliance made the sub-bid temporarily irrevocable.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "C supplies the missing bridge; Esther could not undo the prime bid without forfeiting the bond.",
+   "lawyer": "The bid bond/no-withdrawal fact supports substantial reliance and injustice, making the sub-bid temporarily irrevocable.",
+   "mold": null
+  },
+  "D": {
+   "signal": "D shows clean dealing in general; it still does not show Esther was bound to her prime bid when Paul revoked.",
+   "lawyer": "No bid shopping may prevent a separate unfairness objection, but it is not the strongest fact proving temporary irrevocability.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-SUB_BID_LOCKIN-01",
+   "statement": "A subcontractor bid can become temporarily irrevocable when the subcontractor should expect the general contractor to rely on it in a prime bid and the contractor is locked into that reliance before acceptance.",
+   "trigger": "A low subcontractor bid is used in a sealed prime bid, then the subcontractor revokes before the prime contract is awarded.",
+   "unlocks": "The bid-bond fact supplies the missing lock-in link; mitigation, fault, and general good faith do not.",
+   "authority": "Restatement (Second) of Contracts §87(2); Drennan v. Star Paving Co., 51 Cal. 2d 409 (1958)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-SUB_BID_LOCKIN-01",
+   "statement": "On a 'most strengthens recovery' array, first identify the missing legal link. A fact that locks the claimant into reliance beats facts about later mitigation, fault, or general fairness.",
+   "trigger": "The choices are all helpful-sounding facts, but only one explains why the revoked offer stayed open.",
+   "unlocks": "The array tempts students to pick the responsible damages fact instead of the fact that creates the right to recover.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Sub-bid recovery needs lock-in reliance",
+  "signal": "Low sub-bid used in prime bid, then revoked before award.",
+  "studentMove": "Find the fact that shows the general contractor was locked into the prime bid.",
+  "tinyRule": "Lock-in beats mitigation.",
+  "trap": null
+ }
+}

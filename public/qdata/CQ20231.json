@@ -1,0 +1,92 @@
+{
+ "id": "CQ20231",
+ "title": "Crown Above Caesars",
+ "subject": "Constitutional Law",
+ "topic": "First Amendment Religion",
+ "subtopic": "Free Exercise Clause",
+ "difficulty": "moderate-anchor",
+ "tension": null,
+ "stem": "During a private Bible-study art class in a rented storefront, Esther teaches a creed she calls “Crown Above Caesars”: that Christ’s authority is higher than any earthly government. A state statute makes it a misdemeanor to hold or teach that creed. After charging Esther, the state argues that because it may regulate unlawful acts committed by people who invoke the creed, it may also forbid the creed itself.\n\nWhat is the best constitutional response?",
+ "call": "What is the best constitutional response?",
+ "choices": {
+  "A": "The law is invalid only if it also violates the Establishment Clause.",
+  "B": "The law is valid if the state has a rational basis for deterring unlawful acts committed under the creed.",
+  "C": "The law is unconstitutional because the government may not punish religious belief as such.",
+  "D": "The law is valid because the Free Exercise Clause protects only formal church organizations."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: Free Exercise draws a hard line between religious belief as such and religiously motivated conduct. The state may sometimes regulate conduct, but this statute reaches the creed itself: it criminalizes holding or teaching the belief. Silver Key: Lock the object of the statute before reading the choices. If the statute punishes belief, an answer about unlawful acts is answering the adjacent conduct question.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — Establishment-only overclaim",
+   "text": "The word only makes the answer too narrow. The call asks for the best constitutional response to punishment of belief; Free Exercise can do that work without an Establishment Clause violation."
+  },
+  {
+   "label": "CUT B — conduct-switch bait",
+   "text": "B talks about deterring unlawful acts. The stem says the statute criminalizes holding or teaching a creed. That is the adjacent conduct question, not the belief-punishment question."
+  },
+  {
+   "label": "CUT D — church-only overclaim",
+   "text": "D narrows Free Exercise protection to formal church organizations. The stem concerns Esther, an individual, and the answer over-restricts the protected category."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two-answer clash remains after the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "No Call needed. Residual answer: C."
+  }
+ ],
+ "studentScript": "The statute punishes holding or teaching a creed. B talks conduct, A talks Establishment-only, and D says churches-only. C is the residual.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer adds an only-if gate not in the call.",
+   "lawyer": "Free Exercise independently bars governmental punishment of religious belief as such; an Establishment Clause violation is not required.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The answer talks about unlawful acts, but the statute punishes holding or teaching the creed.",
+   "lawyer": "The conduct-regulation principle is separate; the statute targets belief/profession, so rational-basis conduct reasoning does not save it.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This answer matches the object of the statute: holding or teaching the creed.",
+   "lawyer": "Religious belief and profession receive absolute protection from punishment as belief; conduct is analyzed separately.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The word only narrows protection to institutions even though the stem concerns an individual belief.",
+   "lawyer": "Free Exercise protection is not limited to formal churches; the individual believer/professor is within the protected lane.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONLAW-BELIEF-CONDUCT-01",
+   "statement": "Free Exercise protects religious belief and profession as such. Conduct inspired by belief is a separate lane and may be regulated under the applicable constitutional standard.",
+   "trigger": "A statute punishes holding, teaching, professing, or affirming a religious belief.",
+   "unlocks": "The conduct-vs-belief trap and the church-only overclaim.",
+   "authority": "Reynolds v. United States; Cantwell v. Connecticut; Employment Division v. Smith."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONLAW-BELIEF-CONDUCT-01",
+   "statement": "First lock the object of the law: belief/teaching or conduct. If the answer changes the object from belief to unlawful acts, cut it as the adjacent-call answer.",
+   "trigger": "Stem says hold or teach, while an answer says unlawful acts or conduct.",
+   "unlocks": "Wrong-frame conduct bait.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Belief lane vs conduct lane",
+  "signal": "A religion question says the state punishes holding, teaching, professing, or affirming a belief.",
+  "studentMove": "Cut answers that switch to conduct, churches only, or a different Religion Clause.",
+  "tinyRule": "Belief as such is protected; conduct is separate.",
+  "trap": "The state justifies a belief ban by pointing to regulable conduct."
+ }
+}

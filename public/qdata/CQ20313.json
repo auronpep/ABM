@@ -1,0 +1,95 @@
+{
+ "id": "CQ20313",
+ "title": "Bethlehem Olivewood Crosses",
+ "subject": "Evidence",
+ "topic": "III.B.5 — Attorney-client",
+ "subtopic": "Attorney-client privilege / crime-fraud boundary",
+ "difficulty": "Discriminator",
+ "tension": null,
+ "stem": "Source row transformed: BARMATRIX Q#20313, Evidence, Attorney-client privilege, crime-fraud boundary.\n\nFinal Christian variation:\n\nLydia runs a small Bible-study gift cart at weekend retreats. Before selling a shipment of wooden crosses, she privately told her lawyer, Paul, “I am thinking about advertising these as carved from Bethlehem olivewood. Would that be legal? If that would be fraudulent, I will not use that description.” Paul researched the law and advised Lydia not to use the description.\n\nCall: Are Lydia’s communications protected by attorney-client privilege?",
+ "call": "Are Lydia’s communications protected by attorney-client privilege?",
+ "choices": {
+  "A": "Yes, but only if the customers later fail to prove substantial need for the communications.",
+  "B": "No, because any discussion of a potentially fraudulent advertisement triggers the crime-fraud exception.",
+  "C": "Yes, because she sought confidential legal advice to determine and avoid unlawful conduct, not to further a fraud.",
+  "D": "No, because Paul ultimately advised against the advertisement."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Lydia was not asking Paul to help her carry out a fraud. She was asking whether the planned description would be lawful and stated that she would not use it if it was fraudulent. That makes the communication compliance-seeking legal advice.\n\nGold Key: Crime-fraud is purpose-based, not topic-based. A suspicious topic does not defeat privilege unless the client is using legal advice to commit, continue, or cover up a crime or fraud.\n\nSilver Key: Do not stop at the word “fraud.” Name the axis: compliance advice versus abuse of legal advice. Lydia’s “if fraudulent, I will not do it” statement puts the communication on the compliance side.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Substantial need” is a real phrase, but it answers a different protection problem. This is wrong-frame / bait-doctrine."
+  },
+  {
+   "label": "CLASH B vs C",
+   "text": "Axis = suspicious fraud topic versus purpose to seek compliance advice. The fact “If that would be fraudulent, I will not use that description” resolves the axis for C."
+  },
+  {
+   "label": "CUT D",
+   "text": "D points the lawyer’s advice the wrong way. Advice against the act supports compliance, not loss of privilege."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the Gold Key resolves the B/C clash."
+  }
+ ],
+ "studentScript": "Call is privilege. Cut A because substantial need is the wrong protection. B and C fight on purpose: fraud-topic automatic exception versus compliance advice. The stem says she will not use the description if fraudulent. Keep C. Cut D because advice against the act points toward compliance.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer imports substantial need, a neighboring discovery-protection idea, into an attorney-client privilege call.",
+   "lawyer": "Substantial need is associated with work-product doctrine; it is not the override test for attorney-client communications.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The word 'any' makes suspicious subject matter an automatic exception.",
+   "lawyer": "Crime-fraud requires a communication made to further crime or fraud; asking how to avoid illegality is not enough.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "This choice answers the exact privilege call and tracks the compliance-advice fact.",
+   "lawyer": "The communication is privileged because the client sought legal advice to determine legality and avoid fraud.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The answer treats advice against the act as privilege-destroying, but that fact points toward compliance advice.",
+   "lawyer": "A lawyer’s advice not to proceed does not defeat privilege; it supports the conclusion that the advice was not used to further fraud.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-CRIME-FRAUD-01",
+   "statement": "Crime-fraud is purpose-based, not topic-based: privilege fails only when legal advice is sought to commit, continue, or cover up crime or fraud.",
+   "trigger": "Client asks whether planned conduct would be fraudulent and says she will not do it if unlawful.",
+   "unlocks": "The 'any discussion of fraud' trap.",
+   "authority": "FRE 501 common law; United States v. Zolin; Clark v. United States."
+  },
+  {
+   "id": "GK-EVIDENCE-WORKPRODUCT-DISTINCTION-01",
+   "statement": "Substantial need is a work-product concept; it is not the test for overriding attorney-client communications.",
+   "trigger": "A privilege answer says 'substantial need.'",
+   "unlocks": "The substantial-need privilege confusion.",
+   "authority": "Federal privilege and work-product doctrine distinction."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-CRIME-FRAUD-01",
+   "statement": "When a privilege answer says 'fraud,' do not stop at the topic. Name the axis: compliance advice versus using the lawyer to further fraud.",
+   "trigger": "Client says she will not proceed if the conduct is fraudulent.",
+   "unlocks": "B/C fight pair",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Purpose beats suspicious topic",
+  "signal": "Client asks whether a proposed act would be fraudulent.",
+  "studentMove": "Ask whether the client is seeking compliance advice or help carrying out wrongdoing.",
+  "tinyRule": "Crime-fraud needs furtherance; compliance advice remains privileged.",
+  "trap": "Fraud word = automatic exception."
+ }
+}

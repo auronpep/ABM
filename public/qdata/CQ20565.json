@@ -1,0 +1,96 @@
+{
+ "id": "CQ20565",
+ "title": "Purple Gear Hymnbook Tote",
+ "subject": "Evidence",
+ "topic": "Laying a Foundation",
+ "subtopic": "II.B",
+ "difficulty": "Core",
+ "tension": null,
+ "stem": "In a federal products-liability action over a battery-powered fog machine used in a private Christmas pageant, Lydia offers a cracked purple plastic gear that Stephen found three weeks later inside a hymnbook tote at Martha’s rented banquet hall. Stephen did not see it come from the fog machine; no witness recognizes it; no logo, serial number, or marking ties it to the fog machine; and no evidence shows how it got into the tote. Lydia says the jury can decide what to make of it. The manufacturer objects. How should the court rule?",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Admit the gear because the manufacturer can argue about its weight.",
+  "B": "Exclude the gear because there is no evidence sufficient to support a finding that it is connected to the fog machine or the accident.",
+  "C": "Exclude the gear only if the manufacturer proves it came from some other device.",
+  "D": "Admit the gear because any physical object may be considered by the jury."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The gear is offered as if it is connected to the fog machine or the pageant accident, but the stem gives no identifying witness, no recognizable marking, and no circumstance tying the gear to that product or event. Gold Key: A physical object needs a threshold link before the jury can consider it as case evidence. Silver Key: Gate before weight; the jury does not weigh an object that has not crossed the foundation gate.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "“Any physical object” is the tell. The answer overclaims. It says too much."
+  },
+  {
+   "label": "CUT A",
+   "text": "The choice answers the later weight question. The stem is at the earlier foundation gate. No link means no weight stage."
+  },
+  {
+   "label": "CUT C",
+   "text": "The choice points the burden the wrong way. The offering party must supply the connection; the opponent does not have to disprove it."
+  },
+  {
+   "label": "Residual B",
+   "text": "B alone matches the call and the trigger facts. It excludes because the object has no threshold connection."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed. One answer survives the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed. The Gold Key confirms the threshold gate."
+  }
+ ],
+ "studentScript": "Call is admissibility. The object has no witness, no marking, and no source link. Cut any-object. Cut weight-before-gate. Cut burden-reversal. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer talks about weight after admissibility; the stem is still missing the threshold link.",
+   "lawyer": "Weight arguments are available only after a sufficient foundation supports admissibility.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This answer uses the missing-link facts and answers the objection.",
+   "lawyer": "FRE 901(a) and conditional relevance principles require evidence sufficient to support a finding of the claimed identity or connection.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer says the opponent must disprove a connection before exclusion.",
+   "lawyer": "The proponent bears the foundation burden; the opponent need not prove another source.",
+   "mold": "backwards"
+  },
+  "D": {
+   "signal": "The word 'any' erases the foundation gate.",
+   "lawyer": "Physical evidence must still satisfy relevance and authentication/foundation requirements.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-FOUNDATION-GATE-01",
+   "statement": "A physical object does not reach the jury on 'maybe.' The proponent must first supply some link supporting a finding that the object is what it claims or is connected to the case.",
+   "trigger": "An object is offered, but the stem gives no identifying witness, no marks, and no source facts.",
+   "unlocks": "foundation-vs-weight trap for unidentified objects",
+   "authority": "FRE 901(a); FRE 104(b)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-FOUNDATION-GATE-01",
+   "statement": "When a choice says the jury can weigh it, first ask whether the item crossed the foundation gate. No gate, no weight.",
+   "trigger": "The proponent says the jury can decide what to make of an unidentified object.",
+   "unlocks": "weight-versus-foundation trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Gate Before Weight",
+  "signal": "Unidentified object; no witness; no marking; no chain/source fact.",
+  "studentMove": "Cut weight arguments until a threshold link exists.",
+  "tinyRule": "A jury weighs weak evidence; it does not supply the first connection.",
+  "trap": "Let the jury decide."
+ }
+}

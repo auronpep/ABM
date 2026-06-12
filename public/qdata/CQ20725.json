@@ -1,0 +1,100 @@
+{
+ "id": "CQ20725",
+ "title": "Emmaus Laser Cutter",
+ "subject": "Torts",
+ "topic": "Business torts",
+ "subtopic": "Negligent misrepresentation",
+ "difficulty": "moderate-hard",
+ "tension": null,
+ "stem": "Paul owned a small private company, Emmaus Games, that made Bible-themed board games. To decide whether to buy a used industrial laser cutter from Paul, Ruth asked for an inspection report. Paul hired Daniel, a professional equipment inspector, and told him that the report would be sent to Ruth for that purchase. Daniel prepared a report stating that the laser cutter had no major functional defects, but he carelessly failed to include that its control board was failing. Ruth reasonably relied on the report, bought the cutter, and lost money when it broke down soon after.\n\nCall: Is Ruth likely to prevail on a negligent misrepresentation claim against Daniel?\n\nSource row: the original item is BARMATRIX Q#20725, Torts, negligent misrepresentation, with official answer B and the rule reference that negligent misrepresentation may impose liability on a professional information supplier to a known limited class expected to rely on the information.",
+ "call": "Is Ruth likely to prevail on a negligent misrepresentation claim against Daniel?",
+ "choices": {
+  "A": "Yes, because negligent misrepresentation reaches every foreseeable purchaser who might later read the inspection report.",
+  "B": "No, because Ruth was not in contract with Daniel.",
+  "C": "No, because negligent misrepresentation requires Daniel to have known the control-board statement was false.",
+  "D": "Yes, because Daniel supplied false information for a known buyer's reliance in a business transaction."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Daniel is a professional information supplier. He prepared an inspection report for a business transaction, knew that Ruth was the named person who would receive and rely on it, carelessly supplied false information, and Ruth suffered a reliance loss.\n\nGold Key: In negligent misrepresentation, contract privity is not required when the plaintiff is the known person, or one of a limited known group, expected to rely on professional business information.\n\nSilver Key: Bracket the answer array. “No contract” is too narrow. “Every foreseeable purchaser” is too broad. The named-recipient answer is the middle lane.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“every foreseeable purchaser” is an overclaim. It over-expands the class."
+  },
+  {
+   "label": "CUT C",
+   "text": "“requires knowledge” conflicts with the negligent/careless frame."
+  },
+  {
+   "label": "CUT B",
+   "text": "not structurally visible without the Gold Key. The Gold Key cuts the privity trap."
+  },
+  {
+   "label": "Residual",
+   "text": "D."
+  },
+  {
+   "label": "Deciding phase",
+   "text": "CUT with anchor assistance."
+  },
+  {
+   "label": "Verdict",
+   "text": "ANCHOR_SOLVE."
+  },
+  {
+   "label": "Bank validation",
+   "text": "PASS."
+  }
+ ],
+ "studentScript": "Call: negligent misrepresentation. Facts: professional report, named buyer, careless false information, reliance loss. Cut every foreseeable as too broad, cut knowledge as the wrong mental state, use the Gold Key to cut no contract, pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer says every foreseeable purchaser, which is an absolute class-expander.",
+   "lawyer": "Negligent misrepresentation liability for professional information is limited to the known person or limited group expected to rely, not every foreseeable later reader.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This cannot be killed by pure structure. Use the Gold Key: known recipient can be enough without contract privity.",
+   "lawyer": "Restatement §552 does not require contract privity for a person or limited group the professional knows will rely in the intended transaction.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "The call says negligent misrepresentation and the stem says carelessly. Requiring knowledge points to the wrong mental-state frame.",
+   "lawyer": "Knowledge of falsity is associated with intentional or fraudulent misrepresentation, while negligent misrepresentation turns on failure to use reasonable care in supplying information.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "It answers the call using the named-recipient fact and the reliance transaction.",
+   "lawyer": "Daniel supplied false information in his professional role for Ruth's known reliance in the purchase, causing pecuniary loss.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-KNOWN-RECIPIENT-01",
+   "statement": "For negligent misrepresentation by a professional information supplier, no contract privity is required when the plaintiff is the known person, or one of a limited known group, expected to rely on the information in the transaction.",
+   "trigger": "professional report + named recipient or limited known group + business reliance",
+   "unlocks": "no-contract trap and every-foreseeable overreach",
+   "authority": "Restatement (Second) of Torts §552; Private Mortgage Investment Services, Inc. v. Hotel & Club Associates, Inc."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-BRACKET-CLASS-01",
+   "statement": "When the array swings from no contract to every foreseeable reader, bracket both extremes and look for the named-recipient middle lane.",
+   "trigger": "choices include no contract, every foreseeable, and named-recipient reliance",
+   "unlocks": "known-recipient duty boundary",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Known recipient, not no one and not everyone",
+  "signal": "Professional report prepared for a named recipient's business reliance.",
+  "studentMove": "Cut the extremes: no-contract is too narrow; every-foreseeable is too broad.",
+  "tinyRule": "Known recipient or limited known group can recover for careless false business information.",
+  "trap": "Students choose either strict privity or unlimited foreseeability."
+ }
+}

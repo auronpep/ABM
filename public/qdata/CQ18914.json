@@ -1,0 +1,80 @@
+{
+ "id": "CQ18914",
+ "title": "Rare Bible Provenance",
+ "subject": "Torts",
+ "topic": "Economic torts",
+ "subtopic": "Fraud - reliance",
+ "difficulty": "Core",
+ "tension": null,
+ "stem": "Esther, a retired Christian schoolteacher in New England who had been quietly selling down her late husband's collection of antique books, orally told Daniel, a seminary student and serious Bible collector, that a 1699 Geneva Bible she was offering had \"all of its original pages.\" Before paying, Daniel received in the mail an unsigned single-page provenance letter from a well-known third-party biblical-authentication firm; the letter was printed on firm letterhead and plainly stated on its first page: \"PAGES 412-448 WERE REPLACED IN 1948; REMAINDER OF VOLUME CONSISTENT WITH 1699 ISSUE.\" Daniel did not read the letter. He paid Esther $4,800 for the Bible, later noticed the replaced pages, and now sues Esther for fraud.\n\nWhat is Esther's strongest defense?",
+ "call": "What is Esther's strongest defense?",
+ "choices": {
+  "A": "The buyer may lack justifiable reliance because the provenance letter plainly contradicted the oral statement.",
+  "B": "The buyer automatically wins because oral assurances always override written provenance in tort.",
+  "C": "The seller made no factual statement because the originality of Bible pages is always opinion.",
+  "D": "Fraud does not require reliance if the seller's statement was intentional."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Esther's strongest defense is the buyer may lack justifiable reliance because the provenance letter plainly contradicted the oral statement. The tort of fraud (also called intentional misrepresentation) requires the plaintiff to prove, among other elements, justifiable reliance on the defendant's misrepresentation. Justifiable reliance is measured against the information reasonably available to the plaintiff at the time of the transaction; a plaintiff who ignores an obvious, plainly-worded contradiction in materials received before the sale may have crossed the line from reliance into \"willful blindness\" — a fact-finder can treat the contradiction as a warning the plaintiff was required to heed. The provenance letter Daniel received is the textbook example of a plainly-worded, on-its-face contradiction: the letter was delivered before payment, was printed on letterhead from a recognized authentication firm, and on its first page said that specific pages had been replaced — exactly what Esther's oral \"all original pages\" assurance contradicted. A reasonable buyer in Daniel's position would have read the letter (or at least the first page) before paying $4,800. Gold Key: justifiable reliance is defeated when the plaintiff ignores an obvious, plainly-worded contradiction in materials provided before the transaction. Silver Key: lock the call to the seller's strongest defense — that is the lack-of-reliance defense, not the opinion defense or the no-reliance defense.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (fraud does not require reliance if intentional)",
+   "text": "is cut on a flat misstatement of the elements. Reliance is an independent element of fraud, even when the defendant's scienter is established. Visible from the stem: Daniel is suing for fraud, and the elements of fraud (including reliance) are in play. The choice is NOT_TRUE for misstating the elements of the cause of action."
+  },
+  {
+   "label": "B (oral always overrides written)",
+   "text": "is cut on wrong frame. The call is the seller's defense in a tort fraud case; the \"oral overrides written\" trope is a private-law contract doctrine that does not control the reliance analysis in tort. Visible from the call: the suit is for \"fraud,\" not for breach of contract. The choice is NOT_RESPONSIVE for imposing a contract-law frame on a tort claim."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: does Esther's strongest defense come from the lack-of-reliance on the contradicted oral statement (A), or from the fact/opinion distinction (C)? The single axis they fight on is which doctrine most cleanly defeats Daniel's fraud claim on these facts."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: the provenance letter was a plainly-worded, pre-sale written contradiction of the oral assurance; ignoring such an obvious contradiction can defeat justifiable reliance as a matter of law. The fact/opinion distinction does not apply because page originality in a specific book is a verifiable fact, not an opinion. → A. A student without the Gold Key is in anchor_gap territory on the reliance element; the trap is the dominant-trap attractiveness of C's \"always opinion\" framing, not a structural cut."
+  }
+ ],
+ "studentScript": "The call asks for Esther's strongest defense in a fraud suit. B is a wrong-frame contract trope — the suit is in tort, and the parol-evidence-style 'oral overrides written' framing does not control the reliance analysis. D is a flat misstatement of the elements — reliance is independent of scienter. C is the fact/opinion confusion trap — page originality in a specific book is a verifiable historical fact, not an opinion. The Gold Key controls: a buyer who ignores a plainly-worded, pre-sale written contradiction of an oral assurance can have his reliance defeated as a matter of law. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The provenance letter is a plainly-worded, pre-sale written contradiction of the oral assurance. Ignoring an obvious contradiction can defeat justifiable reliance as a matter of law.",
+   "lawyer": "Restatement (Second) of Torts § 525 (fraud requires, among other elements, justifiable reliance); § 545A and comments (reliance is unreasonable when the plaintiff had the means of ascertaining the truth); Prosser & Keeton, The Law of Torts § 108 (reliance on an obvious written contradiction can be unjustified as a matter of law).",
+   "mold": null
+  },
+  "B": {
+   "signal": "The suit is for fraud (tort), not for breach of contract. The 'oral overrides written' trope is a private-law contract doctrine that does not control the reliance analysis in tort.",
+   "lawyer": "The parol evidence rule and the 'oral overrides written' framing are private-law contract doctrines. The relevant question in a tort fraud case is what a reasonable buyer would have noticed, not which version of a statement 'wins' as a matter of form.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "Page originality in a specific copy of a specific book is a verifiable historical fact, not a value judgment or prediction. The 'always opinion' framing is the tell.",
+   "lawyer": "Restatement (Second) of Torts §§ 538-539. A statement is one of opinion when it expresses a judgment about a matter on which the maker has special knowledge but where the underlying fact is not verifiable. Page originality in a specific book is verifiable.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "Reliance is an independent element of fraud. Proving the defendant's scienter does not waive the reliance requirement.",
+   "lawyer": "Restatement (Second) of Torts § 525. The plaintiff must prove all elements of fraud, including reliance, regardless of whether the defendant's intent is also proved.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-RARE-BIBLE-PROVENANCE-01",
+   "statement": "Justifiable reliance is defeated when the plaintiff ignores an obvious, plainly-worded contradiction in materials provided before the transaction.",
+   "trigger": "fraud suit, pre-sale written document plainly contradicts the oral assurance, plaintiff did not read the document",
+   "unlocks": "the fact/opinion confusion trap and the no-reliance-element misstatement",
+   "authority": "Restatement (Second) of Torts § 525; § 545A and comments; Prosser & Keeton, The Law of Torts § 108"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Fraud requires justifiable reliance; reliance is defeated by ignoring an obvious contradiction",
+  "signal": "Fraud suit, pre-sale written document plainly contradicts the oral assurance, plaintiff did not read the document.",
+  "studentMove": "Cut the private-law contract trope (oral overrides written), the no-reliance-element misstatement, and the fact/opinion confusion. Apply the Gold Key: ignoring an obvious, plainly-worded contradiction can defeat justifiable reliance as a matter of law.",
+  "tinyRule": "Justifiable reliance is a flexible reasonableness standard; reliance on an obvious written contradiction of an oral assurance is not justified.",
+  "trap": "The dominant trap is the fact/opinion confusion: the student treats a verifiable historical fact (page replacement) as if it were a value judgment or connoisseur's opinion. The other strong trap is the private-law contract trope (oral overrides written)."
+ }
+}

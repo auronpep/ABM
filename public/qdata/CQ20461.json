@@ -1,0 +1,88 @@
+{
+ "id": "CQ20461",
+ "title": "Lydia Beeswax Requirements",
+ "subject": "Contracts",
+ "topic": "Offer / valid offer requirements",
+ "subtopic": "II.A.1.a",
+ "difficulty": "Trap",
+ "tension": null,
+ "stem": "Barnabas Wax Co. promptly accepted a signed email from Lydia, who runs a Bible-verse candle studio. The email said: “I offer to buy all the beeswax my studio requires for the next nine months at $18 per slab, shipment every other Friday.” Lydia later asserted that no contract had formed because the email did not list a fixed number of slabs.\n\nWhich statement is most accurate?",
+ "call": "Which statement is most accurate?",
+ "choices": {
+  "A": "No contract formed unless the court finds $18 per slab was an adequate price.",
+  "B": "A contract can form because the quantity is measured by Lydia’s good-faith requirements.",
+  "C": "No contract formed because the email was only a price quote.",
+  "D": "No contract formed because a requirements quantity is always too indefinite and illusory."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Gold Key: a requirements quantity is not an empty quantity; it is measured by the buyer’s actual good-faith requirements. Silver Key: in a 3-vs-1 no-contract array, do not let “no fixed number” erase a quantity phrase that the stem already gives you. Lydia’s email gives a price, a delivery schedule, goods, duration, and the quantity formula: all beeswax the studio requires. That can support contract formation.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Adequate price” is a fabricated formation gate. This needs the consideration-adequacy anchor; without it, keep the doctrine under lawyer confirmation."
+  },
+  {
+   "label": "CUT C",
+   "text": "The choice answers the wrong frame. The stem says buyer’s offer plus acceptance; the call asks about the no-fixed-number attack."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Always” is the visible overclaim. Requirements terms are exactly the category that makes the absolute suspicious."
+  },
+  {
+   "label": "Residual",
+   "text": "B remains. No CLASH or CALL needed."
+  }
+ ],
+ "studentScript": "Call: most accurate statement. Fixed-number attack. Cut D for always. Cut A with adequacy anchor. Cut C because price quote is the wrong frame. Gold Key: requirements quantity counts by good faith. B remains.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice makes court price-adequacy review a formation condition.",
+   "lawyer": "Adequacy of price is not an additional formation requirement once consideration exists.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "This directly answers the missing-fixed-number attack.",
+   "lawyer": "UCC 2-306 validates output and requirements quantities measured by good faith.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The stem gives a buyer's offer and acceptance; this choice answers a price-quote question.",
+   "lawyer": "A price-quote rule does not defeat an offer that shows commitment and is accepted.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The word 'always' turns flexible quantity into a universal failure.",
+   "lawyer": "Requirements quantity is not always indefinite or illusory under UCC 2-306.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-REQUIREMENTS-01",
+   "statement": "A requirements term is a quantity term: it measures the buyer's quantity by actual good-faith needs, not by a fixed number.",
+   "trigger": "all goods the buyer requires",
+   "unlocks": "Flexible quantity treated as no quantity.",
+   "authority": "UCC 2-306(1)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-REQUIREMENTS-ARRAY-01",
+   "statement": "When three choices say no contract and the stem gives a requirements phrase, cut the no-contract reasons one at a time before assuming the missing number is fatal.",
+   "trigger": "No fixed number objection after an 'all I require' phrase.",
+   "unlocks": "3-vs-1 no-contract array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Flexible quantity is not empty quantity",
+  "signal": "all goods the buyer requires",
+  "studentMove": "Do not equate no fixed number with no quantity.",
+  "tinyRule": "Requirements quantity is measured by good-faith needs.",
+  "trap": "Illusory-promise overread."
+ }
+}

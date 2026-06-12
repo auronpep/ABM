@@ -1,0 +1,88 @@
+{
+ "id": "CQ20213",
+ "title": "Mercy Pool Reliction",
+ "subject": "Real Property",
+ "topic": "Estates and conveyancing",
+ "subtopic": "O-4",
+ "difficulty": "Core Diagnostic",
+ "tension": null,
+ "stem": "Final variation title: Ruth’s Mercy Pool Crescent\n\nRuth owns a private olive-grove retreat along the east edge of Mercy Pool, a spring-fed oasis lake where her family holds Sunday hymn picnics. Barnabas owns land on the far west edge. Over 11 years, Mercy Pool’s waterline naturally crept back from Ruth’s side, little by little, leaving a dry crescent of ground between Ruth’s old waterline and the current waterline. The change was natural and gradual.\n\nUnder the usual rule, who owns the newly exposed crescent of land?",
+ "call": "Under the usual rule, who owns the newly exposed crescent of land?",
+ "choices": {
+  "A": "No private owner, because exposed land created by reliction must be auctioned before anyone owns it.",
+  "B": "Ruth, because gradual reliction generally shifts the water-boundary and adds the exposed land to the adjoining littoral parcel.",
+  "C": "The state, because all land once covered by Mercy Pool remains public forever.",
+  "D": "Barnabas, because Mercy Pool receded in the direction of his far-side land."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The key facts are gradual natural recession and exposed land attached to Ruth’s side of the water. Gold Key: gradual reliction generally moves the water boundary, so the newly exposed land belongs to the adjoining littoral owner. Silver Key: in a water-boundary ownership array, lock the two facts first: gradual change plus which parcel the exposed strip touches. Ruth’s parcel touches the exposed crescent, so Ruth owns it.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“must be auctioned” is an invented procedural requirement. Cut after the reliction Gold Key."
+  },
+  {
+   "label": "CUT C",
+   "text": "“all” and “forever” are absolute overclaim words. Cut by the Ear, confirmed by the Gold Key."
+  },
+  {
+   "label": "CUT D",
+   "text": "the answer picks the far-side owner based on direction, not adjacency to the exposed land. Cut by the Gold Key’s owner-axis."
+  },
+  {
+   "label": "Residual",
+   "text": "B. No Clash needed. No Call needed."
+  }
+ ],
+ "studentScript": "Gradual natural recession plus exposed land touching Ruth’s parcel. Gold Key: reliction adds it to the adjoining littoral owner. Cut auction, public forever, and far-side owner. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer adds an auction step that the stem never triggered.",
+   "lawyer": "No auction is required under the usual reliction rule; gradual reliction adds the land to the adjoining owner.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "Matches the call and uses the two trigger facts: gradual recession plus adjoining parcel.",
+   "lawyer": "Correct under the usual reliction rule.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The words 'all' and 'forever' overstate.",
+   "lawyer": "Gradual reliction can add exposed land to the adjoining littoral parcel.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The answer uses direction of recession instead of adjacency to the exposed strip.",
+   "lawyer": "Ownership follows the adjoining littoral parcel, not the far-side owner.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-RELICTION-01",
+   "statement": "Gradual natural recession of water generally moves the water boundary; the exposed land belongs to the adjoining riparian or littoral owner.",
+   "trigger": "Natural, gradual recession exposing dry land attached to a water-adjacent parcel.",
+   "unlocks": "State-forever, auction, and far-side-owner traps.",
+   "authority": "Cornell Wex reliction; Nebraska v. Iowa gradual-change boundary principle."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-RELICTION-01",
+   "statement": "For water-boundary ownership arrays, lock two facts before reading policy-sounding answers: gradual or sudden, and which parcel the exposed land touches.",
+   "trigger": "Four choices name different owners of newly exposed waterfront land.",
+   "unlocks": "Public-owner and far-side-owner trap cluster.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Reliction: gradual water retreat adds land to the adjoining parcel",
+  "signal": "Water naturally and gradually recedes, exposing dry land.",
+  "studentMove": "Ask which parcel touches the exposed strip.",
+  "tinyRule": "Gradual natural reliction generally gives exposed land to the adjoining littoral owner.",
+  "trap": "Public-forever or far-side-owner answers."
+ }
+}

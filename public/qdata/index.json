@@ -1,1082 +1,1410 @@
 [
  {
-  "id": "CQ14141",
-  "title": "Dovesound Review",
+  "id": "CQ17027",
+  "title": "Heritage Plow Fraud",
+  "subject": "Civil Procedure",
+  "topic": "Erie Doctrine and Choice of Law",
+  "subtopic": "State substantive burden of proof on a state-law claim",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17117",
+  "title": "Day School Playground Jmol",
+  "subject": "Civil Procedure",
+  "topic": "JMOL and Trial Motions",
+  "subtopic": "Rule 50(b) renewed JMOL — preservation of grounds from Rule 50(a)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17179",
+  "title": "Potluck Lot Rear End",
+  "subject": "Civil Procedure",
+  "topic": "Joinder",
+  "subtopic": "Counterclaims and crossclaims (Rule 13)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17406",
+  "title": "Oak Choir Stall",
+  "subject": "Civil Procedure",
+  "topic": "Pleadings, Rule 12 Motions, and Amendments",
+  "subtopic": "Rule 12(h)(2) preservation of failure-to-state-a-claim defense",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17412",
+  "title": "Seminary Faculty Apartment",
+  "subject": "Civil Procedure",
+  "topic": "Subject Matter Jurisdiction",
+  "subtopic": "Diversity - Individual Citizenship (Domicile)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17443",
+  "title": "Devotional Auto Renew",
+  "subject": "Civil Procedure",
+  "topic": "Joinder, Class Actions, and Intervention",
+  "subtopic": "Rule 23(a) certification prerequisites",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17583",
+  "title": "Bookshop Securities Followup",
+  "subject": "Civil Procedure",
+  "topic": "Claim and Issue Preclusion",
+  "subtopic": "Preclusion Law Source (federal-question judgments)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17704",
+  "title": "Fender Shepherd",
+  "subject": "Civil Procedure",
+  "topic": "Claim and Issue Preclusion",
+  "subtopic": "Source of Preclusion Law",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17709",
+  "title": "Tutoring Tithe",
+  "subject": "Civil Procedure",
+  "topic": "Subject Matter Jurisdiction",
+  "subtopic": "Diversity - Amount in Controversy Aggregation",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17711",
+  "title": "Mercy Clinic Zoning",
+  "subject": "Civil Procedure",
+  "topic": "Joinder, Class Actions, and Intervention",
+  "subtopic": "Timeliness under Rule 24",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17913",
+  "title": "Summit Klaxon",
+  "subject": "Civil Procedure",
+  "topic": "Erie Doctrine and Choice of Law",
+  "subtopic": "Contract Choice Clause in Diversity",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18182",
+  "title": "Bookstore Mandamus",
+  "subject": "Civil Procedure",
+  "topic": "Appeals and Finality",
+  "subtopic": "Mandamus",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18196",
+  "title": "Riverstone Citizenship",
+  "subject": "Civil Procedure",
+  "topic": "Subject Matter Jurisdiction",
+  "subtopic": "Diversity - Corporate Citizenship",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18240",
+  "title": "Family Table Refund",
+  "subject": "Civil Procedure",
+  "topic": "Subject Matter Jurisdiction",
+  "subtopic": "Diversity - Amount in Controversy",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18488",
+  "title": "Youth Retreat Trailer",
+  "subject": "Civil Procedure",
+  "topic": "Pleadings, Rule 12 Motions, and Amendments",
+  "subtopic": "Rule 15(c) Party Change",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18669",
+  "title": "Mary Negligence Survival",
+  "subject": "Civil Procedure",
+  "topic": "Erie Doctrine and Choice of Law",
+  "subtopic": "Survival of State Claims",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18811",
+  "title": "Elevator Access Class",
+  "subject": "Civil Procedure",
+  "topic": "Joinder, Class Actions, and Intervention",
+  "subtopic": "Rule 23(b)(2) injunctive or declaratory classes",
+  "difficulty": "Core (carried from source row; not separately scored)"
+ },
+ {
+  "id": "CQ18890",
+  "title": "Hanna Erie Threshold",
+  "subject": "Civil Procedure",
+  "topic": "Erie Doctrine and Choice of Law",
+  "subtopic": "Erie Sequence (Hanna two-track analysis)",
+  "difficulty": "Core (carried from source row; not separately scored)"
+ },
+ {
+  "id": "CQ18974",
+  "title": "Subscription Meal Kit 23f",
+  "subject": "Civil Procedure",
+  "topic": "Appeals and Finality",
+  "subtopic": "Class Certification Appeals",
+  "difficulty": null
+ },
+ {
+  "id": "CQ19721",
+  "title": "Jonah Whale Float",
+  "subject": "Civil Procedure",
+  "topic": "Motions",
+  "subtopic": "Motions to dismiss",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ19793",
+  "title": "Dove Candle Ledgers",
+  "subject": "Civil Procedure",
+  "topic": "Appeals and Finality",
+  "subtopic": "Collateral Order Narrowness",
+  "difficulty": "medium"
+ },
+ {
+  "id": "CQ19840",
+  "title": "Red Sea Bridge Bolts",
+  "subject": "Civil Procedure",
+  "topic": "Discovery",
+  "subtopic": "Attorney-Client Privilege",
+  "difficulty": "medium"
+ },
+ {
+  "id": "CQ20247",
+  "title": "Bible Memory Kit",
+  "subject": "Civil Procedure",
+  "topic": "Appeals and Finality",
+  "subtopic": "Rule 54(b)",
+  "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ20291",
+  "title": "Nativity Prop Rental Freeze",
+  "subject": "Civil Procedure",
+  "topic": "Appeals and Finality",
+  "subtopic": "Injunction Appeals",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20353",
+  "title": "Baptism Tank Burst",
+  "subject": "Civil Procedure",
+  "topic": "Subject Matter Jurisdiction",
+  "subtopic": "Supplemental Jurisdiction - Defendant Claims",
+  "difficulty": "medium_hard"
+ },
+ {
+  "id": "CQ20567",
+  "title": "Psalm Panels Venue",
+  "subject": "Civil Procedure",
+  "topic": "Erie Doctrine and Choice of Law",
+  "subtopic": "Federal Statute Directly Controls",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20606",
+  "title": "Lydia Festival Venue",
   "subject": "Civil Procedure",
   "topic": "Civil Procedure",
-  "subtopic": "Motions",
-  "difficulty": 2
+  "subtopic": "Jurisdiction and Venue",
+  "difficulty": "medium-hard"
  },
  {
-  "id": "CQ14215",
-  "title": "Daniel Cedar Bookcases",
+  "id": "CQ20627",
+  "title": "Ruth Hymn Poster Contract",
   "subject": "Civil Procedure",
-  "topic": "Civil Procedure",
-  "subtopic": "Verdicts and Judgments",
+  "topic": "Subject Matter Jurisdiction",
+  "subtopic": "Diversity - Time of Filing",
   "difficulty": 2
  },
  {
-  "id": "CQ17006",
-  "title": "Pj Waiver Generic Reservation",
+  "id": "CQ20690",
+  "title": "Question 20690",
   "subject": "Civil Procedure",
-  "topic": null,
-  "subtopic": "Personal Jurisdiction — Waiver by Conduct / General Appearance",
-  "difficulty": null
+  "topic": "Personal Jurisdiction",
+  "subtopic": "Rule 12 waiver after amended pleading",
+  "difficulty": "medium-hard"
  },
  {
-  "id": "CQ17912",
-  "title": "Smj Nonwaivability On Appeal",
+  "id": "CQ20811",
+  "title": "Illuminated Psalms Solvent",
   "subject": "Civil Procedure",
-  "topic": null,
-  "subtopic": "SMJ is nonwaivable and may be raised for the first time on appeal",
-  "difficulty": null
- },
- {
-  "id": "CQ21851",
-  "title": "Work Product Insurer Photos Memo",
-  "subject": "Civil Procedure",
-  "topic": null,
-  "subtopic": "Pretrial discovery - work product",
-  "difficulty": null
- },
- {
-  "id": "CQ21864",
-  "title": "Supplemental Pleading Later Permit Penalty",
-  "subject": "Civil Procedure",
-  "topic": null,
-  "subtopic": "Rule 15(d) Supplemental Pleading",
-  "difficulty": null
- },
- {
-  "id": "CQ21877",
-  "title": "Rule20 Permissive Joinder",
-  "subject": "Civil Procedure",
-  "topic": null,
-  "subtopic": "Joinder - Rule 20 permissive party joinder",
-  "difficulty": null
- },
- {
-  "id": "CQ21878",
-  "title": "Specific Jurisdiction Reasonableness",
-  "subject": "Civil Procedure",
-  "topic": null,
-  "subtopic": "Specific jurisdiction - reasonableness/fairness",
-  "difficulty": null
- },
- {
-  "id": "CQ21883",
-  "title": "Recording License Admission",
-  "subject": "Civil Procedure",
-  "topic": null,
-  "subtopic": "Requests for admission - conclusive effect",
-  "difficulty": null
- },
- {
-  "id": "CQ14227",
-  "title": "Lydia New Hope Petition",
-  "subject": "Constitutional Law",
-  "topic": "Constitutional Law",
-  "subtopic": "Individual Rights",
-  "difficulty": 2
- },
- {
-  "id": "CQ14228",
-  "title": "Road To Emmaus Shuttle",
-  "subject": "Constitutional Law",
-  "topic": "Constitutional Law",
-  "subtopic": "Individual Rights",
-  "difficulty": 2
- },
- {
-  "id": "CQ14238",
-  "title": "Lydias Barnabas Brief",
-  "subject": "Constitutional Law",
-  "topic": "Constitutional Law",
-  "subtopic": "Individual Rights",
-  "difficulty": 2
- },
- {
-  "id": "CQ17011",
-  "title": "Article Iv Nonresident Commercial Property",
-  "subject": "Constitutional Law",
-  "topic": null,
-  "subtopic": "Article IV Privileges and Immunities — discrimination against nonresident citizens in property acquisition for economic use",
-  "difficulty": null
- },
- {
-  "id": "CQ21848",
-  "title": "Family Zoning Aunt Household",
-  "subject": "Constitutional Law",
-  "topic": null,
-  "subtopic": "Due Process - Family Liberty",
-  "difficulty": null
- },
- {
-  "id": "CQ21860",
-  "title": "Article Iii Contract Jurisdiction",
-  "subject": "Constitutional Law",
-  "topic": null,
-  "subtopic": "Article III - federal judicial power",
-  "difficulty": null
- },
- {
-  "id": "CQ21872",
-  "title": "Title Subscription Price Affirmation",
-  "subject": "Constitutional Law",
-  "topic": null,
-  "subtopic": "Dormant Commerce Clause - extraterritorial regulation",
-  "difficulty": null
- },
- {
-  "id": "CQ21873",
-  "title": "Public Employee Official Duties",
-  "subject": "Constitutional Law",
-  "topic": null,
-  "subtopic": "First Amendment - public employee speech",
-  "difficulty": null
- },
- {
-  "id": "CQ21881",
-  "title": "Private Caregiver March",
-  "subject": "Constitutional Law",
-  "topic": null,
-  "subtopic": "First Amendment - Freedom of Speech",
-  "difficulty": null
- },
- {
-  "id": "CQ21882",
-  "title": "Federal Records Officers",
-  "subject": "Constitutional Law",
-  "topic": null,
-  "subtopic": "Appointments Clause",
-  "difficulty": null
- },
- {
-  "id": "CQ14378",
-  "title": "Ruth Boaz Grain Account",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Contract Content and Meaning",
-  "difficulty": 2
- },
- {
-  "id": "CQ14391",
-  "title": "Peter Scroll Fragments",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Defenses to Enforceability",
-  "difficulty": 4
- },
- {
-  "id": "CQ14394",
-  "title": "Peter Barnabas Car Loan",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Defenses to Enforceability",
-  "difficulty": 3
- },
- {
-  "id": "CQ14397",
-  "title": "Lydia Gold Order",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Defenses to Enforceability",
-  "difficulty": 3
- },
- {
-  "id": "CQ14400",
-  "title": "Timothy Jericho Colt",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Defenses to Enforceability",
-  "difficulty": 3
- },
- {
-  "id": "CQ14406",
-  "title": "Joseph Nativity Order",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Formation of Contracts",
-  "difficulty": 4
- },
- {
-  "id": "CQ14460",
-  "title": "Prayer Garden Waiver",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Performance, Breach, and Discharge",
-  "difficulty": 3
- },
- {
-  "id": "CQ14499",
-  "title": "Lydia Shop Fire",
-  "subject": "Contracts",
-  "topic": "Contracts",
-  "subtopic": "Remedies",
-  "difficulty": 3
- },
- {
-  "id": "CQ17007",
-  "title": "Assignment Payment Before Notice",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Assignment of Rights",
-  "difficulty": null
- },
- {
-  "id": "CQ17013",
-  "title": "Reliance Damages Retained Asset Offset",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Reliance damages reduced by fair value of retained benefit",
-  "difficulty": null
- },
- {
-  "id": "CQ21850",
-  "title": "Reliance Damages Retained Value Offset",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Reliance damages - retained value offset",
-  "difficulty": null
- },
- {
-  "id": "CQ21853",
-  "title": "Concurrent Closing Conditions",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Conditions - concurrent conditions",
-  "difficulty": null
- },
- {
-  "id": "CQ21855",
-  "title": "Mistaken Liftgate Restitution",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Quasi-contract restitution - measure of recovery",
-  "difficulty": null
- },
- {
-  "id": "CQ21856",
-  "title": "Fraudulent Concealment Parol Evidence",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Parol evidence rule - fraud exception",
-  "difficulty": null
- },
- {
-  "id": "CQ21865",
-  "title": "Concurrent Closing Conditions",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Conditions - concurrent conditions",
-  "difficulty": null
- },
- {
-  "id": "CQ21866",
-  "title": "Baking Spice Partial Acceptance",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "UCC Article 2 - perfect tender buyer remedies",
-  "difficulty": null
- },
- {
-  "id": "CQ21868",
-  "title": "Ucc Accommodation Shipment",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "UCC Article 2 - accommodation shipment",
-  "difficulty": null
- },
- {
-  "id": "CQ21874",
-  "title": "Expectation Damages Lost Profits Certainty",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Expectation damages - lost profits - reasonable certainty",
-  "difficulty": null
- },
- {
-  "id": "CQ21879",
-  "title": "Freight Scales Offer",
-  "subject": "Contracts",
-  "topic": null,
-  "subtopic": "Contract formation - offer and acceptance",
-  "difficulty": null
- },
- {
-  "id": "CQ14555",
-  "title": "Private Bookstore Plea",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Constitutional Protection of Accused Persons",
-  "difficulty": 2
- },
- {
-  "id": "CQ14586",
-  "title": "Pastor Journal",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Constitutional Protection of Accused Persons",
-  "subtopic": "Fifth Amendment Privilege Against Self-Incrimination",
-  "difficulty": 4
- },
- {
-  "id": "CQ14659",
-  "title": "Bible Study Ambush",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14660",
-  "title": "Christian Fellowship Spin",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 3
- },
- {
-  "id": "CQ14664",
-  "title": "Bible Study Gas Station",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14665",
-  "title": "Bible Study Stop Sign",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14667",
-  "title": "Christian Fellowship Spin",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 3
- },
- {
-  "id": "CQ14668",
-  "title": "Bible Study Coffee",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14669",
-  "title": "Question 14669",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14671",
-  "title": "Bible Study Safe",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 3
- },
- {
-  "id": "CQ14675",
-  "title": "Question 14675",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14676",
-  "title": "Christian Academy False Accusation",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14677",
-  "title": "Passion Play Prop Gun",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14678",
-  "title": "Galilee Grill",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14679",
-  "title": "Fellowship Cup",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14680",
-  "title": "Manna Bookshop",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14681",
-  "title": "Question 14681",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 3
- },
- {
-  "id": "CQ14684",
-  "title": "Peters Third Shot",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14685",
-  "title": "Bible Bowl Hammer",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 2
- },
- {
-  "id": "CQ14687",
-  "title": "Bethany Books Van",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Homicide",
-  "difficulty": 3
- },
- {
-  "id": "CQ14690",
-  "title": "Bible Study Protected Victim",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 3
- },
- {
-  "id": "CQ14691",
-  "title": "Question 14691",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14692",
-  "title": "Chapel Corner",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14693",
-  "title": "Fellowship Steps",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14694",
-  "title": "Tabor Trail",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14695",
-  "title": "Question 14695",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 1
- },
- {
-  "id": "CQ14696",
-  "title": "Daily Bread",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14697",
-  "title": "Question 14697",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 3
- },
- {
-  "id": "CQ14698",
-  "title": "Bible Bookshop Cash Drawer",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 3
- },
- {
-  "id": "CQ14700",
-  "title": "Solicitation Bible Picnic",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14701",
-  "title": "Christian Bookstore Agent",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14707",
-  "title": "Christian Bible Retreat Conspiracy",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Inchoate Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14709",
-  "title": "Question 14709",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14710",
-  "title": "Question 14710",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14711",
-  "title": "Question 14711",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 3
- },
- {
-  "id": "CQ14712",
-  "title": "Cls Bake Sale",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14713",
-  "title": "Mission Key Party",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14714",
-  "title": "Backyard Bible Study",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14715",
-  "title": "Question 14715",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14716",
-  "title": "Lydia Bookstore Bible",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14718",
-  "title": "Barnabas Bookshop Fire",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14719",
-  "title": "Manna Drive Thru",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14720",
-  "title": "Barnabas Camel Races",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14721",
-  "title": "Good Shepherd Gallery",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14723",
-  "title": "Sons Of Thunder",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14724",
-  "title": "Cls Wallet",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14725",
-  "title": "Lost Devotional Letter",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14727",
-  "title": "Good Shepherd Preschool",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 3
- },
- {
-  "id": "CQ14728",
-  "title": "Question 14728",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14730",
-  "title": "Potluck Flight",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14731",
-  "title": "Bible Study Ring",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14733",
-  "title": "Verse Watch",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14735",
-  "title": "Question 14735",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14736",
-  "title": "Chapel Ride",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14740",
-  "title": "Silver Cross Window",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14742",
-  "title": "Backyard Hymn Keyboard",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14743",
-  "title": "Advent Wallet",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14744",
-  "title": "Question 14744",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ14745",
-  "title": "Cana Credit Union",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 3
- },
- {
-  "id": "CQ14748",
-  "title": "Question 14748",
-  "subject": "Criminal Law & Procedure",
-  "topic": "Criminal Law",
-  "subtopic": "Other Crimes",
-  "difficulty": 2
- },
- {
-  "id": "CQ21852",
-  "title": "Conspiracy Factual Impossibility",
-  "subject": "Criminal Law & Procedure",
-  "topic": null,
-  "subtopic": "Inchoate Crimes - conspiracy and factual impossibility",
-  "difficulty": null
- },
- {
-  "id": "CQ21867",
-  "title": "Misdemeanor Manslaughter Causation",
-  "subject": "Criminal Law & Procedure",
-  "topic": null,
-  "subtopic": "Homicide - misdemeanor manslaughter causation",
-  "difficulty": null
- },
- {
-  "id": "CQ21869",
-  "title": "Home Health Apartment Entry",
-  "subject": "Criminal Law & Procedure",
-  "topic": null,
-  "subtopic": "Fourth Amendment - arrest warrant entry into third party home",
-  "difficulty": null
- },
- {
-  "id": "CQ21875",
-  "title": "Curtilage Dog Sniff Entry Deck",
-  "subject": "Criminal Law & Procedure",
-  "topic": null,
-  "subtopic": "Fourth Amendment - dog sniff on home curtilage",
-  "difficulty": null
- },
- {
-  "id": "CQ14766",
-  "title": "Potluck Collision Tape",
-  "subject": "Evidence",
-  "topic": "Evidence",
-  "subtopic": "Hearsay and Circumstances of Its Admissibility",
-  "difficulty": 3
- },
- {
-  "id": "CQ14830",
-  "title": "Question 14830",
-  "subject": "Evidence",
-  "topic": "Evidence",
-  "subtopic": "Presentation of Evidence",
-  "difficulty": 2
- },
- {
-  "id": "CQ17014",
-  "title": "Fre401 Prior Condition Photo",
-  "subject": "Evidence",
-  "topic": null,
-  "subtopic": "Relevancy and Excluding Relevant Evidence",
-  "difficulty": null
- },
- {
-  "id": "CQ17015",
-  "title": "Mailing Presumption Receipt",
-  "subject": "Evidence",
-  "topic": null,
-  "subtopic": "Presumptions and inferences",
-  "difficulty": null
- },
- {
-  "id": "CQ21854",
-  "title": "Interrogatory Publication Admission",
-  "subject": "Evidence",
-  "topic": null,
-  "subtopic": "Admissions by party - interrogatory responses",
-  "difficulty": null
- },
- {
-  "id": "CQ21859",
-  "title": "Foundation Order Control",
-  "subject": "Evidence",
-  "topic": null,
-  "subtopic": "Trial judge control over foundation and order of proof",
-  "difficulty": null
- },
- {
-  "id": "CQ21861",
-  "title": "Scanner Photo Authentication",
-  "subject": "Evidence",
-  "topic": null,
-  "subtopic": "Authentication of photographs",
-  "difficulty": null
- },
- {
-  "id": "CQ21876",
-  "title": "Trade Usage Seedling Trays",
-  "subject": "Evidence",
-  "topic": null,
-  "subtopic": "Trade usage testimony to explain contract terms",
-  "difficulty": null
- },
- {
-  "id": "CQ14917",
-  "title": "Sanctuary Lot",
-  "subject": "Real Property",
-  "topic": "Real Property",
-  "subtopic": "Contracts",
+  "topic": "Personal Jurisdiction",
+  "subtopic": "Specific jurisdiction - contacts before fairness",
   "difficulty": "hard"
  },
  {
-  "id": "CQ17010",
-  "title": "Easement Appurtenant Foreclosure",
-  "subject": "Real Property",
-  "topic": null,
-  "subtopic": "Appurtenant easement passes with dominant estate through foreclosure",
+  "id": "CQ21711",
+  "title": "Foam Whale Nativity Attachment",
+  "subject": "Civil Procedure",
+  "topic": "Personal Jurisdiction",
+  "subtopic": "Quasi-in-rem limits and relatedness",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ17114",
+  "title": "Farmstand Excessive Fine",
+  "subject": "Constitutional Law",
+  "topic": "Due Process",
+  "subtopic": "Incorporation of the Excessive Fines Clause through the Fourteenth Amendment",
   "difficulty": null
  },
  {
-  "id": "CQ21849",
-  "title": "Reserved Easement Appurtenant",
-  "subject": "Real Property",
-  "topic": null,
-  "subtopic": "Easement reservation",
+  "id": "CQ17163",
+  "title": "Permit Fee Ledger",
+  "subject": "Constitutional Law",
+  "topic": "Due Process",
+  "subtopic": "State Deprivation",
   "difficulty": null
  },
  {
-  "id": "CQ21862",
-  "title": "Service Strip Prescription",
-  "subject": "Real Property",
-  "topic": null,
-  "subtopic": "Easement extinguishment by prescription",
+  "id": "CQ17574",
+  "title": "Christian Podcast School Board",
+  "subject": "Constitutional Law",
+  "topic": "First Amendment - Freedom of Speech",
+  "subtopic": "Prior Restraints",
   "difficulty": null
  },
  {
-  "id": "CQ21863",
-  "title": "Notice Recording Shelter Rule",
-  "subject": "Real Property",
-  "topic": null,
-  "subtopic": "Recording Acts - shelter rule",
+  "id": "CQ17680",
+  "title": "Ministry Housing Permit",
+  "subject": "Constitutional Law",
+  "topic": "Equal Protection",
+  "subtopic": "Rational basis with bite (animus toward a group)",
   "difficulty": null
  },
  {
-  "id": "CQ15222",
-  "title": "Mannafuel Lydia Racecar",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Other Torts",
+  "id": "CQ17728",
+  "title": "Illuminated Manuscript",
+  "subject": "Constitutional Law",
+  "topic": "Federal Powers",
+  "subtopic": "Channels of commerce",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18438",
+  "title": "Hannah David Medicaid",
+  "subject": "Constitutional Law",
+  "topic": "Equal Protection",
+  "subtopic": "Fundamental rights — right to interstate travel",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18457",
+  "title": "Lydia Book Club",
+  "subject": "Constitutional Law",
+  "topic": "Equal Protection",
+  "subtopic": "State action requirement",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18586",
+  "title": "Hymnsong Records",
+  "subject": "Constitutional Law",
+  "topic": "Privileges And Immunities",
+  "subtopic": "Article IV plaintiff threshold",
+  "difficulty": null
+ },
+ {
+  "id": "CQ19502",
+  "title": "Manna Festival Finals Tax",
+  "subject": "Constitutional Law",
+  "topic": "Constitutional Law",
+  "subtopic": "Separation of Powers",
   "difficulty": 2
  },
  {
-  "id": "CQ15223",
-  "title": "Lydias Loaves",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Other Torts",
-  "difficulty": 2
+  "id": "CQ19607",
+  "title": "Cana Hills Bethany Flats",
+  "subject": "Constitutional Law",
+  "topic": "Equal Protection",
+  "subtopic": "Rational basis — non-fundamental right / education",
+  "difficulty": "medium-hard anchor"
  },
  {
-  "id": "CQ15224",
-  "title": "Bible Workbook Press",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Other Torts",
-  "difficulty": 2
+  "id": "CQ19982",
+  "title": "Manna Warehouse",
+  "subject": "Constitutional Law",
+  "topic": "Federal Powers",
+  "subtopic": "Spending conditions",
+  "difficulty": "medium_anchor"
  },
  {
-  "id": "CQ15253",
-  "title": "Barnabas Quarry Safety Audit",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
-  "difficulty": 2
+  "id": "CQ20153",
+  "title": "Lampstand Labs",
+  "subject": "Constitutional Law",
+  "topic": "Individual Rights",
+  "subtopic": "First Amendment Protections - Freedom of religion",
+  "difficulty": "medium-hard anchor item"
  },
  {
-  "id": "CQ15254",
-  "title": "Lydia Selah Blue Dye",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
-  "difficulty": 2
+  "id": "CQ20186",
+  "title": "Road To Emmaus Royalty Ledgers",
+  "subject": "Constitutional Law",
+  "topic": "Separation of Powers",
+  "subtopic": "Congressional subpoenas",
+  "difficulty": "high"
  },
  {
-  "id": "CQ15255",
-  "title": "Question 15255",
-  "subject": "Torts",
-  "topic": "Strict Liability and Products Liability",
-  "subtopic": "Federal Tort Claims Act negligence gate / strict-liability bait",
-  "difficulty": 2
+  "id": "CQ20231",
+  "title": "Crown Above Caesars",
+  "subject": "Constitutional Law",
+  "topic": "First Amendment Religion",
+  "subtopic": "Free Exercise Clause",
+  "difficulty": "moderate-anchor"
  },
  {
-  "id": "CQ15256",
-  "title": "Biblestudy Furnace",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
-  "difficulty": 2
+  "id": "CQ20586",
+  "title": "Psalms Hormone Use",
+  "subject": "Constitutional Law",
+  "topic": "Equal Protection",
+  "subtopic": "Medical-use classifications",
+  "difficulty": "medium_high"
  },
  {
-  "id": "CQ15257",
-  "title": "Peter On The Ledge",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
-  "difficulty": 2
+  "id": "CQ20638",
+  "title": "Advent Rescue Beacons",
+  "subject": "Constitutional Law",
+  "topic": "Relations Between Federal and State Governments",
+  "subtopic": "Supremacy Clause",
+  "difficulty": "medium-hard"
  },
  {
-  "id": "CQ15258",
-  "title": "Good Shepherd Dental",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
-  "difficulty": 2
- },
- {
-  "id": "CQ15259",
-  "title": "Question 15259",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
+  "id": "CQ20714",
+  "title": "Prayer Robotics Kits",
+  "subject": "Constitutional Law",
+  "topic": "Judicial Review",
+  "subtopic": "Standing",
   "difficulty": 3
  },
  {
-  "id": "CQ15260",
-  "title": "Creation Chemistry Kit",
-  "subject": "Torts",
-  "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
-  "difficulty": 3
+  "id": "CQ21848",
+  "title": "Manna House Family Integrity",
+  "subject": "Constitutional Law",
+  "topic": "Due Process",
+  "subtopic": "Family Liberty",
+  "difficulty": "hard"
  },
  {
-  "id": "CQ15262",
-  "title": "Fiery Furnace Panels",
+  "id": "CQ21872",
+  "title": "Scripturequest Price Gate",
+  "subject": "Constitutional Law",
+  "topic": "Dormant Commerce Clause",
+  "subtopic": "Extraterritorial regulation",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ14375",
+  "title": "Nativity Star Rig",
+  "subject": "Contracts",
+  "topic": "Contract Content and Meaning",
+  "subtopic": "Modifications / no-oral-modification clause / reliance",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14379",
+  "title": "Psalm Lightshow",
+  "subject": "Contracts",
+  "topic": "Contract Content and Meaning",
+  "subtopic": "Parol Evidence Rule",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14382",
+  "title": "Bethlehem Lanterns",
+  "subject": "Contracts",
+  "topic": "Contract Content and Meaning",
+  "subtopic": "Parol Evidence Rule / Usage of Trade",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14391",
+  "title": "Noble Fir Nativity",
+  "subject": "Contracts",
+  "topic": "Defenses to Enforceability",
+  "subtopic": "Supervening impracticability / illegality (mistake as alternative theory)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14396",
+  "title": "Easter Handbell Plan",
+  "subject": "Contracts",
+  "topic": "Defenses to Enforceability",
+  "subtopic": "Public Policy",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14397",
+  "title": "Fish Keychains",
+  "subject": "Contracts",
+  "topic": "Defenses to Enforceability",
+  "subtopic": "Statute of Frauds",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14400",
+  "title": "Mechanical Camel",
+  "subject": "Contracts",
+  "topic": "Defenses to Enforceability",
+  "subtopic": "Mistake / Lack of Mutual Assent",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14406",
+  "title": "Advent Lanterns",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": null,
+  "difficulty": null
+ },
+ {
+  "id": "CQ14409",
+  "title": "Sunken Ark Hall",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Assumption of risk for unknown subsurface conditions",
+  "difficulty": "source_not_supplied"
+ },
+ {
+  "id": "CQ14412",
+  "title": "Gospel Puzzle Invoice",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Preexisting duty",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14418",
+  "title": "Jericho Lamp Credit",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Formation of Contracts",
+  "difficulty": "35_percent_correct"
+ },
+ {
+  "id": "CQ14424",
+  "title": "Christmas Pageant Lantern Bid",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Promissory Estoppel",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14430",
+  "title": "Psalm Room Option",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Formation of Contracts",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14434",
+  "title": "Crossed Handbells",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Mutual Assent",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14438",
+  "title": "Nativity Ornament Kits",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Illusory promises",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14447",
+  "title": "Jericho Trumpet Deposit",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Promissory Estoppel",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14451",
+  "title": "Psalm Trail Quitclaim",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Sufficiency of consideration",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14457",
+  "title": "Advent Kits Requirements",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Requirements contracts",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14458",
+  "title": "Verse Wristbands",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Requirement and output contracts / exclusive dealing best efforts",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14460",
+  "title": "Fish Loaves Mosaic",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Excuse of condition / waiver",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14462",
+  "title": "Mustard Seed Carts",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Conditions / waiver of condition",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14463",
+  "title": "Calligraphy Supplies",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Performance, Breach, and Discharge",
+  "difficulty": "not_supplied; source_percent_correct=39"
+ },
+ {
+  "id": "CQ14467",
+  "title": "Psalm Tutor Installments",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Performance, Breach, and Discharge",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14477",
+  "title": "Advent Mugs",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Options and Cooperation Respecting Performance",
+  "difficulty": "not_supplied_in_source_row"
+ },
+ {
+  "id": "CQ14493",
+  "title": "Ark Stage",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Anticipatory repudiation",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14506",
+  "title": "Lydia Rooftop Loft",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "Specific performance",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14510",
+  "title": "Ark Puppet Stage",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "UCC seller remedies",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14511",
+  "title": "Worship Studio Delay",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "Consequential damages / foreseeability / delay in real-property possession",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14521",
+  "title": "Sea Of Galilee Lantern Walk",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "Expectation damages",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14523",
+  "title": "Psalm Calligraphy Stipend",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "Specific performance",
+  "difficulty": "source row: 30% correct; no difficulty label supplied"
+ },
+ {
+  "id": "CQ14525",
+  "title": "Jonah Fish Escape",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "Damages",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14530",
+  "title": "Lantern Courtyard",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "Damages",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14546",
+  "title": "Koine Tutor",
+  "subject": "Contracts",
+  "topic": "Third-Party Rights",
+  "subtopic": "Third-Party Beneficiary Contracts",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ17521",
+  "title": "Christian Wedding Cake",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Acceptance by mail — mailbox rule and the 'properly dispatched' element",
+  "difficulty": null
+ },
+ {
+  "id": "CQ19386",
+  "title": "Scripture Audio Cap",
+  "subject": "Contracts",
+  "topic": "Third-Party Beneficiary Contracts",
+  "subtopic": "VII-A",
+  "difficulty": "Core Diagnostic"
+ },
+ {
+  "id": "CQ20004",
+  "title": "Dove Tokens Manna Game",
+  "subject": "Contracts",
+  "topic": "Gap-Fillers, Interpretation, and the Parol Evidence Rule",
+  "subtopic": "IV",
+  "difficulty": "Trap Repair"
+ },
+ {
+  "id": "CQ20100",
+  "title": "Fish And Loaves Keychains",
+  "subject": "Contracts",
+  "topic": "Statute of Frauds",
+  "subtopic": "D",
+  "difficulty": "Discriminator"
+ },
+ {
+  "id": "CQ20271",
+  "title": "Lantern Handbell Evening",
+  "subject": "Contracts",
+  "topic": "Expectation damages",
+  "subtopic": "A1",
+  "difficulty": "Calibration"
+ },
+ {
+  "id": "CQ20351",
+  "title": "Red Sea Mini Golf",
+  "subject": "Contracts",
+  "topic": "Mistake / Lack of Mutual Assent",
+  "subtopic": "F",
+  "difficulty": "Trap Repair"
+ },
+ {
+  "id": "CQ20370",
+  "title": "Dove Mug Notice",
+  "subject": "Contracts",
+  "topic": "UCC sale of goods",
+  "subtopic": "Acceptance, rejection, notice of breach, and seller action for price",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20461",
+  "title": "Lydia Beeswax Requirements",
+  "subject": "Contracts",
+  "topic": "Offer / valid offer requirements",
+  "subtopic": "II.A.1.a",
+  "difficulty": "Trap"
+ },
+ {
+  "id": "CQ20523",
+  "title": "Easter Stage Guaranty",
+  "subject": "Contracts",
+  "topic": "Statute of Frauds",
+  "subtopic": "D",
+  "difficulty": "Trap Repair"
+ },
+ {
+  "id": "CQ20556",
+  "title": "Mustard Seed Puppet Caravan",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Prospective inability to perform; reliance before cure",
+  "difficulty": "hard"
+ },
+ {
+  "id": "CQ20569",
+  "title": "Ark Float",
+  "subject": "Contracts",
+  "topic": "Conditions — Express conditions",
+  "subtopic": "V-A2",
+  "difficulty": "Core Diagnostic"
+ },
+ {
+  "id": "CQ20599",
+  "title": "Advent Handbell Integration",
+  "subject": "Contracts",
+  "topic": "CM-B — Parol evidence rule core",
+  "subtopic": "Complete integration / merger clause / consistent additional term barred",
+  "difficulty": "Trap Repair"
+ },
+ {
+  "id": "CQ20737",
+  "title": "Jonahs Whale Lyre",
+  "subject": "Contracts",
+  "topic": "Remedies",
+  "subtopic": "Specific performance for unique or highly unusual goods",
+  "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ20805",
+  "title": "Psalm Lanterns Confirmation",
+  "subject": "Contracts",
+  "topic": "Statute of Frauds",
+  "subtopic": "D",
+  "difficulty": "Trap Repair"
+ },
+ {
+  "id": "CQ20808",
+  "title": "Jericho Press",
+  "subject": "Contracts",
+  "topic": "Formation",
+  "subtopic": "Consideration - preexisting legal duty",
+  "difficulty": "high"
+ },
+ {
+  "id": "CQ21879",
+  "title": "Noahs Ark Puppet Set",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Mutual Assent / Offer and Acceptance",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ16127",
+  "title": "Stewardship Bomb",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Inchoate Crimes",
+  "subtopic": "Conspiracy and merger with the substantive offense (arson)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17225",
+  "title": "Midnight Utility Fraud",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Property Crimes",
+  "subtopic": "Burglary — breaking element (constructive breaking by fraud)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17859",
+  "title": "Olive Branch Ornament",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Property Crimes",
+  "subtopic": "Larceny (asportation element)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18111",
+  "title": "Camp Stipend Forgery",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Property Crimes",
+  "subtopic": "Other Crimes",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18477",
+  "title": "Church Craft Fair Quilt",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Property Crimes",
+  "subtopic": "Receipt of stolen property",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18747",
+  "title": "Vintage Bible Embezzlement",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Property Crimes",
+  "subtopic": "Other Crimes",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18843",
+  "title": "Patio Pressure Washer",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Property Crimes",
+  "subtopic": "Larceny — temporary use (no intent to permanently deprive)",
+  "difficulty": "Core (carried from source row; not separately scored)"
+ },
+ {
+  "id": "CQ19499",
+  "title": "Jericho Chariot Night",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Inchoate Crimes and Parties",
+  "subtopic": "Inchoate Crimes",
+  "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ19554",
+  "title": "Road To Damascus Cashbox",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Property Crimes",
+  "subtopic": "Other Crimes",
+  "difficulty": "high"
+ },
+ {
+  "id": "CQ20127",
+  "title": "Jericho Trumpet",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Fifth Amendment",
+  "subtopic": "Constitutional Protection of Accused Persons",
+  "difficulty": "hard"
+ },
+ {
+  "id": "CQ20258",
+  "title": "Psalter Pressure",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Fifth Amendment",
+  "subtopic": "Constitutional Protection of Accused Persons",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20387",
+  "title": "Psalms Chess Indictment",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Exclusionary rule",
+  "subtopic": "Remedies and limits",
+  "difficulty": "hard"
+ },
+ {
+  "id": "CQ20476",
+  "title": "Road To Bethlehem Sash",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Fourth Amendment",
+  "subtopic": "Constitutional Protection of Accused Persons",
+  "difficulty": "hard"
+ },
+ {
+  "id": "CQ20516",
+  "title": "Question 20516",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Defenses",
+  "subtopic": "General Principles",
+  "difficulty": "medium_high"
+ },
+ {
+  "id": "CQ20542",
+  "title": "Praise Festival Cashbox",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Sixth Amendment",
+  "subtopic": "Constitutional Protection of Accused Persons",
+  "difficulty": "hard"
+ },
+ {
+  "id": "CQ20597",
+  "title": "Olivewood Nativity Craft Swap",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Defenses",
+  "subtopic": "General Principles",
+  "difficulty": "medium-high anchor-dependent"
+ },
+ {
+  "id": "CQ20654",
+  "title": "Nativity Ornaments Volition",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Defenses",
+  "subtopic": "General Principles",
+  "difficulty": "medium_hard"
+ },
+ {
+  "id": "CQ21867",
+  "title": "Psalm Puzzle Booth",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Homicide",
+  "subtopic": "Homicide",
+  "difficulty": "moderate"
+ },
+ {
+  "id": "CQ21869",
+  "title": "Tiny House Hymn Sheet",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Fourth Amendment",
+  "subtopic": "Arrest warrants and home entry",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ17996",
+  "title": "Shepherding Call",
+  "subject": "Evidence",
+  "topic": "Character evidence",
+  "subtopic": "Impeachment — opinion or reputation evidence on truthfulness (FRE 608(a))",
+  "difficulty": null
+ },
+ {
+  "id": "CQ19379",
+  "title": "Hymn Candle Invoice Van",
+  "subject": "Evidence",
+  "topic": "III.B.2 — Marital Communications Privilege",
+  "subtopic": "Marital Communications Privilege",
+  "difficulty": "Discriminator"
+ },
+ {
+  "id": "CQ20307",
+  "title": "Bethany Banners Transcript",
+  "subject": "Evidence",
+  "topic": "Evidence Law",
+  "subtopic": "Hearsay and Circumstances of Its Admissibility",
+  "difficulty": "hard"
+ },
+ {
+  "id": "CQ20313",
+  "title": "Bethlehem Olivewood Crosses",
+  "subject": "Evidence",
+  "topic": "III.B.5 — Attorney-client",
+  "subtopic": "Attorney-client privilege / crime-fraud boundary",
+  "difficulty": "Discriminator"
+ },
+ {
+  "id": "CQ20404",
+  "title": "Acts Axes Cash Loads",
+  "subject": "Evidence",
+  "topic": "Materiality and probative value",
+  "subtopic": "A4",
+  "difficulty": "Trap Repair"
+ },
+ {
+  "id": "CQ20423",
+  "title": "Galilee Props Bias",
+  "subject": "Evidence",
+  "topic": "Opinion or reputation",
+  "subtopic": "E5",
+  "difficulty": "Trap"
+ },
+ {
+  "id": "CQ20565",
+  "title": "Purple Gear Hymnbook Tote",
+  "subject": "Evidence",
+  "topic": "Laying a Foundation",
+  "subtopic": "II.B",
+  "difficulty": "Core"
+ },
+ {
+  "id": "CQ20602",
+  "title": "Davids Harp Projector",
+  "subject": "Evidence",
+  "topic": "III.C.1 — Subsequent Remedial Measures",
+  "subtopic": "Rule 407 product defect, design defect, and need for warning or instruction",
+  "difficulty": "Trap Repair"
+ },
+ {
+  "id": "CQ20760",
+  "title": "Rubber Stamp Mail Fraud",
+  "subject": "Evidence",
+  "topic": "Types of Evidence",
+  "subtopic": "C1",
+  "difficulty": "Trap"
+ },
+ {
+  "id": "CQ18077",
+  "title": "Maranatha Meadow",
+  "subject": "Real Property",
+  "topic": "Estates and conveyancing",
+  "subtopic": "Future interests — shifting executory interest (third-party condition cutting short another grantee)",
+  "difficulty": "Calibration"
+ },
+ {
+  "id": "CQ19381",
+  "title": "Shepherd Olive Press Deed",
+  "subject": "Real Property",
+  "topic": "Conveyance by Deed — Requirements for Valid Deed",
+  "subtopic": "B1",
+  "difficulty": "Calibration"
+ },
+ {
+  "id": "CQ19430",
+  "title": "Harp Instructor Olive Grove",
+  "subject": "Real Property",
+  "topic": "Conveyance by Deed — Requirements for Valid Deed",
+  "subtopic": "B1",
+  "difficulty": "Calibration"
+ },
+ {
+  "id": "CQ19904",
+  "title": "Psalm Orchard Foreclosure Notice",
+  "subject": "Real Property",
+  "topic": "Mortgages",
+  "subtopic": "Foreclosure - parties and priorities",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20213",
+  "title": "Mercy Pool Reliction",
+  "subject": "Real Property",
+  "topic": "Estates and conveyancing",
+  "subtopic": "O-4",
+  "difficulty": "Core Diagnostic"
+ },
+ {
+  "id": "CQ20312",
+  "title": "Loaves Fishes Retreat",
+  "subject": "Real Property",
+  "topic": "Ownership",
+  "subtopic": "Life estates; remainders; encumbrance payment allocation",
+  "difficulty": "medium_high"
+ },
+ {
+  "id": "CQ20493",
+  "title": "Fish Mark Picnic Lot",
+  "subject": "Real Property",
+  "topic": "Conveyance by Deed — Requirements for Valid Deed",
+  "subtopic": "B1",
+  "difficulty": "Core Diagnostic"
+ },
+ {
+  "id": "CQ20728",
+  "title": "Star Stable Stall",
+  "subject": "Real Property",
+  "topic": "Ownership",
+  "subtopic": "Landlord and Tenant - Assignments and subletting",
+  "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ20729",
+  "title": "Courtyard Stormwater",
+  "subject": "Real Property",
+  "topic": "Rights in Land",
+  "subtopic": "Takings / Landlord-Tenant",
+  "difficulty": "medium-hard anchor array"
+ },
+ {
+  "id": "CQ17018",
+  "title": "Youth Dodgeball Consent",
+  "subject": "Torts",
+  "topic": "Privileges and defenses",
+  "subtopic": "Consent to contact-sport participation",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17111",
+  "title": "Parish Newsletter Republication",
+  "subject": "Torts",
+  "topic": "Defamation",
+  "subtopic": "Republication and attribution defense",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17236",
+  "title": "Wellness Visit Revocation",
+  "subject": "Torts",
+  "topic": "Privileges and defenses",
+  "subtopic": "Consent (revocation before contact)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17264",
+  "title": "Prayer Parcel Trip",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Duty — particular standard of care (unknown trespasser injured by natural condition)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17289",
+  "title": "Foundation Paneling",
+  "subject": "Torts",
+  "topic": "Economic torts",
+  "subtopic": "Fraud",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17630",
+  "title": "Blown Bible Orchard",
+  "subject": "Torts",
+  "topic": "Trespass to Land",
+  "subtopic": "Qualified privilege to retrieve a chattel; damages from entry",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17857",
+  "title": "Living Nativity Carver",
+  "subject": "Torts",
+  "topic": "Economic torts",
+  "subtopic": "Intentional interference with prospective advantage (competition privilege)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ17956",
+  "title": "Stewards Heavyheart",
+  "subject": "Torts",
+  "topic": "Economic torts",
+  "subtopic": "Malicious prosecution — favorable termination element",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18135",
+  "title": "Mountain Lodge Looseboard",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Duty — land possessor and invitee",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18179",
+  "title": "Campfire Rim Warning",
+  "subject": "Torts",
+  "topic": "Products Liability",
+  "subtopic": "Failure to warn - obvious danger",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18197",
+  "title": "Athletics Bus Collision",
+  "subject": "Torts",
+  "topic": "Other Torts",
+  "subtopic": "Joint tortfeasors — joint and several liability",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18287",
+  "title": "Manger Cradle Collapse",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Breach — Res ipsa loquitur (rented equipment; plaintiff alteration as competing cause)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18298",
+  "title": "Fellowship Hall Grab",
+  "subject": "Torts",
+  "topic": "Intentional Torts",
+  "subtopic": "Assault — plaintiff must apprehend imminent contact with herself (not with a third party)",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18592",
+  "title": "Shiloh Campground",
+  "subject": "Torts",
+  "topic": "Nuisance",
+  "subtopic": "Private nuisance defenses",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18676",
+  "title": "Mary Wellness Appropriation",
+  "subject": "Torts",
+  "topic": "Privacy",
+  "subtopic": "Appropriation and consent scope",
+  "difficulty": null
+ },
+ {
+  "id": "CQ18784",
+  "title": "Fellowship Lot Used Car",
+  "subject": "Torts",
+  "topic": "Economic torts",
+  "subtopic": "Fraud",
+  "difficulty": "Core (carried from source row; not separately scored)"
+ },
+ {
+  "id": "CQ18900",
+  "title": "Wedding Garden Spill",
+  "subject": "Torts",
+  "topic": "Negligence damages",
+  "subtopic": "Economic loss parasitic to physical injury",
+  "difficulty": "Core"
+ },
+ {
+  "id": "CQ18914",
+  "title": "Rare Bible Provenance",
+  "subject": "Torts",
+  "topic": "Economic torts",
+  "subtopic": "Fraud - reliance",
+  "difficulty": "Core"
+ },
+ {
+  "id": "CQ18982",
+  "title": "Homeschool Coop Month",
+  "subject": "Torts",
+  "topic": "Defamation",
+  "subtopic": "Falsity and substantial truth",
+  "difficulty": null
+ },
+ {
+  "id": "CQ19434",
+  "title": "Question 19434",
+  "subject": "Torts",
+  "topic": "Products liability",
+  "subtopic": "Failure to warn - learned intermediary",
+  "difficulty": "medium_high_anchor"
+ },
+ {
+  "id": "CQ19448",
+  "title": "Praise Night Tshirt Cannon",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Duty - negligent entrustment",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20024",
+  "title": "Loaves Fishes Crate Count",
+  "subject": "Torts",
+  "topic": "Negligence damages",
+  "subtopic": "Negligent misrepresentation and economic loss",
+  "difficulty": "hard"
+ },
+ {
+  "id": "CQ20123",
+  "title": "Prayer Card Threat Writers",
+  "subject": "Torts",
+  "topic": "Privacy",
+  "subtopic": "False light and constitutional limits",
+  "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ20310",
+  "title": "Psalms Wax Lamp",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Breach",
+  "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ20439",
+  "title": "Floating Star Driveway",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Standard of Due Care / Best Argument",
+  "difficulty": "moderate-hard"
+ },
+ {
+  "id": "CQ20496",
+  "title": "Loaves Prop Cart",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Damages / Collateral Source Rule",
+  "difficulty": "medium_hard"
+ },
+ {
+  "id": "CQ20546",
+  "title": "Jericho Wall Studio",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Premises liability / invitee dangerous condition",
+  "difficulty": "medium_high"
+ },
+ {
+  "id": "CQ20594",
+  "title": "Daniels Whale Float",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Duty; foreseeable rescuers; rescue doctrine",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20598",
+  "title": "Write It On Your Heart",
+  "subject": "Torts",
+  "topic": "Privacy",
+  "subtopic": "Appropriation of identity",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20603",
+  "title": "Road To Emmaus Escape Room",
   "subject": "Torts",
   "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
+  "subtopic": "Negligence",
   "difficulty": 2
  },
  {
-  "id": "CQ15263",
-  "title": "Galilee Gt",
+  "id": "CQ20605",
+  "title": "Scripture Quiz Whisper",
+  "subject": "Torts",
+  "topic": "Privacy",
+  "subtopic": "False light",
+  "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ20649",
+  "title": "Christmas Pageant Platform",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Standard of Due Care / Contributory Negligence / Causation",
+  "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ20717",
+  "title": "Ruths Hymn Recording Procedure",
   "subject": "Torts",
   "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
+  "subtopic": "Negligence",
   "difficulty": 2
  },
  {
-  "id": "CQ15264",
-  "title": "Emmaus Roadster",
+  "id": "CQ20725",
+  "title": "Emmaus Laser Cutter",
+  "subject": "Torts",
+  "topic": "Business torts",
+  "subtopic": "Negligent misrepresentation",
+  "difficulty": "moderate-hard"
+ },
+ {
+  "id": "CQ20727",
+  "title": "Question 20727",
+  "subject": "Torts",
+  "topic": "Strict liability",
+  "subtopic": "Abnormally dangerous activities - harms outside abnormal risk",
+  "difficulty": "medium_high"
+ },
+ {
+  "id": "CQ20730",
+  "title": "Shepherd Sling Fair",
   "subject": "Torts",
   "topic": "Torts",
-  "subtopic": "Strict Liability and Products Liability",
-  "difficulty": 3
+  "subtopic": "Intentional Torts",
+  "difficulty": 2
  },
  {
-  "id": "CQ17008",
-  "title": "Escape Ladder Risk Utility",
+  "id": "CQ20733",
+  "title": "Galilee Trails Death Notice",
   "subject": "Torts",
-  "topic": null,
-  "subtopic": "Products liability - design defect - risk utility",
-  "difficulty": null
+  "topic": "Negligence damages",
+  "subtopic": "Special NIED categories",
+  "difficulty": "medium_high"
  },
  {
-  "id": "CQ21857",
-  "title": "Physical Therapy Band Service Provider",
+  "id": "CQ20735",
+  "title": "Bethlehem Donkey Blower",
   "subject": "Torts",
-  "topic": null,
-  "subtopic": "Strict liability and products liability - service provider and malpractice",
-  "difficulty": null
+  "topic": "Nuisance",
+  "subtopic": "Injunction, damages, and avoidable consequences",
+  "difficulty": "medium-hard"
  },
  {
-  "id": "CQ21858",
-  "title": "Particulate Trespass",
+  "id": "CQ20744",
+  "title": "Bethlehem Loading Lane",
   "subject": "Torts",
-  "topic": null,
-  "subtopic": "Trespass to land - particulate intrusion",
-  "difficulty": null
+  "topic": "Negligence",
+  "subtopic": "Duty / Foreseeability Target",
+  "difficulty": "hard"
  },
  {
-  "id": "CQ21870",
-  "title": "Academy Equipment Case",
+  "id": "CQ21752",
+  "title": "Olive Oil Ramp",
   "subject": "Torts",
-  "topic": null,
-  "subtopic": "Negligence causation - Palsgraf problem",
-  "difficulty": null
- },
- {
-  "id": "CQ21871",
-  "title": "Printshop Boundary Wall",
-  "subject": "Torts",
-  "topic": null,
-  "subtopic": "Trespass to land - intent and boundary mistake",
-  "difficulty": null
- },
- {
-  "id": "CQ21880",
-  "title": "Music Store Malicious Prosecution",
-  "subject": "Torts",
-  "topic": null,
-  "subtopic": "Business torts - malicious prosecution",
-  "difficulty": null
+  "topic": "Vicarious liability",
+  "subtopic": "Independent contractors - nondelegable duty",
+  "difficulty": "medium-hard"
  }
 ]

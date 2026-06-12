@@ -1,0 +1,96 @@
+{
+ "id": "CQ20100",
+ "title": "Fish And Loaves Keychains",
+ "subject": "Contracts",
+ "topic": "Statute of Frauds",
+ "subtopic": "D",
+ "difficulty": "Discriminator",
+ "tension": null,
+ "stem": "Barnabas operates a private online shop that sells glow-in-the-dark “fish and loaves” keychains to Christian retreat organizers. He sues Lydia, alleging that she orally agreed to buy 2,400 keychains for a Bible-quiz tournament at a total price over $500. No signed writing exists. At trial, Lydia testifies, “I did agree to buy keychains, but 750 of them, not 2,400.” Barnabas asks the court to enforce the alleged deal for all 2,400 keychains.\n\nWhat is the strongest Statute of Frauds result?",
+ "call": "What is the strongest Statute of Frauds result?",
+ "choices": {
+  "A": "Barnabas may enforce the contract for all 2,400 keychains if the market price proves that the larger quantity was commercially reasonable.",
+  "B": "The contract is enforceable under the admission exception only up to the 750 keychains Lydia admitted.",
+  "C": "Barnabas may enforce the contract for all 2,400 keychains because Lydia admitted that some contract existed.",
+  "D": "Barnabas may enforce none of the contract because Lydia disputes the quantity."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Lydia admitted only 750 keychains. Gold Key: the UCC admission exception can satisfy the Statute of Frauds, but it caps enforcement at the quantity admitted. Silver Key: in an all / none / admitted-quantity array, lock the admitted number before reading the legal labels. The answer that lands exactly on 750 is the only answer that respects both the admission and the cap.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "imports a new yardstick, market reasonableness, and uses it to reach all 2,400. Cut as fabricated_rule."
+  },
+  {
+   "label": "CUT C",
+   "text": "takes a real admitted-contract fact and pushes it to the whole alleged quantity. Cut as extreme_of_range."
+  },
+  {
+   "label": "CUT D",
+   "text": "says none despite an admitted quantity. Cut as tiered_absolute."
+  },
+  {
+   "label": "Residual",
+   "text": "B."
+  },
+  {
+   "label": "CLASH",
+   "text": "not needed after the Gold Key cut."
+  },
+  {
+   "label": "CALL",
+   "text": "not needed."
+  }
+ ],
+ "studentScript": "No writing. Admission of 750. Seller asks for 2,400. The admission exception does not give all or none; it caps at 750. B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice imports market price to enlarge quantity instead of locking the admitted number.",
+   "lawyer": "UCC 2-201(3)(b) does not allow market reasonableness to expand enforcement beyond the quantity admitted.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The answer lands exactly on the number Lydia admitted.",
+   "lawyer": "This matches UCC 2-201(3)(b): the admission exception is capped at the quantity admitted.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice turns an admission of 750 into enforcement of 2,400.",
+   "lawyer": "The UCC admission exception validates the oral contract only to the admitted quantity, not the alleged quantity.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "The choice treats a dispute over 2,400 as if Lydia admitted zero.",
+   "lawyer": "UCC 2-201(3)(b) permits enforcement to the quantity admitted despite denial of the larger alleged quantity.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-FISH-KEYCHAINS-01",
+   "statement": "For a UCC sale-of-goods oral contract, an in-court admission can satisfy the Statute of Frauds, but only for the quantity the party admits.",
+   "trigger": "No signed writing plus testimony admitting a smaller quantity than the seller alleges.",
+   "unlocks": "The all-versus-none trap in admission-exception questions.",
+   "authority": "UCC 2-201(3)(b)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-FISH-KEYCHAINS-01",
+   "statement": "When the answers fight over all, none, and only the admitted amount, circle the exact admitted number first; the right answer usually sits on that number.",
+   "trigger": "A party admits one quantity but denies the larger alleged quantity.",
+   "unlocks": "The all/none/admitted-quantity answer array.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Admission exception quantity cap",
+  "signal": "No writing plus in-court admission of a smaller quantity.",
+  "studentMove": "Lock the admitted quantity before evaluating all-or-none answers.",
+  "tinyRule": "Admission opens enforcement only up to the quantity admitted.",
+  "trap": "Some admitted contract means all alleged goods are enforceable."
+ }
+}

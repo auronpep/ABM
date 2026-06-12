@@ -1,0 +1,99 @@
+{
+ "id": "CQ20307",
+ "title": "Bethany Banners Transcript",
+ "subject": "Evidence",
+ "topic": "Evidence Law",
+ "subtopic": "Hearsay and Circumstances of Its Admissibility",
+ "difficulty": "hard",
+ "tension": null,
+ "stem": "At a private “Songs of the Psalms” merchandise expo, Ruth was walking through an aisle when she was struck by a motorized pallet cart driven by Peter, an employee of Bethany Banners, Inc. Peter was moving boxed stage banners for Bethany Banners to its rented booth.\n\nAfter the incident, Peter was charged with reckless operation of equipment and pleaded not guilty. At that criminal trial, Peter testified in his own defense. He stated that, at the time of the incident, he had looked down at the booth map to find the “Road to Emmaus” display area, and as a result he did not see Ruth walking in the aisle.\n\nRuth later brought a personal-injury action against Bethany Banners under a respondeat superior theory, alleging that Peter’s negligence caused her injuries. At the civil trial, Ruth proved that Peter remained employed by Bethany Banners until Peter later died from causes unrelated to the incident. Ruth then offered a transcript of Peter’s testimony from the reckless-operation trial.\n\nUpon objection by Bethany Banners’s attorney, the transcript should be:",
+ "call": "Upon objection by Bethany Banners's attorney, the transcript should be:",
+ "choices": {
+  "A": "Admitted as a statement by Bethany Banners's employee on a matter within the scope of employment, with the transcript admitted as a public record.",
+  "B": "Admitted under the recorded recollection exception to the hearsay rule.",
+  "C": "Excluded as hearsay not within any exception or exclusion.",
+  "D": "Admitted under the former testimony exception to the hearsay rule."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The transcript is a two-layer evidence item. The first layer is Peter’s earlier testimony, offered for its truth. Gold Key: in a transcript problem, each hearsay layer needs its own path. Peter’s statement concerns his work for Bethany Banners and was made while he was still employed, so it can be used against Bethany Banners as an employee/opposing-party statement. The second layer is the court transcript itself. A court transcript records what was said in court as part of an official court function, so the transcript layer fits the public-record path.\n\nSilver Key: split the answer into two layers before you pick an exception name. One choice must account for both the speaker’s statement and the transcript that carries it. A is the only answer that does that.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "Former testimony is a familiar exception name, but it answers the wrong version of the transcript problem. It does not account for Bethany Banners’s lack of participation in Peter’s criminal trial."
+  },
+  {
+   "label": "CUT B",
+   "text": "Recorded recollection is exception-hunting. The evidence is a transcript of testimony, not Peter’s adopted memory record."
+  },
+  {
+   "label": "CUT C",
+   "text": "“Hearsay” is a true starting point but incomplete. It stops before checking whether each layer has a path."
+  },
+  {
+   "label": "Residual A",
+   "text": "A is broad/combined fit. It handles the employee-statement layer and the transcript layer."
+  },
+  {
+   "label": "CALL",
+   "text": "No fork remains after the Gold Key layer split. The answer that accounts for both layers wins."
+  }
+ ],
+ "studentScript": "Transcript means two layers. Peter's statement is job-related and while employed. The transcript is the court-record layer. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Only choice that accounts for both the employee statement layer and the transcript layer.",
+   "lawyer": "The employee-statement layer fits FRE 801(d)(2)(D); the transcript layer fits FRE 803(8); FRE 805 permits combined hearsay if each layer has a path.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It names a record exception, but not the record path this transcript uses.",
+   "lawyer": "Recorded recollection requires a record made or adopted by the witness when fresh and accurate; this court transcript is not Peter's adopted memory record.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "It hears the hearsay problem but fails to finish the layer check.",
+   "lawyer": "FRE 805 permits multiple hearsay when each layer has an admissibility path; here both layers do.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "It sees prior testimony but ignores the opponent-opportunity gate.",
+   "lawyer": "Former testimony requires the current opponent, or a civil predecessor, to have had an opportunity and similar motive to develop the testimony; Bethany Banners did not.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-DOUBLE-HEARSAY-01",
+   "statement": "For hearsay within hearsay, each layer needs its own path. In an employee-transcript item, check the employee statement layer and the transcript/public-record layer separately.",
+   "trigger": "Transcript of earlier testimony offered for its truth.",
+   "unlocks": "Combined answer over one-layer exception traps.",
+   "authority": "FRE 805; FRE 801(d)(2)(D); FRE 803(8)."
+  },
+  {
+   "id": "GK-EVIDENCE-FORMER-TESTIMONY-01",
+   "statement": "Former testimony needs the current opponent, or a civil predecessor, to have had an opportunity and similar motive to develop the earlier testimony.",
+   "trigger": "Earlier criminal trial; later civil defendant was not a party.",
+   "unlocks": "Former-testimony trap.",
+   "authority": "FRE 804(b)(1)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-TRANSCRIPT-LAYERS-01",
+   "statement": "When a choice says 'transcript,' split the evidence into speaker layer and document layer before choosing an exception.",
+   "trigger": "Transcript offered in a later trial.",
+   "unlocks": "One-layer exception-name traps.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Transcript = two layers",
+  "signal": "A transcript carries a statement from an earlier proceeding.",
+  "studentMove": "Ask: what admits the speaker's statement, and what admits the transcript?",
+  "tinyRule": "Both layers need paths.",
+  "trap": "Picking the first familiar exception name."
+ }
+}

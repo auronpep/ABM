@@ -1,0 +1,103 @@
+{
+ "id": "CQ20605",
+ "title": "Scripture Quiz Whisper",
+ "subject": "Torts",
+ "topic": "Privacy",
+ "subtopic": "False light",
+ "difficulty": "medium-high",
+ "tension": null,
+ "stem": "Daniel first learned of Martha’s accusation when Martha later apologized to him. At a privately run Bible-character board-game tournament, Martha had pulled Lydia behind the prize table and falsely whispered, “Daniel is secretly swapping the Scripture-quiz answer cards.” Lydia kept the accusation to herself. Daniel sued Martha for false light.\n\nIs Daniel likely to prevail on false light?",
+ "call": "Is Daniel likely to prevail on false light?",
+ "choices": {
+  "A": "No, because false light requires commercial use of Daniel's identity.",
+  "B": "No, because the accusation was not publicized to a broad enough audience.",
+  "C": "Yes, because the accusation cast Daniel in a false light.",
+  "D": "Yes, because false light and defamation are the same tort."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Martha made the accusation only to Lydia, in a private aside, and Lydia kept it to herself. Daniel has a false-light theory only if the false light was publicized to the public or to a broad enough audience. That publicity threshold is missing.\n\nGold Key: False light needs public-style publicity. A private one-listener accusation is not enough, even if the statement is false and offensive.\n\nSilver Key: In a No/No pair, keep the No reason that tracks the decisive fact in the stem. Here the repeated fact is the private one-person communication, not commercial use.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Wrong-frame / bait-doctrine. It gives the right kind of No outcome but uses the wrong privacy tort. Commercial use belongs to appropriation, not false light."
+  },
+  {
+   "label": "CUT C",
+   "text": "Wrong-element. It proves only the false-impression piece. It does not answer the publicity threshold."
+  },
+  {
+   "label": "CUT D",
+   "text": "Flat misstatement. “Same tort” collapses two neighboring doctrines into one."
+  },
+  {
+   "label": "Residual B",
+   "text": "It is true and responsive once the Gold Key is applied. The stem gives one listener and no repeat."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the anchor-assisted Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "False light. Private whisper to one person. Gold Key: false light needs publicity. Cut commercial-use as the wrong privacy tort, cut false-impression-only as missing publicity, cut defamation-same as a false collapse. B survives.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice says No but gives an appropriation-style reason, not a false-light publicity reason.",
+   "lawyer": "Commercial identity use is an appropriation/right-of-publicity concept; false light turns on publicity placing the plaintiff in a false light.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This choice uses the exact stem facts: one private listener and no repeat.",
+   "lawyer": "False light requires publicity; a private one-listener accusation is insufficient.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice proves the tempting element but skips the audience gate.",
+   "lawyer": "A false or misleading impression is not enough without false-light publicity.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The word same is the danger word; the Gold Key keeps false light separate from defamation.",
+   "lawyer": "False light overlaps with defamation but has distinct elements, including publicity and offensiveness.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-FALSE-LIGHT-PUBLICITY-01",
+   "statement": "False light needs publicity to the public or a broad audience. A private one-listener accusation is not enough, even if it is false.",
+   "trigger": "false light claim + one private listener + no repeat",
+   "unlocks": "private-whisper false-light trap",
+   "authority": "Restatement (Second) of Torts §652E; Restatement publicity commentary."
+  },
+  {
+   "id": "GK-TORTS-PRIVACY-TORT-HOMES-02",
+   "statement": "Commercial use of a person's identity is appropriation, not false light. Do not borrow the neighboring privacy tort's element.",
+   "trigger": "false light choice using identity, likeness, or commercial use",
+   "unlocks": "commercial-use wrong-frame trap",
+   "authority": "Restatement (Second) of Torts §652C and §652E."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-FALSE-LIGHT-NO-PAIR-01",
+   "statement": "When two answers say No, keep the No reason that matches the stem's decisive fact. Here, private audience beats commercial-use vocabulary.",
+   "trigger": "two No choices in a privacy-tort element question",
+   "unlocks": "No/No pair between false-light publicity and appropriation wrong-frame",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "False light publicity gate",
+  "signal": "False-light claim after a private accusation.",
+  "studentMove": "Ask whether the matter reached the public or a broad audience.",
+  "tinyRule": "One private listener is not false-light publicity.",
+  "trap": "Treating falsity or defamation overlap as enough."
+ }
+}

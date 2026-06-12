@@ -1,0 +1,103 @@
+{
+ "id": "CQ20690",
+ "title": "Question 20690",
+ "subject": "Civil Procedure",
+ "topic": "Personal Jurisdiction",
+ "subtopic": "Rule 12 waiver after amended pleading",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Mary runs a private Christmas-market design studio in State A. She sued Daniel, a State B drone-show contractor, in federal court after Daniel’s “Bethlehem Star” drone display failed during a paid rehearsal for Mary’s Advent market. Daniel served an answer that did not object to personal jurisdiction, although he already knew every fact supporting that objection.\n\nSeven weeks later, Mary amended the complaint against Daniel only to add a lost-profit damages theory from the same failed drone display. Daniel then moved to dismiss for lack of personal jurisdiction.\n\nHow should the court rule?",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Deny the motion only if Mary establishes supplemental jurisdiction over the amended damages theory.",
+  "B": "Deny the motion because Daniel waived the available personal-jurisdiction defense by leaving it out of his first answer.",
+  "C": "Grant the motion because lack of personal jurisdiction can never be waived.",
+  "D": "Grant the motion because every amended complaint gives a defendant a fresh chance to assert all Rule 12 defenses."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The call is whether Daniel’s late personal-jurisdiction motion should be granted. It should not. Daniel knew the facts supporting the objection and answered without raising it. The later amendment added only a new damages theory from the same failed drone display against the same defendant, so it did not create a new personal-jurisdiction problem.\n\nGold Key: Personal jurisdiction is a waivable Rule 12(b)(2) defense. If it was available and omitted from the defendant’s first Rule 12 response path, it is gone; a same-party amended complaint does not automatically revive it.\n\nSilver Key: Lock the jurisdiction word. “Personal jurisdiction” is the defendant-court power question; “supplemental jurisdiction” is a subject-matter claim-power question.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. It answers a subject-matter/supplemental-jurisdiction question. The call asks whether Daniel may raise personal jurisdiction now."
+  },
+  {
+   "label": "CUT C",
+   "text": "Not true. “Never” is an overclaim. The Gold Key supplies the tiny anchor: personal jurisdiction is waivable."
+  },
+  {
+   "label": "CUT D",
+   "text": "Not true. It invents a procedural reset rule for every amended complaint and all Rule 12 defenses. The Gold Key supplies the tiny anchor: no automatic revival when the defense was available and the amendment did not create a new defect."
+  },
+  {
+   "label": "Residual B",
+   "text": "True and responsive. It answers the precise motion: deny, because Daniel waived the available personal-jurisdiction defense by omitting it from his first answer."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "PJ motion after answer. He knew the facts and omitted PJ. Amendment only changed damages against the same defendant. Supplemental jurisdiction is a different question. Never-waivable and fresh-start are overclaims. B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call says personal jurisdiction; the choice answers supplemental jurisdiction.",
+   "lawyer": "Supplemental jurisdiction concerns subject-matter jurisdiction over claims, not waiver of a defendant's personal-jurisdiction defense.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "This is the only answer that matches the call, the first-answer fact, and the no-new-defect amendment fact.",
+   "lawyer": "Rule 12(b)(2), Rule 12(g)(2), and Rule 12(h)(1) support waiver; case law confirms no automatic revival after a same-defect amended complaint.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word never is too absolute; the Gold Key supplies the exception.",
+   "lawyer": "Personal jurisdiction is waivable; subject-matter jurisdiction is the jurisdiction defect preserved at any time.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "Every and all overstate the effect of an amended complaint.",
+   "lawyer": "A same-defendant amendment does not automatically revive waived Rule 12(b)(2)-(5) defenses that were already available.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVIL_PROCEDURE-R12-PJ-WAIVER-01",
+   "statement": "Personal jurisdiction is a waivable Rule 12(b)(2) defense. If it was available and the defendant omitted it from the first answer or first Rule 12 motion, it is waived.",
+   "trigger": "A defendant answers or files a Rule 12 motion without objecting to personal jurisdiction.",
+   "unlocks": "The 'personal jurisdiction can never be waived' trap.",
+   "authority": "Fed. R. Civ. P. 12(b)(2), 12(g)(2), 12(h)(1)."
+  },
+  {
+   "id": "GK-CIVIL_PROCEDURE-AMENDED-COMPLAINT-NO-REVIVAL-02",
+   "statement": "An amended complaint does not automatically revive a Rule 12(b)(2)-(5) defense that was available and waived earlier unless the amendment first creates the defense.",
+   "trigger": "Plaintiff amends after defendant already failed to raise a known threshold defense.",
+   "unlocks": "The amended-complaint fresh-start trap.",
+   "authority": "Gilmore v. Shearson/American Express, Inc.; State Auto Ins. Co. v. Thomas Landscaping & Constr., Inc.; Gnotec Reftele AB order."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CIVIL_PROCEDURE-JURISDICTION-WORD-01",
+   "statement": "Match the jurisdiction word to the call before doing doctrine. Personal jurisdiction is defendant-court power; supplemental jurisdiction is subject-matter power over claims.",
+   "trigger": "A choice switches from personal jurisdiction to supplemental jurisdiction.",
+   "unlocks": "The supplemental-jurisdiction wrong-frame distractor.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "First response freezes waivable Rule 12 defenses",
+  "signal": "Known personal-jurisdiction facts + answer or first Rule 12 motion without PJ objection.",
+  "studentMove": "Check whether the later pleading created a new defect. If not, cut fresh-start answers.",
+  "tinyRule": "Available PJ objections are use-it-or-lose-it; same-defect amendments do not restart them.",
+  "trap": "Amended complaint = fresh Rule 12 slate."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "CQ20808",
+ "title": "Jericho Press",
+ "subject": "Contracts",
+ "topic": "Formation",
+ "subtopic": "Consideration - preexisting legal duty",
+ "difficulty": "high",
+ "tension": null,
+ "stem": "Hannah owned a vintage hand-cranked letterpress called the “Jericho Press,” which Timothy liked to use to print private Bible-verse cards. Hannah transferred title to the press to Lydia, but only after Lydia agreed that Timothy could use the press whenever he wished. Lydia agreed but did not tell Timothy about that promise.\n\nMary lived in a coastal town and had long wanted Timothy to move there for the town’s private Scripture-calligraphy fairs. Mary wrote Timothy a letter saying that, if he moved to the town, she would leave him her estate when she died.\n\nTimothy knew that Lydia now owned the Jericho Press. He told Lydia that, if she would let him use the press until Mary died, he would give Lydia half of whatever he received from Mary. Lydia agreed, and Timothy moved to the town and used the press.\n\nMary died shortly afterward. Her will left her entire estate to Timothy, but Timothy refused to share any of it with Lydia.\n\nIf Lydia asserts a claim against Timothy for a share of the estate that Timothy received from Mary, a court should find for:",
+ "call": "If Lydia asserts a claim against Timothy for a share of the estate that Timothy received from Mary, a court should find for:",
+ "choices": {
+  "A": "Lydia, because Timothy promised to share the estate with her if she promised to let him use the press until Mary’s death.",
+  "B": "Timothy, because his promise to Lydia was not supported by consideration.",
+  "C": "Lydia, because Timothy is estopped from denying the existence of an enforceable contract between him and Lydia.",
+  "D": "Timothy, because Lydia’s promise to Hannah created an implied condition precedent to Timothy’s obligation to share the estate with Lydia."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Lydia’s promise to let Timothy use the Jericho Press did not give Timothy anything new. Lydia had already agreed with Hannah that Timothy could use the press whenever he wished. So Lydia’s later promise to Timothy was not a new legal detriment and could not support Timothy’s promise to share Mary’s estate.\n\nGold Key: A promise to do what the promisee is already legally obligated to do is not consideration for a new promise.\n\nSilver Key: Do not stop at “promise-for-promise.” Ask what new legal position the plaintiff gave up in this later bargain.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "Estoppel is attractive, but it needs a reliance move. Lydia did not rely on Timothy’s sharing promise in a new way."
+  },
+  {
+   "label": "CUT D",
+   "text": "Condition language is a wrong-frame answer. It imports Hannah’s earlier deal into Timothy’s later promise even though Timothy did not know that term."
+  },
+  {
+   "label": "CLASH A vs B",
+   "text": "Axis: did Lydia give Timothy a new legal detriment, or only what she already owed? Splitting fact: Lydia had already agreed with Hannah that Timothy could use the press whenever he wished."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "Existing duty is not consideration. B survives."
+  }
+ ],
+ "studentScript": "Cut the estoppel rescue. Cut the hidden-condition frame. Clash A and B on whether Lydia gave anything new. She did not. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answers with the visible promise exchange but skips the element the call turns on: whether Lydia gave anything new.",
+   "lawyer": "A promise-for-promise form is not enough when the promised performance was already legally owed.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This directly answers the call and names the missing consideration problem.",
+   "lawyer": "The existing-duty rule makes Timothy's sharing promise unenforceable for lack of consideration.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This reaches for an exception path but the stem gives no new reliance by Lydia.",
+   "lawyer": "Promissory estoppel requires induced action or forbearance; Lydia did not rely in a legally new way.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "This imports Hannah's earlier hidden condition into Timothy's later promise.",
+   "lawyer": "The earlier promise was not made a condition of Timothy's later estate-sharing obligation.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PRESS-DUTY-01",
+   "statement": "A promise to do what the promisee is already legally obligated to do is not consideration for a new promise, unless the new performance is materially different or the old duty is honestly disputed.",
+   "trigger": "A later promise is exchanged for permission or performance already owed under an earlier deal.",
+   "unlocks": "The surface bargain trap in A and the credited no-consideration answer in B.",
+   "authority": "Restatement (Second) of Contracts §§ 71, 73."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PRESS-DUTY-01",
+   "statement": "When one answer says 'promise-for-promise' and the other says 'no consideration,' ask what new legal position the plaintiff gave up in the later deal.",
+   "trigger": "A surface bargain repeats an earlier duty.",
+   "unlocks": "A/B fight pair on consideration.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Existing duty is not new consideration",
+  "signal": "A party promises to do the same thing already owed.",
+  "studentMove": "Ask what new legal detriment appears in the later exchange.",
+  "tinyRule": "Already owed is not newly paid for.",
+  "trap": "Promise-for-promise wording looks like consideration."
+ }
+}

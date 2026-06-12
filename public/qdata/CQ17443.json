@@ -1,0 +1,84 @@
+{
+ "id": "CQ17443",
+ "title": "Devotional Auto Renew",
+ "subject": "Civil Procedure",
+ "topic": "Joinder, Class Actions, and Intervention",
+ "subtopic": "Rule 23(a) certification prerequisites",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Two hundred customers of a private devotional-publisher online subscription service sue the publisher over a single auto-renewal-billing policy. The named plaintiff subscribed to the service, claims the same statutory consumer-protection injury as the rest of the customer group, and asks the court to certify a class. The publisher argues that a class cannot be certified until the court analyzes whether the named plaintiff and class counsel can fairly protect the interests of absent class members.\n\nWhich statement best describes the certification inquiry?",
+ "call": "Which statement best describes the certification inquiry?",
+ "choices": {
+  "A": "Adequacy of representation is unnecessary because the named plaintiff personally suffered the same injury as the class.",
+  "B": "The court must find numerosity, commonality, typicality, and adequacy, and the action must also fit within Rule 23(b).",
+  "C": "Numerosity and commonality are enough because the challenged policy affected hundreds of customers.",
+  "D": "Certification is automatic if the company used one policy, because commonality is the main Rule 23 requirement."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "The court must find all four Rule 23(a) prerequisites — numerosity, commonality, typicality, and adequacy of representation — and the action must also fit within one of the Rule 23(b) categories. Gold Key: adequacy of representation is one of the four Rule 23(a) prongs, and the publisher's argument that the court must analyze \"whether the named plaintiff and class counsel can fairly protect the interests of absent class members\" is the textbook articulation of the adequacy inquiry. The named plaintiff's personal injury does not eliminate the adequacy inquiry; it is a separate prong that the court must find in addition to numerosity, commonality, and typicality. Silver Key: when the call is \"which statement best describes the certification inquiry,\" count the prongs. Rule 23(a) has four, and Rule 23(b) has three categories. The correct answer is the one that names all four prongs and the (b) requirement.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (numerosity + commonality enough)",
+   "text": "is cut on the prong-counting test. The choice names two prongs and says they are enough. The student cannot find a textual rule that limits the certification inquiry to two prongs. Visible from the rule text: Rule 23(a) has four prongs, all required. The choice is NOT_RESPONSIVE for asserting a two-prong certification standard."
+  },
+  {
+   "label": "D (automatic certification)",
+   "text": "is cut on the same prong-counting test. The choice asserts that commonality is \"the main\" prong and that a single policy makes certification automatic. The student cannot find a textual rule that makes certification automatic. The choice is NOT_RESPONSIVE for asserting an automatic-certification standard."
+  },
+  {
+   "label": "A (adequacy unnecessary)",
+   "text": "is the dominant trap and is not student-accessibly cut without the Gold Key. The choice specifically targets the adequacy prong that the publisher's argument is raising, and it sounds rule-precise. Visible only by treating adequacy as a separate Rule 23(a) prong. The choice is NOT_RESPONSIVE under the Gold Key, but the defect is doctrinal, not structural."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis. They fight on whether adequacy of representation is a separate Rule 23(a) prong (B) or is subsumed by the named plaintiff's personal injury (A)."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves: adequacy of representation is a separate Rule 23(a) prong, distinct from typicality and from the named plaintiff's personal injury. Residual answer: B."
+  }
+ ],
+ "studentScript": "Step 1: Count the prongs. Rule 23(a) has four: numerosity, commonality, typicality, adequacy. All four must be found. Step 2: Test the adequacy prong. The named plaintiff's personal injury does not eliminate the adequacy inquiry; adequacy is a separate Rule 23(a) prong focused on whether the named plaintiff and class counsel can fairly protect absent class members. Step 3: Check Rule 23(b). The action must also fit within one of three categories: (b)(1) prejudice from separate actions; (b)(2) injunctive or declaratory relief; (b)(3) common questions predominate and a class action is superior. Silver Key: when the call is 'which statement best describes the certification inquiry,' count the prongs. Gold Key: adequacy of representation is a separate Rule 23(a) prong, distinct from typicality and from the named plaintiff's personal injury. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student treats adequacy as if it were subsumed by the named plaintiff's personal injury. The Gold Key tells the student adequacy is a separate Rule 23(a) prong, distinct from typicality and from the named plaintiff's personal injury.",
+   "lawyer": "Federal Rule of Civil Procedure 23(a)(4) requires that the representative parties will fairly and adequately protect the interests of the class. The named plaintiff's personal suffering of the same injury establishes standing and typicality; it does not eliminate the separate adequacy inquiry focused on the named plaintiff and class counsel.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "After the one-prong-miss, two-prong-miss, and automatic-certification distractors are cut on the prong-counting test, the Gold Key + Silver Key resolve the residue to the all-four-prongs-plus-23(b) standard.",
+   "lawyer": "Federal Rule of Civil Procedure 23(a) requires the court to find numerosity, commonality, typicality, and adequacy of representation. Rule 23(b) further requires that the action fit within one of three categories: (b)(1) prejudice from separate actions; (b)(2) injunctive or declaratory relief; (b)(3) common questions predominate and a class action is superior.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The student reads 'hundreds of customers' and concludes that numerosity and commonality are the only relevant prongs. The Silver Key forces the student to count the prongs: Rule 23(a) has four, all required.",
+   "lawyer": "Rule 23(a) requires the court to find all four prongs. Numerosity and commonality are two of the four; typicality and adequacy are also required.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The student reads 'single policy' and concludes that commonality is dispositive. The Silver Key forces the student to count the prongs: commonality is one prong, not the only prong; certification is never 'automatic.'",
+   "lawyer": "A single corporate policy helps establish commonality, but it does not eliminate the other three Rule 23(a) prongs. Certification is never automatic; the court must find all four prongs and one Rule 23(b) category.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-DEVOTIONAL-AUTO-RENEW-01",
+   "statement": "Adequacy of representation is a separate Rule 23(a) prong, distinct from typicality and from the named plaintiff's personal injury. The named plaintiff and class counsel must fairly protect the interests of absent class members; that is a separate inquiry the court must find in addition to numerosity, commonality, and typicality.",
+   "trigger": "defendant argues that the court must analyze whether the named plaintiff and class counsel can fairly protect absent class members; call is which statement best describes the certification inquiry",
+   "unlocks": "adequacy-unnecessary dominant trap (A)",
+   "authority": "Federal Rule of Civil Procedure 23(a)(4)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Rule 23(a) — all four prongs required; adequacy is separate from typicality and personal injury",
+  "signal": "A class-certification inquiry where the defendant argues the court must analyze whether the named plaintiff and class counsel can fairly protect absent class members.",
+  "studentMove": "Count the prongs. Rule 23(a) has four: numerosity, commonality, typicality, adequacy. All four must be found. Adequacy is a separate prong, distinct from typicality and from the named plaintiff's personal injury. Then check Rule 23(b) for a category.",
+  "tinyRule": "Rule 23(a) requires all four prongs; adequacy is separate from typicality and personal injury. Rule 23(b) further requires one of three categories.",
+  "trap": "The dominant trap treats adequacy as if it were subsumed by the named plaintiff's personal injury. The two-prong-miss trap counts only numerosity and commonality."
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "CQ20387",
+ "title": "Psalms Chess Indictment",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Exclusionary rule",
+ "subtopic": "Remedies and limits",
+ "difficulty": "hard",
+ "tension": null,
+ "stem": "Detectives investigating the theft of Stephen’s personal olivewood chess set from a Christian bookstore already had the shop’s security video and written statements from two shoppers identifying Peter. Three weeks later, officers saw Peter outside the store after a Psalms-and-coffee night and arrested him without a warrant or probable cause. The arrest produced no physical evidence and no statement. Prosecutors later indicted Peter for the theft using the video and shopper statements.\n\nPeter moves to dismiss the indictment solely because the arrest was unlawful.\n\nHow should the court rule?",
+ "call": "How should the court rule?",
+ "choices": {
+  "A": "Grant the motion unless the prosecutor proves that the arresting officers acted in good faith.",
+  "B": "Deny the motion only if Peter was released and rearrested with a valid warrant.",
+  "C": "Grant the motion, because an unlawful arrest nullifies any later indictment.",
+  "D": "Deny the motion, because an unlawful arrest does not require dismissal when the prosecution rests on evidence independent of the arrest."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The motion asks for dismissal of the indictment, not suppression of evidence. The arrest produced no statement and no physical evidence, and the prosecution is relying on video and shopper statements already in the file before the arrest.\n\nSilver Key: Lock the remedy first. This is a dismissal question, not an evidence-admissibility question.\n\nGold Key: An unlawful arrest does not automatically erase a later prosecution. The criminal-case remedy targets evidence obtained through the illegality; a prosecution supported by independent evidence may proceed.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Not responsive. It answers an evidence-suppression exception question, not the dismissal question asked."
+  },
+  {
+   "label": "CUT B",
+   "text": "Not true. It invents a release-and-rearrest prerequisite."
+  },
+  {
+   "label": "CUT C",
+   "text": "Not true. “Any later indictment” is an automatic overclaim."
+  },
+  {
+   "label": "Residual D",
+   "text": "True and responsive. It answers the actual call: deny dismissal where the prosecution rests on evidence independent of the arrest."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the CUT."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed after the residual answer survives."
+  },
+  {
+   "label": "Anchor escalation",
+   "text": "Required. The student needs the Gold Key that unlawful arrest does not automatically dismiss a prosecution."
+  }
+ ],
+ "studentScript": "The arrest was bad, but the motion is dismissal and the evidence was already independent. No arrest fruit is being offered. Deny.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call asks for dismissal. This choice talks like an evidence-admissibility exception.",
+   "lawyer": "Good faith is a suppression/admissibility concept, not a basis for granting dismissal when no arrest-derived evidence is offered.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The 'only if' condition is a made-up procedural repair rule.",
+   "lawyer": "The prosecution may proceed on independent evidence without release and rearrest on a valid warrant.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "The word 'any' turns one unlawful arrest into a prosecution-ending rule.",
+   "lawyer": "An unlawful arrest does not automatically nullify a later indictment or bar prosecution on untainted evidence.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "This choice matches the remedy call and the independent-evidence facts.",
+   "lawyer": "The prosecution may use evidence independent of the unlawful arrest; dismissal is not required.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-ARREST-REMEDY-01",
+   "statement": "An unlawful arrest is not itself a prosecution-ending defect. The remedy targets evidence obtained through the illegality; charges supported by untainted evidence are not dismissed merely because the arrest was bad.",
+   "trigger": "unlawful arrest + no arrest-derived evidence + motion to dismiss",
+   "unlocks": "automatic dismissal and void-indictment traps",
+   "authority": "United States v. Crews, Gerstein v. Pugh, Frisbie v. Collins."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-ARREST-REMEDY-01",
+   "statement": "Lock the remedy before applying Fourth Amendment exceptions. If the call asks for dismissal and the stem gives no arrest-produced evidence, suppression exceptions are side streets.",
+   "trigger": "motion to dismiss solely because arrest was unlawful",
+   "unlocks": "violation-vs-remedy trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Bad arrest is not automatic dismissal",
+  "signal": "Unlawful arrest + motion to dismiss + independent evidence",
+  "studentMove": "Separate the violation from the requested remedy.",
+  "tinyRule": "Suppress tainted evidence when applicable; do not dismiss charges supported by independent evidence.",
+  "trap": "Treating illegality as automatic case erasure."
+ }
+}

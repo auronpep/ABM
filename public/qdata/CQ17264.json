@@ -1,0 +1,80 @@
+{
+ "id": "CQ17264",
+ "title": "Prayer Parcel Trip",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Duty — particular standard of care (unknown trespasser injured by natural condition)",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A hiker, Stephen, ignored posted no-entry signs and crossed onto a remote wooded parcel that Mary, a private landowner who sometimes hosts prayer retreats for friends on the parcel, had not opened to the public. Mary did not know Stephen was on the parcel. Stephen tripped over a naturally fallen branch on an unmaintained footpath and was injured.\n\nUnder traditional entrant categories, what duty did Mary likely owe Stephen?",
+ "call": "Under traditional entrant categories, what duty did Mary likely owe Stephen?",
+ "choices": {
+  "A": "Only limited duties, because the hiker was an unknown trespasser injured by a natural condition.",
+  "B": "The full invitee inspection duty for all hazards on the land.",
+  "C": "A duty to warn of every natural condition on remote land.",
+  "D": "Strict liability because no-entry signs prove the owner expected injury."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "Mary owed only limited duties to Stephen. Under traditional entrant categories, an unknown trespasser — one whose presence the landowner has not discovered — is owed a duty only to refrain from willful and wanton conduct (and, in some modern formulations, to warn of known artificial conditions that create an unreasonable risk of death or serious bodily injury). The duty does not include the invitee inspection duty (which requires reasonable inspections and remediation of known or discoverable hazards), nor a broad duty to warn of every natural condition on remote land, nor strict liability. The injury here came from a naturally fallen branch — a paradigmatic natural condition — and Mary had no knowledge of Stephen's presence. Gold Key: the traditional categories track what the landowner knows and what the hazard is; an unknown trespasser injured by a natural condition receives only the floor-level duty.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "B (full invitee inspection duty)",
+   "text": "is cut on the entrant-category mislabel. No-entry signs are affirmative evidence that the owner has not held out the land to the public; Stephen is a trespasser, not an invitee. The invitee inspection duty does not run to a trespasser. The breaker is the Gold Key: the categories track the owner's invitation (or lack of one), not the entrant's mere presence."
+  },
+  {
+   "label": "D (strict liability)",
+   "text": "is cut on the foundational rule. Premises liability to trespassers is fault-based, not strict. Warning signs are evidence of reasonable care, not a basis for strict liability. The \"expected injury → strict liability\" inference misstates the rule."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and C survive to the final axis: is the duty limited (because of the unknown-trespasser + natural-condition combination) or is it broader (a duty to warn of every natural condition on remote land)? The single axis they fight on is the scope of any duty owed to an unknown trespasser."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. The traditional categories are narrow; an unknown trespasser is owed only the floor-level duty (refrain from willful and wanton conduct), and even the modern artificial-condition rule does not impose a duty to warn of every natural condition on remote land. Stephen was unknown; the branch was natural; the duty was limited. Residual answer: A. A student who picks C is over-extending the artificial/natural condition distinction; a student who picks B is misclassifying the entrant; a student who picks D is misstating the fault-based nature of the regime."
+  }
+ ],
+ "studentScript": "The call asks what duty the owner owed under traditional entrant categories. No-entry signs show the owner did not invite the public; the hiker is a trespasser, not an invitee. The owner did not know of the trespasser; the discovered-trespasser rule does not apply. The hazard was a naturally fallen branch on an unmaintained footpath — a natural condition. The traditional duty to an unknown trespasser is narrow: only limited duties. Gold Key: the categories track what the owner knows and what the hazard is. Strict liability is not the regime. Silver Key: warning signs are evidence of reasonable care, not a basis for strict liability. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Stephen was an unknown trespasser; the hazard was a natural condition; traditional categories impose only limited duties.",
+   "lawyer": "Under Restatement (Second) of Torts § 333–339, an unknown trespasser is owed only the floor-level duty; the natural-condition and remote-land facts confirm the limited-duty rule.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The invitee inspection duty runs only to invitees; no-entry signs are affirmative evidence the owner did not invite the public.",
+   "lawyer": "An invitee is a member of the public invited onto the land or held out as such. No-entry signs are the inverse; the entrant is a trespasser, not an invitee. The invitee duty does not run.",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "The traditional duty to unknown trespassers is narrow; it does not include a duty to warn of every natural condition on remote land.",
+   "lawyer": "Even under the modern artificial-condition rule, 'every natural condition' is not the standard, and Stephen was an unknown trespasser; the limited-duty rule applies.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "Premises liability to trespassers is fault-based, not strict; warning signs are evidence of reasonable care.",
+   "lawyer": "The traditional regime imposes negligence-based duties, not strict liability. The presence of warning signs is consistent with reasonable care, not a basis for strict liability.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-PRAYER-PARCEL-01",
+   "statement": "Under traditional entrant categories, the duty owed to an unknown trespasser is narrow and is not the invitee inspection duty. The categories track what the landowner *knows* and what the hazard *is*; an unknown trespasser injured by a natural condition receives only the floor-level duty (refrain from willful and wanton conduct).",
+   "trigger": "unknown trespasser injured by a natural condition on remote land, with no-entry signs posted",
+   "unlocks": "full-invitee-inspection-duty misclassification",
+   "authority": "Restatement (Second) of Torts § 333–339; Prosser & Keeton, Torts § 57–60"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Traditional entrant categories — unknown trespasser / natural condition",
+  "signal": "An entrant ignores posted no-entry signs, crosses onto a remote parcel, and is injured by a naturally fallen branch on an unmaintained footpath. The landowner did not know of the entrant.",
+  "studentMove": "Cut full-invitee-inspection-duty and warn-every-natural-condition with the Gold Key; cut strict-liability with the Silver Key.",
+  "tinyRule": "Unknown trespasser + natural condition on remote land = limited duty.",
+  "trap": "The student fuses any on-land injury with the highest duty; the categories track the owner's invitation and the hazard type."
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "CQ17027",
+ "title": "Heritage Plow Fraud",
+ "subject": "Civil Procedure",
+ "topic": "Erie Doctrine and Choice of Law",
+ "subtopic": "State substantive burden of proof on a state-law claim",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary, a heritage farmer in State X, agreed to buy a hand-forged breaking plow from Daniel, a blacksmith in State Y, for $18,000. Daniel wrote on the invoice that the plow was \"high-carbon, work-hardened steel, hand-forged by a fourth-generation smith.\" Mary paid in full and took delivery. During her first day of spring tillage the moldboard bent and the share cracked, because the steel was ordinary mild stock. Mary sued Daniel in federal district court on the basis of diversity jurisdiction, pleading State X common-law fraud and seeking $18,000 in damages. State X substantive law requires the plaintiff to prove reliance on the defendant's misrepresentation by clear and convincing evidence. Mary has moved in limine to have the federal court apply a federal preponderance standard to reliance, on the ground that federal procedure controls trial conduct.\n\nIf the court rules correctly under Erie and its progeny, which burden of proof will be applied to reliance at trial?",
+ "call": "If the court rules correctly under Erie and its progeny, which burden of proof will be applied to reliance at trial?",
+ "choices": {
+  "A": "A federal preponderance-of-the-evidence standard, because all burdens of proof in federal court are governed by federal procedural rules.",
+  "B": "Whatever standard the defendant prefers, because Erie exists to prevent forum shopping between state and federal court.",
+  "C": "The State X clear-and-convincing-evidence standard, because the burden is bound up with the substantive State X fraud claim.",
+  "D": "No burden of proof at all, because the jury evaluates the evidence freely and reaches its own conclusion."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "The court will apply the State X clear-and-convincing-evidence standard to reliance. The claim sounds in State X common-law fraud, and the State X forum has attached a heightened burden to one of the claim's elements. Under Erie, a federal court sitting in diversity must apply state substantive law, and the Supreme Court has treated the burden of proof on a state-law claim element (or on a state-law defense) as a substantive ingredient of the state right. The federal procedural-rules track does not displace that allocation. Mary has therefore not stated a basis for a federal preponderance standard, and the in limine motion should be denied. Gold Key: in a diversity case the burden of proof on a state-law claim element follows the state right into federal court. Silver Key: lock the call to \"which burden applies to reliance on a state-law fraud claim in diversity,\" not to abstract labels about burdens in general.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (no burden, jury decides freely)",
+   "text": "is cut on grammar/internal contradiction. \"No burden\" is not a recognized standard in any American court system, and the claim-element-driven structure of the question presupposes a burden. Visible from the answer text itself."
+  },
+  {
+   "label": "B (defendant's preferred burden)",
+   "text": "is cut on misfit (ISSUE_SENSE). Erie is a rule of state-law application, not a party-preference rule. Visible from the answer text: it reframes Erie's purpose as forum-shopping protection for the defense, which is not what Erie does."
+  },
+  {
+   "label": "CLASH",
+   "text": "- A (federal preponderance) and C (State X clear-and-convincing) survive to the deciding axis: is the burden of proof on a state-law claim element (a) a federal procedural matter, governed by federal procedural rules, or (b) bound up with the substantive state right, governed by Erie? The single axis they fight on is the Erie substantive/procedural allocation of the burden of proof on a state-law claim element."
+  },
+  {
+   "label": "CALL",
+   "text": "- The Gold Key resolves the axis. Under Erie and the outcome-determinative line, the burden of proof on a state-law claim element follows the state right into federal court. State X clear-and-convincing is the only answer responsive to that allocation. Residual: C."
+  }
+ ],
+ "studentScript": "The call asks which burden applies to reliance on a State X fraud claim in federal diversity court. D is the 'no burden' misframe — not a recognized standard. B is the 'Erie = party preference' misframe. A is the dominant trap: federal-procedural overclaim. Gold Key: the burden of proof on a state-law claim element follows the state right into federal court. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice asserts a flat rule that all burdens of proof in federal court are procedural. That overclaim is not student-accessibly visible without the Gold Key; the misstatement is the doctrinal overclaim itself.",
+   "lawyer": "Under Erie and the outcome-determinative line, the burden of proof on a state-law claim element is treated as substantive, and the federal court applies the state burden. See Guaranty Trust Co. v. York, 326 U.S. 99 (1945).",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "The choice recharacterizes Erie as a forum-shopping or party-preference rule. Erie's actual function is to require the federal court to apply state substantive law; it is not a party-preference rule.",
+   "lawyer": "Erie requires the federal court to apply the state substantive right, not to defer to a party's litigation preference. Erie R.R. v. Tompkins, 304 U.S. 64 (1938).",
+   "mold": "misfit"
+  },
+  "C": {
+   "signal": "This is the only choice that maps the Erie allocation to the specific burden on a state-law claim element. It is true and responsive.",
+   "lawyer": "The State X clear-and-convincing standard applies because the burden is bound up with the substantive State X fraud claim. Erie and the outcome-determinative line require the federal court to apply the state burden on a state-law claim element.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice asserts a non-rule: 'no burden of proof at all.' That is not a recognized standard in any American court system; every claim has a burden.",
+   "lawyer": "Every civil claim has a burden of proof on each element. The question is which party bears the burden and on what standard. The Due Process Clause does not eliminate the burden; it requires the state to provide adequate procedures for its allocation.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CIVPRO-HERITAGE-PLOW-FRAUD-01",
+   "statement": "In a diversity case, the burden of proof on a state-law claim element or defense follows the substantive state right into federal court; federal procedural rules do not override that allocation.",
+   "trigger": "diversity suit on a state-law claim, plaintiff invokes federal procedural rule to override a state burden allocation",
+   "unlocks": "federal-procedural / 'all burdens are procedural' trap",
+   "authority": "Erie Railroad Co. v. Tompkins, 304 U.S. 64 (1938); Guaranty Trust Co. v. York, 326 U.S. 99 (1945)"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Erie and the burden of proof on a state-law claim",
+  "signal": "Diversity suit on a state-law claim; the state has attached a heightened burden to a claim element; the plaintiff argues a federal procedural rule should override.",
+  "studentMove": "Cut the 'no burden' misframe and the 'party preference' misframe on the answer text. Then use the Gold Key to kill the 'all burdens are federal procedural' trap.",
+  "tinyRule": "Burden of proof on a state-law claim element follows the state right into federal court.",
+  "trap": "Federal-court setting cues the student to reach for a federal procedural rule; Erie's substantive/procedural allocation is the deciding move."
+ }
+}

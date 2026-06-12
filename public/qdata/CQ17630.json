@@ -1,0 +1,80 @@
+{
+ "id": "CQ17630",
+ "title": "Blown Bible Orchard",
+ "subject": "Torts",
+ "topic": "Trespass to Land",
+ "subtopic": "Qualified privilege to retrieve a chattel; damages from entry",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Daniel, a Christian truck driver, was hauling a box of Bibles in the open back of his pickup truck. A sudden gust of wind blew a Bible out of the truck and onto the adjoining apple orchard owned by Paul, where it came to rest among some young saplings. Daniel entered Paul's orchard to retrieve the Bible, and in doing so, he trampled a row of saplings and broke several low branches. Hauling Bibles is not an abnormally dangerous activity, and the Bible was not dislodged because of any fault on Daniel's part. Paul has now asserted a claim against Daniel for trespass to land.\n\nIf the court finds for Paul, which of the following is the correct measure of damages?",
+ "call": "If the court finds for Paul, which of the following is the correct measure of damages?",
+ "choices": {
+  "A": "Only the damages caused by Daniel's removal of the Bible from Paul's land.",
+  "B": "All damages resulting from the Bible's being blown onto Paul's land.",
+  "C": "Nominal damages only.",
+  "D": "No damages."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "The court should award only the damages caused by Daniel's removal of the Bible from Paul's land. Daniel has a qualified privilege to enter Paul's land to retrieve a chattel that got there through no fault of his own, but the privilege protects only the entry — it does not protect damage caused by the entry and retrieval. The Bible's being blown onto the land is not itself a trespass (the gust of wind is not a volitional act by Daniel, and the hauling activity is not an abnormally dangerous activity, so Daniel has no liability for damage caused by the spill under any theory). The damage Paul can recover is the damage caused by Daniel's act of walking into the orchard and removing the Bible — the trampled saplings and broken branches. Gold Key: a qualified privilege to enter protects the entry but not the damage the entry itself causes. Silver Key: the test is whether each item of damage was caused by the spill (no recovery absent abnormally dangerous activity) or by the removal (recovery permitted because the entry is a volitional act).",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "C (nominal damages only)",
+   "text": "is cut on the under-compensation half-truth. The student treats the qualified privilege as a complete shield. The Silver Key handles the axis: the privilege protects the entry, not the damage the entry itself causes. The choice is NOT_RESPONSIVE for asserting only nominal damages when the entry caused actual damage."
+  },
+  {
+   "label": "D (no damages)",
+   "text": "is cut on the full-privilege misread. The student treats the qualified privilege as absolute. The same Silver Key handles the axis: the privilege is qualified, and the actor is liable for damage caused by the entry itself. The choice is NOT_RESPONSIVE for asserting no damages when the entry caused actual damage."
+  },
+  {
+   "label": "CLASH",
+   "text": "A and B survive to the final axis: scope of the trucker's liability for damage. The single axis they fight on is the causation split — is each item of damage attributable to the spill (no recovery absent abnormally dangerous activity) or to the removal (recovery permitted because the entry is a volitional act)?"
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis: Daniel is not liable for damage caused by the spill (no fault, not an abnormally dangerous activity), but is liable for damage caused by the entry and removal (a volitional act, the privilege is qualified). Apply the Gold Key → A. A student without the Gold Key is in anchor_gap territory on the causation split; the answer is settled by the qualified-privilege doctrine and the abnormally-dangerous-activity rule."
+  }
+ ],
+ "studentScript": "The call asks the measure of damages for trespass to land. C is under-compensation (nominal is not the right measure when the privileged entry caused actual damage). D is the full-privilege misread (the privilege is qualified, not absolute). B is causation overreach (spill-caused damage is not recoverable absent an abnormally dangerous activity). A matches the qualified-privilege rule. Gold Key: qualified privilege protects the entry, not the damage the entry itself causes. Silver Key: split the causation — spill-caused damage is not recoverable; removal-caused damage is. Choose A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "After the wrong-causation and under-compensation traps are cut, the residual answer matches the qualified-privilege rule: the actor is liable for damage caused by the entry and removal, not for damage caused by the spill.",
+   "lawyer": "Restatement (Second) of Torts §§ 77, 79 (qualified privilege to enter for chattel retrieval); the privilege is qualified and does not shield the actor from liability for damage caused by the entry itself.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The student treats the spill as the entry-caused event and stacks all downstream damage onto the trucker. The Gold Key handles the axis: spill-caused damage is not recoverable absent an abnormally dangerous activity.",
+   "lawyer": "Spill-caused damage is recoverable only if (i) the spill was a volitional act, (ii) the actor was negligent, or (iii) the activity was abnormally dangerous. None of those is true here.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The student treats the qualified privilege as a complete shield. The Silver Key handles the axis: the privilege protects the entry, not the damage the entry itself causes.",
+   "lawyer": "Nominal damages are not the correct measure when the privileged entry caused actual damage; the actor is liable for the actual damage.",
+   "mold": "half_truth"
+  },
+  "D": {
+   "signal": "The student treats the qualified privilege as absolute. The same Silver Key handles the axis: the privilege is qualified, and the actor is liable for damage caused by the entry itself.",
+   "lawyer": "A qualified privilege to enter is not a complete shield; the actor must compensate for actual damage caused by the entry and removal.",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-BLOWN-BIBLE-ORCHARD-01",
+   "statement": "When a chattel lands on a landowner's land through no fault of the actor, the actor has a qualified privilege to enter to retrieve the chattel, but the privilege protects only the entry — it does not shield the actor from liability for actual damage caused by the entry and removal.",
+   "trigger": "chattel on landowner's land; actor enters to retrieve; damage from entry; hauling not abnormally dangerous; no fault",
+   "unlocks": "spill-causation trap; all-damages-from-spill wrong answer",
+   "authority": "Restatement (Second) of Torts §§ 77, 79"
+  }
+ ],
+ "silverKeys": [],
+ "remediation": {
+  "title": "Chattel retrieval — qualified privilege + damages measure",
+  "signal": "A chattel lands on a landowner's land through no fault of the actor; the actor enters to retrieve; damage from entry; hauling not abnormally dangerous.",
+  "studentMove": "Cut under-compensation and full-privilege misreads. Apply the Gold Key: spill-caused damage is not recoverable; removal-caused damage is.",
+  "tinyRule": "Qualified privilege protects the entry, not the damage the entry itself causes.",
+  "trap": "Treating the spill as the entry-caused event and stacking all downstream damage onto the actor (the spill-causation overreach)."
+ }
+}

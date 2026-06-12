@@ -1,0 +1,96 @@
+{
+ "id": "CQ20727",
+ "title": "Question 20727",
+ "subject": "Torts",
+ "topic": "Strict liability",
+ "subtopic": "Abnormally dangerous activities - harms outside abnormal risk",
+ "difficulty": "medium_high",
+ "tension": null,
+ "stem": "Source row used: BarMatrix Q# 20727, Torts, strict liability, abnormally dangerous activities, with credited answer C and the rule that strict liability does not extend to harms outside the activity’s abnormal risk.  Controlled fields use the attached taxonomy values.\n\nFinal variation — 20727_easter_garden_blast_hose\n\nEsther owned a private hillside garden where she planned to stage a Bible-themed outdoor drama. She hired Daniel’s blasting company to use explosives to carve a stone backdrop for the “empty tomb” scene. While the crew was checking the perimeter and before any explosive charge had been set, Lydia arrived to drop off palm-branch props. Near the refreshment tent, an ordinary folding costume rack tipped over and fractured Lydia’s ankle.\n\nLydia sues Daniel’s company for strict liability based on the blasting. Is the company strictly liable?",
+ "call": "Lydia sues Daniel's company for strict liability based on the blasting. Is the company strictly liable?",
+ "choices": {
+  "A": "No, because the injury did not result from an explosion, flying rock, ground shock, or other special risk of the blasting.",
+  "B": "No, because strict liability never applies before blasting begins.",
+  "C": "Yes, because the injury occurred at the blasting site.",
+  "D": "Yes, because blasting with explosives is abnormally dangerous."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The answer does not stop at the dangerous label. It links the injury to the risk that makes blasting abnormal. Gold Key: Strict liability for an abnormally dangerous activity follows the special danger, not every accident near the activity. Silver Key: In a 2-yes / 2-no array, do not pick the outcome first; pick the reason that matches the injury source.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "It proves only that blasting is dangerous. It does not answer the injury-source question."
+  },
+  {
+   "label": "CUT C",
+   "text": "It proves only site connection. The call asks strict liability based on blasting, not liability for every site accident."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Never” is a visible absolute. Timing alone is not the rule."
+  },
+  {
+   "label": "RESIDUAL A",
+   "text": "It matches the call and the trigger fact: the injury did not come from the special blasting risk."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "Blasting is dangerous, but that is not the whole question. Ask what hurt Lydia. A costume rack, not an explosion, flying rock, or ground shock. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answer engages both the call and the injury-source fact.",
+   "lawyer": "Restatement (Second) of Torts §519(2) limits strict liability to the kind of harm whose possibility makes the activity abnormally dangerous.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The word 'never' turns one fact into a total rule.",
+   "lawyer": "Timing is not the decisive limitation; special-risk causation is.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "This answer proves location, not injury source.",
+   "lawyer": "Strict liability does not attach merely because an ordinary injury occurs at the site of an abnormally dangerous activity.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "This answer proves the activity label, not the injury-risk link.",
+   "lawyer": "Even when the activity is abnormally dangerous, liability is limited to harms within the abnormal risk.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-SPECIAL-RISK-01",
+   "statement": "Strict liability for an abnormally dangerous activity follows the special danger, not every accident near the activity. The injury must be the kind of harm that made the activity abnormal.",
+   "trigger": "The stem gives an abnormally dangerous activity plus an ordinary injury mechanism.",
+   "unlocks": "activity-label and site-connection traps",
+   "authority": "Restatement (Second) of Torts §519(2)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-RISK-LINK-01",
+   "statement": "In a 2-yes / 2-no strict-liability array, do not pick the outcome first. Pick the reason that links this injury to the risk named in the answer.",
+   "trigger": "Two answers say yes, two say no, and only one answer talks about the injury source.",
+   "unlocks": "yes/no shortcut array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Strict Liability Needs the Risk Link",
+  "signal": "Dangerous activity plus ordinary injury.",
+  "studentMove": "Ask what hurt the plaintiff before choosing a strict-liability answer.",
+  "tinyRule": "Activity label is not enough; injury must flow from the abnormal risk.",
+  "trap": "Picking the dangerous-activity label."
+ }
+}

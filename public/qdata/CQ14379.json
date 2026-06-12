@@ -1,0 +1,96 @@
+{
+ "id": "CQ14379",
+ "title": "Psalm Lightshow",
+ "subject": "Contracts",
+ "topic": "Contract Content and Meaning",
+ "subtopic": "Parol Evidence Rule",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "A private company that stages ticketed Christian arts events signed a written production-services contract for a Psalm 23 drone-light show. The opening recital stated:\n\n“This Agreement, between Esther Events, LLC (hereafter called ‘Sponsor’), and Manna Media, Inc., and Lydia, its President (hereafter called ‘Producer’), witnesseth:”\n\nThe signatures appeared in this format:\n\nESTHER EVENTS, LLC\nBy /s/ Esther Vale, Managing Member\nMANNA MEDIA, INC.\nBy /s/ Timothy Reed, Vice President\n/s/ Lydia Stone, President\n\nManna Media, Inc., later became insolvent and failed to produce the show. Esther Events sued Lydia individually for breach. At trial, Lydia offered evidence from negotiations before the contract was signed that only Manna Media, Inc., was to be legally responsible for producing the show.\n\nIf the court finds the written contract to be completely integrated, is Lydia’s proffered evidence admissible?",
+ "call": "If the court finds the written contract to be completely integrated, is Lydia’s proffered evidence admissible?",
+ "choices": {
+  "A": "No, because under the four-corners approach the meaning of a completely integrated contract must be determined solely from the writing itself.",
+  "B": "No, because the legal effect of Lydia’s signature cannot be changed by evidence of prior understandings.",
+  "C": "Yes, because the writing is ambiguous as to whether Lydia was intended to be individually bound as a contracting party.",
+  "D": "Yes, because the evidence would not contradict either the recital or the way Lydia signed the contract."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The writing creates an identity problem: the recital groups the company and Lydia together as “Producer,” and Lydia’s signature appears without a separate “By” line while still describing her as president. The offered negotiations are not being used to add a new duty or contradict a stated term. They are being used to explain who the ambiguous writing made responsible.\n\nGold Key: A complete integration blocks prior negotiations used to add or contradict terms, but it does not block prior negotiations used to explain an ambiguity in the writing.\n\nSilver Key: First label the proffer’s purpose. Here the purpose is interpretation of signer capacity, not addition of a side term.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_TRUE / tiered_absolute",
+   "text": "“Solely from the writing itself” overclaims. It treats complete integration as if ambiguity never matters. The Gold Key cuts it."
+  },
+  {
+   "label": "CUT B — NOT_RESPONSIVE / bait_doctrine",
+   "text": "It answers a neighboring question: whether evidence may change a clear signature’s legal effect. The call asks whether evidence may explain an ambiguous one."
+  },
+  {
+   "label": "CUT D — NOT_RESPONSIVE / wrong_element",
+   "text": "It proves a partial permission point: no contradiction. But the complete-integration fact makes that incomplete. The answer must hook into ambiguity."
+  },
+  {
+   "label": "Residual",
+   "text": "C. It gives the correct result and the correct reason."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "This is not add-or-contradict evidence. It explains an ambiguity over who signed as a party. Cut the four-corners absolute and pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word solely makes complete integration absolute and leaves no room for ambiguity.",
+   "lawyer": "The ambiguity exception permits evidence used to explain meaning.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The choice treats the proffer as changing a clear legal effect, not as explaining ambiguous capacity.",
+   "lawyer": "Evidence offered to interpret ambiguity is not barred merely because it concerns prior understandings.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "It uses the trigger fact: ambiguous signer capacity.",
+   "lawyer": "This matches the Restatement §214(c) meaning-of-writing use.",
+   "mold": null
+  },
+  "D": {
+   "signal": "No contradiction is not the deciding permission point once complete integration is given.",
+   "lawyer": "For complete integration, consistent additional terms are barred unless the use is interpretive.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-AMBIGUITY-PER-01",
+   "statement": "Complete integration blocks prior negotiations used to add or contradict terms, but it does not block prior negotiations used to explain an ambiguity in the writing.",
+   "trigger": "complete integration plus unclear signer capacity in the recital or signature block",
+   "unlocks": "the four-corners trap and the signature-capacity trap",
+   "authority": "Restatement (Second) of Contracts §§ 214(c), 215"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PSALM-LIGHTSHOW-01",
+   "statement": "Before choosing yes or no, label the purpose of the proffer: explain ambiguity, add a term, contradict a term, or attack formation.",
+   "trigger": "two yes answers and two no answers in a parol-evidence admissibility call",
+   "unlocks": "the answer-array split between admissibility result and admissibility reason",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Purpose Gate for Parol Evidence",
+  "signal": "Complete integration plus outside negotiations.",
+  "studentMove": "Ask what the evidence is being used to do.",
+  "tinyRule": "Interpret ambiguity can come in; add or contradict terms cannot.",
+  "trap": "four-corners absolutism"
+ }
+}
