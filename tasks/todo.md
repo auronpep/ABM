@@ -33,6 +33,39 @@ Verification log:
 - [x] `npm run build` passes.
 - [x] Local browser smoke passes on `http://127.0.0.1:4173`: home, pricing, checkout success, cancelled checkout, login, sign-in, legacy `?purchase=success#/welcome`, pricing -> checkout -> browser back, and checkout-success -> sign-up. Expected local Clerk production-domain console errors still appear on localhost.
 
+## 2026-06-12 Production Deploy
+
+Deploy checklist:
+- [x] Verify GitHub remote target and private visibility before any push/write.
+- [x] Verify linked Vercel project and production target.
+- [x] Rerun checkout/auth regression script.
+- [x] Rerun production build.
+- [ ] Deploy to Vercel production.
+- [ ] Inspect the deployment and verify live routes.
+
+Deploy log:
+- [x] GitHub remote verified private: `auronpep/ABM`, `visibility=PRIVATE`.
+- [x] Vercel link verified: project `barmatrix-app`, project id `prj_LwBgARXTft6aeyoRwhIqEDWh5p4P`, org id `team_HKHemC6mfIOm0t6aROxfEOug`.
+- [x] `node scripts/auth_checkout_flow_test.mjs` passed.
+- [x] `node scripts/dashboard_enhancement_check.mjs` passed.
+- [x] `npm run build` passed.
+
+## 2026-06-12 Dashboard Enhancement Implementation
+
+Enhancement checklist:
+- [x] Add `#/dashboard` as the canonical enrolled dashboard route while keeping `#/welcome` for post-purchase/onboarding.
+- [x] Add stable dashboard copy/status labels in `src/content/dashboard.ts`.
+- [x] Add a compact Today card with assignment, reason, estimate, unlock, and one primary CTA.
+- [x] Group the Red-Zone map into Active, Retest ready, Holding, and Queued sections with mobile-safe row layout.
+- [x] Add read-only local progress and quiet insight mirrors.
+- [x] Move optional Practice Library access behind the dashboard as a secondary action.
+- [x] Make Practice Library signed-out/API-unavailable states graceful instead of showing raw fetch errors.
+
+Verification log:
+- [x] Red regression observed: `node scripts/dashboard_enhancement_check.mjs` failed on missing dashboard route type.
+- [x] Regression script passes: `dashboard_enhancement_check: all checks passed`.
+- [x] `npm run build` passes.
+- [x] Browser smoke passes on local preview: `#/welcome` shows Today card + mirrors, `#/dashboard` shows the account gate, `#/practice` shows a graceful fallback without raw fetch text/code inputs, and 390px returning-user welcome has no horizontal overflow.
 ## Phase Checklist
 
 - [x] Phase 1: Run build pipeline steps individually and capture output.
