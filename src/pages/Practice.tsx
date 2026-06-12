@@ -22,6 +22,7 @@ import {
   type PracticeQuestion,
 } from "../lib/api.ts";
 import { track } from "../lib/events.ts";
+import { createAttemptRecorder } from "../lib/attemptTelemetry.ts";
 import { VerseLine } from "../components/VerseLine.tsx";
 import type { PageProps } from "../types.ts";
 
@@ -189,6 +190,15 @@ export function Practice({ navigate }: PageProps) {
       <div className="section-rule">
         <span className="label">Practice one subject</span>
       </div>
+      {!isLoaded && !outline && !outlineError && (
+        <PracticeUnavailable
+          title="Checking account access."
+          body="If account access is slow here, keep using the dashboard assignment. The library only opens after the enrolled index is available."
+          primaryLabel="Open dashboard"
+          onPrimary={() => navigate("dashboard")}
+          onDashboard={() => navigate("dashboard")}
+        />
+      )}
       {isLoaded && !isSignedIn && (
         <PracticeUnavailable
           title="Sign in to open the full bank."
@@ -237,38 +247,39 @@ export function Practice({ navigate }: PageProps) {
       )}
 
       {/* 2 — outline code entry */}
-      <div className="section-rule" style={{ marginTop: 28 }}>
-        <span className="label">Drill by outline code</span>
-      </div>
-      <p className="body-lg" style={{ maxWidth: "62ch" }}>
-        Every line of the official MBE outline carries an 8-digit code. Enter one to drill
-        exactly that line (shorter prefixes widen the net: <span className="mono">61</span> is
-        all of Negligence).
-      </p>
-      <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
-        <input
-          className="mono"
-          style={{ padding: "10px 14px", fontSize: 16, width: "14ch" }}
-          inputMode="numeric"
-          maxLength={8}
-          placeholder="61020305"
-          value={codeInput}
-          onChange={(e) => setCodeInput(e.target.value.replace(/\D/g, ""))}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") submitCode();
-          }}
-        />
-        <button className="btn red btn-sm" disabled={starting} onClick={submitCode}>
-          Drill this code
-        </button>
-      </div>
+      {outline && (
+        <>
+          <div className="section-rule" style={{ marginTop: 28 }}>
+            <span className="label">Drill by outline code</span>
+          </div>
+          <p className="body-lg" style={{ maxWidth: "62ch" }}>
+            Every line of the official MBE outline carries an 8-digit code. Enter one to drill
+            exactly that line (shorter prefixes widen the net: <span className="mono">61</span> is
+            all of Negligence).
+          </p>
+          <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+            <input
+              className="mono"
+              style={{ padding: "10px 14px", fontSize: 16, width: "14ch" }}
+              inputMode="numeric"
+              maxLength={8}
+              placeholder="61020305"
+              value={codeInput}
+              onChange={(e) => setCodeInput(e.target.value.replace(/\D/g, ""))}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") submitCode();
+              }}
+            />
+            <button className="btn red btn-sm" disabled={starting} onClick={submitCode}>
+              Drill this code
+            </button>
+          </div>
 
-      {/* 3 — outline browser */}
-      <div className="section-rule" style={{ marginTop: 28 }}>
-        <span className="label">Browse the outline</span>
-      </div>
-      {outline &&
-        outline.subjects.map((subj) => (
+          {/* 3 — outline browser */}
+          <div className="section-rule" style={{ marginTop: 28 }}>
+            <span className="label">Browse the outline</span>
+          </div>
+          {outline.subjects.map((subj) => (
           <div key={subj.code} className="drill-subject-block">
             <div className="section-rule">
               <span className="label">{subj.label}</span>
@@ -349,7 +360,9 @@ export function Practice({ navigate }: PageProps) {
               );
             })}
           </div>
-        ))}
+          ))}
+        </>
+      )}
     </div>
   );
 }
@@ -408,6 +421,9 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
   const [forensics, setForensics] = useState<ForensicsPayload | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const shownAt = useRef<number>(Date.now());
+  const recorder = useRef(createAttemptRecorder());
+  const forensicsShownAt = useRef<number | null>(null);
+  const dwellSent = useRef(false);
   const completedRef = useRef(false);
 
   useEffect(() => {
@@ -421,11 +437,29 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
       .then((q) => {
         setQuestion(q);
         shownAt.current = Date.now();
+        recorder.current.markShown();
+        forensicsShownAt.current = null;
+        dwellSent.current = false;
       })
       .catch((e: unknown) =>
         setLoadError(e instanceof Error ? e.message : "Failed to load the question"),
       );
     window.scrollTo(0, 0);
+  }, [qid]);
+
+  useEffect(() => {
+    let maxY = 0;
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (y > maxY) {
+        maxY = y;
+      } else if (maxY - y > 200) {
+        recorder.current.recordScrollStem();
+        maxY = y; // re-arm from the new position
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, [qid]);
 
   useEffect(() => {
@@ -454,6 +488,7 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
     setSubmitting(true);
     setPicked(letter);
     const timeSeconds = Math.max(0, Math.round((Date.now() - shownAt.current) / 1000));
+    const interactionLog = recorder.current.snapshot(letter);
     try {
       const token = await getToken();
       const result = await apiFetch<AttemptResponse>("/api/attempts", {
@@ -466,9 +501,11 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
           time_seconds: timeSeconds,
           platform: "web",
           set_id: run.drill.drill_id,
+          interaction_log: interactionLog,
         },
       });
       setAttempt(result);
+      forensicsShownAt.current = Date.now();
       apiFetch<ForensicsPayload>(result.forensics_url)
         .then(setForensics)
         .catch(() => setForensics(null));
@@ -478,6 +515,24 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
     } finally {
       setSubmitting(false);
     }
+  };
+
+  const sendDwell = (attemptResult: AttemptResponse | null) => {
+    if (!attemptResult || dwellSent.current || forensicsShownAt.current === null) return;
+    dwellSent.current = true;
+    const dwellMs = Math.max(0, Date.now() - forensicsShownAt.current);
+    void (async () => {
+      try {
+        const token = await getToken();
+        await apiFetch(`/api/attempts/${attemptResult.attempt_id}/forensics-dwell`, {
+          method: "PATCH",
+          token,
+          body: { dwell_ms: dwellMs },
+        });
+      } catch {
+        // dwell is best-effort; absence reads as skipped, which is honest
+      }
+    })();
   };
 
   if (finished) {
@@ -526,7 +581,13 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
   return (
     <div className="container section drill-player">
       <div className="drill-player-top">
-        <button className="mono drill-back" onClick={onExit}>
+        <button
+          className="mono drill-back"
+          onClick={() => {
+            sendDwell(attempt);
+            onExit();
+          }}
+        >
           ← Library
         </button>
         <span className="mono drill-id">
@@ -595,7 +656,13 @@ function PracticeRunner({ run, getToken, onAdvance, onExit }: RunnerProps) {
               )}
             </>
           )}
-          <button className="btn red btn-lg" onClick={() => onAdvance(isCorrect)}>
+          <button
+            className="btn red btn-lg"
+            onClick={() => {
+              sendDwell(attempt);
+              onAdvance(isCorrect);
+            }}
+          >
             {run.index + 1 < total ? (
               <>
                 Next question <span className="arrow">→</span>
