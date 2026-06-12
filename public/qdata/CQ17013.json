@@ -1,0 +1,32 @@
+{
+ "id": "CQ17013",
+ "title": "Reliance Damages Retained Asset Offset",
+ "subject": "Contracts",
+ "topic": null,
+ "subtopic": "Reliance damages reduced by fair value of retained benefit",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A professional-grade records-analysis unit sat at the center of Hannah and Barnabas's dispute. Hannah had paid $8,750 for the unit to prepare for a specialized tax advisory engagement Barnabas had commissioned. Barnabas repudiated the agreement before the engagement began. Hannah retained the unit and put it to use in her existing bookkeeping practice; its fair value to her in that use was $3,100. Hannah's anticipated profits from the Barnabas engagement are too speculative to establish. What reliance recovery best avoids overcompensating Hannah?",
+ "call": null,
+ "choices": {
+  "A": "Nothing, because Hannah retained the unit after Barnabas cancelled.",
+  "B": "$3,100, because that is the unit's fair value to Hannah.",
+  "C": "$8,750, because that is what Hannah paid for the unit.",
+  "D": "$5,650, because the $8,750 expenditure is reduced by the $3,100 fair value Hannah retained."
+ },
+ "key": "D",
+ "dominantTrap": "C",
+ "rightExplanation": "Reliance damages restore the injured party to the position she occupied before the contract, without overcompensating her. Hannah spent $8,750 in reasonable preparation. Because she retained the unit and derived $3,100 of value from it in her bookkeeping practice, she has already recouped that portion of her outlay. Awarding the full $8,750 would give her both the value of the unit and money representing that value — a double recovery. The proper measure is $8,750 minus $3,100, or $5,650.",
+ "wrongExplanations": {
+  "A": "Retaining the unit reduces Hannah's recovery; it does not eliminate it. Hannah still lost the net expenditure she cannot recover through the unit's use. A rule that bars any recovery whenever the plaintiff keeps reliance-purchased assets would systematically under-compensate injured parties who mitigated by repurposing what they bought.",
+  "B": "The $3,100 is a deduction from Hannah's damages, not the damages themselves. Hannah's loss is what she spent minus what she got back — $8,750 minus $3,100. Using retained value as the recovery amount confuses the offset mechanism with the underlying damage calculation.",
+  "C": "Awarding the full $8,750 ignores the $3,100 value Hannah already received from the unit in her own practice. Reliance damages are designed to restore Hannah to her pre-contract position, not to leave her better off than she would have been had the contract never been made. The unreduced expenditure overstates her actual loss."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

@@ -1,0 +1,32 @@
+{
+ "id": "CQ21873",
+ "title": "Public Employee Official Duties",
+ "subject": "Constitutional Law",
+ "topic": null,
+ "subtopic": "First Amendment - public employee speech",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The audit memorandum concerned the city's employee-benefit reserve. Rebekah, a city finance analyst, was required by her position to prepare quarterly risk memoranda for her supervisor. In one memorandum, she criticized an outside brokerage firm for using valuation assumptions she believed understated risk to the reserve. After city supervisors disciplined her for the memorandum's contents, Rebekah claimed First Amendment protection, arguing that she spoke as a private citizen because the reserve's soundness affected taxpayers and retirees.",
+ "call": "What threshold issue should be resolved first?",
+ "choices": {
+  "A": "Whether public employees surrender all First Amendment rights by accepting government employment",
+  "B": "Whether financial stewardship of public funds is always a public concern that automatically protects the memorandum",
+  "C": "Whether she prepared the memorandum pursuant to her official job duties",
+  "D": "Whether the brokerage firm was a private company"
+ },
+ "key": "C",
+ "dominantTrap": "B",
+ "rightExplanation": "The first issue is whether Rebekah spoke pursuant to her official job duties. Public employees do not speak as private citizens when they make statements required by their employment duties. That threshold inquiry comes before weighing the public concern in the subject matter. The memorandum was prepared for her supervisor as part of her finance-analyst work, so the official-duty characterization is the key starting point.",
+ "wrongExplanations": {
+  "A": "This sounds protective of government employees, and it rejects an obviously overbroad rule. The breaker is that the question asks for the first issue, not the ultimate scope of employee speech rights.",
+  "B": "Public-fund stewardship sounds like a public concern, and that makes the choice attractive. The breaker is that public concern does not automatically protect speech made pursuant to assigned duties.",
+  "D": "The broker's private status may feel relevant because the criticism targeted that firm. The breaker is that the constitutional claim concerns discipline by the city employer and the employee's speaking role."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

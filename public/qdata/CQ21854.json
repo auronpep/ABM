@@ -1,0 +1,32 @@
+{
+ "id": "CQ21854",
+ "title": "Interrogatory Publication Admission",
+ "subject": "Evidence",
+ "topic": null,
+ "subtopic": "Admissions by party - interrogatory responses",
+ "difficulty": null,
+ "tension": null,
+ "stem": "On February 3, Lydia, the owner of a catering company, sued Peter, a former wholesale supplier, in state court over disputed rebate charges. Peter served written interrogatories under the state code of civil procedure. Interrogatory 7 asked Lydia to list her company's gross receipts for each month during the four-year period in dispute. Lydia answered, \"The monthly gross receipts are set out in the Metro Banquet Market Report.\" Before trial, the court took judicial notice that the report was a reputable source whose catering-sales listings were treated as reliable by informed people in the industry. At trial, Peter offers the report pages listing Lydia's monthly receipts. Lydia objects.",
+ "call": "The court should rule that the report pages are",
+ "choices": {
+  "A": "inadmissible, because the report's monthly figures have not been independently proved accurate.",
+  "B": "admissible as an admission by a party.",
+  "C": "admissible, because the report was established as a reputable source normally relied on by informed people.",
+  "D": "inadmissible as hearsay not covered by any exception."
+ },
+ "key": "B",
+ "dominantTrap": "C",
+ "rightExplanation": "Lydia's answer made the market-report pages admissible against her. A party's own statement, when offered by an opposing party, is an admission and is excluded from hearsay under FRE 801(d)(2). Her interrogatory response did more than point Peter toward a possible source; it adopted the report's monthly receipts as the answer to the question. Peter therefore may offer the relevant pages as Lydia's admission. The separate judicial-notice ruling helps explain why the report seemed reliable, but the admissibility ground that resolves the objection is Lydia's adoption of the figures in discovery.",
+ "wrongExplanations": {
+  "A": "The independent-accuracy objection fits the publication facts, but Lydia supplied the publication as her own discovery answer. Party admissions do not require separate proof that the statement is accurate before admission.",
+  "C": "The judicial-notice ruling is the strongest lure because the court found the report reputable. The offered pages are admissible because Lydia adopted them, not merely because the publication is well regarded.",
+  "D": "The hearsay label has force because Peter offers out-of-court sales figures for their truth. An opposing party's adopted statement is excluded from hearsay under FRE 801(d)(2)."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

@@ -1,0 +1,32 @@
+{
+ "id": "CQ21864",
+ "title": "Supplemental Pleading Later Permit Penalty",
+ "subject": "Civil Procedure",
+ "topic": null,
+ "subtopic": "Rule 15(d) Supplemental Pleading",
+ "difficulty": null,
+ "tension": null,
+ "stem": "On January 8, Esther, a market grower, filed a federal complaint alleging that a county licensing office unlawfully refused to renew her roadside produce-stand permit. On April 3, while the case was pending, the county assessed a civil penalty against Esther for continuing to sell vegetables at the same stand without the renewed permit. Esther wants to add the April penalty to the pending action.",
+ "call": "What is Esther's proper pleading route?",
+ "choices": {
+  "A": "Amend the complaint as of course at any time because the civil penalty arises from the same permit dispute.",
+  "B": "Wait until trial and describe the civil penalty without changing the pleadings.",
+  "C": "No pleading route is available because events after filing can never be added to a pending action.",
+  "D": "Move, on reasonable notice, for leave to serve a supplemental pleading under Rule 15(d) setting out the later penalty."
+ },
+ "key": "D",
+ "dominantTrap": "A",
+ "rightExplanation": "Rule 15(d) is the direct route for adding events that happened after the pleading to be supplemented. The April penalty did not exist when Esther filed the January complaint. Because she wants that later government act included in the pending case, she should move, on reasonable notice, for leave to serve a supplemental pleading. The fact that the penalty grows out of the same permit dispute supports supplementation, but it does not make the event an amendment as of course.",
+ "wrongExplanations": {
+  "A": "The shared permit dispute makes ordinary amendment language tempting. The penalty arose after the complaint, so Esther needs leave to supplement under Rule 15(d), not amendment as of course at any time.",
+  "B": "Trial mention may sound efficient because the penalty is connected to the same dispute. A party who wants the later event in the action must put it into the pleadings through supplementation.",
+  "C": "The post-filing timing is the trap. Rule 15(d) expressly allows later events to be added with court permission, so there is a pleading route."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

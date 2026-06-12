@@ -1,0 +1,116 @@
+{
+ "id": "CQ14394",
+ "title": "Peter Barnabas Car Loan",
+ "subject": "Contracts",
+ "topic": "Contracts",
+ "subtopic": "Defenses to Enforceability",
+ "difficulty": 3,
+ "tension": null,
+ "stem": "BARMATRIX Q# 14394 — Christian variation: 14394_peter_barnabas_car_loan\n\nPeter and his adult daughter Ruth encountered Barnabas, an old family friend, on the street after a midweek Bible study. Ruth said to Barnabas, \"How about lending me $1,000 to buy a used car? I'll pay you back with interest one year from today.\" Peter added, \"And if she doesn't pay it back as promised, I will.\" Barnabas thereupon wrote out and handed Ruth his personal check, payable to her, for $1,000, and Ruth subsequently used the funds to buy a used car. When the debt became due, both Ruth and Peter refused to repay it, or any part of it. In an action by Barnabas against Peter to recover $1,000 plus interest, which of the following statements would summarize Peter's best defense?",
+ "call": "Which of the following statements would summarize Peter's best defense?",
+ "choices": {
+  "A": "He received no consideration for his conditional promise to Barnabas.",
+  "B": "His conditional promise to Barnabas was not to be performed in less than a year from the time it was made.",
+  "C": "His conditional promise to Barnabas was not made for the primary purpose of benefiting himself (Peter).",
+  "D": "The loan by Barnabas was made without any agreement concerning the applicable interest rate."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: a promise to answer for another person's debt (\"if she doesn't pay, I will\") falls within the Statute of Frauds and is unenforceable without a signed writing — unless the promisor's main purpose in giving it was to secure an economic benefit for himself, in which case no writing is needed. C is the best defense precisely because it pleads the exception AWAY: Peter's promise was made to benefit Ruth, not Peter, so the main-purpose exception does not lift the promise out of the Statute. The entire exchange happened in a street conversation; the only writing anywhere is Barnabas's check, which Peter never signed. With the promise inside the suretyship provision and no signed writing from the party to be charged, the guarantee is unenforceable. Silver Key: when two answers both smell like the Statute of Frauds, name the axis — which provision: the calendar (one-year) or the party (answering for another's debt)? Peter's \"And if she doesn't pay it back as promised, I will\" is the classic answering-for-another signal, and that is the door that wins.",
+ "wrongExplanations": {
+  "A": "A audits consideration on the wrong person. Peter personally pocketed nothing, which is what makes A the dominant trap — but consideration does not have to flow to the promisor. Gold Key: a bargained-for detriment to the promisee is sufficient consideration even when the benefit runs entirely to a third party — Barnabas parted with $1,000 at Peter's invitation, and that loan to Ruth supports Peter's promise. The exchange the stem shows on the street (joint pitch, check handed over in direct response) is a real bargain; A's premise that the promise was gratuitous is simply false.",
+  "B": "B grabs the right doctrine family — the Statute of Frauds — but the wrong door. Gold Key: the one-year provision reaches only promises that by their terms CANNOT be fully performed within one year of the making; a promise performable at or before the one-year mark is outside it. Ruth's debt fell due exactly one year from the day the promise was made, so nothing here requires more than a year — the one-year provision never attaches. Silver Key: the stem's \"one year from today\" is a planted calendar hook; before crediting a one-year answer, name the provision axis — the operative trigger in this stem is \"if she doesn't pay, I will\" (suretyship), not the clock.",
+  "D": "D spots a genuinely missing number — no one ever named an interest rate — and treats the gap as fatal indefiniteness. But Ruth expressly promised to repay \"with interest,\" so the term exists; only the figure is unfilled, and a court implies a reasonable rate. A best defense cannot hang on a fillable side detail of a deal the stem shows was struck, funded, and half performed (check delivered, car bought)."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- D is cut on a calibration read visible from the stem and the answer text. The call asks for the BEST defense; D hangs the whole defense on a missing side number when the stem shows Ruth expressly promised \"interest\" and shows the deal struck, funded, and half performed (check handed over, car bought). An answer that attacks a fillable detail of a completed exchange is a weak-defense tell. The doctrinal kill (courts imply a reasonable rate) stays in lawyer confirmation.\n- A is wounded at CUT — the stem shows real value moving in the bargain: Barnabas handed over $1,000 in direct response to the joint pitch Peter joined. But the full kill (consideration may run to a third party) needs the Gold Key, so A is anchor-assisted, not structurally false.\n- B and C both survive the cut: each invokes a writing-requirement theory with a stem hook (\"one year from today\" for B; \"if she doesn't pay, I will\" for C)."
+  },
+  {
+   "label": "CLASH",
+   "text": "B vs. C fight on a single axis: which Statute of Frauds provision governs Peter's oral promise — the one-year clock or answering for another's debt? The splitting fact is Peter's sentence itself: \"And if she doesn't pay it back as promised, I will\" — a promise conditioned on another person's default, made to that person's creditor."
+  },
+  {
+   "label": "CALL",
+   "text": "The axis does not resolve from the stem alone; it takes the taught anchors. Gold Key: the suretyship provision requires a signed writing for a promise to answer for another's debt, unless the promisor's main purpose was his own economic benefit — and Peter's purpose was Ruth's benefit, so no escape. Gold Key: the one-year provision needs a promise that cannot be performed within one year; a debt due exactly at the one-year mark does not qualify, so B's door never opens. Residual answer: C."
+  }
+ ],
+ "studentScript": "The check changed hands and the car was bought, so the formation defenses are fighting the facts: A claims no consideration, but the loan Peter asked for IS the consideration — it doesn't have to land in Peter's pocket; D hangs everything on a missing interest number that gets filled in. That leaves the writing pair. Name the axis: which Statute of Frauds door — the calendar or answering for another's debt? 'If she doesn't pay, I will' is the suretyship signal, and the one-year provision needs a promise that can't be performed within a year, which this isn't. The suretyship door demands a writing, there is none, and Peter's promise served Ruth, not himself — no main-purpose escape. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The stem shows a real bargain: Barnabas handed over $1,000 in direct response to the pitch Peter joined. 'No consideration' claims the exchange contained nothing, yet the student can see value move. The full kill — consideration need not flow to the promisor — takes the Gold Key.",
+   "lawyer": "Restatement (Second) of Contracts § 71(4): the bargained-for performance may be given to the promisor or to some other person. Barnabas's loan to Ruth, made at Peter's invitation, is a legal detriment to the promisee supporting Peter's promise. The premise that the guarantee was gratuitous is false.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "B lives in the right doctrine neighborhood (a writing requirement) and grabs the provision with a built-in clock because the stem repeats 'one year from today.' The student can name the which-provision axis, but routing to suretyship and knowing the 'cannot be performed within a year' threshold are Gold Keys.",
+   "lawyer": "Restatement (Second) of Contracts § 130: the one-year provision covers only promises that by their terms cannot be performed within one year of the making. The debt fell due exactly one year from the making, so the provision never attaches; the operative provision is suretyship (§ 112). B is the neighboring variant, not the governing rule.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "C reads backwards — it pleads what the promise was NOT made for. The Silver Key read: a negative best-defense answer is usually pleading OUT of an exception. With the suretyship Gold Key, C says 'the main-purpose escape does not apply, so the oral guarantee stays inside the Statute.'",
+   "lawyer": "Restatement (Second) §§ 112, 116: the oral promise to answer for Ruth's debt is within the Statute; because Peter's main purpose was Ruth's benefit, not his own, the main-purpose exception does not remove it, and with no writing signed by Peter the guarantee is unenforceable.",
+   "mold": null
+  },
+  "D": {
+   "signal": "D hangs the whole defense on a missing side number, while the stem shows Ruth expressly promised 'interest' and shows the deal struck, funded, and half performed. A best defense that attacks a fillable detail of a completed exchange is a weak-defense calibration tell.",
+   "lawyer": "Restatement (Second) § 204: a court supplies a reasonable term for an omission. The promise to pay 'interest' supplies the term; the unstated rate is implied as a reasonable rate. Indefiniteness is no defense here — D fabricates a rule that every term must be expressly fixed.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-SURETYSHIP-MAIN-PURPOSE-01",
+   "statement": "A promise to answer for another person's debt ('if she doesn't pay, I will') falls within the Statute of Frauds and is unenforceable without a signed writing — unless the promisor's main purpose in giving it was to secure an economic benefit for himself, in which case no writing is needed.",
+   "trigger": "an oral guarantee of someone else's debt, with suit against the guarantor",
+   "unlocks": "C — the credited defense works precisely because the main-purpose exception does NOT apply: Peter's promise served Ruth, not Peter.",
+   "authority": "Restatement (Second) of Contracts §§ 112, 116"
+  },
+  {
+   "id": "GK-CONTRACTS-CONSIDERATION-TO-THIRD-01",
+   "statement": "Consideration for a guarantor's promise need not flow to the guarantor: the creditor's bargained-for loan to the third-party debtor is a detriment to the promisee and fully supports the guarantee.",
+   "trigger": "a guarantor who personally receives nothing while the loan proceeds go entirely to the debtor",
+   "unlocks": "the A trap — 'he received no consideration for his conditional promise.'",
+   "authority": "Restatement (Second) of Contracts § 71(4)"
+  },
+  {
+   "id": "GK-CONTRACTS-ONE-YEAR-INCAPABLE-01",
+   "statement": "The one-year provision of the Statute of Frauds reaches only promises that by their terms cannot be fully performed within one year of the making; a promise performable at or before the one-year mark is outside it.",
+   "trigger": "a stem that plants a 'one year' date next to an oral promise",
+   "unlocks": "the B trap — 'not to be performed in less than a year' is not the test, and performance due exactly at one year never triggers the provision.",
+   "authority": "Restatement (Second) of Contracts § 130"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-LOAN-ARRAY-01",
+   "statement": "Split this array in half first: A and D attack the deal's formation (no consideration; no interest term), while B and C demand a writing. The stem shows the deal struck and funded on the spot — the check changed hands and the car was bought — so the formation pair is fighting the facts; spend your time on the writing pair.",
+   "trigger": "four choices that each crown a different defense theory in a best-defense call",
+   "unlocks": "the 2×2 four-defense array",
+   "authority": null
+  },
+  {
+   "id": "SK-CONTRACTS-WHICH-SOF-DOOR-01",
+   "statement": "When two survivors both smell like the Statute of Frauds, name the axis: which provision — the calendar (one-year) or the party (answering for another's debt)? The trigger phrase is the guarantor's own sentence: 'And if she doesn't pay it back as promised, I will.'",
+   "trigger": "one answer leans on a one-year date, another on the purpose of a guarantee",
+   "unlocks": "the B-vs-C two-answer tension",
+   "authority": null
+  },
+  {
+   "id": "SK-CONTRACTS-NEGATIVE-DEFENSE-READ-01",
+   "statement": "A best-defense choice phrased as a negative — 'was NOT made for the primary purpose of benefiting himself' — is usually pleading OUT of an exception: read it as 'the exception that would defeat my defense does not apply.' Don't cut it for sounding backwards.",
+   "trigger": "a defense answer built around what a promise was NOT made for",
+   "unlocks": "the double-negative phrasing that scares students off the credited answer",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Oral guarantee: find the right Statute of Frauds door",
+  "signal": "Someone orally tells a creditor 'if X doesn't pay, I will,' and the suit is against the promisor.",
+  "studentMove": "Split formation attacks from writing attacks; the funded deal wounds the formation pair; then name the provision axis — the calendar or answering for another's debt.",
+  "tinyRule": "An oral promise to answer for another's debt is unenforceable unless the promisor's main purpose was his own benefit; consideration may flow entirely to the third party.",
+  "trap": "Auditing consideration on the guarantor personally, or grabbing the one-year provision because the stem plants a one-year date."
+ }
+}

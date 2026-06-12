@@ -1,0 +1,32 @@
+{
+ "id": "CQ21865",
+ "title": "Concurrent Closing Conditions",
+ "subject": "Contracts",
+ "topic": null,
+ "subtopic": "Conditions - concurrent conditions",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The purchase agreement for James's masonry yard stated that closing would occur on September 14 at a title office. At closing, Naomi was to tender the purchase price, and James was to deliver a deed to the property at the same time. On September 14, James came to the title office with the signed deed and the keys to the supply shed. Naomi did not come and did not send the money. Naomi later sued James for failing to transfer the property. Which statement is most accurate?",
+ "call": null,
+ "choices": {
+  "A": "Naomi may recover because concurrent conditions are treated as independent promises.",
+  "B": "James did not breach because Naomi failed to tender the concurrent performance required to mature James's duty to convey.",
+  "C": "James breached unless he sent the deed to Naomi before the closing date expired.",
+  "D": "James breached because a seller must release the property before the buyer pays."
+ },
+ "key": "B",
+ "dominantTrap": "D",
+ "rightExplanation": "James did not breach. The contract made Naomi's payment and James's deed delivery due at the same closing. Those performances were concurrent conditions. James's duty to convey did not mature unless Naomi tendered payment or was ready and able to perform at the closing. Because Naomi did not appear and did not tender the purchase price, James was not in breach for failing to transfer the property.",
+ "wrongExplanations": {
+  "A": "The independent-promise framing is attractive because both sides had duties under the same contract. The breaker is that the duties were due simultaneously, so each party's tender conditioned the other's duty.",
+  "C": "The deadline point is attractive because the closing date mattered. The breaker is that the contract called for closing performance at the title office, not advance delivery by mail.",
+  "D": "The seller-first sequence is attractive because deed delivery is the seller's main performance. The breaker is that simultaneous closing duties are concurrent conditions, not a rule requiring the seller to perform first."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

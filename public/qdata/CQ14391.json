@@ -1,0 +1,108 @@
+{
+ "id": "CQ14391",
+ "title": "Peter Scroll Fragments",
+ "subject": "Contracts",
+ "topic": "Contracts",
+ "subtopic": "Defenses to Enforceability",
+ "difficulty": 4,
+ "tension": null,
+ "stem": "BARMATRIX Q# 14391 — Christian variation: 14391_peter_scroll_fragments\n\nPeter, who owns a Christian bookstore in one state, received on June 1 the following signed letter from Barnabas, a dealer in biblical antiquities in another state: \"We have just obtained 100 of the ancient scroll fragments you inquired about and can supply them for $250 each. We can guarantee shipment no later than August 1.\" On June 10, Barnabas sold and delivered the same fragments to another merchant for $300 each. Unaware of that transaction, Peter on the morning of June 11 mailed Barnabas a letter rejecting Barnabas's offer, but, changing his mind an hour later, retrieved from his local post office the letter of rejection and immediately dispatched to Barnabas a letter of acceptance, which Barnabas received on June 14. On June 9, a valid federal statute making the interstate sale of undocumented ancient manuscript fragments punishable as a crime had become effective, but neither Peter nor Barnabas was aware until June 15 that the statute was already in effect.\n\nAs between Peter and Barnabas, which of the following is an accurate statement?",
+ "call": "As between Peter and Barnabas, which of the following is an accurate statement?",
+ "choices": {
+  "A": "No contract was formed, because Barnabas's June 10 sale of the fragments to another merchant revoked the offer to Peter.",
+  "B": "If a contract was formed, it is voidable because of mutual mistake.",
+  "C": "If a contract was formed, it is unenforceable because of supervening impracticability.",
+  "D": "No contract was formed, because Peter's June 11 rejection was effective on dispatch."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct (and C was co-credited — see the fork note below). Both B and C begin \"If a contract was formed\" — and one was. Gold Key: Barnabas's secret June 10 resale revoked nothing, because a revocation is effective only when the offeree receives it or acquires reliable information of the offeror's inconsistent act, and Peter was unaware. Gold Key: the mailbox rule is one-way — an acceptance is effective on dispatch, but a rejection is effective only on receipt — and Peter's rejection, retrieved from the post office, was never received at all, so his dispatched acceptance closed the deal. The contract therefore formed on June 11 (or, at the latest, on Barnabas's June 14 receipt). But on June 9 — before formation — a valid federal statute had already made the sale a crime, and neither party knew it. That is a mistake of both parties, at the time of contracting, about a basic assumption on which the contract was made (the legal ability to perform the deal at all), with a material effect on the exchange, and neither party bore the risk of it. The contract is voidable for mutual mistake. Silver Key: when two survivors both open with \"If a contract was formed,\" they concede formation and fight only over the discharge label — check the statute's effective date against the formation date: a statute already in effect at formation is an existing fact, which is the mutual-mistake frame; only a statute arriving after formation is truly \"supervening.\" Here June 9 precedes June 11, so the existing-fact frame (B) is the cleaner fit — though the examiners credited C as well, since performance would unquestionably be discharged either way.",
+ "wrongExplanations": {
+  "A": "A treats Barnabas's resale as an automatic revocation. Gold Key: an offer is revoked only when the offeree receives the revocation or acquires reliable information that the offeror has done something inconsistent with the offer — a resale the offeree knows nothing about revokes nothing. The stem plants the kill fact in plain sight: \"Unaware of that transaction.\" Peter's power of acceptance was fully alive on June 11.\n\nC is not incorrect — it was co-credited. When this question was scored, the NCBE accepted either B or C. C's logic: if a contract was formed, performance is discharged because the federal statute made the sale criminal — an extraordinary event neither party assumed the risk of, rendering performance impracticable (indeed illegal). The only blemish on C is the word \"supervening\": the statute took effect June 9, before the June 11 formation, so doctrinally this is an existing fact (mutual mistake / existing impracticability), not a supervening event. Gold Key: a criminalizing statute already in force at formation is analyzed as mutual mistake or existing impracticability; one enacted after formation is supervening impracticability. The examiners credited both frames because the statute slipped into the gap between offer and acceptance and the discharge outcome is identical. Examinees should still approach every question as if only one answer is correct.",
+  "D": "D is the dominant trap (33%) and runs the mailbox rule backwards. Gold Key: the mailbox rule is one-way — an acceptance is effective on dispatch; a rejection (like a revocation) is effective only on receipt. Peter's rejection was never effective for the strongest possible reason: he retrieved it from the post office, so it was never received and never even in transit to arrive. His subsequently dispatched acceptance formed the contract. Silver Key: when a stem shows a rejection mailed and then physically clawed back before an acceptance goes out, any choice making that rejection \"effective on dispatch\" is the bait — dispatch-effectiveness belongs to acceptances only."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- A is cut with the revocation-notice anchor. The choice says the resale \"revoked the offer,\" but the stem hands you the kill fact: \"Unaware of that transaction.\" Gold Key: revocation needs the offeree to receive it or reliably learn of it. A secret resale revokes nothing. A is anchor-assisted, not pure structure — without the taught anchor a student cannot know notice is required.\n- D is cut with the mailbox-asymmetry anchor plus a stem fact relation. The choice needs the rejection to be \"effective on dispatch,\" but the stem shows Peter physically retrieved the letter — it never even traveled. Gold Key: acceptances are effective on dispatch; rejections only on receipt. A retrieved rejection is a legal nullity. Anchor-assisted.\n- B and C both survive: each opens \"If a contract was formed\" and names a real discharge doctrine that the statute facts feed."
+  },
+  {
+   "label": "CLASH",
+   "text": "B vs. C fight on a single axis: what is the right doctrinal frame for a criminalizing statute that was already in effect when the contract formed — an existing-fact mistake or a supervening event? The splitting fact is pure date math, visible in the stem: statute effective June 9; acceptance dispatched June 11 (received June 14). The statute predates formation."
+  },
+  {
+   "label": "CALL",
+   "text": "The date math tilts toward B (existing fact → mutual mistake), and B is the listed key. But this is a genuine, bank-certified fork: the NCBE accepted either B or C when scoring. Silver Key: flag the coin, take the existing-fact frame when the statute predates formation, and move on — both frames discharge performance, which is why both were credited. Residual: B (C co-credited). Verdict: FORK_OR_SPLIT, never forced into a clean cut."
+  }
+ ],
+ "studentScript": "Number line first: offer June 1, statute June 9, secret resale June 10, rejection mailed and retrieved June 11, acceptance dispatched June 11, received June 14. A says the resale revoked the offer — Peter was unaware, and a revocation he never learned of revokes nothing. D says the rejection counted on dispatch — backwards; rejections count on receipt, and this one was pulled back out of the post office and never traveled. So a contract formed. B and C both concede that and offer excuse labels. Date math: the statute was already in effect on June 9, before formation — an existing fact, which is the mutual-mistake frame. Pick B, and know this is the famous dual-key item where C was credited too.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A says the resale 'revoked the offer,' but the stem plants 'Unaware of that transaction' directly in front of Peter's next move. The anchor — revocation requires the offeree to receive it or reliably learn of it — converts that planted fact into the kill.",
+   "lawyer": "Restatement (Second) § 42 (revocation effective on receipt); § 43 (indirect revocation requires the offeree to acquire reliable information of the offeror's definite inconsistent act); Dickinson v. Dodds. A resale unknown to the offeree leaves the power of acceptance intact.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "Date math visible in the stem: statute effective June 9; acceptance dispatched June 11. The statute was an existing, unknown fact at formation — both parties were mistaken about the same basic assumption (that the deal could lawfully be done).",
+   "lawyer": "Restatement (Second) § 152: mutual mistake at the time of contracting as to a basic assumption, materially affecting the exchange, with neither party bearing the risk (§ 154), makes the contract voidable. Mistake about existing law is treated as a mistake of fact (§ 151 cmt. b).",
+   "mold": null
+  },
+  "C": {
+   "signal": "C survives every cut: a contract formed, and a federal crime statute plainly excuses performance. Its only flaw is the word 'supervening' — the statute predates formation, which the timing Gold Key exposes. The bank credited it anyway; this is a flagged coin, not a trap.",
+   "lawyer": "Discharge is correct in substance: performance made criminal by governmental action is excused (Restatement (Second) §§ 261, 266; UCC § 2-615). Doctrinally the June 9 statute is EXISTING impracticability (§ 266) or mutual mistake, not supervening (§ 261) — the timing blemish the NCBE absorbed by dual-keying. No mold is assigned: a co-credited answer is not a distractor.",
+   "mold": null
+  },
+  "D": {
+   "signal": "D needs the rejection to count from the moment it was mailed — but the stem shows Peter pulled the letter back out of the post office an hour later. The anchor (acceptances are effective on dispatch; rejections only on receipt) plus the retrieval fact kills it twice over.",
+   "lawyer": "Restatement (Second) § 40: a rejection is effective on receipt; the mailbox dispatch rule (§ 63) applies to acceptances only. The retrieved rejection was never received and never effective. Even under § 40's race rule for an acceptance dispatched after a rejection, the acceptance (received June 14) beats a rejection that never arrives — a contract formed on June 11 or June 14, either way.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-REVOCATION-NOTICE-01",
+   "statement": "An offer is revoked only when the offeree receives the revocation or acquires reliable information that the offeror has definitely acted inconsistently with it (e.g., sold the goods). A resale the offeree knows nothing about revokes nothing.",
+   "trigger": "an offeror sells the offered goods to someone else and the stem says the offeree was unaware",
+   "unlocks": "the A trap — 'the June 10 sale revoked the offer.'",
+   "authority": "Restatement (Second) of Contracts §§ 42-43; Dickinson v. Dodds, 2 Ch. D. 463 (1876)"
+  },
+  {
+   "id": "GK-CONTRACTS-MAILBOX-ASYMMETRY-01",
+   "statement": "The mailbox rule is one-way: an acceptance is effective on dispatch, but a rejection (like a revocation) is effective only on receipt — and a rejection retrieved from the post office is never effective at all.",
+   "trigger": "a stem mails a rejection and then sends an acceptance (or claws the rejection back)",
+   "unlocks": "the D trap — 'the rejection was effective on dispatch.'",
+   "authority": "Restatement (Second) of Contracts §§ 40, 63"
+  },
+  {
+   "id": "GK-CONTRACTS-STATUTE-TIMING-01",
+   "statement": "A criminalizing statute already in effect when the contract forms is an EXISTING fact — analyzed as mutual mistake (or existing impracticability); only a statute enacted AFTER formation is supervening impracticability. Formation, not the offer, is the contract's birthday.",
+   "trigger": "a statute or regulation takes effect between offer and acceptance",
+   "unlocks": "the B-vs-C clash — and explains why the NCBE dual-keyed this item.",
+   "authority": "Restatement (Second) of Contracts §§ 151 cmt. b, 152, 261, 266; UCC § 2-615"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-SCROLLS-ARRAY-01",
+   "statement": "Split the array first: A and D say no contract; B and C say a contract formed but is excused. Kill the formation pair with the two formation anchors (silent revocation revokes nothing; a retrieved rejection never rejects) — the answer must live in the discharge pair.",
+   "trigger": "two choices starting 'No contract was formed' opposite two starting 'If a contract was formed'",
+   "unlocks": "the formation-vs-discharge 2×2",
+   "authority": null
+  },
+  {
+   "id": "SK-CONTRACTS-SCROLLS-COIN-01",
+   "statement": "When both survivors open 'If a contract was formed…' and name sibling discharge doctrines, they concede formation and fight only over the label — run the date math (statute effective date vs formation date), take the existing-fact frame when the statute came first, and flag the coin instead of agonizing: both labels discharge performance.",
+   "trigger": "two surviving choices that assert different excuse doctrines on identical facts",
+   "unlocks": "the B-vs-C two-answer tension on a dual-keyed item",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Number-line the deal before you label the excuse",
+  "signal": "An offer, a secret resale, a mailed-then-retrieved rejection, a dispatched acceptance, and a criminalizing statute all land on different dates.",
+  "studentMove": "Build the timeline, kill the formation pair with the two formation anchors, then compare the statute's effective date to the formation date before choosing between mistake and impracticability.",
+  "tinyRule": "Secret resale ≠ revocation; retrieved rejection ≠ rejection; statute before formation → existing-fact mistake frame; statute after formation → supervening impracticability.",
+  "trap": "Making the rejection effective on dispatch (the mailbox rule's dispatch branch belongs to acceptances only), or treating the resale itself as a revocation."
+ }
+}

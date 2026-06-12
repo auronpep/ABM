@@ -1,0 +1,32 @@
+{
+ "id": "CQ21848",
+ "title": "Family Zoning Aunt Household",
+ "subject": "Constitutional Law",
+ "topic": null,
+ "subtopic": "Due Process - Family Liberty",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A narrow rowhouse in a city residential district is owned by Ruth, who lets her teenage nephews, Stephen and Mark, live with her while their parent works long out-of-town nursing shifts. The city's single-family zoning ordinance defines a household as one or two parents and their children, and it bars an aunt from residing with nephews in that district. After the city orders Ruth to remove the boys from the home or move, the household challenges the ordinance as a direct interference with their family living arrangement.",
+ "call": "What is the best constitutional route?",
+ "choices": {
+  "A": "Uphold it automatically because aunts and nephews can never form a protected family household.",
+  "B": "Resolve it only under the Dormant Commerce Clause.",
+  "C": "Analyze it as a substantive due process burden on family integrity.",
+  "D": "Treat it as ordinary land-use regulation subject only to rational basis, with no family-liberty issue."
+ },
+ "key": "C",
+ "dominantTrap": "D",
+ "rightExplanation": "The best route is substantive due process. The ordinance directly regulates who may live together as a family in a home and excludes close relatives from a household. That kind of direct interference with family living arrangements is not treated as merely ordinary economic zoning. The family should frame the challenge as a burden on protected family integrity under the Due Process Clause.",
+ "wrongExplanations": {
+  "A": "The categorical statement is too broad. Substantive due process can protect close family living arrangements beyond parents and their minor children.",
+  "B": "Dormant Commerce Clause doctrine concerns state burdens on interstate commerce. This dispute concerns a city's direct regulation of family household composition.",
+  "D": "Zoning is often reviewed deferentially, which makes this attractive. The breaker is that the ordinance directly intrudes on protected family living arrangements."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

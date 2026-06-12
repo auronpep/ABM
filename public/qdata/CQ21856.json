@@ -1,0 +1,32 @@
+{
+ "id": "CQ21856",
+ "title": "Fraudulent Concealment Parol Evidence",
+ "subject": "Contracts",
+ "topic": null,
+ "subtopic": "Parol evidence rule - fraud exception",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Daniel and Martha dealt with each other through Daniel's small bookstore. Daniel signed a written agreement to sell Martha a boxed set of rare hymnals for $7,250. The writing stated that the set was sold \"as examined.\" Before Martha examined the set, Daniel slipped replacement pages over several badly water-stained pages. Martha later discovered the staining and offers evidence of Daniel's concealment to rescind the agreement. Daniel argues that the evidence is barred because the writing contains no warranty about page condition.",
+ "call": "Is Martha's evidence admissible?",
+ "choices": {
+  "A": "The evidence is admissible only if the words \"as examined\" are ambiguous.",
+  "B": "The evidence is barred unless Martha proves that the page-condition evidence is a consistent additional term under UCC 2-202.",
+  "C": "The evidence is admissible because it is offered to prove fraudulent concealment and avoid the agreement, not to add a condition warranty.",
+  "D": "The evidence is barred because it would supply a condition warranty that the writing did not include."
+ },
+ "key": "C",
+ "dominantTrap": "D",
+ "rightExplanation": "Martha's evidence is admissible. The parol evidence rule bars evidence offered to vary or add terms to an integrated writing, but it does not bar evidence offered to show that the agreement is voidable because of fraud. Martha is not trying to prove an unwritten warranty about the hymnals' condition. She is trying to prove that Daniel intentionally concealed damage before inspection and that the contract should be rescinded. That use is an invalidating-cause use, not a term-supplementing use.",
+ "wrongExplanations": {
+  "A": "Ambiguity can permit explanatory evidence, so this choice sounds plausible. Fraud evidence does not depend on first finding ambiguity in \"as examined.\"",
+  "B": "UCC 2-202 governs consistent additional terms, which makes this route tempting in a goods sale. Martha is not supplementing the contract; she is proving fraud to avoid it.",
+  "D": "The no-warranty writing is the strongest surface trap. Martha is not asking the court to add a warranty, but to consider fraudulent concealment as a basis for rescission."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

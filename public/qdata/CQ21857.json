@@ -1,0 +1,32 @@
+{
+ "id": "CQ21857",
+ "title": "Physical Therapy Band Service Provider",
+ "subject": "Torts",
+ "topic": null,
+ "subtopic": "Strict liability and products liability - service provider and malpractice",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A demand letter from Luke alleged that Hannah, a licensed physical therapist at a private sports academy, should pay for his shoulder injury. Hannah had been leading Luke through a prescribed rehabilitation exercise when a resistance band snapped and struck his shoulder. Hannah had selected, inspected, and anchored the band with due care. The band snapped because of a manufacturing defect that Hannah could not have detected.",
+ "call": "Is Luke likely to recover damages from Hannah based on strict products liability and malpractice?",
+ "choices": {
+  "A": "Yes, based on strict products liability, but not on malpractice.",
+  "B": "Yes, based on malpractice, but not on strict products liability.",
+  "C": "Yes, on both bases.",
+  "D": "No, on neither basis."
+ },
+ "key": "D",
+ "dominantTrap": "A",
+ "rightExplanation": "Luke is not likely to recover from Hannah on either theory. Strict products liability requires a defendant who is in the business of selling or otherwise commercially supplying the defective product. Hannah provided physical-therapy services; she was not selling resistance bands. Malpractice also requires a departure from the applicable professional standard of care. The facts state that Hannah selected, inspected, and anchored the band with due care and could not have detected the manufacturing defect. Neither theory supports liability against her.",
+ "wrongExplanations": {
+  "A": "The defective band makes strict liability attractive. The breaker is that Hannah was using the band to provide services, not acting as a commercial supplier of bands.",
+  "B": "The injury happened during professional treatment, which makes malpractice tempting. The breaker is the absence of any breach of the professional standard of care.",
+  "C": "Both theories seem available because a professional used a defective item. The breaker is that each theory is missing an essential element: commercial-supplier status and professional breach."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

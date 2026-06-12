@@ -1,0 +1,32 @@
+{
+ "id": "CQ21869",
+ "title": "Home Health Apartment Entry",
+ "subject": "Criminal Law & Procedure",
+ "topic": null,
+ "subtopic": "Fourth Amendment - arrest warrant entry into third party home",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At 8:15 p.m., officers holding an arrest warrant for Stephen received a message that Stephen was spending the evening at Ruth's apartment after Ruth finished a home-health shift. The officers went to Ruth's building. They had no consent, no exigent circumstances, and no search warrant for Ruth's apartment. They entered anyway and arrested Stephen in Ruth's kitchen.",
+ "call": "Was the entry into Ruth's apartment lawful?",
+ "choices": {
+  "A": "Yes, because the message gave police reasonable suspicion that Stephen was inside.",
+  "B": "No, but only because Stephen was found in the kitchen rather than near the apartment door.",
+  "C": "No, because police needed a search warrant for Ruth's home or a valid exception.",
+  "D": "Yes, because an arrest warrant permits police to follow the named suspect into any residence."
+ },
+ "key": "C",
+ "dominantTrap": "D",
+ "rightExplanation": "C is correct. An arrest warrant authorizes officers to arrest the person named in the warrant, but it does not itself authorize warrantless entry into a third party's home. Ruth's apartment had its own Fourth Amendment protection. Because the officers had no search warrant for Ruth's apartment and no consent or exigent circumstances, the entry was unlawful even though the arrest warrant for Stephen was valid.",
+ "wrongExplanations": {
+  "A": "The message makes this attractive because it gave police a reason to think Stephen was there. The breaker is that suspicion alone does not authorize entry into a home.",
+  "B": "The kitchen detail invites a room-by-room limitation. The breaker is that the Fourth Amendment violation occurred at the threshold, before the officers reached any room.",
+  "D": "This tracks the common Payton confusion. The breaker is that an arrest warrant may justify entry into the suspect's own residence, not a third party's home without more."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

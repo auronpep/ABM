@@ -1,0 +1,32 @@
+{
+ "id": "CQ21868",
+ "title": "Ucc Accommodation Shipment",
+ "subject": "Contracts",
+ "topic": null,
+ "subtopic": "UCC Article 2 - accommodation shipment",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Forty portable pulse oximeters were the goods Peter ordered from Lydia, a merchant seller of clinic equipment. Lydia promptly shipped 40 digital thermometers with a note saying, \"We are out of pulse oximeters; these thermometers are offered only as an accommodation if they help you.\" Peter rejected the thermometers and sued Lydia for breach, arguing that shipping any goods in response to the order accepted it.",
+ "call": "What is the best analysis under Article 2?",
+ "choices": {
+  "A": "Lydia accepted and breached because every shipment of nonconforming goods operates as both an acceptance and a breach.",
+  "B": "A contract formed only if Peter signed a new mirror-image acceptance of the thermometers.",
+  "C": "Lydia's shipment was a counteroffer because she seasonably notified Peter that the nonconforming goods were offered only as an accommodation.",
+  "D": "No contract can ever be formed by shipping goods in response to an order."
+ },
+ "key": "C",
+ "dominantTrap": "A",
+ "rightExplanation": "Article 2 treats an order for prompt shipment as inviting acceptance by a prompt promise to ship or by prompt shipment of conforming or nonconforming goods. A nonconforming shipment is ordinarily acceptance and breach. But when the seller seasonably notifies the buyer that the nonconforming goods are offered only as an accommodation, the shipment is a counteroffer and does not accept the original order. Lydia's note did that before Peter accepted the thermometers.",
+ "wrongExplanations": {
+  "A": "Attractive because Article 2 often treats a nonconforming shipment as acceptance plus breach. The accommodation notice takes the shipment out of that rule and makes it a counteroffer.",
+  "B": "Attractive by importing common-law mirror-image thinking. Article 2 permits acceptance by shipment; the issue is the accommodation notice, not a signed new acceptance.",
+  "D": "Attractive if shipment is confused with mere performance after a contract. Article 2 can form a contract by prompt shipment, including nonconforming shipment absent accommodation notice."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

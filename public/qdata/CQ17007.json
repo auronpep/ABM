@@ -1,0 +1,32 @@
+{
+ "id": "CQ17007",
+ "title": "Assignment Payment Before Notice",
+ "subject": "Contracts",
+ "topic": null,
+ "subtopic": "Assignment of Rights",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A demand letter from James reached Timothy's charter-bus company after Naomi had finished rebuilding the company's dispatch platform. Timothy's company had hired Naomi, an operations-software consultant, to replace its route-assignment system and train the night dispatchers for $18,400. Before the work was completed, Naomi assigned her right to receive the contract payment to James to satisfy a personal debt she owed him. After Naomi completed the project, Timothy's company refused to pay James. James sued the company for $18,400.",
+ "call": "Which additional fact or inference, if it were the only one true, would most likely result in judgment for Timothy's company?",
+ "choices": {
+  "A": "The contract between Naomi and Timothy's company did not contain a clause permitting assignment.",
+  "B": "Timothy's company paid Naomi $18,400 before it received notice that Naomi had assigned the payment right to James.",
+  "C": "The contract between Naomi and Timothy's company stated, \"This contract may not be modified except by a writing signed by both parties.\"",
+  "D": "James was not trained in operating dispatch software for charter-bus companies."
+ },
+ "key": "B",
+ "dominantTrap": "A",
+ "rightExplanation": "An obligor who pays the assignor before receiving notice of an assignment is discharged to the extent of that payment. Timothy's company owed the contract price to Naomi until it had notice that Naomi had transferred the right to James. If the company paid Naomi before that notice, James cannot require the company to pay the same $18,400 again. That fact would most likely produce judgment for Timothy's company.",
+ "wrongExplanations": {
+  "A": "Silence about assignment is attractive because students may expect express consent. Contract rights are generally assignable unless assignment is barred or materially changes the obligor's duty.",
+  "C": "The writing clause sounds restrictive and formal. It governs modifications of contract duties, not a transfer of Naomi's right to receive payment.",
+  "D": "James's lack of dispatch-software skill looks relevant because Naomi's performance required expertise. The assigned right is the right to payment after performance, not a delegation of Naomi's duties."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

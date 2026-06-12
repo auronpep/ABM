@@ -1,0 +1,99 @@
+{
+ "id": "CQ14917",
+ "title": "Sanctuary Lot",
+ "subject": "Real Property",
+ "topic": "Real Property",
+ "subtopic": "Contracts",
+ "difficulty": "hard",
+ "tension": null,
+ "stem": "Paul was the owner of Graceacre, an undeveloped city lot across the street from his church. Paul and Timothy, a fellow congregant, executed a written document in which Paul agreed to sell Graceacre to Timothy and Timothy agreed to buy Graceacre from Paul for $100,000; the document did not provide for an earnest money down payment. Paul recorded the document, as authorized by statute. Paul orally gave Timothy permission to park his church van on Graceacre without charge prior to the closing. Thereafter, Timothy frequently parked the van on Graceacre. Another lot closer to the church came on the market that Timothy wanted more than Graceacre. Timothy decided to try to escape any obligation to Paul. Timothy had been told that contracts for the purchase and sale of real property require consideration and concluded that because he had made no earnest money down payment, he could refuse to close and not be liable. Timothy notified Paul of his intention not to close and, in fact, did refuse to close on the date set for the closing. Paul brought an appropriate action to compel specific performance by Timothy.\n\nCall: If Paul wins, it will be because",
+ "call": "If Paul wins, it will be because",
+ "choices": {
+  "A": "Timothy's use of Graceacre for parking constitutes part performance.",
+  "B": "General contract rules regarding consideration apply to real estate contracts.",
+  "C": "The doctrine of equitable conversion applies.",
+  "D": "The document was recorded."
+ },
+ "key": "B",
+ "dominantTrap": "C",
+ "rightExplanation": "B is correct. The dispute the stem hands you is singular: Timothy's theory is that with no earnest money down payment, the contract lacks consideration. The answer that wins for Paul must defeat that exact theory. Real estate contracts are governed by ordinary contract law on formation, and under ordinary contract law an exchange of promises is complete consideration — Paul promised to convey, Timothy promised to pay $100,000. Nothing more is required. Earnest money is a commercial custom, not a legal element. Gold Key: Mutual promises are full consideration; an earnest money deposit is never required for an enforceable real estate contract. Silver Key: When the stem spells out the losing party's exact legal theory (\"no earnest money = no consideration\"), the credited answer must engage and defeat that theory — cut every choice that talks about something else. Only B mentions consideration at all.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Lock the call first",
+   "text": "\"If Paul wins, it will be because\" + the stem names Timothy's exact theory: no earnest money → no consideration. The winning ground must defeat that theory. This is the named-fight move."
+  },
+  {
+   "label": "CUT",
+   "text": "- D — colloquialism tell, visible from the answer text alone: \"because the document was recorded\" is officialness-feels-binding common sense, not a legal test. Also never mentions consideration. Cut.\n- A — doesn't engage the fight: parking says nothing about whether a promise to pay $100,000 counts as consideration. A 10-year-old can see Timothy's job was to pay, and parking isn't paying. Cut.\n- C — same responsiveness failure, dressed fancier: \"equitable conversion\" never mentions promises, payment, or consideration. The fanciest words on the page, aimed at a fight nobody is having. Cut."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not reached — three clean cuts leave one residual."
+  },
+  {
+   "label": "CALL",
+   "text": "Not reached."
+  },
+  {
+   "label": "Residual",
+   "text": "B — the only choice that engages the named fight, and it engages it head-on: general contract rules (promise-for-promise consideration) apply to real estate contracts. True and responsive. Lock it."
+  }
+ ],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Call-focus cut: Timothy's named theory is no-consideration. A never mentions consideration; and Timothy's job was to PAY $100,000 — parking isn't paying. Doesn't engage the fight.\n",
+   "lawyer": "Part performance is a Statute of Frauds substitute for ORAL land contracts (possession + payment/improvements, unequivocally referable). The contract here is written; SoF satisfied; doctrine not in play. Also typically a BUYER'S enforcement theory, not a seller's consideration answer.\n",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "Residual after three cuts; uniquely responsive — it is the only choice containing the word the whole stem is about: consideration.\n",
+   "lawyer": "Rest.2d Contracts §§ 71, 75: a return promise is consideration. Mutual promises to convey and to pay $100,000 = complete formation. Earnest money is custom, not element. Specific performance available to seller of unique land.\n",
+   "mold": null
+  },
+  "C": {
+   "signal": "Call-focus cut: never mentions promises, payment, or consideration. Bait tell: exotic doctrine + zero engagement with the stem's named dispute. 3-vs-1 array read reinforces the cut.\n",
+   "lawyer": "Equitable conversion allocates risk of loss and devolution at death between contract execution and closing. Right neighborhood (executed land contract pre-closing), wrong question — says nothing about formation/consideration. Dominant trap: 38% picked it.\n",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "Colloquialism tell visible from the answer text alone: officialness- feels-binding is lay reasoning, not a rule. Bonus cut: never touches consideration.\n",
+   "lawyer": "Recording acts govern priority against subsequent purchasers/creditors; recording has zero effect on enforceability between the parties.\n",
+   "mold": "colloquialism"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-MUTUAL-PROMISES-01",
+   "statement": "Mutual promises are full consideration — an earnest money deposit or down payment is NEVER required for an enforceable real estate contract.\n",
+   "trigger": "Stem flags 'no earnest money' or 'no down payment' on a signed land contract.",
+   "unlocks": "The 'no deposit = no consideration' myth (Timothy's theory; the gravitational pull behind C and D).",
+   "authority": "Rest.2d Contracts §§ 71, 75 (lawyer_confirmation only)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-NAMED-FIGHT-01",
+   "statement": "When the stem spells out the losing party's exact legal theory, the credited answer must defeat THAT theory — cut every choice that talks about something else.\n",
+   "trigger": "Stem narrates a party's reasoning for why they can escape ('he concluded that because...').",
+   "unlocks": "Three plausible-sounding doctrines that never engage the consideration dispute.",
+   "authority": null
+  },
+  {
+   "id": "SK-CONTRACTS-3V1-BORING-02",
+   "statement": "In a 3-vs-1 array of exotic doctrines against one boring general rule, the boring rule that engages the dispute beats the exotic doctrine that doesn't.\n",
+   "trigger": "One choice reads like a 1L hornbook sentence; the other three name-drop doctrines.",
+   "unlocks": "The pull toward C's lawyerly sparkle over B's plainness.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "No Deposit, No Problem",
+  "signal": "'No earnest money' + buyer claims no consideration",
+  "studentMove": "Lock the named fight; cut everything that doesn't engage consideration.",
+  "tinyRule": "Promise for a promise = full consideration.",
+  "trap": "Equitable conversion / recording sparkle (C, D); parking-as-performance (A)."
+ }
+}

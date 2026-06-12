@@ -1,0 +1,32 @@
+{
+ "id": "CQ21875",
+ "title": "Curtilage Dog Sniff Entry Deck",
+ "subject": "Criminal Law & Procedure",
+ "topic": null,
+ "subtopic": "Fourth Amendment - dog sniff on home curtilage",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The warrant application said that Lydia and Silas, police officers investigating suspected narcotics sales, brought a trained detection dog to Peter's lakeside cottage. They walked the dog onto the wooden entry deck attached to the cottage, where a welcome mat and tackle bench sat beside the only door facing the road. For about four minutes, the dog sniffed along the door seam and the bench. The dog alerted. The officers used the alert to obtain a warrant for the cottage.",
+ "call": "Did the officers conduct a Fourth Amendment search before obtaining the warrant?",
+ "choices": {
+  "A": "Yes, because the officers used a trained detection dog to investigate the home's curtilage for evidence.",
+  "B": "Yes, but only if the officers crossed the threshold or opened the door.",
+  "C": "No, because visitors may walk to a home's door to seek contact with the occupant.",
+  "D": "No, because a trained dog's sniff for contraband is never a search."
+ },
+ "key": "A",
+ "dominantTrap": "C",
+ "rightExplanation": "The officers conducted a search when they brought a trained detection dog onto the cottage's curtilage to obtain information. The entry deck attached to the home is within the area protected with the home itself. Although ordinary visitors may approach a door to knock, that implied license does not extend to using a trained dog to explore the area for evidence. The later warrant does not erase the earlier Fourth Amendment search that produced the alert.",
+ "wrongExplanations": {
+  "B": "The absence of a physical entry makes the search feel incomplete. A Fourth Amendment search occurs when officers intrude on protected curtilage to gather information, not only after a door is opened.",
+  "C": "Ordinary visitors can approach a home to knock, so the entry deck looks publicly accessible. That implied license does not include bringing a trained dog to conduct an evidence-gathering sniff.",
+  "D": "Dog sniffs sometimes receive limited-search treatment in public luggage or traffic-stop settings. A trained dog used at the home's curtilage is different."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

@@ -1,0 +1,32 @@
+{
+ "id": "CQ21881",
+ "title": "Private Caregiver March",
+ "subject": "Constitutional Law",
+ "topic": null,
+ "subtopic": "First Amendment - Freedom of Speech",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary is the director of a private association of home-health nurses that holds an annual public march under a chosen theme honoring bedside caregivers. The association obtains a city parade permit and selects its signs, speakers, and order of marchers. The city orders the association to include a private group carrying a banner stating that home-health care exploits families and should end, even though Mary says the banner would change the association's message.",
+ "call": "What is the association's best First Amendment argument?",
+ "choices": {
+  "A": "The association loses unless it proves that the criticizing banner is obscene.",
+  "B": "Forced inclusion may violate the organizer's right not to alter its expressive message.",
+  "C": "A public march is never expressive because it includes walking.",
+  "D": "The city may compel inclusion because the route uses public streets."
+ },
+ "key": "B",
+ "dominantTrap": "D",
+ "rightExplanation": "A private parade or march can be expressive even though it uses streets and ordinary movement. When the organizer selects a theme and controls the message, the government generally may not force the organizer to include a private speaker whose message would alter the organizer's own expression. The association's best argument is compelled speech: the city order would require it to carry a message it does not choose to convey.",
+ "wrongExplanations": {
+  "A": "Obscenity is a separate category of unprotected speech. The association's claim does not depend on proving that the opposing banner is obscene.",
+  "C": "A march can convey a message through its theme, signs, speakers, and selection of participants. Physical movement does not defeat expressive character.",
+  "D": "Public-street use gives the city authority to regulate logistics, but it does not eliminate a private organizer's editorial discretion over its own expressive event."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

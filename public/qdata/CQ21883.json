@@ -1,0 +1,32 @@
+{
+ "id": "CQ21883",
+ "title": "Recording License Admission",
+ "subject": "Civil Procedure",
+ "topic": null,
+ "subtopic": "Requests for admission - conclusive effect",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The licensing agreement for a set of instrumental recordings is the central document in a federal lawsuit between Ruth and Stephen over unpaid royalties. Stephen serves a request asking Ruth to admit that the agreement was signed on July 14. Ruth admits it. At summary judgment, Ruth tries to argue that the agreement was signed on August 28, saying the admission is only part of the discovery record.",
+ "call": "What is the effect of the admission?",
+ "choices": {
+  "A": "It is merely discovery evidence that the court may accept or reject.",
+  "B": "It binds Ruth only if Stephen separately proves reliance on the admission.",
+  "C": "It is conclusively established in this action unless the court permits withdrawal or amendment.",
+  "D": "It automatically loses binding effect if Ruth serves an amended response before judgment."
+ },
+ "key": "C",
+ "dominantTrap": "A",
+ "rightExplanation": "A matter admitted under Rule 36 is conclusively established in the action unless the court permits withdrawal or amendment. Ruth admitted the signing date in response to Stephen's request for admission. She therefore cannot create a summary-judgment dispute by arguing a different signing date unless she first obtains court permission to withdraw or amend the admission.",
+ "wrongExplanations": {
+  "A": "The answer is attractive because requests for admission are served during discovery. Rule 36 gives an admitted matter conclusive effect in the action unless withdrawn or amended with court permission.",
+  "B": "Reliance sounds relevant because prejudice matters when a court decides whether to allow withdrawal or amendment. The admission binds by rule before any separate proof of reliance.",
+  "D": "A corrected response sounds like it should fix the problem. Withdrawal or amendment of an admission requires court permission and does not occur automatically."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

@@ -1,0 +1,32 @@
+{
+ "id": "CQ21855",
+ "title": "Mistaken Liftgate Restitution",
+ "subject": "Contracts",
+ "topic": null,
+ "subtopic": "Quasi-contract restitution - measure of recovery",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The service order for a hydraulic liftgate listed Stephen's box truck by unit number and loading-bay location. Stephen owned a small delivery business and asked Ruth, a licensed fleet-equipment installer, for a price. The standard market price for installing that model of liftgate was $6,900, but Ruth agreed to do the job for $6,150 because her shop had an open week. Stephen signed the detailed work order and told Ruth that he would be away for eight days, but that the truck would be available before he returned. Ruth's crew went to the freight yard three days later. By mistake, they installed the liftgate on Mark's box truck, which matched Stephen's truck but was parked at a different bay. Mark was away and did not know about the work until after it was completed. Ruth spent $6,500 on labor and materials. The liftgate increased the value of Mark's truck by $5,400. When Stephen returned and found his truck unchanged, he demanded performance. Ruth refused. Ruth asserts a quasi-contract claim against Mark.",
+ "call": "If Ruth is successful, she is entitled to",
+ "choices": {
+  "A": "$6,500, Ruth's cost to install the liftgate on Mark's truck.",
+  "B": "$5,400, the increase in the value of Mark's truck.",
+  "C": "$6,900, the standard market price of the liftgate installation.",
+  "D": "$6,150, the agreed price in the contract between Ruth and Stephen."
+ },
+ "key": "B",
+ "dominantTrap": "A",
+ "rightExplanation": "Ruth's recovery is measured by Mark's unjust enrichment, not by Ruth's separate contract or her own expense. The question assumes that Ruth can recover in quasi-contract despite Mark's lack of request or knowledge. Once that assumption is made, restitution ordinarily looks to the benefit received by Mark. That benefit can be measured by net enrichment or by cost avoided, and where those measures differ, the smaller measure is usually used. Mark's net enrichment is the $5,400 increase in the truck's value. The cost avoided is the $6,900 market price. Ruth therefore recovers $5,400.",
+ "wrongExplanations": {
+  "A": "Ruth's out-of-pocket cost is the strongest reimbursement trap. Restitution from Mark is based on Mark's enrichment, not on making Ruth whole for every expense.",
+  "C": "The market price measures what Mark would have paid for the work, so it has pull. It exceeds the actual increase in Mark's property value.",
+  "D": "The signed order supplies a concrete number, but Mark was not a party to that contract. Ruth's claim against Mark is not measured by Stephen's bargain."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

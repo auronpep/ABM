@@ -1,0 +1,32 @@
+{
+ "id": "CQ21858",
+ "title": "Particulate Trespass",
+ "subject": "Torts",
+ "topic": null,
+ "subtopic": "Trespass to land - particulate intrusion",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A fine layer of chalk powder repeatedly appeared on the windowsills and entry steps of Naomi's music academy. Timothy operated a workshop next door that ground chalk sticks for classroom suppliers. The powder appeared most heavily after the workshop's afternoon grinding runs. Naomi sent Timothy a written complaint stating that powder from the workshop was settling on her property. Timothy kept running the grinders in the same manner, and the powder continued to settle on the academy building.",
+ "call": "If Naomi wants to assert a tort claim against Timothy because of the chalk powder that continually settles on the academy, which of the following would be her most effective theory?",
+ "choices": {
+  "A": "Public nuisance.",
+  "B": "Trespass to land.",
+  "C": "Strict liability for engaging in an abnormally dangerous activity.",
+  "D": "Invasion of privacy."
+ },
+ "key": "B",
+ "dominantTrap": "A",
+ "rightExplanation": "Trespass to land is Naomi's most effective theory. Trespass requires an intentional unauthorized physical entry onto land possessed by the plaintiff. Intent includes acting with substantial certainty that the entry will occur. After Naomi's written complaint, Timothy knew powder from the grinding operation was settling on the academy, yet he continued operating in the same manner. Some courts dispute whether airborne particles count as a trespassory entry, but among the listed theories, trespass is the only one that could plausibly support judgment. Trespass does not require proof of actual damage.",
+ "wrongExplanations": {
+  "A": "Dust affecting property sounds like a nuisance problem. The breaker is that this public-nuisance answer requires substantial harm and, for an individual plaintiff, harm different from the public's.",
+  "C": "The grinding machinery gives this answer industrial force. The breaker is that ordinary chalk grinding is not shown to pose a serious risk that reasonable care cannot eliminate.",
+  "D": "Unwanted powder on a building sounds intrusive in everyday language. The breaker is that privacy intrusion requires prying into Naomi's affairs or private life, not residue on land."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

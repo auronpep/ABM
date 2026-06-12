@@ -30,6 +30,7 @@ SUBJECT_LABELS = {
     "CIVPRO": "Civil Procedure",
     "CONSTITUTIONAL": "Constitutional Law",
     "CONLAW": "Constitutional Law",
+    "CONTRACT": "Contracts",
 }
 
 
@@ -200,11 +201,149 @@ def keys_list(items: object) -> list[dict]:
     return out
 
 
+# --- Lean frontmatter format (CQ218xx onward) -------------------------------
+# These files carry a leading `---` YAML frontmatter block plus numbered,
+# bold-titled sections ("1. **Final question**", "5. **Wrong-answer
+# explanations**", ...). They lack the rich barmatrix_row machinery (gold keys,
+# choice_walkthroughs/molds, C3 routing, remediation), so those fields come out
+# empty — but the core drill (stem, call, choices, key, dominant trap, right and
+# wrong explanations) is fully present.
+
+FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
+
+
+def frontmatter(md: str) -> dict | None:
+    m = FRONTMATTER_RE.match(md)
+    if not m:
+        return None
+    try:
+        data = yaml.safe_load(m.group(1))
+    except yaml.YAMLError:
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def numbered_section(md: str, name: str) -> str | None:
+    """Body of the first numbered header whose text contains `name`.
+
+    Handles the heading styles seen in the lean files:
+    `## 2. Answer Choices A-D`, `2. **Answer choices A-D**`, and
+    `**2. Answer Choices**`.
+    """
+    header = r"(?:#{1,5}\s*)?\*{0,2}\d+\.\s*\*{0,2}"
+    pattern = re.compile(
+        r"^" + header + r"[^*\n#]*" + re.escape(name) + r"[^*\n#]*\*{0,2}\s*$\n"
+        r"(.*?)(?=^" + header + r"|\Z)",
+        re.MULTILINE | re.DOTALL | re.IGNORECASE,
+    )
+    m = pattern.search(md)
+    return m.group(1).strip() if m else None
+
+
+def fm_lettered(body: str) -> dict[str, str]:
+    """Parse `A. text` / `B. text` blocks (choices or wrong explanations)."""
+    out: dict[str, str] = {}
+    body = re.split(r"\*{0,2}\s*Correct answer", body, maxsplit=1)[0]
+    for m in re.finditer(
+        r"(?m)^\s*\*{0,2}([A-D])[.)]\*{0,2}\s+(.+?)(?=\n\s*\*{0,2}[A-D][.)]|\Z)",
+        body,
+        re.DOTALL,
+    ):
+        text = clean_md(PICKRATE_PAREN.sub(" ", m.group(2))).strip()
+        if text and m.group(1) not in out:
+            out[m.group(1)] = text
+    return out
+
+
+def build_one_frontmatter(md: str, cqid: str) -> tuple[dict, dict] | None:
+    fm = frontmatter(md)
+    if not fm or "subject" not in fm:
+        return None
+
+    choices_body = numbered_section(md, "answer choices")
+    choices = fm_lettered(choices_body) if choices_body else {}
+    key = ""
+    if choices_body:
+        m = re.search(r"Correct answer[:\s]*\*?\*?\s*([A-D])", choices_body, re.IGNORECASE)
+        if m:
+            key = m.group(1).upper()
+    if not key:
+        key = str(fm.get("key") or "").strip().upper()[:1]
+    if len(choices) < 4 or key not in choices:
+        print(f"  SKIP {cqid}: frontmatter missing choices/key", file=sys.stderr)
+        return None
+
+    q_body = numbered_section(md, "final question")
+    if not q_body:
+        print(f"  SKIP {cqid}: frontmatter no stem", file=sys.stderr)
+        return None
+    # Drop horizontal-rule separators (---, ***, ___) so they are not mistaken
+    # for the call or padded into the stem.
+    paras = [
+        p.strip()
+        for p in re.split(r"\n\s*\n", q_body)
+        if p.strip() and not re.fullmatch(r"[-*_]{3,}", p.strip())
+    ]
+    call = clean_md(paras[-1]) if len(paras) > 1 else None
+    stem = clean_md("\n\n".join(paras[:-1]) if len(paras) > 1 else (paras[0] if paras else ""))
+    if not stem:
+        print(f"  SKIP {cqid}: frontmatter empty stem", file=sys.stderr)
+        return None
+
+    right = numbered_section(md, "right-answer explanation")
+    wrong_body = numbered_section(md, "wrong-answer explanation")
+    wrong = {k: v for k, v in fm_lettered(wrong_body or "").items() if k != key}
+
+    dominant = str(fm.get("dominant_trap") or "").strip().upper()[:1] or None
+    if dominant == key:
+        dominant = None
+
+    qid = str(fm.get("qid") or fm.get("transformed_from") or cqid)
+    title = title_from_slug(cqid.lstrip("CQ"), qid)
+    subj = subject_label(fm.get("subject"))
+
+    full = {
+        "id": cqid,
+        "title": title,
+        "subject": subj,
+        "topic": fm.get("topic"),
+        "subtopic": fm.get("subtopic"),
+        "difficulty": None,
+        "tension": None,
+        "stem": stem,
+        "call": call,
+        "choices": choices,
+        "key": key,
+        "dominantTrap": dominant,
+        "rightExplanation": clean_md(right) if right else None,
+        "wrongExplanations": wrong,
+        "c3": [],
+        "studentScript": None,
+        "recoveryPaths": [],
+        "choiceSignals": {},
+        "goldKeys": [],
+        "silverKeys": [],
+        "remediation": None,
+    }
+    index_entry = {
+        "id": cqid,
+        "title": title,
+        "subject": subj,
+        "topic": fm.get("topic"),
+        "subtopic": fm.get("subtopic"),
+        "difficulty": None,
+    }
+    return full, index_entry
+
+
 def build_one(path: Path) -> tuple[dict, dict] | None:
     md = path.read_text(encoding="utf-8", errors="replace")
     cqid = path.stem
     data = first_yaml_block(md)
     if not data or "barmatrix_row" not in data:
+        lean = build_one_frontmatter(md, cqid)
+        if lean is not None:
+            return lean
         print(f"  SKIP {cqid}: no usable YAML", file=sys.stderr)
         return None
     row = data["barmatrix_row"]

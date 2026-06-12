@@ -1,0 +1,32 @@
+{
+ "id": "CQ21867",
+ "title": "Misdemeanor Manslaughter Causation",
+ "subject": "Criminal Law & Procedure",
+ "topic": null,
+ "subtopic": "Homicide - misdemeanor manslaughter causation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary was charged with involuntary manslaughter after a city inspector learned how Deborah died. Mary operated a small courier van without the city delivery-service permit required by ordinance. The ordinance made unlicensed courier work a misdemeanor. Deborah paid Mary to carry a sealed box of printed programs across town. Mary delivered the box to the address Deborah gave her. Later that afternoon, while Deborah was standing under a hotel loading canopy, a delivery truck backed into a support post, the canopy collapsed, and Deborah was killed.",
+ "call": "May Mary properly be convicted of involuntary manslaughter on a misdemeanor-manslaughter theory?",
+ "choices": {
+  "A": "No, because Mary's unlicensed courier work did not actually or proximately cause Deborah's death.",
+  "B": "Yes, because any death that follows a misdemeanor is involuntary manslaughter.",
+  "C": "No, because misdemeanor manslaughter applies only to violent misdemeanors.",
+  "D": "Yes, because Mary was committing a misdemeanor when she performed the courier delivery."
+ },
+ "key": "A",
+ "dominantTrap": "D",
+ "rightExplanation": "Misdemeanor manslaughter requires more than proof that the defendant committed a misdemeanor before someone died. The unlawful act must actually and proximately cause the death. Mary's permit violation allowed the courier delivery, but the death resulted from the truck striking the canopy after the delivery was complete. The missing permit did not cause that fatal event. The misdemeanor label alone does not supply homicide liability.",
+ "wrongExplanations": {
+  "B": "Attractive because unlawful-act manslaughter uses a misdemeanor as the predicate offense. The death still must be caused by that unlawful act.",
+  "C": "Attractive by trying to narrow the doctrine to dangerous conduct. The decisive defect is not the misdemeanor's label; it is the absence of actual and proximate causation.",
+  "D": "Attractive because Mary was violating the permit ordinance during the paid delivery. Commission of a misdemeanor is not enough unless the misdemeanor caused the death."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

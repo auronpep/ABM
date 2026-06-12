@@ -1,0 +1,32 @@
+{
+ "id": "CQ21872",
+ "title": "Title Subscription Price Affirmation",
+ "subject": "Constitutional Law",
+ "topic": null,
+ "subtopic": "Dormant Commerce Clause - extraterritorial regulation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Naomi sent the state revenue agency a demand letter after it rejected her company's permit renewal. The state licenses companies to sell title-search subscriptions to brokers in the state only if the company certifies that the fee it charges subscribers in every other state during the same quarter is no lower than the in-state subscription fee. The state says it is regulating only subscriptions sold inside the state. Naomi's company sells such subscriptions in several states.",
+ "call": "What is the strongest Dormant Commerce Clause objection?",
+ "choices": {
+  "A": "The law is valid because a state may set a seller's nationwide prices once the seller chooses to serve that state's market.",
+  "B": "Article IV's Privileges and Immunities Clause is the exclusive doctrine for challenging the law.",
+  "C": "The law directly controls prices charged for out-of-state transactions and risks impermissible extraterritorial regulation.",
+  "D": "The law is valid because subscription-price rules do not affect commerce."
+ },
+ "key": "C",
+ "dominantTrap": "A",
+ "rightExplanation": "C is correct. A state may regulate transactions within its borders, but it may not condition access to its market on the seller's prices in other states. The certification requirement ties the in-state license to fees charged elsewhere during the same quarter. That is the classic price-affirmation problem: the state is projecting its pricing rule beyond its borders while calling the regulated sale local.",
+ "wrongExplanations": {
+  "A": "This is attractive because the seller is seeking an in-state license. The breaker is the nationwide price condition; market entry does not let one state dictate prices charged in other states.",
+  "B": "The choice points to another constitutional limit on state discrimination against citizens. The breaker is that a Dormant Commerce Clause objection remains available when the state burdens or directly regulates interstate commerce.",
+  "D": "The rule sounds narrow because the product is a subscription rather than goods. The breaker is that selling paid title-search subscriptions across state lines is commerce, and price conditions are commercial regulation."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

@@ -1,0 +1,32 @@
+{
+ "id": "CQ21880",
+ "title": "Music Store Malicious Prosecution",
+ "subject": "Torts",
+ "topic": null,
+ "subtopic": "Business torts - malicious prosecution",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The reconciliation spreadsheet for a music store showed that 12 electronic keyboards had been delivered to a downtown branch after a scanner error, not removed by Paul, the store's former sales agent. Rebekah, the store owner, read the spreadsheet before filing a civil action accusing Paul of conversion. Rebekah filed anyway to pressure Paul to withdraw a separate complaint about unpaid commissions. The court entered judgment for Paul on the merits. Paul sued Rebekah for malicious prosecution.",
+ "call": "Will Paul likely prevail?",
+ "choices": {
+  "A": "No, because malicious prosecution requires a later misuse of a writ, subpoena, or other process after the action has begun.",
+  "B": "Yes, but only because Rebekah's suit caused Paul financial loss.",
+  "C": "Yes, because Rebekah initiated a proceeding without probable cause, used it for an improper purpose, and the proceeding terminated in Paul's favor.",
+  "D": "No, because an unsuccessful civil action does not by itself create tort liability."
+ },
+ "key": "C",
+ "dominantTrap": "A",
+ "rightExplanation": "Paul is likely to prevail. Malicious prosecution applies when a defendant initiates a proceeding without probable cause, acts with malice or an improper purpose, and the proceeding terminates favorably to the later plaintiff. Rebekah had the store's own reconciliation spreadsheet showing that Paul had not taken the keyboards. Filing the conversion action anyway to pressure him on a separate commission complaint supports malice. Judgment for Paul on the merits supplies favorable termination.",
+ "wrongExplanations": {
+  "A": "Misuse of process after issuance is the core of abuse of process. Malicious prosecution focuses on the wrongful initiation of a proceeding that later ends favorably to the accused party.",
+  "B": "Economic loss may support damages, but it does not by itself establish malicious prosecution. The decisive facts are lack of probable cause, improper purpose, and favorable termination.",
+  "D": "Losing a civil action alone is not enough. Here, Rebekah also lacked probable cause, acted for an improper collateral purpose, and lost on the merits."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

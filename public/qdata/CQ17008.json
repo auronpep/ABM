@@ -1,0 +1,32 @@
+{
+ "id": "CQ17008",
+ "title": "Escape Ladder Risk Utility",
+ "subject": "Torts",
+ "topic": null,
+ "subtopic": "Products liability - design defect - risk utility",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A folding emergency escape ladder sold at Paul's hardware store is designed to be light enough for typical adults to carry to a window and hook in place quickly. Rebekah, who was injured after a ladder in its package was crushed by a falling stock cart, argues that the ladder should have had solid steel side rails that would survive that unusual crushing accident. The side rails would triple the ladder's packed weight and make it too heavy for many users to position during an evacuation.",
+ "call": "How should the proposed alternative design be treated?",
+ "choices": {
+  "A": "It may be unreasonable because it would impair the ladder's emergency use and introduce new safety risks.",
+  "B": "It eliminates all products liability because emergency ladders are safety devices.",
+  "C": "It automatically proves a design defect because it would prevent one kind of damage.",
+  "D": "It proves a manufacturing defect because one ladder package was crushed."
+ },
+ "key": "A",
+ "dominantTrap": "C",
+ "rightExplanation": "Risk-utility analysis asks whether the proposed alternative design is reasonable in light of the product's function, utility, costs, and risks. A design that prevents one unusual crushing injury is not required if it would make the product too heavy for many users to deploy during the emergency it is meant to address. The proposed side rails may therefore be unreasonable because they impair the ladder's emergency function and introduce new safety problems.",
+ "wrongExplanations": {
+  "B": "The answer is attractive because the product is meant to protect users. Safety products can still be defectively designed if the plaintiff proves the required elements.",
+  "C": "Preventing the stock-cart injury sounds decisive. Design-defect law does not require every safer-in-one-respect alternative when the change would undermine the product's basic utility.",
+  "D": "The crushed package makes the case sound like a single bad item. The plaintiff's theory challenges the ladder's overall design, not a departure by one unit from its intended design."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

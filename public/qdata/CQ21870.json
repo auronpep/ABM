@@ -1,0 +1,32 @@
+{
+ "id": "CQ21870",
+ "title": "Academy Equipment Case",
+ "subject": "Torts",
+ "topic": null,
+ "subtopic": "Negligence causation - Palsgraf problem",
+ "difficulty": null,
+ "tension": null,
+ "stem": "The equipment checkout log at an after-school academy showed that Philip had borrowed a plain canvas case for a classroom demonstration. As Philip stepped through a busy doorway, Martha, an academy aide, negligently bumped him aside to clear the entrance. The case fell from Philip's hand and struck Abigail, who was standing eighteen inches from the doorway, fracturing her wrist. The case was unlabeled and contained several metal calibration weights.",
+ "call": "Under a Palsgraf-style duty and proximate-cause analysis, may Abigail recover?",
+ "choices": {
+  "A": "Yes, because a negligent actor owes a duty to everyone injured by any consequence of the act.",
+  "B": "No, because Palsgraf bars recovery by every bystander who was not the person mishandled.",
+  "C": "Yes, because Abigail was within the foreseeable zone of physical danger from mishandling Philip at the doorway.",
+  "D": "No, because Martha did not know the canvas case contained heavy metal weights."
+ },
+ "key": "C",
+ "dominantTrap": "B",
+ "rightExplanation": "C is correct. Palsgraf limits negligence liability to plaintiffs within the foreseeable zone of danger created by the defendant's conduct. Abigail was standing eighteen inches from the doorway when Martha negligently bumped Philip, causing a heavy case to fall. Physical impact to a person immediately beside the mishandled student was a foreseeable risk of that conduct. Abigail may recover if she proves breach, causation, and damages.",
+ "wrongExplanations": {
+  "A": "This reaches the same result but uses Andrews-style language that overstates the MBE duty limit. The breaker is that recovery depends on foreseeable danger to Abigail, not duty to the whole world.",
+  "B": "Palsgraf makes this attractive because the injured plaintiff was not the person Martha bumped. The breaker is that nearby bystanders may recover when they are foreseeable plaintiffs in the physical danger zone.",
+  "D": "The unlabeled case gives this trap force. The breaker is that Martha need not know the exact weight when physical injury from dropping a carried case onto a nearby person was foreseeable."
+ },
+ "c3": [],
+ "studentScript": null,
+ "recoveryPaths": [],
+ "choiceSignals": {},
+ "goldKeys": [],
+ "silverKeys": [],
+ "remediation": null
+}

@@ -1,0 +1,101 @@
+{
+ "id": "CQ14406",
+ "title": "Joseph Nativity Order",
+ "subject": "Contracts",
+ "topic": "Contracts",
+ "subtopic": "Formation of Contracts",
+ "difficulty": 4,
+ "tension": null,
+ "stem": "BARMATRIX Q# 14406 — Christian variation: 14406_joseph_nativity_order\n\nOn July 18, Joseph, who manufactures olive-wood nativity sets in his carpentry workshop, received an order for the purchase of 500 nativity sets from Lydia, a wholesaler of Christmas merchandise. Lydia had mailed the purchase order on July 15. The order required shipment of the nativity sets no earlier than September 15 and no later than October 15. Typed conspicuously across the front of the order form was the following: \"Lydia reserves the right to cancel this order at any time before September 1.\" Joseph's mailed response, saying \"We accept your order,\" was received by Lydia on July 21.\n\nAs of July 22, which of the following is an accurate statement as to whether a contract was formed?",
+ "call": "As of July 22, which of the following is an accurate statement as to whether a contract was formed?",
+ "choices": {
+  "A": "No contract was formed, because of Lydia's reservation of the right to cancel.",
+  "B": "No contract was formed, because Lydia's order was only a revocable offer.",
+  "C": "A contract was formed, but prior to September 1 it was terminable at the will of either party.",
+  "D": "A contract was formed, but prior to September 1 it was an option contract terminable only at the will of Lydia."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Gold Key: a promise that reserves a free, unrestricted right to cancel at any time before performance is due is illusory — it commits the promisor to nothing, so it is not consideration, and no contract forms no matter how clean the acceptance looks. Lydia's order reserved the right to cancel \"at any time before September 1,\" and shipment could not even begin until September 15 — so her escape hatch covers the entire period before any performance is due. As of July 22, Lydia is free to walk away at will; her \"promise\" to buy commits her to nothing, Joseph's acceptance therefore had no consideration to close on, and no contract exists. Silver Key: pair the array first — A/B say no contract, C/D say contract formed; in each pair, cut the choice that fights a stem fact, and the real fight collapses to A versus D, where the dates (free exit until September 1; nothing ships before September 15) decide it. Note the call's precision: the question locks the date at July 22, while the cancellation right is still alive. After September 1 passes without cancellation, the exchange can ripen into a binding contract — which is exactly why the examiners froze the clock in July.",
+ "wrongExplanations": {
+  "B": "Nearly every offer is revocable until it is accepted — if \"the order was only a revocable offer\" defeated formation, acceptance would never form a contract and contract law would not exist. The defect is visible in the answer's own text: it treats an ordinary feature of all offers as a formation-killer. And the stem shows the offer was never revoked — Joseph's acceptance was received July 21 with no revocation anywhere in the facts. B stumbles into the right destination (no contract) by a road that is not law; the MBE grades the road.",
+  "C": "The typed reservation is one-sided: \"Lydia reserves the right to cancel.\" Nothing in the stem gives Joseph any right to terminate, so \"terminable at the will of either party\" invents a mutual escape the facts never granted. Silver Key: in a paired array, cut the choice that fights the stem — C hands Joseph a cancellation right the order form gives only to Lydia. C also asserts a contract was formed; as of July 22 there is none.\n\nD is incorrect — the dominant trap (41%, outdrawing the key). D reads the facts accurately — only Lydia could cancel — and then mislabels the consequence. Gold Key: an option contract is not created by one party's bare freedom to walk away; an option binds one side only because the other side gave separate consideration (or a statutory substitute, like a merchant's signed firm-offer assurance) for that privilege. Joseph received nothing for standing bound while Lydia stayed free — and that one-sided freedom is precisely what makes Lydia's promise illusory and prevents any contract, option or otherwise, from forming as of July 22. D rewards the student for spotting the asymmetry and then punishes them for giving it the wrong legal name."
+ },
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- B is cut on an overclaim visible in the answer text plus a stem-fact relation. \"Only a revocable offer\" describes virtually every offer that has ever existed — if revocability blocked formation, acceptance would be meaningless. And the stem shows acceptance received July 21 with no revocation anywhere in the facts. Cut.\n- C is cut on a fact contradiction. The typed reservation says \"Lydia reserves the right to cancel\" — one party, by name. C gives Joseph a cancellation right the stem never grants. Cut.\n- A and D both survive the cut: each takes the one-sided cancellation reservation seriously and tracks the stem's facts."
+  },
+  {
+   "label": "CLASH",
+   "text": "A vs. D fight on a single axis: what does a one-sided, free, unrestricted exit do to the deal — destroy formation entirely, or merely create a contract terminable by one side? The splitting facts are the dates: the cancellation right runs \"at any time before September 1,\" and shipment is due \"no earlier than September 15\" — so Lydia's free exit covers the entire period before any performance is due, and the call freezes the clock at July 22, squarely inside that window."
+  },
+  {
+   "label": "CALL",
+   "text": "The axis does not resolve from structure alone; it takes the taught anchor. Gold Key: a free, unrestricted right to cancel before any performance is due makes the promise illusory — no consideration, no contract; and a one-sided binding \"option\" exists only where the bound party received separate consideration for it, which Joseph did not. Residual answer: A."
+  }
+ ],
+ "studentScript": "Pair the answers: A and B say no contract, C and D say contract. B blames a 'revocable offer' — every offer is revocable, and this one was accepted and never revoked. Cut. C lets either party cancel — the typed reservation names only Lydia. Cut. A versus D: both see Lydia's free exit; do the dates — she can cancel any time before September 1 and nothing ships before September 15, so she is free the whole way, and the call freezes July 22. Gold Key: a free, unrestricted exit before performance is an illusory promise — no consideration, no contract, and no 'option' without something paid for it. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The only choice that takes the stem's loudest fact — Lydia's conspicuous, one-sided, any-time free exit covering the whole window before anything ships — and lets it control the formation question the call asks.",
+   "lawyer": "Restatement (Second) of Contracts §§ 71, 77: a promise reserving an unrestricted alternative of cancelling is illusory and is not consideration; Miami Coca-Cola Bottling v. Orange Crush. As of July 22 the cancellation right is live and unrestricted, so Lydia's promise binds her to nothing and no contract was formed.",
+   "mold": null
+  },
+  "B": {
+   "signal": "Visible from the answer text: every offer is revocable until accepted — if revocability blocked formation, acceptance would never matter. The stem also shows the order was accepted July 21 and never revoked. B reaches 'no contract' by a rule that is not law.",
+   "lawyer": "Revocability of an offer never prevents formation once acceptance occurs; an offer's revocable status matters only if revocation precedes acceptance, and none occurred. The actual formation defect is the illusory promise, not the offer's revocability.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "The typed reservation says 'Lydia reserves the right to cancel' — one party, by name. C invents a matching right for Joseph that no stem fact grants, splitting the escape hatch evenly because mutual feels fair.",
+   "lawyer": "Only the buyer reserved cancellation; nothing gives the manufacturer a termination right. C is also wrong at the root: no contract was formed as of July 22, so there is nothing for either party to terminate.",
+   "mold": "even_split"
+  },
+  "D": {
+   "signal": "D reads the facts right — only Lydia can cancel — then names a doctrine with no stem fact to stand on: an 'option' implies Joseph received something for staying bound while Lydia stayed free, and the stem shows nothing given for it. The full kill needs the Gold Keys.",
+   "lawyer": "An option contract requires its own consideration (Restatement §§ 25, 87) or a statutory substitute such as a merchant's signed firm offer (UCC § 2-205) — and Lydia's order expressly reserved cancellation, the opposite of a firm-offer assurance. The one-sided free exit makes Lydia's promise illusory, so no contract of any kind, option included, was formed as of July 22.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-ILLUSORY-CANCEL-01",
+   "statement": "A promise that reserves a free, unrestricted right to cancel at any time before performance is due is illusory: it commits the promisor to nothing, so it is not consideration and no contract forms — no matter how clean the acceptance.",
+   "trigger": "a buyer or seller reserves the right to cancel 'at any time' before the performance window opens",
+   "unlocks": "A over D — the free exit destroys formation entirely; it does not create a one-sided contract.",
+   "authority": "Restatement (Second) of Contracts §§ 71, 77; Miami Coca-Cola Bottling Co. v. Orange Crush Co., 296 F. 599 (5th Cir. 1924)"
+  },
+  {
+   "id": "GK-CONTRACTS-OPTION-CONSIDERATION-01",
+   "statement": "An option contract is not created by one party's bare freedom to cancel — an option binds one side only because the other side gave separate consideration (or a statutory substitute, like a merchant's signed firm offer) for that privilege.",
+   "trigger": "an answer calls a one-sided arrangement an 'option contract' with no payment or signed firm-offer assurance in the stem",
+   "unlocks": "the D trap — 'an option contract terminable only at the will of Lydia.'",
+   "authority": "Restatement (Second) of Contracts §§ 25, 87; UCC § 2-205"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-NATIVITY-ARRAY-01",
+   "statement": "Pair this array first: A/B say no contract, C/D say contract formed. In each pair, cut the choice that fights the stem — B blames a 'revocable offer' that was in fact accepted and never revoked; C hands Joseph a cancellation right the typed reservation gives only to Lydia. The real fight is A versus D.",
+   "trigger": "two 'no contract' choices paired against two 'contract formed' choices",
+   "unlocks": "the formation-status 2×2",
+   "authority": null
+  },
+  {
+   "id": "SK-CONTRACTS-FREE-EXIT-AXIS-01",
+   "statement": "When the two survivors agree on the facts but split on the label — 'no contract' versus 'contract-but-terminable' — name the axis: is anyone actually committed to anything right now? Then line up the dates: the exit (any time before September 1) covers the entire stretch before any shipment could be due (September 15), and the call freezes the clock inside that window.",
+   "trigger": "one survivor says no contract formed, the other says a contract formed but one side can freely terminate",
+   "unlocks": "the A-vs-D two-answer tension",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Free exit = no promise",
+  "signal": "A party's order or promise conspicuously reserves the right to cancel at any time before performance is due.",
+  "studentMove": "Pair the array (no contract vs contract formed), cut the fact-fighters in each pair, then ask: who is actually committed to anything right now? Line the cancellation deadline up against the performance start date.",
+  "tinyRule": "An unrestricted pre-performance right to cancel makes the promise illusory — no consideration, no contract; an option needs its own consideration.",
+  "trap": "Relabeling the free exit as an 'option contract,' or making the one-sided right mutual because mutual feels fair."
+ }
+}
