@@ -7,6 +7,15 @@ one primary action, glass panels that mirror but never open a picker.*
 
 ---
 
+> **Execution handoffs (2026-06-12):** this roadmap is now packaged into four
+> self-contained implementation briefs — `handoffs/P5_QUICK_WINS.md` (no new
+> endpoints), `handoffs/P6_PERSONALIZATION_ENDPOINTS.md` (one small endpoint
+> each), `handoffs/P7_TELEMETRY_TRACK.md` (requires `feat/attempt-telemetry`
+> merge first), `handoffs/P8_FINAL_SPRINT.md` (exam-week deck + founder-gated
+> emails). Implementers start there.
+
+---
+
 ## 0. What changed underneath us
 
 - The prod bank is **3,792 questions** (3,686 pre-existing + 106 batch-1), with
