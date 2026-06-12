@@ -27,7 +27,8 @@ const ROUTES: Route[] = [
 ];
 
 function routeFromHash(): Route {
-  const hash = window.location.hash.replace(/^#\/?/, "");
+  // Strip query params inside the hash (Clerk appends ?redirect_url=… on auth routes).
+  const hash = window.location.hash.replace(/^#\/?/, "").split("?")[0];
   return (ROUTES as string[]).includes(hash) ? (hash as Route) : "home";
 }
 
