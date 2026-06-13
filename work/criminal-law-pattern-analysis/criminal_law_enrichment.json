@@ -1,0 +1,2422 @@
+{
+  "low_count": 181,
+  "high_count": 136,
+  "mid_count": 455,
+  "low_enriched_terms": [
+    [
+      33.87362637362638,
+      22,
+      0,
+      "established"
+    ],
+    [
+      21.82967032967033,
+      14,
+      0,
+      "genuinely"
+    ],
+    [
+      21.82967032967033,
+      14,
+      0,
+      "defense counsel"
+    ],
+    [
+      20.324175824175825,
+      13,
+      0,
+      "sixth amendment right"
+    ],
+    [
+      20.324175824175825,
+      13,
+      0,
+      "error"
+    ],
+    [
+      20.324175824175825,
+      13,
+      0,
+      "barred"
+    ],
+    [
+      20.324175824175825,
+      13,
+      0,
+      "amendment right"
+    ],
+    [
+      18.81868131868132,
+      12,
+      0,
+      "does satisfy"
+    ],
+    [
+      16.81135531135531,
+      33,
+      1,
+      "courts"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "transaction"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "remedy"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "recognize"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "prejudice"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "objectively"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "genuine"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "definition"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "amendment right counsel"
+    ],
+    [
+      14.302197802197803,
+      9,
+      0,
+      "substantive"
+    ],
+    [
+      14.302197802197803,
+      9,
+      0,
+      "structural"
+    ],
+    [
+      14.302197802197803,
+      9,
+      0,
+      "proceeding"
+    ],
+    [
+      14.302197802197803,
+      9,
+      0,
+      "does establish"
+    ],
+    [
+      14.302197802197803,
+      9,
+      0,
+      "automobile"
+    ],
+    [
+      14.302197802197803,
+      9,
+      0,
+      "absolute"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "taint"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "strong"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "source"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "sense"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "seeks"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "reversal"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "record"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "process clause"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "may guilty"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "inquiry"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "for aggravated"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "due process clause"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "distinction"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "counsel present"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "counsel had"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "suppress confession"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "specific intent commit"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "requires specific intent"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "requires specific"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "remain"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "rejected"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "reasonable doubt"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "narrow"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "killing human being"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "killing human"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "illegality"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "identifying"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "hands"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "framework"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "eyewitness"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "expressly"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "established that"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "denial"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "continuing"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "connection"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "categorically"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "burden"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "appointed"
+    ],
+    [
+      10.789377289377288,
+      21,
+      1,
+      "due process"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "which requires"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "voluntariness"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "trial prosecution"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "treated"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "that are"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "tainted"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "squarely"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "scheme"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "rules"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "resolve"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "removal"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "regardless how"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "reasonable probability"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "raises"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "questioning about"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "probability"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "pretenses requires"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "physically present"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "notifying"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "neutral"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "nearly"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "moves suppress confession"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "incriminating statements"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "hold that"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "false pretenses requires"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "effective argument"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "does extend"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "circumstance"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "beyond reasonable doubt"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "beyond reasonable"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "arise"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "approximately"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "applying"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "all three"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "admissions"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "administrative"
+    ],
+    [
+      9.484615384615385,
+      31,
+      2,
+      "held that"
+    ],
+    [
+      8.782051282051283,
+      17,
+      1,
+      "violates"
+    ]
+  ],
+  "low_enriched_answer_terms": [
+    [
+      18.81868131868132,
+      12,
+      0,
+      "admissible"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "clause"
+    ],
+    [
+      15.807692307692308,
+      10,
+      0,
+      "bars"
+    ],
+    [
+      14.302197802197803,
+      9,
+      0,
+      "therefore"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "suppression"
+    ],
+    [
+      12.796703296703297,
+      8,
+      0,
+      "requirement"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "suppressed"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "source"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "procedure"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "confrontation"
+    ],
+    [
+      11.291208791208792,
+      7,
+      0,
+      "beyond"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "wife"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "sixth amendment right"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "she did"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "resulted"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "representation"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "reasonable doubt"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "physical evidence"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "information"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "independently"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "error"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "doubt"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "belief"
+    ],
+    [
+      9.785714285714285,
+      6,
+      0,
+      "amendment right"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "subsequent"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "states"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "review"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "per"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "means"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "independent source"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "his wife"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "fraud"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "established"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "does apply"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "counsel had"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "beyond reasonable doubt"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "beyond reasonable"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "automobile"
+    ],
+    [
+      8.280219780219781,
+      5,
+      0,
+      "admitted"
+    ],
+    [
+      6.774725274725275,
+      13,
+      1,
+      "prosecution"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "was already"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "violates"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "vehicle"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "three"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "third"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "that she did"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "tainted"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "taint"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "suggestive"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "structural"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "showing"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "shooting"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "reversal"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "received miranda warnings"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "received miranda"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "necessarily"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "must suppressed"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "merges"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "judicial"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "invocation"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "his right"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "here"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "had attached"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "had apparent"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "ground"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "genuinely"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "fifth amendment"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "fifth"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "felony murder"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "entrusted"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "deception"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "counsel present"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "constitutionally"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "constitutes"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "claims"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "bullet"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "bar"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "amendment right counsel"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "acquittal"
+    ],
+    [
+      6.774725274725275,
+      4,
+      0,
+      "absolute"
+    ]
+  ],
+  "menu_stats": [
+    {
+      "menu": "attempt_conspiracy_solicitation_menu",
+      "rows": 8,
+      "pc_rows": 5,
+      "avg_pc": 53.4,
+      "below_50": 1,
+      "low_ids": [
+        [
+          "20938",
+          45.0,
+          "C",
+          "B"
+        ],
+        [
+          "17966",
+          50.0,
+          "B",
+          "A"
+        ],
+        [
+          "20483",
+          50.0,
+          "C",
+          "B"
+        ],
+        [
+          "19163",
+          60.0,
+          "B",
+          "A"
+        ],
+        [
+          "14693",
+          62.0,
+          "B",
+          "A"
+        ]
+      ]
+    },
+    {
+      "menu": "admissible_suppress_menu",
+      "rows": 42,
+      "pc_rows": 40,
+      "avg_pc": 55.0,
+      "below_50": 12,
+      "low_ids": [
+        [
+          "18132",
+          40.0,
+          "C",
+          "A"
+        ],
+        [
+          "21689",
+          44.0,
+          "C",
+          "B"
+        ],
+        [
+          "18934",
+          45.0,
+          "C",
+          "A"
+        ],
+        [
+          "18363",
+          45.0,
+          "C",
+          "A"
+        ],
+        [
+          "18342",
+          46.0,
+          "A",
+          "B"
+        ],
+        [
+          "17478",
+          47.0,
+          "A",
+          "B"
+        ],
+        [
+          "17367",
+          47.0,
+          "A",
+          "C"
+        ],
+        [
+          "18768",
+          47.0,
+          "C",
+          "A"
+        ],
+        [
+          "21074",
+          48.0,
+          "C",
+          "A"
+        ],
+        [
+          "20640",
+          48.0,
+          "C",
+          "B"
+        ]
+      ]
+    },
+    {
+      "menu": "larceny_embezzlement_false_pretenses_menu",
+      "rows": 37,
+      "pc_rows": 30,
+      "avg_pc": 57.2,
+      "below_50": 10,
+      "low_ids": [
+        [
+          "14697",
+          40.0,
+          "B",
+          "A"
+        ],
+        [
+          "19299",
+          44.0,
+          "D",
+          "B"
+        ],
+        [
+          "21156",
+          44.0,
+          "B",
+          "A"
+        ],
+        [
+          "21105",
+          45.0,
+          "B",
+          "A"
+        ],
+        [
+          "19080",
+          45.0,
+          "C",
+          "A"
+        ],
+        [
+          "17165",
+          45.0,
+          "B",
+          "A"
+        ],
+        [
+          "21171",
+          47.0,
+          "C",
+          "D"
+        ],
+        [
+          "19534",
+          48.0,
+          "D",
+          "C"
+        ],
+        [
+          "17823",
+          48.0,
+          "A",
+          "C"
+        ],
+        [
+          "21572",
+          48.0,
+          "C",
+          "A"
+        ]
+      ]
+    },
+    {
+      "menu": "miranda_custody_interrogation_menu",
+      "rows": 41,
+      "pc_rows": 38,
+      "avg_pc": 58.0,
+      "below_50": 11,
+      "low_ids": [
+        [
+          "18132",
+          40.0,
+          "C",
+          "A"
+        ],
+        [
+          "16122",
+          45.0,
+          "C",
+          "D"
+        ],
+        [
+          "20427",
+          45.0,
+          "C",
+          "A"
+        ],
+        [
+          "18768",
+          47.0,
+          "C",
+          "A"
+        ],
+        [
+          "18501",
+          48.0,
+          "C",
+          "A"
+        ],
+        [
+          "18581",
+          48.0,
+          "C",
+          "A"
+        ],
+        [
+          "20640",
+          48.0,
+          "C",
+          "B"
+        ],
+        [
+          "17556",
+          48.0,
+          "C",
+          "A"
+        ],
+        [
+          "20789",
+          48.0,
+          "C",
+          "B"
+        ],
+        [
+          "17080",
+          48.0,
+          "C",
+          "A"
+        ]
+      ]
+    },
+    {
+      "menu": "guilty_not_guilty_menu",
+      "rows": 99,
+      "pc_rows": 59,
+      "avg_pc": 59.5,
+      "below_50": 11,
+      "low_ids": [
+        [
+          "14641",
+          36.0,
+          "D",
+          "A"
+        ],
+        [
+          "19042",
+          42.0,
+          "A",
+          "D"
+        ],
+        [
+          "20700",
+          42.0,
+          "D",
+          "A"
+        ],
+        [
+          "21718",
+          44.0,
+          "C",
+          "A"
+        ],
+        [
+          "19934",
+          45.0,
+          "B",
+          "A"
+        ],
+        [
+          "21578",
+          46.0,
+          "D",
+          "C"
+        ],
+        [
+          "21526",
+          46.0,
+          "A",
+          "B"
+        ],
+        [
+          "14658",
+          47.0,
+          "A",
+          "C"
+        ],
+        [
+          "18335",
+          47.0,
+          "A",
+          "B"
+        ],
+        [
+          "21497",
+          47.0,
+          "A",
+          "B"
+        ]
+      ]
+    },
+    {
+      "menu": "robbery_burglary_larceny_menu",
+      "rows": 32,
+      "pc_rows": 22,
+      "avg_pc": 60.1,
+      "below_50": 5,
+      "low_ids": [
+        [
+          "14697",
+          40.0,
+          "B",
+          "A"
+        ],
+        [
+          "20122",
+          45.0,
+          "C",
+          "A"
+        ],
+        [
+          "14748",
+          46.0,
+          "C",
+          "A"
+        ],
+        [
+          "21464",
+          46.0,
+          "B",
+          "A"
+        ],
+        [
+          "19534",
+          48.0,
+          "D",
+          "C"
+        ],
+        [
+          "21599",
+          50.0,
+          "C",
+          "A"
+        ],
+        [
+          "14744",
+          51.0,
+          "C",
+          "A"
+        ],
+        [
+          "19692",
+          55.0,
+          "C",
+          "A"
+        ],
+        [
+          "14671",
+          59.0,
+          "A",
+          "C"
+        ],
+        [
+          "14713",
+          59.0,
+          "D",
+          "B"
+        ]
+      ]
+    },
+    {
+      "menu": "murder_manslaughter_menu",
+      "rows": 69,
+      "pc_rows": 58,
+      "avg_pc": 60.2,
+      "below_50": 14,
+      "low_ids": [
+        [
+          "20700",
+          42.0,
+          "D",
+          "A"
+        ],
+        [
+          "19008",
+          42.0,
+          "A",
+          "B"
+        ],
+        [
+          "14657",
+          43.0,
+          "B",
+          "A"
+        ],
+        [
+          "17052",
+          44.0,
+          "D",
+          "B"
+        ],
+        [
+          "21718",
+          44.0,
+          "C",
+          "A"
+        ],
+        [
+          "16054",
+          45.0,
+          "B",
+          "A"
+        ],
+        [
+          "19964",
+          47.0,
+          "C",
+          "D"
+        ],
+        [
+          "21426",
+          47.0,
+          "C",
+          "A"
+        ],
+        [
+          "17827",
+          47.0,
+          "C",
+          "A"
+        ],
+        [
+          "17405",
+          48.0,
+          "C",
+          "A"
+        ]
+      ]
+    },
+    {
+      "menu": "warrant_probable_cause_menu",
+      "rows": 41,
+      "pc_rows": 30,
+      "avg_pc": 61.3,
+      "below_50": 6,
+      "low_ids": [
+        [
+          "14569",
+          40.0,
+          "D",
+          "B"
+        ],
+        [
+          "18363",
+          45.0,
+          "C",
+          "A"
+        ],
+        [
+          "21432",
+          46.0,
+          "C",
+          "B"
+        ],
+        [
+          "18125",
+          48.0,
+          "C",
+          "A"
+        ],
+        [
+          "19619",
+          48.0,
+          "C",
+          "A"
+        ],
+        [
+          "14570",
+          49.0,
+          "A",
+          "C"
+        ],
+        [
+          "18992",
+          50.0,
+          "C",
+          "A"
+        ],
+        [
+          "20475",
+          50.0,
+          "A",
+          "C"
+        ],
+        [
+          "20476",
+          52.0,
+          "C",
+          "A"
+        ],
+        [
+          "21619",
+          58.0,
+          "C",
+          "B"
+        ]
+      ]
+    },
+    {
+      "menu": "defense_menu",
+      "rows": 9,
+      "pc_rows": 8,
+      "avg_pc": 62.2,
+      "below_50": 0,
+      "low_ids": [
+        [
+          "19969",
+          55.0,
+          "C",
+          "A"
+        ],
+        [
+          "19915",
+          57.0,
+          "B",
+          "A"
+        ],
+        [
+          "18431",
+          58.0,
+          "C",
+          "A"
+        ],
+        [
+          "21358",
+          60.0,
+          "C",
+          "A"
+        ],
+        [
+          "20996",
+          60.0,
+          "C",
+          "A"
+        ],
+        [
+          "18273",
+          62.0,
+          "C",
+          "A"
+        ],
+        [
+          "19175",
+          72.0,
+          "B",
+          "A"
+        ],
+        [
+          "14662",
+          74.0,
+          "C",
+          "A"
+        ]
+      ]
+    }
+  ],
+  "lowest_75_compact": [
+    {
+      "qid": "21601",
+      "pc": 10.0,
+      "correct": "A",
+      "mpwa": "C",
+      "answer_menu": "No, because probable cause existed before the search and the lawful arrest follo | Yes, because the words \"under arrest\" must always be spoken before any search | Yes, because drug offenses never permit searches incident to arrest | No, because police may search anyone they suspect before deciding whether to arr",
+      "correct_expl_first_sentence": "The search and arrest were part of one continuous encounter, and officers had probable cause before the search.",
+      "wrong_expl_first_sentence": "B: The formal announcement need not precede the search if probable cause already existed and the arrest promptly followed.",
+      "additional_info_first_sentence": "Search incident to arrest may apply when officers had probable cause before the search and a lawful custodial arrest followed quickly as part of the same encounter."
+    },
+    {
+      "qid": "20881",
+      "pc": 12.0,
+      "correct": "C",
+      "mpwa": "B",
+      "answer_menu": "Yes, because a request for counsel permanently bars all later police-initiated q | Yes, because counsel had to be physically present for any later waiver | No, because a twenty-day break in custody preceded fresh warnings and a new waiv | No, because invoking counsel has no effect before formal charges are filed",
+      "correct_expl_first_sentence": "Arlo was released for more than fourteen days.",
+      "wrong_expl_first_sentence": "A: A substantial break in custody can end the Edwards bar.",
+      "additional_info_first_sentence": "After a suspect invokes Miranda counsel, police generally may not reinitiate custodial interrogation, but a fourteen-day break in custody can end that protection for later warned questioning."
+    },
+    {
+      "qid": "14556",
+      "pc": 21.0,
+      "correct": "D",
+      "mpwa": "B",
+      "answer_menu": "A: grant the motions of both the kidnapped person and the woman. | B: grant the motion of the kidnapped person and deny the motion of the woman. | C: grant the motion of the woman and deny the motion of the kidnapped person. | D: deny the motions of both the kidnapped person and the woman.",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14619",
+      "pc": 22.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "A: violated by the instructions as to both issues. | B: violated by the instruction as to whether the woman was his wife, but not vio | C: violated by the instruction on belief as to consent, but not violated by the  | D: not violated by either part of the instructions.",
+      "correct_expl_first_sentence": "B is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14698",
+      "pc": 26.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "A: robbery. | B: assault and robbery. | C: attempted robbery. | D: assault and attempted robbery.",
+      "correct_expl_first_sentence": "C is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14596",
+      "pc": 28.0,
+      "correct": "B",
+      "mpwa": "C",
+      "answer_menu": "A: Both proposals. | B: Neither proposal. | C: Proposal A only. | D: Proposal B only.",
+      "correct_expl_first_sentence": "B is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14615",
+      "pc": 30.0,
+      "correct": "B",
+      "mpwa": "D",
+      "answer_menu": "A: granted, because the defendant's privilege against self-incrimination was vio | B: granted, because the defendant's right to counsel was violated. | C: denied, because the defendant had received Miranda warnings. | D: denied, because the defendant was not interrogated by the informant.",
+      "correct_expl_first_sentence": "B is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14625",
+      "pc": 34.0,
+      "correct": "A",
+      "mpwa": "C",
+      "answer_menu": "A: correct, because he was acquitted of the attempted rape charge. | B: correct, because he was convicted of the assault charge. | C: incorrect, because the victim had not died at the time of the first trial and | D: incorrect, because he was convicted of the assault charge.",
+      "correct_expl_first_sentence": "A is correct.",
+      "wrong_expl_first_sentence": "B is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14641",
+      "pc": 36.0,
+      "correct": "D",
+      "mpwa": "A",
+      "answer_menu": "A: guilty, because no mental state is required as to the element of age. | B: guilty, because he persisted after she told him she had changed her mind. | C: not guilty, because he reasonably believed she had consented and voluntarily  | D: not guilty, because he did not intend to have intercourse with a girl under t",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14586",
+      "pc": 39.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "A: It may compel production without granting immunity, because the suspect was n | B: It may compel production only if the suspect is granted use and derivative us | C: It may compel production only if the suspect is granted transactional immunit | D: It may not compel production of a private diary under any circumstances.",
+      "correct_expl_first_sentence": "B is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14588",
+      "pc": 40.0,
+      "correct": "D",
+      "mpwa": "A",
+      "answer_menu": "A: The defendant must prove by a preponderance of the evidence that the victim c | B: The defendant must prove by clear and convincing evidence that the victim con | C: The defendant must prove beyond a reasonable doubt that the victim consented. | D: The prosecution must prove beyond a reasonable doubt that the victim did not ",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14569",
+      "pc": 40.0,
+      "correct": "D",
+      "mpwa": "B",
+      "answer_menu": "A: deny the motion on the ground that the search was incident to a lawful arrest | B: deny the motion on the ground that school searches are reasonable if conducte | C: grant the motion on the ground that the search was conducted with excessive f | D: grant the motion on the ground that the search was conducted without probable",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "16097",
+      "pc": 40.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because the police used special equipment to photograph the field. | No, because the reliability of the informant can be established. | Yes, because it was reasonable for the defendant to believe that nobody would lo | No, because the officers had a warrant to search the barn.",
+      "correct_expl_first_sentence": "The United States Constitution protects criminal defendants against unreasonable search and seizure.",
+      "wrong_expl_first_sentence": "A is incorrect because if the defendant had no reasonable expectation of privacy, the use of special equipment to photograph what the police observed would not be a search.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14558",
+      "pc": 40.0,
+      "correct": "D",
+      "mpwa": "B",
+      "answer_menu": "A: reversed, because it was an error for the court to admit the evidence of his  | B: reversed, because it was a violation of due process to impose on the defense  | C: reversed, for both of the above reasons. | D: affirmed, because neither of the above reasons constitutes a ground for rever",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "19271",
+      "pc": 40.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "Yes, because the completed offense would not require Lee to know the buyer's age | No, because Lee did not intend to sell the chemical to a person under 18 | Yes, because Maya was an undercover officer rather than a real buyer | No, because attempt liability is impossible whenever the completed offense is st",
+      "correct_expl_first_sentence": "Attempt requires proof that Lee specifically intended to commit the target crime.",
+      "wrong_expl_first_sentence": "A: Attempt is a specific-intent crime.",
+      "additional_info_first_sentence": "Attempt requires the specific intent to commit the target crime, including intent as to the circumstance that makes the target conduct criminal, even when the completed offense would impose strict liability."
+    },
+    {
+      "qid": "18132",
+      "pc": 40.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because Randall had retained counsel and clearly invoked his right to have  | Yes, because any statement taken from a represented defendant without counsel pr | No, because the Sixth Amendment right to counsel had not yet attached at the tim | No, because Randall waived his right by answering questions after receiving Mira",
+      "correct_expl_first_sentence": "The Sixth Amendment right to counsel attaches only at the initiation of formal adversarial judicial proceedings \u2014 indictment, information, arraignment, or preliminary hearing.",
+      "wrong_expl_first_sentence": "A: The Sixth Amendment right had not yet attached because no formal adversarial proceedings had commenced.",
+      "additional_info_first_sentence": "The Sixth Amendment right to counsel does not attach until formal adversarial proceedings begin; pre-indictment questioning is governed by Miranda and the Fifth Amendment only"
+    },
+    {
+      "qid": "14697",
+      "pc": 40.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "A: robbery. | B: attempted robbery. | C: theft by false pretenses. | D: larceny by trick.",
+      "correct_expl_first_sentence": "B is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "18308",
+      "pc": 42.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because the prosecution's duty to disclose is absolute and cannot be excuse | Yes, because the report was in the prosecution's possession, regardless of what  | No, because there is no Brady violation when defense counsel already had access  | No, because the audit report was not sufficiently exculpatory to trigger the Bra",
+      "correct_expl_first_sentence": "Brady's suppression element requires that the evidence was withheld from the defense.",
+      "wrong_expl_first_sentence": "A: Courts have consistently held that there is no Brady violation when the defendant or defense counsel possessed or had access to the exculpatory information and could have used it with reasonable diligence.",
+      "additional_info_first_sentence": "Brady is not violated when the defendant or defense counsel was aware of the exculpatory evidence or could have discovered it through reasonable diligence; suppression implies the evidence was withheld from the defense, "
+    },
+    {
+      "qid": "20816",
+      "pc": 42.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "The defendant is correct; admission of a statement obtained in violation of Mira | The defendant bears the burden of showing the error was not harmless beyond a re | The court applies Chapman harmless-error review; the government bears the burden | The court applies plain-error review because Miranda is a prophylactic rule, not",
+      "correct_expl_first_sentence": "Chapman v.",
+      "wrong_expl_first_sentence": "A: Miranda violations are not structural errors.",
+      "additional_info_first_sentence": "Under Chapman v."
+    },
+    {
+      "qid": "17244",
+      "pc": 42.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because Trevor had already been indicted and the Sixth Amendment right to c | Yes, because the agent showed the photos without a neutral administrator present | No, because the Sixth Amendment right to counsel does not apply to photo arrays, | No, because the right to counsel attaches only at trial, not at pretrial identif",
+      "correct_expl_first_sentence": "United States v.",
+      "wrong_expl_first_sentence": "A: The Supreme Court held in *United States v.",
+      "additional_info_first_sentence": "Under *United States v."
+    },
+    {
+      "qid": "19882",
+      "pc": 42.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "The defense fails because Greta's intent to commit a crime is sufficient for att | The defense succeeds because the completed act would not have been a crime | The defense fails because Greta took a substantial step toward what she believed | The defense fails because Greta's mistake about the law does not negate criminal",
+      "correct_expl_first_sentence": "True legal impossibility exists when the defendant's completed conduct \u2014 taken exactly as she believed it to be \u2014 would not constitute a crime.",
+      "wrong_expl_first_sentence": "A: At common law, true legal impossibility is a complete defense.",
+      "additional_info_first_sentence": "At common law, true legal impossibility \u2014 where the defendant's completed acts, even as she believed them to be, would not constitute a crime \u2014 is a defense to attempt"
+    },
+    {
+      "qid": "19042",
+      "pc": 42.0,
+      "correct": "A",
+      "mpwa": "D",
+      "answer_menu": "A: guilty, because she and the friend planned to take the coat by threatening th | B: guilty, because she was present when the friend shot the victim. | C: not guilty, because the victim shot first. | D: not guilty, because she did not aid or abet the friend in shooting the victim",
+      "correct_expl_first_sentence": "B is incorrect because being present while a crime is committed is not sufficient to make a defendant an accomplice or a co-conspirator.",
+      "wrong_expl_first_sentence": "",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "16065",
+      "pc": 42.0,
+      "correct": "D",
+      "mpwa": "C",
+      "answer_menu": "The defendant's conduct indicated an intent to kill the wife. | The defendant's conduct indicated an intent to inflict great bodily harm on the  | The defendant did not catch the wife in flagrante delicto. | In the defendant's position, a person of ordinary temperament would not have bec",
+      "correct_expl_first_sentence": "Voluntary manslaughter is the killing of a human being with the intent to kill or inflict great bodily harm, under circumstances of extreme emotional distress (or mistaken justification).",
+      "wrong_expl_first_sentence": "A and B are incorrect because although a killing with the intent to kill or inflict great bodily harm may be murder, extreme emotional distress may reduce it to voluntary manslaughter even though the defendant intended t",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14590",
+      "pc": 42.0,
+      "correct": "D",
+      "mpwa": "C",
+      "answer_menu": "A: No, because suppression of in-court testimony is not a proper remedy, even th | B: No, because the out-of-court identification was not improper. | C: Yes, because the improper out-of-court identification has necessarily tainted | D: Yes, unless the prosecution demonstrates that the in-court identification is ",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "20700",
+      "pc": 42.0,
+      "correct": "D",
+      "mpwa": "A",
+      "answer_menu": "A: Believing that the victim was attacking her, the defendant swung a tennis rac | B: The defendant's wife was admitted to the intensive care unit of a hospital fo | C: While the defendant was robbing a tavern, the bartender attempted to grab the | D: After the defendant quarreled with her lover, she fired a gun at him while he",
+      "correct_expl_first_sentence": "The effect of A is to hold that one who acts unreasonably may be guilty of involuntary manslaughter.",
+      "wrong_expl_first_sentence": "",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "18101",
+      "pc": 42.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "A: His wife did not die. | B: The druggist did not believe that the wife would die. | C: The drug that the man gave his wife was not likely to cause her death. | D: The inchoate crime and the substantive crime merge when the defendant's overt",
+      "correct_expl_first_sentence": "A conspiracy occurs when two or more persons with the specific intent to commit a crime agree to commit it.",
+      "wrong_expl_first_sentence": "Conspiracy, if it exists, is separate from the substantive crime and is complete when the unlawful agreement is made.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "19008",
+      "pc": 42.0,
+      "correct": "A",
+      "mpwa": "B",
+      "answer_menu": "A: Murder. | B: Voluntary manslaughter. | C: Attempted murder. | D: Discharging a firearm within the municipal limits.",
+      "correct_expl_first_sentence": "Murder is the unlawful killing of a human being with malice aforethought.",
+      "wrong_expl_first_sentence": "Voluntary manslaughter is the intentional killing of a human being under mitigating circumstances.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "21638",
+      "pc": 42.0,
+      "correct": "C",
+      "mpwa": "D",
+      "answer_menu": "No, because the officers had probable cause to believe drugs were being destroye | No, because officers may always enter to prevent destruction of evidence wheneve | Yes, because officers lacked sufficient probable cause specific to this apartmen | Yes, because the officers created the exigency by announcing their presence and ",
+      "correct_expl_first_sentence": "The smell of marijuana in a hallway between two apartments does not provide particularized probable cause directed at the left apartment specifically.",
+      "wrong_expl_first_sentence": "A: Under Kentucky v.",
+      "additional_info_first_sentence": "Police may enter without a warrant when they have probable cause plus exigent circumstances; however, police may not deliberately create the exigency through a Fourth Amendment violation in order to justify a warrantless"
+    },
+    {
+      "qid": "19757",
+      "pc": 42.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "Yes, because any judicial fact-finding at sentencing that increases the sentence | No, because after Booker the Federal Sentencing Guidelines are advisory, so judi | Yes, because any upward departure from a calculated guidelines range must be bas | No, because Booker applies only to cases where the judge imposes a sentence abov",
+      "correct_expl_first_sentence": "Blakely v.",
+      "wrong_expl_first_sentence": "A: United States v.",
+      "additional_info_first_sentence": "Blakely v."
+    },
+    {
+      "qid": "19242",
+      "pc": 42.0,
+      "correct": "C",
+      "mpwa": "D",
+      "answer_menu": "committed both forgery and false pretenses. | committed forgery, because she created a false document with the intent to defra | not committed forgery, because the document had no apparent legal significance,  | not committed forgery, because the document had no apparent legal significance, ",
+      "correct_expl_first_sentence": "C is correct.",
+      "wrong_expl_first_sentence": "A: the letter had no legal significance, so no forgery.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14650",
+      "pc": 43.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "A: admitted without limitation. | B: admitted subject to an instruction that it pertains only to the attempted mur | C: admitted subject to an instruction that it pertains only to the assault charg | D: excluded altogether.",
+      "correct_expl_first_sentence": "A or B is correct.",
+      "wrong_expl_first_sentence": "C is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14599",
+      "pc": 43.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "A: sustained, because the statute grants unbridled discretion to law enforcement | B: sustained, because the stated regulatory purpose of the statute is a pretext  | C: denied, because the statute deals reasonably with a highly regulated industry | D: denied, because administrative searches of commercial establishments do not r",
+      "correct_expl_first_sentence": "C is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "14657",
+      "pc": 43.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "A: murder in first degree. | B: murder in the second degree. | C: murder in the third degree. | D: manslaughter.",
+      "correct_expl_first_sentence": "B is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "17252",
+      "pc": 43.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because Hank's belief that Porter was being attacked was objectively reason | Yes, because Hank was acting to protect a third party from what appeared to be s | No, because Porter had no right to resist a lawful arrest, and Hank steps into P | No, because only deadly force may be used to defend a third party",
+      "correct_expl_first_sentence": "The alter-ego (minority) rule provides that an intervener acquires exactly the same defensive rights as the person she is defending \u2014 no more, no less.",
+      "wrong_expl_first_sentence": "A: The question specifies the alter-ego (minority) rule.",
+      "additional_info_first_sentence": "Under the minority alter-ego rule, the intervener steps into the shoes of the person defended; if the person defended had no right to use force (e.g., was actually the aggressor), the intervener has no defense even if th"
+    },
+    {
+      "qid": "17196",
+      "pc": 44.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "No, because the Sixth Amendment right attached to the assault charge and the sta | No, because police deliberately framed questions about the same incident to circ | Yes, the statements are admissible, because murder was a separate uncharged offe | Yes, the statements are admissible, because Simon waived his Sixth Amendment rig",
+      "correct_expl_first_sentence": "Under the *McNeil* offense-specific rule, the Sixth Amendment right to counsel attaches charge by charge.",
+      "wrong_expl_first_sentence": "A: The Sixth Amendment is offense-specific and turns on the legal definition of the offense, not the factual transaction.",
+      "additional_info_first_sentence": "The Sixth Amendment offense-specific rule turns on legal identity of offenses, not factual overlap; a different statutory offense is a different offense even if it arises from the same events"
+    },
+    {
+      "qid": "19299",
+      "pc": 44.0,
+      "correct": "D",
+      "mpwa": "B",
+      "answer_menu": "both larceny by trick and obtaining money by false pretenses (although he can on | larceny by trick only. | obtaining money by false pretenses only. | neither larceny by trick nor obtaining money by false pretenses.",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "18980",
+      "pc": 44.0,
+      "correct": "C",
+      "mpwa": "D",
+      "answer_menu": "No, because the right to be present attaches only to jury selection and the init | No, because the defendant waived the right to be present by not affirmatively re | Yes, because the in-chambers supplemental instruction to the jury on an element  | Yes, and the error automatically requires reversal because ex parte judicial com",
+      "correct_expl_first_sentence": "The Due Process Clause and the Sixth Amendment guarantee a defendant the right to be present at all stages of trial at which presence has a reasonably substantial relation to the fullness of the opportunity to defend.",
+      "wrong_expl_first_sentence": "A: A supplemental instruction responding to a jury question about an element of the offense directly affects the jury's deliberative process and the defendant's understanding of what must be proved.",
+      "additional_info_first_sentence": "The Sixth Amendment and Due Process Clause guarantee a defendant the right to be present at all stages of trial where the defendant's presence has a reasonably substantial relation to the fullness of the opportunity to d"
+    },
+    {
+      "qid": "17828",
+      "pc": 44.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "The defendant has no valid claim because there is no constitutional right to an  | The defendant has a valid claim to both a free transcript and appointed counsel  | The defendant has a valid claim to a free transcript but not to appointed counse | The defendant has a valid claim to appointed counsel but not to a free transcrip",
+      "correct_expl_first_sentence": "The constitutional framework has two steps.",
+      "wrong_expl_first_sentence": "A: While it is true that no constitutional right to appeal exists, once a state provides an appeal, the Due Process and Equal Protection Clauses govern the appellate process.",
+      "additional_info_first_sentence": "There is no constitutional right to appellate review of a criminal conviction; however, if a state provides an appeal, the Due Process and Equal Protection Clauses require that the appeal be meaningful, including that an"
+    },
+    {
+      "qid": "18296",
+      "pc": 44.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "No, because the state legislature has the authority to define the elements of cr | Yes, because any presumption in a criminal case is unconstitutional under the Du | Yes, because the instruction places the burden of producing evidence on an eleme | No, because the instruction only shifts the burden of production, not the burden",
+      "correct_expl_first_sentence": "In re Winship held that due process requires the prosecution to prove every element of a criminal offense beyond a reasonable doubt.",
+      "wrong_expl_first_sentence": "A: While states may define crimes and place the burden of producing evidence on a defendant for affirmative defenses, they cannot use a presumption to relieve the prosecution of its constitutional obligation to prove eve",
+      "additional_info_first_sentence": "Under In re Winship and Sandstrom v."
+    },
+    {
+      "qid": "18356",
+      "pc": 44.0,
+      "correct": "B",
+      "mpwa": "D",
+      "answer_menu": "No, because having litigated one habeas petition to final judgment, the prisoner | Yes, if the Supreme Court has made the new due process rule retroactive to cases | Yes, because a new Supreme Court decision always entitles a prisoner to reopen a | No, because the prisoner waived the due process argument by failing to raise it ",
+      "correct_expl_first_sentence": "Under 28 U.S.C.",
+      "wrong_expl_first_sentence": "A: AEDPA does not impose an absolute bar on successive habeas petitions.",
+      "additional_info_first_sentence": "Under AEDPA (28 U.S.C."
+    },
+    {
+      "qid": "21156",
+      "pc": 44.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "Embezzlement, because Marcus's employer entrusted him with the $100 bill | Larceny, because the $92 was never within the scope of lawful possession Marcus  | Neither, because Marcus was given the money voluntarily and thus had valid posse | Embezzlement, because Marcus was in a fiduciary relationship with his employer",
+      "correct_expl_first_sentence": "Embezzlement requires that the specific property converted was lawfully possessed by the defendant at the time of conversion.",
+      "wrong_expl_first_sentence": "A: The entrustment was limited: Marcus was given $100 for the specific purpose of buying paint and returning with the change.",
+      "additional_info_first_sentence": "Where an employer entrusts an employee with property for a specific limited purpose, any property beyond the scope of that entrustment is never lawfully possessed; taking it is larceny, not embezzlement."
+    },
+    {
+      "qid": "19184",
+      "pc": 44.0,
+      "correct": "A",
+      "mpwa": "C",
+      "answer_menu": "No, because mere presence at the scene of a crime is insufficient to make a pers | No, because murder is a specific-intent crime, and there is insufficient evidenc | Yes, because the gang members made no effort to save the released gang member af | Yes, because voluntary intoxication does not negate criminal responsibility.",
+      "correct_expl_first_sentence": "A is correct.",
+      "wrong_expl_first_sentence": "B misstates the reasoning: murder does not require specific intent to kill.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "18681",
+      "pc": 44.0,
+      "correct": "C",
+      "mpwa": "D",
+      "answer_menu": "The defendant's claim succeeds because the Sixth Amendment right to confrontatio | The defendant's claim fails, and the court properly exercised its three options: | The defendant's claim fails because, after two warnings, the court was permitted | The defendant's claim fails because removal for disruptive conduct is constituti",
+      "correct_expl_first_sentence": "Illinois v.",
+      "wrong_expl_first_sentence": "A: Illinois v.",
+      "additional_info_first_sentence": "Under Illinois v."
+    },
+    {
+      "qid": "16011",
+      "pc": 44.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "The victim was already dead when the defendant shot him, although the defendant  | The victim was alive when the defendant shot him, although the defendant believe | The defendant's gun was unloaded when he aimed it at the victim and pulled the t | Intending to poison the victim, the defendant put a harmless substance into the ",
+      "correct_expl_first_sentence": "A person is guilty of a criminal intent when, with the specific intent to bring about a criminally prohibited result, he or she comes substantially close to achieving that result.",
+      "wrong_expl_first_sentence": "A defendant with the specific intent to commit a particular crime may be guilty of attempting it even though accomplishing the intended result was factually impossible.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "17052",
+      "pc": 44.0,
+      "correct": "D",
+      "mpwa": "B",
+      "answer_menu": "A: Conspiracy. | B: Involuntary manslaughter. | C: Voluntary manslaughter. | D: Depraved-indifference murder.",
+      "correct_expl_first_sentence": "Most courts impose accomplice liability on a defendant when one person commits a killing with reckless indifference to human life, and the defendant, acting with the same reckless indifference, encourages the person in t",
+      "wrong_expl_first_sentence": "",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "21689",
+      "pc": 44.0,
+      "correct": "C",
+      "mpwa": "B",
+      "answer_menu": "No, because Joyce received Miranda warnings before the second confession and wai | No, because under *Oregon v. Elstad*, a subsequent warned confession is admissib | Yes, because the police deliberately used a two-step tactic to undermine Miranda | Yes, because any unwarned statement automatically taints all subsequent statemen",
+      "correct_expl_first_sentence": "In *Missouri v.",
+      "wrong_expl_first_sentence": "A: Missouri v.",
+      "additional_info_first_sentence": "Under *Missouri v."
+    },
+    {
+      "qid": "21718",
+      "pc": 44.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Not guilty, because Nathaniel genuinely believed he was being attacked | Guilty of murder, because Nathaniel's belief was objectively unreasonable | Guilty of voluntary manslaughter, because Nathaniel had an honest but unreasonab | Not guilty by reason of insanity, because Nathaniel has an anxiety disorder affe",
+      "correct_expl_first_sentence": "Imperfect self-defense applies when a defendant sincerely (honestly) believes deadly or serious force is necessary, but that belief is not objectively reasonable.",
+      "wrong_expl_first_sentence": "A: Common-law self-defense requires both an honest and a reasonable belief.",
+      "additional_info_first_sentence": "Imperfect self-defense: when a defendant honestly but unreasonably believes deadly force was necessary, the charge is reduced from murder to voluntary manslaughter; the defendant is not acquitted and not convicted of mur"
+    },
+    {
+      "qid": "14582",
+      "pc": 44.0,
+      "correct": "A",
+      "mpwa": "D",
+      "answer_menu": "A: correct, because the man did not testify at trial. | B: correct, whether or not the man testified at trial. | C: incorrect, because the woman testified on her own behalf. | D: incorrect, because the woman's own confession was properly admitted into evid",
+      "correct_expl_first_sentence": "A is correct.",
+      "wrong_expl_first_sentence": "B is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "18934",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "No, because the gun is the fruit of the poisonous tree \u2014 obtained directly as a  | No, because Greg's statement was voluntary and a voluntary statement negates any | Yes, the gun is admissible because *United States v. Patane* holds that physical | Yes, the gun is admissible because the inevitable discovery doctrine would have ",
+      "correct_expl_first_sentence": "In *United States v.",
+      "wrong_expl_first_sentence": "A: United States v.",
+      "additional_info_first_sentence": "Under *United States v."
+    },
+    {
+      "qid": "20629",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Whether Breck acted with reckless disregard for the risk of permanent injury | Whether Axel provoked the fight, because provocation is a complete defense to ma | Whether Breck had the intent to maim or permanently disfigure Axel, as opposed t | Whether the injury was permanent, because any permanent disfigurement satisfies ",
+      "correct_expl_first_sentence": "Common-law mayhem requires that the defendant act with malice \u2014 generally understood as specific intent to maim or disfigure, or at minimum, willfulness in committing the act knowing it would cause such a result.",
+      "wrong_expl_first_sentence": "A: Common-law mayhem is not a recklessness crime.",
+      "additional_info_first_sentence": "Common-law mayhem requires (1) unlawful and malicious (2) permanent (3) removal or disablement of a body part that renders the victim less able to fight, OR (4) disfigurement of a body part; the defendant must intend the"
+    },
+    {
+      "qid": "20938",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "B",
+      "answer_menu": "Conspiracy merges into attempted murder, so only attempted murder and assault co | Convictions on all three charges are permissible because each offense has distin | Conspiracy and attempted murder stand; assault with a deadly weapon merges into  | Only assault with a deadly weapon stands because it is the only offense complete",
+      "correct_expl_first_sentence": "Conspiracy never merges \u2014 it is a separate offense punishing the agreement itself and stands alongside any subsequent crimes.",
+      "wrong_expl_first_sentence": "A: Conspiracy does not merge into attempt or into any completed or attempted crime.",
+      "additional_info_first_sentence": "At common law, attempt merges into the completed crime so that a defendant cannot be convicted of both attempted murder and murder for the same transaction; conspiracy, however, does not merge into the completed crime an"
+    },
+    {
+      "qid": "21105",
+      "pc": 45.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "Embezzlement only, because the courier had lawful possession of the envelope | Larceny, because breaking the sealed envelope and taking the coins was a trespas | False pretenses, because Nora trusted the courier | No theft offense, because Nora voluntarily handed over the envelope",
+      "correct_expl_first_sentence": "The breaking-bulk doctrine treats the courier's opening of the sealed package and removal of contents as larceny of the contents.",
+      "wrong_expl_first_sentence": "A: The courier's lawful possession of the sealed container does not necessarily give lawful possession of the contents after breaking bulk.",
+      "additional_info_first_sentence": "Under the breaking-bulk doctrine, a bailee entrusted with a closed container who opens it and converts part of the contents can commit larceny of the contents."
+    },
+    {
+      "qid": "19934",
+      "pc": 45.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "Greg is not guilty of either conspiracy or robbery because he withdrew before th | Greg is guilty of conspiracy but not the robbery, because his withdrawal cuts of | Greg is guilty of both conspiracy and robbery because withdrawal requires him to | Greg is not guilty of conspiracy because he withdrew before the overt act was co",
+      "correct_expl_first_sentence": "The conspiracy was formed in January and was then a completed offense.",
+      "wrong_expl_first_sentence": "A: The conspiracy was complete the moment Greg, Henry, and Iris reached their agreement in January.",
+      "additional_info_first_sentence": "A conspirator who effectively withdraws does not thereby withdraw from the conspiracy itself (which was already completed at the moment of agreement); withdrawal stops the running of the statute of limitations and ends P"
+    },
+    {
+      "qid": "18363",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "All three items are admissible because the warrant established probable cause an | All three items are suppressible because the particularity clause was violated | The cocaine is likely admissible as within the scope of the warrant's probable-c | The pistol and business records are suppressible, but the cocaine is admissible ",
+      "correct_expl_first_sentence": "The warrant's particularity clause was defective as written (\"any and all items\"), but courts interpret warrants in light of the supporting affidavit, which established probable cause for drug trafficking evidence.",
+      "wrong_expl_first_sentence": "A: A valid warrant also requires particularity \u2014 the items to be seized must be described with sufficient specificity to limit police discretion.",
+      "additional_info_first_sentence": "A warrant must describe with particularity both the place to be searched and the items to be seized; a general warrant authorizing seizure of \"any evidence of crime\" is constitutionally invalid"
+    },
+    {
+      "qid": "19080",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Embezzlement, because Carol is an employee of the bank and the money was in the  | Larceny, because Carol took money without a trespassory taking from the account | Embezzlement, because Carol was entrusted with access to the banking system in h | Neither, because the funds were misdirected to begin with and thus had no true o",
+      "correct_expl_first_sentence": "While the entrustment here is indirect, Carol's position as a bank teller gave her authorized access to the bank's account systems \u2014 a form of entrustment of the institution's funds management.",
+      "wrong_expl_first_sentence": "A: Embezzlement requires that the specific property have been entrusted to Carol in her role.",
+      "additional_info_first_sentence": "Embezzlement requires that the defendant's lawful possession arise from a relationship of trust or confidence \u2014 such as employment, agency, or fiduciary status \u2014 with the owner."
+    },
+    {
+      "qid": "18598",
+      "pc": 45.0,
+      "correct": "A",
+      "mpwa": "B",
+      "answer_menu": "No, because the Sixth Amendment does not require counsel at a photo array, even  | Yes, because indictment means counsel must attend every identification procedure | Yes, because photo arrays are more suggestive than lineups as a matter of law | No, because the Sixth Amendment never attaches until the first witness testifies",
+      "correct_expl_first_sentence": "The accused is not physically present at a photo display.",
+      "wrong_expl_first_sentence": "B: Attachment is necessary but not sufficient.",
+      "additional_info_first_sentence": "There is no Sixth Amendment right to counsel at a photo array, even after indictment, because the accused is not present at a corporeal confrontation."
+    },
+    {
+      "qid": "21425",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because any wrongdoing that causes a witness to be unavailable constitutes  | Yes, because forfeiture applies whenever the defendant's crime and the underlyin | No, because forfeiture requires that the defendant's wrongdoing was specifically | No, because Petra's prior statements are non-testimonial and therefore not subje",
+      "correct_expl_first_sentence": "Under *Giles v.",
+      "wrong_expl_first_sentence": "A: Giles v.",
+      "additional_info_first_sentence": "Under Giles v."
+    },
+    {
+      "qid": "16122",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "D",
+      "answer_menu": "The discovery of the defendant's identity was inevitable. | The discovery of the defendant's identity was the result of an independent inves | The interrogation of the man did not violate the defendant's constitutional righ | The defendant was not in custody at the time of the man's interrogation.",
+      "correct_expl_first_sentence": "Statements obtained from a suspect in violation of his or her constitutional rights (and, some authorities suggest, the fruits of such statements) cannot be used against him or her.",
+      "wrong_expl_first_sentence": "A and B are incorrect because there are no facts indicating that the defendant's complicity would have been discovered without the man's statement.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "17298",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "B",
+      "answer_menu": "Yes, because the victim's preliminary hearing testimony is a firmly rooted hears | Yes, because the defendant was present at the preliminary hearing and his attorn | No, because the defendant lacked a meaningful prior opportunity to cross-examine | No, because the victim's unavailability does not satisfy the hearsay unavailabil",
+      "correct_expl_first_sentence": "Under *Crawford v.",
+      "wrong_expl_first_sentence": "A: Crawford v.",
+      "additional_info_first_sentence": "Under Crawford v."
+    },
+    {
+      "qid": "19651",
+      "pc": 45.0,
+      "correct": "D",
+      "mpwa": "C",
+      "answer_menu": "All of them. | Only the friend. | The man and the woman. | Only the woman.",
+      "correct_expl_first_sentence": "D is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "18228",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "D",
+      "answer_menu": "No, because Diana voluntarily entered the guilty plea without objecting to the a | No, because Diana's statement that she \"did not care\" about the proceedings cons | Yes, because Diana was denied counsel at a critical stage, which is presumptivel | Yes, but only if Diana can demonstrate a reasonable probability that the outcome",
+      "correct_expl_first_sentence": "Arraignment is a recognized critical stage under the Sixth Amendment.",
+      "wrong_expl_first_sentence": "A: Arraignment is a critical stage.",
+      "additional_info_first_sentence": "Arraignment is a critical stage of criminal prosecution; the defendant is entitled to counsel, and absence of counsel is presumptively prejudicial"
+    },
+    {
+      "qid": "20090",
+      "pc": 45.0,
+      "correct": "A",
+      "mpwa": "D",
+      "answer_menu": "No, because she believed that the painting belonged to her. | No, because the gallery owner would have sold the painting to anyone who agreed  | Yes, because even if her representation was not material, she never intended to  | Yes, because she knowingly made a false representation on which the gallery owne",
+      "correct_expl_first_sentence": "A is correct.",
+      "wrong_expl_first_sentence": "B is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "20122",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because Kevin used force in connection with the theft of the wallet | No, because Kevin pickpocketed the wallet without the victim's awareness, and ro | No, because the force occurred after the larceny was already complete, so robber | Yes, because Kevin used force to retain the property after it was taken, which s",
+      "correct_expl_first_sentence": "Common-law robbery requires a trespassory taking from the person or presence of another, by force or intimidation.",
+      "wrong_expl_first_sentence": "A: Robbery requires that force or intimidation be used in the course of taking the property \u2014 meaning at or before the moment the taking is accomplished.",
+      "additional_info_first_sentence": "Common-law robbery requires that force or intimidation be used in the course of the taking."
+    },
+    {
+      "qid": "14568",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "A: The defendant was unable to cross-examine the witness about the conviction. | B: The prosecutor failed to inform the grand jury of the witness's conviction. | C: The court found it reasonably probable that the defendant would have been acq | D: The court found that the prosecutor had deliberately delayed disclosing the w",
+      "correct_expl_first_sentence": "C is correct.",
+      "wrong_expl_first_sentence": "A is incorrect.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "20689",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because Max maliciously set fire to another's property | Yes, because significant smoke and heat were produced, creating a substantial ri | No, because the burning element of common-law arson requires actual charring of  | No, because the porch is not part of the \"dwelling house\" for purposes of arson",
+      "correct_expl_first_sentence": "Common-law arson requires a malicious burning of the dwelling house of another, and \"burning\" requires actual charring \u2014 the fire must consume or char the wood fibers of the structure itself.",
+      "wrong_expl_first_sentence": "A: Common-law arson's burning element requires actual charring \u2014 the consumption of the wood fibers of the structure itself.",
+      "additional_info_first_sentence": "Common-law arson requires a malicious burning of the dwelling house of another."
+    },
+    {
+      "qid": "18156",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "B",
+      "answer_menu": "Yes, because Harold made a representation he knew was false when he made it | Yes, because by accepting payment, Harold implicitly represented that he current | No, because at common law, a false promise about future conduct does not satisfy | No, because Helen should have required a written contract before paying",
+      "correct_expl_first_sentence": "Common-law false pretenses requires a knowingly false representation of a presently existing material fact.",
+      "wrong_expl_first_sentence": "A: False pretenses at common law requires a false statement of a presently existing fact, not a false promise about future conduct.",
+      "additional_info_first_sentence": "False pretenses requires a false representation of a presently existing material fact."
+    },
+    {
+      "qid": "20971",
+      "pc": 45.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "Yes, because Fourth Amendment violations are constitutional claims and federal c | No, because Stone v. Powell bars Fourth Amendment suppression claims in federal  | No, but only because the defendant failed to raise the Fourth Amendment claim in | Yes, because Stone v. Powell applies only when the state court actually suppress",
+      "correct_expl_first_sentence": "Stone v.",
+      "wrong_expl_first_sentence": "A: Stone v.",
+      "additional_info_first_sentence": "Stone v."
+    },
+    {
+      "qid": "20427",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because the Sixth Amendment right to counsel is offense-specific and had no | Yes, because Tanya implicitly waived her earlier invocation by agreeing to talk  | No, because Tanya's invocation of Miranda right to counsel barred police from re | No, because Tanya's Sixth Amendment right to counsel had attached at the indictm",
+      "correct_expl_first_sentence": "When Tanya said \"I want a lawyer,\" she invoked her Fifth Amendment/Miranda right to counsel.",
+      "wrong_expl_first_sentence": "A: While the Sixth Amendment defense fails (no formal proceedings on drug trafficking), Tanya invoked her Miranda right to counsel.",
+      "additional_info_first_sentence": "Once a suspect invokes the right to counsel under Miranda, police may not question the suspect about any offense; but the Sixth Amendment right, once attached, only bars questioning about the charged offense"
+    },
+    {
+      "qid": "19743",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "D",
+      "answer_menu": "The defendant's claim fails because the prosecutor's statement is based on perso | The defendant's claim fails because prosecutorial misconduct in closing argument | The defendant has a viable constitutional claim, but the conviction will be reve | The defendant's claim automatically results in reversal because vouching is a st",
+      "correct_expl_first_sentence": "Vouching\u2014a prosecutor's personal assurance of a witness's credibility that goes beyond the evidence\u2014violates due process because it injects the prosecutor's personal credibility and extra-record information into the jury",
+      "wrong_expl_first_sentence": "A: The prosecutor's personal opinion about the officer's character formed over twenty years of off-record interactions is not trial evidence.",
+      "additional_info_first_sentence": "Due process is violated when a prosecutor expresses personal belief in a witness's credibility or implies that evidence outside the record supports guilt; reversal requires that the misconduct likely affected the verdict"
+    },
+    {
+      "qid": "17165",
+      "pc": 45.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "False pretenses, because Donna made a false representation that caused the owner | Larceny by trick, because Donna used fraud to induce the owner to transfer posse | Embezzlement, because the owner entrusted the necklace to Donna for a specific p | Theft by deception, which encompasses both false pretenses and larceny by trick",
+      "correct_expl_first_sentence": "Larceny by trick is committed when a defendant uses fraudulent misrepresentation to induce the owner to voluntarily hand over possession of property for a limited purpose, and the defendant then converts it.",
+      "wrong_expl_first_sentence": "A: False pretenses requires that the victim, as a result of the fraud, transfer title \u2014 ownership \u2014 to the defendant.",
+      "additional_info_first_sentence": "Larceny by trick applies when a defendant uses fraud to induce the owner to hand over possession for a limited purpose; the defendant then exceeds that purpose."
+    },
+    {
+      "qid": "16054",
+      "pc": 45.0,
+      "correct": "B",
+      "mpwa": "A",
+      "answer_menu": "In a jurisdiction that applies the common law definition, the defendant is charg | In a jurisdiction in which the statutory age of consent is 18, the defendant is  | In a jurisdiction that applies the common law definition, the defendant is charg | In a jurisdiction that applies the common law definition, the defendant is charg",
+      "correct_expl_first_sentence": "Although statutory rape is sometimes called a strict liability crime, this means only that liability can be imposed even though the defendant was not aware that the female with whom he was having intercourse was underage",
+      "wrong_expl_first_sentence": "A is incorrect because liability for involuntary manslaughter may be imposed if the victim's death resulted from reckless conduct by the defendant.",
+      "additional_info_first_sentence": ""
+    },
+    {
+      "qid": "17589",
+      "pc": 45.0,
+      "correct": "C",
+      "mpwa": "B",
+      "answer_menu": "Yes, because any undisclosed exculpatory evidence automatically entitles the def | Yes, because the statement could have been used to create reasonable doubt | Probably not, because the undisclosed statement is likely not material given the | No, because *Brady* applies only to physical evidence, not witness statements",
+      "correct_expl_first_sentence": "Under *Brady v.",
+      "wrong_expl_first_sentence": "A: Brady requires more than mere non-disclosure; the withheld evidence must be material.",
+      "additional_info_first_sentence": "Under *Brady v."
+    },
+    {
+      "qid": "17852",
+      "pc": 46.0,
+      "correct": "C",
+      "mpwa": "A",
+      "answer_menu": "Yes, because Owen took Dana's property without her consent | Yes, because Owen's self-help remedy is illegal under civil law | No, because Owen's sincere belief in his right to take equivalent value negates  | No, because the drill's value is equal to the debt, so Owen took nothing of net ",
+      "correct_expl_first_sentence": "Larceny requires a trespassory taking, meaning the defendant must take without a sincere belief in a legal right to the property.",
+      "wrong_expl_first_sentence": "A: Lack of consent is a necessary but not sufficient condition for a trespassory taking.",
+      "additional_info_first_sentence": "A taking is not trespassory if the defendant sincerely believes he has a legal right to the specific property taken, even if that belief is mistaken."
+    },
+    {
+      "qid": "20112",
+      "pc": 46.0,
+      "correct": "C",
+      "mpwa": "B",
+      "answer_menu": "Yes, because the charges arise from the same conduct, and the Double Jeopardy Cl | No, because aggravated battery requires proof of serious bodily injury, an eleme | Yes, because simple assault is a lesser included offense of aggravated battery \u2014 | No, because Walt was acquitted rather than convicted, and the Double Jeopardy Cl",
+      "correct_expl_first_sentence": "Under *Blockburger*, two offenses are \"the same\" if one is a lesser included offense of the other \u2014 that is, if conviction for the greater necessarily proves all elements of the lesser.",
+      "wrong_expl_first_sentence": "A: The Double Jeopardy Clause does not bar all successive prosecutions arising from the same conduct.",
+      "additional_info_first_sentence": "Under *Blockburger v."
+    },
+    {
+      "qid": "21578",
+      "pc": 46.0,
+      "correct": "D",
+      "mpwa": "C",
+      "answer_menu": "A: guilty, because giving the man the antibiotic without a prescription with kno | B: guilty, because he did not attempt to stop the man from killing his wife. | C: guilty, because he furnished the drug knowing that the man would use it to at | D: not guilty, because he did not believe that the wife would die.",
+      "correct_expl_first_sentence": "A person is guilty of a criminal attempt when, with the specific intent to bring about a criminally prohibited result, he or she does some significant act that brings him or her substantially close to accomplishing that ",
+      "wrong_expl_first_sentence": "Murder is the unlawful killing of a human being with malice aforethought.",
+      "additional_info_first_sentence": ""
+    }
+  ]
+}

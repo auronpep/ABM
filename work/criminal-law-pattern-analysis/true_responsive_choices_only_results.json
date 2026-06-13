@@ -1,0 +1,480 @@
+{
+  "n": 945,
+  "graded_n": 772,
+  "critical_n": 181,
+  "scoreboard": [
+    {
+      "rule": "longest_A/B/C_else_C",
+      "all_acc": 0.5830687830687831,
+      "graded_acc": 0.6619170984455959,
+      "critical_acc": 0.6519337016574586
+    },
+    {
+      "rule": "cv_grid_truth_responsive",
+      "all_acc": 0.580952380952381,
+      "graded_acc": null,
+      "critical_acc": null
+    },
+    {
+      "rule": "truth_responsive_v1",
+      "all_acc": 0.5259259259259259,
+      "graded_acc": 0.5932642487046632,
+      "critical_acc": 0.5911602209944752
+    }
+  ],
+  "cv_fold_weights": [
+    {
+      "fold": 0,
+      "train_acc": 0.5912698412698413,
+      "weights": {
+        "rel_length": 4.0,
+        "because": 0.0,
+        "limited": 0.0,
+        "absolute": -1.0,
+        "command": -0.3,
+        "bare_result": -2.0
+      }
+    },
+    {
+      "fold": 1,
+      "train_acc": 0.5793650793650794,
+      "weights": {
+        "rel_length": 3.0,
+        "because": 0.0,
+        "limited": 0.0,
+        "absolute": -1.0,
+        "command": -0.3,
+        "bare_result": -2.0
+      }
+    },
+    {
+      "fold": 2,
+      "train_acc": 0.578042328042328,
+      "weights": {
+        "rel_length": 4.0,
+        "because": 0.0,
+        "limited": 0.0,
+        "absolute": -1.0,
+        "command": -0.3,
+        "bare_result": -2.0
+      }
+    },
+    {
+      "fold": 3,
+      "train_acc": 0.5846560846560847,
+      "weights": {
+        "rel_length": 3.0,
+        "because": 0.0,
+        "limited": 0.0,
+        "absolute": -1.0,
+        "command": -0.3,
+        "bare_result": -2.0
+      }
+    },
+    {
+      "fold": 4,
+      "train_acc": 0.582010582010582,
+      "weights": {
+        "rel_length": 4.0,
+        "because": 0.0,
+        "limited": 0.0,
+        "absolute": -1.0,
+        "command": -0.3,
+        "bare_result": -2.0
+      }
+    }
+  ],
+  "bucket_stats": [
+    {
+      "longest_set": "C",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 169,
+      "best_letter": "C",
+      "best_letter_acc": 0.7218934911242604,
+      "longest_abc_else_c_acc": 0.7218934911242604,
+      "truth_responsive_v1_acc": 0.621301775147929
+    },
+    {
+      "longest_set": "C",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 153,
+      "best_letter": "C",
+      "best_letter_acc": 0.9150326797385621,
+      "longest_abc_else_c_acc": 0.9150326797385621,
+      "truth_responsive_v1_acc": 0.7777777777777778
+    },
+    {
+      "longest_set": "A",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 105,
+      "best_letter": "A",
+      "best_letter_acc": 0.7333333333333333,
+      "longest_abc_else_c_acc": 0.7333333333333333,
+      "truth_responsive_v1_acc": 0.7619047619047619
+    },
+    {
+      "longest_set": "B",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 92,
+      "best_letter": "B",
+      "best_letter_acc": 0.41304347826086957,
+      "longest_abc_else_c_acc": 0.41304347826086957,
+      "truth_responsive_v1_acc": 0.391304347826087
+    },
+    {
+      "longest_set": "B",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 75,
+      "best_letter": "B",
+      "best_letter_acc": 0.6133333333333333,
+      "longest_abc_else_c_acc": 0.6133333333333333,
+      "truth_responsive_v1_acc": 0.68
+    },
+    {
+      "longest_set": "D",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 61,
+      "best_letter": "C",
+      "best_letter_acc": 0.4098360655737705,
+      "longest_abc_else_c_acc": 0.4098360655737705,
+      "truth_responsive_v1_acc": 0.26229508196721313
+    },
+    {
+      "longest_set": "A",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 46,
+      "best_letter": "A",
+      "best_letter_acc": 0.4782608695652174,
+      "longest_abc_else_c_acc": 0.4782608695652174,
+      "truth_responsive_v1_acc": 0.43478260869565216
+    },
+    {
+      "longest_set": "D",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 31,
+      "best_letter": "A",
+      "best_letter_acc": 0.2903225806451613,
+      "longest_abc_else_c_acc": 0.2903225806451613,
+      "truth_responsive_v1_acc": 0.3225806451612903
+    },
+    {
+      "longest_set": "D",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 27,
+      "best_letter": "C",
+      "best_letter_acc": 0.3333333333333333,
+      "longest_abc_else_c_acc": 0.3333333333333333,
+      "truth_responsive_v1_acc": 0.25925925925925924
+    },
+    {
+      "longest_set": "C",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 20,
+      "best_letter": "B",
+      "best_letter_acc": 0.4,
+      "longest_abc_else_c_acc": 0.2,
+      "truth_responsive_v1_acc": 0.2
+    },
+    {
+      "longest_set": "B",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 17,
+      "best_letter": "D",
+      "best_letter_acc": 0.35294117647058826,
+      "longest_abc_else_c_acc": 0.23529411764705882,
+      "truth_responsive_v1_acc": 0.23529411764705882
+    },
+    {
+      "longest_set": "BC",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 12,
+      "best_letter": "A",
+      "best_letter_acc": 0.5,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.08333333333333333
+    },
+    {
+      "longest_set": "CD",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 12,
+      "best_letter": "D",
+      "best_letter_acc": 0.4166666666666667,
+      "longest_abc_else_c_acc": 0.08333333333333333,
+      "truth_responsive_v1_acc": 0.08333333333333333
+    },
+    {
+      "longest_set": "A",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 12,
+      "best_letter": "D",
+      "best_letter_acc": 0.4166666666666667,
+      "longest_abc_else_c_acc": 0.25,
+      "truth_responsive_v1_acc": 0.25
+    },
+    {
+      "longest_set": "CD",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 11,
+      "best_letter": "C",
+      "best_letter_acc": 0.8181818181818182,
+      "longest_abc_else_c_acc": 0.8181818181818182,
+      "truth_responsive_v1_acc": 0.6363636363636364
+    },
+    {
+      "longest_set": "AB",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 11,
+      "best_letter": "B",
+      "best_letter_acc": 0.6363636363636364,
+      "longest_abc_else_c_acc": 0.09090909090909091,
+      "truth_responsive_v1_acc": 0.09090909090909091
+    },
+    {
+      "longest_set": "CD",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 9,
+      "best_letter": "C",
+      "best_letter_acc": 1.0,
+      "longest_abc_else_c_acc": 1.0,
+      "truth_responsive_v1_acc": 0.8888888888888888
+    },
+    {
+      "longest_set": "C",
+      "any_because": false,
+      "any_absolute": true,
+      "n": 8,
+      "best_letter": "D",
+      "best_letter_acc": 0.375,
+      "longest_abc_else_c_acc": 0.25,
+      "truth_responsive_v1_acc": 0.375
+    },
+    {
+      "longest_set": "AC",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 7,
+      "best_letter": "A",
+      "best_letter_acc": 0.5714285714285714,
+      "longest_abc_else_c_acc": 0.42857142857142855,
+      "truth_responsive_v1_acc": 0.7142857142857143
+    },
+    {
+      "longest_set": "AC",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 7,
+      "best_letter": "C",
+      "best_letter_acc": 0.8571428571428571,
+      "longest_abc_else_c_acc": 0.8571428571428571,
+      "truth_responsive_v1_acc": 0.5714285714285714
+    },
+    {
+      "longest_set": "BD",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 6,
+      "best_letter": "C",
+      "best_letter_acc": 0.6666666666666666,
+      "longest_abc_else_c_acc": 0.6666666666666666,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "BD",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 5,
+      "best_letter": "A",
+      "best_letter_acc": 0.6,
+      "longest_abc_else_c_acc": 0.4,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "B",
+      "any_because": false,
+      "any_absolute": true,
+      "n": 5,
+      "best_letter": "C",
+      "best_letter_acc": 0.6,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "BC",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 5,
+      "best_letter": "C",
+      "best_letter_acc": 1.0,
+      "longest_abc_else_c_acc": 1.0,
+      "truth_responsive_v1_acc": 0.8
+    },
+    {
+      "longest_set": "BC",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 4,
+      "best_letter": "A",
+      "best_letter_acc": 0.25,
+      "longest_abc_else_c_acc": 0.25,
+      "truth_responsive_v1_acc": 0.25
+    },
+    {
+      "longest_set": "AD",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 4,
+      "best_letter": "C",
+      "best_letter_acc": 0.5,
+      "longest_abc_else_c_acc": 0.5,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "AB",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 4,
+      "best_letter": "A",
+      "best_letter_acc": 0.75,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.75
+    },
+    {
+      "longest_set": "BCD",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 3,
+      "best_letter": "A",
+      "best_letter_acc": 0.6666666666666666,
+      "longest_abc_else_c_acc": 0.3333333333333333,
+      "truth_responsive_v1_acc": 0.3333333333333333
+    },
+    {
+      "longest_set": "AB",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 3,
+      "best_letter": "A",
+      "best_letter_acc": 0.6666666666666666,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.3333333333333333
+    },
+    {
+      "longest_set": "AD",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 3,
+      "best_letter": "B",
+      "best_letter_acc": 0.6666666666666666,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "AD",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 3,
+      "best_letter": "C",
+      "best_letter_acc": 0.3333333333333333,
+      "longest_abc_else_c_acc": 0.3333333333333333,
+      "truth_responsive_v1_acc": 0.3333333333333333
+    },
+    {
+      "longest_set": "D",
+      "any_because": false,
+      "any_absolute": true,
+      "n": 3,
+      "best_letter": "D",
+      "best_letter_acc": 1.0,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "ABC",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 2,
+      "best_letter": "A",
+      "best_letter_acc": 1.0,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "BCD",
+      "any_because": true,
+      "any_absolute": false,
+      "n": 2,
+      "best_letter": "C",
+      "best_letter_acc": 1.0,
+      "longest_abc_else_c_acc": 1.0,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "BD",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 2,
+      "best_letter": "C",
+      "best_letter_acc": 0.5,
+      "longest_abc_else_c_acc": 0.5,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "ABCD",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 2,
+      "best_letter": "A",
+      "best_letter_acc": 0.5,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "ABCD",
+      "any_because": false,
+      "any_absolute": false,
+      "n": 2,
+      "best_letter": "B",
+      "best_letter_acc": 0.5,
+      "longest_abc_else_c_acc": 0.0,
+      "truth_responsive_v1_acc": 0.0
+    },
+    {
+      "longest_set": "BCD",
+      "any_because": true,
+      "any_absolute": true,
+      "n": 1,
+      "best_letter": "C",
+      "best_letter_acc": 1.0,
+      "longest_abc_else_c_acc": 1.0,
+      "truth_responsive_v1_acc": 1.0
+    },
+    {
+      "longest_set": "AD",
+      "any_because": false,
+      "any_absolute": true,
+      "n": 1,
+      "best_letter": "C",
+      "best_letter_acc": 1.0,
+      "longest_abc_else_c_acc": 1.0,
+      "truth_responsive_v1_acc": 0.0
+    }
+  ],
+  "note": "Features are answer-choice-only TRUE/RESPONSIVE proxies: length, because/reason coupling, limited language, absolute/overclaim penalties, and bare-result penalties."
+}

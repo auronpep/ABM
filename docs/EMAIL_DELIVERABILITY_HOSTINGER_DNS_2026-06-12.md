@@ -19,7 +19,7 @@ So the deliverability work is DNS authentication plus provider-dashboard verific
 Checks now completed:
 
 - Public DNS was checked directly and by a delegated DNS lane.
-- Resend CLI was checked. It is installed and authenticated, but the available key is sending-only, so domain list/status calls are blocked by Resend permissions.
+- Resend CLI was checked. The first available key was sending-only, then `RESEND_FULL_API_KEY` was used successfully for domain status.
 - Production Hostinger API env was checked over SSH by key presence only; Resend, Clerk, and Stripe keys are present.
 - Resend dark send succeeded from `BarMatrix <access@barmatrix.app>` to `codex@barmatrix.app`.
 - Hostinger SMTP dark send succeeded from `support@barmatrix.app` to `codex@barmatrix.app`.
@@ -32,7 +32,7 @@ Follow-up after user added Clerk CNAMEs:
 - `clk._domainkey.barmatrix.app` now resolves to `dkim1.pqxm61mygn1q.clerk.services` and onward to the Clerk/SendGrid DKIM public key.
 - `clk2._domainkey.barmatrix.app` now resolves to `dkim2.pqxm61mygn1q.clerk.services` and onward to the Clerk/SendGrid DKIM public key.
 - `RESEND_FULL_API_KEY` was used for Resend CLI domain status. `barmatrix.app` is verified; sending is enabled; receiving is disabled; all Resend records are verified.
-- No Hostinger API token was found in process/user/machine env, `C:\Users\JesusLovesMe\.env`, `C:\ABM`, `C:\barmatrix-api`, or common Hostinger config paths. Hostinger DKIM/DMARC edits therefore remain hPanel/API-token gated from this machine.
+- User clarified the Hostinger DNS token is saved as `HOSTINGER_API` in `C:\Users\JesusLovesMe\.env`. The token worked against Hostinger's DNS Zone API. DMARC is now updated and verified publicly.
 
 Highest-priority findings:
 
@@ -69,7 +69,7 @@ spf=pass smtp.mailfrom=support@barmatrix.app
 dmarc=pass (policy=none) header.from=barmatrix.app
 ```
 
-5. **Hostinger DKIM selector B is still bad but selector A is working.** Public DNS for `hostingermail-b._domainkey.barmatrix.app` resolves to `v=DKIM1;p=`. Hostinger SMTP currently signs with selector `hostingermail-a`, which passes. Refresh/fix selector B in hPanel, but it is not blocking the tested support SMTP path.
+5. **Hostinger DKIM selectors B and C still need Hostinger email-side regeneration, but selector A is working.** The `barmatrix.app` CNAMEs for `hostingermail-a`, `hostingermail-b`, and `hostingermail-c` are present and point at Hostinger's expected `dkim.mail.hostinger.com` targets. Hostinger's managed TXT targets for B and C currently return `v=DKIM1;p=`. Hostinger SMTP currently signs with selector `hostingermail-a`, which passes. Refresh/fix B/C in hPanel, but they are not blocking the tested support SMTP path.
 
 6. **Stripe account branding/support info is wrong for BarMatrix.** Read-only Stripe API check returned:
 
@@ -99,11 +99,12 @@ Current records observed:
 | Inbound mail | MX | `@` | `mx2.hostinger.com`, priority `10` | Present |
 | Hostinger mailbox SPF | TXT | `@` | `v=spf1 include:_spf.mail.hostinger.com ~all` | Present |
 | Hostinger DKIM | CNAME | `hostingermail-a._domainkey` | `hostingermail-a.dkim.mail.hostinger.com` | Present |
-| Hostinger DKIM | CNAME | `hostingermail-b._domainkey` | `hostingermail-b.dkim.mail.hostinger.com` | Present, but verify green in hPanel because the resolved public key is currently empty |
+| Hostinger DKIM | CNAME | `hostingermail-b._domainkey` | `hostingermail-b.dkim.mail.hostinger.com` | Present, but Hostinger's target public key is empty |
+| Hostinger DKIM | CNAME | `hostingermail-c._domainkey` | `hostingermail-c.dkim.mail.hostinger.com` | Present, but Hostinger's target public key is empty |
 | Resend return-path MX | MX | `send` | `feedback-smtp.us-east-1.amazonses.com`, priority `10` | Present |
 | Resend return-path SPF | TXT | `send` | `v=spf1 include:amazonses.com ~all` | Present |
 | Resend DKIM | TXT | `resend._domainkey` | Resend-generated DKIM public key | Present |
-| DMARC | TXT | `_dmarc` | `v=DMARC1; p=none` | Present, but monitoring/report address is missing |
+| DMARC | TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:dmarc@barmatrix.app` | Present in Hostinger API and authoritative DNS; some recursive resolvers may briefly cache the old bare value |
 | Clerk frontend API | CNAME | `clerk` | `frontend-api.clerk.services` | Present |
 | Clerk accounts portal | CNAME | `accounts` | `accounts.clerk.services` | Present |
 | Clerk mail channel | CNAME | `clkmail` | `mail.pqxm61mygn1q.clerk.services` | Present |
@@ -135,16 +136,17 @@ Do not add a second `v=spf1 ...` TXT at `@`. If another provider ever requires r
 
 3. Verify Hostinger mailbox DKIM in hPanel.
 
-The public `hostingermail-a._domainkey` CNAME resolves to a real DKIM key. `hostingermail-b._domainkey` resolves, but the key currently appears empty publicly. In Hostinger Email -> domain/account -> Connect Domain / Protect your reputation, confirm both DKIM records are green. If Hostinger shows different expected DKIM values, update the CNAMEs to match Hostinger exactly.
+The public `hostingermail-a._domainkey` CNAME resolves to a real DKIM key. `hostingermail-b._domainkey` and `hostingermail-c._domainkey` both point to Hostinger targets, but those Hostinger-managed target TXT records currently appear empty publicly. In Hostinger Email -> domain/account -> Connect Domain / Protect your reputation, regenerate or refresh DKIM if available. If Hostinger shows different expected DKIM values, update only the affected CNAMEs to match Hostinger exactly.
 
 Current status:
 
 | Hostinger record | Status |
 |---|---|
 | `hostingermail-a._domainkey` | Working; real received mail signed with `hostingermail-a` and passed DKIM |
-| `hostingermail-b._domainkey` | Needs hPanel attention; public target TXT is `v=DKIM1;p=` |
+| `hostingermail-b._domainkey` | CNAME is correct in `barmatrix.app`; Hostinger's target TXT is `v=DKIM1;p=` |
+| `hostingermail-c._domainkey` | CNAME is correct in `barmatrix.app`; Hostinger's target TXT is `v=DKIM1;p=` |
 
-Because no Hostinger API token is available locally, this must be done in hPanel unless an API token is added.
+This cannot be fixed by changing the `barmatrix.app` CNAMEs unless Hostinger shows replacement targets. It requires Hostinger email-side DKIM regeneration or hPanel support.
 
 4. Keep the Resend `send` subdomain records and verify them in Resend.
 
@@ -160,27 +162,15 @@ If Resend shows a different region or DKIM value, copy the dashboard values. Do 
 
 5. Improve DMARC monitoring.
 
-Current DMARC is valid but bare:
+Current DMARC now includes aggregate reporting:
 
 ```text
-v=DMARC1; p=none
+v=DMARC1; p=none; rua=mailto:dmarc@barmatrix.app
 ```
-
-Recommended next Hostinger edit after creating/confirming a real receiving alias such as `dmarc@barmatrix.app`:
-
-| Type | Name | TXT value |
-|---|---|---|
-| TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:dmarc@barmatrix.app` |
 
 Leave policy at `p=none` during launch/warm-up. Move later to `p=quarantine` and then `p=reject` only after Resend, Clerk, Hostinger mailbox sends, and Stripe sends all pass SPF/DKIM/DMARC in real message headers.
 
-Current public DMARC remains:
-
-```text
-v=DMARC1; p=none
-```
-
-No Hostinger API token is available locally, so this is also hPanel/API-token gated.
+Hostinger API, authoritative nameservers `ns1.dns-parking.com` / `ns2.dns-parking.com`, and Cloudflare resolver `1.1.1.1` return one `_dmarc` TXT record with the `rua` value above. Google resolver `8.8.8.8` still showed the old bare value alongside the new value during verification, which appears to be recursive-cache lag after the delete/re-add correction.
 
 6. Clerk checklist.
 
@@ -237,31 +227,30 @@ Also update Stripe public business information now:
 
 Use Hostinger hPanel -> Domains -> DNS -> select `barmatrix.app` -> DNS records.
 
-1. Fix Hostinger DKIM selector B.
+1. Refresh Hostinger DKIM selectors B and C.
 
 Go to Hostinger Email for `barmatrix.app`, then look for the domain authentication / "Protect your reputation" / DKIM section. Regenerate or refresh DKIM if available. The broken public record is:
 
 ```text
 hostingermail-b._domainkey.barmatrix.app -> hostingermail-b.dkim.mail.hostinger.com -> v=DKIM1;p=
+hostingermail-c._domainkey.barmatrix.app -> hostingermail-c.dkim.mail.hostinger.com -> v=DKIM1;p=
 ```
 
-If Hostinger shows a corrected value or replacement CNAME for selector B, update only that record. Do not touch `hostingermail-a._domainkey`; it is already signing successfully.
+The `barmatrix.app` CNAMEs are already present and correct, so do not delete them unless Hostinger support tells you to. If Hostinger shows corrected values or replacement CNAME targets for B/C, update only those affected records. Do not touch `hostingermail-a._domainkey`; it is already signing successfully.
 
-2. Improve DMARC.
+2. Confirm DMARC reporting mailbox.
 
-First create or confirm `dmarc@barmatrix.app` as a mailbox or alias. Then edit the existing TXT record:
+The Hostinger DNS API already updated `_dmarc` to:
 
-| Field | Current | Change to |
-|---|---|---|
-| Type | `TXT` | `TXT` |
-| Name | `_dmarc` | `_dmarc` |
-| TXT value | `v=DMARC1; p=none` | `v=DMARC1; p=none; rua=mailto:dmarc@barmatrix.app` |
+```text
+v=DMARC1; p=none; rua=mailto:dmarc@barmatrix.app
+```
 
-Keep `p=none` for now. This only adds reporting; it does not reject mail.
+Confirm `dmarc@barmatrix.app` is a real mailbox, alias, or covered by catchall. Keep `p=none` for now. This only adds reporting; it does not reject mail.
 
-3. Optional API route.
+3. Hostinger API route used.
 
-Hostinger has a public DNS API, but it requires a Bearer API token. If `HOSTINGER_API_TOKEN` or similar is added as a user environment variable, the DNS update can be automated after validating the zone payload.
+`HOSTINGER_API` in `C:\Users\JesusLovesMe\.env` was used against Hostinger's DNS Zone API. The safe edit path was: GET zone, validate `_dmarc`, PUT `_dmarc`, observe duplicate caused by append behavior, DELETE only `_dmarc` TXT via `name` + `type` filter, validate again, and PUT one final `_dmarc` TXT.
 
 ## Verification Commands
 

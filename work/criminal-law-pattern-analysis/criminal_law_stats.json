@@ -1,0 +1,1049 @@
+{
+  "summary": {
+    "rows": 945,
+    "percent_correct_rows": 772,
+    "avg_pc": 58.5,
+    "median_pc": 60.0,
+    "min_pc": 10.0,
+    "max_pc": 96.0,
+    "below_50": 181,
+    "below_45": 48,
+    "correct_answer_counts": {
+      "C": 435,
+      "B": 184,
+      "A": 218,
+      "D": 108
+    },
+    "mpwa_counts": {
+      "A": 524,
+      "B": 202,
+      "C": 126,
+      "D": 93
+    },
+    "short_choice_menu_rows": 240,
+    "charge_menu_rows": 150,
+    "class_counts": {
+      "defenses_justification_excuse": 87,
+      "accomplice_party_liability": 14,
+      "fourth_amendment_search_seizure": 164,
+      "homicide": 156,
+      "theft_property_crimes": 152,
+      "sixth_trial_rights": 94,
+      "mens_rea_actus_reus": 62,
+      "fifth_miranda_confessions": 91,
+      "inchoate": 65,
+      "exclusion_double_jeopardy_due_process": 19,
+      "assault_battery_sex_kidnap": 29,
+      "sentencing_eighth_appeal_habeas": 12
+    }
+  },
+  "byclass": [
+    {
+      "class": "sentencing_eighth_appeal_habeas",
+      "rows": 12,
+      "pc_rows": 10,
+      "avg_pc": 52.0,
+      "below_50": 7,
+      "short_choice_menu_rows": 2,
+      "charge_menu_rows": 0,
+      "top_mpwa": [
+        [
+          "A",
+          5
+        ],
+        [
+          "D",
+          4
+        ]
+      ]
+    },
+    {
+      "class": "sixth_trial_rights",
+      "rows": 94,
+      "pc_rows": 83,
+      "avg_pc": 54.5,
+      "below_50": 28,
+      "short_choice_menu_rows": 5,
+      "charge_menu_rows": 2,
+      "top_mpwa": [
+        [
+          "A",
+          41
+        ],
+        [
+          "B",
+          29
+        ]
+      ]
+    },
+    {
+      "class": "assault_battery_sex_kidnap",
+      "rows": 29,
+      "pc_rows": 21,
+      "avg_pc": 55.2,
+      "below_50": 10,
+      "short_choice_menu_rows": 6,
+      "charge_menu_rows": 5,
+      "top_mpwa": [
+        [
+          "A",
+          19
+        ],
+        [
+          "B",
+          5
+        ]
+      ]
+    },
+    {
+      "class": "fifth_miranda_confessions",
+      "rows": 91,
+      "pc_rows": 78,
+      "avg_pc": 55.4,
+      "below_50": 25,
+      "short_choice_menu_rows": 11,
+      "charge_menu_rows": 3,
+      "top_mpwa": [
+        [
+          "A",
+          57
+        ],
+        [
+          "B",
+          14
+        ]
+      ]
+    },
+    {
+      "class": "exclusion_double_jeopardy_due_process",
+      "rows": 19,
+      "pc_rows": 15,
+      "avg_pc": 55.6,
+      "below_50": 5,
+      "short_choice_menu_rows": 1,
+      "charge_menu_rows": 0,
+      "top_mpwa": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          5
+        ]
+      ]
+    },
+    {
+      "class": "defenses_justification_excuse",
+      "rows": 87,
+      "pc_rows": 76,
+      "avg_pc": 59.2,
+      "below_50": 13,
+      "short_choice_menu_rows": 28,
+      "charge_menu_rows": 6,
+      "top_mpwa": [
+        [
+          "A",
+          62
+        ],
+        [
+          "B",
+          12
+        ]
+      ]
+    },
+    {
+      "class": "theft_property_crimes",
+      "rows": 152,
+      "pc_rows": 120,
+      "avg_pc": 59.3,
+      "below_50": 29,
+      "short_choice_menu_rows": 72,
+      "charge_menu_rows": 54,
+      "top_mpwa": [
+        [
+          "A",
+          77
+        ],
+        [
+          "B",
+          37
+        ]
+      ]
+    },
+    {
+      "class": "mens_rea_actus_reus",
+      "rows": 62,
+      "pc_rows": 56,
+      "avg_pc": 59.4,
+      "below_50": 9,
+      "short_choice_menu_rows": 13,
+      "charge_menu_rows": 10,
+      "top_mpwa": [
+        [
+          "A",
+          42
+        ],
+        [
+          "B",
+          10
+        ]
+      ]
+    },
+    {
+      "class": "homicide",
+      "rows": 156,
+      "pc_rows": 117,
+      "avg_pc": 59.5,
+      "below_50": 30,
+      "short_choice_menu_rows": 55,
+      "charge_menu_rows": 49,
+      "top_mpwa": [
+        [
+          "A",
+          78
+        ],
+        [
+          "B",
+          38
+        ]
+      ]
+    },
+    {
+      "class": "inchoate",
+      "rows": 65,
+      "pc_rows": 52,
+      "avg_pc": 60.3,
+      "below_50": 6,
+      "short_choice_menu_rows": 20,
+      "charge_menu_rows": 16,
+      "top_mpwa": [
+        [
+          "A",
+          43
+        ],
+        [
+          "C",
+          10
+        ]
+      ]
+    },
+    {
+      "class": "fourth_amendment_search_seizure",
+      "rows": 164,
+      "pc_rows": 137,
+      "avg_pc": 60.8,
+      "below_50": 19,
+      "short_choice_menu_rows": 25,
+      "charge_menu_rows": 1,
+      "top_mpwa": [
+        [
+          "A",
+          87
+        ],
+        [
+          "B",
+          40
+        ]
+      ]
+    },
+    {
+      "class": "accomplice_party_liability",
+      "rows": 14,
+      "pc_rows": 7,
+      "avg_pc": 65.4,
+      "below_50": 0,
+      "short_choice_menu_rows": 2,
+      "charge_menu_rows": 4,
+      "top_mpwa": [
+        [
+          "A",
+          5
+        ],
+        [
+          "B",
+          4
+        ]
+      ]
+    }
+  ],
+  "trap_summary": [
+    {
+      "trap": "lesser_greater_offense_ladder",
+      "rows": 497,
+      "pc_rows": 387,
+      "avg_pc": 59.2,
+      "below_50": 86
+    },
+    {
+      "trap": "timing_status_at_moment",
+      "rows": 462,
+      "pc_rows": 371,
+      "avg_pc": 58.4,
+      "below_50": 86
+    },
+    {
+      "trap": "constitutional_threshold",
+      "rows": 357,
+      "pc_rows": 298,
+      "avg_pc": 58.3,
+      "below_50": 68
+    },
+    {
+      "trap": "remedy_vs_right",
+      "rows": 272,
+      "pc_rows": 233,
+      "avg_pc": 57.3,
+      "below_50": 61
+    },
+    {
+      "trap": "mental_state_gradient",
+      "rows": 227,
+      "pc_rows": 173,
+      "avg_pc": 58.1,
+      "below_50": 47
+    },
+    {
+      "trap": "element_missing_despite_bad_intent",
+      "rows": 184,
+      "pc_rows": 152,
+      "avg_pc": 56.4,
+      "below_50": 44
+    },
+    {
+      "trap": "exception_to_exception",
+      "rows": 140,
+      "pc_rows": 123,
+      "avg_pc": 58.4,
+      "below_50": 31
+    },
+    {
+      "trap": "conspiracy_scope_withdrawal_merger",
+      "rows": 112,
+      "pc_rows": 87,
+      "avg_pc": 58.5,
+      "below_50": 17
+    },
+    {
+      "trap": "attempt_preparation_line",
+      "rows": 46,
+      "pc_rows": 39,
+      "avg_pc": 58.2,
+      "below_50": 11
+    }
+  ],
+  "low_by_class": {
+    "accomplice_party_liability": [
+      [
+        "16115",
+        52.0,
+        "C",
+        "A"
+      ],
+      [
+        "19992",
+        58.0,
+        "B",
+        "A"
+      ],
+      [
+        "14723",
+        59.0,
+        "B",
+        "C"
+      ],
+      [
+        "14734",
+        64.0,
+        "B",
+        "A"
+      ],
+      [
+        "19115",
+        72.0,
+        "C",
+        "B"
+      ],
+      [
+        "14730",
+        72.0,
+        "D",
+        "C"
+      ],
+      [
+        "14735",
+        81.0,
+        "A",
+        "D"
+      ]
+    ],
+    "assault_battery_sex_kidnap": [
+      [
+        "14556",
+        21.0,
+        "D",
+        "B"
+      ],
+      [
+        "14625",
+        34.0,
+        "A",
+        "C"
+      ],
+      [
+        "14588",
+        40.0,
+        "D",
+        "A"
+      ],
+      [
+        "14650",
+        43.0,
+        "B",
+        "A"
+      ],
+      [
+        "20629",
+        45.0,
+        "C",
+        "A"
+      ],
+      [
+        "20112",
+        46.0,
+        "C",
+        "B"
+      ],
+      [
+        "17127",
+        46.0,
+        "C",
+        "A"
+      ],
+      [
+        "20936",
+        47.0,
+        "C",
+        "A"
+      ]
+    ],
+    "defenses_justification_excuse": [
+      [
+        "14596",
+        28.0,
+        "B",
+        "C"
+      ],
+      [
+        "14558",
+        40.0,
+        "D",
+        "B"
+      ],
+      [
+        "18308",
+        42.0,
+        "C",
+        "A"
+      ],
+      [
+        "19042",
+        42.0,
+        "A",
+        "D"
+      ],
+      [
+        "17252",
+        43.0,
+        "C",
+        "A"
+      ],
+      [
+        "21718",
+        44.0,
+        "C",
+        "A"
+      ],
+      [
+        "19357",
+        46.0,
+        "C",
+        "B"
+      ],
+      [
+        "17880",
+        46.0,
+        "C",
+        "A"
+      ]
+    ],
+    "exclusion_double_jeopardy_due_process": [
+      [
+        "19743",
+        45.0,
+        "C",
+        "D"
+      ],
+      [
+        "17589",
+        45.0,
+        "C",
+        "B"
+      ],
+      [
+        "20806",
+        46.0,
+        "C",
+        "A"
+      ],
+      [
+        "17478",
+        47.0,
+        "A",
+        "B"
+      ],
+      [
+        "21326",
+        48.0,
+        "A",
+        "B"
+      ],
+      [
+        "18020",
+        52.0,
+        "A",
+        "B"
+      ],
+      [
+        "19347",
+        55.0,
+        "C",
+        "A"
+      ],
+      [
+        "18420",
+        60.0,
+        "C",
+        "A"
+      ]
+    ],
+    "fifth_miranda_confessions": [
+      [
+        "20881",
+        12.0,
+        "C",
+        "B"
+      ],
+      [
+        "14615",
+        30.0,
+        "B",
+        "D"
+      ],
+      [
+        "14586",
+        39.0,
+        "B",
+        "A"
+      ],
+      [
+        "20816",
+        42.0,
+        "C",
+        "A"
+      ],
+      [
+        "21689",
+        44.0,
+        "C",
+        "B"
+      ],
+      [
+        "14582",
+        44.0,
+        "A",
+        "D"
+      ],
+      [
+        "18934",
+        45.0,
+        "C",
+        "A"
+      ],
+      [
+        "16122",
+        45.0,
+        "C",
+        "D"
+      ]
+    ],
+    "fourth_amendment_search_seizure": [
+      [
+        "21601",
+        10.0,
+        "A",
+        "C"
+      ],
+      [
+        "14569",
+        40.0,
+        "D",
+        "B"
+      ],
+      [
+        "16097",
+        40.0,
+        "C",
+        "A"
+      ],
+      [
+        "21638",
+        42.0,
+        "C",
+        "D"
+      ],
+      [
+        "18363",
+        45.0,
+        "C",
+        "A"
+      ],
+      [
+        "20971",
+        45.0,
+        "B",
+        "A"
+      ],
+      [
+        "21432",
+        46.0,
+        "C",
+        "B"
+      ],
+      [
+        "21843",
+        47.0,
+        "C",
+        "A"
+      ]
+    ],
+    "homicide": [
+      [
+        "16065",
+        42.0,
+        "D",
+        "C"
+      ],
+      [
+        "20700",
+        42.0,
+        "D",
+        "A"
+      ],
+      [
+        "19008",
+        42.0,
+        "A",
+        "B"
+      ],
+      [
+        "14657",
+        43.0,
+        "B",
+        "A"
+      ],
+      [
+        "18296",
+        44.0,
+        "C",
+        "A"
+      ],
+      [
+        "19184",
+        44.0,
+        "A",
+        "C"
+      ],
+      [
+        "16011",
+        44.0,
+        "B",
+        "A"
+      ],
+      [
+        "17052",
+        44.0,
+        "D",
+        "B"
+      ]
+    ],
+    "inchoate": [
+      [
+        "19271",
+        40.0,
+        "B",
+        "A"
+      ],
+      [
+        "19882",
+        42.0,
+        "B",
+        "A"
+      ],
+      [
+        "18101",
+        42.0,
+        "B",
+        "A"
+      ],
+      [
+        "19934",
+        45.0,
+        "B",
+        "A"
+      ],
+      [
+        "21412",
+        46.0,
+        "C",
+        "B"
+      ],
+      [
+        "19055",
+        48.0,
+        "B",
+        "A"
+      ],
+      [
+        "19454",
+        50.0,
+        "C",
+        "A"
+      ],
+      [
+        "18063",
+        50.0,
+        "B",
+        "A"
+      ]
+    ],
+    "mens_rea_actus_reus": [
+      [
+        "14641",
+        36.0,
+        "D",
+        "A"
+      ],
+      [
+        "20090",
+        45.0,
+        "A",
+        "D"
+      ],
+      [
+        "16002",
+        47.0,
+        "B",
+        "A"
+      ],
+      [
+        "21497",
+        47.0,
+        "A",
+        "B"
+      ],
+      [
+        "18620",
+        48.0,
+        "C",
+        "D"
+      ],
+      [
+        "20672",
+        48.0,
+        "C",
+        "A"
+      ],
+      [
+        "16034",
+        48.0,
+        "C",
+        "A"
+      ],
+      [
+        "20597",
+        48.0,
+        "B",
+        "D"
+      ]
+    ],
+    "sentencing_eighth_appeal_habeas": [
+      [
+        "19757",
+        42.0,
+        "B",
+        "A"
+      ],
+      [
+        "17828",
+        44.0,
+        "B",
+        "A"
+      ],
+      [
+        "18356",
+        44.0,
+        "B",
+        "D"
+      ],
+      [
+        "18466",
+        46.0,
+        "C",
+        "A"
+      ],
+      [
+        "18850",
+        46.0,
+        "C",
+        "A"
+      ],
+      [
+        "21789",
+        48.0,
+        "A",
+        "C"
+      ],
+      [
+        "19712",
+        48.0,
+        "C",
+        "B"
+      ],
+      [
+        "21022",
+        58.0,
+        "C",
+        "A"
+      ]
+    ],
+    "sixth_trial_rights": [
+      [
+        "14619",
+        22.0,
+        "B",
+        "A"
+      ],
+      [
+        "18132",
+        40.0,
+        "C",
+        "A"
+      ],
+      [
+        "17244",
+        42.0,
+        "C",
+        "A"
+      ],
+      [
+        "14590",
+        42.0,
+        "D",
+        "C"
+      ],
+      [
+        "17196",
+        44.0,
+        "C",
+        "A"
+      ],
+      [
+        "18980",
+        44.0,
+        "C",
+        "D"
+      ],
+      [
+        "18681",
+        44.0,
+        "C",
+        "D"
+      ],
+      [
+        "18598",
+        45.0,
+        "A",
+        "B"
+      ]
+    ],
+    "theft_property_crimes": [
+      [
+        "14698",
+        26.0,
+        "C",
+        "A"
+      ],
+      [
+        "14697",
+        40.0,
+        "B",
+        "A"
+      ],
+      [
+        "19242",
+        42.0,
+        "C",
+        "D"
+      ],
+      [
+        "14599",
+        43.0,
+        "C",
+        "A"
+      ],
+      [
+        "19299",
+        44.0,
+        "D",
+        "B"
+      ],
+      [
+        "21156",
+        44.0,
+        "B",
+        "A"
+      ],
+      [
+        "21105",
+        45.0,
+        "B",
+        "A"
+      ],
+      [
+        "19080",
+        45.0,
+        "C",
+        "A"
+      ]
+    ]
+  },
+  "answer_choice_terms": [
+    [
+      "guilty",
+      120
+    ],
+    [
+      "murder",
+      110
+    ],
+    [
+      "not guilty",
+      99
+    ],
+    [
+      "warrant",
+      97
+    ],
+    [
+      "manslaughter",
+      84
+    ],
+    [
+      "larceny",
+      83
+    ],
+    [
+      "attempt",
+      80
+    ],
+    [
+      "miranda",
+      74
+    ],
+    [
+      "robbery",
+      67
+    ],
+    [
+      "probable cause",
+      64
+    ],
+    [
+      "suppress",
+      55
+    ],
+    [
+      "admissible",
+      53
+    ],
+    [
+      "burglary",
+      45
+    ],
+    [
+      "conspiracy",
+      45
+    ],
+    [
+      "embezzlement",
+      35
+    ],
+    [
+      "assault",
+      31
+    ],
+    [
+      "false pretenses",
+      31
+    ],
+    [
+      "inadmissible",
+      23
+    ],
+    [
+      "self-defense",
+      22
+    ],
+    [
+      "intoxication",
+      22
+    ],
+    [
+      "arson",
+      20
+    ],
+    [
+      "insanity",
+      19
+    ],
+    [
+      "battery",
+      16
+    ],
+    [
+      "rape",
+      13
+    ],
+    [
+      "duress",
+      12
+    ],
+    [
+      "solicitation",
+      11
+    ],
+    [
+      "accomplice",
+      9
+    ],
+    [
+      "necessity",
+      9
+    ],
+    [
+      "kidnapping",
+      5
+    ]
+  ]
+}

@@ -1,0 +1,1369 @@
+{
+  "critical_count": 181,
+  "axis_strength": [
+    {
+      "axis_strength": "answer_menu_strong",
+      "count": 92,
+      "avg_pc": 44.5,
+      "mpwa_top": [
+        [
+          "A",
+          53
+        ],
+        [
+          "B",
+          20
+        ],
+        [
+          "C",
+          12
+        ]
+      ],
+      "representative_low_ids": [
+        "14556",
+        "14619",
+        "14698",
+        "14596",
+        "14615",
+        "14625",
+        "14569",
+        "14558",
+        "18132",
+        "14697"
+      ]
+    },
+    {
+      "axis_strength": "answer_menu_partial",
+      "count": 73,
+      "avg_pc": 45.0,
+      "mpwa_top": [
+        [
+          "A",
+          44
+        ],
+        [
+          "B",
+          17
+        ],
+        [
+          "D",
+          7
+        ]
+      ],
+      "representative_low_ids": [
+        "21601",
+        "20881",
+        "14641",
+        "14588",
+        "16097",
+        "19271",
+        "18308",
+        "19042",
+        "14590",
+        "21638"
+      ]
+    },
+    {
+      "axis_strength": "stem_first_required",
+      "count": 16,
+      "avg_pc": 45.9,
+      "mpwa_top": [
+        [
+          "A",
+          8
+        ],
+        [
+          "C",
+          3
+        ],
+        [
+          "D",
+          3
+        ]
+      ],
+      "representative_low_ids": [
+        "14586",
+        "16065",
+        "14582",
+        "20629",
+        "16122",
+        "14568",
+        "21675",
+        "16082",
+        "14711",
+        "16002"
+      ]
+    }
+  ],
+  "answer_menu_type": [
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "count": 64,
+      "avg_pc": 45.0,
+      "mpwa_top": [
+        [
+          "A",
+          41
+        ],
+        [
+          "B",
+          15
+        ],
+        [
+          "D",
+          5
+        ]
+      ],
+      "representative_low_ids": [
+        "21601",
+        "20881",
+        "16097",
+        "19271",
+        "18308",
+        "14590",
+        "21638",
+        "19757",
+        "17252",
+        "18980"
+      ]
+    },
+    {
+      "answer_menu_type": "remedy_result_menu",
+      "count": 20,
+      "avg_pc": 44.2,
+      "mpwa_top": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          8
+        ],
+        [
+          "C",
+          3
+        ]
+      ],
+      "representative_low_ids": [
+        "14556",
+        "14569",
+        "14558",
+        "18132",
+        "16011",
+        "21689",
+        "18934",
+        "18363",
+        "19743",
+        "18983"
+      ]
+    },
+    {
+      "answer_menu_type": "property_crime_label_menu",
+      "count": 20,
+      "avg_pc": 44.7,
+      "mpwa_top": [
+        [
+          "A",
+          14
+        ],
+        [
+          "D",
+          3
+        ],
+        [
+          "C",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "14698",
+        "14697",
+        "19242",
+        "19299",
+        "21156",
+        "21105",
+        "19080",
+        "20122",
+        "17165",
+        "16004"
+      ]
+    },
+    {
+      "answer_menu_type": "homicide_ladder_menu",
+      "count": 18,
+      "avg_pc": 46.1,
+      "mpwa_top": [
+        [
+          "A",
+          13
+        ],
+        [
+          "B",
+          4
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "20700",
+        "19008",
+        "14657",
+        "17052",
+        "21718",
+        "16054",
+        "21526",
+        "19964",
+        "17746",
+        "21426"
+      ]
+    },
+    {
+      "answer_menu_type": "fact_specific_reasons",
+      "count": 16,
+      "avg_pc": 45.9,
+      "mpwa_top": [
+        [
+          "A",
+          8
+        ],
+        [
+          "C",
+          3
+        ],
+        [
+          "D",
+          3
+        ]
+      ],
+      "representative_low_ids": [
+        "14586",
+        "16065",
+        "14582",
+        "20629",
+        "16122",
+        "14568",
+        "21675",
+        "16082",
+        "14711",
+        "16002"
+      ]
+    },
+    {
+      "answer_menu_type": "right_source_menu",
+      "count": 14,
+      "avg_pc": 44.6,
+      "mpwa_top": [
+        [
+          "A",
+          9
+        ],
+        [
+          "C",
+          2
+        ],
+        [
+          "D",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "14615",
+        "20816",
+        "17244",
+        "17196",
+        "17828",
+        "18681",
+        "20427",
+        "17657",
+        "14629",
+        "16076"
+      ]
+    },
+    {
+      "answer_menu_type": "inchoate_scope_menu",
+      "count": 8,
+      "avg_pc": 43.1,
+      "mpwa_top": [
+        [
+          "A",
+          5
+        ],
+        [
+          "B",
+          2
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "14625",
+        "19882",
+        "18101",
+        "14650",
+        "20938",
+        "19934",
+        "21412",
+        "19055"
+      ]
+    },
+    {
+      "answer_menu_type": "combination_grid",
+      "count": 7,
+      "avg_pc": 40.4,
+      "mpwa_top": [
+        [
+          "C",
+          3
+        ],
+        [
+          "A",
+          2
+        ],
+        [
+          "B",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "14619",
+        "14596",
+        "19651",
+        "19357",
+        "21011",
+        "19484",
+        "20789"
+      ]
+    },
+    {
+      "answer_menu_type": "guilty_not_guilty_menu",
+      "count": 7,
+      "avg_pc": 44.7,
+      "mpwa_top": [
+        [
+          "C",
+          2
+        ],
+        [
+          "D",
+          2
+        ],
+        [
+          "B",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "14641",
+        "19042",
+        "21578",
+        "14658",
+        "18335",
+        "21497",
+        "20597"
+      ]
+    },
+    {
+      "answer_menu_type": "search_threshold_menu",
+      "count": 5,
+      "avg_pc": 46.6,
+      "mpwa_top": [
+        [
+          "B",
+          2
+        ],
+        [
+          "A",
+          2
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "14599",
+        "21432",
+        "21189",
+        "18125",
+        "17363"
+      ]
+    },
+    {
+      "answer_menu_type": "defense_excuse_menu",
+      "count": 2,
+      "avg_pc": 44.0,
+      "mpwa_top": [
+        [
+          "A",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "14588",
+        "18001"
+      ]
+    }
+  ],
+  "breaker_fact_type": [
+    {
+      "breaker_fact_type": "missing_element_or_definition",
+      "count": 42,
+      "avg_pc": 46.0,
+      "mpwa_top": [
+        [
+          "A",
+          25
+        ],
+        [
+          "B",
+          7
+        ],
+        [
+          "D",
+          6
+        ]
+      ],
+      "representative_low_ids": [
+        "14697",
+        "19042",
+        "19242",
+        "19299",
+        "17828",
+        "21156",
+        "18681",
+        "21105",
+        "19080",
+        "21425"
+      ]
+    },
+    {
+      "breaker_fact_type": "mens_rea_or_specific_intent",
+      "count": 36,
+      "avg_pc": 44.8,
+      "mpwa_top": [
+        [
+          "A",
+          23
+        ],
+        [
+          "B",
+          6
+        ],
+        [
+          "C",
+          4
+        ]
+      ],
+      "representative_low_ids": [
+        "14698",
+        "14641",
+        "19271",
+        "16065",
+        "20700",
+        "19008",
+        "14650",
+        "14657",
+        "17252",
+        "19184"
+      ]
+    },
+    {
+      "breaker_fact_type": "right_not_triggered_or_wrong_source",
+      "count": 34,
+      "avg_pc": 45.5,
+      "mpwa_top": [
+        [
+          "A",
+          19
+        ],
+        [
+          "B",
+          9
+        ],
+        [
+          "C",
+          4
+        ]
+      ],
+      "representative_low_ids": [
+        "20881",
+        "18132",
+        "17244",
+        "17196",
+        "21689",
+        "18934",
+        "18598",
+        "16122",
+        "18228",
+        "20427"
+      ]
+    },
+    {
+      "breaker_fact_type": "remedy_prejudice_or_review_gate",
+      "count": 20,
+      "avg_pc": 44.0,
+      "mpwa_top": [
+        [
+          "A",
+          12
+        ],
+        [
+          "D",
+          4
+        ],
+        [
+          "B",
+          4
+        ]
+      ],
+      "representative_low_ids": [
+        "14619",
+        "14558",
+        "18308",
+        "20816",
+        "18980",
+        "18356",
+        "14582",
+        "14568",
+        "20971",
+        "19743"
+      ]
+    },
+    {
+      "breaker_fact_type": "probable_cause_particularity_exception",
+      "count": 19,
+      "avg_pc": 44.7,
+      "mpwa_top": [
+        [
+          "A",
+          9
+        ],
+        [
+          "B",
+          6
+        ],
+        [
+          "C",
+          3
+        ]
+      ],
+      "representative_low_ids": [
+        "14556",
+        "14569",
+        "16097",
+        "21638",
+        "14599",
+        "18363",
+        "17486",
+        "21432",
+        "21843",
+        "17367"
+      ]
+    },
+    {
+      "breaker_fact_type": "scope_merger_identity",
+      "count": 9,
+      "avg_pc": 46.0,
+      "mpwa_top": [
+        [
+          "A",
+          5
+        ],
+        [
+          "B",
+          4
+        ]
+      ],
+      "representative_low_ids": [
+        "18101",
+        "20938",
+        "19934",
+        "20112",
+        "21412",
+        "14748",
+        "20948",
+        "19055",
+        "17495"
+      ]
+    },
+    {
+      "breaker_fact_type": "timing_status_frame",
+      "count": 8,
+      "avg_pc": 38.6,
+      "mpwa_top": [
+        [
+          "A",
+          3
+        ],
+        [
+          "C",
+          3
+        ],
+        [
+          "B",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "21601",
+        "14615",
+        "14625",
+        "17522",
+        "16044",
+        "14711",
+        "21024",
+        "17893"
+      ]
+    },
+    {
+      "breaker_fact_type": "fact_specific_or_unclear",
+      "count": 7,
+      "avg_pc": 46.1,
+      "mpwa_top": [
+        [
+          "A",
+          5
+        ],
+        [
+          "B",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "14586",
+        "21675",
+        "17827",
+        "17626",
+        "19484",
+        "21244",
+        "18217"
+      ]
+    },
+    {
+      "breaker_fact_type": "burden_or_proof_allocation",
+      "count": 4,
+      "avg_pc": 38.5,
+      "mpwa_top": [
+        [
+          "A",
+          3
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "14596",
+        "14588",
+        "19757",
+        "18296"
+      ]
+    },
+    {
+      "breaker_fact_type": "impossibility_or_attempt_line",
+      "count": 2,
+      "avg_pc": 42.0,
+      "mpwa_top": [
+        [
+          "A",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "19882",
+        "14590"
+      ]
+    }
+  ],
+  "doctrine_family": [
+    {
+      "doctrine_family": "property_crimes",
+      "count": 34,
+      "avg_pc": 45.0,
+      "mpwa_top": [
+        [
+          "A",
+          18
+        ],
+        [
+          "B",
+          6
+        ],
+        [
+          "D",
+          6
+        ]
+      ],
+      "representative_low_ids": [
+        "14698",
+        "14697",
+        "18308",
+        "19042",
+        "14590",
+        "19242",
+        "19299",
+        "21156",
+        "21105",
+        "19080"
+      ]
+    },
+    {
+      "doctrine_family": "homicide",
+      "count": 33,
+      "avg_pc": 46.0,
+      "mpwa_top": [
+        [
+          "A",
+          21
+        ],
+        [
+          "B",
+          7
+        ],
+        [
+          "C",
+          4
+        ]
+      ],
+      "representative_low_ids": [
+        "14586",
+        "16065",
+        "20700",
+        "19008",
+        "14657",
+        "19184",
+        "17052",
+        "21718",
+        "16054",
+        "21578"
+      ]
+    },
+    {
+      "doctrine_family": "sixth_trial_rights",
+      "count": 30,
+      "avg_pc": 45.8,
+      "mpwa_top": [
+        [
+          "A",
+          15
+        ],
+        [
+          "B",
+          9
+        ],
+        [
+          "D",
+          4
+        ]
+      ],
+      "representative_low_ids": [
+        "18132",
+        "17244",
+        "17196",
+        "18980",
+        "17828",
+        "18681",
+        "14582",
+        "18598",
+        "21425",
+        "17298"
+      ]
+    },
+    {
+      "doctrine_family": "fourth_search_seizure",
+      "count": 25,
+      "avg_pc": 44.0,
+      "mpwa_top": [
+        [
+          "A",
+          13
+        ],
+        [
+          "B",
+          6
+        ],
+        [
+          "C",
+          5
+        ]
+      ],
+      "representative_low_ids": [
+        "21601",
+        "14556",
+        "14569",
+        "16097",
+        "21638",
+        "14599",
+        "18363",
+        "20971",
+        "21432",
+        "21843"
+      ]
+    },
+    {
+      "doctrine_family": "fifth_miranda_confession",
+      "count": 19,
+      "avg_pc": 44.1,
+      "mpwa_top": [
+        [
+          "A",
+          10
+        ],
+        [
+          "B",
+          5
+        ],
+        [
+          "D",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "20881",
+        "14615",
+        "20816",
+        "21689",
+        "18934",
+        "16122",
+        "19972",
+        "21024",
+        "14629",
+        "17626"
+      ]
+    },
+    {
+      "doctrine_family": "other_substantive_crime",
+      "count": 13,
+      "avg_pc": 44.0,
+      "mpwa_top": [
+        [
+          "A",
+          9
+        ],
+        [
+          "B",
+          3
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "14625",
+        "14641",
+        "14650",
+        "17252",
+        "20629",
+        "17589",
+        "20112",
+        "17127",
+        "19357",
+        "20806"
+      ]
+    },
+    {
+      "doctrine_family": "due_process_appeal_habeas",
+      "count": 11,
+      "avg_pc": 40.7,
+      "mpwa_top": [
+        [
+          "A",
+          6
+        ],
+        [
+          "B",
+          2
+        ],
+        [
+          "D",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "14619",
+        "14596",
+        "14588",
+        "14558",
+        "18296",
+        "18356",
+        "14568",
+        "19743",
+        "17657",
+        "18850"
+      ]
+    },
+    {
+      "doctrine_family": "inchoate",
+      "count": 6,
+      "avg_pc": 43.5,
+      "mpwa_top": [
+        [
+          "A",
+          5
+        ],
+        [
+          "B",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "19271",
+        "19882",
+        "18101",
+        "16011",
+        "20938",
+        "19055"
+      ]
+    },
+    {
+      "doctrine_family": "unclear",
+      "count": 5,
+      "avg_pc": 46.6,
+      "mpwa_top": [
+        [
+          "A",
+          3
+        ],
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "representative_low_ids": [
+        "19757",
+        "14711",
+        "18620",
+        "16034",
+        "19996"
+      ]
+    },
+    {
+      "doctrine_family": "defenses",
+      "count": 3,
+      "avg_pc": 48.0,
+      "mpwa_top": [
+        [
+          "A",
+          3
+        ]
+      ],
+      "representative_low_ids": [
+        "18001",
+        "20948",
+        "18317"
+      ]
+    },
+    {
+      "doctrine_family": "party_liability",
+      "count": 2,
+      "avg_pc": 46.5,
+      "mpwa_top": [
+        [
+          "A",
+          2
+        ]
+      ],
+      "representative_low_ids": [
+        "19934",
+        "20672"
+      ]
+    }
+  ],
+  "common_menu_breaker_pairs": [
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "missing_element_or_definition",
+      "count": 14,
+      "avg_pc": 46.4,
+      "representative_low_ids": [
+        "21425",
+        "17298",
+        "20689",
+        "18156",
+        "17589",
+        "17852",
+        "17127",
+        "17880"
+      ]
+    },
+    {
+      "answer_menu_type": "property_crime_label_menu",
+      "breaker_fact_type": "missing_element_or_definition",
+      "count": 14,
+      "avg_pc": 45.2,
+      "representative_low_ids": [
+        "14697",
+        "19242",
+        "19299",
+        "21156",
+        "21105",
+        "19080",
+        "20122",
+        "17165"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "right_not_triggered_or_wrong_source",
+      "count": 14,
+      "avg_pc": 44.5,
+      "representative_low_ids": [
+        "20881",
+        "18598",
+        "18228",
+        "19972",
+        "20806",
+        "21583",
+        "18580",
+        "21151"
+      ]
+    },
+    {
+      "answer_menu_type": "homicide_ladder_menu",
+      "breaker_fact_type": "mens_rea_or_specific_intent",
+      "count": 11,
+      "avg_pc": 45.1,
+      "representative_low_ids": [
+        "20700",
+        "19008",
+        "14657",
+        "17052",
+        "21718",
+        "16054",
+        "21526",
+        "21426"
+      ]
+    },
+    {
+      "answer_menu_type": "right_source_menu",
+      "breaker_fact_type": "right_not_triggered_or_wrong_source",
+      "count": 9,
+      "avg_pc": 46.4,
+      "representative_low_ids": [
+        "17244",
+        "17196",
+        "20427",
+        "14629",
+        "16076",
+        "19501",
+        "18484",
+        "18501"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "probable_cause_particularity_exception",
+      "count": 8,
+      "avg_pc": 45.9,
+      "representative_low_ids": [
+        "16097",
+        "21638",
+        "17486",
+        "21843",
+        "21620",
+        "18399",
+        "21640",
+        "21006"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "mens_rea_or_specific_intent",
+      "count": 8,
+      "avg_pc": 45.2,
+      "representative_low_ids": [
+        "19271",
+        "17252",
+        "19184",
+        "20090",
+        "18496",
+        "20672",
+        "19027",
+        "19996"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "remedy_prejudice_or_review_gate",
+      "count": 7,
+      "avg_pc": 45.0,
+      "representative_low_ids": [
+        "18308",
+        "18980",
+        "18356",
+        "20971",
+        "18466",
+        "20674",
+        "20034"
+      ]
+    },
+    {
+      "answer_menu_type": "remedy_result_menu",
+      "breaker_fact_type": "probable_cause_particularity_exception",
+      "count": 7,
+      "avg_pc": 42.6,
+      "representative_low_ids": [
+        "14556",
+        "14569",
+        "18363",
+        "17367",
+        "18765",
+        "19751",
+        "14570"
+      ]
+    },
+    {
+      "answer_menu_type": "remedy_result_menu",
+      "breaker_fact_type": "right_not_triggered_or_wrong_source",
+      "count": 6,
+      "avg_pc": 45.0,
+      "representative_low_ids": [
+        "18132",
+        "21689",
+        "18934",
+        "18342",
+        "18768",
+        "20640"
+      ]
+    },
+    {
+      "answer_menu_type": "guilty_not_guilty_menu",
+      "breaker_fact_type": "mens_rea_or_specific_intent",
+      "count": 6,
+      "avg_pc": 45.2,
+      "representative_low_ids": [
+        "14641",
+        "21578",
+        "14658",
+        "18335",
+        "21497",
+        "20597"
+      ]
+    },
+    {
+      "answer_menu_type": "fact_specific_reasons",
+      "breaker_fact_type": "mens_rea_or_specific_intent",
+      "count": 5,
+      "avg_pc": 45.6,
+      "representative_low_ids": [
+        "16065",
+        "20629",
+        "16082",
+        "16002",
+        "16034"
+      ]
+    },
+    {
+      "answer_menu_type": "inchoate_scope_menu",
+      "breaker_fact_type": "scope_merger_identity",
+      "count": 5,
+      "avg_pc": 45.2,
+      "representative_low_ids": [
+        "18101",
+        "20938",
+        "19934",
+        "21412",
+        "19055"
+      ]
+    },
+    {
+      "answer_menu_type": "homicide_ladder_menu",
+      "breaker_fact_type": "missing_element_or_definition",
+      "count": 5,
+      "avg_pc": 47.6,
+      "representative_low_ids": [
+        "19964",
+        "17746",
+        "17405",
+        "19956",
+        "20385"
+      ]
+    },
+    {
+      "answer_menu_type": "remedy_result_menu",
+      "breaker_fact_type": "remedy_prejudice_or_review_gate",
+      "count": 5,
+      "avg_pc": 45.0,
+      "representative_low_ids": [
+        "14558",
+        "19743",
+        "18983",
+        "18850",
+        "21074"
+      ]
+    },
+    {
+      "answer_menu_type": "search_threshold_menu",
+      "breaker_fact_type": "probable_cause_particularity_exception",
+      "count": 4,
+      "avg_pc": 46.2,
+      "representative_low_ids": [
+        "14599",
+        "21432",
+        "21189",
+        "18125"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "timing_status_frame",
+      "count": 4,
+      "avg_pc": 37.8,
+      "representative_low_ids": [
+        "21601",
+        "17522",
+        "21024",
+        "17893"
+      ]
+    },
+    {
+      "answer_menu_type": "fact_specific_reasons",
+      "breaker_fact_type": "missing_element_or_definition",
+      "count": 3,
+      "avg_pc": 48.0,
+      "representative_low_ids": [
+        "20265",
+        "18620",
+        "17375"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "scope_merger_identity",
+      "count": 3,
+      "avg_pc": 47.3,
+      "representative_low_ids": [
+        "20112",
+        "20948",
+        "17495"
+      ]
+    },
+    {
+      "answer_menu_type": "property_crime_label_menu",
+      "breaker_fact_type": "mens_rea_or_specific_intent",
+      "count": 3,
+      "avg_pc": 40.0,
+      "representative_low_ids": [
+        "14698",
+        "16004",
+        "16020"
+      ]
+    },
+    {
+      "answer_menu_type": "fact_specific_reasons",
+      "breaker_fact_type": "remedy_prejudice_or_review_gate",
+      "count": 3,
+      "avg_pc": 45.7,
+      "representative_low_ids": [
+        "14582",
+        "14568",
+        "21326"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "fact_specific_or_unclear",
+      "count": 3,
+      "avg_pc": 47.7,
+      "representative_low_ids": [
+        "17626",
+        "21244",
+        "18217"
+      ]
+    },
+    {
+      "answer_menu_type": "fact_specific_reasons",
+      "breaker_fact_type": "fact_specific_or_unclear",
+      "count": 2,
+      "avg_pc": 42.5,
+      "representative_low_ids": [
+        "14586",
+        "21675"
+      ]
+    },
+    {
+      "answer_menu_type": "right_source_menu",
+      "breaker_fact_type": "remedy_prejudice_or_review_gate",
+      "count": 2,
+      "avg_pc": 44.0,
+      "representative_low_ids": [
+        "20816",
+        "17657"
+      ]
+    },
+    {
+      "answer_menu_type": "fact_specific_reasons",
+      "breaker_fact_type": "right_not_triggered_or_wrong_source",
+      "count": 2,
+      "avg_pc": 46.5,
+      "representative_low_ids": [
+        "16122",
+        "21789"
+      ]
+    },
+    {
+      "answer_menu_type": "combination_grid",
+      "breaker_fact_type": "missing_element_or_definition",
+      "count": 2,
+      "avg_pc": 45.5,
+      "representative_low_ids": [
+        "19651",
+        "21011"
+      ]
+    },
+    {
+      "answer_menu_type": "right_source_menu",
+      "breaker_fact_type": "missing_element_or_definition",
+      "count": 2,
+      "avg_pc": 44.0,
+      "representative_low_ids": [
+        "17828",
+        "18681"
+      ]
+    },
+    {
+      "answer_menu_type": "yes_no_because_menu",
+      "breaker_fact_type": "burden_or_proof_allocation",
+      "count": 2,
+      "avg_pc": 43.0,
+      "representative_low_ids": [
+        "19757",
+        "18296"
+      ]
+    },
+    {
+      "answer_menu_type": "combination_grid",
+      "breaker_fact_type": "remedy_prejudice_or_review_gate",
+      "count": 2,
+      "avg_pc": 34.0,
+      "representative_low_ids": [
+        "14619",
+        "19357"
+      ]
+    },
+    {
+      "answer_menu_type": "property_crime_label_menu",
+      "breaker_fact_type": "timing_status_frame",
+      "count": 1,
+      "avg_pc": 47.0,
+      "representative_low_ids": [
+        "16044"
+      ]
+    }
+  ]
+}

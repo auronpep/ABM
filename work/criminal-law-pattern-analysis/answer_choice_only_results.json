@@ -1,0 +1,131 @@
+{
+  "n_total": 945,
+  "n_valid": 945,
+  "single_heuristics": {
+    "position_C (baseline bias)": {
+      "acc": 0.4603174603174603,
+      "coverage": 1.0,
+      "n": 945
+    },
+    "longest_choice": {
+      "acc": 0.5470899470899471,
+      "coverage": 1.0,
+      "n": 945
+    },
+    "shortest_choice": {
+      "acc": 0.12486772486772486,
+      "coverage": 1.0,
+      "n": 945
+    },
+    "most_qualified (if/because/unless)": {
+      "acc": 0.13823529411764707,
+      "coverage": 0.35978835978835977,
+      "n": 340
+    },
+    "least_absolute (avoid always/never)": {
+      "acc": 0.4201058201058201,
+      "coverage": 1.0,
+      "n": 945
+    },
+    "guilty-if over bare-not-guilty": {
+      "acc": 0.21428571428571427,
+      "coverage": 0.014814814814814815,
+      "n": 14
+    },
+    "odd-one-out head noun": {
+      "acc": 0.5757575757575758,
+      "coverage": 0.06984126984126984,
+      "n": 66
+    }
+  },
+  "stacked_decoder_acc": 0.30264550264550266,
+  "structural_ceiling_acc": 0.4603174603174603,
+  "letters_correct": {
+    "c": 435,
+    "b": 184,
+    "a": 218,
+    "d": 108
+  },
+  "letters_popwrong": {
+    "a": 524,
+    "b": 202,
+    "c": 126,
+    "d": 93
+  },
+  "trap_wins": 9,
+  "graded": 772,
+  "deadliest": [
+    {
+      "qid": "21601",
+      "pc": 10.0,
+      "key": "a",
+      "key_pct": 10,
+      "trap": "c",
+      "trap_pct": 60
+    },
+    {
+      "qid": "20881",
+      "pc": 12.0,
+      "key": "c",
+      "key_pct": 12,
+      "trap": "b",
+      "trap_pct": 48
+    },
+    {
+      "qid": "14619",
+      "pc": 22.0,
+      "key": "b",
+      "key_pct": 21,
+      "trap": "a",
+      "trap_pct": 37
+    },
+    {
+      "qid": "14596",
+      "pc": 28.0,
+      "key": "b",
+      "key_pct": 28,
+      "trap": "c",
+      "trap_pct": 43
+    },
+    {
+      "qid": "14615",
+      "pc": 30.0,
+      "key": "b",
+      "key_pct": 30,
+      "trap": "d",
+      "trap_pct": 54
+    },
+    {
+      "qid": "14625",
+      "pc": 34.0,
+      "key": "a",
+      "key_pct": 34,
+      "trap": "c",
+      "trap_pct": 46
+    },
+    {
+      "qid": "14641",
+      "pc": 36.0,
+      "key": "d",
+      "key_pct": 36,
+      "trap": "a",
+      "trap_pct": 47
+    },
+    {
+      "qid": "14569",
+      "pc": 40.0,
+      "key": "d",
+      "key_pct": 40,
+      "trap": "b",
+      "trap_pct": 52
+    },
+    {
+      "qid": "14650",
+      "pc": 43.0,
+      "key": "b",
+      "key_pct": 18,
+      "trap": "a",
+      "trap_pct": 28
+    }
+  ]
+}

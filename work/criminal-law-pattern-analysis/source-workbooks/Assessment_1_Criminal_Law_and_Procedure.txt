@@ -1,0 +1,168 @@
+Assessment 1 — Criminal Law and Procedure MBE Pattern Mastery
+Time design: 20 questions × 1.6 minutes = 32 minutes.
+
+Section 1: Assessment Exam
+
+1. Officers lawfully stood on a public sidewalk outside a suspect's house. Through an open window, an officer saw a distinctive stolen watch on a table. Without a warrant, consent, or exigent circumstances, the officer entered the house and seized the watch. The suspect moves to suppress. How should the court rule?
+   A. Deny the motion, because the watch was in plain view from a lawful vantage point.
+   B. Grant the motion, because plain view did not give the officer lawful access to enter the home and seize the watch.
+   C. Deny the motion, because stolen property has no reasonable expectation of privacy.
+   D. Grant the motion only if the officer subjectively intended to search before looking through the window.
+
+2. A detective asked a suspect to come to the station to answer questions. The suspect arrived voluntarily, was told he was not under arrest and could leave at any time, sat in an unlocked interview room for 25 minutes, and then confessed after direct questioning. No warnings were given. Is the confession inadmissible under Miranda?
+   A. No, because the suspect was not in custody under an objective reasonable-person test.
+   B. Yes, because questioning at a police station is always custodial.
+   C. Yes, because direct questioning is interrogation even without custody.
+   D. No, because Miranda applies only after formal charges are filed.
+
+3. After a defendant was indicted for burglary and appointed counsel, police placed a paid informant in his cell. The informant repeatedly asked how the defendant entered the house, and the defendant described the burglary. The defendant had not waived counsel. Is the statement admissible in the prosecution's case-in-chief for burglary?
+   A. Yes, because jail conversations with cellmates are not custodial interrogation.
+   B. Yes, because the informant did not identify himself as a government agent.
+   C. No, because the government deliberately elicited statements about the charged offense after the Sixth Amendment right attached.
+   D. No, but only because the statement was physically coerced.
+
+4. One hour after a street robbery, an officer showed the victim a single photograph and said, 'This is the man we caught with your purse.' The victim, who had seen the robber only briefly at night, said, 'I guess that's him.' The defendant moves to exclude the identification. What is the strongest basis for exclusion?
+   A. The identification is automatically excluded because every one-photo display violates the Sixth Amendment.
+   B. The identification is admissible because prompt showups are always valid.
+   C. The identification is excluded only if the defendant had already been indicted.
+   D. The police-arranged procedure was unnecessarily suggestive and, under the totality of circumstances, created a substantial likelihood of misidentification.
+
+5. An officer obtained a warrant to search a home based only on an anonymous note stating, 'Drugs are in the blue house on Oak Street.' The officer did no corroboration. The magistrate issued the warrant, and drugs were found. The defendant moves to suppress. Should the good-faith exception apply?
+   A. No, because reliance on a bare-bones affidavit lacking probable cause is not objectively reasonable.
+   B. Yes, because any warrant signed by a magistrate creates automatic good faith.
+   C. Yes, because anonymous tips are always enough for probable cause.
+   D. No, because the exclusionary rule bars all evidence found under an invalid warrant without exception.
+
+6. A husband unexpectedly found his spouse in bed with another person. He left the house, stayed at a motel for two days, bought a gun, returned, and killed the other person. In a common-law jurisdiction, what is the most serious homicide offense supported by these facts?
+   A. Voluntary manslaughter, because adultery is always adequate provocation no matter when the killing occurs.
+   B. Involuntary manslaughter, because the husband acted emotionally rather than intentionally.
+   C. Murder, because a reasonable cooling period passed before the intentional killing.
+   D. No homicide, because emotional betrayal negates malice.
+
+7. In an agency-theory felony-murder jurisdiction, two robbers entered a store. One robber pointed a gun at the owner. The owner fired at the robbers but accidentally killed a clerk. The surviving robber is charged with felony murder for the clerk's death. Is he guilty?
+   A. Yes, because any death during a robbery is felony murder.
+   B. No, because the fatal shot was fired by a non-felon resisting the robbery.
+   C. Yes, because the death was foreseeable under the agency rule.
+   D. No, but only because clerks are not protected victims under felony murder.
+
+8. A defendant stabbed a victim, creating a serious but survivable wound. At the hospital, a doctor negligently failed to detect internal bleeding, and the victim died. The medical error was ordinary negligence. Is causation for homicide broken?
+   A. Yes, because any medical negligence is a superseding cause.
+   B. Yes, because the original wound was survivable.
+   C. No, but only if the defendant intended the victim to die in the hospital.
+   D. No, because ordinary negligent medical treatment of a dangerous wound is foreseeable.
+
+9. Angry at a rival, a defendant fired several shots through the front door of a crowded apartment, not caring who was behind it. A guest inside was killed. The defendant did not specifically intend to kill that guest. What homicide theory best fits?
+   A. Murder based on extreme recklessness showing conscious disregard for human life.
+   B. Only involuntary manslaughter, because there was no intent to kill the actual victim.
+   C. No homicide, because transferred intent applies only to intended victims.
+   D. Misdemeanor manslaughter, because firing a gun is never malice.
+
+10. A defendant planted a small explosive outside a business at night to scare the owner and damage the door. He believed no one would be nearby, but knew there was some risk a passerby might be hurt. A passerby escaped injury. The defendant is charged with attempted murder. Is he guilty?
+   A. Yes, because reckless disregard for human life is enough for attempted murder.
+   B. No, because attempted murder requires a specific intent to kill.
+   C. Yes, because factual impossibility is no defense.
+   D. No, because attempt requires the target crime to be completed.
+
+11. A landlord asked a friend to burn down the landlord's vacant warehouse for insurance money. Before the friend answered, the landlord regretted the request and told the friend to ignore it. The friend never acted. Has the landlord committed solicitation?
+   A. No, because the friend did not agree.
+   B. No, because the landlord withdrew before any act occurred.
+   C. Yes, because solicitation was complete when the criminal request was communicated with intent.
+   D. Yes, but only if the friend took a substantial step toward arson.
+
+12. In a jurisdiction following the traditional bilateral approach to conspiracy, a suspect agreed with an undercover officer to rob a warehouse. The suspect intended the robbery to occur, but the officer only pretended to agree. Is the suspect guilty of conspiracy?
+   A. No, because there were not two parties with genuine criminal intent.
+   B. Yes, because the suspect believed there was an agreement.
+   C. Yes, because unilateral conspiracy is the common-law rule.
+   D. No, but only because no overt act is ever sufficient unless criminal itself.
+
+13. A driver agreed to serve as the getaway driver for a robbery and gave the robbers the planned pickup location. Before the robbery began, the driver called the robbers and said he was out, then immediately called police and identified the target and participants. The robbers were arrested before entering the store. Is the driver liable as an accomplice to attempted robbery?
+   A. Yes, because withdrawal is never available to an accomplice.
+   B. Yes, because once aid is promised, later action cannot neutralize it.
+   C. No, solely because mere presence is not enough for accomplice liability.
+   D. No, because he timely withdrew and neutralized his prior assistance before the crime.
+
+14. Because of a severe mental disease, a defendant believed the person he killed was a demon disguised as a human and that killing the demon was commanded by divine law. In a M'Naghten jurisdiction, what is the key issue for insanity?
+   A. Whether the defendant could control his impulse, even if he knew the act was wrong.
+   B. Whether the disease prevented him from knowing the nature of the act or that it was wrong.
+   C. Whether the defendant was angry enough to lose self-control.
+   D. Whether a reasonable person would have made the same mistake.
+
+15. A gang leader put a gun to a defendant's head and ordered him to intentionally shoot an innocent bystander immediately or be killed. The defendant shot and killed the bystander. At common law, is duress a complete defense to murder?
+   A. Yes, because any immediate death threat excuses any crime.
+   B. Yes, but only if the defendant reports the threat afterward.
+   C. No, duress is not a complete defense to intentional murder at common law.
+   D. No, because duress applies only to property crimes.
+
+16. A healthy adult saw a stranger's child fall into a shallow pond. The adult could have saved the child without danger but walked away. The child drowned. The adult had no relationship to the child, no contract duty, and did not create the risk. Is the adult guilty of homicide based on omission?
+   A. No, because there was no legal duty to act.
+   B. Yes, because moral blame is enough for omission liability.
+   C. Yes, because anyone who can safely rescue must do so.
+   D. No, but only because the death was unforeseeable.
+
+17. A thief grabbed a purse from a victim's hand. The victim held on, and the thief yanked hard enough to pull the victim forward and break the strap. The thief ran away with the purse. What is the best offense?
+   A. Larceny only, because the thief used no weapon.
+   B. Assault only, because the property was not taken from inside the victim's clothing.
+   C. No theft offense, because the victim initially retained the purse.
+   D. Robbery, because the taking from the person was accomplished by force overcoming resistance.
+
+18. At night, a defendant went to another person's dwelling intending to steal jewelry inside. The front door was closed but unlocked. The defendant turned the knob, opened the door, entered, and took jewelry. At common law, was there a breaking?
+   A. No, because a breaking requires damage to the structure.
+   B. Yes, because opening a closed door, even if unlocked, is sufficient physical force.
+   C. No, because entry through a door can never be burglary.
+   D. Yes, but only because the jewelry was actually stolen.
+
+19. A buyer falsely told a car owner that a cashier's check was genuine. Relying on the statement, the owner signed over title and handed over the car. The check was fake. What theft offense best fits?
+   A. False pretenses, because fraud induced transfer of title.
+   B. Larceny by trick, because title and possession always remain with the owner when fraud is used.
+   C. Embezzlement, because the buyer later converted property he had lawfully possessed.
+   D. Receiving stolen property, because the car became stolen only after the buyer drove away.
+
+20. A person bought sealed electronics from a known thief for one-tenth of their value after the thief said, 'These came from last night's warehouse job.' The buyer planned to resell them. What is the buyer's best charge?
+   A. No crime, because the buyer did not personally steal the goods.
+   B. Larceny, because every possessor of stolen goods is the original taker.
+   C. Receiving stolen property, because he knowingly received stolen goods with intent to deprive the owner.
+   D. Burglary, because the goods originally came from a warehouse.
+
+Answer Key
+1. B
+2. A
+3. C
+4. D
+5. A
+6. C
+7. B
+8. D
+9. A
+10. B
+11. C
+12. A
+13. D
+14. B
+15. C
+16. A
+17. D
+18. B
+19. A
+20. C
+
+Pattern Map
+1. CPA-C17 — Plain view requires lawful vantage and lawful access
+2. CPA-C13 — Miranda requires custody plus interrogation
+3. CPA-C21 — Post-charge deliberate elicitation without counsel
+4. CPA-C19 — Police-arranged ID is excluded only if suggestive and unreliable
+5. CPA-C05 — Good faith fails for bare-bones or facially defective warrants
+6. H-A01 — Adequate provocation plus no cooling reduces murder
+7. H-A02 — Agency jurisdictions limit felony murder to killings by felons
+8. H-A06 — Medical negligence rarely breaks homicide causation
+9. H-A03 — Extreme recklessness can be murder
+10. IC-B07 — Attempted murder requires intent to kill
+11. IC-B11 — Solicitation is complete when the criminal request is made
+12. IC-B09 — Conspiracy requires agreement plus criminal intent
+13. IC-B04 — Accomplice withdrawal requires neutralizing aid
+14. GP-D02 — M’Naghten asks knowledge of nature or wrongfulness
+15. GP-D01 — Duress excuses crimes under immediate threat, but not intentional murder
+16. GP-D04 — Omission liability requires a legal duty to act
+17. OC-E10 — Robbery is larceny from person by force or threat
+18. OC-E04 — Breaking can be slight or constructive
+19. OC-E05 — False pretenses requires fraud-induced transfer of title
+20. OC-E08 — Receiving stolen property requires knowledge it is stolen
