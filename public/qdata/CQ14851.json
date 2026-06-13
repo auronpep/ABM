@@ -1,0 +1,78 @@
+{
+ "id": "CQ14851",
+ "title": "Festival Qr Badge",
+ "subject": "Evidence",
+ "topic": "Presentation of Evidence",
+ "subtopic": "Impeachment by criminal conviction; other acts for identity",
+ "difficulty": "not supplied in source row; source correct rate 46%",
+ "tension": null,
+ "stem": "Lydia is on trial for attempted fraud. At a private Christian music festival, the state charges that Lydia peeled the QR sticker from a $35 general-admission badge, placed it over the QR sticker on a $325 artist-dinner badge, and handed the artist-dinner badge to Esther, the ticket clerk, for scanning. Lydia has testified in her own behalf that another person in the line must have swapped the sticker before she received the badge.\n\nOn cross-examination, the prosecutor asks whether Lydia was convicted on two prior occasions of misdemeanor ticket fraud by the same means of moving a low-tier festival QR sticker onto an artist-dinner badge.\n\nIs the question about the prior convictions proper either to impeach Lydia or to prove that Lydia committed the charged crime?\n\nSource lock: the source row is QID 14851, Evidence, with original key B; the row reports 46% correct, 45% selecting the impeachment-only distractor, and the official explanation grounds the answer in FRE 609(a)(2) and FRE 404(b).",
+ "call": "Is the question about the prior convictions proper either to impeach Lydia or to prove that Lydia committed the charged crime?",
+ "choices": {
+  "A": "It is proper to impeach Lydia, but not to prove that Lydia committed the charged crime.",
+  "B": "It is proper to prove that Lydia committed the charged crime, but not to impeach Lydia.",
+  "C": "It is proper for both purposes.",
+  "D": "It is not proper for either purpose."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. This is a two-purpose answer array.\n\nSilver Key: mark each purpose separately. Impeachment: yes. Identity/proof: yes. The only answer that matches both marks is C.\n\nGold Key: a fraud conviction is a dishonesty conviction, so it can impeach a testifying witness. Gold Key: other-act evidence is not admissible to prove propensity, but it can be admissible for identity when the defendant says someone else did it and the prior acts used the same distinctive method.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "Two-purpose call. Impeach? Yes, fraud conviction. Prove identity? Yes, same distinctive method after she says someone else did it. Both purposes means C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice marks one purpose yes and the other no; the array requires both purpose marks.",
+   "lawyer": "The impeachment half is right, but the identity/proof half is wrong because the same distinctive QR-sticker method is admissible for identity under Rule 404(b)(2), subject to ordinary limits not tested here.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "The choice marks the proof purpose yes but denies the impeachment purpose.",
+   "lawyer": "The identity/proof half is right, but the impeachment half is wrong because misdemeanor fraud is a dishonesty conviction under Rule 609(a)(2).",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "Both purpose boxes are yes.",
+   "lawyer": "Rule 609(a)(2) supports impeachment, and Rule 404(b)(2) supports the identity use because Lydia contests identity and the prior convictions involve the same distinctive method.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice marks both purpose boxes no.",
+   "lawyer": "Both boxes are legally yes on these facts: dishonesty conviction impeachment and non-propensity identity proof.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-FESTIVAL-QR-BADGE-01",
+   "statement": "A prior conviction for a crime that required a dishonest act or false statement is an automatic impeachment route for a testifying witness, even when the conviction was only a misdemeanor.",
+   "trigger": "the witness is the defendant and the prior convictions are misdemeanor fraud convictions",
+   "unlocks": "the impeachment half of the two-purpose matrix",
+   "authority": "Fed. R. Evid. 609(a)(2)"
+  },
+  {
+   "id": "GK-EVIDENCE-FESTIVAL-QR-BADGE-02",
+   "statement": "Other-act evidence is not allowed just to show bad character, but it may be allowed for identity when the defendant claims someone else did it and the prior acts use the same distinctive method.",
+   "trigger": "the defendant denies being the person who switched the QR sticker and prior convictions used the same QR-sticker method",
+   "unlocks": "the identity/proof half of the two-purpose matrix",
+   "authority": "Fed. R. Evid. 404(b)(2)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-FESTIVAL-QR-BADGE-01",
+   "statement": "When the call asks whether evidence is proper for either of two purposes, mark each purpose separately, then choose the letter whose yes/no pattern matches both marks.",
+   "trigger": "answer choices divide into both, neither, purpose one only, and purpose two only",
+   "unlocks": "the neither/both/impeachment-only/proof-only answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Do not stop at one admissibility purpose",
+  "signal": "The answer choices form both/neither/one-purpose-only choices.",
+  "studentMove": "Make a separate yes/no mark for impeachment and identity proof.",
+  "tinyRule": "Dishonesty convictions impeach; distinctive same-method prior acts can prove identity.",
+  "trap": "Impeachment-only answer."
+ }
+}

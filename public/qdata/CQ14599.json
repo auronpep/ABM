@@ -1,0 +1,88 @@
+{
+ "id": "CQ14599",
+ "title": "Bethany Stoneworks Inventory",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Administrative inspection / Fourth Amendment warrant exception",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Pass-1 step lock.\nStep 1 — tested rule: closely regulated business / administrative inspection exception to the warrant requirement.\nStep 2 — invariant layer: suppression call, criminal defendant posture, warrantless administrative inspection, limited statute, regulated industry, contraband found, official denial answer, dominant overbroad denial trap.\nStep 3 — five Christian variations considered in section 14.\nStep 4 — no distractor swap; all mechanics inherited.\nStep 5 — selected Bethany Stoneworks because it changes the business world from vehicle junkyards to commercial quarries while preserving the same warrant-exception structure.\nStep 6 — choices shuffled; map appears in section 6.\n\nRevised stem and call\n\nA state enacted a statute to regulate commercial stone quarries that store blasting supplies and heavy cutting equipment, both to protect quarry safety and to deter trafficking in stolen quarry machinery and blasting components. The statute requires a quarry owner or operator to permit representatives of the Department of Mines or any law enforcement agency, upon request during normal business hours, to take a physical inventory of blasting materials, stone-cutting machinery, and serial-numbered equipment on the business premises. The statute also states that a failure to comply with any of its requirements constitutes a felony.\n\nA city’s quarry-safety and theft unit periodically visited every licensed quarry in the county to make the inspections permitted by the statute. Lydia owned Bethany Stoneworks, a commercial quarry that sold carved stone for garden crosses and baptismal-font bases. One afternoon, officers Peter and John asked to inspect her yard. Lydia asked, “Must I let you do that?” The officers said the code required it.\n\nDuring the inventory, the officers found three stolen stone-cutting rigs. Lydia is charged with receiving stolen property. Before trial, she moves to suppress the evidence relating to the rigs on the ground that the inspection was unconstitutional.\n\nThe motion should be",
+ "call": "The motion should be",
+ "choices": {
+  "A": "denied, because warrantless administrative inspections of commercial premises are valid without a warrant.",
+  "B": "denied, because the statute reasonably governs a closely regulated quarry industry.",
+  "C": "sustained, because the safety-and-theft purpose of the statute is merely a pretext for conducting criminal searches.",
+  "D": "sustained, because the inspection code gives mine inspectors and police unbridled discretion to conduct warrantless searches."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The inspection law is tied to a closely regulated commercial quarry industry. The search is not defended as a free-floating police search. It is defended as a limited administrative inspection: business hours, business premises, and inventory of defined quarry-related materials and equipment.\n\nGold Key: Closely regulated businesses are a narrow Fourth Amendment exception. A warrantless inspection can be valid when the industry is closely regulated, the inspection serves a substantial regulatory interest, warrantless inspection is necessary, and the law limits official discretion by time, place, and scope.\n\nSilver Key: When two denial answers remain, prefer the denial answer tied to the special regulated-industry facts over the denial answer that says all commercial premises searches are warrant-free.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Result right, reason too broad. “Commercial premises” expands the exception beyond the stem. Mold: extreme_of_range. Filter: NOT_TRUE."
+  },
+  {
+   "label": "CUT C",
+   "text": "It answers through the wrong frame. The stem gives a regulatory statute and a routine inspection pattern. The choice treats the inspection as an ordinary criminal-search pretext. Mold: bait_doctrine. Filter: NOT_RESPONSIVE."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Unbridled” means no meaningful limits. The stem gives limits. Mold: tiered_absolute. Filter: NOT_TRUE."
+  },
+  {
+   "label": "Residual B",
+   "text": "The only answer both responsive to the suppression call and tied to the limited regulated-industry statute. Deciding phase: CUT, with Gold Key support."
+  }
+ ],
+ "studentScript": "Cut D: unbridled is contradicted by limits. Cut C: wrong frame, routine inspection not ordinary criminal search. Cut A: too broad, all commercial premises. Keep B: special regulated industry plus limited statute.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer says commercial premises generally, while the stem gives a special regulated industry.",
+   "lawyer": "The closely regulated business exception is narrow; not every commercial administrative inspection is warrant-free.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "The answer ties the denial result to the special industry and the limited statute.",
+   "lawyer": "This matches the closely regulated business exception.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The stem gives a routine regulatory inspection, but the answer treats the search as ordinary criminal pretext.",
+   "lawyer": "Crime-deterrence overlap does not defeat a valid closely regulated inspection scheme.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "Unbridled means no meaningful limits; the stem lists limits.",
+   "lawyer": "The statute limits time, place, and scope.",
+   "mold": "tiered_absolute"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-BETHANY-STONEWORKS-01",
+   "statement": "Closely regulated businesses are the narrow Fourth Amendment exception. A warrantless inspection can stand when the industry is closely regulated, the inspection serves a substantial regulatory interest, warrantless inspection is necessary, and the law limits discretion by time, place, and scope.",
+   "trigger": "A licensed quarry or other closely regulated commercial operation plus a statute authorizing limited business-hours inventory inspections.",
+   "unlocks": "The narrow exception that makes the denial answer true and defeats the all-commercial-premises overclaim.",
+   "authority": "Fourth Amendment; Donovan v. Dewey, 452 U.S. 594 (1981); New York v. Burger, 482 U.S. 691 (1987); City of Los Angeles v. Patel, 576 U.S. 409 (2015)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-BETHANY-STONEWORKS-01",
+   "statement": "When two denial answers remain, prefer the one tied to the special regulated-industry facts over the one that says all commercial premises searches are warrant-free.",
+   "trigger": "One answer says closely regulated quarry industry; another says administrative searches of commercial premises generally.",
+   "unlocks": "Narrow exception versus overbroad category in the denial pair.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Closely regulated means narrow, not general",
+  "signal": "Business-hours inventory inspection of a licensed commercial quarry.",
+  "studentMove": "Cut broad commercial-search answers and ask whether the stem gives the regulated-industry facts and statutory limits.",
+  "tinyRule": "Closely regulated business + substantial regulatory purpose + limited discretion can substitute for a warrant.",
+  "trap": "Expanding a narrow administrative-search exception to every commercial establishment."
+ }
+}

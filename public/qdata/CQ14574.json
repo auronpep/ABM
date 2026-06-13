@@ -1,0 +1,107 @@
+{
+ "id": "CQ14574",
+ "title": "Jericho Wall Patrol Statement",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Statements and Confessions",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A grand jury indicted Martha on a charge of felony vandalism after Daniel’s life-size Jericho-wall display collapsed at a privately run Bible-story festival, and a valid warrant was issued for her arrest. Officer Paul arrested Martha in a parking lot and told her that the warrant accused her of destroying the display. Paul hoped that Martha might volunteer details, but he did not give her Miranda warnings.\n\nPaul placed Martha in the back seat of his patrol car and drove her to booking. During the drive, Martha said, “I wasn’t trying to smash Daniel’s Jericho wall. I only shoved the trumpet cart so the streamers would move, and the whole wall came down.”\n\nAt the station, after being given Miranda warnings, Martha stated that she wished to remain silent and made no other statements. Martha moved to suppress the use of her patrol-car statement as evidence on two grounds: first, that the statement was acquired without giving Miranda warnings, and second, that Officer Paul deliberately elicited her incriminating statement after she was in custody.\n\nAs to Martha’s motion to suppress, the court should:",
+ "call": "As to Martha’s motion to suppress, the court should:",
+ "choices": {
+  "A": "Grant the motion only on the basis of the first ground stated.",
+  "B": "Grant the motion on either ground stated.",
+  "C": "Deny the motion.",
+  "D": "Grant the motion only on the basis of the second ground stated."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The patrol-car statement should not be suppressed on either asserted ground.\n\nGold Key: Miranda is not triggered by custody alone. It is triggered by custodial interrogation, which includes express questioning and its functional equivalent. Here, Martha was under arrest and not warned, but the statement came during transport without a question or equivalent prompting.\n\nGold Key: Deliberate elicitation requires a police action designed to draw out the incriminating statement. Paul hoped Martha would talk, but the stem gives no act beyond arrest, notice of the warrant, and ordinary transport.\n\nSilver Key: This is a two-switch answer array. Test the first ground and second ground separately. First switch: no-warning ground is off. Second switch: deliberate-elicitation ground is off. With both switches off, the denial answer is forced.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks what the court should do with a suppression motion based on two stated grounds. This is not a general “were rights implicated?” call. It is a remedy call: suppress or deny."
+  },
+  {
+   "label": "CUT A",
+   "text": "A grants only on the no-warning ground. Gold Key 1 cuts it. The missing fact is interrogation. No interrogation-equivalent fact appears."
+  },
+  {
+   "label": "CUT D",
+   "text": "D grants only on the deliberate-elicitation ground. Gold Key 2 cuts it. The missing fact is a police action designed to draw the statement out. Paul’s hope is not enough."
+  },
+  {
+   "label": "CUT B",
+   "text": "B grants on either ground. The Silver Key cuts it after the two-switch test. A double-ground answer fails when both underlying switches are off."
+  },
+  {
+   "label": "Residual",
+   "text": "C remains. Deny the motion."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed. The Cut leaves one survivor."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed. The Gold Keys resolve both switches."
+  }
+ ],
+ "studentScript": "Two switches. First: no-warning ground. No interrogation, so off. Second: deliberate elicitation. No police action, so off. Both off means deny.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It turns one loud fact, no warnings, into a complete suppression ground.",
+   "lawyer": "The Miranda threshold is custody plus interrogation; custody without interrogation does not require suppression.",
+   "mold": "half_truth"
+  },
+  "B": {
+   "signal": "It combines two failed grounds and treats the combination as stronger.",
+   "lawyer": "Neither the Miranda ground nor the deliberate-elicitation ground supports suppression.",
+   "mold": "extreme_of_range"
+  },
+  "C": {
+   "signal": "After both switches are tested and turned off, deny remains.",
+   "lawyer": "The statement is admissible against both asserted suppression grounds.",
+   "mold": null
+  },
+  "D": {
+   "signal": "It treats the officer’s hope as the missing police action.",
+   "lawyer": "Deliberate elicitation requires action designed to obtain the statement; hope alone is not enough.",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-JERICHO-WALL-01",
+   "statement": "Miranda requires custodial interrogation, not custody alone. A volunteered statement is not suppressed merely because warnings had not yet been given.",
+   "trigger": "the defendant blurts out a statement during transport before any question or equivalent prompt",
+   "unlocks": "the no-warning suppression trap",
+   "authority": "Miranda v. Arizona; Rhode Island v. Innis; Arizona v. Mauro"
+  },
+  {
+   "id": "GK-CRIMINAL-JERICHO-WALL-02",
+   "statement": "After formal charge, deliberate elicitation requires a police action designed to draw out the statement. Mere hope, silence, or listening during ordinary custody is not enough.",
+   "trigger": "the officer wants a confession but does nothing beyond normal arrest and transport",
+   "unlocks": "the deliberate-elicitation trap",
+   "authority": "Massiah v. United States; Kuhlmann v. Wilson; Fellers v. United States"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-JERICHO-WALL-01",
+   "statement": "Read first-ground-only / second-ground-only / either-ground / deny as a two-switch matrix. Test each ground separately; if both switches are off, the deny answer is forced.",
+   "trigger": "the call lists two suppression grounds and the choices distribute them",
+   "unlocks": "the two-ground suppression answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Two switches before suppression",
+  "signal": "A suppression call lists two independent grounds and the choices distribute them.",
+  "studentMove": "Treat each asserted ground as its own on/off switch before choosing a grant/deny answer.",
+  "tinyRule": "No-warning custody needs interrogation; post-charge elicitation needs a police action designed to draw the statement out.",
+  "trap": "Counting custody or officer hope as enough."
+ }
+}

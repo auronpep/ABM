@@ -6,7 +6,7 @@
  "subtopic": "Incorporation of the Excessive Fines Clause through the Fourteenth Amendment",
  "difficulty": null,
  "tension": null,
- "stem": "Daniel runs a small roadside farm stand in a rural county, selling eggs, honey, and produce that he raises on his own land. After a routine inspection, the county health department cited him for a minor technical violation of the county food-code — failing to display a state-issued refrigeration placard on a single small cooler — and the county brought a forfeiture action seeking $400,000. The maximum civil fine under the county ordinance for this kind of citation, if proven, is $250. Daniel concedes the violation but argues that a $400,000 forfeiture for a minor food-code placard violation is grossly excessive under the Excessive Fines Clause of the Eighth Amendment, applied to the county through the Fourteenth Amendment Due Process Clause. The county moves to dismiss on the ground that the Excessive Fines Clause constrains only the federal government.",
+ "stem": "Daniel runs a small roadside farm stand in a rural county, selling eggs, honey, and produce that he raises on his own land. After a routine inspection, the county health department cited him for a minor technical violation of the county food-code — failing to display a state-issued refrigeration placard on a single small cooler — and the county brought a forfeiture action seeking $400,000. The maximum civil fine under the county ordinance for this kind of citation, if proven, is $250. Daniel concedes the violation but argues that a $400,000 forfeiture for a minor food-code placard violation is grossly excessive under the Excessive Fines Clause of the Eighth Amendment, applied to the county through the Fourteenth Amendment Due Process Clause. The county moves to dismiss on the ground that the Excessive Fines Clause constrains only the federal government.\n\nWhat is the best incorporation route for Daniel's Excessive Fines claim?",
  "call": "What is the best incorporation route for Daniel's Excessive Fines claim?",
  "choices": {
   "A": "The claim fails because the Excessive Fines Clause of the Eighth Amendment applies only to the federal government, not to states or their political subdivisions.",
@@ -15,18 +15,66 @@
   "D": "The claim belongs only under the procedural due process rules requiring notice and a hearing before a forfeiture is imposed."
  },
  "key": "C",
- "dominantTrap": "A",
+ "dominantTrap": null,
  "rightExplanation": "Daniel's Excessive Fines claim can proceed because the Excessive Fines Clause of the Eighth Amendment is incorporated against the states (and their political subdivisions) through the Fourteenth Amendment Due Process Clause. The Supreme Court held in Timbs v. Indiana, 586 U.S. 365 (2019), that the Excessive Fines Clause is incorporated, joining the nearly all-other provisions of the Bill of Rights in applying to the states through the Fourteenth Amendment. The county's motion to dismiss on a \"federal-only\" theory therefore fails; the claim is properly before the court on the merits, and the court will apply the incorporated Excessive Fines Clause to evaluate the gross disproportionality of the $400,000 forfeiture to a minor food-code placard violation. Gold Key: the Excessive Fines Clause applies to the states through the Fourteenth Amendment Due Process Clause. Silver Key: lock the call to the best incorporation route, not to the merits of the proportionality test.",
- "wrongExplanations": {
-  "A": "The claim fails because the Excessive Fines Clause of the Eighth Amendment applies only to the federal government, not to states or their political subdivisions.\n\nThis is the dominant trap and the classic \"Bill of Rights constrains only the federal government\" misconception. The student knows that some provisions were originally understood to apply only to the federal government and treats the Excessive Fines Clause as one of them. The breaker is the Gold Key: Timbs v. Indiana (2019) squarely held that the Excessive Fines Clause is incorporated through the Fourteenth Amendment Due Process Clause, so the county's \"federal-only\" theory fails on the incorporation question.",
-  "B": "The claim wins automatically because every forfeiture larger than the maximum statutory fine is unconstitutional, regardless of the violation.\n\nThis is the \"every large fine is unconstitutional\" overclaim. The student has half-grasped that the Excessive Fines Clause is about disproportionality and converts it into a flat rule. The breaker is the call: the question asks about the best incorporation route, not the merits of the proportionality analysis. Even with incorporation established, the court still has to evaluate gross disproportionality; it does not automatically invalidate every forfeiture that exceeds the maximum civil fine.",
-  "D": "The claim belongs only under the procedural due process rules requiring notice and a hearing before a forfeiture is imposed.\n\nThis is the \"procedural due process\" misdirection. The student has reduced the constitutional claim to a notice-and-hearing issue. The breaker is the doctrinal point: the Excessive Fines Clause is a substantive constraint on the size of the forfeiture, not a procedural constraint on the procedure for imposing it. Procedural due process addresses how the government takes a protected interest; substantive due process (and the incorporated Excessive Fines Clause) addresses the kind of interest the government can take. A claim that the forfeiture is grossly excessive is a substantive claim, not a procedural one."
- },
- "c3": [],
- "studentScript": null,
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "D (procedural due process misdirection)",
+   "text": "is cut on misfit (ISSUE_SENSE). The Excessive Fines Clause is a substantive constraint on the size of the forfeiture, not a procedural constraint on the procedure for imposing it. Visible from the answer text: it narrows the substantive Eighth Amendment claim into a notice-and-hearing procedural due process claim."
+  },
+  {
+   "label": "B (automatic-win overclaim)",
+   "text": "is cut on overclaim (EAR_OVERCLAIM). The choice asserts a flat rule that every forfeiture larger than the maximum civil fine is unconstitutional. The overclaim is visible in the answer text: it ignores the gross-disproportionality analysis that the Excessive Fines Clause requires."
+  },
+  {
+   "label": "A (federal-only) and C (incorporated through 14th)",
+   "text": "survive to the deciding axis: does the Excessive Fines Clause apply to the states (and their political subdivisions) through the Fourteenth Amendment, or is it a federal-only provision? The single axis they fight on is incorporation of the Excessive Fines Clause."
+  },
+  {
+   "label": "CALL",
+   "text": "- The Gold Key resolves the axis. Timbs v. Indiana (2019) squarely held that the Excessive Fines Clause is incorporated against the states through the Fourteenth Amendment Due Process Clause. The county's \"federal-only\" theory fails. Residual: C."
+  }
+ ],
+ "studentScript": "The call asks for the best incorporation route for the Excessive Fines claim. D is the procedural-due-process misdirection (Excessive Fines is a substantive claim, not a procedural one). B is the automatic-win overclaim (every large fine is not automatically unconstitutional). A is the dominant trap: federal-only incorporation. Gold Key: the Excessive Fines Clause is incorporated against the states (and their political subdivisions) through the Fourteenth Amendment Due Process Clause. Choose C.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice asserts a flat rule that the Excessive Fines Clause applies only to the federal government. The doctrinal overclaim is not student-accessibly false without the Gold Key.",
+   "lawyer": "Timbs v. Indiana, 586 U.S. 365 (2019), held that the Excessive Fines Clause is incorporated against the states through the Fourteenth Amendment Due Process Clause. The federal-only incorporation theory fails.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The choice asserts that every forfeiture larger than the maximum civil fine is unconstitutional. The overclaim is visible in the answer text: it ignores the gross-disproportionality analysis that the Excessive Fines Clause requires.",
+   "lawyer": "The Excessive Fines Clause applies a gross-disproportionality test, not a flat rule. A forfeiture above the maximum civil fine is not automatically unconstitutional; it must be evaluated for gross disproportionality to the underlying offense.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "This is the only choice that names the correct incorporation route: the Excessive Fines Clause is incorporated against the states through the Fourteenth Amendment Due Process Clause. It is true and responsive.",
+   "lawyer": "Timbs v. Indiana, 586 U.S. 365 (2019), held that the Excessive Fines Clause is incorporated against the states through the Fourteenth Amendment Due Process Clause.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice converts a substantive Eighth Amendment claim into a procedural due process claim. The Excessive Fines Clause is a substantive constraint on the size of the forfeiture, not a procedural constraint on the procedure for imposing it.",
+   "lawyer": "Procedural due process addresses how the government takes a protected interest; substantive due process and the incorporated Excessive Fines Clause address the kind of interest the government can take. A claim that the forfeiture is grossly excessive is a substantive claim, not a procedural one.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONLAW-FARMSTAND-EXCESSIVE-FINE-01",
+   "statement": "The Excessive Fines Clause of the Eighth Amendment is incorporated against the states (and their political subdivisions) through the Fourteenth Amendment Due Process Clause; the federal-only incorporation theory fails.",
+   "trigger": "state or local government actor seeks a grossly disproportionate forfeiture; defendant invokes the Eighth Amendment Excessive Fines Clause through the Fourteenth Amendment; government moves to dismiss on a federal-only theory",
+   "unlocks": "federal-only incorporation trap",
+   "authority": "Timbs v. Indiana, 586 U.S. 365 (2019)"
+  }
+ ],
  "silverKeys": [],
- "remediation": null
+ "remediation": {
+  "title": "Incorporation of the Excessive Fines Clause",
+  "signal": "A state or local government actor seeks a grossly disproportionate forfeiture for a minor violation; the defendant invokes the Eighth Amendment Excessive Fines Clause through the Fourteenth Amendment; the government moves to dismiss on a federal-only theory.",
+  "studentMove": "Cut the procedural-due-process misdirection and the automatic-win overclaim on the answer text. Then use the Gold Key to kill the federal-only trap.",
+  "tinyRule": "The Excessive Fines Clause is incorporated against the states (and their political subdivisions) through the Fourteenth Amendment Due Process Clause.",
+  "trap": "Some Bill of Rights provisions were historically treated as federal-only; the Excessive Fines Clause is not one of them. Timbs v. Indiana (2019) squarely held that it is incorporated."
+ }
 }

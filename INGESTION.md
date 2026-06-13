@@ -2,9 +2,11 @@
 
 *Written 2026-06-11, updated 2026-06-12. Companion to REQUIREMENTS.md / COMPONENTS.md.
 Covers how the near-ready questions and items get into the database, and which redesign
-components a larger bank unlocks. Status 2026-06-12: bank at 3,792 questions after CQ
-batch 1 (106 questions) landed in prod; generator + packs live in `barmatrix-api`;
-transform pipeline + QA in `C:\CCG` (spec v2, `Validate-CQ.ps1`, cq-transform-qa skill).*
+components a larger bank unlocks. Status 2026-06-12: the current local CQ artifact
+set covers 223 `C:\CCG\Finished` questions with 0 quarantined; generator + packs live
+in `barmatrix-api`; transform pipeline + QA in `C:\CCG` (spec v2,
+`Validate-CQ.ps1`, cq-transform-qa skill). Live/API DB load still requires applying
+the generated SQL through the configured DB channel.*
 
 ---
 
@@ -95,8 +97,8 @@ After each batch loads:
 
 ## 6. Open inputs (founder)
 
-> **Batch 1 status (2026-06-12):** the first 106-question batch from `C:\CCG\Finished` is
-> parsed, QA-gated, and converted — see [BATCH1_CQ_INGESTION.md](BATCH1_CQ_INGESTION.md)
+> **CQ batch status (2026-06-12):** the current 223-question set from `C:\CCG\Finished` is
+> parsed, QA-gated, and converted locally — see [BATCH1_CQ_INGESTION.md](BATCH1_CQ_INGESTION.md)
 > for artifacts, the drill/component design, and the load runbook. The "where do batches
 > live" question below is answered for this source; the tension-minimum question is
 > sharpened there (§3).

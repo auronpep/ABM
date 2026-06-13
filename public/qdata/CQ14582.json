@@ -1,0 +1,78 @@
+{
+ "id": "CQ14582",
+ "title": "Road To Emmaus Confession",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Fifth and Sixth Amendments—Statements, Confessions, and Identifications > Right to Confrontation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A private company hosted a Road to Emmaus Mystery Night in a rented warehouse. After a rival designer was found dead behind the final puzzle room, Lydia and Barnabas were charged with murder. During separate police interviews, each gave a confession that implicated both of them. Lydia later withdrew her confession and said that the detective had pressured her.\n\nLydia and Barnabas were tried together. The prosecutor offered both confessions into evidence, and both defendants objected. After a hearing, the trial judge found that both confessions were voluntary and admitted both into evidence. Lydia testified at trial and said that her confession was false and pressured. Barnabas did not testify. Both defendants were convicted.\n\nOn appeal, Lydia contends that her conviction should be reversed because Barnabas’s confession was admitted into evidence. Lydia’s contention is",
+ "call": "Lydia's contention is",
+ "choices": {
+  "A": "Correct, whether or not Barnabas took the stand at trial.",
+  "B": "Incorrect, because Lydia's own confession was properly admitted into evidence.",
+  "C": "Correct, because Barnabas did not testify at trial.",
+  "D": "Incorrect, because Lydia testified in her own defense."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: In a joint criminal trial, the confession problem turns on the statement-maker. Barnabas made the confession that implicated Lydia, and Barnabas did not testify. Lydia therefore had no chance to confront and cross-examine him about the substance of his confession. C is the only answer that keeps the focus on Barnabas’s confession and Barnabas’s absence from the witness stand.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "The appeal is about Barnabas's confession. Cut B and D because they talk about Lydia. Cut A because 'whether or not Barnabas testified' erases the hinge. Keep C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The words 'whether or not' erase the fact the correct reason uses: whether Barnabas testified.",
+   "lawyer": "If the confessing codefendant testifies and is subject to cross-examination, the confrontation problem is cured.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The call challenges Barnabas's confession; this answer talks about Lydia's confession.",
+   "lawyer": "The objecting defendant's own confession does not cure the separate confrontation problem created by a non-testifying codefendant's confession.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "This is the only answer that keeps the focus on Barnabas's confession and Barnabas's non-testimony.",
+   "lawyer": "Admission of a non-testifying codefendant's confession that incriminates the accused at a joint trial violates the accused's confrontation right.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The call needs Barnabas crossable; Lydia's own testimony is not the same thing.",
+   "lawyer": "The confrontation opportunity must run to the declarant whose statement is used against the accused.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-BARNABAS-CONFESSION-01",
+   "statement": "In a joint criminal trial, a codefendant's confession that incriminates another defendant turns on whether the confessing codefendant can be cross-examined. No testimony by the confessor means a confrontation problem; testimony subject to cross cures that problem.",
+   "trigger": "joint trial plus one defendant's confession naming the other defendant",
+   "unlocks": "the overbroad choice that says the objecting defendant wins whether or not the confessor testified",
+   "authority": "Sixth Amendment; Bruton v. United States, 391 U.S. 123; Nelson v. O'Neil, 402 U.S. 622"
+  },
+  {
+   "id": "GK-CRIMINAL-BARNABAS-CONFESSION-02",
+   "statement": "The objecting defendant's own admitted confession does not erase the separate confrontation problem caused by a non-testifying codefendant's confession.",
+   "trigger": "two confessions admitted at the same joint trial",
+   "unlocks": "the dominant trap that treats Lydia's own confession as curing Barnabas's confession",
+   "authority": "Sixth Amendment; Cruz v. New York, 481 U.S. 186"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-BARNABAS-CONFESSION-01",
+   "statement": "In a confession-choice array, label whose statement each answer is talking about before judging the result. The challenged item is Barnabas's confession, so answers about Lydia's own confession or Lydia's own testimony are wrong-object cuts.",
+   "trigger": "two defendants, two confessions, and an appeal targeting only one confession",
+   "unlocks": "the wrong-object traps in the two incorrect-because choices",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Track the statement-maker in confession arrays",
+  "signal": null,
+  "studentMove": "Write 'challenged confession = Barnabas' before reading the answers.",
+  "tinyRule": null,
+  "trap": "Answers about Lydia's own confession or testimony feel relevant but answer the wrong object."
+ }
+}

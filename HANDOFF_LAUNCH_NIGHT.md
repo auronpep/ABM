@@ -6,7 +6,7 @@
 1. **WORKSTREAM A — copy surgery (blocks the influencer send).** Exact change list below; every file:line enumerated. Ship it, deploy, verify, done in under an hour.
 2. **WORKSTREAM B — paid program build-out (the real focus).** What happens after someone purchases: Day-1 through Day-7.
 
-**The gate is LIFTED** (founder, 2026-06-11): commit/push/deploy immediately, no approval waits. Still founder-gated: email *sending* (Resend activation), Stripe product/price/webhook config, live-DB writes. Founder is separately fixing the Stripe merchant name ("JWM Services" → BarMatrix) in the Stripe dashboard.
+**The gate is LIFTED** (founder, 2026-06-11): commit/push/deploy immediately, no approval waits. Still controlled: customer-facing email sends, Stripe product/price/webhook config, live-DB writes. Use `codex@barmatrix.app` as the internal test/catchall mailbox for dark email QA; mailbox settings are in `C:\Users\JesusLovesMe\.env` and the password key is `CODEX_EMAIL_PASSWORD`. Founder is separately fixing the Stripe merchant name ("JWM Services" → BarMatrix) in the Stripe dashboard.
 
 ---
 
@@ -95,7 +95,7 @@ Then walk it in a real browser: home → diagnostic intro → checkout (`?plan=f
 1. **Day 2–7 engine, client-local (P1 §5).** After zone #1 is repaired the CTA currently degrades to the generic drill library. Build the priority ladder in `src/program/`: overdue spaced retest → drills on hottest live zone → timed mixed set → next zone repair. Exactly ONE primary action on /welcome each visit. Mirror `/api/me/day-plan`'s shape (inspect `C:\barmatrix-api\src\routes\me-day-plan*`) so reconnecting to the server later is a swap, not a rewrite.
 2. **Multi-zone progression.** `src/funnel/zones.ts` synthesizes the full ranked zone list — repair loop currently consumes only #1. Wire zone #2..N with the same loop; show the map's state (repaired/live/scheduled) on /welcome.
 3. **Return-visit choreography.** Day-4 spaced retest already triggers from localStorage date; make the welcome page's state machine explicit for: returning mid-repair, returning with overdue retest, returning with all zones green (→ timed mixed sets).
-4. **Welcome email, built dark (P1 §4).** "Your Red-Zone map is ready" — implement as a diff for the founder in barmatrix-api `src/email.ts` (Resend activation is founder-gated). Must include: link back, and the instruction to use the same browser/device (until accounts exist) — that instruction is product fact, not a guardrail.
+4. **Welcome email, built dark (P1 §4).** "Your Red-Zone map is ready" — implement as a diff for the founder in barmatrix-api `src/email.ts`; dark-send first to `codex@barmatrix.app`, the BarMatrix test/catchall mailbox. Must include: link back, and the instruction to use the same browser/device (until accounts exist) — that instruction is product fact, not a guardrail.
 5. **Events.** `first_drill_complete`, `first_retest_complete`, `zone_repaired` exist; add day-2+ events (`retest_overdue_shown`, `mixed_set_complete`, `zone_n_started`). North star: % of buyers with `zone_repaired` within 24h ≥ 70%. All inert until PostHog key is set.
 6. **Then (founder-coordinated, not tonight):** Clerk into the shell + `diagnostic_id` → checkout metadata → server claiming, so the program survives device changes. The API supports all of it already.
 

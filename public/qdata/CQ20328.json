@@ -1,0 +1,95 @@
+{
+ "id": "CQ20328",
+ "title": "Bethlehem Star Drop",
+ "subject": "Torts",
+ "topic": "Negligence",
+ "subtopic": "Breach proof - res ipsa loquitur",
+ "difficulty": "medium-hard",
+ "tension": null,
+ "stem": "Lydia owns a for-profit Bible-story dinner theater that sells tickets to a Nativity show. During a performance, an overhead “Bethlehem star” prop that was supposed to glide slowly above the stage suddenly dropped from its track and struck Martha, a ticketed guest standing in the marked viewing area.\n\nLydia had hired Timothy’s rigging company to inspect and service the overhead track, but Lydia kept responsibility for deciding whether the star prop would be used during each show and received all inspection reports. Martha did not touch the rigging, controls, or stage equipment. Martha sues Lydia for negligence but cannot prove the exact clamp, cable, or motor failure that caused the star to drop.\n\nCall: Will res ipsa loquitur likely be available in Martha’s negligence claim against Lydia?",
+ "call": "Will res ipsa loquitur likely be available in Martha's negligence claim against Lydia?",
+ "choices": {
+  "A": "No, because hiring a rigging contractor always defeats Lydia's responsibility for res ipsa.",
+  "B": "No, because Martha cannot identify the precise rigging defect.",
+  "C": "Yes, because res ipsa requires judgment for Martha once the overhead prop falls.",
+  "D": "Yes, because the prop's sudden drop during normal show use can support a negligence inference without direct defect proof."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. The sudden drop of an overhead prop during ordinary show use is the kind of abnormal event that can support an inference of negligence when the defendant retained operational responsibility, received inspection reports, and the injured guest did not contribute to the accident.\n\nGold Key: Res ipsa is an inference bridge. It can work when the plaintiff cannot name the precise defect; it does not require direct proof of the exact failure.\n\nSilver Key: Read the array as an “inference vs. proof” fight. The answer that treats missing direct proof as the reason res ipsa is useful beats the answer that treats missing direct proof as fatal.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Always defeats” is a visible overclaim. Contractor involvement may matter, but the answer says it always defeats responsibility."
+  },
+  {
+   "label": "CUT C",
+   "text": "“Requires judgment” is a visible remedy overclaim. Res ipsa is an inference, not an automatic win."
+  },
+  {
+   "label": "CLASH B vs. D",
+   "text": "Axis: Does res ipsa require Martha to identify the precise defect, or can it operate without direct defect proof? The Gold Key resolves it: res ipsa is built for circumstantial proof. D survives."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed. The Gold Key resolves the residual pair."
+  }
+ ],
+ "studentScript": "Cut A for always. Cut C for requires judgment. Clash B against D on exact defect proof. Gold Key: res ipsa is for missing direct proof. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word always makes a full wipeout claim.",
+   "lawyer": "Hiring a contractor does not automatically defeat res ipsa where the defendant retained operational responsibility.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "This is the live residual fight against D; it needs the Gold Key.",
+   "lawyer": "Res ipsa may apply without proof of the precise mechanical defect when the circumstances support the negligence inference.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "The answer converts may infer into must win.",
+   "lawyer": "Res ipsa permits a factfinder to infer negligence; it does not automatically require judgment for the plaintiff.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "Matches the call and the Gold Key.",
+   "lawyer": "The abnormal prop drop, retained operational responsibility, plaintiff non-contribution, and lack of direct defect proof fit res ipsa availability.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-RES-IPSA-INFERENCE-01",
+   "statement": "Res ipsa is an inference bridge. It can apply when the plaintiff lacks direct proof of the exact defect, and it permits but does not compel a negligence finding.",
+   "trigger": "The call asks whether res ipsa is available and the stem says the plaintiff lacks direct defect proof.",
+   "unlocks": "precise-defect trap and automatic-judgment trap",
+   "authority": "Restatement (Second) of Torts § 328D"
+  },
+  {
+   "id": "GK-TORTS-RES-IPSA-CONTROL-01",
+   "statement": "Contractor involvement does not automatically erase res ipsa responsibility when the defendant retained operational responsibility for the instrumentality.",
+   "trigger": "The stem says a contractor serviced the mechanism but the defendant retained operational responsibility and received reports.",
+   "unlocks": "contractor-control absolute",
+   "authority": "Restatement (Second) of Torts § 328D responsibility/control formulation"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-TORTS-RES-IPSA-ARRAY-01",
+   "statement": "Cut the absolute contractor and automatic-judgment answers first. Then resolve the residual pair by asking whether the missing exact defect is fatal or is the reason res ipsa matters.",
+   "trigger": "One answer says no exact defect, one says inference without exact defect.",
+   "unlocks": "direct-proof residual pair",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Res ipsa: inference, not proof shortcut to judgment",
+  "signal": "Abnormal malfunction, defendant responsibility, plaintiff non-contribution, no direct proof.",
+  "studentMove": "Do not punish the plaintiff for lacking the exact defect; ask whether the event itself can speak.",
+  "tinyRule": "No exact defect needed; no automatic judgment.",
+  "trap": "Missing direct proof feels fatal."
+ }
+}

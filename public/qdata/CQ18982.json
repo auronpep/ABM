@@ -6,7 +6,7 @@
  "subtopic": "Falsity and substantial truth",
  "difficulty": null,
  "tension": null,
- "stem": "A faith-based homeschool-co-op newsletter stated that a co-op member's childcare license was revoked in May for failing a state safety inspection. The license was actually revoked in June for the same safety-inspection failure. The member sued the newsletter for defamation based only on the wrong month.",
+ "stem": "A faith-based homeschool-co-op newsletter stated that a co-op member's childcare license was revoked in May for failing a state safety inspection. The license was actually revoked in June for the same safety-inspection failure. The member sued the newsletter for defamation based only on the wrong month.\n\nWhat is the best defense?",
  "call": "What is the best defense?",
  "choices": {
   "A": "Absolute privilege, because all private newsletters are protected.",
@@ -15,18 +15,66 @@
   "D": "No defense, because any factual mistake defeats truth."
  },
  "key": "C",
- "dominantTrap": "D",
+ "dominantTrap": null,
  "rightExplanation": "C is correct. Defamation requires a false statement of fact. A statement is not defamatory if the gist or sting is substantially true, even if minor details (such as the exact month) are inaccurate. Here, the defamatory sting is \"childcare license revoked for failing a state safety inspection.\" The license was revoked for failing the safety inspection — that is substantially true. The wrong month (May vs. June) is a minor inaccuracy that does not change the sting; the statement is not actionable.\n\nGold Key: defamation is a falsity tort. A statement is not defamatory if the gist or sting is substantially true. Minor inaccuracies that do not change the gist or sting are tolerated.",
- "wrongExplanations": {
-  "A": "Absolute privilege, because all private newsletters are protected.\n\nThis is the invented-privilege trap. There is no automatic absolute privilege for all private newsletters. Absolute privilege is reserved for a small set of institutional speakers (legislators, judges, witnesses in judicial proceedings, executive officials speaking on matters of state, etc.). The newsletter is a private publication, not an institutional speaker, so the absolute-privilege route is unavailable. The breaker is the Gold Key plus the recognition that absolute privilege has narrow, traditional applications that do not extend to private newsletters.",
-  "B": "Opinion, because license status is subjective.\n\nThis is the false-recharacterization trap. License status is a factual matter: a state agency either revoked a license or did not, on a specific date, for a specific reason. The statement \"your license was revoked in May for failing a safety inspection\" is a factual assertion, not an opinion. The opinion defense requires that the statement be one that cannot be proven true or false — a subjective assessment, a loose figurative statement, or rhetorical hyperbola. License revocation is none of these. The breaker is the Gold Key plus the recognition that \"license was revoked\" is a verifiable fact.",
-  "D": "No defense, because any factual mistake defeats truth.\n\nThis is the dominant trap. The any-inaccuracy myth is the classic MBE misconception here: a student who half-remembers \"defamation requires truth\" reasons that any mistake (even a one-month error) makes the statement false. The breaker is the Gold Key: defamation requires falsity, but a statement is not false if the gist or sting is substantially true. The wrong-month inaccuracy does not change the sting (license revoked for failing a state safety inspection), so substantial truth is the defense."
- },
- "c3": [],
- "studentScript": null,
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "- A (absolute privilege, all private newsletters are protected) is cut on misstating the law. Absolute privilege has narrow, traditional applications (legislators, judges, witnesses, executive officials); it does not extend to private newsletters. The answer text itself states a rule that is not the law. Filter: NOT_TRUE."
+  },
+  {
+   "label": "B (opinion, license status is subjective)",
+   "text": "is cut on misstating the law. License status is a factual matter; \"license was revoked\" is a verifiable fact, not an opinion. The opinion defense requires a non-verifiable statement; license revocation is verifiable. The answer text itself states a rule that is not the law. Filter: NOT_TRUE."
+  },
+  {
+   "label": "CLASH",
+   "text": "C and D survive to the final axis: does any factual mistake (even a one-month error) defeat the truth defense, or does the substantial-truth doctrine tolerate minor inaccuracies that do not change the sting? The single axis they fight on is the any-inaccuracy myth versus the substantial-truth doctrine."
+  },
+  {
+   "label": "CALL",
+   "text": "The Gold Key resolves the axis. Defamation requires falsity, but a statement is not false if the gist or sting is substantially true. The wrong-month inaccuracy does not change the sting (license revoked for failing a state safety inspection), so substantial truth is the defense. C wins; D is the any-inaccuracy myth."
+  }
+ ],
+ "studentScript": "Step 1: What is the defamatory sting? The sting is 'childcare license revoked for failing a state safety inspection.' Step 2: Is the sting true? Yes — the license was revoked for failing a state safety inspection. The wrong month (May vs. June) is a minor inaccuracy. Step 3: Apply the substantial-truth doctrine. Gold Key: a statement is not false if the gist or sting is substantially true. Minor inaccuracies that do not change the sting are tolerated. The wrong-month inaccuracy does not change the sting. Substantial truth is the defense. Choose C.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The student treats 'private newsletter' as automatically privileged. Absolute privilege has narrow, traditional applications (legislators, judges, witnesses, executive officials) and does not extend to private newsletters. The answer text itself states a rule that is not the law.",
+   "lawyer": "Absolute privilege is reserved for institutional speakers (legislators, judges, witnesses in judicial proceedings, executive officials speaking on matters of state). A private newsletter is not within that set. Restatement (Second) of Torts § 585-589.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The student treats 'license was revoked' as a subjective statement. License status is a verifiable fact; 'license was revoked' is a factual assertion, not an opinion. The opinion defense requires a non-verifiable statement.",
+   "lawyer": "The opinion defense requires a statement that cannot be proven true or false. Milkovich v. Lorain Journal Co., 497 U.S. 1, 19-20 (1990). A statement that a license was revoked is a verifiable fact and is not protected opinion.",
+   "mold": "fabricated_rule"
+  },
+  "C": {
+   "signal": "After the dominant trap (D, any-inaccuracy myth) is recognized as the doctrinal misconception and the two single-filter distractors (A, B) are cut, the residual is substantial truth. The Gold Key resolves the axis: a statement is not false if the gist or sting is substantially true.",
+   "lawyer": "Substantial truth is the defense. The defamatory sting (license revoked for failing a state safety inspection) is true. The wrong month is a minor inaccuracy that does not change the sting. Milkovich v. Lorain Journal Co., 497 U.S. 1, 19-20 (1990); Masson v. New Yorker Magazine, Inc., 501 U.S. 496, 513-17 (1991).",
+   "mold": null
+  },
+  "D": {
+   "signal": "The student half-remembers 'defamation requires truth' and reasons that any mistake (even a one-month error) makes the statement false. The Gold Key resolves the axis: defamation requires falsity, but a statement is not false if the gist or sting is substantially true. The wrong-month inaccuracy does not change the sting.",
+   "lawyer": "Defamation requires falsity, but a statement is not false if the gist or sting is substantially true. The wrong-month inaccuracy does not change the sting here. Masson v. New Yorker Magazine, Inc., 501 U.S. 496, 513-17 (1991).",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-HOMESCHOOL-COOP-MONTH-01",
+   "statement": "Defamation requires falsity, but a statement is not false if the gist or sting is substantially true. Minor inaccuracies that do not change the gist or sting (such as a wrong month) are tolerated.",
+   "trigger": "private publication misstates a date (month) of an otherwise-true defamatory fact; the plaintiff sues based only on the wrong date",
+   "unlocks": "any-inaccuracy dominant trap (D)",
+   "authority": "Milkovich v. Lorain Journal Co., 497 U.S. 1, 19-20 (1990); Masson v. New Yorker Magazine, Inc., 501 U.S. 496, 513-17 (1991)"
+  }
+ ],
  "silverKeys": [],
- "remediation": null
+ "remediation": {
+  "title": "Defamation requires falsity; substantial truth tolerates minor inaccuracies",
+  "signal": "A private publication misstates a date (month) of an otherwise-true defamatory fact (license revocation, criminal charge, professional sanction, etc.); the plaintiff sues based only on the wrong date. The call is the best defense.",
+  "studentMove": "Identify the defamatory sting. If the sting is true — even if a minor detail (month, day, year) is wrong — substantial truth is the defense. The 'any mistake defeats truth' framing is the any-inaccuracy myth.",
+  "tinyRule": "A statement is not defamatory if the gist or sting is substantially true, even if minor details are inaccurate.",
+  "trap": "The any-inaccuracy myth is the dominant trap. Many students half-remember that 'defamation requires truth' and reason that any mistake (even a one-month error) makes the statement false."
+ }
 }

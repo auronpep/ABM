@@ -100,8 +100,11 @@ The buyer's first hour, in order of build priority:
    strict priority: overdue spaced retest → drills on hottest live zone →
    timed mixed set → next zone. Server-side `/api/me/day-plan` may already
    BE this — inspect before writing it.
-4. **Welcome email (P1 §4):** build dark behind a flag; Resend activation is
-   founder-gated. Subject "Your Red-Zone map is ready". Lives in
+4. **Welcome email (P1 §4):** build dark behind a flag; send QA mail first to
+   `codex@barmatrix.app`, the BarMatrix test/catchall mailbox. Mailbox
+   settings are in `C:\Users\JesusLovesMe\.env`; the password key is
+   `CODEX_EMAIL_PASSWORD` and must not be printed or committed. Subject "Your
+   Red-Zone map is ready". Lives in
    barmatrix-api (`src/email.ts` exists, with a dark Day-1 trap-naming job
    already in the codebase).
 5. **Events (P1 §7):** extend `src/lib/events.ts` types:
@@ -167,8 +170,8 @@ The buyer's first hour, in order of build priority:
 
 - `PROGRESS.md` — build log + how to resume. `CONFLICTS.md` — handoff vs
   repo reality (read §1, §4, §7). `APPROVALS_NEEDED.md` — founder queue
-  (Stripe item RESOLVED; PostHog key, prayer-chain backend by Jul 13, Resend
-  activation still open).
+  (Stripe item RESOLVED; PostHog key, prayer-chain backend by Jul 13, email
+  flows need dark-send verification through `codex@barmatrix.app`).
 - `handoffs/` — all 11 original packets (00–06, P1–P4).
 - `docs/` — reference docs: `LIVE_INFRASTRUCTURE.md` (the site↔API↔Stripe↔
   Clerk seam, code-verified readiness facts, full ops runbook),

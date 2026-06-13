@@ -46,9 +46,11 @@ orchestration of existing pieces:
 
 ## 3. Weekly Repair Report email
 
-One email per week via existing Resend wiring. **ACTIVATION IS
-FOUNDER-GATED — build dark behind a flag** (same protocol as the P1
-welcome email; do not send without explicit founder approval).
+One email per week via existing Resend wiring. **Build dark behind a flag**
+(same protocol as the P1 welcome email; do not send to customers without
+explicit founder approval). Dark-send QA goes to `codex@barmatrix.app`, the
+BarMatrix test/catchall mailbox; mailbox settings are in
+`C:\Users\JesusLovesMe\.env` and the password key is `CODEX_EMAIL_PASSWORD`.
 
 - Content (plain, short): zones repaired this week · what's holding
   (retests passed) · the next scheduled retest · ONE review truth from
@@ -62,9 +64,9 @@ welcome email; do not send without explicit founder approval).
 
 ## 4. Welcome email (carry-over from P1 §4)
 
-Still founder-gated, still pending. If approval lands during this work,
-ship it from the existing P1 spec (subject: "Your Red-Zone map is
-ready"). Listed here so it isn't orphaned.
+Still pending. Ship it from the existing P1 spec (subject: "Your Red-Zone map
+is ready") and dark-send first to `codex@barmatrix.app`. Listed here so it
+isn't orphaned.
 
 ## 5. Events (doc 04 rules)
 

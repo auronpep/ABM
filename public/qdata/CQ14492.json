@@ -1,0 +1,92 @@
+{
+ "id": "CQ14492",
+ "title": "Psalm Lantern Kits",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Installment contracts; perfect-tender exception; cure; cancellation",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia operates a private craft workshop that sells devotional event supplies. In a signed writing, Lydia contracted with Daniel, who runs a private Bible-memory retreat, for the sale to Daniel of 40 identical Psalm 23 shadow-lantern kits. The writing called for 20 kits to be delivered on October 10 and the remaining 20 kits on October 24. The writing did not state the place of delivery or the time or place for payment. On October 10, Lydia tendered 19 kits and said, “One kit was crushed in the courier’s truck on its way from my supplier to me, but I will deliver a replacement within four days.”\n\nWhich statement is correct?",
+ "call": "Which statement is correct?",
+ "choices": {
+  "A": "Daniel is entitled to accept any number of the 19 kits and reject the rest, but is not entitled to cancel the contract as to any rejected kits or the lot due on October 24.",
+  "B": "Daniel must accept the 19 kits and is not entitled to cancel the rest of the contract.",
+  "C": "Daniel is entitled to accept any number of the 19 kits, reject the rest, and cancel the contract both as to any rejected kits and the lot due on October 24.",
+  "D": "Daniel must accept the 19 kits but is entitled to cancel the rest of the contract."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The writing calls for goods in separate dated lots, so the answer must be checked on two axes: the current lot and the remaining contract. Silver Key: read the choices as a 2×2 matrix: current lot accept/reject × future contract cancel/no cancel. Gold Key: an installment-contract cure problem does not use ordinary perfect tender. Because Lydia promised a prompt replacement for the missing kit, Daniel must accept the 19 kits tendered and cannot cancel the remaining lot.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks for the correct remedy statement. The answer array is a 2×2 matrix: current lot accept/reject and future contract cancel/no cancel."
+  },
+  {
+   "label": "CUT A",
+   "text": "A uses the ordinary perfect-tender framework: accept some and reject the rest. That is a right-area rule in the wrong context. Filter: NOT_RESPONSIVE. Mold: bait_doctrine."
+  },
+  {
+   "label": "CUT C",
+   "text": "C uses the same wrong ordinary-perfect-tender frame and adds cancellation. The stem’s separate lots plus prompt replacement promise trigger the installment-contract Gold Key. Filter: NOT_RESPONSIVE. Mold: bait_doctrine."
+  },
+  {
+   "label": "CUT D",
+   "text": "D gets the current-lot axis right but overextends the remedy to cancellation of the rest of the contract. That pushes a real remedy beyond the facts. Filter: NOT_TRUE. Mold: extreme_of_range."
+  },
+  {
+   "label": "CALL",
+   "text": "Apply the Gold Key and the answer-array Silver Key. The only answer satisfying both axes is B."
+  }
+ ],
+ "studentScript": "Two dated lots plus a quick replacement promise. Use the installment Gold Key, not ordinary perfect tender. Current lot: accept. Whole contract: no cancellation. B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A says Daniel can accept some and reject the rest; that is the neighboring single-delivery frame.",
+   "lawyer": "UCC § 2-612 displaces ordinary perfect tender for this installment contract with cure assurance.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "B satisfies both matrix axes: must accept the current tender and cannot cancel the future lot.",
+   "lawyer": "UCC § 2-612 supports acceptance of the installment and no whole-contract cancellation on these facts.",
+   "mold": null
+  },
+  "C": {
+   "signal": "C treats the short lot like ordinary perfect tender and adds cancellation.",
+   "lawyer": "The installment rule requires more than a curable shortfall before rejection or whole-contract cancellation.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "D gets current acceptance right but overreaches on cancellation.",
+   "lawyer": "Whole-contract cancellation requires substantial impairment of the whole contract under UCC § 2-612(3).",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-PSALM-LANTERN-KITS-01",
+   "statement": "In a UCC installment contract, the perfect-tender rule yields to the installment rule: a curable nonconforming installment with adequate assurance of cure must be accepted, and the whole contract can be canceled only for substantial impairment of the whole.",
+   "trigger": "goods contract calls for separate lots on separate dates and the seller promises a prompt replacement",
+   "unlocks": "the perfect-tender trap that lets the buyer reject part of the current lot or cancel future lots after a curable short installment",
+   "authority": "UCC § 2-612(1)-(3)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-PSALM-LANTERN-KITS-01",
+   "statement": "Read the choices as a 2x2 matrix: current lot accept/reject and future contract cancel/no cancel. The right answer must satisfy both axes, not just one.",
+   "trigger": "four choices pair the same two remedy axes in every combination",
+   "unlocks": "the accept/reject plus cancel/no-cancel answer matrix",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Installment Cure Beats Perfect Tender",
+  "signal": "Goods due in separate dated lots plus prompt replacement promise.",
+  "studentMove": "Do not run ordinary perfect tender; run the installment matrix.",
+  "tinyRule": "A curable nonconforming installment with assurance must be accepted; canceling the whole contract requires substantial impairment of the whole.",
+  "trap": "ordinary perfect-tender partial rejection"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "id": "CQ15052",
+ "title": "Psalm Path",
+ "subject": "Real Property",
+ "topic": "Titles",
+ "subtopic": "Risk of Loss and Equitable Conversion",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Ruth, the personal representative of Lydia’s estate, has just received the purchase price from Peter after signing a deed for Lydia’s “Psalm Path” hillside lot. Nine months earlier, Lydia had made a valid, unconditional contract to sell that lot to Peter, who planned to use it for a private family Scripture garden. Before any deed was delivered, Lydia died suddenly during a choir-trip bus accident. Lydia’s old will, admitted to probate, gives “all my real property” to her son Timothy and the residue of her estate to her daughter Martha. No other will provision matters.\n\nWhat will determine who receives the sale proceeds?",
+ "call": "What will determine who receives the sale proceeds?",
+ "choices": {
+  "A": "Whether Ruth’s deed to Peter was signed under a probate-court order.",
+  "B": "Whether the jurisdiction recognizes equitable conversion for land-sale contracts.",
+  "C": "Whether the closing date listed in Lydia and Peter’s contract fell before or after Lydia died.",
+  "D": "Whether Lydia’s gift to Timothy described the Psalm Path by name or instead said “all my real property.”"
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The call asks what will determine who receives the sale proceeds. The answer is the governing land-sale rule in the jurisdiction. Gold Key: after a binding land-sale contract with no unmet contingency, jurisdictions that apply equitable conversion treat the buyer as the equitable owner of the land and the seller as owning the right to the purchase money. Silver Key: when the call asks what determines the proceeds, choose the rule-selector answer before chasing the will paragraph, closing date, or probate mechanics.\n\nIf the jurisdiction recognizes equitable conversion, Lydia’s remaining interest at death is treated as personalty: the purchase money. That makes the residue side of the estate the relevant destination. If the jurisdiction does not recognize it, the allocation can change. So the determinant is whether the jurisdiction recognizes equitable conversion.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks for the determinant of who receives sale proceeds. It is not asking who signed the deed, whether the closing date passed, or how specific the will wording was."
+  },
+  {
+   "label": "CUT A — procedural-frame misfit",
+   "text": "A answers authority-to-convey, not proceeds allocation. Anchor-assisted cut."
+  },
+  {
+   "label": "CUT C — wrong timing element",
+   "text": "C focuses on scheduled closing date. The Gold Key shifts the operative trigger to the binding contract plus jurisdictional adoption. Anchor-assisted cut."
+  },
+  {
+   "label": "CUT D — bait-doctrine / wrong frame",
+   "text": "D focuses on will-construction detail. That is attractive, but it comes after the conversion question. Anchor-assisted cut."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two-choice clash remains after the anchor-assisted cuts."
+  },
+  {
+   "label": "CALL",
+   "text": "B is the residual because it names the governing rule-selector: whether the jurisdiction recognizes equitable conversion."
+  }
+ ],
+ "studentScript": "Call asks what determines proceeds. Contract before death plus deed after death raises equitable conversion. Cut court order, closing date, and will wording as wrong determinants. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice answers authority to sign a deed, not what determines proceeds allocation.",
+   "lawyer": "Equitable conversion, if adopted, controls the character of the seller’s interest; a court order is not the determinant.",
+   "mold": "misfit"
+  },
+  "B": {
+   "signal": "This is the only choice that names the legal lever that decides the proceeds.",
+   "lawyer": "Recognized equitable conversion treats the seller’s interest as purchase money and the buyer’s as equitable ownership.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice chases a timing detail rather than the legal rule that makes timing matter.",
+   "lawyer": "Under equitable conversion, the key timing is the binding contract, not the originally scheduled closing date.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The choice answers a will-construction question before deciding whether the seller’s interest was still land.",
+   "lawyer": "If equitable conversion applies, the seller’s remaining interest is purchase money, so the real-property devise wording does not determine the proceeds.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-EQUITABLE-CONVERSION-01",
+   "statement": "After a binding land-sale contract with no unmet contingency, jurisdictions that apply equitable conversion treat the buyer as owner of the land in equity and the seller as owner of the purchase money. If the seller dies before closing, the sale proceeds pass as personalty, not as the land.",
+   "trigger": "contract signed before seller death; closing after death; will splits real property from residue",
+   "unlocks": "the rule-selector answer and the will-wording, closing-date, and court-order traps",
+   "authority": "Hays v. Coe; In re Estate of Jesseman; First State Bank v. United States"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-PSALM-PATH-01",
+   "statement": "When the call asks what determines who receives proceeds, pick the answer that selects the governing rule. Do not chase the will paragraph, closing date, or probate mechanics until the rule-selector is set.",
+   "trigger": "call wording asks 'what will determine who receives the proceeds'",
+   "unlocks": "rule-selector answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Equitable conversion: land becomes purchase money",
+  "signal": "Binding land-sale contract, seller dies before deed, will separates realty from residue.",
+  "studentMove": "Ask whether the jurisdiction treats the seller’s interest as purchase money at contract formation.",
+  "tinyRule": "Equitable conversion turns the seller’s remaining interest into personalty and the buyer’s interest into equitable land ownership.",
+  "trap": "Will wording and closing-date details feel dispositive before the conversion rule is selected."
+ }
+}

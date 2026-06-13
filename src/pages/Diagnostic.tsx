@@ -14,7 +14,7 @@ import { synthesizeZones } from "../funnel/zones.ts";
 import { track } from "../lib/events.ts";
 import { markStateChanged } from "../lib/sync.ts";
 import { VerseLine } from "../components/VerseLine.tsx";
-import type { MiniResult, MissRecord } from "../funnel/types.ts";
+import type { ChoiceId, MiniResult, MissRecord } from "../funnel/types.ts";
 import type { PageProps } from "../types.ts";
 
 type Phase = "intro" | "q" | "result";
@@ -29,9 +29,9 @@ interface DiagQuestion {
   subject: string;
   stem: string;
   call: string | null;
-  choices: Record<string, string>;
-  key: string;
-  choiceSignals: Record<string, DiagChoiceSignal | null>;
+  choices: Record<ChoiceId, string>;
+  key: ChoiceId;
+  choiceSignals: Record<ChoiceId, DiagChoiceSignal | null>;
   silverKeys: Array<{ statement: string | null }>;
 }
 
@@ -106,6 +106,8 @@ export function Diagnostic({ navigate }: PageProps) {
           title: question.title,
           subject: question.subject,
           picked,
+          correct: question.key,
+          correctText: question.choices[question.key],
           trapName: trapLabelForMold(mold),
           instinct: null,
           filter_broken: filterForMold(mold),

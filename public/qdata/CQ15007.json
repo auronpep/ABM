@@ -1,0 +1,88 @@
+{
+ "id": "CQ15007",
+ "title": "Galilee Harvest Loft",
+ "subject": "Real Property",
+ "topic": "Ownership",
+ "subtopic": "Ownership",
+ "difficulty": "44% correct",
+ "tension": null,
+ "stem": "Daniel and Lydia owned Galilee Harvest Loft as joint tenants. The property included two separate workshop spaces. Daniel used one space for a small Christian printmaking studio and rented the other to Stephen, who restored old Bible maps.\n\nDuring an argument over damaged printing plates, Daniel struck Stephen and injured him. Stephen obtained and properly recorded a judgment for $16,000 against Daniel. The jurisdiction’s statute provides:\n\nAny judgment properly recorded shall, for 10 years from recording, be a lien on the real property then owned or later acquired by the person against whom the judgment is entered.\n\nLydia lived several states away and did not learn of Stephen’s judgment until later. Before Stephen levied, executed, or otherwise took further action against Daniel’s interest, Daniel died. The common-law joint tenancy is unmodified by statute.\n\nLydia then brought an appropriate action against Stephen to quiet title to Galilee Harvest Loft. The court should hold that Stephen has:",
+ "call": "The court should hold that Stephen has what lien interest, if any, in Galilee Harvest Loft.",
+ "choices": {
+  "A": "No lien, because Lydia had no actual notice of Stephen’s judgment until after Daniel died.",
+  "B": "A lien against Daniel’s undivided one-half interest in Galilee Harvest Loft, because Stephen’s judgment was recorded before Daniel died.",
+  "C": "No lien, because Daniel’s death terminated the interest to which Stephen’s lien attached.",
+  "D": "A lien against all of Galilee Harvest Loft, because Stephen occupied one of the workshop spaces while Daniel and Lydia held title as joint tenants."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The judgment lien attached only to Daniel’s interest. Daniel held that interest as a joint tenant, which means it was subject to survivorship. Because Stephen recorded the judgment but did not execute, levy, sell, or otherwise sever Daniel’s joint-tenancy interest before Daniel died, Daniel’s interest ended at death. Lydia’s survivorship interest then left her owning the whole property free of Stephen’s lien.\n\nGold Key: A lien against one joint tenant does not itself sever the joint tenancy. The creditor must act before the debtor joint tenant dies, or the survivorship feature can wipe out the debtor’s attachable interest.\n\nSilver Key: Treat the answer array as a timing-and-object pair: lien on whose interest, and did that interest still exist after death?",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Notice is a reason mismatch. It gives a human-fairness explanation for the correct result, but it does not answer the property mechanism."
+  },
+  {
+   "label": "CUT D",
+   "text": "Whole-property lien is an overreach. The judgment is against Daniel, not Lydia or the whole ownership estate."
+  },
+  {
+   "label": "CLASH B vs C",
+   "text": "Both are about the lien’s object after recording. The axis is whether Daniel’s recorded-lien interest survived Daniel’s death."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "Joint tenancy survivorship controls. Daniel’s interest ended at death before Stephen severed it. C remains."
+  }
+ ],
+ "studentScript": "Cut notice. Cut whole-property overreach. Clash recorded-half against death-ended-interest. Apply the joint-tenancy lien Gold Key. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The because-clause points to Lydia’s knowledge, while the stem asks what Stephen’s lien reaches.",
+   "lawyer": "Actual notice is not the reason the lien fails; survivorship and the non-severing nature of the lien control.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This choice treats recording as enough to preserve Daniel’s half after death.",
+   "lawyer": "A judgment lien against one joint tenant does not sever the joint tenancy by recording alone; if the debtor dies first, the debtor’s interest is extinguished.",
+   "mold": "backwards"
+  },
+  "C": {
+   "signal": "It names the object of the lien and the death event that ended that object.",
+   "lawyer": "Correct under the common-law survivorship rule: Daniel’s attachable joint-tenancy interest ended at death before severance.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The judgment is against Daniel, but the answer expands it to all of Lydia’s property too.",
+   "lawyer": "A judgment against one joint tenant does not attach to the nondebtor joint tenant’s interest.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-JOINT-TENANCY-LIEN-01",
+   "statement": "A lien against one joint tenant’s interest does not itself sever the joint tenancy. If the debtor joint tenant dies before enforcement or severance, the survivor takes free of that lien.",
+   "trigger": "judgment recorded against one joint tenant, no execution or severance before death",
+   "unlocks": "dominant trap B",
+   "authority": "Zeigler v. Bonnell; Harms v. Sprague line"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-JOINT-TENANCY-LIEN-01",
+   "statement": "Track two things separately: whose interest the lien reached, and whether that interest still existed when the court is asked to quiet title.",
+   "trigger": "answers split between whole property, debtor half, and no lien",
+   "unlocks": "lien-object plus timing array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Joint Tenant Lien Dies With Debtor Interest",
+  "signal": "Creditor records against one joint tenant, but debtor dies before enforcement.",
+  "studentMove": "Ask whether the lien severed the joint tenancy before death.",
+  "tinyRule": "Recording alone is not severance; death can erase the debtor’s attachable joint-tenancy interest.",
+  "trap": "Recorded-before-death feels like enough."
+ }
+}

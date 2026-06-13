@@ -1,0 +1,95 @@
+{
+ "id": "CQ14697",
+ "title": "Hymn Stand Refund",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Inchoate Crimes",
+ "subtopic": "Attempt",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "At a private Christian music festival, Lydia’s booth rented portable hymn stands for a $720 cash deposit. Paul returned one of the stands and asked Daniel, who was running the booth’s refund cage, for the deposit. Daniel refused because the booth’s policy required a stamped claim card and the renter’s signature on the refund log.\n\nPaul was stranded after the festival and needed money for a bus ticket and dinner. He slid his hand inside a bulky Bible cover and said, “Open the drawer now, or I will hurt you.” Daniel knew Paul from neighborhood Bible studies and did not believe that Paul was violent or carrying a weapon. Still, moved by compassion, Daniel handed Paul $720 from the drawer. Paul walked away without signing the refund log.\n\nIf Paul is guilty of any crime, he is most likely guilty of",
+ "call": "If Paul is guilty of any crime, he is most likely guilty of",
+ "choices": {
+  "A": "larceny by trick.",
+  "B": "theft by false pretenses.",
+  "C": "robbery.",
+  "D": "attempted robbery."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Paul tried to obtain cash by a threat of immediate harm and took a direct step toward that force-based taking. The reason the completed robbery fails is not that Paul changed his mind or stopped short. It fails because Daniel did not part with the cash out of fear or intimidation; he paid from compassion.\n\nGold Key: factual impossibility does not defeat an attempt. If the defendant tries to commit the target crime and completion fails because the facts do not line up as he expected, the attempt remains.\n\nSilver Key: read the answer array as four crime mechanics: completed force crime, attempted force crime, fraud-title crime, fraud-possession crime. The causal fact is Daniel’s reason for paying: compassion, not fear and not deception.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — larceny by trick",
+   "text": "This is a fraud-possession frame. The stem gives no deception that caused Daniel to surrender possession. Cut as NOT_RESPONSIVE, bait_doctrine."
+  },
+  {
+   "label": "CUT B — theft by false pretenses",
+   "text": "This is a fraud-title frame. The stem gives no false representation that caused Daniel to transfer title to the cash. Cut as NOT_RESPONSIVE, bait_doctrine."
+  },
+  {
+   "label": "CLASH C vs D — robbery vs attempted robbery",
+   "text": "Axis: completed force taking or attempted force taking. Splitting fact: Daniel did not believe the threat and paid from compassion. That defeats completed robbery and leaves attempted robbery."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "The residue is attempt. Factual impossibility does not defeat attempt. D survives."
+  }
+ ],
+ "studentScript": "Cut the fraud labels because no lie caused the cash transfer. Clash robbery against attempted robbery. Daniel paid from compassion, not fear, so completed robbery falls and attempted robbery survives.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This label needs deception as the transfer mechanic, but the stem’s transfer mechanic is compassion after a threat.",
+   "lawyer": "Larceny by trick requires deception causing transfer of possession only; the transfer here was not deception-caused.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This label needs deception causing title transfer, but no lie caused Daniel to pay.",
+   "lawyer": "False pretenses requires obtaining title by misrepresentation; no misrepresentation caused the cash transfer.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This choice hears the threat and the cash transfer, but misses the splitting fact: Daniel paid from compassion, not fear.",
+   "lawyer": "Completed robbery requires a taking by force or threat-caused fear/intimidation. That causal link is absent.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The completed robbery fact failed, but Paul still tried to get cash by threat.",
+   "lawyer": "Attempted robbery is supported because Paul intended robbery and took a substantial step; factual impossibility does not defeat attempt.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-HYMN-STAND-01",
+   "statement": "Factual impossibility is not a defense to attempt. If the defendant tries to commit the target crime and completion fails only because the facts are not as he expected, the attempt can still be guilty.",
+   "trigger": "threat plus failed completed-offense fact",
+   "unlocks": "completed robbery vs attempted robbery",
+   "authority": "Model Penal Code § 5.01(1)(a), (c)"
+  },
+  {
+   "id": "GK-CRIMINAL-HYMN-STAND-02",
+   "statement": "Robbery is a force/fear taking, while false pretenses and larceny by trick are deception-taking labels. Match the crime label to the cause of the transfer.",
+   "trigger": "cash transfer after threat with incomplete refund paperwork",
+   "unlocks": "force-crime vs fraud-crime distractors",
+   "authority": "Common-law robbery; common-law false pretenses and larceny by trick"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-HYMN-STAND-01",
+   "statement": "Read the four choices as mechanics: completed force, attempted force, fraud-title, and fraud-possession. First ask why the property moved; then choose completed or attempted.",
+   "trigger": "answer set contains robbery, attempted robbery, false pretenses, and larceny by trick",
+   "unlocks": "crime-label quartet",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Threat, transfer, cause",
+  "signal": "Threat plus property transfer, but the victim did not yield because of fear.",
+  "studentMove": "Split completed robbery from attempted robbery on the cause of transfer.",
+  "tinyRule": "No fear-caused transfer defeats completed robbery; factual impossibility does not defeat attempt.",
+  "trap": "completed robbery label"
+ }
+}

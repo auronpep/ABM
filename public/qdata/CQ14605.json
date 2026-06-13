@@ -1,0 +1,88 @@
+{
+ "id": "CQ14605",
+ "title": "Psalm Printing Van Fire",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Alibi burden / Right to Fair Trial",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At Daniel’s arson trial, the judge first told the jury that every element of the charged crime had to be found beyond a reasonable doubt. The prosecution’s evidence was that, at about 8:20 p.m. on April 14, a man whom witnesses identified as Daniel went behind Lydia’s privately owned Bible-verse print shop, poured lighter fluid on Lydia’s delivery van, and set the van on fire. Daniel did not testify. His cousin Ruth testified that, at that time, Daniel was 220 miles away helping her host a Bible-memory game at a retreat center. On cross-examination, Ruth admitted that she had earlier told police that Daniel was not with her that evening, but she said she had confused that retreat weekend with another date.\n\nAs to Daniel’s claim of alibi, which of the following additional instructions would be proper?",
+ "call": "As to Daniel's claim of alibi, which of the following additional instructions would be proper?",
+ "choices": {
+  "A": "Before you may consider Daniel's claim of alibi, you must decide whether he has produced sufficient evidence to raise the issue.",
+  "B": "If you have a reasonable doubt as to whether Daniel was present behind the Bible-verse print shop at about 8:20 p.m. on April 14, you must find him not guilty.",
+  "C": "If Daniel's evidence has caused you to have a reasonable doubt as to whether he set fire to the van, you must find him not guilty.",
+  "D": "Alibi is a matter of defense and so must be established by Daniel; however, the burden of persuasion is by a preponderance of the evidence, not beyond a reasonable doubt."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the proper instruction. It ties the jury’s reasonable doubt to the fact the alibi actually contests: whether Daniel was present at the place and time of the charged crime.\n\nGold Key: An alibi is not the defendant’s proof burden. It attacks presence or identity, so the prosecution still must prove presence beyond a reasonable doubt.\n\nSilver Key: In an alibi-instruction array, scan the target of the doubt. The clean target is presence at the scene, not defendant’s proof, defendant’s evidence, or a jury-screening gate.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "The phrase “must be established by Daniel” reverses the burden. That is not visible as pure grammar; it is an anchor-assisted burden-direction cut. Gold Key kills it."
+  },
+  {
+   "label": "CUT A",
+   "text": "The choice invents a preliminary jury gate. It sounds procedural, but it inserts a condition not in the alibi-burden rule. Gold Key kills the gate."
+  },
+  {
+   "label": "CLASH B vs C",
+   "text": "Both use reasonable-doubt language. The axis is: reasonable doubt about presence versus reasonable doubt caused by defendant’s evidence. The alibi contests presence at the place and time of the crime. B names that target. C drifts to the defense-evidence frame."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual Call needed. B is the true-and-responsive residual."
+  }
+ ],
+ "studentScript": "Alibi means not there. The state must prove he was there. Pick the instruction that says reasonable doubt about presence equals not guilty.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice adds a threshold before the jury may consider evidence.",
+   "lawyer": "Alibi evidence is not subject to this special jury production gate.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The choice targets reasonable doubt about presence at the scene.",
+   "lawyer": "This matches the alibi burden rule.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice says reasonable doubt but attaches it to Daniel's evidence.",
+   "lawyer": "The proper burden remains on the prosecution to prove presence.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The choice makes Daniel prove the alibi.",
+   "lawyer": "Alibi negates presence; burden does not shift.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-ALIBI-PRESENCE-01",
+   "statement": "An alibi is not the defendant's proof burden. It attacks presence or identity, so the prosecution still must prove presence beyond a reasonable doubt.",
+   "trigger": "the defendant offers evidence that he was somewhere else when the charged crime occurred",
+   "unlocks": "burden-shift traps that make the defendant prove the alibi or make the defendant's evidence carry the doubt",
+   "authority": "In re Winship, 397 U.S. 358 (1970); Ninth Circuit Model Criminal Jury Instruction 5.1 Alibi"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-ALIBI-PRESENCE-01",
+   "statement": "In an alibi-instruction array, ask what the instruction makes the jury doubt: presence at the scene is the clean target; defendant's proof, defendant's evidence, or a threshold gate is the trap.",
+   "trigger": "two choices both say reasonable doubt but only one ties the doubt to presence at the crime scene",
+   "unlocks": "the high-overlap pair between a proper presence instruction and a defense-evidence instruction",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Alibi attacks presence",
+  "signal": "Defendant offers evidence of being somewhere else.",
+  "studentMove": "Keep the burden on the state and target presence.",
+  "tinyRule": "State proves presence beyond a reasonable doubt.",
+  "trap": "defendant burden / production gate / defendant evidence wording"
+ }
+}

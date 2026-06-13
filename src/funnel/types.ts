@@ -54,6 +54,8 @@ export interface MissRecord {
   title: string;
   subject: string;
   picked: ChoiceId;
+  correct: ChoiceId;
+  correctText: string;
   trapName: string;
   instinct: Instinct | null;
   filter_broken: FilterBroken;

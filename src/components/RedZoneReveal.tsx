@@ -2,8 +2,10 @@
 // Auto-runs the forensic analysis 800ms after load; user can replay.
 import { useEffect, useMemo, useRef, useState } from "react";
 import { synthesizeZones } from "../funnel/zones.ts";
+import { apiClient } from "../lib/api-client.ts";
 import { checkoutUrl, rememberCheckoutIntent } from "../lib/checkoutFlow.ts";
 import { track } from "../lib/events.ts";
+import { useClerkAuth } from "../lib/use-clerk-auth.ts";
 import type { MissRecord } from "../funnel/types.ts";
 
 interface RedZoneRevealProps {
@@ -13,16 +15,21 @@ interface RedZoneRevealProps {
 
 const STAGE_MS = [800, 1500, 2200, 2900, 3600];
 
+type EnrollmentCheck = "anonymous" | "checking" | "enrolled" | "not-enrolled" | "unavailable";
+
 export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
   const reduced = useMemo(
     () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     [],
   );
   const [stage, setStage] = useState(0);
+  const [enrollmentCheck, setEnrollmentCheck] = useState<EnrollmentCheck>("checking");
   const timersRef = useRef<number[]>([]);
+  const { isLoaded: authLoaded, isSignedIn, getToken } = useClerkAuth();
 
   const { zones, singles } = useMemo(() => synthesizeZones(misses), [misses]);
   const survived = misses.length === 0;
+  const correctCount = totalQuestions - misses.length;
 
   const run = () => {
     timersRef.current.forEach(clearTimeout);
@@ -43,10 +50,38 @@ export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    if (!authLoaded) return;
+    if (!isSignedIn) {
+      setEnrollmentCheck("anonymous");
+      return;
+    }
+
+    let cancelled = false;
+    setEnrollmentCheck("checking");
+    getToken()
+      .then((token) => apiClient.account(token))
+      .then((account) => {
+        if (!cancelled) setEnrollmentCheck(account.enrolled ? "enrolled" : "not-enrolled");
+      })
+      .catch(() => {
+        if (!cancelled) setEnrollmentCheck("unavailable");
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [authLoaded, getToken, isSignedIn]);
+
   const startCheckout = (plan: "full" | "split") => {
     track("checkout_start", { plan, red_zones: zones.map((z) => z.name) });
     rememberCheckoutIntent({ plan, source: "diagnostic", after: "sign-up" });
     window.location.href = checkoutUrl({ plan, source: "diagnostic", after: "sign-up" });
+  };
+
+  const openDashboard = () => {
+    track("diagnostic_enrolled_next_step", { red_zones: zones.map((z) => z.name) });
+    window.location.href = "/dashboard";
   };
 
   return (
@@ -55,6 +90,22 @@ export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
       <h1 className="display display-lg" style={{ margin: "0 0 16px", maxWidth: "20ch" }}>
         {survived ? "Nothing got past you this time." : "Your wrong answers are a map."}
       </h1>
+      <div
+        className="rz-score-row"
+        style={{
+          border: "1px solid var(--rule)",
+          display: "inline-flex",
+          flexWrap: "wrap",
+          gap: 10,
+          marginBottom: 18,
+          padding: "8px 12px",
+        }}
+      >
+        <span className="qmeta">Score:</span>
+        <strong className="mono" style={{ fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+          {correctCount} of {totalQuestions} correct
+        </strong>
+      </div>
 
       {/* 1 — miss cards */}
       {!survived && (
@@ -65,6 +116,10 @@ export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
                 <div className="qmeta">{m.qid} · {m.subject}</div>
                 <div className="qtitle">{m.title}</div>
                 <div className="qmeta">Your pick: {m.picked}</div>
+                <div className="qmeta">
+                  Correct answer: {m.correct}
+                  {m.correctText ? <span> - {m.correctText}</span> : null}
+                </div>
               </div>
               <span className="rz-trap-chip">{m.trapName}</span>
             </div>
@@ -171,12 +226,15 @@ export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
           {/* ——— Checkout bridge (doc 05) ——— */}
           <div className="bridge">
             <div className="eyebrow">YOUR REPAIR PATH IS BUILT</div>
-            <h2>Every red zone above has a repair path waiting.</h2>
+            <h2>
+              {enrollmentCheck === "enrolled"
+                ? "Your enrolled repair path is ready."
+                : "Every red zone above has a repair path waiting."}
+            </h2>
             <p className="body">
-              The diagnostic found the patterns. The flagship repairs them: your full
-              Red-Zone map across all seven subjects, wrong-answer forensics on every miss,
-              targeted drills assigned per trap, timed retests until repaired patterns hold,
-              and boot camps for the trap families that keep returning.
+              {enrollmentCheck === "enrolled"
+                ? "The diagnostic found the patterns. Your paid BarMatrix access is already active, so continue into the dashboard and start the assigned repair path."
+                : "The diagnostic found the patterns. The flagship repairs them: your full Red-Zone map across all seven subjects, wrong-answer forensics on every miss, targeted drills assigned per trap, timed retests until repaired patterns hold, and boot camps for the trap families that keep returning."}
             </p>
             <ul className="bridge-list">
               <li>RED-ZONE MAP</li>
@@ -186,19 +244,49 @@ export function RedZoneReveal({ misses, totalQuestions }: RedZoneRevealProps) {
               <li>BOOT CAMPS</li>
               <li>PATTERN MASTERY BOARD</li>
             </ul>
-            <div className="bridge-price">
-              <p className="line1">BarMatrix Flagship — $999</p>
-              <p className="line2">or $500 today + $499 in 30 days</p>
-              <p className="line3">Limited July-cycle cohort seats available.</p>
-            </div>
-            <div className="bridge-buttons">
-              <button className="btn-funnel" onClick={() => startCheckout("full")}>
-                Enroll — $999
-              </button>
-              <button className="btn-funnel alt" onClick={() => startCheckout("split")}>
-                Start with $500
-              </button>
-            </div>
+            {enrollmentCheck === "checking" && (
+              <div className="bridge-price">
+                <p className="line1">Checking your enrollment…</p>
+                <p className="line2">If you just checked out, your dashboard will open next.</p>
+              </div>
+            )}
+            {enrollmentCheck === "enrolled" && (
+              <div className="bridge-buttons">
+                <button className="btn-funnel" onClick={openDashboard}>
+                  Open dashboard
+                </button>
+                <a className="btn-funnel alt" href="/account">
+                  Account status
+                </a>
+              </div>
+            )}
+            {(enrollmentCheck === "anonymous" || enrollmentCheck === "not-enrolled") && (
+              <>
+                <div className="bridge-price">
+                  <p className="line1">BarMatrix Flagship — $999</p>
+                  <p className="line2">or $500 today + $499 in 30 days</p>
+                  <p className="line3">Limited July-cycle cohort seats available.</p>
+                </div>
+                <div className="bridge-buttons">
+                  <button className="btn-funnel" onClick={() => startCheckout("full")}>
+                    Enroll — $999
+                  </button>
+                  <button className="btn-funnel alt" onClick={() => startCheckout("split")}>
+                    Start with $500
+                  </button>
+                </div>
+              </>
+            )}
+            {enrollmentCheck === "unavailable" && (
+              <div className="bridge-buttons">
+                <a className="btn-funnel" href="/account">
+                  Check account access
+                </a>
+                <a className="btn-funnel alt" href="/dashboard">
+                  Open dashboard
+                </a>
+              </div>
+            )}
             <div className="trust-block">
               <p>You&rsquo;ve already seen the method work — it just read your answers back to you.</p>
               <p>The verdict above isn&rsquo;t a guess. It was built from your own answers, trap by trap.</p>

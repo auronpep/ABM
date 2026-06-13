@@ -1,0 +1,88 @@
+{
+ "id": "CQ14472",
+ "title": "Lydias Lantern Wall",
+ "subject": "Contracts",
+ "topic": "Performance, Breach, and Discharge",
+ "subtopic": "Impracticability / assumed risk",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Barnabas Lanternworks, a for-profit maker of devotional event equipment, contracted in writing with Lydia’s private Scripture-retreat company to sell and deliver to Lydia a portable stained-glass verse wall using a new bioluminescent glass coating. The coating was then under development but had not yet been perfected by Barnabas. The price was far below the price of a comparable verse wall using ordinary LED panels.\n\nThe contract provided: “F.O.B. Lydia’s retreat warehouse, on or before May 14.”\n\nBefore May 14, after taking the order, Barnabas learned that the coating failed under ordinary indoor heat and that no maker could yet build a reliable verse wall using that coating. Barnabas notified Lydia that it was impossible for Barnabas or anyone else to build the promised verse wall “in the present state of the art.”\n\nIf Lydia sues Barnabas for failure to perform the contract, the court will probably decide the case in favor of",
+ "call": "If Lydia sues Barnabas for failure to perform the contract, the court will probably decide the case in favor of",
+ "choices": {
+  "A": "Barnabas, because a contract to build goods using technology under development imposes only a duty on the builder to use its best efforts to achieve the result contracted for.",
+  "B": "Lydia, because Barnabas assumed the risk, in the given circumstances, that the projected new coating would not work reliably.",
+  "C": "Barnabas, because its performance of the contract was objectively impossible.",
+  "D": "Lydia, because the law of impossibility does not apply to merchants under the applicable law."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Barnabas promised to deliver finished goods, not merely to conduct research. The stem gives the risk-allocation fact: Barnabas knew the coating was under development and not perfected when it made the contract. The later failure of that same projected method is the very risk Barnabas undertook.\n\nGold Key: Impracticability does not excuse a seller who took on the risk that a known, unperfected method would fail.\n\nSilver Key: When the array gives you “seller wins because no one can build it” against “buyer wins because the seller assumed the risk,” name the axis first: who owned the risk of the failed method? The fact that Barnabas knowingly contracted around an unperfected coating sends the answer to Lydia.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Only a duty to use best efforts” is a fabricated limitation. If the parties wanted a best-efforts contract, the stem needed language saying that."
+  },
+  {
+   "label": "CUT D",
+   "text": "“Impossibility does not apply to merchants” is a flat rule misstatement. This is an anchor cut, not a pure visual cut."
+  },
+  {
+   "label": "CLASH C vs B",
+   "text": "These two fight on one axis: impracticability excuse vs assumed risk. C says no one can build it, so Barnabas wins. B says Barnabas took the risk of that failure."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "The stem’s splitting fact is that Barnabas knew the coating was under development and not perfected when it promised a finished verse wall. That triggers the Gold Key. Risk allocation beats the impossibility trap. Residual: B."
+  }
+ ],
+ "studentScript": "No one can build it is not enough. Barnabas knew the method was unperfected when it promised the finished wall. Risk allocation decides. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer uses 'only' to reduce a delivery promise into best efforts without contract language doing that.",
+   "lawyer": "A best-efforts obligation would need to come from the contract or applicable law; this sale contract promised delivery of goods.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "It answers the risk-allocation axis and uses the key fact: Barnabas knew the coating was not perfected.",
+   "lawyer": "Under UCC § 2-615, the seller’s assumed greater obligation or assumed risk can defeat an impracticability excuse.",
+   "mold": null
+  },
+  "C": {
+   "signal": "It answers whether the technology failed, but not who bore the risk of that failure.",
+   "lawyer": "Even assuming impracticability, Barnabas is not excused if it assumed the risk of the failed experimental technology.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The answer gives a categorical rule about merchants; that must be checked against the anchor.",
+   "lawyer": "The applicable seller-excuse doctrine is not categorically unavailable because the seller is a merchant.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-IMPRAC-RISK-01",
+   "statement": "Impracticability does not excuse a seller who took on the risk that a known, unperfected method would fail. The risk-allocation fact beats the 'no one can do it yet' trap.",
+   "trigger": "seller knew the promised goods depended on unperfected technology but contracted to deliver the finished goods anyway",
+   "unlocks": "the dominant impossibility/impracticability trap",
+   "authority": "UCC § 2-615"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-IMPRAC-RISK-01",
+   "statement": "When the answer set has seller-wins impossibility against buyer-wins assumed risk, name the axis before choosing: who owned the risk of the failed method?",
+   "trigger": "promised finished goods plus known experimental method",
+   "unlocks": "impossibility versus assumed-risk tension",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Known experimental method means risk allocation",
+  "signal": "seller promises a finished product while knowing the method is under development",
+  "studentMove": "Do not stop at 'no one can build it'; ask who took the risk that the method would fail.",
+  "tinyRule": "A seller's impracticability excuse can fail when the seller assumed the risk of the contingency.",
+  "trap": "objective impossibility ends the case"
+ }
+}

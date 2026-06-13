@@ -1,0 +1,99 @@
+{
+ "id": "CQ15068",
+ "title": "Jubilee Yard",
+ "subject": "Real Property",
+ "topic": "Titles",
+ "subtopic": "Conveyance by Deed",
+ "difficulty": "not_supplied; source performance 29% correct",
+ "tension": null,
+ "stem": "Peter owned a narrow city garden parcel behind a private Christian bookstore, known as Jubilee Yard. Years earlier, Peter had promised Daniel that, if Peter ever decided to sell Jubilee Yard, Daniel would get the first chance to buy it.\n\nDaniel later left on a three-month Scripture-copying retreat in the mountains. Before leaving, Daniel added his sister Lydia as a joint signer on his checking and mobile-payment accounts so that she could pay his rent, utilities, and other bills while he was away.\n\nWhile Daniel was still away, Peter decided to sell Jubilee Yard and contacted Lydia. Lydia withdrew the necessary funds from Daniel’s account and paid Peter $31,000, the fair market value of Jubilee Yard. Peter executed and delivered to Lydia a deed in proper form purporting to convey Jubilee Yard to Daniel. Lydia promptly and properly recorded the deed.\n\nA few days later, Lydia learned that Daniel had died in a mountain accident two days before the deed was delivered. Daniel’s will, which has now been duly probated, leaves his entire estate to Barnabas House. Lydia is Daniel’s sole heir-at-law. There is no statute dealing with conveyances to dead persons.\n\nTitle to Jubilee Yard is now in whom?",
+ "call": "Title to Jubilee Yard is now in whom?",
+ "choices": {
+  "A": "Peter, free and clear.",
+  "B": "Peter, subject to a lien to secure $31,000 to Daniel’s estate.",
+  "C": "Barnabas House.",
+  "D": "Lydia."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the best answer.\n\nGold Key: A deed delivered to a grantee who had already died before delivery passes no title to that grantee. Daniel was already dead when Peter delivered the deed. Title therefore did not enter Daniel’s estate and could not pass by will to Barnabas House.\n\nGold Key: The paid-money fact still matters. Lydia paid Peter with Daniel’s funds. Peter keeps legal title, but not cleanly; the land is subject to a lien securing repayment to Daniel’s estate.\n\nSilver Key: The answer array contains a same-holder pair: Peter free and clear versus Peter subject to a lien. Once Peter is the surviving title holder, check whether the paid-money fact adds the lien qualifier.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks who has title now. This is not a will-only question, and not a recording-act question. It is a deed-validity threshold followed by a repayment qualifier."
+  },
+  {
+   "label": "CUT D",
+   "text": "Lydia is the helper, payer, recorder, and heir-at-law. But the deed names Daniel. If Daniel took title, the will names Barnabas House. If Daniel did not take title, Lydia’s helper role does not create title. Label: wrong_element, NOT_RESPONSIVE."
+  },
+  {
+   "label": "CLASH/CALL C",
+   "text": "Barnabas House is attractive only if Daniel owned Jubilee Yard before death distribution. The axis is: did title enter Daniel’s estate? Gold Key resolves the axis: a deed delivered to a dead grantee passes no title. Label: wrong_element, NOT_RESPONSIVE."
+  },
+  {
+   "label": "CLASH/CALL A",
+   "text": "Peter is the correct title holder, but the phrase “free and clear” fights B on the lien qualifier. Silver Key: same holder, different qualifier. Gold Key: paid purchase money for a failed conveyance creates repayment security. Label: extreme_of_range, NOT_TRUE."
+  },
+  {
+   "label": "Residual B",
+   "text": "B answers both layers: Peter holds title, and the lien accounts for Daniel’s money."
+  }
+ ],
+ "studentScript": "Stop the will path. Daniel died before delivery, so the deed gave Daniel nothing. Peter keeps title, but Daniel’s money bought the failed conveyance, so choose Peter subject to a lien.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Same-holder pair: this answer matches B on Peter but drops the lien qualifier.",
+   "lawyer": "Title remains with Peter, but equity secures return of Daniel’s purchase money.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "Combines the dead-grantee threshold with the paid-money qualifier.",
+   "lawyer": "A deed delivered to a deceased grantee passes no title; a vendee lien secures repayment.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This answer answers who takes from Daniel’s estate, not whether Daniel’s estate ever got title.",
+   "lawyer": "No title entered the estate; the devisee receives no title to the land.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The deed names Daniel; Lydia is not the named grantee.",
+   "lawyer": "Her payment, receipt, recording, and heir status do not vest title in her.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-DEAD_GRANTEE-01",
+   "statement": "A deed delivered to a grantee who had died before delivery is void at common law. The named grantee receives no title, so a will or heir chain cannot carry the land.",
+   "trigger": "The deed is delivered after the named grantee has already died, and the stem says no dead-person conveyance statute applies.",
+   "unlocks": "The devisee trap that assumes title first entered the dead grantee's estate.",
+   "authority": "Carlson v. Lindauer, citing Hunter v. Watson, states that a deed naming a dead person as grantee does not pass legal title."
+  },
+  {
+   "id": "GK-REAL_PROPERTY-VENDEE_LIEN-02",
+   "statement": "When a land sale fails after the buyer's money has been paid, equity can secure repayment through a purchaser/vendee lien against the land.",
+   "trigger": "Purchase money came from the intended grantee's funds, but the deed failed to pass title.",
+   "unlocks": "The owner-free-and-clear trap that stops after naming the title holder and ignores the paid-money fact.",
+   "authority": "Cox v. RKA Corp. describes the common-law vendee lien and the buyer's equitable right to recover payments when the vendor cannot convey title."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-JUBILEE-YARD-01",
+   "statement": "When two answers name the same current title holder but one adds a lien qualifier, do not stop at the holder's name. Check the paid-money fact before calling the title clean.",
+   "trigger": "Same owner appears in two choices and only the lien phrase differs.",
+   "unlocks": "The high-overlap pair between owner-free-and-clear and owner-subject-to-lien.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Dead grantee first; lien second",
+  "signal": "A deed names a grantee who had already died before delivery.",
+  "studentMove": "Stop the succession chain, then account for any money paid.",
+  "tinyRule": "Dead grantee gets no title; paid purchase money creates a repayment-security issue.",
+  "trap": "jumping from estate facts to the devisee before checking whether the estate ever received title"
+ }
+}

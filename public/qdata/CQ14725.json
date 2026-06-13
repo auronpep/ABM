@@ -1,0 +1,103 @@
+{
+ "id": "CQ14725",
+ "title": "Lydias Hymn Leaf",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Other Crimes",
+ "subtopic": "Crimes against Property",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At a Christian collectibles fair, Barnabas admired a smoke-darkened parchment leaf displaying a short hymn and a warm blessing over a missionary journey. Lydia, a skilled manuscript artist, told Barnabas that the leaf had been sent to her by a private Bible-memorabilia collector in Cyprus who wanted to remain unnamed, and that Lydia would not guarantee its authenticity. Before the fair, Lydia had aged a blank parchment, written the hymn leaf herself, and copied from a facsimile the signature style of Brother John, a beloved long-dead revival preacher, adding travel details that would make Christian memorabilia collectors think the leaf was his. Lydia knew collectors would be interested and hoped one would buy it. Barnabas paid Lydia $8,200 for the leaf. Later, analysis showed that the leaf was not authentic and that Lydia had written it.\n\nIn a jurisdiction that follows the common-law definition of forgery, Lydia has",
+ "call": "In a jurisdiction that follows the common-law definition of forgery, Lydia has",
+ "choices": {
+  "A": "not committed forgery, because the devotional page had no apparent legal significance, but has committed false pretenses, because she lied about the page’s source.",
+  "B": "committed forgery, because she created a false writing with intent to defraud, but has not committed false pretenses, because she refused to guarantee authenticity.",
+  "C": "not committed forgery, because the devotional page had no apparent legal significance, and has not committed false pretenses, because she refused to guarantee authenticity.",
+  "D": "committed both forgery and false pretenses."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is the only answer that keeps the two crime labels separate.\n\nGold Key: Common-law forgery has a legal-efficacy gate. A fake writing is not enough. The writing must be the kind that could matter legally if genuine. This hymn leaf is a collectible devotional page. It is not a contract, check, deed, will, certificate, or other writing with apparent legal effect.\n\nGold Key: False pretenses can rest on a material lie about source or provenance. Lydia did more than stay silent. She said the leaf came from a private Cyprus collector who wanted anonymity. That was a false statement about an existing or past fact, and Barnabas paid money because of the story.\n\nSilver Key: Read the answer array as a two-axis grid: forgery yes/no, then false pretenses yes/no. The correct box is no forgery / yes false pretenses.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "It is a half-truth. It names fake writing and intent, but skips legal efficacy. It also treats “no authenticity guarantee” as if that erases the source lie. Cut with Gold Keys 1 and 2."
+  },
+  {
+   "label": "CUT C",
+   "text": "It answers the wrong fraud fact. The no-forgery half is fine; the no-false-pretenses half looks only at authenticity. The stem gives a separate false source statement. Cut with Gold Key 2."
+  },
+  {
+   "label": "CUT D",
+   "text": "It is the dominant half-right combination. The false-pretense half is right, but the forgery half fails. Cut with Gold Key 1 and the Silver Key grid move."
+  },
+  {
+   "label": "Residual A",
+   "text": "The survivor is true and responsive: no common-law forgery, yes false pretenses."
+  },
+  {
+   "label": "CLASH",
+   "text": "No unresolved two-choice clash remains after the anchored cut."
+  },
+  {
+   "label": "CALL",
+   "text": "No Call is needed."
+  }
+ ],
+ "studentScript": "Forgery needs legal-effect writing. This hymn leaf is collectible, not legally effective, so no forgery. False pretenses needs a material lie that gets title to money. Lydia lied about the source and got the money. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Matches both Gold Keys: no legal-efficacy writing, but yes material provenance lie.",
+   "lawyer": "Common-law forgery fails for lack of legal efficacy; false pretenses is supported by title transfer to money induced by a knowing false source representation.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It hears fake writing and disclaimer, but skips legal efficacy and the source lie.",
+   "lawyer": "A false collectible page is not common-law forgery without apparent legal efficacy; false pretenses can rest on a material false provenance statement even without an authenticity warranty.",
+   "mold": "half_truth"
+  },
+  "C": {
+   "signal": "It treats no authenticity guarantee as the only fraud fact, but the stem supplies a source lie.",
+   "lawyer": "The disclaimer does not erase the affirmative false statement that the item came from a private Cyprus collector.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "It gets the fraud sale but lets fake writing plus intent overrun the legal-efficacy gate.",
+   "lawyer": "The facts support false pretenses but not common-law forgery.",
+   "mold": "half_truth"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-FORGED-HYMN-01",
+   "statement": "Common-law forgery has a legal-efficacy gate: the false writing must be the kind of writing that, if genuine, would have apparent legal effect or could found legal liability. A fake collectible devotional page, standing alone, is fraud bait, not forgery.",
+   "trigger": "The writing is a private collectible or memorabilia item, not a contract, check, deed, will, certificate, or business/legal instrument.",
+   "unlocks": "Cuts the 'fake writing plus intent equals forgery' trap.",
+   "authority": "Moskal v. United States, 498 U.S. 103 (1990), quoting Bishop's common-law forgery formulation."
+  },
+  {
+   "id": "GK-CRIMINAL-FORGED-HYMN-02",
+   "statement": "False pretenses does not require an explicit authenticity guarantee. A knowingly false statement about source, ownership, or provenance can be a material past-or-existing-fact lie if it induces the buyer to transfer title to money.",
+   "trigger": "Seller disclaims authenticity but affirmatively lies about where the item came from or who owns it.",
+   "unlocks": "Defeats the disclaimer trap that treats 'no authenticity promise' as the only possible false-pretense representation.",
+   "authority": "Cornell Wex, false pretenses; common-law formulation summarized as obtaining title by misrepresentation with intent to defraud."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-FORGED-HYMN-01",
+   "statement": "Read the choices as a two-axis crime grid: first decide forgery yes/no, then decide false pretenses yes/no. Do not let a correct half of a combination carry the whole answer.",
+   "trigger": "Answer choices distribute as both crimes / forgery only / false pretenses only / neither.",
+   "unlocks": "The 2x2 array in which one crime label is true and the other is false.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Two theft labels, two gates",
+  "signal": "Fake collectible writing plus provenance lie",
+  "studentMove": "Run forgery and false pretenses separately.",
+  "tinyRule": "Legal-efficacy gate for forgery; provenance lie can still be false pretenses.",
+  "trap": "Both/neither answer-grid collapse"
+ }
+}

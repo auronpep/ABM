@@ -1,0 +1,95 @@
+{
+ "id": "CQ14824",
+ "title": "Banner Drone",
+ "subject": "Evidence",
+ "topic": "Presentation of Evidence",
+ "subtopic": "Preliminary questions",
+ "difficulty": "not_supplied_by_source",
+ "tension": null,
+ "stem": "At a private Christian makers’ fair, Hannah was struck by a banner drone carrying hand-lettered Psalms after Timothy, the drone operator, launched it toward the exhibit hall. Hannah later died from the injury. Lydia, Hannah’s executor, sued Timothy for wrongful death.\n\nAt trial, Lydia calls Ruth, a nurse, to testify that the next morning, Hannah said to Ruth, “Timothy launched the banner drone after the marshal dropped the landing flag.” Twelve minutes later, Hannah died.\n\nTo lay the foundation for Hannah’s statement, Lydia offers the court an affidavit from Dr. Luke stating that he was the attending physician that morning and that Hannah had said several times that she knew she was about to die.\n\nIs the affidavit properly considered by the court in ruling on the admissibility of Hannah’s statement?",
+ "call": "Is the affidavit properly considered by the court in ruling on the admissibility of Hannah's statement?",
+ "choices": {
+  "A": "No, because statements made under belief of imminent death may be used only in prosecutions for homicide.",
+  "B": "Yes, because the judge may consider hearsay in ruling on preliminary questions.",
+  "C": "No, because the affidavit is hearsay and no hearsay exception covers it.",
+  "D": "Yes, because, although hearsay, the affidavit is a statement of then-existing mental condition."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The affidavit is being offered to the judge as foundation while the judge decides whether Hannah’s statement is admissible. It is not being offered to the jury as ordinary merits evidence.\n\nSilver Key: lock the layer. The call asks what the judge may consider while ruling, not whether the affidavit is admissible to the jury.\n\nGold Key: for a preliminary admissibility question, the judge may consider hearsay; Rule 104(a) frees the court from the evidence rules except privilege. That makes the hearsay objection to the affidavit the wrong layer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — pure_anchor",
+   "text": "The word only over-tightens the dying-declaration rule. Without the civil-case Gold Key, this is not student-accessibly false. With the Gold Key, it is a tiered_absolute overclaim."
+  },
+  {
+   "label": "CUT C — pure_anchor",
+   "text": "This is the dominant trap. It answers the wrong layer: ordinary trial admissibility of hearsay, not what the judge may consider on a preliminary admissibility ruling. The Rule 104(a) Gold Key kills it."
+  },
+  {
+   "label": "CUT D — anchor_assisted",
+   "text": "This choice reaches the correct yes/no result, but by the wrong route. It treats the affidavit as admissible because it supposedly fits a hearsay exception. The call asks whether the judge may consider it as foundation; Rule 104(a), not the exception label, supplies the answer."
+  },
+  {
+   "label": "Residual",
+   "text": "B is true and responsive. No CLASH or CALL remains."
+  }
+ ],
+ "studentScript": "Court-ruling layer. The affidavit is foundation for admissibility. Gold Key: Rule 104(a) lets the judge consider hearsay. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word only narrows a rule; the problem is visible only after the dying-declaration Gold Key.",
+   "lawyer": "FRE 804(b)(2) covers homicide prosecutions and civil cases.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "Matches the court-ruling layer and the Rule 104(a) Gold Key.",
+   "lawyer": "FRE 104(a) permits the court to consider hearsay in preliminary admissibility rulings, except privilege.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This choice treats the affidavit as ordinary hearsay needing an exception instead of foundation evidence for the judge.",
+   "lawyer": "Rule 104(a) makes the court not bound by hearsay rules when deciding preliminary admissibility.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "This choice says yes but reaches yes through an exception label attached to the wrong evidence item and layer.",
+   "lawyer": "The affidavit is considered under Rule 104(a), not because the affidavit itself is a then-existing mental-condition statement.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-PRELIM-HEARSAY-01",
+   "statement": "For a preliminary admissibility question, the judge may consider hearsay; Rule 104(a) frees the court from the evidence rules except privilege.",
+   "trigger": "foundation evidence offered to the court for an admissibility ruling",
+   "unlocks": "the trap that demands a hearsay exception for foundation material offered only to the judge",
+   "authority": "FRE 104(a)"
+  },
+  {
+   "id": "GK-EVIDENCE-DYING-CIVIL-02",
+   "statement": "A federal dying declaration is not limited to homicide prosecutions; it may also apply in a civil case when the declarant is unavailable and believed death was imminent.",
+   "trigger": "a statement under belief of imminent death offered in a civil wrongful-death case",
+   "unlocks": "the civil-case dying-declaration overclaim",
+   "authority": "FRE 804(b)(2)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-BANNER-DRONE-01",
+   "statement": "Lock the layer: the call asks what the judge may consider while ruling, not whether the affidavit is admissible to the jury.",
+   "trigger": "the phrase 'considered by the court in ruling on admissibility'",
+   "unlocks": "the hearsay-exception hunt created by the answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Preliminary-question layer before hearsay exceptions",
+  "signal": "foundation evidence offered to the court while the judge rules on admissibility",
+  "studentMove": "Ask whether the judge is deciding admissibility before asking whether the foundation evidence has a hearsay exception.",
+  "tinyRule": "On preliminary admissibility questions, the judge may consider hearsay unless privilege rules block it.",
+  "trap": "exception hunting on the foundation affidavit"
+ }
+}

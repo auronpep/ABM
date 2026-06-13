@@ -1,0 +1,88 @@
+{
+ "id": "CQ14895",
+ "title": "Ark Ledger",
+ "subject": "Evidence",
+ "topic": "Relevancy and Excluding Relevant Evidence",
+ "subtopic": "Character Evidence",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Daniel was charged with defrauding the federal disaster-relief office where he worked as a grants clerk. At trial, the court allowed Daniel to call Naomi, the manager of a Christian publishing warehouse where Daniel had previously worked. Naomi testified that Daniel had a good reputation in the community for honesty.\n\nOver objection, Daniel then sought to have Naomi testify that, during several large Bible-conference weekends, the warehouse had entrusted Daniel with locked cash boxes containing substantial conference receipts and that no money was ever missing.\n\nShould Naomi’s testimony about the locked cash boxes be admitted?",
+ "call": "Should Naomi’s testimony about the locked cash boxes be admitted?",
+ "choices": {
+  "A": "Yes, because honesty is a pertinent character trait offered by an accused.",
+  "B": "Yes, because the testimony tends to show that Daniel was unlikely to have taken money as charged.",
+  "C": "No, because the testimony is extrinsic evidence on a collateral matter.",
+  "D": "No, because good character cannot be proved by specific instances of conduct unless character is an essential element of the charge or defense."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Daniel may offer evidence of a pertinent good character trait, and honesty is pertinent in a fraud prosecution. But the form matters. On direct examination, when character evidence is admissible, it is ordinarily proved through reputation or opinion testimony. Specific instances of conduct are permitted only when the character trait is an essential element of the charge, claim, or defense. Here, Daniel’s honesty is circumstantial character evidence, not an element of fraud or a defense. Naomi could testify to reputation or opinion, but not to particular times Daniel was trusted with cash boxes.\n\nGold Key: Character doorway is not character method. A criminal defendant may open the character door, but direct proof still travels through reputation or opinion unless character is itself an essential element.\n\nSilver Key: When the choices say “Yes, because pertinent” and “No, because specific acts,” do not stop at admissibility. Move to method of proof.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "It answers the first gate only: pertinent trait. It does not answer the specific-acts method problem."
+  },
+  {
+   "label": "CUT B",
+   "text": "It answers general relevance, but admissibility requires the character-evidence form rule."
+  },
+  {
+   "label": "CUT C",
+   "text": "It reaches “No” but gives the wrong legal reason. It is a wrong-frame exclusion."
+  },
+  {
+   "label": "Residual D",
+   "text": "It names the method limit and the essential-element exception. No Clash is needed after the anchor is applied."
+  }
+ ],
+ "studentScript": "This is character evidence. Honesty is pertinent, but the follow-up is specific acts. Character is not an element. Pick the answer barring specific acts.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It answers whether honesty can matter, not whether specific acts are the allowed form.",
+   "lawyer": "FRE 404(a)(2)(A) allows the pertinent trait, but FRE 405 limits the method to reputation or opinion unless character is an essential element.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "It says the evidence helps, but admissibility is not decided by relevance alone.",
+   "lawyer": "Character evidence may be relevant yet still excluded when offered in an impermissible form under FRE 405.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "It says No, but it gives a collateral-matter reason instead of the character-proof-form reason.",
+   "lawyer": "The official problem is not collateral impeachment; it is direct proof of character by specific instances.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "It names the exact split: good character may be offered, but not through specific acts unless character is an essential element.",
+   "lawyer": "This matches FRE 405(a) and 405(b).",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-CHARACTER-METHOD-01",
+   "statement": "A criminal defendant may offer a pertinent character trait, but on direct examination the trait is proved by reputation or opinion, not by specific acts, unless character is an essential element.",
+   "trigger": "criminal defendant offers good character through prior incidents",
+   "unlocks": "pertinent-character-trait trap",
+   "authority": "FRE 404(a)(2)(A); FRE 405(a)-(b)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-CHARACTER-METHOD-01",
+   "statement": "When one answer says the trait is allowed and another says the proof form is barred, do not stop at the doorway; ask what method of proof is being used.",
+   "trigger": "criminal defendant offers good-character evidence through past incidents",
+   "unlocks": "pertinent-trait versus specific-acts trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Doorway vs Method",
+  "signal": null,
+  "studentMove": null,
+  "tinyRule": null,
+  "trap": null
+ }
+}

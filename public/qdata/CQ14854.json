@@ -1,0 +1,96 @@
+{
+ "id": "CQ14854",
+ "title": "Exodus Ark Release",
+ "subject": "Evidence",
+ "topic": "Privileges and Other Policy Exclusions",
+ "subtopic": "Settlement negotiations and offers of compromise",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia sued Exodus Rooms, a private Bible-themed escape-room business, for injuries she suffered when the lid of a prop ark dropped on her hand during a game. Lydia alleged that Exodus Rooms negligently left the ark’s latch loose. Before Lydia filed suit, after she first threatened to sue, Mary, Exodus Rooms’ floor manager, said, “I know the latch on that prop ark was loose, but I think your oversized choir sleeve caught the handle and pulled the lid down. Let us pay your clinic bill, and you release us from any claims you might have.” Lydia refused the offer. At trial, Lydia seeks to testify to Mary’s statement that “the latch on that prop ark was loose.” Is the statement about the loose latch admissible?",
+ "call": "Is the statement about the loose latch admissible?",
+ "choices": {
+  "A": "No, because Mary denied that the loose latch caused Lydia’s injury.",
+  "B": "Yes, because the rule excluding offers of compromise does not protect statements of fact made during compromise negotiations.",
+  "C": "No, because it is a statement made in the course of compromise negotiations.",
+  "D": "Yes, as a statement by an agent about a matter within the scope of her authority."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Mary’s loose-latch statement was made after Lydia threatened to sue and in the same conversation in which Mary offered to pay Lydia’s clinic bill only if Lydia released all claims. Gold Key: release-of-claims language moves the conversation into compromise negotiations, so Rule 408 protects factual statements made about the claim. Silver Key: do not stop at hearsay; run the Evidence layer cascade. Even if the statement could clear the hearsay layer, the compromise-negotiation policy exclusion controls.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_RESPONSIVE / wrong_element",
+   "text": "A answers with a merits-causation reason. The call asks whether the offered statement is admissible. Causation denial is not the admissibility ground."
+  },
+  {
+   "label": "CUT B — NOT_TRUE / flat_misstatement, anchor-assisted",
+   "text": "B states that factual statements are not protected during compromise negotiations. Gold Key defeats it: Rule 408 protects statements made during compromise negotiations about the claim."
+  },
+  {
+   "label": "CUT D — NOT_RESPONSIVE / bait_doctrine",
+   "text": "D uses a true hearsay-layer path. The Silver Key blocks the drift: hearsay clearance does not defeat a separate Rule 408 policy exclusion."
+  },
+  {
+   "label": "Residual",
+   "text": "C."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the CUT."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed beyond the anchor-assisted layer check."
+  }
+ ],
+ "studentScript": "The call is admissibility. The statement was made after a threat to sue and tied to a release of claims. That is compromise negotiation. Cut the causation reason, cut the factual-admission myth, cut the agent-statement layer trap. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Causation denial is a merits fact; the call asks admissibility.",
+   "lawyer": "Causation denial does not supply the Rule 408 exclusion ground.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "Gold Key says Rule 408 protects factual statements made during compromise negotiations.",
+   "lawyer": "FRE 408(a)(2) protects conduct or statements made during compromise negotiations about the claim.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "It names the live layer: compromise negotiations.",
+   "lawyer": "The statement is inadmissible under FRE 408.",
+   "mold": null
+  },
+  "D": {
+   "signal": "Silver Key: clearing hearsay does not clear the policy-exclusion layer.",
+   "lawyer": "FRE 801(d)(2)(D) may make the statement non-hearsay, but FRE 408 can still exclude it.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-COMPROMISE-ARK-01",
+   "statement": "A settlement conversation is not just an offer to pay medical bills when it asks for a release of claims. In compromise negotiations, Rule 408 protects factual statements made about the claim; Rule 409's narrower medical-payment rule does not rescue them.",
+   "trigger": "A disputed claim or threat to sue plus payment language tied to a release of claims.",
+   "unlocks": "The dominant trap that factual admissions are admissible whenever medical expenses are offered.",
+   "authority": "FRE 408(a)(2); FRE 409."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-LAYER-CASCADE-01",
+   "statement": "Do not stop when an evidence choice clears one layer. Run the layer cascade: a statement can be non-hearsay and still be excluded by a policy rule.",
+   "trigger": "One choice says admissible as an agent statement while another invokes compromise negotiations.",
+   "unlocks": "The agent-statement trap that clears hearsay but ignores the compromise-negotiation layer.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Rule 408 beats the medical-payment/agent-admission traps",
+  "signal": "Threat to sue plus pay-and-release language.",
+  "studentMove": "Classify the conversation as compromise negotiation before touching hearsay or medical-expense framing.",
+  "tinyRule": "Release-of-claims language turns the conversation into compromise negotiation; factual statements made during it are protected.",
+  "trap": "Treating the factual admission as free-standing because medical bills or an agent statement appears."
+ }
+}

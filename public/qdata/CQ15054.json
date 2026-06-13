@@ -1,0 +1,75 @@
+{
+ "id": "CQ15054",
+ "title": "Sparrowfield Retreat",
+ "subject": "Real Property",
+ "topic": "Titles",
+ "subtopic": "Adverse Possession",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "Martha owned Sparrowfield, a private lakeside cottage that she sometimes used for quiet Bible-study weekends. Eighteen years ago, Martha conveyed a life estate in Sparrowfield to Lydia. Sixteen years ago, after Lydia had taken possession, Lydia leased Sparrowfield to Stephen for a term of 18 years at a monthly rent of $740. Twelve years ago, Lydia died intestate, leaving Timothy as her sole heir. Stephen regularly paid rent to Lydia and, after Lydia's death, to Timothy until last month. The period in which to acquire title by adverse possession in the jurisdiction is 10 years. In an appropriate action, Stephen, Martha, and Timothy each asserted ownership of Sparrowfield. The court should hold that title in fee simple is in",
+ "call": "The court should hold that title in fee simple is in",
+ "choices": {
+  "A": "Timothy, because Lydia asserted a claim adverse to Martha when Lydia executed the lease to Stephen.",
+  "B": "Timothy, because Stephen's occupation was attributable to Timothy, and Lydia died 12 years ago.",
+  "C": "Stephen, because of Stephen's physical occupancy and because Stephen's term ended with Lydia's death.",
+  "D": "Martha, because Martha held a reversion and Lydia has died."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Lydia’s life estate ended when Lydia died. Timothy had no continuing possessory right from Lydia’s life estate alone, but Stephen continued occupying Sparrowfield and paying rent to Timothy for 12 years. Stephen’s possession was attributable to Timothy. Because the statutory period was 10 years, Timothy acquired title by adverse possession.\n\nGold Key: A tenant’s possession can count for the person to whom the tenant is paying rent. After a life tenant dies, the heir who keeps collecting rent is no longer protected by the life estate and can become an adverse possessor against the true owner.",
+ "wrongExplanations": {
+  "A": "Lydia’s lease during Lydia’s life estate was not adverse to Martha. Lydia had present possessory rights during life.\n*.",
+  "C": "Stephen had physical occupancy, but he paid rent to Timothy. That makes Stephen’s possession attributable to Timothy, not hostile for Stephen.\n*.",
+  "D": "Martha did have the reversion when Lydia died, but that is not the end of the sequence. Timothy’s later 12 years of adverse possession defeated Martha’s title."
+ },
+ "c3": [],
+ "studentScript": "Title timeline. Lydia had life estate only. Lydia dies. Stephen pays Timothy for 12 years. Ten-year AP period. Stephen's possession counts for Timothy. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer treats Lydia's lease during Lydia's life estate as adverse to Martha, but the life-estate frame means Lydia was allowed to possess and lease during life.",
+   "lawyer": "A life tenant's possession and lease are lawful during the life estate; adverse possession against the future holder begins only after the life tenant's death.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "This answer tracks the timeline after Lydia's death and attributes Stephen's rent-paying occupation to Timothy.",
+   "lawyer": "Timothy's post-death rent collection through Stephen's possession lasted 12 years, exceeding the 10-year adverse-possession period.",
+   "mold": null
+  },
+  "C": {
+   "signal": "Stephen has the body-on-land fact, but the rent-payment fact points the occupation to Timothy.",
+   "lawyer": "Stephen's rent payments defeat Stephen's claim of hostile possession against Timothy.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "Martha's reversion after Lydia died is only the first title event; the answer stops before Timothy's 12-year rent-collection period.",
+   "lawyer": "Martha's reversion was lost when Timothy satisfied adverse possession after Lydia's death.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-ADVERSE-POSSESSION-THROUGH-TENANT-01",
+   "statement": "A tenant's possession is attributed to the person to whom the tenant pays rent. After a life tenant dies, an heir who keeps collecting rent may acquire title by adverse possession if the statutory period and possession elements are met.",
+   "trigger": "Life estate ends, but the occupant keeps paying rent to the life tenant's heir.",
+   "unlocks": "The difference between the heir's adverse possession and the occupant's non-hostile possession.",
+   "authority": "Adverse possession elements plus life-estate timing authority."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-TITLE-TIMELINE-01",
+   "statement": "Do not stop the title movie at the death of the life tenant. Keep running the timeline through the statutory period and ask whose possession the occupant's rent payments represent.",
+   "trigger": "A reversion answer competes with a post-death rent-collection answer.",
+   "unlocks": "Reversion trap versus later adverse possession.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Rent Points Possession",
+  "signal": "Occupant keeps paying rent after a life estate ends.",
+  "studentMove": "Ask who gets credit for the occupant's possession.",
+  "tinyRule": "Rent paid to claimant usually makes the occupant's possession attributable to that claimant, not hostile for the occupant.",
+  "trap": "Picking the reversion owner or the physical occupant without accounting for rent."
+ }
+}

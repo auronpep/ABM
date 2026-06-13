@@ -1,0 +1,91 @@
+{
+ "id": "CQ14853",
+ "title": "Jonah Whale Rig",
+ "subject": "Evidence",
+ "topic": "Privileges and Other Policy Exclusions",
+ "subtopic": "Privilege against self-incrimination",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At a privately run Bible-story art fair held in a rented civic-center hall, Mary sued Paul for injuries she suffered when a suspended foam whale from a Jonah display dropped from its rigging. Mary testified on direct examination that Paul had climbed a ladder, loosened a support rope, and ignored Lydia’s warning to clear the aisle. On cross-examination, Paul’s lawyer asked Mary whether, shortly before the whale fell, she had eaten illegal psilocybin candies. Mary invoked the privilege against self-incrimination.\n\nHow should the court treat Mary’s claim of privilege?",
+ "call": "How should the court treat Mary's claim of privilege?",
+ "choices": {
+  "A": "Uphold it, because Mary's credibility cannot be attacked by conduct for which she has not been convicted.",
+  "B": "Uphold it, because the privilege may be claimed in civil as well as criminal proceedings.",
+  "C": "Deny it, because Mary waived the privilege by choosing to testify in the case.",
+  "D": "Deny it, because whether Mary had taken the psilocybin candies is essential to judging the accuracy of her observations."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Mary is a witness in a civil case, but the question asks whether she had engaged in illegal conduct shortly before the event she described. A truthful answer could expose her to criminal liability or supply a link toward it.\n\nGold Key: A witness may invoke the self-incrimination privilege in a civil case when the answer could expose the witness to criminal liability; ordinary impeachment value does not override that privilege.\n\nSilver Key: In an outcome-plus-reason Evidence array, do not keep a choice just because it reaches the right result. The reason must match the controlling layer. Here, the controlling layer is privilege.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "| Choice | C3 action                                  | Filter           | Mold                | Method            |\n| ------ | ------------------------------------------ | ---------------- | ------------------- | ----------------- |\n| A      | Cut the right-outcome/wrong-reason answer. | NOT_TRUE       | flat_misstatement | anchor_assisted |\n| C      | Cut the waiver overreach.                  | NOT_RESPONSIVE | wrong_element     | anchor_assisted |\n| D      | Cut the dominant impeachment bait.         | NOT_RESPONSIVE | bait_doctrine     | anchor_assisted |"
+  },
+  {
+   "label": "CLASH",
+   "text": "The meaningful clash is privilege layer vs impeachment relevance. D says the question is too important to credibility to block. B says the privilege applies even in civil cases. The fact that resolves the axis is that the cross question asks Mary to admit illegal conduct."
+  },
+  {
+   "label": "CALL",
+   "text": "Apply the Gold Key. Criminal-exposure privilege beats ordinary impeachment value. Residual answer: B."
+  }
+ ],
+ "studentScript": "The question is about privilege, not how useful the cross-exam would be. Mary has not opened the psilocybin subject, and the answer could expose criminal conduct, so the court should uphold the privilege. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It says uphold, but the reason lives in conviction-status impeachment rather than the privilege layer.",
+   "lawyer": "Conviction status is not the controlling reason; the privilege turns on criminal exposure from the answer.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "This is the only answer that matches the privilege layer and the civil-witness posture once the Gold Key is known.",
+   "lawyer": "The Fifth Amendment privilege may be invoked by a civil witness when a truthful answer could incriminate her.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice uses the fact that Mary testified, but it skips the subject she testified about.",
+   "lawyer": "A witness does not waive the privilege merely by testifying about non-incriminating matters.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "The choice answers the credibility/impeachment question, not the privilege question.",
+   "lawyer": "The question may be relevant to perception, but a valid self-incrimination claim prevails over that impeachment need.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-SELF-INCRIMINATION-01",
+   "statement": "A witness may invoke the self-incrimination privilege in a civil case when a truthful answer could expose the witness to criminal liability or supply a link in that chain. Ordinary impeachment value does not override that privilege.",
+   "trigger": "a civil witness is asked a question whose answer would admit illegal conduct",
+   "unlocks": "the civil-versus-criminal trap and the impeachment-necessity trap",
+   "authority": "Fifth Amendment; McCarthy v. Arndstein, 266 U.S. 34 (1924); Hoffman v. United States, 341 U.S. 479 (1951)"
+  },
+  {
+   "id": "GK-EVIDENCE-WAIVER-01",
+   "statement": "A witness does not waive the self-incrimination privilege merely by testifying about non-incriminating matters. Waiver risk appears when the witness has voluntarily opened the same incriminating subject.",
+   "trigger": "direct testimony covers ordinary merits facts, but cross-examination moves into potentially criminal conduct",
+   "unlocks": "the testifying-equals-waiver trap",
+   "authority": "FRE 608(b); privilege waiver doctrine"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-WHALE-RIG-01",
+   "statement": "In an outcome-plus-reason Evidence array, do not keep a choice just because it reaches the right result. Cut any choice whose reason answers a lower layer than the live privilege claim.",
+   "trigger": "two choices uphold and two deny, each with different reasons",
+   "unlocks": "the right-result/wrong-reason uphold choice and the dominant impeachment-relevance trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Privilege Layer Before Impeachment Need",
+  "signal": "Cross-exam asks a civil witness about illegal conduct.",
+  "studentMove": "Check criminal exposure before relevance.",
+  "tinyRule": "Criminal-exposure privilege can block a credibility question.",
+  "trap": "essential impeachment evidence"
+ }
+}

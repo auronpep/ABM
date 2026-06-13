@@ -1,0 +1,96 @@
+{
+ "id": "CQ15035",
+ "title": "Damascus Alley",
+ "subject": "Real Property",
+ "topic": "Rights in Land",
+ "subtopic": "Easements — termination/remedies for misuse",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Barnabas owns Damascus Yard, a converted riverfront warehouse parcel used for a small Christian bookbinding studio and apartment. The parcel is boxed in by other lots, and its only access to a public street is a deeded easement over Lydia’s 18-foot loading alley. Lydia owns the neighboring parcel. Barnabas paved the alley route, and for 14 years the alley was used without incident.\n\nLast spring, as permitted by the zoning ordinance, Barnabas built a 140-seat Bible-map escape room and coffee courtyard on Damascus Yard, using all available space on the parcel. The attraction became popular. On Saturday evenings, visitors overflowed the courtyard’s parking area and parked along the loading alley for hours. After three Saturdays of congestion, Lydia stretched a chain across the alley on Saturday evenings to block anyone seeking access to Damascus Yard. Barnabas objected. Lydia brought an appropriate action to terminate the easement.\n\nThe most likely result in this action is that the court will hold for:",
+ "call": "The most likely result in this action is that the court will hold for:",
+ "choices": {
+  "A": "Lydia, because the patrons’ parking along the alley exceeded the scope of the easement.",
+  "B": "Barnabas, because Lydia’s use of self-help bars her from equitable relief.",
+  "C": "Lydia, because Barnabas excessively expanded the use of the dominant parcel.",
+  "D": "Barnabas, because expanded use of the easement does not terminate the easement."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is the best answer. Barnabas wins the termination action. Gold Key: misuse, overuse, or heavier use of an easement ordinarily does not terminate the easement; the usual remedy is damages or an injunction against the misuse. Silver Key: lock the remedy in the call. The call asks whether Lydia can terminate the easement, not whether the alley use can be regulated.\n\nThe facts give heavier weekend use and parking congestion. Those facts may support a narrower remedy against improper parking or unreasonable interference. They do not, by themselves, extinguish the deeded access easement.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B",
+   "text": "The answer claims self-help bars equitable relief. That is a flat rule assertion with no taught support and no call/fact relation that makes it true. Label: flat_misstatement."
+  },
+  {
+   "label": "CUT C",
+   "text": "The answer turns heavier use into termination. That pushes a real concern too far. Label: extreme_of_range."
+  },
+  {
+   "label": "CUT A",
+   "text": "The answer may prove a scope problem, but the call is termination. It answers the violation link, not the remedy link. Label: bait_doctrine, architecture violation_vs_remedy."
+  },
+  {
+   "label": "Residual",
+   "text": "D remains. It directly answers the termination call and matches the Gold Key."
+  },
+  {
+   "label": "CLASH",
+   "text": "The practical axis is: misuse remedy versus termination remedy."
+  },
+  {
+   "label": "CALL",
+   "text": "Remedy-call focus controls. Termination is the wrong remedy for ordinary overuse."
+  }
+ ],
+ "studentScript": "The call is termination. Parking may be a misuse fact, but misuse usually means injunction or damages, not forfeiture. Pick D.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice answers whether the use may be improper, but the call asks termination.",
+   "lawyer": "A parking/scope violation may support damages or an injunction, not ordinary forfeiture of the easement.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The answer asserts a broad penalty rule not supplied by the stem or the C3 deck.",
+   "lawyer": "Self-help does not automatically bar all equitable relief.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "The answer takes a heavier-use fact and turns it into the strongest possible remedy.",
+   "lawyer": "Expanded use of the dominant parcel does not ordinarily terminate the easement.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "The answer names the remedy result: no termination.",
+   "lawyer": "This is the correct rule for ordinary easement overuse/misuse.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-EASEMENT-MISUSE-01",
+   "statement": "Misuse, overuse, or expanded use of an easement ordinarily does not terminate the easement. The servient owner’s normal remedy is damages or an injunction against the misuse, not forfeiture.",
+   "trigger": "the servient owner asks to terminate an access easement after heavier or messier use",
+   "unlocks": "scope-or-overuse reasons offered as a basis for terminating the easement",
+   "authority": "Penn Bowling Recreation Center v. Hot Shoppes, Inc., 179 F.2d 64, 66; Vieth v. Dorsch, 274 Wis. 17; Sommer v. Misty Valley, LLC"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-DAMASCUS-ALLEY-01",
+   "statement": "Lock the remedy in the call. A choice that proves misuse or scope overage has not answered a termination action unless it explains why the easement is forfeited.",
+   "trigger": "answer choices say the use exceeded the scope, but the call asks who wins an action to terminate",
+   "unlocks": "violation-versus-remedy trap in an easement-termination call",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Easement misuse remedy ladder",
+  "signal": "The servient owner asks to terminate after heavier use or messy parking.",
+  "studentMove": "Separate the violation question from the remedy question.",
+  "tinyRule": "Misuse or overuse usually leads to injunction or damages, not forfeiture.",
+  "trap": "Treating overburdening as automatic termination."
+ }
+}

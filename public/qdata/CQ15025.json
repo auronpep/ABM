@@ -1,0 +1,85 @@
+{
+ "id": "CQ15025",
+ "title": "Olive Path",
+ "subject": "Real Property",
+ "topic": "Rights in Land",
+ "subtopic": "Rights in Land",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia once owned two neighboring parcels, Cedar Field and Olive Grove. Cedar Field fronted on a rutted public lane, while Olive Grove fronted on Apostle Avenue, a paved state highway. Eighteen years ago, Lydia conveyed Cedar Field to Paul “together with a right-of-way 18 feet wide along the north edge of Olive Grove to Apostle Avenue.” At that time, Cedar Field was improved with a private Bible-verse miniature golf course with eight holes. Twelve years ago, Lydia died. Her will devised Olive Grove “to Paul for life, remainder to Ruth.” Four years ago, Paul executed an instrument in the proper form of a deed, purporting to convey Cedar Field and Olive Grove to Timothy in fee simple. Timothy then expanded the course to ten holes. Six months ago, Paul died and Ruth took possession of Olive Grove. Ruth brought an appropriate action to enjoin Timothy from using the right-of-way. In this action, who should prevail?",
+ "call": "In this action, who should prevail?",
+ "choices": {
+  "A": "Ruth, because Timothy has overburdened the easement.",
+  "B": "Timothy, because he has the easement granted by Lydia to Paul.",
+  "C": "Timothy, because he has an easement by necessity.",
+  "D": "Ruth, because merger extinguished the easement."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Gold Key: an express easement appurtenant is tied to the dominant parcel and passes with that parcel to successors unless a valid termination event cuts it off. Lydia expressly granted Cedar Field a right-of-way over Olive Grove. Paul later conveyed Cedar Field to Timothy, so Timothy received the benefit of that express right-of-way. Paul’s temporary life estate in Olive Grove did not destroy that right. Timothy’s modest expansion of the same private miniature golf use also does not change the source of the easement. Ruth therefore should not enjoin Timothy from using the right-of-way.\n\nSilver Key: sort the array by source of the path right. B uses the source that matches the deed. C gives Timothy the right winner for the wrong source.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "Source first. The deed gave Cedar Field a right-of-way. Paul’s life estate in Olive Grove did not merge the easement. The rough public lane kills necessity, and two extra holes do not change the source. Choose B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer jumps from modest expansion to overburden without matching the source of the right.",
+   "lawyer": "A modest increase from eight to ten holes in the same use of the same dominant parcel does not, on these facts, exceed the easement scope.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This answer matches the deed-created source of the right-of-way.",
+   "lawyer": "The express appurtenant easement passed with Cedar Field to Timothy.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer picks Timothy but uses a backup easement label instead of the deed.",
+   "lawyer": "Necessity does not fit because Cedar Field has public-road access and an express grant.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The answer treats Paul’s life estate as if it were the same title quality as fee ownership.",
+   "lawyer": "Merger requires coextensive title; Paul’s life estate in Olive Grove did not extinguish the easement appurtenant to Cedar Field.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-OLIVE-PATH-01",
+   "statement": "An express easement appurtenant is tied to the dominant parcel and passes with that parcel to successors unless a valid termination event cuts it off.",
+   "trigger": "a deed conveys land together with a right-of-way over retained land",
+   "unlocks": "credited express-grant answer and the right-winner wrong-source trap",
+   "authority": "Restatement (Third) of Property: Servitudes, Chapter 5; common-law easement-appurtenant doctrine"
+  },
+  {
+   "id": "GK-REAL_PROPERTY-OLIVE-PATH-02",
+   "statement": "Merger requires complete unity of the dominant and servient estates in coextensive title; a fee in the dominant parcel plus only a life estate in the servient parcel does not merge the easement.",
+   "trigger": "same person appears to hold both parcels, but one interest is only a life estate",
+   "unlocks": "dominant merger trap",
+   "authority": "Restatement (Third) of Property: Servitudes § 7.5 cmt. a; Mularoni v. Bing, 2001 MT 215"
+  },
+  {
+   "id": "GK-REAL_PROPERTY-OLIVE-PATH-03",
+   "statement": "Necessity is not a convenience label; an easement by necessity requires no legally sufficient access at severance, not merely a worse public route.",
+   "trigger": "the dominant parcel already touches a public road",
+   "unlocks": "easement-by-necessity trap",
+   "authority": "Common-law implied easement by necessity; Wex, implied easement by necessity"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-OLIVE-PATH-01",
+   "statement": "Sort each answer by the source of the path right: express grant, merger, overburden, or necessity. Keep the answer whose source matches the deed and the later title facts.",
+   "trigger": "both sides use easement vocabulary and one wrong answer gives the correct winner for the wrong source",
+   "unlocks": "right-winner wrong-reason answers in an easement array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Express grant before backup easement labels",
+  "signal": "A deed-created right-of-way later gets attacked by merger, scope, or necessity labels.",
+  "studentMove": "Track the source of the path right before testing backup doctrines.",
+  "tinyRule": "Express appurtenant easements pass with the dominant parcel; merger requires complete coextensive ownership.",
+  "trap": "A same-owner title event can make a life estate look like merger."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "CQ14437",
+ "title": "Lydias Verse Card Boxes",
+ "subject": "Contracts",
+ "topic": "Formation of Contracts",
+ "subtopic": "Firm offer / acceptance after three-month cap",
+ "difficulty": null,
+ "tension": null,
+ "stem": "On November 29, Lydia, who ran a private Bible-memory tutoring program, received from Barnabas, a merchant who sold devotional craft supplies, an illustrated price sheet and a signed letter. The signed letter stated:\n\n“For every item listed on the enclosed sheet that you request during the next calendar year, we will sell you as many as you order. We promise that this offer and these listed prices will stay firm for that year.”\n\nBarnabas and Lydia exchanged no further messages until March 29, four months later, when Barnabas received Lydia’s emailed purchase order for “300 olive-wood verse-card boxes, item #40 on your sheet.”\n\nDid Lydia’s March 29 email constitute an effective acceptance of Barnabas’s offer at the prices listed on the sheet?",
+ "call": "Did Lydia’s March 29 email constitute an effective acceptance of Barnabas’s offer at the prices listed on the sheet?",
+ "choices": {
+  "A": "Yes, because Barnabas’s letter created a one-year option contract.",
+  "B": "No, because Lydia did not accept Barnabas’s offer within a reasonable time.",
+  "C": "Yes, because Barnabas had not revoked the offer before March 29.",
+  "D": "No, because under applicable law the irrevocability of Barnabas’s offer was limited to three months."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is the best answer. Lydia’s email came after the three-month firm-offer protection had expired, so Barnabas was free to revoke. But Barnabas had not revoked, and the offer itself still invited orders during the next calendar year.\n\nGold Key: The three-month firm-offer cap ends irrevocability only. It does not automatically kill the offer.\n\nSilver Key: Separate “irrevocable” from “open.” The call asks whether the March 29 order accepted before revocation or lapse, not whether the offer was still firm.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A says the letter created a one-year option contract. That overextends the legal effect of an unpaid merchant assurance. Label: NOT_TRUE / extreme_of_range. Method: anchor_assisted."
+  },
+  {
+   "label": "CUT B",
+   "text": "B says the order was not within a reasonable time. The stem gives a stated next-calendar-year order window, and March 29 is inside it. Label: NOT_TRUE / flat_misstatement. Method: heuristic_structural."
+  },
+  {
+   "label": "CLASH C vs D",
+   "text": "C and D fight on one axis: “revocable but still open” versus “revoked or lapsed.” The splitting fact is that Barnabas had not revoked before March 29. The Gold Key resolves the rest: the three-month cap ended only irrevocability. C remains."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tie remains. C is true and responsive."
+  }
+ ],
+ "studentScript": "Revocable is not revoked. The seller could have revoked after three months, but he did not. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The result points the right way, but the reason overextends the merchant assurance into a one-year option.",
+   "lawyer": "Without consideration, the letter did not create a one-year option contract; it created only limited firm-offer irrevocability.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "The stem gives a next-calendar-year ordering window, and March 29 is inside that window.",
+   "lawyer": "The offer had not lapsed on these facts.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "This answers the exact call: acceptance before revocation or lapse.",
+   "lawyer": "After the firm period expired, the offer was revocable but still capable of acceptance before revocation or lapse.",
+   "mold": null
+  },
+  "D": {
+   "signal": "This proves only that Barnabas could revoke after three months; it does not prove that he did revoke.",
+   "lawyer": "UCC 2-205 limits irrevocability, not the offer’s existence.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-FIRM-CAP-01",
+   "statement": "UCC firm-offer cap controls irrevocability, not the life of the offer; after three months without consideration, the offer is merely revocable unless revoked or lapsed.",
+   "trigger": "A merchant’s signed price assurance lasts longer than three months and the buyer accepts after month three before any revocation.",
+   "unlocks": "The trap that treats the three-month cap as automatic termination.",
+   "authority": "UCC § 2-205; UCC § 2-206."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-FIRM-CAP-01",
+   "statement": "Separate two statuses before choosing: irrevocable and open. A choice proving the offer is no longer firm does not prove it was revoked or lapsed.",
+   "trigger": "One answer says the offer was accepted before revocation; another says no because irrevocability lasted only three months.",
+   "unlocks": "The tension between the no-revocation answer and the three-month-cap answer.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Revocable is not revoked",
+  "signal": "Merchant signed assurance longer than three months; acceptance after month three; no revocation fact.",
+  "studentMove": "Ask whether the seller actually revoked or whether the answer only says the offer became revocable.",
+  "tinyRule": "The firm-offer cap ends irrevocability only.",
+  "trap": "Treating the cap as lapse."
+ }
+}

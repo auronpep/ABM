@@ -6,7 +6,7 @@
  "subtopic": "Consent (revocation before contact)",
  "difficulty": null,
  "tension": null,
- "stem": "Hannah, a private violin teacher, signed a written consent form for a minor cosmetic injection during a visit to a private wellness clinic. Before the injection began, she clearly told the doctor, Daniel, \"I changed my mind. Do not inject me.\" Daniel said she was being silly and intentionally gave the injection anyway. Hannah sues Daniel for battery.",
+ "stem": "Hannah, a private violin teacher, signed a written consent form for a minor cosmetic injection during a visit to a private wellness clinic. Before the injection began, she clearly told the doctor, Daniel, \"I changed my mind. Do not inject me.\" Daniel said she was being silly and intentionally gave the injection anyway. Hannah sues Daniel for battery.\n\nCan Daniel rely on the signed consent form?",
  "call": "Can Daniel rely on the signed consent form?",
  "choices": {
   "A": "Yes, because written consent can never be withdrawn.",
@@ -15,18 +15,66 @@
   "D": "Yes, because the injection was minor."
  },
  "key": "C",
- "dominantTrap": "A",
+ "dominantTrap": null,
  "rightExplanation": "Daniel cannot rely on the signed consent form. A patient may revoke consent at any time before the contact occurs; the revocation need not be in any particular form. Once Hannah clearly told Daniel \"I changed my mind. Do not inject me,\" her earlier written consent no longer authorized the contact, and the injection that followed was an unauthorized intentional contact — battery. Gold Key: a signed consent form is a license that the patient can revoke at any time before the act; revocation does not require written notice or any particular magic words. Silver Key: battery does not require serious injury; an unauthorized offensive or harmful contact is enough.",
- "wrongExplanations": {
-  "A": "Yes, because written consent can never be withdrawn.\n\nThis is the dominant trap. It treats a signed form as a contract-like instrument that locks the patient in once signed. The breaker is the Gold Key: a consent to a non-trivial touching is a present license that the patient may revoke at any time before the contact occurs, regardless of the form. The \"never withdrawn\" formulation is a flat misstatement of the law.",
-  "B": "No, because consent is never a defense to battery.\n\nThis is the mirror-image trap. The student overcorrects, hears \"revoked before contact\" and concludes that consent never matters. The breaker is the foundational rule: consent is a defense to battery when it is valid, voluntary, and unrevoked. Hannah's revocation made the consent invalid at the moment of contact — not because consent is never a defense, but because this consent was no longer operative at the moment of contact.",
-  "D": "Yes, because the injection was minor.\n\nThis is the \"no harm, no foul\" trap. The student maps battery onto a serious-injury requirement (the everyday-negligence frame). The breaker is the Silver Key: battery requires only an unauthorized offensive or harmful contact; the contact itself can be minor, cosmetic, even trivial in physical terms. A botox-style injection without consent is a battery even though it causes no lasting damage."
- },
- "c3": [],
- "studentScript": null,
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "A (written consent can never be withdrawn)",
+   "text": "is cut on the revocation doctrine. Consent is a present license that the patient may revoke before the contact occurs, regardless of any written form. The choice states a tiered absolute (\"can never be withdrawn\") that misstates the rule. The breaker is the Gold Key."
+  },
+  {
+   "label": "D (injection was minor)",
+   "text": "is cut on the battery-magnitude doctrine. Battery requires only an unauthorized harmful or offensive contact; the contact itself can be minor, cosmetic, or trivial. The choice conflates battery with the negligence \"serious injury\" frame. The breaker is the Silver Key."
+  },
+  {
+   "label": "CLASH",
+   "text": "B and C survive to the final axis: is the consent a present license that the patient may revoke (C), or is consent categorically not a defense (B)? The single axis they fight on is whether consent is ever a defense to battery at all."
+  },
+  {
+   "label": "CALL",
+   "text": "The foundational rule resolves the axis. Consent is a defense to battery when valid and unrevoked. Hannah's pre-injection revocation made the consent no longer operative at the moment of contact — not because consent is never a defense, but because this consent was withdrawn. The right answer is the operative defense answer: the consent was revoked before the contact. Residual answer: C."
+  }
+ ],
+ "studentScript": "The call asks whether the doctor can rely on the signed form. Hannah signed the form but then clearly said 'I changed my mind. Do not inject me.' before the contact. Consent is a present license that can be revoked before the contact occurs, regardless of the form. Daniel's injection was unauthorized. The injection is battery even though it was minor — battery requires only an unauthorized harmful or offensive contact. The form is not a defense after a clear revocation. Gold Key: revocation defeats the consent defense. Choose C.",
  "recoveryPaths": [],
- "choiceSignals": {},
- "goldKeys": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Consent is a present license that the patient may revoke before contact; 'never withdrawn' is a tiered absolute that misstates the rule.",
+   "lawyer": "Restatement (Second) of Torts § 892A recognizes that consent is effective when given but may be limited or withdrawn before the conduct in question occurs. A signed form does not preclude revocation.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "Consent is a defense to battery when valid and unrevoked. The categorical 'never a defense' formulation misstates the rule.",
+   "lawyer": "Consent is a recognized defense to battery when voluntarily given, by a person with capacity, and not exceeded. The defense fails here because the consent was withdrawn, not because consent is never a defense.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "Hannah's pre-injection revocation made the earlier consent no longer operative at the moment of contact.",
+   "lawyer": "Revocation of consent before the contact occurs defeats the consent defense to battery. The signed form does not authorize the contact after a clear revocation.",
+   "mold": null
+  },
+  "D": {
+   "signal": "Battery requires only an unauthorized harmful or offensive contact; the contact itself can be minor, cosmetic, or trivial.",
+   "lawyer": "Restatement (Second) of Torts § 18 defines battery as intentional harmful or offensive contact; the contact need not cause serious injury. A botox-style injection without consent is a battery.",
+   "mold": "extreme_of_range"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-TORTS-WELLNESS-VISIT-01",
+   "statement": "A signed consent form is a present license that the patient may revoke at any time before the contact occurs, regardless of the form. Revocation does not require written notice or any particular magic words.",
+   "trigger": "clear pre-contact revocation of a signed medical/cosmetic consent",
+   "unlocks": "written-consent-cannot-be-withdrawn tiered absolute",
+   "authority": "Restatement (Second) of Torts § 892A; Mohr v. Williams, 95 Minn. 261 (1905)"
+  }
+ ],
  "silverKeys": [],
- "remediation": null
+ "remediation": {
+  "title": "Consent to medical contact — revocation before contact",
+  "signal": "A patient signs a consent form, then clearly revokes consent before the contact. The doctor proceeds anyway. Battery suit follows.",
+  "studentMove": "Cut minor-injection with the Silver Key; cut written-consent-cannot-be-withdrawn with the Gold Key; cut consent-never-a-defense with the foundational rule.",
+  "tinyRule": "A signed consent is a present license; the patient can revoke it at any time before the contact.",
+  "trap": "The signed form looks like a contract; consent is not a contract — it is a present license."
+ }
 }

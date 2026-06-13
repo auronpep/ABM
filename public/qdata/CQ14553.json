@@ -1,0 +1,96 @@
+{
+ "id": "CQ14553",
+ "title": "Bronze Dove Chandelier",
+ "subject": "Contracts",
+ "topic": "Third-Party Rights",
+ "subtopic": "Delegation of Duties",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia owned a private Bible-library with a glass atrium and a painted Gospel mural. Peter, a specialist in suspending oversized Christian art, signed a written contract with Lydia to hoist and mount a heavy bronze dove-and-olive-branch chandelier in the atrium.\n\nThe agreement stated that Peter would not be liable for any physical damage to Lydia’s Bible-library or atrium during the installation. It also required Peter to pay a stated amount for each day he finished after the agreed unveiling date and stated that “time is of the essence.” A separate clause provided that any later agreement for additional decorative work under the contract had to be in a writing signed by both parties.\n\nBefore the installation period began, and with enough time left for timely completion, Peter told Lydia that he had sold his rigging shop to Barnabas, who was equally skilled in suspending oversized art pieces, and that Barnabas had agreed to take over the Peter-Lydia contract.\n\nIf Lydia refuses to accept Barnabas’s services, which clause will best support Lydia’s contention that Peter’s duties under the contract were not delegable without her consent?",
+ "call": "If Lydia refuses to accept Barnabas’s services, which clause will best support Lydia’s contention that Peter’s duties under the contract were not delegable without her consent?",
+ "choices": {
+  "A": "The per-day late-performance damages clause.",
+  "B": "The signed-writing clause for later additional decorative work.",
+  "C": "The clause relieving Peter from liability for physical damage during the installation.",
+  "D": "The \"time is of the essence\" clause."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is the best answer.\n\nGold Key: Delegation is generally permitted, even to an equally skilled delegate, unless the other party has a substantial interest in the original promisor’s performance or control. A clause that leaves Lydia bearing physical-damage risk during the installation gives her a concrete reason to insist on Peter’s own control of the work.\n\nSilver Key: Sort the clauses by function. Timing clauses, remedy clauses, and extra-work writing clauses do not answer a consent-to-delegate question unless they affect who controls performance or who bears performance risk.\n\nThe physical-damage waiver is the clause that makes performer identity matter. If Barnabas damages the atrium or mural during installation, Lydia may be exposed to the loss because Peter’s contract removes Peter’s liability for that damage. That risk supports Lydia’s argument that she has a substantial interest in Peter, not Barnabas, performing or controlling the installation.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A is not responsive. It addresses a late-performance remedy. The call asks for a clause supporting nondelegability without consent. Cut."
+  },
+  {
+   "label": "CUT B",
+   "text": "B is not responsive. It is the formal-writing trap. It governs later additional work, not the existing duties Barnabas wants to perform. Cut."
+  },
+  {
+   "label": "CUT D",
+   "text": "D is not responsive. It addresses timing, not performer identity or performance-risk control. Cut."
+  },
+  {
+   "label": "Residual C",
+   "text": "C is the only clause tied to performance risk. With the Gold Key, that risk becomes the substantial-interest basis for nondelegability."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two-choice clash remains after the Cut."
+  },
+  {
+   "label": "CALL",
+   "text": "No call heuristic is needed after the anchor-assisted residual."
+  }
+ ],
+ "studentScript": "This is a clause-function question. A is a late-remedy clause, B is an extra-work writing clause, and D is a timing clause. C is the only performance-risk clause. Use the Gold Key and pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice talks about what happens after late performance; the call asks whether Lydia must accept Barnabas’s performance.",
+   "lawyer": "A late-performance damages clause does not create a substantial interest in Peter’s personal performance or control.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The signed-writing clause is limited to later additional decorative work; Barnabas is offering to perform the original work.",
+   "lawyer": "A clause governing later extra work does not bar delegation of existing performance duties.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This is the only clause tied to physical performance risk during the very installation Barnabas wants to take over.",
+   "lawyer": "The clause supports a substantial-interest argument under Restatement (Second) of Contracts § 318(2).",
+   "mold": null
+  },
+  "D": {
+   "signal": "The clause makes the date important, but the facts give enough time and the call asks about accepting Barnabas.",
+   "lawyer": "A time-is-of-the-essence clause does not itself make a duty nondelegable.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-DELEGATION-RISK-01",
+   "statement": "Delegation is usually allowed, even to an equally competent delegate, unless the other party has a substantial interest in the original promisor’s performance or control. A clause that leaves the other party bearing physical-damage risk during performance can create that substantial interest.",
+   "trigger": "delegation or takeover by an equally skilled replacement plus a clause shifting performance damage risk to the obligee",
+   "unlocks": "why the physical-damage waiver clause supports nondelegability despite an equally skilled delegate",
+   "authority": "Restatement (Second) of Contracts § 318(2); UCC § 2-210(1)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-CLAUSE-FUNCTION-01",
+   "statement": "In a clause-picking question, sort each clause by the job the call asks it to do. Timing, remedy, and change-order clauses do not answer a consent-to-delegate question unless they affect who controls performance or who bears performance risk.",
+   "trigger": "the answer choices are contract clauses and the call asks which one best supports a specific contention",
+   "unlocks": "the dominant written-change-order trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Clause Function Before Clause Formality",
+  "signal": "The answer choices are contract clauses and the call asks which one supports a precise legal contention.",
+  "studentMove": "Sort clauses by function: risk/control, timing, remedy, modification, or scope of work.",
+  "tinyRule": "A clause supports nondelegability only if it gives the obligee a substantial interest in the original promisor’s performance or control.",
+  "trap": "Formal writing language looks like consent language."
+ }
+}

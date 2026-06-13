@@ -1,0 +1,84 @@
+{
+ "id": "CQ14931",
+ "title": "Parchment Chapel Lot",
+ "subject": "Real Property",
+ "topic": "Contracts",
+ "subtopic": "Contracts",
+ "difficulty": "Core",
+ "tension": null,
+ "stem": "Source row: BarMatrix Q#14931 is a Real Property / Contracts item with D as the credited answer and pick rates A 8%, B 24%, C 22%, D 46%.\n\nChristian variation — “The Parchment Chapel Lot”\n\nDaniel owned Parchment Chapel Lot, a narrow parcel beside a Christian bookbindery where visiting speakers often parked during revival weekends. Lydia, a longtime friend from Daniel’s Bible-study group, wanted to buy the lot and offered Daniel $31,000. Daniel knew that Lydia had no present funds, but he replied:\n\n“For your sake as an old friend, I will sell Parchment Chapel Lot to you for $31,000, even though others would pay more, if you can get the money within six weeks.”\n\nLydia took a blank order slip from the bookbindery counter and wrote only these words:\n\n“I agree to sell Parchment Chapel Lot for $31,000.”\n\nDaniel signed the slip and handed it back to Lydia.\n\nFour days later, Daniel received a $68,000 offer from Stephen, who wanted the lot for storage during a Christian conference. Daniel asked Lydia whether she had obtained the $31,000. Lydia answered, “Not yet.” Daniel told her that the arrangement was over and that he would accept Stephen’s offer.\n\nThe next week, Lydia obtained a bank commitment enabling her to buy Parchment Chapel Lot. Lydia immediately brought an appropriate action against Daniel to compel Daniel to convey the lot to her.\n\nAt trial, the following points will be raised: construction of the agreement as to the time for performance, Lydia’s ability to perform, and the parol evidence rule.\n\nWhich points will be relevant to a decision in favor of Lydia?",
+ "call": "Which points will be relevant to a decision in favor of Lydia?",
+ "choices": {
+  "A": "Lydia’s ability to perform and the construction of the agreement as to time of performance.",
+  "B": "Construction of the agreement as to time of performance, Lydia’s ability to perform, and the parol evidence rule.",
+  "C": "The parol evidence rule.",
+  "D": "The parol evidence rule and the construction of the agreement as to time of performance."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct because a decision in favor of Lydia would need all three points. The writing is short and does not recite the full oral condition, so the parol-evidence issue matters. The six-week language matters because Daniel attempted to cancel before the agreed fundraising period expired. Lydia’s later bank commitment matters because specific performance depends on her ability to perform.\n\nGold Key: In a land-sale specific-performance item, do not stop at “there is a signed paper.” Ask whether the court must decide both enforceability/interpretation and whether the buyer can perform.\n\nSilver Key: This is an all-issues array. If each listed issue connects to a required step in the buyer’s win path, the complete bundle beats every partial bundle.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "* C: incomplete. It gives only parol evidence.\n* D: incomplete. It omits ability to perform.\n* A: incomplete. It omits parol evidence."
+  },
+  {
+   "label": "CLASH",
+   "text": "The array is not a two-answer factual clash. It is a combination/bundle array."
+  },
+  {
+   "label": "CALL",
+   "text": "Use the answer-array Silver Key: select the bundle that contains every issue needed for Lydia’s win path. That is B."
+  }
+ ],
+ "studentScript": "This is not a single-issue question. Lydia needs a path to specific performance. The writing/parol evidence issue matters, the six-week timing issue matters, and her ability to perform matters. Pick the all-three bundle: B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It names two live issues but not the writing/parol-evidence issue.",
+   "lawyer": "A buyer’s ability and timing matter, but the signed writing and parol-evidence question also matter to the buyer’s specific-performance win.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "It includes all three issues that sit on Lydia’s win path.",
+   "lawyer": "The court may need to address the writing/parol-evidence issue, the time-for-performance construction, and Lydia’s ability to perform.",
+   "mold": null
+  },
+  "C": {
+   "signal": "It sees the writing problem but ignores timing and performance.",
+   "lawyer": "The parol-evidence issue is relevant but not the only relevant issue.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "It includes the two most document-centered issues but omits ability to perform.",
+   "lawyer": "Specific performance also makes Lydia’s readiness and ability to perform relevant.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-LAND-SALE-SPECIFIC-PERFORMANCE-01",
+   "statement": "For a land-sale specific-performance win, check the enforceable-writing/interpretation issue and the buyer’s readiness or ability to perform.",
+   "trigger": "buyer sues to compel conveyance after a short signed land-sale writing",
+   "unlocks": "partial issue bundles that omit one required step",
+   "authority": "Restatement (Second) of Contracts §§ 125, 131, 129; general specific-performance ready-willing-able rule"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-ALL-ISSUES-ARRAY-01",
+   "statement": "When the choices are bundles of listed trial points, do not pick the most familiar issue; map each issue to the plaintiff’s win path and choose the complete bundle.",
+   "trigger": "choices list one, two, or all three proposed trial points",
+   "unlocks": "combination array with three partial bundles",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Land-sale bundle completeness",
+  "signal": "Specific performance + sparse signed writing + oral timing term + later financing",
+  "studentMove": "Check writing, time construction, and ability to perform before choosing a bundle.",
+  "tinyRule": "A partial issue list loses to the complete issue list.",
+  "trap": "dominant trap D omits ability to perform."
+ }
+}

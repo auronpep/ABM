@@ -1,0 +1,71 @@
+{
+ "id": "CQ14570",
+ "title": "Manger Tote",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Fourth Amendment searches and seizures",
+ "difficulty": null,
+ "tension": null,
+ "stem": "An undercover officer, Mary, radioed that she had just watched two men whom she could describe using a silver minivan with a “Good News Puppet Theater” magnet to sell illegal stimulant tablets to teenagers outside a downtown Christmas pageant rehearsal. Minutes later, Officers John and Paul saw a silver minivan with the same magnet parked near the civic auditorium. The driver, Daniel, matched Mary’s description of one of the men.\n\nRuth, the only other person in the minivan, stepped down from the cargo area carrying a purple tote and walked to a nearby city-shuttle line. The officers then stopped the minivan and searched Daniel. In Daniel’s jacket pocket, they found a small bottle of narcotic pills. They then opened a locked costume trunk in the cargo area and found a small sealed envelope containing marijuana. They also found cocaine in the center console.\n\nAfter completing their search of Daniel and the minivan, the officers went to Ruth at the shuttle line and searched her tote. In the tote, they found a small quantity of heroin. Daniel and Ruth were arrested and charged with unlawful possession of narcotics.\n\nIf Ruth moves to suppress the use of the heroin as evidence, the court should rule how?\n\nSource row used for the original QID, topic, pick rates, official key, and official explanations:\n\nStep 1 — black-letter rule tested: probable cause to search a vehicle permits a warrantless search of containers found in the vehicle that may contain contraband; it does not automatically authorize searching a person or her carried effects after she has left the vehicle absent particularized probable cause, consent, a warrant, search incident to arrest, Terry frisk basis, or true exigency.\n\nStep 2 — invariant layer preserved:\n\n| Invariant        | Preserved content                                                                                     |\n| ---------------- | ----------------------------------------------------------------------------------------------------- |\n| Rule             | Automobile exception / scope of vehicle probable cause vs individual search.                          |\n| Issue            | Whether the challenged heroin in the woman’s carried bag is suppressible.                             |\n| Credited outcome | Motion granted.                                                                                       |\n| Dominant trap    | Vehicle probable cause covers the former passenger’s bag.                                             |\n| Array geometry   | Two grant answers / two deny answers; one correct grant, one wrong grant rationale, two denial lures. |\n| Call function    | Court ruling on a suppression motion.                                                                 |",
+ "call": "If Ruth moves to suppress the use of the heroin as evidence, the court should rule how?",
+ "choices": {
+  "A": "Grant the motion, because the officers should have taken Ruth’s tote and then sought a warrant to search it.",
+  "B": "Deny the motion, because Ruth was about to leave on the city shuttle and exigent circumstances existed.",
+  "C": "Grant the motion, because Ruth did not match the description given by the undercover officer, and her presence in the minivan did not justify the search.",
+  "D": "Deny the motion, because Ruth had been in the minivan and the officers had probable cause to search the minivan."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Gold Key: vehicle probable cause can reach containers found in the vehicle, but it does not automatically reach a former passenger’s tote after she has left the vehicle. Silver Key: lock the object searched first. The challenged evidence is the heroin in Ruth’s tote, not the pills, marijuana, or cocaine found in Daniel or the minivan.\n\nRuth did not match Mary’s description of either seller. She left the minivan carrying the tote before the officers stopped and searched the minivan. The officers searched the tote only after finishing the driver/vehicle search. The facts give no separate search basis tied to Ruth or the tote. Her motion should be granted.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "Call: heroin in Ruth’s tote. Ruth left the van with the tote before the stop. Vehicle probable cause explains the van search, not the later tote search. Cut the vehicle and shuttle lures. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Same result as the credited answer, but it skips the basis for taking the tote.",
+   "lawyer": "A warrant later would not cure an unsupported seizure of the tote.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The answer turns ordinary travel into an emergency label.",
+   "lawyer": "The shuttle fact alone does not create exigent circumstances plus probable cause.",
+   "mold": "extreme_of_range"
+  },
+  "C": {
+   "signal": "It answers the tote-search call and uses the missing Ruth-specific basis.",
+   "lawyer": "Mere presence near a suspected vehicle does not supply particularized probable cause to search Ruth’s carried tote.",
+   "mold": null
+  },
+  "D": {
+   "signal": "It talks about probable cause to search the minivan, but the call is about Ruth’s tote.",
+   "lawyer": "Vehicle probable cause reaches containers found in the vehicle, not Ruth’s carried tote after she left.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-MANGER-TOTE-01",
+   "statement": "Vehicle probable cause can reach containers found in the vehicle, but it does not automatically reach a former passenger's tote after she has left the vehicle. A search of the person's carried effects needs a separate basis tied to that person or item.",
+   "trigger": "the item searched is carried away from the vehicle before the vehicle stop/search",
+   "unlocks": "dominant vehicle-probable-cause trap",
+   "authority": "Wyoming v. Houghton, 526 U.S. 295 (1999); Ybarra v. Illinois, 444 U.S. 85 (1979); United States v. Di Re, 332 U.S. 581 (1948)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-MANGER-TOTE-01",
+   "statement": "Lock the object searched before reading the rationales: the call is about the heroin in Ruth's tote, not the narcotics found in Daniel's van. A vehicle-search answer needs the tote to still be part of the vehicle search.",
+   "trigger": "the stem finishes the van search, then shifts to Ruth and her tote",
+   "unlocks": "wrong-object vehicle-search lure",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Object Searched Before Exception",
+  "signal": "The stem searches a vehicle, then later searches a person's carried bag.",
+  "studentMove": "Name the exact object containing the challenged evidence before accepting a vehicle-search rationale.",
+  "tinyRule": "Vehicle probable cause is not a free pass to search a former passenger's carried effects.",
+  "trap": "Treating any recent passenger as part of the vehicle search."
+ }
+}

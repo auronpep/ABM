@@ -1,0 +1,100 @@
+{
+ "id": "CQ14711",
+ "title": "Noahs Ark Stall",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Other Crimes",
+ "subtopic": "Receipt of stolen property",
+ "difficulty": "not supplied",
+ "tension": null,
+ "stem": "Lydia agreed at a Christian camp swap night to trade a set of worship-concert tickets for a hand-carved Noah’s Ark model for her private collection.\n\nIn which of the following cases is Lydia most likely to be convicted if she is charged with receiving stolen property?",
+ "call": "In which case is Lydia most likely to be convicted if charged with receiving stolen property?",
+ "choices": {
+  "A": "Barnabas took the model from Hannah’s porch and had already arranged the trade with Lydia. Police stopped Barnabas, took custody of the model, and then had him complete the arranged trade after he told Lydia the model was stolen.",
+  "B": "Naomi owned the model. She falsely reported it stolen to her insurer, collected on the claim, and then completed the trade with Lydia after telling Lydia the model was stolen.",
+  "C": "Paul, a cooperating police agent, had the model at the swap table under police direction after police had already taken custody of it. Paul told Lydia it had been stolen, which was true, and completed the trade.",
+  "D": "Barnabas took the model from Hannah’s porch with Timothy’s help. Unknown to Barnabas and Lydia, Timothy was a police agent who only pretended to help Barnabas take the model. Barnabas told Lydia the model was stolen before completing the trade."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is the best answer. Lydia receives the model after it was actually taken from Hannah and before the owner or police recovered it. Timothy’s feigned help does not convert the property into recovered property; he was only pretending to assist Barnabas, and Barnabas’s theft still produced stolen property.\n\nGold Key: For completed receiving stolen property, the property must be actually stolen and still stolen at receipt. Feigned police participation in the theft is not the same thing as police recovery before the defendant receives it.\n\nSilver Key: Read the answer array as a status grid. Do not rank bad intent. Ask whether the item is still stolen at the handoff.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "Use the Gold Key to run each mini-fact pattern through the active-status element."
+  },
+  {
+   "label": "A:",
+   "text": "Cut. It gives theft plus guilty knowledge, but the status-at-receipt element fails after police custody."
+  },
+  {
+   "label": "B:",
+   "text": "Cut. It gives fraud plus guilty knowledge, but no actual theft."
+  },
+  {
+   "label": "C:",
+   "text": "Cut. It gives true stolen history, but police already controlled the model before Lydia received it."
+  },
+  {
+   "label": "D:",
+   "text": "Survives. The model was actually stolen and still stolen at receipt."
+  },
+  {
+   "label": "CLASH",
+   "text": "The axis is active stolen status at receipt. The splitting facts are police recovery, owner fraud, or only feigned undercover help."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tie remains after the Gold Key. D is the residual."
+  }
+ ],
+ "studentScript": "All four choices give guilty knowledge. Do not pick the ugliest story. Use the status grid. A and C were recovered before receipt. B was never stolen. D is still stolen at receipt.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "A gives theft and knowledge, but police custody came before receipt; the Gold Key is required.",
+   "lawyer": "Recovered property no longer has stolen status for the completed receiving offense.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "B gives guilty-looking conduct, but the model was never stolen; the Gold Key is required.",
+   "lawyer": "Completed receiving requires property that is actually stolen.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "C says the model had been stolen, but police already controlled it before Lydia received it; the Gold Key is required.",
+   "lawyer": "Police recovery before receipt defeats completed receiving.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "D is the only scenario where the model is actually stolen and unrecovered at receipt.",
+   "lawyer": "Feigned help by a police agent is not recovery; the item remains stolen.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-STOLEN-STATUS-01",
+   "statement": "For completed receiving stolen property, the property must be actually stolen and still have stolen status when the defendant receives it. Property recovered by the owner or police before the handoff is no longer stolen for the completed offense, even if the defendant believes it is.",
+   "trigger": "A receiving-stolen-property answer set with police stings, cooperating thieves, or an owner who falsely says the property was stolen.",
+   "unlocks": "The recovered-property and fake-stolen-property traps.",
+   "authority": "18 U.S.C. § 641 element structure; United States v. Cohen, 274 F. 596 (3d Cir. 1921); United States v. Dove, 629 F.2d 325 (4th Cir. 1980); State v. Hageman, 296 S.E.2d 433 (N.C. 1982)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-STATUS-GRID-01",
+   "statement": "When all four choices are mini-fact patterns, do not rank bad intent; make a status grid. Ask only whether the item is actually stolen and still stolen at the moment the defendant receives it.",
+   "trigger": "A call asking which case is most likely to convict, with nearly identical purchase-or-trade choices.",
+   "unlocks": "The four-scenario answer array where every choice says the buyer was told the item was stolen.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Receiving stolen property: status at receipt",
+  "signal": "All choices say the defendant was told the item was stolen.",
+  "studentMove": "Ignore moral badness first; check active stolen status at receipt.",
+  "tinyRule": "Recovered property and never-stolen property are not stolen property for the completed receiving offense.",
+  "trap": "Bad purpose standing alone feels enough."
+ }
+}

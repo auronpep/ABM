@@ -1,0 +1,78 @@
+{
+ "id": "CQ14609",
+ "title": "Festival Signal Stop",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Fourth Amendment traffic stop and passenger exit order",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Officer Esther was directing traffic outside a Christian music festival at the city arena. She had only a hunch, not amounting to probable cause or reasonable suspicion, that Daniel was selling stolen Bible-study tablets. Daniel drove past in a minivan with Lydia in the passenger seat and made a right turn without signaling, in violation of the traffic code. Esther normally ignored a single missed turn signal unless it created a hazard, but she stopped Daniel because she hoped to investigate the tablet hunch.\n\nAfter telling Daniel that she would issue a citation for the signal violation, Esther ordered Daniel and Lydia to step out of the minivan. When Lydia stepped out, Esther saw on the passenger seat a clear pouch of powder that she immediately recognized as cocaine. Esther arrested Daniel and Lydia for possession.\n\nAt their joint criminal trial, Daniel and Lydia argue that their Fourth Amendment rights were violated because Esther improperly (1) stopped the minivan as a pretext for investigating her hunch rather than for the stated purpose of issuing a traffic citation and (2) ordered Lydia to step out even though Esther had no reason to believe Lydia was criminal or dangerous.\n\nAre Daniel and Lydia correct?",
+ "call": "Are Daniel and Lydia correct?",
+ "choices": {
+  "A": "No as to the stop of the minivan, but yes as to the order that Lydia step out of the minivan.",
+  "B": "Yes, as to both the stop of the minivan and the order that Lydia step out of the minivan.",
+  "C": "No, as to both the stop of the minivan and the order that Lydia step out of the minivan.",
+  "D": "Yes as to the stop of the minivan, but no as to the order that Lydia step out of the minivan."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. The answer set is a two-switch matrix: first decide whether the stop was valid; then decide whether the passenger exit order was valid.\n\nSilver Key: Read the answer set as two yes/no switches. Do not let the officer’s bad motive decide both switches at once.\n\nGold Key: A traffic stop supported by an observed traffic violation is not invalidated by the officer’s pretextual motive. Daniel failed to signal, so the stop was objectively justified.\n\nGold Key: During a lawful traffic stop, an officer may order a passenger out of the vehicle while the stop is completed. Lydia therefore was not correct to claim that Esther needed separate suspicion that Lydia was criminal or dangerous before ordering her out.\n\nBoth challenged actions were constitutional, so the correct response is No as to both.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "Two switches. Stop: lawful because traffic violation. Passenger order: lawful because lawful stop. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice accepts the stop but says the passenger order fails.",
+   "lawyer": "Maryland v. Wilson permits ordering a passenger out during a lawful traffic stop.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "The choice treats both challenged actions as violations.",
+   "lawyer": "Whren and Maryland v. Wilson defeat both components.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "This is the matrix cell where both constitutional objections fail.",
+   "lawyer": "The stop was objectively justified and the passenger exit order was permissible during the lawful stop.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The choice treats pretext as invalidating the stop.",
+   "lawyer": "Whren makes objective justification, not subjective motive, the ordinary traffic-stop test.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-TRAFFIC-PRETEXT-01",
+   "statement": "For an ordinary traffic stop, objective justification controls; a traffic stop supported by an observed traffic violation is not invalidated by the officer's pretextual motive.",
+   "trigger": "An officer has an unrelated hunch but also observes a traffic violation.",
+   "unlocks": "pretextual-stop trap",
+   "authority": "Whren v. United States, 517 U.S. 806 (1996)"
+  },
+  {
+   "id": "GK-CRIMINAL-PASSENGER-EXIT-01",
+   "statement": "During a lawful traffic stop, an officer may order a passenger out of the vehicle while the stop is completed, without separate individualized suspicion that the passenger is armed or criminal.",
+   "trigger": "A lawful vehicle stop plus an order for a passenger to step out.",
+   "unlocks": "passenger-exit-order trap",
+   "authority": "Maryland v. Wilson, 519 U.S. 408 (1997)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-TRAFFIC-2X2-01",
+   "statement": "Read the answer set as two yes/no switches: legality of the stop and legality of the passenger exit order. Decide each switch independently, then choose the cell that matches both.",
+   "trigger": "Choices answer yes/no as to two challenged police actions.",
+   "unlocks": "2x2 result matrix",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Traffic-stop two-switch anchor",
+  "signal": "Pretext stop plus passenger exit order.",
+  "studentMove": "Separate the stop switch from the passenger-order switch before choosing a yes/no cell.",
+  "tinyRule": "Observed traffic violation makes the stop lawful despite pretext; lawful stop permits ordering passengers out.",
+  "trap": "Treating subjective motive or passenger innocence as a Fourth Amendment veto."
+ }
+}

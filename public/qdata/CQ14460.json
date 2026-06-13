@@ -9,10 +9,10 @@
  "stem": "Before Mary laid a tile, Timothy, Peter’s choir friend and an avid collector of Christian art, said in front of both Peter and Mary that he would not approve Mary’s sketch. That rejection mattered because Peter and Mary had already signed a detailed writing: Mary would cover the side of Peter’s privately owned vintage camper with a fish-and-loaves mosaic according to Mary’s attached sketch, and Peter would pay $18,000 at completion. Peter’s sister Ruth was not a party to the agreement and owned no interest in the camper. At Peter’s insistence, the writing said that neither party would be bound unless Timothy approved Mary’s sketch. After Timothy rejected the sketch, Peter nevertheless told Mary to go ahead with the mosaic. Mary reluctantly began and completed 45% of the work. Peter then repudiated any duty to pay the contract price or any part of it.\n\nIf Mary now sues Peter for damages for breach of contract, which concept best supports Mary’s claim?",
  "call": "If Mary now sues Peter for damages for breach of contract, which concept best supports Mary's claim?",
  "choices": {
-  "A": "{'text': 'Promissory estoppel.', 'why_wrong_or_correct': 'Attractive because Mary relied; not responsive because the call and signed writing point to a breach-of-contract waiver concept.'}",
-  "B": "{'text': 'Irrevocable waiver of condition.', 'why_wrong_or_correct': \"Correct. Gold Key: Peter waived the approval condition by ordering performance after rejection, and Mary's 45% performance made the waiver irrevocable.\"}",
-  "C": "{'text': 'Unjust enrichment.', 'why_wrong_or_correct': 'Attractive because Peter received a benefit; not responsive because unjust enrichment is a backup recovery lane, not the best support for this breach-of-contract claim.'}",
-  "D": "{'text': 'Substantial performance.', 'why_wrong_or_correct': 'Attractive because Mary partly performed; not responsive because the issue is waiver of a failed express approval condition, not substantial completion.'}"
+  "A": "Promissory estoppel.",
+  "B": "Irrevocable waiver of condition.",
+  "C": "Unjust enrichment.",
+  "D": "Substantial performance."
  },
  "key": "B",
  "dominantTrap": null,

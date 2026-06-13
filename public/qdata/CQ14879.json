@@ -1,0 +1,96 @@
+{
+ "id": "CQ14879",
+ "title": "Waffle Wagon Coverage",
+ "subject": "Evidence",
+ "topic": "Relevancy and Excluding Relevant Evidence",
+ "subtopic": "Insurance evidence offered for motive",
+ "difficulty": "not supplied",
+ "tension": null,
+ "stem": "At a city festival, Lydia’s privately owned “Loaves & Fishes” waffle trailer burned to the frame. Lydia was charged with arson. To show that Lydia had a motive to set the fire, the government offered proof that the trailer and its kitchen equipment were fully insured.\n\nShould the court admit this evidence?",
+ "call": "Should the court admit this evidence?",
+ "choices": {
+  "A": "Yes, because any conduct of a party to the case is admissible when offered against that party.",
+  "B": "Yes, because the insurance on the trailer and equipment has a tendency to show that Lydia had a motive to burn the trailer.",
+  "C": "No, because evidence of insurance is not admissible on the issue of whether the insured acted wrongfully.",
+  "D": "No, because the probative value of the insurance evidence on whether Lydia intentionally burned the trailer is substantially outweighed by the dangers of unfair prejudice and jury confusion."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The government is offering the insurance evidence for motive: Lydia had a possible financial reason to burn insured property. That is enough for relevance because the evidence tends to make a consequential fact more probable. Gold Key: insurance evidence is purpose-sensitive; it is not automatically excluded merely because the word “insurance” appears. Silver Key: lock the offered purpose first. Here the purpose is motive, not a blanket claim that insured people act wrongfully.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A — NOT_TRUE / tiered_absolute",
+   "text": "“Any conduct” is too broad. Cut on overclaim."
+  },
+  {
+   "label": "CUT C — NOT_RESPONSIVE / bait_doctrine",
+   "text": "This is the familiar insurance-exclusion rule, but the choice uses the wrong purpose. The stem says motive. Cut on purpose mismatch."
+  },
+  {
+   "label": "CUT D — NOT_RESPONSIVE / wrong_element",
+   "text": "This choice turns the case into a Rule 403 exclusion case without a fact showing substantial unfair prejudice or confusion. Cut because it elevates the wrong element."
+  },
+  {
+   "label": "Residual",
+   "text": "B. It matches the stem’s purpose: motive."
+  },
+  {
+   "label": "CLASH",
+   "text": "Not needed after the cut."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed. Anchor support confirms the dominant trap."
+  }
+ ],
+ "studentScript": "Purpose first. The government offers insurance to show motive. Cut the blanket party-conduct answer. Cut the insurance-is-out answer because it answers wrongful conduct, not motive. Cut the 403 answer because the stem gives no substantial-danger fact. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The word 'any' claims all party conduct is admissible.",
+   "lawyer": "No Federal Rule creates a blanket rule admitting any conduct merely because it is offered against a party.",
+   "mold": "tiered_absolute"
+  },
+  "B": {
+   "signal": "The choice matches the stem's purpose: motive.",
+   "lawyer": "FRE 401, 403, and 411 confirm admissibility for a relevant motive purpose absent substantial Rule 403 dangers.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice says wrongful conduct; the stem says motive.",
+   "lawyer": "FRE 411 is purpose-limited and permits insurance evidence for another purpose.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The stem gives no fact showing the danger substantially outweighs motive value.",
+   "lawyer": "FRE 403 requires substantial outweighing; the official explanation supplies no such danger.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-INSURANCE-MOTIVE-01",
+   "statement": "Insurance evidence is purpose-sensitive. It cannot be used merely to prove wrongful conduct, but it can be admitted when the offered purpose is a separate non-propensity point such as motive or financial incentive.",
+   "trigger": "Insurance evidence offered to show why the accused would burn or damage insured property.",
+   "unlocks": "The insurance-is-inadmissible trap when the stem offers insurance to prove motive.",
+   "authority": "Fed. R. Evid. 401, 403, 411."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-PURPOSE-FIRST-01",
+   "statement": "In Evidence, lock the offered purpose before judging the rule. The same insurance fact can be barred for one purpose and admitted for another.",
+   "trigger": "The stem says the proponent offers insurance evidence to show motive.",
+   "unlocks": "The dominant trap that treats an insurance rule as a blanket exclusion instead of a purpose-limited rule.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Insurance evidence: purpose first",
+  "signal": "The stem offers insurance evidence and names a specific purpose.",
+  "studentMove": "State the purpose before applying any exclusion.",
+  "tinyRule": "Insurance is not a blanket exclusion; motive purpose can make it admissible.",
+  "trap": "Treating insurance as automatically inadmissible."
+ }
+}

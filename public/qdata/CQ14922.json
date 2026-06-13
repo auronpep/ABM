@@ -1,0 +1,84 @@
+{
+ "id": "CQ14922",
+ "title": "Lakeside Prayer Garden",
+ "subject": "Real Property",
+ "topic": "Contracts",
+ "subtopic": "Contracts",
+ "difficulty": "Core",
+ "tension": null,
+ "stem": "Lydia owned a small lakeside parcel that several local families used for weekend Bible-study picnics. She signed a written contract to sell the parcel to Barnabas. The contract said nothing about the quality of title Lydia had to convey. The closing occurred, and Lydia delivered a warranty deed to Barnabas.\n\nA few months later, a popular Christian retreat center opened nearby, and the parcel became much more valuable. Barnabas then signed a written contract to sell the parcel to Ruth. That contract expressly required Barnabas to convey marketable title. Ruth’s attorney discovered that title to the parcel was not marketable and had already been unmarketable when Lydia delivered the deed to Barnabas. Ruth refused to close.\n\nBarnabas sued Lydia for breach of the land-sale contract, seeking damages for the lost resale to Ruth. On this count, who is likely to prevail?",
+ "call": "On this count, who is likely to prevail?",
+ "choices": {
+  "A": "Lydia, because she did not expressly promise to convey marketable title.",
+  "B": "Lydia, because her contract obligations as to title merged into the deed.",
+  "C": "Barnabas, because Lydia is liable for all reasonably foreseeable damages caused by the failed resale.",
+  "D": "Barnabas, because the law implies in a land-sale contract a covenant that title will be marketable."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The claim is framed as breach of the land-sale contract. That matters. Before closing, a land-sale contract ordinarily carries an implied obligation to deliver marketable title. But after closing and delivery of the deed, the title-related contract obligations generally merge into the deed. Gold Key: marketable-title contract duty is a pre-closing contract-stage duty; after deed delivery, the buyer’s title remedy generally must be based on the deed, not the prior contract. Silver Key: lock the procedural-looking phrase “on this count”; the count is contract breach, not a warranty-deed claim.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "* A: Cut by anchor-assisted falsity. Express title language is not required for the pre-closing implied covenant.\n* C: Cut by Issue-Sense. It answers damages scope before identifying a surviving contract claim.\n* D: Cut by stage/context. It is true before closing but not responsive after the deed was delivered."
+  },
+  {
+   "label": "CLASH",
+   "text": "The real clash is contract stage vs deed stage. The splitting fact is that Lydia delivered a warranty deed and the sale closed."
+  },
+  {
+   "label": "CALL",
+   "text": "Apply the Gold Key: after closing, title obligations generally merge into the deed. Residual answer: B."
+  }
+ ],
+ "studentScript": "This is post-closing. The deed was delivered. The lawsuit is on the prior contract. Contract-title duties merged into the deed. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer makes express title language decisive.",
+   "lawyer": "A land-sale contract generally implies marketable title even when silent; the defect is not lack of express title language.",
+   "mold": "flat_misstatement"
+  },
+  "B": {
+   "signal": "It matches the stage: post-closing deed controls.",
+   "lawyer": "Under merger by deed, title-related contract obligations generally merge into the deed at closing.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer talks remedy before proving a surviving contract breach.",
+   "lawyer": "Foreseeability of damages does not revive a merged contract title obligation.",
+   "mold": "misfit"
+  },
+  "D": {
+   "signal": "The answer gives the pre-closing rule when the call is post-closing.",
+   "lawyer": "The implied marketable-title covenant exists in the contract stage but generally merges into the deed after closing.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-MERGER-01",
+   "statement": "In a land sale, marketable title is a contract-stage promise. Once the buyer accepts the deed at closing, title-related contract promises generally merge into the deed.",
+   "trigger": "Closed sale plus warranty deed plus later suit on the prior contract.",
+   "unlocks": "The implied-title trap in D and the correct deed-stage answer in B.",
+   "authority": "Common-law merger doctrine; marketable title implied promise."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-STAGE-01",
+   "statement": "When a real-property answer set mentions both the land-sale contract and the deed, name the stage before picking the rule.",
+   "trigger": "Contract first, deed delivered, later lawsuit on contract.",
+   "unlocks": "Pre-closing marketable-title rule versus post-closing deed remedy.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Contract stage or deed stage",
+  "signal": "The stem says the deed was delivered before the lawsuit.",
+  "studentMove": "Stop using contract-title rules and ask whether the claim is on the deed.",
+  "tinyRule": "After closing, title promises usually merge into the deed.",
+  "trap": "Picking the true implied-title rule after it is too late."
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "CQ14394",
+ "title": "Lydia Puppet Stage",
+ "subject": "Contracts",
+ "topic": "Defenses to Enforceability",
+ "subtopic": "Defenses to Enforceability",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At a private Christian craft fair, Lydia asked Barnabas, a longtime family friend, “Would you lend me $1,600 to buy a portable puppet stage for my paid parable-story classes? I’ll repay you with interest one year from today.” Paul, Lydia’s uncle, said, “If Lydia does not repay you as promised, I will.” Barnabas immediately handed Lydia $1,600 in cash. Lydia bought the puppet stage. When the debt came due, Lydia and Paul both refused to pay anything.\n\nIn Barnabas’s action against Paul to recover $1,600 plus interest, which statement best summarizes Paul’s best defense?",
+ "call": "In Barnabas’s action against Paul to recover $1,600 plus interest, which statement best summarizes Paul’s best defense?",
+ "choices": {
+  "A": "The loan to Lydia was made without any agreement concerning the applicable interest rate.",
+  "B": "Paul’s conditional promise to Barnabas was not made for the primary purpose of benefiting Paul.",
+  "C": "Paul received no consideration for his conditional promise to Barnabas.",
+  "D": "Paul’s conditional promise to Barnabas was not to be performed in less than one year from the time it was made."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Gold Key: An oral promise to pay another person’s debt is usually in the Statute of Frauds. The main-purpose exception removes the promise from the writing requirement only when the guarantor’s leading purpose is the guarantor’s own economic advantage.\n\nPaul’s words create a secondary promise: if Lydia does not repay Barnabas, Paul will. The facts show the money went to Lydia for her puppet stage. Nothing in the stem gives Paul a personal economic stake. Silver Key: sort the defenses by whose promise they attack. The lawsuit is against Paul, so the best defense is the one attacking Paul’s oral guaranty, not Lydia’s loan terms.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "A is not responsive. It attacks the loan’s interest term, not Paul’s best defense. C is not responsive. It attacks personal receipt of consideration, but the consideration issue is not whether Paul got the cash. D is not responsive. It reaches for the one-year lane, while the call’s stronger lane is Paul’s suretyship promise."
+  },
+  {
+   "label": "CLASH",
+   "text": "The real axis is: defense to Paul’s guaranty versus defects in Lydia’s loan. The facts select Paul’s guaranty."
+  },
+  {
+   "label": "CALL",
+   "text": "Use the Gold Key. “If Lydia does not repay, I will” is a suretyship trigger. No signed writing. No self-benefit facts for Paul. B remains."
+  }
+ ],
+ "studentScript": "Call asks Paul’s best defense. Paul said, if Lydia does not pay, I will. That is the guaranty lane. Gold Key: oral guaranty needs writing unless Paul’s main purpose was Paul’s own economic gain. The facts show Lydia got the money and puppet stage, so pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The call is against Paul; this attacks Lydia’s loan term.",
+   "lawyer": "A reasonable interest term can be supplied when the bargain is otherwise sufficiently defined; this does not defeat Paul’s guaranty issue.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This is the only choice that attacks Paul’s oral guaranty through the main-purpose gate.",
+   "lawyer": "Paul’s oral collateral promise is within the suretyship Statute of Frauds because the facts show benefit to Lydia, not Paul.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This looks at whether Paul personally received the money, not whether Barnabas gave bargained-for value.",
+   "lawyer": "Consideration may be given to the borrower rather than to the guarantor.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "This grabs a different Statute of Frauds lane instead of the guaranty lane.",
+   "lawyer": "The suretyship provision supplies the responsive defense; the one-year answer is not Paul’s best defense on these facts.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CONTRACTS-LYDIA-PUPPET-01",
+   "statement": "An oral promise to answer for another person’s debt is usually inside the Statute of Frauds; the main-purpose exception removes it only when the guarantor’s leading purpose is the guarantor’s own economic advantage.",
+   "trigger": "A speaker says, 'If the borrower does not pay, I will,' and no signed writing from that speaker appears.",
+   "unlocks": "the primary-purpose defense and the suretyship writing gate",
+   "authority": "Restatement (Second) of Contracts §§ 110, 112, 116"
+  },
+  {
+   "id": "GK-CONTRACTS-LYDIA-PUPPET-02",
+   "statement": "Consideration does not have to move into the guarantor’s pocket; performance given to the borrower can support the guarantor’s promise if it was bargained for.",
+   "trigger": "The guarantor points to receiving no money personally even though the lender gave the borrower the money after the guaranty.",
+   "unlocks": "the no-consideration dominant trap",
+   "authority": "Restatement (Second) of Contracts § 71"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CONTRACTS-LYDIA-PUPPET-01",
+   "statement": "In a best-defense array, sort defenses by whose promise they attack: the guarantor’s promise beats borrower-loan defects when the lawsuit is against the guarantor.",
+   "trigger": "The call asks for the guarantor’s best defense, but several choices attack the borrower’s loan.",
+   "unlocks": "the defense-home array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Suretyship main-purpose gate",
+  "signal": "If the borrower does not pay, I will.",
+  "studentMove": "Ask whether the guarantor was mainly seeking personal economic advantage.",
+  "tinyRule": "No self-benefit means oral guaranty stays in the writing-required bucket.",
+  "trap": "no-consideration dominant trap and one-year bait"
+ }
+}

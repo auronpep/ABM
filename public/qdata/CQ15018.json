@@ -1,0 +1,71 @@
+{
+ "id": "CQ15018",
+ "title": "Illumination Birdbaths",
+ "subject": "Real Property",
+ "topic": "Rights in Land",
+ "subtopic": "Common-interest-community design/use restrictions on individually owned lots",
+ "difficulty": "21% source-correct",
+ "tension": null,
+ "stem": "The Jubilee Cottages Association governs a small residential community where each cottage lot is individually owned. After several owners began placing bright blue ceramic birdbaths in their front prayer gardens, the association’s board adopted a new rule stating that, going forward, owners and occupants may place only plain white stone benches in front gardens. The board said the rule would make the cottages look “more reverent and orderly” from the street. After the rule was adopted, Stephen bought several blue ceramic birdbaths to place in his front garden. The recorded community documents are silent about the board’s authority to regulate decorative objects, garden structures, or landscaping placed on individually owned lots.\n\nIs the new rule enforceable against Stephen?",
+ "call": "Is the new rule enforceable against Stephen?",
+ "choices": {
+  "A": "Yes, because the rule is not illegal, unconstitutional, or against public policy.",
+  "B": "No, because the rule is unreasonable, and the association’s governing documents do not authorize its enforcement.",
+  "C": "No, because any rule not written in the recorded community documents is unenforceable.",
+  "D": "Yes, because the rule is reasonably related to furthering a legitimate purpose of the association."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The rule targets objects and landscaping on individually owned lots. The documents are silent on the board’s authority to regulate that area, and the stated reason is only aesthetic uniformity. Gold Key: A common-interest board rule regulating individually owned property needs a valid authority/reasonableness path; “looks better” alone is not enough. Silver Key: Do not pick the answer that uses only the association’s lowest possible validity floor; the winning answer accounts for both missing authority and unreasonable aesthetic-only enforcement.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "Cut A as too-low floor. Cut C as an absolute. Cut D as the dominant partial-test trap. Pick B because it uses both facts: unreasonable aesthetic-only purpose and no authority in the documents.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answers only whether the rule crosses an illegality/public-policy floor.",
+   "lawyer": "A rule may avoid illegality and public-policy defects yet still fail association authority/reasonableness review.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This is the only answer that uses both trigger facts: aesthetic-only purpose and silent governing documents.",
+   "lawyer": "This matches the common-interest-community rule: owner-lot controls need a valid authority/reasonableness basis.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The word any makes the answer too broad.",
+   "lawyer": "Association rules can sometimes be enforceable outside recorded documents when authorized and reasonable; absence from the documents is not always enough by itself.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "This uses the friendliest phrase for the board but does not account for the silent documents and aesthetic-only trigger.",
+   "lawyer": "Aesthetic purpose alone does not establish enforceability of a board rule controlling individually owned property where governing documents do not authorize it.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-HOA-RULE-AUTHORITY-01",
+   "statement": "For common-interest communities, a board rule controlling individually owned property needs a valid authority/reasonableness path; a bare aesthetic preference does not carry the rule.",
+   "trigger": "board rule reaches individually owned lots and governing documents are silent",
+   "unlocks": "dominant trap D and residual B",
+   "authority": "Restatement (Third) of Property: Servitudes §§ 6.7 and 6.9; Nahrstedt reasonableness framework"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-HOA-RULE-AUTHORITY-01",
+   "statement": "When the array gives two yes answers with partial tests and two no answers, pick the no answer that accounts for both load-bearing stem facts.",
+   "trigger": "one no answer combines authority plus reasonableness while the other no answer is absolute",
+   "unlocks": "3-vs-1 enforceability array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Association rule: authority plus reasonableness",
+  "signal": "Board regulates owner-lot use/design, and documents are silent.",
+  "studentMove": "Do not stop at legitimate purpose or public policy; ask whether the answer accounts for authority and reasonableness.",
+  "tinyRule": "Aesthetic-only + no document authority is the losing combination.",
+  "trap": "legitimate-purpose language"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "id": "CQ14569",
+ "title": "Capernaum Calligraphy",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Fourth Amendment / school search at police direction",
+ "difficulty": null,
+ "tension": null,
+ "stem": "After several private stalls at a downtown Christian book fair were burglarized, a city detective suspected Daniel, a 17-year-old student at a public arts high school. During the school day, Daniel was working on a student-club Psalms mural and had his canvas art portfolio with him. The detective went to the school office and asked Assistant Principal Lydia to call Daniel into the hallway and look inside the portfolio.\n\nLydia asked Daniel to open it. When Daniel refused, Lydia pulled the portfolio from his hand, twisting his wrist. Inside, she found several engraved silver bookmark crosses and handed them to the detective. The detective believed the crosses had been taken in one of the burglaries.\n\nDaniel was then arrested, taken to the station, and given Miranda warnings. Daniel asked for a lawyer. The detective called Daniel’s parents, Naomi and Barnabas, to the station, asked them to talk with him, placed them in a room with him, and secretly recorded the conversation. Daniel admitted to his parents that he had committed the burglaries.\n\nDaniel was charged with the burglaries. Daniel moves to suppress the use of the silver crosses. The court should",
+ "call": "The court should",
+ "choices": {
+  "A": "grant the motion on the ground that the search was carried out with excessive force.",
+  "B": "grant the motion on the ground that the search was carried out without probable cause or a warrant.",
+  "C": "deny the motion on the ground that the search was incident to a lawful arrest.",
+  "D": "deny the motion on the ground that searches of students by school personnel on school grounds are reasonable when based on reasonable suspicion."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The motion targets the silver crosses, not the later recorded conversation. Silver Key: lock the object named in the motion first; later confession facts are call clutter unless the answer choice asks about the confession. Lydia searched Daniel’s portfolio because the detective asked her to do it. That moves the case out of the ordinary school-search lane.\n\nGold Key: the school-search reasonable-suspicion rule applies to school officials acting on their own school authority. When police direct the school official to search for evidence of an outside crime, the search is treated as a police-directed search, so the ordinary warrant/probable-cause lane controls. Because the detective had neither a warrant nor probable cause, the silver crosses are suppressed.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks whether the court should suppress the silver crosses. It does not ask whether the recorded conversation is admissible."
+  },
+  {
+   "label": "CUT A",
+   "text": "This is a right-result / wrong-reason choice. Excessive force points at the manner of the taking and Daniel’s wrist injury. The motion asks whether the physical evidence may be used. Cut as NOT_RESPONSIVE, wrong_element."
+  },
+  {
+   "label": "CUT C",
+   "text": "Search incident to arrest is a real exception, but the search happened first and the arrest came later. Cut as NOT_RESPONSIVE, bait_doctrine."
+  },
+  {
+   "label": "CLASH B vs. D",
+   "text": "The fight is one axis: school official acting on school authority vs. school official acting at police direction. D wins if Lydia is in the school-search lane. B wins if Lydia is in the police-directed lane."
+  },
+  {
+   "label": "Splitting fact",
+   "text": "The detective went to the school and asked Lydia to call Daniel into the hallway and search the portfolio."
+  },
+  {
+   "label": "CALL / Gold Key",
+   "text": "The Gold Key decides the residue: police-directed school searches do not stay in the ordinary school-search reasonable-suspicion lane. B is the residual."
+  }
+ ],
+ "studentScript": "The motion is about the silver crosses. Cut excessive force as the wrong reason and search incident as the wrong timing. Clash B and D on who started the search. Police started it, so use the Gold Key and pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice points to the wrist injury, but the call asks about use of the silver crosses.",
+   "lawyer": "Excessive force may create a separate constitutional problem, but the suppression ground for the physical evidence is the unlawful police-directed search.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This answer matches the object named in the motion and the police-directed search lane.",
+   "lawyer": "Under the bar rule, police-directed school searches require the ordinary Fourth Amendment warrant/probable-cause showing; the evidence is suppressed.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The search happened before the arrest, so the search-incident label points to the wrong timing frame.",
+   "lawyer": "Search incident to arrest cannot justify a pre-arrest search conducted by a school official at police request.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The school-search rule is real, but the stem's splitting fact is that police initiated the search.",
+   "lawyer": "New Jersey v. T.L.O. covers school officials acting on their own authority; this fact pattern places the school official in the law-enforcement-agent lane.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-POLICE-DIRECTED-SCHOOL-SEARCH-01",
+   "statement": "The school-search reasonable-suspicion lane applies to school officials acting on their own school authority. When police direct the school official to search for evidence of an outside crime, treat the school official as the police lane and require the ordinary Fourth Amendment warrant/probable-cause showing.",
+   "trigger": "Police ask a school employee to search a student's personal container for criminal evidence.",
+   "unlocks": "The dominant school-search trap",
+   "authority": "New Jersey v. T.L.O., 469 U.S. 325, 341 n.7 (1985); Coolidge v. New Hampshire, 403 U.S. 443, 487 (1971); U.S. Const. amend. IV."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-CALL-OBJECT-01",
+   "statement": "Lock the object named in the motion before reading the reasons. Here the motion targets the silver crosses, so later stationhouse confession facts are call clutter unless a choice asks about them.",
+   "trigger": "The stem gives a later confession, but the motion asks only about physical evidence found earlier.",
+   "unlocks": "The adjacent-call trap created by the later recorded confession.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Police-directed school search",
+  "signal": "Police ask school personnel to search a student's personal item for criminal evidence.",
+  "studentMove": "Ask who started the search: school authority or police investigation.",
+  "tinyRule": "School reasonable suspicion is the school-alone lane; police-directed searches move to the ordinary Fourth Amendment lane.",
+  "trap": "A real school-search rule is over-applied to a police investigation."
+ }
+}

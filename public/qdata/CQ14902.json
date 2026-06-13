@@ -1,0 +1,92 @@
+{
+ "id": "CQ14902",
+ "title": "Felt Lamb Puppet",
+ "subject": "Evidence",
+ "topic": "Writings, Recordings, and Photographs",
+ "subtopic": "Best evidence rule",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Mary sued Barnabas Studios, alleging that Barnabas used her idea for a felt lamb messenger as a character in its Easter adventure game. Barnabas admitted that Mary had sent it a hand-sewn felt lamb puppet, but Barnabas denied that the puppet was substantially similar to the game character. After Barnabas returned the puppet, Mary later dismantled and discarded it. In order for Mary to testify to the appearance of the puppet, Mary",
+ "call": "In order for Mary to testify to the appearance of the puppet, Mary",
+ "choices": {
+  "A": "must give advance notice that she plans to offer oral testimony about the puppet.",
+  "B": "need not make any of these showings, because the best evidence rule applies only to writings, recordings, and photographs.",
+  "C": "must show that she did not dismantle and discard the puppet in bad faith.",
+  "D": "must introduce a photograph of the puppet if one exists."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Mary is not trying to prove the contents of a writing, recording, or photograph. She is describing a physical puppet she personally handled. Gold Key: the best evidence rule starts with a scope gate; physical objects are outside that gate. Silver Key: test the scope gate before walking down the exception ladder. Since the puppet is not the kind of item governed by the rule, Mary need not make a bad-faith showing, give a notice showing, or introduce a photograph.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "It imposes a procedural prerequisite. The visible problem is that it answers as if Mary were already inside an original-document-rule exception. With the Gold Key, the scope gate cuts it."
+  },
+  {
+   "label": "CUT C",
+   "text": "It uses the discarded-object fact to trigger the lost-or-destroyed-original lane. That is the most attractive wrong move. With the Gold Key, the fact is not enough because the thing discarded is a physical puppet."
+  },
+  {
+   "label": "CUT D",
+   "text": "It treats “best evidence” as “use the best available substitute.” That is a fabricated best-available-evidence requirement. The rule’s scope language cuts it."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two true-and-responsive answers remain after the scope cut."
+  },
+  {
+   "label": "CALL",
+   "text": "No tiebreaker is needed. Residual answer: B."
+  }
+ ],
+ "studentScript": "This is a physical puppet, not a writing, recording, or photograph. Scope gate first. The best evidence rule never enters, so the answer is B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice adds a must-do procedural step before the scope gate has been crossed.",
+   "lawyer": "Rule 1004 contains limited original-document exceptions, including notice concepts in a specific opponent-control setting, but no general advance-notice requirement applies to oral testimony about a physical puppet.",
+   "mold": "fabricated_rule"
+  },
+  "B": {
+   "signal": "The choice stops before the exception ladder and matches the physical-object fact.",
+   "lawyer": "FRE 1002 applies to proving contents of writings, recordings, and photographs; a physical puppet is outside that scope.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice grabs the discard fact and applies a lost-original prerequisite before asking whether the item is covered.",
+   "lawyer": "Bad-faith destruction matters under FRE 1004(a) only for other evidence of the contents of a writing, recording, or photograph.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The choice treats a photograph as required merely because it would be strong proof.",
+   "lawyer": "The best evidence rule is not a general requirement to use photographs of physical objects.",
+   "mold": "fabricated_rule"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-OBJECT-SCOPE-01",
+   "statement": "The best-evidence/original-document rule applies only when a party is proving the contents of a writing, recording, or photograph. A tangible object's appearance may be proved by firsthand testimony if the witness has personal knowledge.",
+   "trigger": "the evidence item is a physical object, prop, model, or sample",
+   "unlocks": "scope gate before bad-faith, notice, or substitute-evidence prerequisites",
+   "authority": "FRE 1001(a)-(c), FRE 1002, FRE 1004"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-SCOPE-BEFORE-EXCEPTIONS-01",
+   "statement": "When three choices make the witness satisfy prerequisites and one says the rule never enters, test the scope gate first. Do not walk down an exception ladder until the item is inside the rule.",
+   "trigger": "three must-do choices plus one no-need choice",
+   "unlocks": "scope-gate versus exception-ladder answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Scope Before Original-Document Exceptions",
+  "signal": "A physical item was lost, discarded, or destroyed.",
+  "studentMove": "Ask whether the item is a writing, recording, or photograph before applying original-document exceptions.",
+  "tinyRule": "Physical objects are not writings, recordings, or photographs.",
+  "trap": "The discard fact pulls students into bad-faith analysis."
+ }
+}

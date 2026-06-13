@@ -1,0 +1,71 @@
+{
+ "id": "CQ14556",
+ "title": "Psalter Scrolls",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Arrest-and-indictment remedy",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Federal agents investigating a private scheme to import forged illuminated Psalter pages hidden in “Road to Emmaus” devotional kits had two targets. One team learned that Lydia, the alleged U.S. organizer, was inside her Tennessee townhouse; without a warrant, the agents kicked in the door and arrested her. Another team found Daniel, an American citizen, attending a private Bible-manuscript auction in Portugal; without a warrant or permission from Portuguese law-enforcement or judicial officers, the agents seized him and put him on a government plane to Nashville. Daniel and Lydia were both indicted for federal smuggling and fraud offenses. Both moved to dismiss the indictments on the ground that their arrests violated the Fourth Amendment. The court should",
+ "call": "The court should",
+ "choices": {
+  "A": "grant Lydia’s motion and deny Daniel’s motion.",
+  "B": "deny the motions of both Daniel and Lydia.",
+  "C": "grant Daniel’s motion and deny Lydia’s motion.",
+  "D": "grant the motions of both Daniel and Lydia."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct.\n\nGold Key: Do not trade a bad arrest for a dismissed indictment. An unlawful arrest can support a targeted remedy, but it does not by itself immunize the defendant from prosecution.\n\nSilver Key: This answer array is a two-defendant 2×2 matrix. Do not first ask whose arrest was worse. First ask whether the requested remedy—dismissal of the indictment—is available at all. Because that remedy is unavailable for either defendant, the “deny both” cell wins.\n\nDaniel’s seizure abroad and Lydia’s warrantless home arrest may create serious Fourth Amendment or other remedial questions. But the motion in the call is a motion to dismiss the indictments. That is the wrong remedy. The indictments are not dismissed merely because the defendants were brought before the court through unlawful arrests.",
+ "wrongExplanations": {},
+ "c3": [],
+ "studentScript": "This is a dismissal motion, not an arrest-legality question. Bad arrest is not dismissal. Deny both.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It answers whether Lydia’s arrest looks unlawful, not whether dismissal is the remedy.",
+   "lawyer": "Payton supports why the warrantless home-entry branch is attractive, but Crews and Gerstein defeat dismissal as the remedy.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "Once dismissal is unavailable for illegal arrest alone, neither defendant gets dismissal.",
+   "lawyer": "Crews and Gerstein confirm no prosecution bar from illegal arrest; Alvarez-Machain confirms the foreign-abduction branch does not require dismissal.",
+   "mold": null
+  },
+  "C": {
+   "signal": "It ranks Daniel’s arrest as worse instead of checking the requested remedy.",
+   "lawyer": "Alvarez-Machain and Crews defeat dismissal based on the defendant’s seizure.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "It treats violation as automatic dismissal for both defendants.",
+   "lawyer": "Unlawful arrest by itself does not void the prosecution.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-ILLEGAL-ARREST-NO-DISMISSAL-01",
+   "statement": "Do not trade a bad arrest for a dismissed indictment. An unlawful arrest can support a targeted remedy, but it does not by itself immunize the defendant from prosecution.",
+   "trigger": "A defendant moves to dismiss an indictment because the arrest was allegedly illegal.",
+   "unlocks": "The violation-versus-remedy trap in every choice that grants a motion to dismiss because the arrest looked unconstitutional.",
+   "authority": "Gerstein v. Pugh; United States v. Crews; United States v. Alvarez-Machain."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-REMEDY-MATRIX-01",
+   "statement": "In a both/one/the-other/neither matrix, lock the requested remedy before splitting the defendants. If the remedy is unavailable for either defendant, the neither cell wins.",
+   "trigger": "Two defendants, two arrest stories, and four choices distributing grant or denial of dismissal motions.",
+   "unlocks": "The 2x2 defendant matrix that tempts a student to rank whose arrest was worse.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Bad Arrest Is Not Dismissal",
+  "signal": "A criminal defendant asks to dismiss an indictment because the arrest was illegal.",
+  "studentMove": "Separate violation from remedy.",
+  "tinyRule": "Dismissal of the indictment is not the automatic remedy for an illegal arrest.",
+  "trap": "Outrage at the arrest makes the student grant a remedy the call does not allow."
+ }
+}

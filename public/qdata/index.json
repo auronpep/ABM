@@ -432,6 +432,14 @@
   "difficulty": null
  },
  {
+  "id": "CQ14394",
+  "title": "Lydia Puppet Stage",
+  "subject": "Contracts",
+  "topic": "Defenses to Enforceability",
+  "subtopic": "Defenses to Enforceability",
+  "difficulty": null
+ },
+ {
   "id": "CQ14396",
   "title": "Easter Handbell Plan",
   "subject": "Contracts",
@@ -512,6 +520,14 @@
   "difficulty": null
  },
  {
+  "id": "CQ14437",
+  "title": "Lydias Verse Card Boxes",
+  "subject": "Contracts",
+  "topic": "Formation of Contracts",
+  "subtopic": "Firm offer / acceptance after three-month cap",
+  "difficulty": null
+ },
+ {
   "id": "CQ14438",
   "title": "Nativity Ornament Kits",
   "subject": "Contracts",
@@ -584,12 +600,28 @@
   "difficulty": null
  },
  {
+  "id": "CQ14472",
+  "title": "Lydias Lantern Wall",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Impracticability / assumed risk",
+  "difficulty": null
+ },
+ {
   "id": "CQ14477",
   "title": "Advent Mugs",
   "subject": "Contracts",
   "topic": "Performance, Breach, and Discharge",
   "subtopic": "Options and Cooperation Respecting Performance",
   "difficulty": "not_supplied_in_source_row"
+ },
+ {
+  "id": "CQ14492",
+  "title": "Psalm Lantern Kits",
+  "subject": "Contracts",
+  "topic": "Performance, Breach, and Discharge",
+  "subtopic": "Installment contracts; perfect-tender exception; cure; cancellation",
+  "difficulty": null
  },
  {
   "id": "CQ14493",
@@ -662,6 +694,14 @@
   "topic": "Third-Party Rights",
   "subtopic": "Third-Party Beneficiary Contracts",
   "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14553",
+  "title": "Bronze Dove Chandelier",
+  "subject": "Contracts",
+  "topic": "Third-Party Rights",
+  "subtopic": "Delegation of Duties",
+  "difficulty": null
  },
  {
   "id": "CQ17521",
@@ -790,6 +830,142 @@
   "topic": "Formation of Contracts",
   "subtopic": "Mutual Assent / Offer and Acceptance",
   "difficulty": "medium-hard"
+ },
+ {
+  "id": "CQ14556",
+  "title": "Psalter Scrolls",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Arrest-and-indictment remedy",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14558",
+  "title": "Bethlehem Star Wristbands",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Entrapment; prior similar misconduct; affirmative-defense burden",
+  "difficulty": "Not supplied"
+ },
+ {
+  "id": "CQ14568",
+  "title": "Good Samaritan Radios",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Brady/Giglio delayed impeachment disclosure",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14569",
+  "title": "Capernaum Calligraphy",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Fourth Amendment / school search at police direction",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14570",
+  "title": "Manger Tote",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Fourth Amendment searches and seizures",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14574",
+  "title": "Jericho Wall Patrol Statement",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Statements and Confessions",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14582",
+  "title": "Road To Emmaus Confession",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Fifth and Sixth Amendments—Statements, Confessions, and Identifications > Right to Confrontation",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14586",
+  "title": "Advent Ledger",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Fifth Amendment act-of-production privilege and immunity",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14588",
+  "title": "Gospel Festival Drum",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Burden of proof on element-negating defense",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14596",
+  "title": "Manger Mustard Seed",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Insanity defense due process reforms",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14599",
+  "title": "Bethany Stoneworks Inventory",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Administrative inspection / Fourth Amendment warrant exception",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14605",
+  "title": "Psalm Printing Van Fire",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Alibi burden / Right to Fair Trial",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14609",
+  "title": "Festival Signal Stop",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Fourth Amendment traffic stop and passenger exit order",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14615",
+  "title": "Psalm Cart Informant",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Constitutional Protection of Accused Persons",
+  "subtopic": "Right to Counsel",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14697",
+  "title": "Hymn Stand Refund",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Inchoate Crimes",
+  "subtopic": "Attempt",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14711",
+  "title": "Noahs Ark Stall",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Other Crimes",
+  "subtopic": "Receipt of stolen property",
+  "difficulty": "not supplied"
+ },
+ {
+  "id": "CQ14725",
+  "title": "Lydias Hymn Leaf",
+  "subject": "Criminal Law & Procedure",
+  "topic": "Other Crimes",
+  "subtopic": "Crimes against Property",
+  "difficulty": null
  },
  {
   "id": "CQ16127",
@@ -944,6 +1120,102 @@
   "difficulty": "medium-hard"
  },
  {
+  "id": "CQ14757",
+  "title": "Bethany Bible Quest",
+  "subject": "Evidence",
+  "topic": "Hearsay and Circumstances of Its Admissibility",
+  "subtopic": "Hearsay and Circumstances of Its Admissibility",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14824",
+  "title": "Banner Drone",
+  "subject": "Evidence",
+  "topic": "Presentation of Evidence",
+  "subtopic": "Preliminary questions",
+  "difficulty": "not_supplied_by_source"
+ },
+ {
+  "id": "CQ14843",
+  "title": "Manna Mail",
+  "subject": "Evidence",
+  "topic": "Presentation of Evidence",
+  "subtopic": "Presumptions and inferences",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14851",
+  "title": "Festival Qr Badge",
+  "subject": "Evidence",
+  "topic": "Presentation of Evidence",
+  "subtopic": "Impeachment by criminal conviction; other acts for identity",
+  "difficulty": "not supplied in source row; source correct rate 46%"
+ },
+ {
+  "id": "CQ14853",
+  "title": "Jonah Whale Rig",
+  "subject": "Evidence",
+  "topic": "Privileges and Other Policy Exclusions",
+  "subtopic": "Privilege against self-incrimination",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14854",
+  "title": "Exodus Ark Release",
+  "subject": "Evidence",
+  "topic": "Privileges and Other Policy Exclusions",
+  "subtopic": "Settlement negotiations and offers of compromise",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14857",
+  "title": "Good Samaritan 5k",
+  "subject": "Evidence",
+  "topic": "Privileges and Other Policy Exclusions",
+  "subtopic": "Physician-patient privilege",
+  "difficulty": "Not supplied; 33% correct"
+ },
+ {
+  "id": "CQ14873",
+  "title": "Crossbow Goliath Room",
+  "subject": "Evidence",
+  "topic": "Relevancy and Excluding Relevant Evidence",
+  "subtopic": "Character Evidence / Specific Acts for Noncharacter Purposes",
+  "difficulty": "not_supplied_by_source_row"
+ },
+ {
+  "id": "CQ14879",
+  "title": "Waffle Wagon Coverage",
+  "subject": "Evidence",
+  "topic": "Relevancy and Excluding Relevant Evidence",
+  "subtopic": "Insurance evidence offered for motive",
+  "difficulty": "not supplied"
+ },
+ {
+  "id": "CQ14895",
+  "title": "Ark Ledger",
+  "subject": "Evidence",
+  "topic": "Relevancy and Excluding Relevant Evidence",
+  "subtopic": "Character Evidence",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14896",
+  "title": "Gospel Fair Cashbox",
+  "subject": "Evidence",
+  "topic": "Relevancy and Excluding Relevant Evidence",
+  "subtopic": "Character Evidence — Other Crimes, Wrongs, or Acts",
+  "difficulty": null
+ },
+ {
+  "id": "CQ14902",
+  "title": "Felt Lamb Puppet",
+  "subject": "Evidence",
+  "topic": "Writings, Recordings, and Photographs",
+  "subtopic": "Best evidence rule",
+  "difficulty": null
+ },
+ {
   "id": "CQ17996",
   "title": "Shepherding Call",
   "subject": "Evidence",
@@ -1014,6 +1286,102 @@
   "topic": "Types of Evidence",
   "subtopic": "C1",
   "difficulty": "Trap"
+ },
+ {
+  "id": "CQ14918",
+  "title": "Maranatha Cottage",
+  "subject": "Real Property",
+  "topic": "Contracts",
+  "subtopic": "Contracts for Land",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ14922",
+  "title": "Lakeside Prayer Garden",
+  "subject": "Real Property",
+  "topic": "Contracts",
+  "subtopic": "Contracts",
+  "difficulty": "Core"
+ },
+ {
+  "id": "CQ14931",
+  "title": "Parchment Chapel Lot",
+  "subject": "Real Property",
+  "topic": "Contracts",
+  "subtopic": "Contracts",
+  "difficulty": "Core"
+ },
+ {
+  "id": "CQ15007",
+  "title": "Galilee Harvest Loft",
+  "subject": "Real Property",
+  "topic": "Ownership",
+  "subtopic": "Ownership",
+  "difficulty": "44% correct"
+ },
+ {
+  "id": "CQ15018",
+  "title": "Illumination Birdbaths",
+  "subject": "Real Property",
+  "topic": "Rights in Land",
+  "subtopic": "Common-interest-community design/use restrictions on individually owned lots",
+  "difficulty": "21% source-correct"
+ },
+ {
+  "id": "CQ15025",
+  "title": "Olive Path",
+  "subject": "Real Property",
+  "topic": "Rights in Land",
+  "subtopic": "Rights in Land",
+  "difficulty": null
+ },
+ {
+  "id": "CQ15035",
+  "title": "Damascus Alley",
+  "subject": "Real Property",
+  "topic": "Rights in Land",
+  "subtopic": "Easements — termination/remedies for misuse",
+  "difficulty": null
+ },
+ {
+  "id": "CQ15039",
+  "title": "Psalm Studio Judgment",
+  "subject": "Real Property",
+  "topic": "Titles",
+  "subtopic": "Recording Acts",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ15044",
+  "title": "Prayer Garden Dead Grantee",
+  "subject": "Real Property",
+  "topic": "Titles",
+  "subtopic": "Conveyance by Deed",
+  "difficulty": "21% correct"
+ },
+ {
+  "id": "CQ15052",
+  "title": "Psalm Path",
+  "subject": "Real Property",
+  "topic": "Titles",
+  "subtopic": "Risk of Loss and Equitable Conversion",
+  "difficulty": null
+ },
+ {
+  "id": "CQ15054",
+  "title": "Sparrowfield Retreat",
+  "subject": "Real Property",
+  "topic": "Titles",
+  "subtopic": "Adverse Possession",
+  "difficulty": "not_supplied"
+ },
+ {
+  "id": "CQ15068",
+  "title": "Jubilee Yard",
+  "subject": "Real Property",
+  "topic": "Titles",
+  "subtopic": "Conveyance by Deed",
+  "difficulty": "not_supplied; source performance 29% correct"
  },
  {
   "id": "CQ18077",
@@ -1278,6 +1646,14 @@
   "topic": "Negligence",
   "subtopic": "Breach",
   "difficulty": "medium-high"
+ },
+ {
+  "id": "CQ20328",
+  "title": "Bethlehem Star Drop",
+  "subject": "Torts",
+  "topic": "Negligence",
+  "subtopic": "Breach proof - res ipsa loquitur",
+  "difficulty": "medium-hard"
  },
  {
   "id": "CQ20439",

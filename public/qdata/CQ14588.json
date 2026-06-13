@@ -1,0 +1,88 @@
+{
+ "id": "CQ14588",
+ "title": "Gospel Festival Drum",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Burden of proof on element-negating defense",
+ "difficulty": null,
+ "tension": null,
+ "stem": "A state has enacted this rule for criminal trials:\n\n“Whenever the U.S. Constitution permits, the burden of proof for a defense asserted by an accused shall be placed on the accused, and the burden shall be the greatest burden the Constitution permits.”\n\nThe same state defines a crime called forcible seizure:\n\n“Forcible seizure is taking a movable item from an unconsenting person by means of force or violence. Consent of the person is a complete defense to a charge of forcible seizure.”\n\nDuring Daniel’s trial for forcible seizure, he testified that, at a gospel-festival rehearsal, Naomi consented to his taking her hand-painted psalm drum for the processional.\n\nHow should the trial judge instruct the jury regarding the burden of proof on the issue of consent?",
+ "call": "How should the trial judge instruct the jury regarding the burden of proof on the issue of consent?",
+ "choices": {
+  "A": "The defendant must prove by clear and convincing evidence that Naomi consented.",
+  "B": "The defendant must prove beyond a reasonable doubt that Naomi consented.",
+  "C": "The prosecution must prove beyond a reasonable doubt that Naomi did not consent.",
+  "D": "The defendant must prove by a preponderance of the evidence that Naomi consented."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is the correct instruction. The offense definition itself requires taking from an unconsenting person. Daniel’s consent evidence therefore contests a fact built into the crime, not a separate fact outside the crime.\n\nGold Key: Element beats label. If the fact negated by the defense is inside the offense definition, the prosecution must prove that fact beyond a reasonable doubt; the state cannot move that burden to the accused by calling the same fact a defense.\n\nSilver Key: In a 3-vs-1 burden array, decide who bears the burden before comparing proof levels. The three defendant-burden answers all keep the burden on the wrong party.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "This answer keeps the burden on the defendant. After the Gold Key, that is a backwards burden answer. Cut."
+  },
+  {
+   "label": "CUT B",
+   "text": "This answer is the dominant trap. It uses the right criminal proof phrase but assigns it to the defendant. After the Gold Key and Silver Key, it is the clearest wrong-direction burden answer. Cut."
+  },
+  {
+   "label": "CUT D",
+   "text": "This answer uses the familiar preponderance burden for affirmative defenses. The statute’s offense definition makes consent element-negating, so the burden cannot be placed on the defendant. Cut."
+  },
+  {
+   "label": "Residual",
+   "text": "C. No CLASH or CALL is needed after the anchor-assisted CUT."
+  }
+ ],
+ "studentScript": "The definition says unconsenting person. Consent negates that element. Gold Key: element beats label. Three answers put the burden on the defendant, so cut them. Choose C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It changes the proof level but keeps the burden on the accused.",
+   "lawyer": "The answer shifts an element-negating fact to the accused; the Constitution does not permit that when the fact is part of the offense definition.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "It uses beyond a reasonable doubt but assigns that burden to the defendant.",
+   "lawyer": "Beyond a reasonable doubt is the prosecution's burden for offense elements, not a burden imposed on the accused for negating an element.",
+   "mold": "backwards"
+  },
+  "C": {
+   "signal": "It is the only answer with the prosecution as burden holder and beyond a reasonable doubt as the proof level.",
+   "lawyer": "Because lack of consent is inside the offense definition, the prosecution must prove it beyond a reasonable doubt.",
+   "mold": null
+  },
+  "D": {
+   "signal": "It sounds like a common defense burden but does not fix the burden-holder problem.",
+   "lawyer": "A preponderance burden may be allowed for a separate affirmative defense, but not for a fact that negates a statutory element.",
+   "mold": "backwards"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-GOSPEL-DRUM-01",
+   "statement": "Element beats label: if the fact negated by the defense is inside the offense definition, the prosecution must prove that fact beyond a reasonable doubt; the state cannot move that burden to the accused by calling the same fact a defense.",
+   "trigger": "The offense definition uses an unconsenting person and the separate defense is consent.",
+   "unlocks": "The three defendant-burden choices collapse once lack of consent is read as an element.",
+   "authority": "In re Winship, 397 U.S. 358 (1970); Mullaney v. Wilbur, 421 U.S. 684 (1975); Patterson v. New York, 432 U.S. 197 (1977)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-GOSPEL-DRUM-01",
+   "statement": "In a 3-vs-1 burden array, decide who bears the burden before comparing proof levels; changing the defendant’s proof level is bait if the burden holder is wrong.",
+   "trigger": "Three answers begin with the defendant must prove and one begins with the prosecution must prove.",
+   "unlocks": "The defendant-burden proof-level spread across preponderance, clear-and-convincing, and beyond-a-reasonable-doubt.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": null,
+  "signal": null,
+  "studentMove": "Mark the fact inside the offense definition before reading proof-level choices.",
+  "tinyRule": null,
+  "trap": null
+ }
+}

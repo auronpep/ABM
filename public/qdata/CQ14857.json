@@ -1,0 +1,91 @@
+{
+ "id": "CQ14857",
+ "title": "Good Samaritan 5k",
+ "subject": "Evidence",
+ "topic": "Privileges and Other Policy Exclusions",
+ "subtopic": "Physician-patient privilege",
+ "difficulty": "Not supplied; 33% correct",
+ "tension": null,
+ "stem": "During a Good Samaritan 5K held in a downtown park, Lydia was knocked down and injured by Stephen. Lydia sued Stephen in federal court for damages under a federal civil rights statute. The race, the injury, and Lydia’s medical treatment all occurred within one state. The state evidence code provides, “The common-law privileges are preserved intact in this state.”\n\nAt trial, Stephen called Lydia’s orthopedic physician to testify about confidential statements Lydia made while obtaining treatment for the injuries for which she seeks damages. Lydia objected, asserting a physician-patient privilege.\n\nThe court should apply:",
+ "call": "The court should apply:",
+ "choices": {
+  "A": "federal law and reject the privilege claim.",
+  "B": "state law and recognize the privilege claim.",
+  "C": "federal law and recognize the privilege claim.",
+  "D": "state law and reject the privilege claim."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct.\n\nSilver Key: Read the answer set as a two-axis matrix: source of privilege law first, privilege outcome second. The source axis is federal versus state. The outcome axis is recognize versus reject.\n\nGold Key: In a federal-question civil case, privilege is governed by federal common law under FRE 501 unless a specific federal source provides otherwise. State privilege law controls only when state law supplies the rule of decision. The claim here arises under a federal civil rights statute, so federal privilege law controls. Federal common law does not recognize a general physician-patient privilege. The court should apply federal law and reject the privilege claim.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT",
+   "text": "B fails the source-law filter. It follows the local-state facts and answers with state law. The federal civil-rights claim in federal court routes the source to federal common law.\n\nC fails the privilege-recognition filter. It correctly says federal law, but then says federal law recognizes the claim. The Gold Key says ordinary physician-patient privilege is not recognized in federal common law.\n\nD fails the source-law filter. It gets the reject outcome, but the call asks what law the court should apply and what result follows. The source half is state law, so the choice is not fully responsive."
+  },
+  {
+   "label": "CLASH",
+   "text": "No live two-answer clash remains after the anchor-assisted cuts. The answer array is still useful: it reveals the two axes before the cuts are made."
+  },
+  {
+   "label": "CALL",
+   "text": "No CALL needed. The residual is A."
+  }
+ ],
+ "studentScript": "This is federal court on a federal civil-rights claim, so privilege source is federal common law. Ordinary physician-patient privilege is not recognized federally. Pick federal law and reject.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "Federal source plus reject outcome matches both axes after the Gold Keys.",
+   "lawyer": "FRE 501 uses federal common law for privilege in federal-question cases, and federal common law does not recognize a general physician-patient privilege.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The state-code fact is loud, but the claim is federal.",
+   "lawyer": "State privilege law would matter when state law supplies the rule of decision; this is a federal civil-rights claim.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "Correct source, wrong recognition outcome.",
+   "lawyer": "Federal common law recognizes psychotherapist-patient privilege, not a general physician-patient privilege.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "The outcome is right, but the source axis is wrong.",
+   "lawyer": "The court should reject the privilege under federal law, not state law.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-FEDERAL-PRIVILEGE-01",
+   "statement": "In a federal-question civil case, FRE 501 points privilege to federal common law; state privilege law matters only when state law supplies the rule of decision.",
+   "trigger": "federal court plus a federal civil rights statute",
+   "unlocks": "the state-law source trap",
+   "authority": "FRE 501"
+  },
+  {
+   "id": "GK-EVIDENCE-PHYSICIAN-PRIVILEGE-02",
+   "statement": "Federal common law recognizes a psychotherapist-patient privilege, but not a general physician-patient privilege.",
+   "trigger": "ordinary physician testimony, not psychotherapist treatment",
+   "unlocks": "the federal-law-but-recognize trap",
+   "authority": "FRE 501; Jaffee v. Redmond, 518 U.S. 1 (1996)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-SOURCE-OUTCOME-MATRIX-01",
+   "statement": "Read the array as source of privilege law times outcome: first lock federal versus state, then ask whether that source recognizes this privilege.",
+   "trigger": "choices split into state/federal and recognize/reject",
+   "unlocks": "the two-axis source/outcome matrix",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Federal question privilege source",
+  "signal": "Federal court plus federal claim plus state privilege fact",
+  "studentMove": "Lock source before outcome.",
+  "tinyRule": "Federal question means federal common law; no general federal physician-patient privilege.",
+  "trap": "Local-state facts make state privilege law feel controlling."
+ }
+}

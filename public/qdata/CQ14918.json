@@ -1,0 +1,103 @@
+{
+ "id": "CQ14918",
+ "title": "Maranatha Cottage",
+ "subject": "Real Property",
+ "topic": "Contracts",
+ "subtopic": "Contracts for Land",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "Lydia owned an 88-year-old lakeside cottage known in her family as Maranatha Cottage, where relatives sometimes spent quiet weekends reading Scripture. Peter signed a contract to buy the cottage from Lydia. The contract required Lydia to deliver a general warranty deed at closing, but it said nothing about the cottage’s physical condition, and Peter did not ask for any promise about repairs or fitness.\n\nAt closing, Lydia delivered a general warranty deed containing the usual covenants of title, and Peter promptly recorded it. Five weeks later, the cottage’s well pump failed, the septic line backed up, and rain came through the skylight above the small prayer loft so badly that the loft could not be used. When Peter told Lydia about the problems, Lydia was genuinely surprised. No statute applies.\n\nPeter has sued Lydia for damages. Is Peter likely to prevail?",
+ "call": "Peter has sued Lydia for damages. Is Peter likely to prevail?",
+ "choices": {
+  "A": "No, because Lydia gave no warranty regarding the cottage’s physical condition.",
+  "B": "Yes, because a conveyance of residential real property implies a warranty that the dwelling is fit for ordinary use.",
+  "C": "No, because the doctrine of merger bars Peter’s claim after delivery and acceptance of the deed.",
+  "D": "Yes, based on the covenants of title contained in the warranty deed Peter received."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Peter’s claim is about the physical condition of an existing residence: the well pump, septic line, and skylight. Lydia promised a general warranty deed, but the deed’s covenants protect title. They do not promise that the cottage’s systems and roof components will keep working. Gold Key: an existing-home seller is not generally treated as warranting that the dwelling is fit or defect-free unless the facts give an express condition warranty, a new-home/builder-vendor warranty, a statute, or known concealment. Silver Key: read the array as a title/condition split; physical breakdown facts stay in the condition-warranty lane.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT B — NOT_TRUE / `extreme_of_range`",
+   "text": "B pushes a limited housing-warranty idea into every residential conveyance. That cut is not hard structural; it needs the Gold Key. Once the Gold Key is applied, B breaks the truth filter."
+  },
+  {
+   "label": "CUT C — NOT_RESPONSIVE / `bait_doctrine`",
+   "text": "C reaches the right general neighborhood: closing and deed delivery. But the stem’s complaint is physical condition, not title. Merger does not answer this call."
+  },
+  {
+   "label": "CUT D — NOT_RESPONSIVE / `bait_doctrine`",
+   "text": "D uses a true title-warranty idea against the wrong kind of facts. The stem gives broken systems and a leaking skylight, not a title defect."
+  },
+  {
+   "label": "Residual",
+   "text": "A is the only answer that stays in the condition lane and matches the no-warranty/no-knowledge facts."
+  },
+  {
+   "label": "CLASH",
+   "text": "No two clean survivors remain after the anchor-assisted cuts."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tiebreaker is needed. The answer-array Silver Key is used as navigation, not as a substitute for the Gold Key."
+  }
+ ],
+ "studentScript": "This is a physical-condition claim, not a title claim. The deed covenants and merger answers are title-lane bait. No express condition warranty, no statute, no known defect, and no builder/new-home trigger leaves A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This answer names the exact lane the stem asks about: physical condition.",
+   "lawyer": "Correct under the existing-home/no-condition-warranty rule.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The answer turns a limited housing-warranty memory into a broad residential-sale rule.",
+   "lawyer": "Incorrect because this existing-home sale has no express warranty, no statute, no known concealment, and no builder-vendor/new-home trigger.",
+   "mold": "extreme_of_range"
+  },
+  "C": {
+   "signal": "The reason answers a post-closing title question, not a physical-condition claim.",
+   "lawyer": "Incorrect reason; merger concerns title obligations, not the physical condition defects alleged here.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The words covenants of title do not match the physical breakdown facts.",
+   "lawyer": "Warranty-deed covenants protect title; they do not warrant the condition of the cottage’s systems or skylight.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-MARANATHA-COTTAGE-01",
+   "statement": "Existing-home sale: no general implied warranty that the dwelling is fit or defect-free. Look for an express condition warranty, a builder-vendor/new-home warranty, a statute, or known concealment before charging the seller for physical defects.",
+   "trigger": "used residential real property, condition defects after closing, no statute, no express condition promise, seller genuinely surprised",
+   "unlocks": "dominant implied-fitness trap",
+   "authority": "Restatement (Second) of Torts § 551; Cornell Wex, implied warranty; Virginia Code § 55.1-357 as an example of new-home warranty limited by statute."
+  },
+  {
+   "id": "GK-REAL_PROPERTY-MARANATHA-COTTAGE-02",
+   "statement": "Warranty-deed covenants are title covenants. Do not use seisin, right to convey, encumbrances, quiet enjoyment, warranty, or further assurances to repair a pump, roof, septic line, furnace, or other physical condition defect.",
+   "trigger": "answer talks about covenants of title or merger while the stem talks about physical defects",
+   "unlocks": "title-covenant and merger traps",
+   "authority": "Cornell Wex, deed; Cornell Wex, good title."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-MARANATHA-COTTAGE-01",
+   "statement": "Read the answer array as a title/condition split. Physical breakdown facts call for the condition-warranty lane; deed covenants and merger are title-lane bait unless the stem gives a title defect.",
+   "trigger": "choices alternate between physical-condition warranty and deed/title doctrines",
+   "unlocks": "2x2 condition/title answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Separate condition defects from title defects",
+  "signal": "The stem lists things breaking in the home after closing, while choices mention deed, title covenants, or merger.",
+  "studentMove": "Route physical breakdowns to condition-warranty; route ownership, encumbrance, and conveyance defects to title.",
+  "tinyRule": "Warranty deed equals title warranty; existing-home condition defects need a separate condition-warranty path.",
+  "trap": "Using a real title doctrine to solve a physical-condition claim."
+ }
+}

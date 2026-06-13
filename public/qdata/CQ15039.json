@@ -1,0 +1,88 @@
+{
+ "id": "CQ15039",
+ "title": "Psalm Studio Judgment",
+ "subject": "Real Property",
+ "topic": "Titles",
+ "subtopic": "Recording Acts",
+ "difficulty": "not_supplied",
+ "tension": null,
+ "stem": "The land records for a narrow city lot called the Harp Room still listed Martha as owner in fee simple. Martha had signed a contract to sell the lot, where she operated a private psalm-calligraphy studio, to Timothy. Twelve days after the contract, Timothy paid the agreed price and received Martha’s warranty deed. Neither the contract nor the deed was recorded. Five days after that closing, while Martha still kept her hymn-lettering presses in the studio, Daniel, a creditor, properly filed a money judgment against Martha. Daniel had no knowledge of Timothy’s interest.\n\nA statute in the jurisdiction provides: “Any judgment properly filed shall, for 12 years from filing, be a lien on the real property then owned or subsequently acquired by any person against whom the judgment is rendered.”\n\nThe recording act of the jurisdiction provides: “No conveyance or mortgage of real property shall be good against subsequent purchasers for value and without notice unless the same be recorded according to law.”\n\nDaniel brought an appropriate action to enforce his lien against the Harp Room in Timothy’s hands. If the court rules for Timothy, it most probably will be because:",
+ "call": "If the court rules for Timothy, it most probably will be because:",
+ "choices": {
+  "A": "the jurisdiction's recording act does not protect judgment creditors.",
+  "B": "Timothy was a purchaser without notice.",
+  "C": "the doctrine of equitable conversion applies.",
+  "D": "Martha's continued possession gave Daniel constructive notice of Timothy's interest."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The recording act protects “subsequent purchasers for value and without notice.” Daniel is a money-judgment creditor, not a purchaser for value. Timothy already received the deed before Daniel filed the judgment. The buyer wins because Daniel cannot use a purchaser-only recording act to defeat Timothy’s earlier unrecorded deed.\n\nGold Key: A purchaser-only recording act protects later purchasers for value without notice; a judgment creditor is not protected unless the statute expressly names judgment creditors or otherwise gives them that status.\n\nSilver Key: Read the recording act from the later claimant’s side. The unrecorded deed loses only if the later claimant fits the protected class named in the statute.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT C",
+   "text": "The equitable-conversion answer is a wrong-frame doctrine. It belongs before deed delivery. The stem is after deed delivery."
+  },
+  {
+   "label": "CUT D",
+   "text": "The possession answer contradicts the fact it uses. Martha’s possession does not signal Timothy’s unrecorded deed."
+  },
+  {
+   "label": "CUT B",
+   "text": "The buyer-without-notice answer proves the wrong actor’s status. The recording act must protect Daniel, the later claimant."
+  },
+  {
+   "label": "Residual: A",
+   "text": "A is true and responsive. No Clash needed. No Call needed beyond the Gold Key class check."
+  }
+ ],
+ "studentScript": "Daniel is the one trying to use the recording act. The act protects purchasers, and Daniel is a creditor. A wins.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The statute names purchasers; Daniel is a creditor.",
+   "lawyer": "A judgment creditor is not protected by a purchaser-only recording act unless the act includes creditors.",
+   "mold": null
+  },
+  "B": {
+   "signal": "Timothy's notice status is not the statutory class question.",
+   "lawyer": "The relevant BFP inquiry, if any, would be Daniel's protected status, not Timothy's.",
+   "mold": "wrong_element"
+  },
+  "C": {
+   "signal": "The stem has already moved past closing and deed delivery.",
+   "lawyer": "Equitable conversion concerns the contract-to-closing period.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "Martha's possession points to Martha, not Timothy.",
+   "lawyer": "Possession may create inquiry notice only when the possessor's occupancy signals the claimed interest.",
+   "mold": "contradiction"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-PSALM_STUDIO_JUDGMENT-01",
+   "statement": "A purchaser-only recording act protects later purchasers for value without notice; a judgment creditor is not protected unless the statute expressly names judgment creditors or otherwise gives them that status.",
+   "trigger": "an unrecorded deed is attacked by a later money-judgment creditor and the recording act names only purchasers or mortgagees",
+   "unlocks": "the trap that treats a later money-judgment creditor like a bona fide purchaser",
+   "authority": "Lawyer confirmation: purchaser-only recording statute text; Faust Corp. v. Harris, 467 P.3d 710 (Okla. Civ. App. 2019); Georgia Code § 44-2-3 as a purchaser-only statutory example."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-PSALM_STUDIO_JUDGMENT-01",
+   "statement": "Read the recording act from the later claimant's side. The unrecorded deed loses only if the later claimant fits the protected class named in the statute.",
+   "trigger": "the statute names a protected class and an answer discusses the wrong person's notice",
+   "unlocks": "the wrong-actor BFP trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Run the recording act on the challenger",
+  "signal": "A later lienholder or claimant attacks an earlier unrecorded deed.",
+  "studentMove": "Ask whether the later claimant is in the protected class named in the recording act.",
+  "tinyRule": "Purchaser-only language protects purchasers for value, not ordinary judgment creditors.",
+  "trap": "Running BFP language on the original buyer instead of on the later claimant."
+ }
+}

@@ -55,11 +55,10 @@ def section(md: str, name: str) -> str | None:
 
 
 def first_yaml_block(md: str) -> dict | None:
+    fallback: dict | None = None
     for m in re.finditer(r"```yaml\s*\n(.*?)```", md, re.DOTALL):
-        try:
-            data = yaml.safe_load(m.group(1))
-        except yaml.YAMLError as exc:
-            print(f"  YAML parse failure: {exc}", file=sys.stderr)
+        data = parse_yaml_candidate(m.group(1))
+        if data is None:
             continue
         if not isinstance(data, dict):
             continue
@@ -68,8 +67,73 @@ def first_yaml_block(md: str) -> dict | None:
             merged = dict(data)
             merged.update(data["question_yaml"])
             data = merged
+        if "barmatrix_row" not in data and isinstance(data.get("question_yaml_v2"), dict):
+            merged = dict(data)
+            merged.update(data["question_yaml_v2"])
+            data = merged
         if "barmatrix_row" in data:
             return data
+        if fallback is None:
+            fallback = data
+    return fallback
+
+
+def sanitize_yaml(source: str) -> str:
+    out: list[str] = []
+    for line in source.splitlines():
+        trailing_comma = re.match(r'^(\s*(?:- |[A-Za-z_][A-Za-z0-9_]*: )".*"),\s*$', line)
+        if trailing_comma:
+            out.append(trailing_comma.group(1))
+            continue
+        after_quote = re.match(r'^(\s*(?:- )?[A-Za-z_][A-Za-z0-9_]*:)\s+"(.*)"(\s+\S.*)$', line)
+        if after_quote:
+            value = f"{after_quote.group(2)}{after_quote.group(3)}"
+            out.append(f'{after_quote.group(1)} "{value.replace(chr(92), chr(92) + chr(92)).replace(chr(34), chr(92) + chr(34))}"')
+            continue
+        match = re.match(r"^(\s*(?:- )?[A-Za-z_][A-Za-z0-9_]*:)\s+([^'\"|>#\n].*: .*)$", line)
+        if not match:
+            out.append(line)
+            continue
+        value = match.group(2).strip()
+        if re.fullmatch(r"[\d.]+", value):
+            out.append(line)
+        else:
+            out.append(f'{match.group(1)} "{value.replace(chr(92), chr(92) + chr(92)).replace(chr(34), chr(92) + chr(34))}"')
+    return "\n".join(out)
+
+
+def repair_orphan_children(source: str) -> str:
+    lines = source.splitlines()
+    out: list[str] = []
+    for i, line in enumerate(lines):
+        match = re.match(r"^(\s*)([A-Za-z_][A-Za-z0-9_]*):\s+(\S.*)$", line)
+        next_line = lines[i + 1] if i + 1 < len(lines) else ""
+        indent = len(match.group(1)) if match else 0
+        next_indent = len(re.match(r"^\s*", next_line).group(0)) if next_line else 0
+        if match and next_line.strip() and next_indent > indent and re.match(r"^\s*[A-Za-z_-]", next_line) and ":" in next_line:
+            out.append(f"{match.group(1)}{match.group(2)}:")
+            out.append(f"{match.group(1)}  _value: {match.group(3)}")
+        else:
+            out.append(line)
+    return "\n".join(out)
+
+
+def parse_yaml_candidate(source: str) -> dict | None:
+    attempts = [
+        source,
+        sanitize_yaml(source),
+        repair_orphan_children(sanitize_yaml(source)),
+    ]
+    last_error: yaml.YAMLError | None = None
+    for attempt in attempts:
+        try:
+            data = yaml.safe_load(attempt)
+        except yaml.YAMLError as exc:
+            last_error = exc
+            continue
+        return data if isinstance(data, dict) else None
+    if last_error:
+        print(f"  YAML parse failure: {last_error}", file=sys.stderr)
     return None
 
 
@@ -347,12 +411,12 @@ def build_one(path: Path) -> tuple[dict, dict] | None:
         print(f"  SKIP {cqid}: no usable YAML", file=sys.stderr)
         return None
     row = data["barmatrix_row"]
-    raw_choices = row.get("choices") or row.get("transformed_choices") or row.get("final_choices")
+    raw_choices = row.get("choices") or row.get("answer_choices") or row.get("transformed_choices") or row.get("final_choices")
     if isinstance(raw_choices, dict):
-        choices = {
-            str(k): clean_md(PICKRATE_PAREN.sub(" ", str(v))).strip()
-            for k, v in raw_choices.items()
-        }
+        choices = {}
+        for k, v in raw_choices.items():
+            raw_text = v.get("text") if isinstance(v, dict) else v
+            choices[str(k)] = clean_md(PICKRATE_PAREN.sub(" ", str(raw_text))).strip()
     else:
         choices = {}
     if len(choices) < 4:
@@ -368,7 +432,7 @@ def build_one(path: Path) -> tuple[dict, dict] | None:
     dominant = max(wrong_pcts, key=wrong_pcts.get) if wrong_pcts else None
 
     stem_body = section(md, "Final Question")
-    stem = clean_md(stem_body) if stem_body else ""
+    stem = clean_md(stem_body) if stem_body else clean_md(str(row.get("stem") or ""))
     if not stem:
         print(f"  SKIP {cqid}: no stem", file=sys.stderr)
         return None

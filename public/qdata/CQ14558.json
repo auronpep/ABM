@@ -1,0 +1,95 @@
+{
+ "id": "CQ14558",
+ "title": "Bethlehem Star Wristbands",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Entrapment; prior similar misconduct; affirmative-defense burden",
+ "difficulty": "Not supplied",
+ "tension": null,
+ "stem": "At a private Christian music festival held at a rented fairground, Timothy was charged under state law with selling counterfeit all-access wristbands to an undercover state investigator.\n\nAt trial, Timothy testified that he made the sale only after the investigator, whom Timothy knew as “Barnabas,” begged him for help, saying that a traveling gospel choir would be stranded outside the venue and that a scalper crew would blame him unless he produced wristbands before the evening concert. The prosecutor did not cross-examine Timothy.\n\nOver Timothy’s objection, the prosecutor then offered certified records showing three earlier convictions for counterfeit-ticket offenses. The judge instructed the jury on entrapment and, over Timothy’s objection but as state law required, told the jury to acquit on that ground only if Timothy proved the elements of entrapment by a preponderance of the evidence. Timothy was convicted.\n\nOn appeal, Timothy’s conviction should be",
+ "call": "On appeal, Timothy’s conviction should be",
+ "choices": {
+  "A": "reversed, because due process forbids requiring Timothy to prove entrapment by a preponderance of the evidence.",
+  "B": "affirmed, because neither asserted reason supplies a ground for reversal.",
+  "C": "reversed, because the prior-conviction evidence and the entrapment-burden instruction both require reversal.",
+  "D": "reversed, because the court erred by admitting the records of Timothy’s earlier counterfeit-ticket convictions as substantive evidence."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. Silver Key: this is a two-ground plus both/neither answer array. Test the evidence ground and the burden ground separately before selecting a combination answer.\n\nThe evidence ground fails. Gold Key: when a defendant raises entrapment, predisposition becomes a live rebuttal issue, so similar prior misconduct may be used to show willingness to commit that kind of offense. Timothy’s earlier counterfeit-ticket convictions were offered to rebut his claim that Barnabas induced an otherwise unwilling act.\n\nThe burden ground also fails. Gold Key: due process requires the prosecution to prove the offense elements, but a state may place the burden of proving an affirmative defense such as entrapment on the defendant when that defense does not negate an element of the offense. Because neither asserted reason supports reversal, the conviction should be affirmed.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "D attacks the prior-conviction evidence. This cannot be cut by ordinary grammar. It is a Gold Key cut: entrapment puts predisposition in issue, and similar prior misconduct can rebut the claim that the defendant was not willing."
+  },
+  {
+   "label": "CUT A",
+   "text": "A attacks the burden instruction. This also cannot be cut by grammar. It is a Gold Key cut: due process protects the prosecution’s burden on offense elements, but entrapment can be assigned to the defendant as an affirmative-defense burden."
+  },
+  {
+   "label": "CUT C",
+   "text": "C says both grounds require reversal. Silver Key: in a two-ground plus both/neither array, a “both” answer can survive only if both individual grounds survive. They do not."
+  },
+  {
+   "label": "Residual B",
+   "text": "Neither asserted reason supplies a ground for reversal. The conviction is affirmed."
+  }
+ ],
+ "studentScript": "This is a two-ground appeal. Entrapment opens predisposition, so the prior similar convictions are not a reversal ground. Entrapment can be defendant-burdened as an affirmative defense, so the instruction is not a reversal ground. Both grounds fail; choose the neither answer.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This choice attacks one individual reversal ground; it requires the burden Gold Key.",
+   "lawyer": "Due process requires proof of offense elements beyond a reasonable doubt, but the entrapment burden may be assigned to the defendant as an affirmative defense when state law so provides.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "Both individual reversal grounds fail after the Gold Keys, so the neither answer remains.",
+   "lawyer": "The conviction is affirmed because the prior convictions were admissible for predisposition and the state-law burden instruction is not a due-process violation.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The both answer survives only if both individual grounds survive.",
+   "lawyer": "Neither asserted appellate ground is valid, so the compound reversal answer fails.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "This choice needs the predisposition Gold Key; ordinary prior-crimes instincts are not enough.",
+   "lawyer": "An entrapment claim puts predisposition in issue, so similar prior convictions may be admissible to rebut lack of predisposition.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-ENTRAPMENT-PREDISPOSITION-01",
+   "statement": "When a defendant raises entrapment, predisposition becomes a live rebuttal issue; similar prior misconduct may be used to show willingness to commit that kind of offense.",
+   "trigger": "The defendant claims he committed the charged act only because an undercover agent induced him.",
+   "unlocks": "the prior-conviction trap",
+   "authority": "Sorrells v. United States; Sherman v. United States; FRE 404(b)(2) non-propensity use."
+  },
+  {
+   "id": "GK-CRIMINAL-ENTRAPMENT-BURDEN-02",
+   "statement": "Due process requires the prosecution to prove offense elements, but a state may place the burden of proving an affirmative defense like entrapment on the defendant when the defense does not negate an element.",
+   "trigger": "The instruction follows state law and assigns the defendant a preponderance burden on entrapment.",
+   "unlocks": "the due-process burden-shift trap",
+   "authority": "Patterson v. New York; affirmative-defense burden doctrine."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-BOTH-NEITHER-ARRAY-01",
+   "statement": "In a two-ground plus both/neither answer set, grade each asserted ground first; the compound choice can survive only if both grounds survive.",
+   "trigger": "Choices offer one evidence ground, one burden ground, both grounds, and neither ground.",
+   "unlocks": "the individual-ground/both/neither answer array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Entrapment opens two doors",
+  "signal": "The defendant says an undercover agent induced the crime.",
+  "studentMove": "Ask whether the choice attacks predisposition evidence or the burden on an affirmative defense.",
+  "tinyRule": "Entrapment puts predisposition in issue, and state law may put a preponderance burden on the defendant for the defense.",
+  "trap": "treating all prior crimes as forbidden propensity evidence or all defense burdens as due-process violations"
+ }
+}

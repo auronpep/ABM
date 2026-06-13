@@ -1,0 +1,107 @@
+{
+ "id": "CQ14596",
+ "title": "Manger Mustard Seed",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Insanity defense due process reforms",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At a state capitol, Senator Lydia and Representative Barnabas are drafting the Good Samaritan Criminal Code Revision. Two amendments are on the table. The Manger Amendment would remove from state law the defense labeled insanity. The Mustard Seed Amendment would keep that defense but require an accused person to prove insanity by a preponderance of the evidence. Critics say the amendments would violate the Due Process Clause of the U.S. Constitution.\n\nWhich amendment or amendments, if enacted, would be unconstitutional?",
+ "call": "Which amendment or amendments, if enacted, would be unconstitutional?",
+ "choices": {
+  "A": "Neither amendment.",
+  "B": "The Mustard Seed Amendment only.",
+  "C": "The Manger Amendment only.",
+  "D": "Both amendments."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. Neither amendment would violate due process.\n\nSilver Key: In a two-proposal answer set, test each proposal separately before choosing a combination answer. Here, the Manger Amendment survives due process, and the Mustard Seed Amendment also survives due process. That leaves “neither amendment.”\n\nGold Key: Due process does not force a state to keep a separate insanity defense. If a state keeps insanity as an affirmative defense, it may place the burden of proving insanity on the defendant.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "Frame",
+   "text": "The call asks which amendments would be unconstitutional. It is not asking which amendment is wise, humane, or better policy."
+  },
+  {
+   "label": "CUT B",
+   "text": "B attacks only the burden-shift amendment. That is not a visible structural falsehood without the Gold Key, so it is anchor_assisted. The burden Gold Key cuts it: insanity may be assigned to the defendant as an affirmative defense."
+  },
+  {
+   "label": "CUT C",
+   "text": "C attacks only the abolition amendment. That is not a visible structural falsehood without the Gold Key, so it is anchor_assisted. The state-choice Gold Key cuts it: due process does not require a separate insanity defense."
+  },
+  {
+   "label": "CUT D",
+   "text": "D attacks both amendments. This overconstitutionalizes the whole set, but the defect is still anchor-dependent. Once the Gold Keys show that both amendments are permissible, D breaks the truth filter."
+  },
+  {
+   "label": "Residual",
+   "text": "A survives: neither amendment is unconstitutional."
+  },
+  {
+   "label": "CLASH",
+   "text": "No unresolved two-choice clash remains after the anchor-assisted CUT."
+  },
+  {
+   "label": "CALL",
+   "text": "No final tie remains. The answer-array Silver Key confirms the combination: both proposals permissible → neither amendment."
+  }
+ ],
+ "studentScript": "This is a two-proposal matrix. Manger is allowed by the insanity-defense Gold Key. Mustard Seed is allowed by the burden Gold Key. Both survive, so the answer is A: neither amendment.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It is the only answer that marks both amendments as constitutionally permissible.",
+   "lawyer": "Consistent with Kahler for state latitude over insanity rules and Leland for defendant burden on insanity.",
+   "mold": null
+  },
+  "B": {
+   "signal": "It marks only the burden amendment as unconstitutional; the burden Gold Key defeats that.",
+   "lawyer": "A defendant burden for insanity as an affirmative defense is constitutionally permissible.",
+   "mold": "flat_misstatement"
+  },
+  "C": {
+   "signal": "It marks only the abolition amendment as unconstitutional; the state-choice Gold Key defeats that.",
+   "lawyer": "Due process does not require the state to keep the specific separate insanity defense tested here.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "It marks both amendments as unconstitutional; testing each proposal separately cuts it.",
+   "lawyer": "Both reforms are permissible under the governing due-process authorities.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-INSANITY-REFORMS-01",
+   "statement": "Due process gives states broad room to define the legal effect of mental illness in criminal responsibility; for bar purposes, a state need not keep a separate insanity defense.",
+   "trigger": "a state-law reform removes the insanity defense and the challenge is due process",
+   "unlocks": "the trap that treats the Manger Amendment as automatically unconstitutional",
+   "authority": "Kahler v. Kansas, 589 U.S. ___ (2020)"
+  },
+  {
+   "id": "GK-CRIMINAL-INSANITY-BURDEN-02",
+   "statement": "When insanity is treated as an affirmative defense, due process permits the state to place the burden of proving insanity on the defendant.",
+   "trigger": "the state keeps insanity but assigns the proof burden to the accused",
+   "unlocks": "the trap that treats a defendant preponderance burden as an unconstitutional burden shift",
+   "authority": "Leland v. Oregon, 343 U.S. 790 (1952)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-INSANITY-MATRIX-01",
+   "statement": "For a two-proposal answer set, test each proposal separately before choosing a combination answer; if both proposals survive, the correct combination is neither.",
+   "trigger": "answer choices are Both, Neither, first-only, second-only",
+   "unlocks": "the both/neither/one-only matrix",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Insanity Reform Matrix",
+  "signal": "a state changes whether insanity exists or who must prove it",
+  "studentMove": "Run each reform separately before selecting the combination answer.",
+  "tinyRule": "No separate insanity defense is federally required, and a defendant burden for insanity as an affirmative defense is permitted.",
+  "trap": "treating humane discomfort as a due process rule"
+ }
+}

@@ -82,13 +82,19 @@ Nothing below has been executed.
 - **Why gated:** live-DB migration + email provider activation.
 - **Rollback:** page works (stub) without backend; revert endpoints if added.
 
-## 7. Resend / email activation generally
+## 7. Email sending / QA mailbox
 
-- Welcome email (P1 §4) and abandoner email (doc 05) are NOT built — there is
-  no email infrastructure in this repo and activation is founder-gated. The
-  results-page email capture was deliberately omitted rather than collect
-  emails into a void (honesty > checkbox). Approve an email provider plan and
-  these become small follow-on builds.
+- Test recipient/catchall: `codex@barmatrix.app`.
+- Local mailbox settings are in `C:\Users\JesusLovesMe\.env`; use
+  `CODEX_EMAIL_PASSWORD` for the password and never paste the value into docs,
+  logs, commits, or PRs.
+- Welcome email (P1 §4), abandoner email (doc 05), prayer-chain confirmation,
+  and weekly repair report flows still need build/runtime verification before
+  live customer sends. Use `codex@barmatrix.app` for dark sends and provider
+  deliverability checks.
+- The results-page email capture was deliberately omitted rather than collect
+  emails into a void (honesty > checkbox). Wire collection only when a tested
+  destination or provider path exists.
 
 ## 8. Deploy the first repair loop — ✅ RESOLVED 2026-06-11 (founder approved)
 

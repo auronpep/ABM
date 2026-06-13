@@ -1,0 +1,95 @@
+{
+ "id": "CQ14568",
+ "title": "Good Samaritan Radios",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Brady/Giglio delayed impeachment disclosure",
+ "difficulty": null,
+ "tension": null,
+ "stem": "At a federal grand jury session, a prosecutor called Lydia, a volunteer bookkeeper from a Good Samaritan disaster-relief expo, to help obtain an indictment charging Daniel with stealing government-owned satellite radios from a federal emergency-preparedness booth. The prosecutor did not tell the grand jury that Lydia had been convicted six years earlier of perjury.\n\nAfter Daniel pleaded not guilty, the prosecutor tried the case and called Lydia as the government’s main witness. The prosecutor first disclosed Lydia’s prior perjury conviction near the end of trial, just as the defense was about to rest. Defense counsel immediately moved for a mistrial. The court denied the motion and allowed the defense to recall Lydia to impeach her with the conviction, but Lydia could not be found. The court then allowed the defense to give the jury certified records of Lydia’s conviction before resting. The jury convicted Daniel.\n\nDaniel moves for a new trial, arguing that the late disclosure violated due process. If the court grants the motion, what is the most likely reason?\n\nSource row: the uploaded prompt supplies QID 14568, the original criminal-procedure topic, pick rates, official key, and official explanations.",
+ "call": "If the court grants Daniel's new-trial motion, what is the most likely reason?",
+ "choices": {
+  "A": "The prosecutor did not tell the grand jury about Lydia's conviction.",
+  "B": "The court found a reasonable probability that Daniel would have been acquitted if the defense had received the conviction information in time.",
+  "C": "The court found that the prosecutor deliberately delayed disclosure to gain a tactical advantage.",
+  "D": "Daniel could not cross-examine Lydia about the conviction."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is the answer. The motion is for a new trial after conviction. The reason that matters is not the grand-jury omission, the prosecutor’s motive, or the bare fact that live cross-examination was lost. The reason is materiality: timely access to the perjury conviction would have created a reasonable probability of a different verdict.\n\nGold Key: Brady/Giglio materiality asks whether timely disclosure of favorable impeachment evidence creates a reasonable probability of a different trial result; prosecutorial bad faith is not required.\n\nSilver Key: When the call asks why a new trial is granted after conviction, cut answers aimed at charging-stage fairness, prosecutor motive, or a lost impeachment tool unless they state the outcome-prejudice threshold.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Grand-jury nondisclosure is an adjacent-stage answer. It answers a charging-stage fairness question, not the new-trial materiality question. bait_doctrine; NOT_RESPONSIVE; anchor-assisted by the grand-jury Gold Key."
+  },
+  {
+   "label": "CUT C",
+   "text": "Deliberate delay is a mental-state answer. It sounds serious, but it does not state the outcome-prejudice threshold. wrong_element; NOT_RESPONSIVE; anchor-assisted by the Brady/Giglio Gold Key."
+  },
+  {
+   "label": "CUT D",
+   "text": "Lost cross-examination is the dominant trap. It names a concrete missed impeachment opportunity but not the legal reason for relief. wrong_element; NOT_RESPONSIVE; anchor-assisted by the Silver Key call-focus move."
+  },
+  {
+   "label": "RESIDUAL B",
+   "text": "B states the materiality threshold and answers the new-trial call.\n\nNo unresolved CLASH remains. CALL is unnecessary after the anchor-assisted CUT."
+  }
+ ],
+ "studentScript": "New-trial call. Late impeachment disclosure. Do not pick grand jury, prosecutor motive, or lost cross-exam alone. Pick the reasonable-probability answer: B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "This points to the charging stage, not the new-trial reason after conviction.",
+   "lawyer": "United States v. Williams rejects a constitutional duty to present defense-favorable evidence to a federal grand jury.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "This states the outcome-prejudice threshold and answers the new-trial call.",
+   "lawyer": "Brady/Giglio/Bagley materiality supports the credited answer.",
+   "mold": null
+  },
+  "C": {
+   "signal": "This proves a bad-looking mental state, not the verdict-materiality reason.",
+   "lawyer": "Brady materiality does not require bad faith.",
+   "mold": "wrong_element"
+  },
+  "D": {
+   "signal": "This names the missed impeachment tool but not the legal reason for new trial.",
+   "lawyer": "The constitutional inquiry is materiality: reasonable probability of a different result.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-GOOD-SAMARITAN-RADIOS-01",
+   "statement": "Brady/Giglio materiality asks whether timely disclosure of favorable impeachment evidence creates a reasonable probability of a different trial result; prosecutorial bad faith is not required.",
+   "trigger": "late-disclosed impeachment evidence after key government-witness testimony",
+   "unlocks": "the intent and lost-cross-examination traps",
+   "authority": "Brady v. Maryland; Giglio v. United States; United States v. Bagley"
+  },
+  {
+   "id": "GK-CRIMINAL-GOOD-SAMARITAN-RADIOS-02",
+   "statement": "A federal prosecutor is not constitutionally required to present defense-favorable evidence to the grand jury; the Brady/Giglio duty protects trial fairness through disclosure to the defense.",
+   "trigger": "an answer makes grand-jury nondisclosure the reason for relief",
+   "unlocks": "the grand-jury disclosure trap",
+   "authority": "United States v. Williams"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-GOOD-SAMARITAN-RADIOS-01",
+   "statement": "When the call asks why a new trial is granted after conviction, cut answers aimed at charging-stage fairness, prosecutor motive, or a lost impeachment tool unless they state the outcome-prejudice threshold.",
+   "trigger": "motion for a new trial based on late disclosure",
+   "unlocks": "the adjacent-call trap between grand jury, intent, cross-examination, and new-trial materiality",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Delayed impeachment disclosure: pick materiality",
+  "signal": "late disclosure of a witness's credibility evidence plus a new-trial motion",
+  "studentMove": "Ask whether the choice states a reasonable probability of a different verdict.",
+  "tinyRule": "For delayed Brady/Giglio impeachment evidence, materiality is the outcome-prejudice threshold.",
+  "trap": "prosecutor intent, grand-jury nondisclosure, or lost cross-examination stated as the whole reason"
+ }
+}

@@ -45,8 +45,11 @@ attach it to the new entitlement/account. Edge cases:
 
 ## 4. Welcome email (one, transactional)
 
-Send on fulfillment via existing Resend wiring — ACTIVATION IS
-FOUNDER-GATED; build it dark behind a flag if approval is pending.
+Send on fulfillment via existing Resend wiring. Build it dark behind a flag,
+dark-send first to `codex@barmatrix.app`, and do not send to customers without
+explicit approval. `codex@barmatrix.app` is the BarMatrix test/catchall
+mailbox; settings are in `C:\Users\JesusLovesMe\.env` and the password key is
+`CODEX_EMAIL_PASSWORD`.
 
 Subject: `Your Red-Zone map is ready`
 Body (plain, short): you're in the July cohort · your top red zone is

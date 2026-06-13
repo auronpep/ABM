@@ -1,0 +1,96 @@
+{
+ "id": "CQ14615",
+ "title": "Psalm Cart Informant",
+ "subject": "Criminal Law & Procedure",
+ "topic": "Constitutional Protection of Accused Persons",
+ "subtopic": "Right to Counsel",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia, a county prosecutor, obtained a grand-jury indictment charging Daniel with robbing the cash courier for a private Christian bookstore called The Upper Room. Daniel could not post bail and was held in the county jail. At booking, officers gave Daniel Miranda warnings; Daniel said nothing.\n\nWanting Daniel to talk about the charged robbery, Lydia arranged for Barnabas, a jailhouse informant, to be assigned to Daniel’s two-person jail book-cart duty, where old hymnals and Bible-study workbooks were sorted for the unit. Lydia told Barnabas to find out what he could about the bookstore-courier robbery but not to ask Daniel any direct questions about it. During several shifts, Barnabas loudly recounted exaggerated stories about robberies he claimed to have committed. Trying to top Barnabas, Daniel finally said that he had committed the bookstore-courier robbery charged in the indictment.\n\nAt Daniel’s trial, his lawyer moved to exclude Barnabas’s testimony about Daniel’s statement. The motion should be:",
+ "call": "The motion should be",
+ "choices": {
+  "A": "Denied, because Daniel had received Miranda warnings.",
+  "B": "Denied, because Barnabas did not ask Daniel any direct questions about the robbery.",
+  "C": "Granted, because Daniel’s right to counsel was violated.",
+  "D": "Granted, because Daniel’s privilege against self-incrimination was violated."
+ },
+ "key": "C",
+ "dominantTrap": null,
+ "rightExplanation": "C is correct. Daniel was formally charged before the jailhouse contact. Lydia then used Barnabas as a government agent to draw out a statement about that charged offense while counsel was absent. Gold Key: after formal charges, the government may not deliberately elicit charged-offense statements from the accused through an agent without counsel, even if the agent avoids direct questions. Silver Key: read the answer set as a lane fight; indictment plus prosecutor-created contact points to the right-to-counsel lane, not the Miranda-warning or no-direct-question lane.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Miranda warnings are a real neighboring doctrine, but the call is about excluding a charged-offense statement after formal proceedings began. Cut as NOT_RESPONSIVE / bait_doctrine, anchor-assisted by the Gold Key."
+  },
+  {
+   "label": "CUT B",
+   "text": "No direct questions is not the controlling lane. The prosecutor created the contact and targeted the charged offense. Cut as NOT_RESPONSIVE / bait_doctrine, anchor-assisted. This is the dominant trap."
+  },
+  {
+   "label": "KEEP C",
+   "text": "This answer uses the correct lane and matches the call: grant the motion because counsel protection was violated."
+  },
+  {
+   "label": "CUT D",
+   "text": "The result is right, but the reason points to the wrong constitutional lane. Cut as NOT_RESPONSIVE / misfit."
+  },
+  {
+   "label": "CLASH",
+   "text": "No unresolved two-choice clash remains after the Gold Key."
+  },
+  {
+   "label": "CALL",
+   "text": "Not needed."
+  }
+ ],
+ "studentScript": "Indicted first. Prosecutor plants agent second. Statement is about the charged offense. Miranda and no-direct-question are adjacent traps. Pick C.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice points to a real adjacent lane, but the stem’s charge-plus-agent facts point to the counsel lane.",
+   "lawyer": "Miranda warnings do not answer the Massiah/Henry right-to-counsel problem.",
+   "mold": "bait_doctrine"
+  },
+  "B": {
+   "signal": "The answer over-focuses on direct questions and misses the prosecutor-created setup.",
+   "lawyer": "Deliberate elicitation can violate the Sixth Amendment even without formal questioning.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "This answer matches the indictment-plus-agent lane and answers the motion.",
+   "lawyer": "The Sixth Amendment right to counsel was violated by government-arranged elicitation about the charged offense.",
+   "mold": null
+  },
+  "D": {
+   "signal": "The result matches, but the because-clause does not answer the governing lane.",
+   "lawyer": "The exclusion is grounded in the Sixth Amendment counsel right, not a Fifth Amendment self-incrimination violation.",
+   "mold": "misfit"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-CRIMINAL-MASSIAH-INFORMANT-01",
+   "statement": "Post-charge is Sixth Amendment country: after formal charges, government agents may not deliberately elicit statements about the charged offense without counsel, even through a jailhouse informant who avoids direct questions.",
+   "trigger": "indictment or formal charge plus prosecutor-arranged contact about the charged offense",
+   "unlocks": "Miranda/no-direct-question trap",
+   "authority": "Massiah v. United States; United States v. Henry; Maine v. Moulton"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-CRIMINAL-DOCTRINE-LANE-01",
+   "statement": "Read the array as a lane fight: formal charge plus prosecutor-created contact points to the right-to-counsel lane, not to the Miranda-warning or no-direct-question lane.",
+   "trigger": "choices split between Miranda, self-incrimination, no direct questioning, and right to counsel",
+   "unlocks": "Sixth/Fifth/no-direct-question answer-array split",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Post-charge informant lane",
+  "signal": "indictment or formal charge + government agent + charged offense",
+  "studentMove": "Route to counsel before considering Miranda or direct-question traps.",
+  "tinyRule": "After formal charges, government-created elicitation about that charge is counsel-protected.",
+  "trap": "No direct questions means no violation."
+ }
+}

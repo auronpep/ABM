@@ -6,6 +6,7 @@ export type FunnelEvent =
   | "mini_diag_start"
   | "full_diag_start"
   | "diag_complete"
+  | "diagnostic_enrolled_next_step"
   | "checkout_start"
   | "prayer_chain_signup"
   | "first_login"

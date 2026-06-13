@@ -36,8 +36,13 @@ walkthrough + feedback). Status legend: ✅ done · 🟡 founder action ·
   (C:\barmatrix-api\src\checkout.ts:53) — the 2-pay plan has NO promo
   field. The friend must pick **"Enroll — $999"** and enter the code on
   Stripe's page.
+- [x] ✅ **Internal test/catchall mailbox exists** — use
+  `codex@barmatrix.app` for BarMatrix email-flow QA. Mailbox settings are in
+  `C:\Users\JesusLovesMe\.env`; the password key is `CODEX_EMAIL_PASSWORD`.
+  Do not document or print the password value.
 - [ ] 🟡 **support@barmatrix.app mailbox exists and is monitored** — the
-  live login page and footers now reference it.
+  live login page and footers now reference it; `codex@barmatrix.app` can be
+  used for internal catchall testing, but it is not a public support inbox.
 - [ ] 🟡 *(Recommended)* **PostHog key** (`vercel env add VITE_POSTHOG_KEY`
   + redeploy) so the friend's run emits measurable events
   (diag_complete → checkout_start → first_login → first_drill_complete →
@@ -78,8 +83,9 @@ walkthrough + feedback). Status legend: ✅ done · 🟡 founder action ·
   one-primary-action priority. Server `/api/me/day-plan` (J7) already
   implements this — reconnect after auth, don't rebuild.
 - [ ] 🔴 **No welcome email** — "Your Red-Zone map is ready" (P1 §4);
-  build dark in barmatrix-api `src/email.ts`; Resend activation is
-  founder-gated (APPROVALS §7).
+  build dark in barmatrix-api `src/email.ts`; use `codex@barmatrix.app` as
+  the QA recipient/catchall for test sends before any customer-facing send
+  (APPROVALS §7).
 - [ ] ⬜ Payment-plan dunning (P1 §6) — N/A for the $0 test; needed before
   a real 2-pay buyer. Stripe smart retries + 2 plain emails + pause.
 - [ ] ⬜ Attorney gate L-2 — 3 mini-diagnostic seed questions still await

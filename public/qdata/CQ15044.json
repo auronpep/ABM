@@ -1,0 +1,88 @@
+{
+ "id": "CQ15044",
+ "title": "Prayer Garden Dead Grantee",
+ "subject": "Real Property",
+ "topic": "Titles",
+ "subtopic": "Conveyance by Deed",
+ "difficulty": "21% correct",
+ "tension": null,
+ "stem": "Lydia signed a valid written contract to purchase a small lakeside parcel called Prayer Garden Lot from Stephen for its fair market value of $87,000. The contract allowed Lydia to assign her rights.\n\nBefore closing, Lydia directed Stephen to convey title to Lydia and to Ruth, an old Bible-study friend whom Lydia had not contacted in many years. Later, Lydia learned that Ruth would have to sign closing papers. Lydia asked her brother Daniel to come to closing and pretend to be Ruth.\n\nAt closing, Stephen executed a deed in proper form purporting to convey Prayer Garden Lot to Lydia and Ruth as tenants in common. Daniel pretended to be Ruth and signed Ruth’s name on all required closing documents. Lydia paid the full $87,000 purchase price. The deed was promptly and properly recorded.\n\nUnknown to Lydia and Daniel, Ruth had died several months before closing. Ruth’s duly probated will devised “all my real estate to my nephew Timothy” and left the residue of her estate to Lydia. Lydia and Timothy dispute the status of Prayer Garden Lot. Timothy brings an appropriate action against Stephen and Lydia to quiet title to an undivided one-half interest in Prayer Garden Lot.\n\nThe court should hold that legal title to Prayer Garden Lot is vested:",
+ "call": "The court should hold that legal title to Prayer Garden Lot is vested:",
+ "choices": {
+  "A": "All in Lydia.",
+  "B": "One-half in Lydia and one-half in Stephen.",
+  "C": "All in Stephen.",
+  "D": "One-half in Lydia and one-half in Timothy."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The deed worked as to Lydia, the living named grantee who paid the price and appeared at closing. It did not work as to Ruth because Ruth was already dead and could not take or accept the conveyance.\n\nGold Key: A deed needs a grantee who can take title. A deed to a dead co-grantee fails as to that share.\n\nSilver Key: Split the deed by grantee. Do not treat the forged/dead-grantee problem as destroying the whole deed or transferring the failed share to the buyer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "Needs the Gold Key. “All in Lydia” over-rewards payment and ignores the deed’s named tenancy-in-common split."
+  },
+  {
+   "label": "CUT C",
+   "text": "Needs the Gold Key. The dead-grantee defect does not erase the valid half conveyed to Lydia."
+  },
+  {
+   "label": "CUT D",
+   "text": "Needs the Gold Key. Timothy’s devise only matters if Ruth first acquired an interest. She did not."
+  },
+  {
+   "label": "Residual",
+   "text": "B."
+  }
+ ],
+ "studentScript": "Split the deed. Lydia can take her half. Ruth was dead, so Ruth cannot take the other half. Timothy can inherit only what Ruth owned. That leaves the failed half with Stephen. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer gives Lydia more than the deed’s valid half.",
+   "lawyer": "Payment of the full price does not convert the failed co-grantee’s share into Lydia’s title.",
+   "mold": "extreme_of_range"
+  },
+  "B": {
+   "signal": "This is the only answer that splits valid Lydia title from failed Ruth title.",
+   "lawyer": "The deed is effective as to Lydia but fails as to Ruth; Stephen retains the failed half.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer treats Ruth’s problem as erasing Lydia’s valid half.",
+   "lawyer": "The living grantee’s conveyance remains effective.",
+   "mold": "extreme_of_range"
+  },
+  "D": {
+   "signal": "The will matters only if Ruth first owned the half.",
+   "lawyer": "Ruth acquired no Prayer Garden Lot interest, so Timothy received none through the devise.",
+   "mold": "wrong_element"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-REAL_PROPERTY-DEAD-GRANTEE-01",
+   "statement": "A deed needs a grantee who can take title; a deed to a dead co-grantee fails as to that grantee’s share.",
+   "trigger": "a deed names someone who died before closing",
+   "unlocks": "dead-grantee title allocation",
+   "authority": "California Department of Real Estate Reference Book, Chapter 7; general deed validity rules requiring delivery and acceptance."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-REAL_PROPERTY-DEAD-GRANTEE-01",
+   "statement": "Split a deed by the grantees named in it; do not let one grantee’s failure automatically destroy or enlarge the other grantee’s share.",
+   "trigger": "deed names two tenants in common but one grantee cannot take",
+   "unlocks": "all-or-nothing title-allocation trap",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Dead Grantee Split",
+  "signal": "two named grantees, one dead before closing",
+  "studentMove": "split valid grantee share from failed grantee share",
+  "tinyRule": "dead co-grantee cannot take; failed share does not pass through the dead person’s will",
+  "trap": "full-price buyer gets all"
+ }
+}

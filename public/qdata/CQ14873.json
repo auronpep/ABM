@@ -1,0 +1,92 @@
+{
+ "id": "CQ14873",
+ "title": "Crossbow Goliath Room",
+ "subject": "Evidence",
+ "topic": "Relevancy and Excluding Relevant Evidence",
+ "subtopic": "Character Evidence / Specific Acts for Noncharacter Purposes",
+ "difficulty": "not_supplied_by_source_row",
+ "tension": null,
+ "stem": "Daniel is on trial for the murder of Peter, his partner in a privately owned Bible-themed escape-room business. Daniel’s defense is that an antique crossbow in the “David and Goliath” room discharged accidentally while he and Peter were resetting props. The prosecutor calls Stephen, the mall’s security supervisor, to testify that twice during the year before the incident, he responded to noise alarms from the business’s storage bay, found Daniel and Peter in heated arguments, and had to pull Daniel off Peter while Daniel was striking him.\n\nThe testimony is:",
+ "call": "The testimony is:",
+ "choices": {
+  "A": "inadmissible, because Stephen lacks first-hand knowledge of who started the storage-bay arguments.",
+  "B": "admissible to show that Daniel killed Peter intentionally.",
+  "C": "admissible to show that Daniel is a violent person.",
+  "D": "inadmissible, because it is improper character evidence."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The key is the offered-for purpose. Daniel says the crossbow discharge was accidental. Stephen’s testimony about prior violent confrontations with Peter is not being used merely to say Daniel is a violent person. It is being used to make intent and absence of accident more likely.\n\nGold Key: Prior bad acts are barred for propensity, but they may be admitted for a non-propensity purpose such as intent or absence of mistake/accident when that purpose is genuinely in dispute.\n\nSilver Key: In a character-evidence array, lock the purpose first. “Admissible for intent” and “admissible because he is violent” are not the same answer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "A points at a side fact: who started the earlier arguments. The call is admissibility. The prior act observed by Stephen is Daniel striking Peter. Starter identity is not the dispositive issue. Cut as NOT_RESPONSIVE / wrong_element."
+  },
+  {
+   "label": "CUT C",
+   "text": "C uses the prior acts to show Daniel is a violent person. That is the forbidden propensity route. Cut as NOT_TRUE / flat_misstatement, with Gold Key support."
+  },
+  {
+   "label": "CUT D",
+   "text": "D invokes a real rule — prior bad acts often create improper character risk — but it does not answer the actual purpose in this stem. The accident defense makes intent and absence of accident live. Cut as NOT_RESPONSIVE / bait_doctrine."
+  },
+  {
+   "label": "CLASH",
+   "text": "The real axis is purpose: non-propensity intent / absence of accident versus propensity / violent character."
+  },
+  {
+   "label": "CALL",
+   "text": "No residual tie remains. B survives."
+  }
+ ],
+ "studentScript": "This is a purpose question. Accident makes intent live. Prior attacks on the same victim can show intent, but not violent character. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice focuses on who started the arguments, not on what the testimony is offered to prove.",
+   "lawyer": "There is no requirement that Stephen know who started the arguments where he personally observed Daniel striking Peter and the evidence is offered for intent or absence of accident.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "The choice names the live non-propensity purpose: intent.",
+   "lawyer": "FRE 404(b)(2) permits other-act evidence for intent or absence of mistake/lack of accident, subject to Rule 403.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The choice uses the evidence to prove violent character.",
+   "lawyer": "FRE 404(b)(1) bars other-act evidence for character-to-conduct propensity.",
+   "mold": "flat_misstatement"
+  },
+  "D": {
+   "signal": "The choice applies the character-evidence ban without checking the offered-for purpose.",
+   "lawyer": "The general propensity ban is real, but the non-propensity purpose of intent or absence of accident makes the evidence admissible subject to Rule 403.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-404B-NONPROPENSITY-01",
+   "statement": "Prior bad acts are not usable to prove propensity, but they may be used for a non-propensity purpose such as intent or absence of mistake/accident when that purpose is genuinely in dispute.",
+   "trigger": "The defendant says the charged killing was accidental, and the prior acts involve the same victim and similar aggression.",
+   "unlocks": "The character-evidence trap when the defense claims accident.",
+   "authority": "Federal Rule of Evidence 404(b)(1)-(2); Federal Rule of Evidence 403."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-PURPOSE-AXIS-01",
+   "statement": "In a character-evidence answer array, lock the offered-for purpose before the admissibility word. Intent/absence-of-accident and violent-person propensity are opposite purposes.",
+   "trigger": "Choices use the same prior act but attach different purposes.",
+   "unlocks": "The offered-purpose axis between a permitted non-propensity use and forbidden propensity reasoning.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "404(b) Purpose Lock",
+  "signal": "Prior bad acts plus accident/mistake defense.",
+  "studentMove": "Ask what the act is offered to prove before deciding admissibility.",
+  "tinyRule": "Propensity barred; intent and absence of accident can be permitted.",
+  "trap": "Treating every prior bad act as automatically inadmissible character evidence."
+ }
+}

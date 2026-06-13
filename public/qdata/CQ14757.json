@@ -1,0 +1,102 @@
+{
+ "id": "CQ14757",
+ "title": "Bethany Bible Quest",
+ "subject": "Evidence",
+ "topic": "Hearsay and Circumstances of Its Admissibility",
+ "subtopic": "Hearsay and Circumstances of Its Admissibility",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Bethany Bible Quest, a private Christian escape-room company, ran a live Nativity-themed maze in a rented warehouse. During one evening event, Daniel entered a restricted prop loft without the required badge. Stephen, a floor marshal for Bethany Bible Quest, forced Daniel down from the loft catwalk; Daniel fell and died. Stephen was convicted of manslaughter for Daniel’s death.\n\nAt Stephen’s criminal trial, after Stephen was no longer working for Bethany Bible Quest, Stephen testified that Lydia, the company’s safety manager, had instructed him to keep unbadged guests out of the prop loft “whatever it takes.” Stephen’s conviction is on appeal, and he refuses to testify at the civil wrongful-death trial brought by Daniel’s estate against Bethany Bible Quest. Daniel’s estate offers an authenticated transcript of Stephen’s criminal-trial testimony concerning Lydia’s instruction.\n\nThis evidence is:",
+ "call": "This evidence is:",
+ "choices": {
+  "A": "admissible, because Lydia’s instruction to Stephen is not hearsay.",
+  "B": "inadmissible, because it is hearsay not within any exception.",
+  "C": "admissible as a statement by Stephen as an agent of a party-opponent.",
+  "D": "admissible, although hearsay, as former testimony."
+ },
+ "key": "B",
+ "dominantTrap": null,
+ "rightExplanation": "B is correct. The estate is offering Stephen’s old testimony for its truth: that Lydia gave him the “whatever it takes” instruction. Silver Key: scan the transcript outside-in. The transcript layer must be admissible before the quoted instruction layer matters. Gold Key: hearsay within hearsay requires every layer to have its own exclusion or exception. Here, Stephen’s former testimony does not qualify as an opposing-party agent statement because Stephen gave it after he no longer worked for Bethany Bible Quest. It also does not qualify as former testimony against Bethany Bible Quest because the company was not a party to Stephen’s criminal case and had no prior chance to develop Stephen’s testimony.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "This answer fixes the wrong layer. It talks only about Lydia’s instruction, but the offered evidence is Stephen’s transcript. Cut as wrong_element, anchor-assisted by the hearsay-within-hearsay Gold Key."
+  },
+  {
+   "label": "CUT C",
+   "text": "This answer applies a real agent-statement route to the wrong timing. Stephen testified after leaving the company. Cut as bait_doctrine, anchor-assisted by the employee-statement timing Gold Key."
+  },
+  {
+   "label": "CUT D",
+   "text": "This answer applies a real former-testimony exception to the wrong prior-proceeding posture. Bethany Bible Quest had no prior opportunity to develop Stephen’s testimony. Cut as bait_doctrine, anchor-assisted by the former-testimony Gold Key."
+  },
+  {
+   "label": "RESIDUAL B",
+   "text": "B is the only answer that accounts for both layers and the missing exception. No Clash remains. No Call is needed beyond the layer-before-exception Silver Key."
+  }
+ ],
+ "studentScript": "Transcript quoting instruction. Scan outside-in. The old testimony layer fails: former worker, prior criminal case, company had no chance to question him. Pick B.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The choice talks about Lydia’s instruction, not Stephen’s transcript.",
+   "lawyer": "FRE 805 requires every hearsay layer to clear a hearsay exception or exclusion.",
+   "mold": "wrong_element"
+  },
+  "B": {
+   "signal": "This is the only answer that accounts for the failed transcript layer.",
+   "lawyer": "The transcript is hearsay, and neither FRE 801(d)(2)(D) nor FRE 804(b)(1) supplies a path against the company.",
+   "mold": null
+  },
+  "C": {
+   "signal": "The answer uses a familiar exception label but misses the timing fact.",
+   "lawyer": "FRE 801(d)(2)(D) requires the employee statement to be made during the relationship.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The answer names a real exception but skips the fact that the company was absent from the first case.",
+   "lawyer": "FRE 804(b)(1) requires a prior opportunity and similar motive to develop the testimony.",
+   "mold": "bait_doctrine"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-BETHANY-TRANSCRIPT-01",
+   "statement": "For hearsay within hearsay, every layer needs its own exclusion or exception. A clean inner statement does not save an inadmissible transcript layer.",
+   "trigger": "a transcript or witness statement repeats what someone else said",
+   "unlocks": "the inner-instruction trap",
+   "authority": "Fed. R. Evid. 805"
+  },
+  {
+   "id": "GK-EVIDENCE-BETHANY-TRANSCRIPT-02",
+   "statement": "An agent or employee statement qualifies under the party-opponent rule only if it was made during the agency or employment relationship.",
+   "trigger": "the speaker has left the defendant before making the statement offered",
+   "unlocks": "the former-employee agent-statement trap",
+   "authority": "Fed. R. Evid. 801(d)(2)(D)"
+  },
+  {
+   "id": "GK-EVIDENCE-BETHANY-TRANSCRIPT-03",
+   "statement": "Former testimony works only against a party, or in a civil case a predecessor in interest, who had an opportunity and similar motive to develop that testimony.",
+   "trigger": "testimony from a criminal case is offered against a civil defendant who was not there",
+   "unlocks": "the former-testimony trap",
+   "authority": "Fed. R. Evid. 804(b)(1)"
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-BETHANY-TRANSCRIPT-01",
+   "statement": "When a transcript quotes a witness who quotes someone else, scan outside-in: current trial offer, old transcript, then quoted instruction.",
+   "trigger": "an authenticated transcript contains another quoted statement",
+   "unlocks": "the layer-cascade array",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Transcript inside quote: scan outside-in",
+  "signal": "A witness transcript repeats another person’s statement.",
+  "studentMove": "Check the transcript layer first, then the quoted statement.",
+  "tinyRule": "Each hearsay layer needs its own valid path.",
+  "trap": "Exception label chosen before layer check."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "CQ14843",
+ "title": "Manna Mail",
+ "subject": "Evidence",
+ "topic": "Presentation of Evidence",
+ "subtopic": "Presumptions and inferences",
+ "difficulty": null,
+ "tension": null,
+ "stem": "During litigation on a federal claim arising from a dispute over a private Christian board-game expo, Peter had the burden of proving that Martha received a written notice cancelling her exhibit slot for the “Manna Mail” booth. Peter relied on the presumption of receipt by offering evidence that the notice was addressed to Martha at her workshop, properly stamped, and mailed. Martha testified that she never received the notice.\n\nWhich of the following is correct?",
+ "call": "Which of the following is correct?",
+ "choices": {
+  "A": "The burden shifts to Martha to persuade the jury that she did not receive the notice.",
+  "B": "The jury must find that Martha received the notice.",
+  "C": "The jury must find that Martha did not receive the notice, because the presumption has been rebutted and there is uncontradicted evidence of nonreceipt.",
+  "D": "The jury may find that Martha received the notice."
+ },
+ "key": "D",
+ "dominantTrap": null,
+ "rightExplanation": "D is correct. Peter’s proof of proper mailing supports a presumption of receipt. Martha’s denial supplies rebuttal evidence. After that, the jury is not forced to find receipt and is not forced to find nonreceipt. The jury may credit the mailing inference and find receipt.\n\nGold Key: In federal civil cases, a presumption shifts only the burden of producing rebuttal evidence; it does not shift the burden of persuasion.\n\nSilver Key: Read the modal words first. The array has “must find receipt,” “must find nonreceipt,” “burden shifts,” and “may find receipt.” The only answer that leaves credibility with the jury is the permissive “may” answer.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT A",
+   "text": "“Burden shifts” is a direction trap. The answer moves the burden of persuasion to Martha. Gold Key cuts it: production may shift, persuasion does not."
+  },
+  {
+   "label": "CUT B",
+   "text": "“Must find received” over-forces the presumption. Once rebuttal evidence appears, the jury is not compelled."
+  },
+  {
+   "label": "CUT C",
+   "text": "“Must find not received” over-forces the rebuttal. Rebuttal does not compel a defense-side finding."
+  },
+  {
+   "label": "Residual D",
+   "text": "“May find received” is true and responsive. No CLASH or CALL remains after the anchor-assisted CUT."
+  }
+ ],
+ "studentScript": "Proper mailing creates the receipt presumption. Martha denied receipt. FRE 301 does not shift persuasion and does not force either finding. Pick the may answer.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "The answer uses persuade, converting the presumption into a persuasion shift.",
+   "lawyer": "FRE 301 shifts only the burden of producing rebuttal evidence and leaves persuasion with the original burden holder.",
+   "mold": "backwards"
+  },
+  "B": {
+   "signal": "The answer says must find receipt, which over-forces a rebutted presumption.",
+   "lawyer": "After contrary testimony, receipt is for the factfinder; the jury is not compelled to find receipt.",
+   "mold": "tiered_absolute"
+  },
+  "C": {
+   "signal": "The answer says must find nonreceipt and treats rebuttal as conclusive.",
+   "lawyer": "Rebutting a presumption does not require a finding for the rebutting party.",
+   "mold": "tiered_absolute"
+  },
+  "D": {
+   "signal": "The answer uses may, preserving the factfinder's choice after rebuttal.",
+   "lawyer": "The jury may infer receipt from proper mailing but is not required to do so.",
+   "mold": null
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-MANNA-MAIL-01",
+   "statement": "In a federal civil case, a presumption shifts only the burden of producing rebuttal evidence. It does not shift the burden of persuasion, and after rebuttal the factfinder is not forced to find either way.",
+   "trigger": "A party proves proper mailing and the other side testifies that the item was not received.",
+   "unlocks": "The burden-shift trap and both must-find traps in a rebutted receipt-presumption array.",
+   "authority": "Fed. R. Evid. 301; Hagner v. United States, 285 U.S. 427 (1932)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-MANNA-MAIL-01",
+   "statement": "When an answer array offers must-find receipt, must-find nonreceipt, burden-shift, and may-find receipt, lock the modal verb before choosing. The permissive choice is the only one that leaves credibility with the factfinder.",
+   "trigger": "Three options force a result or shift persuasion; one option says the jury may find receipt.",
+   "unlocks": "The must/may/burden-shift array created by a rebutted presumption.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Production shifts; persuasion stays",
+  "signal": null,
+  "studentMove": "When a presumption is rebutted, cut any answer that says must or shifts persuasion.",
+  "tinyRule": null,
+  "trap": null
+ }
+}

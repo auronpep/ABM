@@ -1,0 +1,92 @@
+{
+ "id": "CQ14896",
+ "title": "Gospel Fair Cashbox",
+ "subject": "Evidence",
+ "topic": "Relevancy and Excluding Relevant Evidence",
+ "subtopic": "Character Evidence — Other Crimes, Wrongs, or Acts",
+ "difficulty": null,
+ "tension": null,
+ "stem": "Lydia ran a mobile Bible-engraving cart at a private gospel-music festival. A masked person robbed her cash box, and Peter is now on trial for armed robbery. Peter's defense is mistaken identity. Before resting the state's case, the prosecutor offers proof that Peter robbed two other vendor cash tables at faith-and-music events during the last eight months. This evidence is\n\nSource row transformed from BARMATRIX Q# 14896.",
+ "call": "This evidence is",
+ "choices": {
+  "A": "inadmissible, because its probative value is substantially outweighed by the danger of unfair prejudice.",
+  "B": "inadmissible, because character must be proved by reputation or opinion and may not be proved by specific acts.",
+  "C": "admissible, to prove Peter's intent and identity.",
+  "D": "admissible, to prove a pertinent trait of Peter's character and Peter's action in conformity therewith."
+ },
+ "key": "A",
+ "dominantTrap": null,
+ "rightExplanation": "A is correct. The offered evidence is generic prior-robbery proof. It does not show a special identity marker, a plan, a motive, a preparation step, or any other fact-bridge beyond “Peter robbed before, so Peter probably robbed here.”\n\nGold Key: Other-act evidence cannot use “he did it before, so he did it this time.” A listed purpose like identity or intent needs a real non-propensity bridge; same general crime is not enough.\n\nSilver Key: Purpose first. The evidence changes status only if the offered purpose changes and the stem supplies facts supporting that purpose. Here, the purpose label has no bridge, so unfair-prejudice exclusion is the responsive endpoint.",
+ "wrongExplanations": {},
+ "c3": [
+  {
+   "label": "CUT D",
+   "text": "It is an admissible-propensity answer. Gold Key blocks it."
+  },
+  {
+   "label": "CUT B",
+   "text": "It answers a later method-of-proof layer. Evidence FIT says purpose first, layer second, exception last."
+  },
+  {
+   "label": "CLASH A vs C",
+   "text": "Axis: generic prior acts as propensity/prejudice versus prior acts with a real identity-or-intent bridge."
+  },
+  {
+   "label": "Splitting fact",
+   "text": "The stem gives only two other vendor-table robberies. It gives no special method, object, accomplice, mark, sequence, or other link."
+  },
+  {
+   "label": "CALL",
+   "text": "No extra call needed after the Gold Key resolves the CLASH. Residual: A."
+  }
+ ],
+ "studentScript": "Purpose first. These are prior robberies offered by the state. The intent/identity words need a bridge, and the stem gives none. Method of proof is too late. The admissible-propensity answer is blocked. Pick A.",
+ "recoveryPaths": [],
+ "choiceSignals": {
+  "A": {
+   "signal": "It chooses inadmissibility and gives the reason tied to the danger created by generic prior-robbery proof.",
+   "lawyer": "Gold Key: other-act evidence needs a non-propensity bridge; absent that bridge, the generic prior robberies are propensity proof and Rule 403 supplies the exclusion endpoint.",
+   "mold": null
+  },
+  "B": {
+   "signal": "The choice jumps to how character could be proved instead of first asking whether this character use is admissible at all.",
+   "lawyer": "Rule 405 method limits matter only once character evidence is admissible under Rule 404; the evidence fails at the prior admissibility layer.",
+   "mold": "bait_doctrine"
+  },
+  "C": {
+   "signal": "The choice names real-purpose words, but the stem gives only generic similar robberies.",
+   "lawyer": "Gold Key: identity or intent under Rule 404(b) requires independent relevance beyond propensity; no such bridge is supplied.",
+   "mold": "bait_doctrine"
+  },
+  "D": {
+   "signal": "The choice approves the exact conformity inference the Gold Key blocks.",
+   "lawyer": "Rule 404(a) and 404(b) prohibit using character or other acts to show action in conformity on the charged occasion.",
+   "mold": "flat_misstatement"
+  }
+ },
+ "goldKeys": [
+  {
+   "id": "GK-EVIDENCE-OTHER-ACTS-PROPENSITY-01",
+   "statement": "Other-act evidence cannot use 'he did it before, so he did it this time.' A listed purpose like identity or intent needs a real non-propensity bridge; same general crime is not enough.",
+   "trigger": "The prosecution offers prior robberies or other bad acts, and the answer choice says identity or intent without any special linking facts.",
+   "unlocks": "The intent-and-identity trap when the stem gives only generic prior similar robberies.",
+   "authority": "Fed. R. Evid. 404(b); Fed. R. Evid. 403; Huddleston v. United States, 485 U.S. 681 (1988)."
+  }
+ ],
+ "silverKeys": [
+  {
+   "id": "SK-EVIDENCE-PURPOSE-FIRST-01",
+   "statement": "In Evidence, pin the offered purpose before buying an exception label. If the purpose label has no bridge in the stem, treat it as a purpose-axis trap.",
+   "trigger": "Same evidence, two choices disagreeing about admissible purpose.",
+   "unlocks": "The offered-purpose clash between generic prior-act propensity and a claimed identity or intent purpose.",
+   "authority": null
+  }
+ ],
+ "remediation": {
+  "title": "Other Acts Need a Bridge",
+  "signal": "Prior bad acts offered by the prosecution with identity/intent wording.",
+  "studentMove": "Ask what fact connects the other acts to that purpose besides same-crime propensity.",
+  "tinyRule": "No bridge means propensity; propensity loses.",
+  "trap": "The dominant trap is exception-name shopping."
+ }
+}
