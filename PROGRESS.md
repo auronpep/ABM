@@ -261,3 +261,30 @@ Conflicts with the handoff's assumed stack are logged in CONFLICTS.md.
   real signup (email code), run a drill, sign in on a second
   browser/device, confirm the map follows. Machine verification stops at
   the bot wall by design.
+
+---
+
+## 2026-07-06 — route-level code splitting (bundle diet for the funnel)
+
+- **Finding**: the whole SPA shipped as one 368 KB JS bundle (109 KB gzip) with
+  no route splitting — a cold visitor landing on `/` (the funnel's money page)
+  downloaded Practice Library, Repair loop, Prayer Chain, and Auth code before
+  ever touching the diagnostic. Surfaced via a Lighthouse pass against a local
+  production build (`unused-javascript` audit: 63 KB unused on first load).
+- **Fix**: `src/App.tsx` — every route except `home` (`HowItWorks`, `Pricing`,
+  `Diagnostic`, `Drill`, `Practice`, `Welcome`, `Repair`, `PrayerChain`,
+  `SignInPage`/`SignUpPage`) now loads via `React.lazy` + one `Suspense`
+  boundary around the route switch, instead of all being eagerly imported.
+- **Result**: main chunk 367.72 kB → 283.47 kB (109.09 → 87.17 kB gzip);
+  the rest split into 10 per-route chunks (0.3–15.5 kB each) fetched on
+  navigation. `npm run build` green (trap-index + styles + contract + tsc +
+  vite). Verified with a headless browser across all 11 routes
+  (`/`, how-it-works, pricing, diagnostic, drills, practice, welcome, repair,
+  prayer-chain, sign-in, sign-up): every route renders content, zero
+  console/runtime errors introduced (only pre-existing `ERR_TUNNEL_*` noise
+  from this sandbox's proxy blocking Google Fonts/Clerk, unrelated to the
+  change).
+- **Not done**: the real mobile Lighthouse number still needs to be run
+  against the actual Vercel preview per the existing caveat below — this
+  sandbox has no outbound path to fonts.googleapis.com or clerk.barmatrix.app,
+  so its raw scores aren't trustworthy, only the bundle-size delta is.
