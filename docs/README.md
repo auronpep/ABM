@@ -18,3 +18,7 @@ Reference documentation for the ABM/TEAR project. (Top-level authority docs — 
 3. `docs/CANON_REFERENCE.md` (true numbers)
 4. `handoffs/P1_DAY_ONE_EXPERIENCE.md` (the buyer-journey spec)
 5. Legacy docs only when designing *new* content/partner/marketing surfaces
+
+## Maintainers
+
+- auronpep (owner)
